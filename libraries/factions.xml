@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <diff>
     <add sel="/factions">
-        <faction id="khaakpox" name="KhaakPox" description="KhaakPox Infected" shortname="KHP" primaryrace="khaak" behaviourset="khaak" known="1" tags="  publicloadout publicship aggressive notradeoffer privateloadout protective">
+        <faction id="khaakpox" name="KhaakPox" description="KhaakPox Infected" shortname="KHP" primaryrace="khaak" behaviourset="khaak" known="1" tags="     aggressive notradeoffer privateloadout protective">
             <color r="200" g="18" b="245" />
             <icon active="faction_petkhaak" inactive="faction_petkhaak" />
             <relations locked="1">
@@ -84,8 +84,84 @@
     yaki
     usc
 
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+publicloadout privateship publicship
+
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+privateloadout privateship
+
+
  -->
-        <faction id="xenonmatrix" name="{799081,103}" shortname="{799081,104}" description="{799081,105}" constructionbias="3.37595" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="xenonmatrix" name="{799081,103}" shortname="{799081,104}" description="{799081,105}" constructionbias="3.37595" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="168" g="101" b="92" />
             <icon active="faction_xenonmatrix" inactive="faction_xenonmatrix" />
             <relations locked="1">
@@ -145,7 +221,7 @@
             </relations>
         </faction>
         <!-- PIRATES -->
-        <faction id="atlas" name="{799081,1}" shortname="{799081,2}" description="{799081,3}" constructionbias="0.596646" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="atlas" name="{799081,1}" shortname="{799081,2}" description="{799081,3}" constructionbias="0.596646" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="109" g="159" b="6" />
             <icon active="faction_atlaspirates" inactive="faction_atlaspirates" />
             <relations locked="1">
@@ -204,7 +280,7 @@
                 <relation faction="sonraenergy" relation="-1" />
             </relations>
         </faction>
-        <faction id="sovsyn" name="{799081,4}" shortname="{799081,5}" description="{799081,6}" constructionbias="4.80393" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="sovsyn" name="{799081,4}" shortname="{799081,5}" description="{799081,6}" constructionbias="4.80393" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="174" g="87" b="59" />
             <icon active="faction_sovereign_syndicate" inactive="faction_sovereign_syndicate" />
             <relations locked="1">
@@ -263,7 +339,7 @@
                 <relation faction="sonraenergy" relation="-1" />
             </relations>
         </faction>
-        <faction id="cartel" name="{799081,7}" shortname="{799081,8}" description="{799081,9}" constructionbias="2.99315" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="cartel" name="{799081,7}" shortname="{799081,8}" description="{799081,9}" constructionbias="2.99315" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="200" g="54" b="231" />
             <icon active="faction_the_cartel" inactive="faction_the_cartel" />
             <relations locked="1">
@@ -322,7 +398,7 @@
                 <relation faction="sonraenergy" relation="-1" />
             </relations>
         </faction>
-        <faction id="agi" name="{799081,10}" shortname="{799081,11}" description="{799081,12}" constructionbias="7.89929" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="agi" name="{799081,10}" shortname="{799081,11}" description="{799081,12}" constructionbias="7.89929" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="213" g="104" b="69" />
             <icon active="faction_sovereign_syndicate" inactive="faction_sovereign_syndicate" />
             <relations locked="1">
@@ -382,7 +458,7 @@
             </relations>
         </faction>
         <!-- TRADERS -->
-        <faction id="goner" name="{799081,13}" shortname="{799081,14}" description="{799081,15}" constructionbias="0.903739" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="goner" name="{799081,13}" shortname="{799081,14}" description="{799081,15}" constructionbias="0.903739" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="163" g="86" b="34" />
             <icon active="faction_standard" inactive="faction_standard" />
             <relations>
@@ -441,7 +517,7 @@
                 <relation faction="sonraenergy" relation="0.898184" />
             </relations>
         </faction>
-        <faction id="wholefood" name="{799081,16}" shortname="{799081,17}" description="{799081,18}" constructionbias="0.383387" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="wholefood" name="{799081,16}" shortname="{799081,17}" description="{799081,18}" constructionbias="0.383387" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="155" g="12" b="118" />
             <icon active="faction_wf" inactive="faction_wf" />
             <relations>
@@ -500,7 +576,7 @@
                 <relation faction="sonraenergy" relation="0.737449" />
             </relations>
         </faction>
-        <faction id="ledda" name="{799081,19}" shortname="{799081,20}" description="{799081,21}" constructionbias="5.25844" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="ledda" name="{799081,19}" shortname="{799081,20}" description="{799081,21}" constructionbias="5.25844" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="123" g="126" b="14" />
             <icon active="faction_ledda" inactive="faction_ledda" />
             <relations>
@@ -559,7 +635,7 @@
                 <relation faction="sonraenergy" relation="-0.390377" />
             </relations>
         </faction>
-        <faction id="telunion" name="{799081,22}" shortname="{799081,23}" description="{799081,24}" constructionbias="5.96228" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="telunion" name="{799081,22}" shortname="{799081,23}" description="{799081,24}" constructionbias="5.96228" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="93" g="30" b="195" />
             <icon active="faction_teladi_union" inactive="faction_teladi_union" />
             <relations>
@@ -618,7 +694,7 @@
                 <relation faction="sonraenergy" relation="0.929443" />
             </relations>
         </faction>
-        <faction id="aldrin" name="{799081,25}" shortname="{799081,26}" description="{799081,27}" constructionbias="3.13051" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="aldrin" name="{799081,25}" shortname="{799081,26}" description="{799081,27}" constructionbias="3.13051" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="139" g="110" b="236" />
             <icon active="faction_ryak" inactive="faction_ryak" />
             <relations>
@@ -677,7 +753,7 @@
                 <relation faction="sonraenergy" relation="0.821427" />
             </relations>
         </faction>
-        <faction id="cantera" name="{799081,28}" shortname="{799081,29}" description="{799081,30}" constructionbias="3.46335" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="cantera" name="{799081,28}" shortname="{799081,29}" description="{799081,30}" constructionbias="3.46335" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="147" g="225" b="238" />
             <icon active="faction_canteran" inactive="faction_canteran" />
             <relations>
@@ -736,7 +812,7 @@
                 <relation faction="sonraenergy" relation="-0.268624" />
             </relations>
         </faction>
-        <faction id="toride" name="{799081,31}" shortname="{799081,32}" description="{799081,33}" constructionbias="1.87775" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="toride" name="{799081,31}" shortname="{799081,32}" description="{799081,33}" constructionbias="1.87775" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="202" g="1" b="152" />
             <icon active="faction_taride" inactive="faction_taride" />
             <relations>
@@ -795,7 +871,7 @@
                 <relation faction="sonraenergy" relation="0.245997" />
             </relations>
         </faction>
-        <faction id="nmmc" name="{799081,34}" shortname="{799081,35}" description="{799081,36}" constructionbias="0.656231" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="nmmc" name="{799081,34}" shortname="{799081,35}" description="{799081,36}" constructionbias="0.656231" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="183" g="127" b="152" />
             <icon active="faction_dispossed" inactive="faction_red" />
             <relations>
@@ -854,7 +930,7 @@
                 <relation faction="sonraenergy" relation="-0.0631434" />
             </relations>
         </faction>
-        <faction id="atreus" name="{799081,37}" shortname="{799081,38}" description="{799081,39}" constructionbias="2.3438" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="atreus" name="{799081,37}" shortname="{799081,38}" description="{799081,39}" constructionbias="2.3438" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="18" g="246" b="135" />
             <icon active="faction_player" inactive="faction_player" />
             <relations>
@@ -913,7 +989,7 @@
                 <relation faction="sonraenergy" relation="-0.00326392" />
             </relations>
         </faction>
-        <faction id="jonferson" name="{799081,40}" shortname="{799081,41}" description="{799081,42}" constructionbias="2.43548" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="jonferson" name="{799081,40}" shortname="{799081,41}" description="{799081,42}" constructionbias="2.43548" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="108" g="68" b="22" />
             <icon active="faction_jsdd" inactive="faction_jsdd" />
             <relations>
@@ -972,7 +1048,7 @@
                 <relation faction="sonraenergy" relation="-0.273281" />
             </relations>
         </faction>
-        <faction id="aquariuscorp" name="{799081,43}" shortname="{799081,44}" description="{799081,45}" constructionbias="0.390393" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="aquariuscorp" name="{799081,43}" shortname="{799081,44}" description="{799081,45}" constructionbias="0.390393" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="192" g="101" b="243" />
             <icon active="faction_aquarius" inactive="faction_aquarius" />
             <relations>
@@ -1031,7 +1107,7 @@
                 <relation faction="sonraenergy" relation="-0.322469" />
             </relations>
         </faction>
-        <faction id="ptni" name="{799081,46}" shortname="{799081,47}" description="{799081,48}" constructionbias="4.18542" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="ptni" name="{799081,46}" shortname="{799081,47}" description="{799081,48}" constructionbias="4.18542" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="77" g="111" b="2" />
             <icon active="faction_dispossed" inactive="faction_dispossed" />
             <relations>
@@ -1090,7 +1166,7 @@
                 <relation faction="sonraenergy" relation="-0.458851" />
             </relations>
         </faction>
-        <faction id="strongarms" name="{799081,49}" shortname="{799081,50}" description="{799081,51}" constructionbias="1.26382" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="strongarms" name="{799081,49}" shortname="{799081,50}" description="{799081,51}" constructionbias="1.26382" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="109" g="131" b="25" />
             <icon active="faction_neutral" inactive="faction_neutral" />
             <relations>
@@ -1149,7 +1225,7 @@
                 <relation faction="sonraenergy" relation="0.386487" />
             </relations>
         </faction>
-        <faction id="plutarch" name="{799081,52}" shortname="{799081,53}" description="{799081,54}" constructionbias="9.71064" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="plutarch" name="{799081,52}" shortname="{799081,53}" description="{799081,54}" constructionbias="9.71064" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="146" g="12" b="82" />
             <icon active="faction_pmc" inactive="faction_pmc" />
             <relations>
@@ -1208,7 +1284,7 @@
                 <relation faction="sonraenergy" relation="0.429839" />
             </relations>
         </faction>
-        <faction id="albionenergy" name="{799081,55}" shortname="{799081,56}" description="{799081,57}" constructionbias="8.96414" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="albionenergy" name="{799081,55}" shortname="{799081,56}" description="{799081,57}" constructionbias="8.96414" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="89" g="103" b="32" />
             <icon active="faction_ae" inactive="faction_ae" />
             <relations>
@@ -1267,7 +1343,7 @@
                 <relation faction="sonraenergy" relation="-0.133015" />
             </relations>
         </faction>
-        <faction id="terracorp" name="{799081,58}" shortname="{799081,59}" description="{799081,60}" constructionbias="0.472479" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="terracorp" name="{799081,58}" shortname="{799081,59}" description="{799081,60}" constructionbias="0.472479" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="207" g="225" b="123" />
             <icon active="faction_terracorp" inactive="faction_terracorp" />
             <relations>
@@ -1326,7 +1402,7 @@
                 <relation faction="sonraenergy" relation="0.226399" />
             </relations>
         </faction>
-        <faction id="franton" name="{799081,61}" shortname="{799081,62}" description="{799081,63}" constructionbias="2.35157" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="franton" name="{799081,61}" shortname="{799081,62}" description="{799081,63}" constructionbias="2.35157" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="111" g="83" b="33" />
             <icon active="faction_fp" inactive="faction_fp" />
             <relations>
@@ -1385,7 +1461,7 @@
                 <relation faction="sonraenergy" relation="-0.382524" />
             </relations>
         </faction>
-        <faction id="chow" name="{799081,64}" shortname="{799081,65}" description="{799081,66}" constructionbias="5.70786" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="chow" name="{799081,64}" shortname="{799081,65}" description="{799081,66}" constructionbias="5.70786" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="167" g="247" b="151" />
             <icon active="faction_chow" inactive="faction_chow" />
             <relations>
@@ -1444,7 +1520,7 @@
                 <relation faction="sonraenergy" relation="0.0589618" />
             </relations>
         </faction>
-        <faction id="beryll" name="{799081,115}" shortname="{799081,116}" description="{799081,117}" constructionbias="0.620887" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="beryll" name="{799081,115}" shortname="{799081,116}" description="{799081,117}" constructionbias="0.620887" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="10" g="5" b="205" />
             <icon active="faction_beryll" inactive="faction_beryll" />
             <relations>
@@ -1504,7 +1580,7 @@
             </relations>
         </faction>
         <!-- MERC -->
-        <faction id="terrapmc" name="{799081,67}" shortname="{799081,68}" description="{799081,69}" constructionbias="5.23772" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="terrapmc" name="{799081,67}" shortname="{799081,68}" description="{799081,69}" constructionbias="5.23772" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="233" g="220" b="225" />
             <icon active="faction_friend" inactive="faction_friend" />
             <relations>
@@ -1563,7 +1639,7 @@
                 <relation faction="sonraenergy" relation="0.171807" />
             </relations>
         </faction>
-        <faction id="otas" name="{799081,70}" shortname="{799081,71}" description="{799081,72}" constructionbias="7.23684" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="otas" name="{799081,70}" shortname="{799081,71}" description="{799081,72}" constructionbias="7.23684" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="180" g="103" b="34" />
             <icon active="faction_fijiargnu" inactive="faction_fijiargnu" />
             <relations>
@@ -1622,7 +1698,7 @@
                 <relation faction="sonraenergy" relation="0.2303" />
             </relations>
         </faction>
-        <faction id="buccaneers" name="{799081,73}" shortname="{799081,74}" description="{799081,75}" constructionbias="3.96335" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="buccaneers" name="{799081,73}" shortname="{799081,74}" description="{799081,75}" constructionbias="3.96335" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="193" g="99" b="54" />
             <icon active="faction_enemy" inactive="faction_enemy" />
             <relations>
@@ -1681,7 +1757,7 @@
                 <relation faction="sonraenergy" relation="-0.34748" />
             </relations>
         </faction>
-        <faction id="reivers" name="{799081,76}" shortname="{799081,77}" description="{799081,78}" constructionbias="9.82553" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="reivers" name="{799081,76}" shortname="{799081,77}" description="{799081,78}" constructionbias="9.82553" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="178" g="125" b="75" />
             <icon active="faction_reivers" inactive="faction_reivers" />
             <relations>
@@ -1740,7 +1816,7 @@
                 <relation faction="sonraenergy" relation="0.559052" />
             </relations>
         </faction>
-        <faction id="terrans" name="{799081,79}" shortname="{799081,80}" description="{799081,81}" constructionbias="1.65274" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="terrans" name="{799081,79}" shortname="{799081,80}" description="{799081,81}" constructionbias="1.65274" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="141" g="154" b="91" />
             <icon active="faction_dispossed" inactive="faction_dispossed" />
             <relations>
@@ -1799,7 +1875,7 @@
                 <relation faction="sonraenergy" relation="-0.426729" />
             </relations>
         </faction>
-        <faction id="nolimits" name="{799081,82}" shortname="{799081,83}" description="{799081,84}" constructionbias="9.45053" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="nolimits" name="{799081,82}" shortname="{799081,83}" description="{799081,84}" constructionbias="9.45053" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="227" g="185" b="103" />
             <icon active="faction_no_limits" inactive="faction_no_limits" />
             <relations>
@@ -1858,7 +1934,7 @@
                 <relation faction="sonraenergy" relation="-0.129324" />
             </relations>
         </faction>
-        <faction id="uguras" name="{799081,85}" shortname="{799081,86}" description="{799081,87}" constructionbias="1.32852" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="uguras" name="{799081,85}" shortname="{799081,86}" description="{799081,87}" constructionbias="1.32852" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="139" g="95" b="214" />
             <icon active="faction_uguras_armaments" inactive="faction_uguras_armaments" />
             <relations>
@@ -1918,7 +1994,7 @@
             </relations>
         </faction>
         <!-- ZEALOTS -->
-        <faction id="heretics" name="{799081,88}" shortname="{799081,89}" description="{799081,90}" constructionbias="6.53017" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="heretics" name="{799081,88}" shortname="{799081,89}" description="{799081,90}" constructionbias="6.53017" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="140" g="237" b="234" />
             <icon active="faction_heretic_vanguards" inactive="faction_heretic_vanguards" />
             <relations>
@@ -1978,7 +2054,7 @@
             </relations>
         </faction>
         <!-- SCAVENGERS -->
-        <faction id="yaki" name="{799081,91}" shortname="{799081,92}" description="{799081,93}" constructionbias="9.53619" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="yaki" name="{799081,91}" shortname="{799081,92}" description="{799081,93}" constructionbias="9.53619" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="160" g="222" b="156" />
             <icon active="faction_beryll" inactive="faction_beryll" />
             <relations>
@@ -2037,7 +2113,7 @@
                 <relation faction="sonraenergy" relation="-0.477257" />
             </relations>
         </faction>
-        <faction id="usc" name="{799081,94}" shortname="{799081,95}" description="{799081,96}" constructionbias="4.47361" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="usc" name="{799081,94}" shortname="{799081,95}" description="{799081,96}" constructionbias="4.47361" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="226" g="55" b="165" />
             <icon active="faction_beryll" inactive="faction_beryll" />
             <relations>
@@ -2096,7 +2172,7 @@
                 <relation faction="sonraenergy" relation="-0.0776765" />
             </relations>
         </faction>
-        <faction id="heartofalbion" name="{799081,97}" shortname="{799081,98}" description="{799081,99}" constructionbias="8.50106" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="heartofalbion" name="{799081,97}" shortname="{799081,98}" description="{799081,99}" constructionbias="8.50106" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="68" g="185" b="29" />
             <icon active="faction_heartofalbion" inactive="faction_heartofalbion" />
             <relations>
@@ -2155,7 +2231,7 @@
                 <relation faction="sonraenergy" relation="-0.0527604" />
             </relations>
         </faction>
-        <faction id="sonraenergy" name="{799081,100}" shortname="{799081,101}" description="{799081,102}" constructionbias="0.596646" behaviourset="default" primaryrace="argon" known="true" tags="  publicloadout publicship aggressive claimspace economic privateloadout privateship">
+        <faction id="sonraenergy" name="{799081,100}" shortname="{799081,101}" description="{799081,102}" constructionbias="0.596646" behaviourset="default" primaryrace="argon" known="true" tags="   aggressive claimspace economic ">
             <color r="161" g="128" b="182" />
             <icon active="faction_sonra_energy" inactive="faction_sonra_energy" />
             <relations>
