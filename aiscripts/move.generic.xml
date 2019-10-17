@@ -9,23 +9,25 @@
       <do_if value="$destination.isclass.sector">
         <do_if value="$destination != this.sector">
           <set_value name="$Jump" exact="true" />
+          <!-- <set_value name="$DestCluster" exact="$destination.cluster" /> -->
         </do_if>
       </do_if>
       <do_else>
         <do_if value="$destination.sector != this.sector">
           <set_value name="$Jump" exact="true" />
+          <!-- <set_value name="$DestCluster" exact="$destination.cluster" /> -->
         </do_if>
       </do_else>
       <do_if value="$Jump == true">
-        <!-- <debug_text text="'this.sector.knownname ' + this.sector.knownname" chance="global.$tpwar_debugchance" />
+        <!-- <debug_text text="'NEW ENTRY this.sector.knownname ' + this.sector.knownname" chance="global.$tpwar_debugchance" />
         <debug_text text="'$destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
         <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-        <debug_text text="if this.sector == $destination then 'testfailed' else 'testpassed' + $destination.class" chance="global.$tpwar_debugchance" /> -->
+        <debug_text text="if this.sector == $destination then 'testfailed $destination.class=' else 'testpassed $destination.class=' + $destination.class" chance="global.$tpwar_debugchance" /> -->
         <!-- <check_object result="$JumpSoft" object="this.ship">
           <match_loadout wares="[ware.software_tpwar_jumpdrive]" />
         </check_object> -->
         <!-- <do_if value="$JumpSoft == true"> -->
-        <set_value name="$Distance" exact="this.ship.cluster.distanceto.{$destination.cluster}" />
+        <set_value name="$Distance" exact="if $destination.isclass.cluster == true then this.ship.cluster.distanceto.{$destination} else this.ship.cluster.distanceto.{$destination.cluster}" />
         <!-- <debug_text text="'$Distance ' + $Distance" chance="global.$tpwar_debugchance" /> -->
         <!-- TODO CONSULT CALCULATOR  -->
         <set_value name="$JumpCost" exact="($Distance / global.$tpwar_fuelcost)f" />
@@ -37,13 +39,31 @@
         </do_if>
         <!-- <do_if value="this.ship.cargo.{ware.fieldcoils}.count gt $JumpCost"> -->
         <!-- TODO JUMPLIB -->
+        <do_if value="$destination.isclass.cluster == true">
+            <find_sector name="$sector" space="$destination" multiple="false" />
+        </do_if>
         <do_if value="this.ship.subordinates?">
           <set_value name="$Subs" exact="this.ship.subordinates" />
           <do_all exact="$Subs.count" counter="$i">
             <do_if value="$Subs.{$i}.isclass.[class.ship_s, class.ship_m]">
-              <warp object="$Subs.{$i}" sector="if @$destination.sector then $destination.sector else $destination">
-                <safepos min="3km" />
-              </warp>
+              <do_if value="$destination.isclass.cluster == true">
+                <warp object="$Subs.{$i}" sector="$sector">
+                  <safepos min="3km" />
+                </warp>
+                <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
+                <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
+                <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
+                <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
+              </do_if>
+              <do_else>
+                <warp object="$Subs.{$i}" sector="if @$destination.sector then $destination.sector else $destination">
+                  <safepos min="3km" />
+                </warp>
+                <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
+                <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
+                <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
+                <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
+              </do_else>
             </do_if>
           </do_all>
         </do_if>
@@ -51,9 +71,26 @@
         <do_if value="not this.$JumpTime?">
           <set_value name="this.$JumpTime" exact="player.age + 600s" />
         </do_if>
-        <warp object="this.ship" sector="if @$destination.sector then $destination.sector else $destination">
-          <safepos min="3km" />
-        </warp>
+        <!-- <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" /> -->
+        <do_if value="$destination.isclass.cluster == true">
+          <warp object="this.ship" sector="$sector">
+            <safepos min="3km" />
+          </warp>
+          <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
+          <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
+          <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
+          <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
+        </do_if>
+        <do_else>
+          <warp object="this.ship" sector="if @$destination.sector then $destination.sector else $destination">
+            <safepos min="3km" />
+          </warp>
+          <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
+          <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
+          <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
+          <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
+
+        </do_else>
         <!-- </do_if> -->
       </do_if>
     </do_if>
