@@ -57,7 +57,7 @@
     <!-- Argon -->
     <!-- Generic Argon Characters -->
     <character id="tpwar_trader_argon_random" group="argon.trader">
-      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="7" max="14" />
         <skill type="morale" max="12" />
@@ -69,7 +69,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_fighter_argon_random" group="argon.pilot">
-      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="7" max="14" />
         <skill type="morale" max="12" />
@@ -81,7 +81,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_manager_argon_random" group="argon.manager">
-      <category tags="[crew, officer, manager]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, officer, manager]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -94,7 +94,7 @@
     </character>
     <!-- regular -->
     <character id="tpwar_service_argon_random" group="argon.service">
-      <category tags="[crew, service, regular]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, service, regular]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -106,7 +106,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_marine_argon_random" group="argon.marine">
-      <category tags="[crew, marine, regular]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, marine, regular]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
       <skills>
         <skill type="boarding" min="1" max="5" />
@@ -119,7 +119,7 @@
     </character>
     <!-- passengers -->
     <character id="tpwar_passenger_argon_random" group="argon.passenger">
-      <category tags="[crew, passenger]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, passenger]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -130,7 +130,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_prisoner_argon_random" group="argon.prisoner">
-      <category tags="[crew, prisoner]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, prisoner]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -143,7 +143,7 @@
 
     <!-- Rookies -->
     <character id="tpwar_service_argon_random_rookie" group="argon.service">
-      <category tags="[crew, service, rookie]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, service, rookie]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="1" max="2" />
         <skill type="morale" max="3" />
@@ -155,7 +155,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_marine_argon_random_rookie" group="argon.marine">
-      <category tags="[crew, marine, rookie]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, marine, rookie]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
       <skills>
         <skill type="boarding" min="1" max="2" />
@@ -168,7 +168,7 @@
     </character>
     <!-- Veteran -->
     <character id="tpwar_service_argon_random_veteran" group="argon.service">
-      <category tags="[crew, service, veteran]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, service, veteran]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -179,7 +179,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_marine_argon_random_veteran" group="argon.marine">
-      <category tags="[crew, marine, veteran]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, marine, veteran]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
       <skills>
         <skill type="boarding" min="6" max="12" />
@@ -191,7 +191,7 @@
     </character>
     <!-- Elite -->
     <character id="tpwar_service_argon_random_elite" group="argon.service">
-      <category tags="[crew, service, elite]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, service, elite]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="12" />
         <skill type="morale" min="12" />
@@ -202,7 +202,7 @@
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
     </character>
     <character id="tpwar_marine_argon_random_elite" group="argon.marine">
-      <category tags="[crew, marine, elite]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[crew, marine, elite]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <owner list="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion]" />
       <skills>
         <skill type="boarding" min="12" />
@@ -214,7 +214,7 @@
     </character>
 
     <character id="tpwar_platform_trader_argon_random" group="argon.trader">
-      <category tags="[trader, licencetrader]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[trader, licencetrader]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -227,7 +227,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_ship_trader_argon_random" group="argon.shiptrader">
-      <category tags="[trader, shiptrader]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[trader, shiptrader]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -240,7 +240,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_shadyguy_argon_random" group="argon.shadyguy">
-      <category tags="[shadyguy]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player]" race="argon" />
+      <category tags="[shadyguy]" faction="[atreus, strongarms, atlas, sovsyn, agi, wholefood, ledda, aldrin, cantera, toride, jonferson, aquariuscorp, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, reivers, terrans, nolimits, yaki, usc, heartofalbion, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="8" max="11" />
         <skill type="morale" max="12" />
@@ -584,7 +584,7 @@
     <!-- TELADI -->
     <!-- Generic Teladi Characters -->
     <character id="tpwar_trader_teladi_random" group="teladi.trader">
-      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="piloting" min="6" max="12" />
         <skill type="morale" max="12" />
@@ -596,7 +596,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_fighter_teladi_random" group="teladi.pilot">
-      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -608,7 +608,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_manager_teladi_random" group="teladi.manager">
-      <category tags="[crew, officer, manager]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, officer, manager]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -621,7 +621,7 @@
     </character>
     <!-- regular -->
     <character id="tpwar_service_teladi_random" group="teladi.service">
-      <category tags="[crew, service, regular]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, service, regular]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="engineering" min="5" max="9" />
         <skill type="morale" max="12" />
@@ -633,7 +633,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_marine_teladi_random" group="teladi.marine">
-      <category tags="[crew, marine, regular]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, marine, regular]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" max="5" />
         <skill type="morale" max="12" />
@@ -646,7 +646,7 @@
     </character>
     <!-- passenger -->
     <character id="tpwar_passenger_teladi_random" group="teladi.passenger">
-      <category tags="[crew, passenger]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, passenger]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -657,7 +657,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_prisoner_teladi_random" group="teladi.prisoner">
-      <category tags="[crew, prisoner]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, prisoner]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -670,7 +670,7 @@
 
     <!-- Rookies -->
     <character id="tpwar_service_teladi_random_rookie" group="teladi.service">
-      <category tags="[crew, service, rookie]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, service, rookie]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="engineering" exact="1" />
         <skill type="morale" max="2" />
@@ -682,7 +682,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_marine_teladi_random_rookie" group="teladi.marine">
-      <category tags="[crew, marine, rookie]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, marine, rookie]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" min="1" max="2" />
         <skill type="morale" max="1" />
@@ -696,7 +696,7 @@
 
     <!-- Veteran -->
     <character id="tpwar_service_teladi_random_veteran" group="teladi.service">
-      <category tags="[crew, service, veteran]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, service, veteran]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="engineering" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -707,7 +707,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_marine_teladi_random_veteran" group="teladi.marine">
-      <category tags="[crew, marine, veteran]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, marine, veteran]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -720,7 +720,7 @@
 
     <!-- Elite -->
     <character id="tpwar_service_teladi_random_elite" group="teladi.service">
-      <category tags="[crew, service, elite]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, service, elite]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="engineering" min="12" />
         <skill type="morale" min="12" />
@@ -731,7 +731,7 @@
       <owner list="[telunion, cartel, nmmc, ptni, uguras, sonraenergy]" />
     </character>
     <character id="tpwar_marine_teladi_random_elite" group="teladi.marine">
-      <category tags="[crew, marine, elite]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[crew, marine, elite]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="boarding" min="9" />
         <skill type="morale" min="9" />
@@ -743,7 +743,7 @@
     </character>
 
     <character id="tpwar_platform_trader_teladi_random" group="teladi.trader">
-      <category tags="[trader, licencetrader]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[trader, licencetrader]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -756,7 +756,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_ship_trader_teladi_random" group="teladi.shiptrader">
-      <category tags="[trader, shiptrader]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[trader, shiptrader]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -769,7 +769,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_shadyguy_teladi_random" group="teladi.shadyguy">
-      <category tags="[shadyguy]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player]" race="teladi" />
+      <category tags="[shadyguy]" faction="[telunion, cartel, nmmc, ptni, uguras, sonraenergy, faction.player, beryll]" race="teladi" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -865,7 +865,7 @@
     <!-- Paranid -->
     <!-- Generic Paranid Characters -->
     <character id="tpwar_trader_paranid_random" group="paranid.trader">
-      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -877,7 +877,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_fighter_paranid_random" group="paranid.pilot">
-      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="piloting" min="4" max="12" />
         <skill type="morale" max="12" />
@@ -889,7 +889,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_manager_paranid_random" group="paranid.manager">
-      <category tags="[crew, officer, manager]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, officer, manager]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="management" min="5" max="9" />
         <skill type="morale" max="12" />
@@ -902,7 +902,7 @@
     </character>
     <!-- regular -->
     <character id="tpwar_service_paranid_random" group="paranid.service">
-      <category tags="[crew, service, regular]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, service, regular]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="engineering" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -914,7 +914,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_marine_paranid_random" group="paranid.marine">
-      <category tags="[crew, marine, regular]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, marine, regular]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" max="5" />
         <skill type="morale" max="12" />
@@ -927,7 +927,7 @@
     </character>
     <!-- passenger -->
     <character id="tpwar_passenger_paranid_random" group="paranid.passenger">
-      <category tags="[crew, passenger]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, passenger]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" max="6" />
@@ -938,7 +938,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_prisoner_paranid_random" group="paranid.prisoner">
-      <category tags="[crew, prisoner]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, prisoner]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" max="6" />
@@ -951,7 +951,7 @@
 
     <!-- Rookies -->
     <character id="tpwar_service_paranid_random_rookie" group="paranid.service">
-      <category tags="[crew, service, rookie]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, service, rookie]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="engineering" min="1" max="4" />
         <skill type="morale" max="2" />
@@ -963,7 +963,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_marine_paranid_random_rookie" group="paranid.marine">
-      <category tags="[crew, marine, rookie]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, marine, rookie]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" min="1" max="3" />
         <skill type="morale" exact="0" />
@@ -977,7 +977,7 @@
 
     <!-- Veteran -->
     <character id="tpwar_service_paranid_random_veteran" group="paranid.service">
-      <category tags="[crew, service, veteran]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, service, veteran]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="engineering" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -988,7 +988,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_marine_paranid_random_veteran" group="paranid.marine">
-      <category tags="[crew, marine, veteran]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, marine, veteran]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -1001,7 +1001,7 @@
 
     <!-- Elite -->
     <character id="tpwar_service_paranid_random_elite" group="paranid.service">
-      <category tags="[crew, service, elite]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, service, elite]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="engineering" min="12" />
         <skill type="morale" min="12" />
@@ -1012,7 +1012,7 @@
       <owner list="[goner, buccaneers, heretics]" />
     </character>
     <character id="tpwar_marine_paranid_random_elite" group="paranid.marine">
-      <category tags="[crew, marine, elite]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[crew, marine, elite]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="boarding" min="12" />
         <skill type="morale" min="12" />
@@ -1024,7 +1024,7 @@
     </character>
 
     <character id="tpwar_platform_trader_paranid_random" group="paranid.trader">
-      <category tags="[trader, licencetrader]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[trader, licencetrader]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="management" min="5" max="9" />
         <skill type="morale" max="12" />
@@ -1037,7 +1037,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_ship_trader_paranid_random" group="paranid.shiptrader">
-      <category tags="[trader, shiptrader]" faction="[goner, buccaneers, heretics, faction.player]" race="paranid" />
+      <category tags="[trader, shiptrader]" faction="[goner, buccaneers, heretics, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="management" min="5" max="9" />
         <skill type="morale" max="12" />
@@ -1050,7 +1050,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_shadyguy_paranid_random" group="paranid.shadyguy">
-      <category tags="[shadyguy]" faction="[paranid, holyorder, alliance, faction.player]" race="paranid" />
+      <category tags="[shadyguy]" faction="[paranid, holyorder, alliance, faction.player, beryll]" race="paranid" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -1106,7 +1106,7 @@
     <!-- Split -->
     <!-- Generic Split Characters -->
     <character id="tpwar_trader_split_random" group="split.trader.female">
-      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, pilot, aipilot, traderpilot, masstraffic]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="piloting" min="6" max="12" />
         <skill type="morale" max="12" />
@@ -1118,7 +1118,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_fighter_split_random" group="split.pilot.female">
-      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, officer, pilot, aipilot, fighterpilot, commander, masstraffic, watchdog]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -1130,7 +1130,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_manager_split_random" group="split.manager.female">
-      <category tags="[crew, officer, manager]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, officer, manager]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -1143,7 +1143,7 @@
     </character>
     <!-- regular -->
     <character id="tpwar_service_split_random" group="split.service.female">
-      <category tags="[crew, service, regular]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, service, regular]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="engineering" min="5" max="9" />
         <skill type="morale" max="12" />
@@ -1155,7 +1155,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_marine_split_random" group="split.marine.female">
-      <category tags="[crew, marine, regular]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, marine, regular]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" max="5" />
         <skill type="morale" max="12" />
@@ -1168,7 +1168,7 @@
     </character>
     <!-- passenger -->
     <character id="tpwar_passenger_split_random" group="split.passenger.female">
-      <category tags="[crew, passenger]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, passenger]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -1179,7 +1179,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_prisoner_split_random" group="split.prisoner.female">
-      <category tags="[crew, prisoner]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, prisoner]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -1192,7 +1192,7 @@
 
     <!-- Rookies -->
     <character id="tpwar_service_split_random_rookie" group="split.service.female">
-      <category tags="[crew, service, rookie]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, service, rookie]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="engineering" exact="1" />
         <skill type="morale" max="2" />
@@ -1204,7 +1204,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_marine_split_random_rookie" group="split.marine.female">
-      <category tags="[crew, marine, rookie]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, marine, rookie]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" min="1" max="2" />
         <skill type="morale" max="1" />
@@ -1218,7 +1218,7 @@
 
     <!-- Veteran -->
     <character id="tpwar_service_split_random_veteran" group="split.service.female">
-      <category tags="[crew, service, veteran]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, service, veteran]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="engineering" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -1229,7 +1229,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_marine_split_random_veteran" group="split.marine.female">
-      <category tags="[crew, marine, veteran]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, marine, veteran]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -1242,7 +1242,7 @@
 
     <!-- Elite -->
     <character id="tpwar_service_split_random_elite" group="split.service.female">
-      <category tags="[crew, service, elite]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, service, elite]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="engineering" min="12" />
         <skill type="morale" min="12" />
@@ -1253,7 +1253,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_marine_split_random_elite" group="split.marine.female">
-      <category tags="[crew, marine, elite]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[crew, marine, elite]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="boarding" min="12" />
         <skill type="morale" min="12" />
@@ -1264,7 +1264,7 @@
       <owner list="[scaleplate, alliance]" />
     </character>
     <character id="tpwar_platform_trader_split_random" group="split.trader.female">
-      <category tags="[trader, licencetrader]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[trader, licencetrader]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -1277,7 +1277,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_ship_trader_split_random" group="split.shiptrader.female">
-      <category tags="[trader, shiptrader]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[trader, shiptrader]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="management" min="9" max="12" />
         <skill type="morale" max="12" />
@@ -1290,7 +1290,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_shadyguy_split_random" group="split.shadyguy.female">
-      <category tags="[shadyguy]" faction="[scaleplate, alliance, faction.player]" race="split" />
+      <category tags="[shadyguy]" faction="[scaleplate, alliance, faction.player, beryll]" race="split" />
       <skills>
         <skill type="piloting" min="5" max="12" />
         <skill type="morale" max="12" />
@@ -1307,7 +1307,7 @@
     <!-- multi -->
     <!-- Generic multi Characters -->
     <character id="tpwar_trader_multi_random" group="argon.allraces">
-      <category tags="[multitraderpilot]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multitraderpilot]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="7" max="14" />
         <skill type="morale" max="12" />
@@ -1319,7 +1319,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_fighter_multi_random" group="argon.allraces">
-      <category tags="[multipilot]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multipilot]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="7" max="14" />
         <skill type="morale" max="12" />
@@ -1331,7 +1331,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_manager_multi_random" group="argon.allraces">
-      <category tags="[multimanager]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multimanager]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -1344,7 +1344,7 @@
     </character>
     <!-- regular -->
     <character id="tpwar_service_multi_random" group="argon.allraces">
-      <category tags="[multiservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multiservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -1356,7 +1356,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_marine_multi_random" group="argon.allraces">
-      <category tags="[multimarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multimarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
       <skills>
         <skill type="boarding" min="1" max="5" />
@@ -1369,7 +1369,7 @@
     </character>
     <!-- passengers -->
     <character id="tpwar_passenger_multi_random" group="argon.allraces">
-      <category tags="[multipassenger]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multipassenger]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -1380,7 +1380,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_prisoner_multi_random" group="argon.allraces">
-      <category tags="[multiprisoner]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multiprisoner]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="boarding" exact="0" />
         <skill type="engineering" exact="0" />
@@ -1393,7 +1393,7 @@
 
     <!-- Rookies -->
     <character id="tpwar_service_multi_random_rookie" group="argon.allraces">
-      <category tags="[multirookieservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multirookieservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="1" max="2" />
         <skill type="morale" max="3" />
@@ -1405,7 +1405,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_marine_multi_random_rookie" group="argon.allraces">
-      <category tags="[multirookiemarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multirookiemarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
       <skills>
         <skill type="boarding" min="1" max="2" />
@@ -1418,7 +1418,7 @@
     </character>
     <!-- Veteran -->
     <character id="tpwar_service_multi_random_veteran" group="argon.allraces">
-      <category tags="[multiveteranservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multiveteranservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="6" max="12" />
         <skill type="morale" min="6" max="12" />
@@ -1429,7 +1429,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_marine_multi_random_veteran" group="argon.allraces">
-      <category tags="[multiveteranmarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multiveteranmarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
       <skills>
         <skill type="boarding" min="6" max="12" />
@@ -1441,7 +1441,7 @@
     </character>
     <!-- Elite -->
     <character id="tpwar_service_multi_random_elite" group="argon.allraces">
-      <category tags="[multieliteservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multieliteservice]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="engineering" min="12" />
         <skill type="morale" min="12" />
@@ -1452,7 +1452,7 @@
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
     </character>
     <character id="tpwar_marine_multi_random_elite" group="argon.allraces">
-      <category tags="[multielitemarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multielitemarine]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <owner list="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
       <skills>
         <skill type="boarding" min="12" />
@@ -1464,7 +1464,7 @@
     </character>
 
     <character id="tpwar_platform_trader_multi_random" group="argon.allraces">
-      <category tags="[multitrader]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multitrader]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -1477,7 +1477,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_ship_trader_multi_random" group="argon.allraces">
-      <category tags="[multishiptrader]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multishiptrader]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="management" min="4" max="11" />
         <skill type="morale" max="12" />
@@ -1490,7 +1490,7 @@
       <stock ref="'default_trader'" />
     </character>
     <character id="tpwar_shadyguy_multi_random" group="argon.allraces">
-      <category tags="[multishadyguy]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player]" race="argon" />
+      <category tags="[multishadyguy]" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy, faction.player, beryll]" race="argon" />
       <skills>
         <skill type="piloting" min="8" max="11" />
         <skill type="morale" max="12" />
