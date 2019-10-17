@@ -4,7 +4,7 @@
         <cue name="Init" instantiate="true">
             <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
-                <!-- <check_value value="false" /> -->
+                <check_value value="false" />
             </conditions>
             <cues>
                 <cue name="Controls">

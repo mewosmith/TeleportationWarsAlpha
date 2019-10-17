@@ -297,7 +297,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -309,7 +309,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -321,7 +321,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -333,7 +333,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -345,7 +345,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -357,7 +357,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -369,7 +369,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -381,7 +381,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -393,7 +393,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -405,7 +405,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -417,7 +417,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -429,7 +429,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -441,7 +441,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -453,7 +453,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -465,7 +465,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -477,7 +477,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -489,7 +489,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -501,7 +501,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -513,7 +513,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -525,7 +525,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -537,7 +537,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -549,7 +549,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -561,7 +561,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -573,7 +573,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -585,7 +585,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -597,7 +597,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -609,7 +609,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -621,7 +621,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -633,7 +633,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -645,7 +645,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -657,7 +657,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -669,7 +669,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -681,7 +681,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -693,7 +693,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -705,7 +705,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -717,7 +717,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -729,7 +729,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -741,7 +741,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -753,7 +753,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -765,7 +765,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -777,7 +777,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -789,7 +789,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -801,7 +801,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -813,7 +813,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -825,7 +825,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -837,7 +837,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -849,7 +849,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -861,7 +861,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -873,7 +873,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -885,7 +885,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -897,7 +897,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -909,7 +909,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -921,7 +921,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -933,7 +933,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -945,7 +945,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -957,7 +957,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -969,7 +969,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -981,7 +981,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -993,7 +993,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1005,7 +1005,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1017,7 +1017,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1029,7 +1029,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1041,7 +1041,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1053,7 +1053,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1065,7 +1065,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1077,7 +1077,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1089,7 +1089,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1101,7 +1101,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1113,7 +1113,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -1125,7 +1125,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1137,7 +1137,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1149,7 +1149,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -1161,7 +1161,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1173,7 +1173,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -1185,7 +1185,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1197,7 +1197,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1209,7 +1209,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1221,7 +1221,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1233,7 +1233,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1245,7 +1245,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1257,7 +1257,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1269,7 +1269,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1281,7 +1281,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1293,7 +1293,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1305,7 +1305,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1317,7 +1317,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1329,7 +1329,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1341,7 +1341,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1353,7 +1353,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1365,7 +1365,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1377,7 +1377,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1389,7 +1389,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1401,7 +1401,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1413,7 +1413,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1425,7 +1425,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1437,7 +1437,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1449,7 +1449,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1461,7 +1461,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1473,7 +1473,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1485,7 +1485,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1497,7 +1497,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1509,7 +1509,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1521,7 +1521,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1533,7 +1533,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -1545,7 +1545,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1557,7 +1557,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1569,7 +1569,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1581,7 +1581,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1593,7 +1593,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1605,7 +1605,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1617,7 +1617,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1629,7 +1629,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1641,7 +1641,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1653,7 +1653,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1665,7 +1665,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1677,7 +1677,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -1689,7 +1689,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1701,7 +1701,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1713,7 +1713,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1725,7 +1725,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1737,7 +1737,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1749,7 +1749,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1761,7 +1761,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1773,7 +1773,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -1785,7 +1785,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1797,7 +1797,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1809,7 +1809,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -1821,7 +1821,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -1833,7 +1833,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1845,7 +1845,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1857,7 +1857,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1869,7 +1869,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1881,7 +1881,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1893,7 +1893,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -1905,7 +1905,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1917,7 +1917,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[defence]" />
         <loadout>
@@ -1929,7 +1929,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -1941,7 +1941,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1953,7 +1953,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1965,7 +1965,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -1977,7 +1977,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -1989,7 +1989,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -2001,7 +2001,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -2013,7 +2013,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2025,7 +2025,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2037,7 +2037,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -2049,7 +2049,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2061,7 +2061,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2073,7 +2073,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -2085,7 +2085,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2097,7 +2097,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2109,7 +2109,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -2121,7 +2121,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2133,7 +2133,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2145,7 +2145,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -2157,7 +2157,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2169,7 +2169,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2181,7 +2181,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -2193,7 +2193,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -2205,7 +2205,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" relation="self" comparison="ge" />
+      <location class="galaxy" solitary="true" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -2213,31 +2213,7 @@
         </loadout>
       </station>
     </station>
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
-    <!-- TRADERS LAND -->
+ 
     <station id="station_1_goner" race="argon" owner="goner">
       <quotas>
         <quota galaxy="1" />
