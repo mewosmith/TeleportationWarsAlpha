@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <add sel="/groups/group[@name='asteroid_highyield_v1']">
+        <select macro="env_ast_ore_m_04_macro" />
+        <select macro="env_ast_ore_m_05_macro" />
+        <select macro="env_ast_ore_m_06_macro" />
+        <select macro="env_ast_ore_xl_01_macro" />
+        <select macro="env_ast_niv_m_04_macro" />
+        <select macro="env_ast_niv_m_05_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_highyield_sil_v1']">
+        <select macro="env_ast_crystal_xl_01_macro" />
+        <select macro="env_ast_crystal_m_03_macro" />
+        <select macro="env_ast_crystal_m_04_macro" />
+        <select macro="env_ast_crystal_m_05_macro" />
+        <select macro="env_ast_crystal_s_04_macro" />
+        <select macro="env_ast_ore_m_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_highyield_niv_v1']">
+        <select macro="env_ast_niv_m_02_macro" />
+        <select macro="env_ast_niv_m_03_macro" />
+        <select macro="env_ast_niv_m_04_macro" />
+        <select macro="env_ast_niv_s_04_macro" />
+        <select macro="env_ast_niv_s_05_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_xxl']">
+        <select macro="env_ast_ore_xl_01_macro" />
+        <select macro="env_ast_ore_xl_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_xl']">
+        <select macro="env_ast_ore_xxl_01_macro" />
+        <select macro="env_ast_ore_l_01_macro" />
+        <select macro="env_ast_ore_l_02_macro" />
+        <select macro="env_ast_ore_l_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_l']">
+        <select macro="env_ast_ore_xl_01_macro" />
+        <select macro="env_ast_ore_xl_02_macro" />
+        <select macro="env_ast_ore_m_02_macro" />
+        <select macro="env_ast_ore_m_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_m']">
+        <select macro="env_ast_ore_l_04_macro" />
+        <select macro="env_ast_ore_l_05_macro" />
+        <select macro="env_ast_ore_s_01_macro" />
+        <select macro="env_ast_ore_s_02_macro" />
+        <select macro="env_ast_ore_s_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_s']">
+        <select macro="env_ast_ore_xs_02_macro" />
+        <select macro="env_ast_ore_xs_03_macro" />
+        <select macro="env_ast_ore_m_04_macro" />
+        <select macro="env_ast_ore_m_05_macro" />
+        <select macro="env_ast_ore_m_06_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ore_xs']">
+        <select macro="env_ast_ore_s_04_macro" />
+        <select macro="env_ast_ore_s_05_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_silicon_xl']">
+        <select macro="env_ast_crystal_l_01_macro" />
+        <select macro="env_ast_crystal_l_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_silicon_l']">
+        <select macro="env_ast_crystal_m_01_macro" />
+        <select macro="env_ast_crystal_m_02_macro" />
+        <select macro="env_ast_crystal_m_03_macro" />
+        <select macro="env_ast_crystal_xl_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_silicon_m']">
+        <select macro="env_ast_crystal_l_02_macro" />
+        <select macro="env_ast_crystal_l_03_macro" />
+        <select macro="env_ast_crystal_s_01_macro" />
+        <select macro="env_ast_crystal_s_02_macro" />
+        <select macro="env_ast_crystal_s_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_silicon_s']">
+        <select macro="env_ast_crystal_m_04_macro" />
+        <select macro="env_ast_crystal_m_05_macro" />
+        <select macro="env_ast_crystal_m_06_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_silicon_xs']">
+        <select macro="env_ast_crystal_s_04_macro" />
+        <select macro="env_ast_crystal_s_05_macro" />
+        <select macro="env_ast_crystal_s_06_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_nividium_l']">
+        <select macro="env_ast_niv_m_01_macro" />
+        <select macro="env_ast_niv_m_02_macro" />
+        <select macro="env_ast_niv_m_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_nividium_m']">
+        <select macro="env_ast_niv_s_01_macro" />
+        <select macro="env_ast_niv_s_02_macro" />
+        <select macro="env_ast_niv_s_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_nividium_s']">
+        <select macro="env_ast_niv_m_03_macro" />
+        <select macro="env_ast_niv_m_04_macro" />
+        <select macro="env_ast_niv_m_05_macro" />
+        <select macro="env_ast_niv_xs_02_macro" />
+        <select macro="env_ast_niv_xs_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_nividium_xs']">
+        <select macro="env_ast_niv_s_03_macro" />
+        <select macro="env_ast_niv_s_04_macro" />
+        <select macro="env_ast_niv_s_05_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ice_xl']">
+        <select macro="env_ast_ice_l_01_macro" />
+        <select macro="env_ast_ice_l_02_macro" />
+    </add>
+
+    <add sel="/groups/group[@name='asteroid_ice_l']">
+        <select macro="env_ast_ice_m_01_macro" />
+        <select macro="env_ast_ice_m_02_macro" />
+        <select macro="env_ast_ice_m_03_macro" />
+        <select macro="env_ast_ice_xl_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ice_m']">
+        <select macro="env_ast_ice_l_02_macro" />
+        <select macro="env_ast_ice_l_03_macro" />
+        <select macro="env_ast_ice_s_01_macro" />
+        <select macro="env_ast_ice_s_02_macro" />
+        <select macro="env_ast_ice_s_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ice_s']">
+        <select macro="env_ast_ice_m_04_macro" />
+        <select macro="env_ast_ice_m_05_macro" />
+        <select macro="env_ast_ice_m_06_macro" />
+        <select macro="env_ast_ice_xs_01_macro" />
+        <select macro="env_ast_ice_xs_03_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_ice_xs']">
+        <select macro="env_ast_ice_s_04_macro" />
+        <select macro="env_ast_ice_s_05_macro" />
+        <select macro="env_ast_ice_s_06_macro" />
+    </add>
+
+    <add sel="/groups/group[@name='asteroid_xenon_xxl']">
+        <select macro="env_asteroid_xenon_xl_01_macro" />
+        <select macro="env_asteroid_xenon_xl_02_macro" />
+        <select macro="env_asteroid_xenon_xl_03_macro" />
+        <select macro="env_asteroid_xenon_xl_04_macro" />
+        <select macro="env_asteroid_xenon_xl_05_macro" />
+        <select macro="env_asteroid_xenon_l_01_macro" />
+        <select macro="env_asteroid_xenon_l_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_xenon_xl']">
+        <select macro="env_asteroid_xenon_l_01_macro" />
+        <select macro="env_asteroid_xenon_l_02_macro" />
+        <select macro="env_asteroid_xenon_xxl_02_macro" />
+        <select macro="env_asteroid_xenon_xxl_03_macro" />
+        <select macro="env_asteroid_xenon_xxl_04_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_xenon_l']">
+        <select macro="env_asteroid_xenon_xl_03_macro" />
+        <select macro="env_asteroid_xenon_xl_04_macro" />
+        <select macro="env_asteroid_xenon_xl_05_macro" />
+        <select macro="env_asteroid_xenon_m_01_macro" />
+        <select macro="env_asteroid_xenon_m_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_xenon_m']">
+        <select macro="env_asteroid_xenon_l_01_macro" />
+        <select macro="env_asteroid_xenon_l_02_macro" />
+        <select macro="env_asteroid_xenon_s_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_xenon_s']">
+        <select macro="env_asteroid_xenon_m_01_macro" />
+        <select macro="env_asteroid_xenon_m_02_macro" />
+        <select macro="env_asteroid_xenon_xs_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='asteroid_xenon_xs']">
+        <select macro="env_asteroid_xenon_s_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='debris_xl']">
+        <select macro="env_debris_debris_l_01_macro"/>
+        <select macro="env_debris_debris_l_02_macro"/>
+        <select macro="env_debris_debris_l_02_container_macro"/>
+        <select macro="env_debris_debris_m_04_macro" />
+        <select macro="env_debris_debris_m_07_macro" />
+        <select macro="env_debris_debris_m_01_macro" />
+    </add>
+    <add sel="/groups/group[@name='debris_l']">
+        <select macro="env_debris_debris_xl_06_macro" weight="200"/>
+        <select macro="env_debris_debris_xl_02_macro" weight="200" />
+        <select macro="env_debris_debris_m_03_macro" weight="200" />
+        <select macro="env_debris_debris_m_05_macro" weight="200" />
+        <select macro="env_debris_debris_m_08_macro" weight="200" />
+        <select macro="env_debris_debris_m_01_macro" weight="200" />
+    </add>
+
+    <add sel="/groups/group[@name='debris_m']">
+        <select macro="env_debris_debris_l_02_container_macro"/>
+        <select macro="env_debris_debris_s_01_macro" />
+        <select macro="env_debris_debris_l_01_macro"/>
+        <select macro="env_debris_debris_l_02_macro"/>
+    </add>
+    <add sel="/groups/group[@name='debris_s']">
+        <select macro="env_debris_debris_m_02_macro" />
+        <select macro="env_debris_debris_m_04_macro" />
+        <select macro="env_debris_debris_m_06_macro" />
+        <select macro="env_debris_debris_m_08_macro" />
+        <select macro="env_debris_debris_m_10_macro" />
+    </add>
+    <add sel="/groups/group[@name='debris_station_l']">
+        <select macro="env_debris_debris_l_01_macro" weight="10"/>
+        <select macro="env_debris_debris_l_02_macro" weight="10"/>
+        <select macro="env_debris_debris_m_04_macro" weight="10" />
+        <select macro="env_debris_debris_m_05_macro" weight="10" />
+        <select macro="env_debris_debris_m_06_macro" weight="10" />
+        <select macro="env_debris_debris_xl_06_macro" weight="10" />
+        <select macro="env_debris_debris_xl_03_macro" weight="10" />
+        <select macro="env_debris_debris_xl_01_macro" weight="10" />
+    </add>
+    <add sel="/groups/group[@name='env_debris_station_l_05']">
+        <select macro="env_debris_station_l_01_macro" weight="100"/>
+        <select macro="env_debris_station_l_02_macro" weight="100"/>
+        <select macro="env_debris_station_l_03_macro" weight="100"/>
+        <select macro="env_debris_station_l_04_macro" weight="100"/>
+        <select macro="env_debris_debris_m_07_macro" weight="50" />
+        <select macro="env_debris_debris_m_08_macro" weight="50" />
+        <select macro="env_debris_debris_m_09_macro" weight="50" />
+        <select macro="env_debris_debris_m_10_macro" weight="50" />
+    </add>
+    <add sel="/groups/group[@name='debris_teladi_xl']">
+        <select macro="env_debris_station_l_06_macro"/>
+        <select macro="env_debris_debris_m_01_macro" />
+        <select macro="env_debris_debris_m_02_macro" />
+        <select macro="env_debris_debris_l_01_macro"/>
+    </add>
+    <add sel="/groups/group[@name='debris_paranid_xl']">
+        <select macro="env_debris_paranid_l_01_macro" />
+        <select macro="env_debris_split_xl_02_macro"/>
+        <select macro="env_debris_split_xl_03_macro"/>
+        <select macro="env_debris_xenon_xl_06_macro"/>
+        <select macro="env_debris_xenon_xl_07_macro"/>
+    </add>
+    <add sel="/groups/group[@name='debris_paranid_l']">
+        <select macro="env_debris_xenon_l_01_macro"/>
+        <select macro="env_debris_xenon_l_02_macro"/>
+    </add>
+    <add sel="/groups/group[@name='debris_split_xl']">
+        <select macro="env_debris_paranid_xl_03_macro" />
+        <select macro="env_debris_paranid_xl_04_macro" />
+        <select macro="env_debris_xenon_xl_01_macro"/>
+        <select macro="env_debris_xenon_xl_02_macro"/>
+        <select macro="env_debris_xenon_xl_03_macro"/>
+    </add>
+    <add sel="/groups/group[@name='debris_split_s']">
+        <select macro="env_debris_xenon_m_01_macro" />
+        <select macro="env_debris_debris_m_03_macro" />
+        <select macro="env_debris_debris_m_04_macro" />
+        <select macro="env_debris_debris_m_05_macro" />
+    </add>
+    <add sel="/groups/group[@name='debris_xenon_xl']">
+        <select macro="env_debris_split_xl_04_macro" weight="10"/>
+        <select macro="env_debris_split_xl_01_container_macro" weight="1"/>
+        <select macro="env_debris_paranid_xl_01_macro" />
+        <select macro="env_debris_paranid_xl_02_macro" />
+        <select macro="env_debris_teladi_xl_01_macro" />
+        <select macro="env_debris_teladi_xl_02_macro" />
+    </add>
+    <add sel="/groups/group[@name='debris_xenon_l']">
+        <select macro="env_debris_paranid_l_01_macro" weight="10" />
+        <select macro="env_debris_station_l_02_macro" weight="10"/>
+        <select macro="env_debris_station_l_03_macro" weight="10"/>
+        <select macro="env_debris_debris_l_01_macro" weight="400"/>
+        <select macro="env_debris_debris_l_02_macro" weight="400"/>
+    </add>
+    <add sel="/groups/group[@name='debris_xenon_m']">
+        <select macro="env_debris_debris_m_01_macro" />
+        <select macro="env_debris_debris_m_02_macro" />
+        <select macro="env_debris_debris_m_03_macro" />
+        <select macro="env_debris_debris_m_08_macro" />
+        <select macro="env_debris_debris_m_09_macro" />
+        <select macro="env_debris_debris_m_10_macro" />
+    </add>
+</diff>
+
+
+  <!-- <group name="asteroid_highyield_v1" resource="ore" yield="2400" yieldvariation="0.5">
+    <select macro="env_ast_niv_l_01_macro" />
+    <select macro="env_ast_niv_l_02_macro" />
+    <select macro="env_ast_ore_l_01_macro" />
+    <select macro="env_ast_ore_l_02_macro" />
+    <select macro="env_ast_ore_l_03_macro" />
+  </group> -->
+  <!-- <group name="asteroid_highyield_sil_v1" resource="silicon" yield="2400" yieldvariation="0.5">
+    <select macro="env_ast_niv_l_01_macro" />
+    <select macro="env_ast_niv_l_02_macro" />
+    <select macro="env_ast_crystal_l_01_macro" />
+    <select macro="env_ast_crystal_l_02_macro" />
+    <select macro="env_ast_crystal_l_03_macro" />
+  </group> -->
+   <!-- <group name="asteroid_highyield_niv_v1" resource="nividium" yield="2400" yieldvariation="0.5">
+     <select macro="env_ast_niv_l_01_macro" />
+    <select macro="env_ast_niv_l_02_macro" />
+    <select macro="env_ast_niv_l_03_macro" />
+    <select macro="env_ast_niv_l_04_macro" />
+    <select macro="env_ast_niv_l_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_xxl" resource="ore" yield="800" yieldvariation="0.5">
+    <select macro="env_ast_ore_xxl_01_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_xl" resource="ore" yield="800" yieldvariation="0.5">
+    <select macro="env_ast_ore_xl_01_macro" />
+    <select macro="env_ast_ore_xl_02_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_l" resource="ore" yield="400" yieldvariation="0.5">
+    <select macro="env_ast_ore_l_01_macro" />
+    <select macro="env_ast_ore_l_02_macro" />
+    <select macro="env_ast_ore_l_03_macro" />
+    <select macro="env_ast_ore_l_04_macro" />
+    <select macro="env_ast_ore_l_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_m" resource="ore" yield="200" yieldvariation="0.5">
+    <select macro="env_ast_ore_m_01_macro" />
+    <select macro="env_ast_ore_m_02_macro" />
+    <select macro="env_ast_ore_m_03_macro" />
+    <select macro="env_ast_ore_m_04_macro" />
+    <select macro="env_ast_ore_m_05_macro" />
+    <select macro="env_ast_ore_m_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_s" resource="ore" yield="100" yieldvariation="0.5">
+    <select macro="env_ast_ore_s_01_macro" />
+    <select macro="env_ast_ore_s_02_macro" />
+    <select macro="env_ast_ore_s_03_macro" />
+    <select macro="env_ast_ore_s_04_macro" />
+    <select macro="env_ast_ore_s_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ore_xs" resource="ore" yield="10" yieldvariation="0.5">
+    <select macro="env_ast_ore_xs_01_macro" />
+    <select macro="env_ast_ore_xs_02_macro" />
+    <select macro="env_ast_ore_xs_03_macro" />
+    <select macro="env_ast_ore_xs_04_macro" />
+    <select macro="env_ast_ore_xs_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_silicon_xl" resource="silicon" yield="800" yieldvariation="0.5">
+    <select macro="env_ast_crystal_xl_01_macro" />
+  </group> -->
+  <!-- <group name="asteroid_silicon_l" resource="silicon" yield="400" yieldvariation="0.5">
+    <select macro="env_ast_crystal_l_01_macro" />
+    <select macro="env_ast_crystal_l_02_macro" />
+    <select macro="env_ast_crystal_l_03_macro" />
+  </group> -->
+  <!-- <group name="asteroid_silicon_m" resource="silicon" yield="200" yieldvariation="0.5">
+    <select macro="env_ast_crystal_m_01_macro" />
+    <select macro="env_ast_crystal_m_02_macro" />
+    <select macro="env_ast_crystal_m_03_macro" />
+    <select macro="env_ast_crystal_m_04_macro" />
+    <select macro="env_ast_crystal_m_05_macro" />
+    <select macro="env_ast_crystal_m_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_silicon_s" resource="silicon" yield="100" yieldvariation="0.5">
+    <select macro="env_ast_crystal_s_01_macro" />
+    <select macro="env_ast_crystal_s_02_macro" />
+    <select macro="env_ast_crystal_s_03_macro" />
+    <select macro="env_ast_crystal_s_04_macro" />
+    <select macro="env_ast_crystal_s_05_macro" />
+    <select macro="env_ast_crystal_s_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_silicon_xs" resource="silicon" yield="10" yieldvariation="0.5">
+    <select macro="env_ast_crystal_xs_01_macro" />
+    <select macro="env_ast_crystal_xs_02_macro" />
+    <select macro="env_ast_crystal_xs_03_macro" />
+    <select macro="env_ast_crystal_xs_04_macro" />
+    <select macro="env_ast_crystal_xs_05_macro" />
+    <select macro="env_ast_crystal_xs_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_nividium_l" resource="nividium" yield="400" yieldvariation="0.5">
+    <select macro="env_ast_niv_l_01_macro" />
+    <select macro="env_ast_niv_l_02_macro" />
+    <select macro="env_ast_niv_l_03_macro" />
+    <select macro="env_ast_niv_l_04_macro" />
+    <select macro="env_ast_niv_l_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_nividium_m" resource="nividium" yield="200" yieldvariation="0.5">
+    <select macro="env_ast_niv_m_01_macro" />
+    <select macro="env_ast_niv_m_02_macro" />
+    <select macro="env_ast_niv_m_03_macro" />
+    <select macro="env_ast_niv_m_04_macro" />
+    <select macro="env_ast_niv_m_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_nividium_s" resource="nividium" yield="100" yieldvariation="0.5">
+    <select macro="env_ast_niv_s_01_macro" />
+    <select macro="env_ast_niv_s_02_macro" />
+    <select macro="env_ast_niv_s_03_macro" />
+    <select macro="env_ast_niv_s_04_macro" />
+    <select macro="env_ast_niv_s_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_nividium_xs" resource="nividium" yield="10" yieldvariation="0.5">
+    <select macro="env_ast_niv_xs_01_macro" />
+    <select macro="env_ast_niv_xs_02_macro" />
+    <select macro="env_ast_niv_xs_03_macro" />
+    <select macro="env_ast_niv_xs_04_macro" />
+    <select macro="env_ast_niv_xs_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ice_xl" resource="ice" yield="800" yieldvariation="0.5">
+    <select macro="env_ast_ice_xl_01_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ice_l" resource="ice" yield="400" yieldvariation="0.5">
+    <select macro="env_ast_ice_l_01_macro" />
+    <select macro="env_ast_ice_l_02_macro" />
+    <select macro="env_ast_ice_l_03_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ice_m" resource="ice" yield="200" yieldvariation="0.5">
+    <select macro="env_ast_ice_m_01_macro" />
+    <select macro="env_ast_ice_m_02_macro" />
+    <select macro="env_ast_ice_m_03_macro" />
+    <select macro="env_ast_ice_m_04_macro" />
+    <select macro="env_ast_ice_m_05_macro" />
+    <select macro="env_ast_ice_m_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ice_s" resource="ice" yield="100" yieldvariation="0.5">
+    <select macro="env_ast_ice_s_01_macro" />
+    <select macro="env_ast_ice_s_02_macro" />
+    <select macro="env_ast_ice_s_03_macro" />
+    <select macro="env_ast_ice_s_04_macro" />
+    <select macro="env_ast_ice_s_05_macro" />
+    <select macro="env_ast_ice_s_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_ice_xs" resource="ice" yield="10" yieldvariation="0.5">
+    <select macro="env_ast_ice_xs_01_macro" />
+    <select macro="env_ast_ice_xs_02_macro" />
+    <select macro="env_ast_ice_xs_03_macro" />
+    <select macro="env_ast_ice_xs_04_macro" />
+    <select macro="env_ast_ice_xs_05_macro" />
+    <select macro="env_ast_ice_xs_06_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_xxl">
+    <select macro="env_asteroid_xenon_xxl_01_macro" />
+    <select macro="env_asteroid_xenon_xxl_02_macro" />
+    <select macro="env_asteroid_xenon_xxl_03_macro" />
+    <select macro="env_asteroid_xenon_xxl_04_macro" />
+    <select macro="env_asteroid_xenon_xxl_05_macro" />
+    <select macro="env_asteroid_xenon_xxl_06_macro" />
+    <select macro="env_asteroid_xenon_xxl_07_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_xl">
+    <select macro="env_asteroid_xenon_xl_01_macro" />
+    <select macro="env_asteroid_xenon_xl_02_macro" />
+    <select macro="env_asteroid_xenon_xl_03_macro" />
+    <select macro="env_asteroid_xenon_xl_04_macro" />
+    <select macro="env_asteroid_xenon_xl_05_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_l">
+    <select macro="env_asteroid_xenon_l_01_macro" />
+    <select macro="env_asteroid_xenon_l_02_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_m">
+    <select macro="env_asteroid_xenon_m_01_macro" />
+    <select macro="env_asteroid_xenon_m_02_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_s">
+    <select macro="env_asteroid_xenon_s_01_macro" />
+  </group> -->
+  <!-- <group name="asteroid_xenon_xs">
+    <select macro="env_asteroid_xenon_xs_01_macro" />
+  </group> -->
+  <!-- <group name="debris_xl">
+    <select macro="env_debris_debris_xl_01_macro" />
+    <select macro="env_debris_debris_xl_02_macro" />
+    <select macro="env_debris_debris_xl_03_macro" />
+    <select macro="env_debris_debris_xl_04_macro" />
+    <select macro="env_debris_debris_xl_05_macro" />
+    <select macro="env_debris_debris_xl_06_macro" />
+    <select macro="env_debris_debris_xl_07_macro" />
+    <select macro="env_debris_debris_xl_08_macro" />
+  </group> -->
+  <!-- <group name="debris_l">
+    <select macro="env_debris_debris_l_01_macro" weight="400"/>
+    <select macro="env_debris_debris_l_02_macro" weight="400"/>
+    <select macro="env_debris_debris_l_02_container_macro" weight="1"/>
+  </group> -->
+  <!-- <group name="debris_m">
+    <select macro="env_debris_debris_m_01_macro" />
+    <select macro="env_debris_debris_m_02_macro" />
+    <select macro="env_debris_debris_m_03_macro" />
+    <select macro="env_debris_debris_m_04_macro" />
+    <select macro="env_debris_debris_m_05_macro" />
+    <select macro="env_debris_debris_m_06_macro" />
+    <select macro="env_debris_debris_m_07_macro" />
+    <select macro="env_debris_debris_m_08_macro" />
+    <select macro="env_debris_debris_m_09_macro" />
+    <select macro="env_debris_debris_m_10_macro" />
+  </group> -->
+  <!-- <group name="debris_s">
+    <select macro="env_debris_debris_s_01_macro" />
+  </group> -->
+  <!-- <group name="debris_station_l">
+    <select macro="env_debris_station_l_01_macro" weight="10"/>
+    <select macro="env_debris_station_l_02_macro" weight="10"/>
+    <select macro="env_debris_station_l_03_macro" weight="10"/>
+    <select macro="env_debris_station_l_04_macro" weight="10"/>
+    <select macro="env_debris_station_l_05_macro" weight="10"/>
+    <select macro="env_debris_station_l_06_macro" weight="10"/>
+    <select macro="env_debris_station_l_05_container_macro" weight="1"/>
+  </group> -->
+  <!-- <group name="env_debris_station_l_05">
+    <select macro="env_debris_station_l_05_macro" weight="100"/>
+    <select macro="env_debris_station_l_05_container_macro" weight="10"/>
+  </group> -->
+  <!-- <group name="debris_teladi_xl">
+    <select macro="env_debris_teladi_xl_01_macro" />
+    <select macro="env_debris_teladi_xl_02_macro" />
+    <select macro="env_debris_teladi_xl_03_macro" />
+    <select macro="env_debris_teladi_xl_04_macro" />
+  </group> -->
+  <!-- <group name="debris_paranid_xl">
+    <select macro="env_debris_paranid_xl_01_macro" />
+    <select macro="env_debris_paranid_xl_02_macro" />
+    <select macro="env_debris_paranid_xl_03_macro" />
+    <select macro="env_debris_paranid_xl_04_macro" />
+  </group> -->
+  <!-- <group name="debris_paranid_l">
+    <select macro="env_debris_paranid_l_01_macro" />
+  </group> -->
+  <!-- <group name="debris_split_xl">
+    <select macro="env_debris_split_xl_01_macro" weight="10"/>
+    <select macro="env_debris_split_xl_02_macro" weight="10"/>
+    <select macro="env_debris_split_xl_03_macro" weight="10"/>
+    <select macro="env_debris_split_xl_04_macro" weight="10"/>
+    <select macro="env_debris_split_xl_01_container_macro" weight="1"/>
+  </group> -->
+  <!-- <group name="debris_split_s">
+    <select macro="env_debris_split_s_01_macro" />
+    <select macro="env_debris_split_s_02_macro" />
+  </group> -->
+  <!-- <group name="debris_xenon_xl">
+    <select macro="env_debris_xenon_xl_01_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_02_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_03_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_03_container_macro" weight="1"/>
+    <select macro="env_debris_xenon_xl_04_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_05_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_06_macro" weight="10"/>
+    <select macro="env_debris_xenon_xl_07_macro" weight="10"/>
+  </group> -->
+  <!-- <group name="debris_xenon_l">
+    <select macro="env_debris_xenon_l_01_macro" weight="10"/>
+    <select macro="env_debris_xenon_l_02_macro" weight="10"/>
+    <select macro="env_debris_xenon_l_02_container_macro" weight="1"/>
+    <select macro="env_debris_xenon_l_03_macro" weight="10"/>
+  </group> -->
+  <!-- <group name="debris_xenon_m">
+    <select macro="env_debris_xenon_m_01_macro" />
+  </group> -->
+

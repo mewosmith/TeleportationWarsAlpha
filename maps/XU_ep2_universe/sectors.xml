@@ -1,0 +1,2877 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- adjusting placement of gate zone in to PathtoProfit  -->
+<diff>
+  <replace sel="/macros/macro[@name='Cluster_05_Sector001_macro']/connections/connection[@name='Zone002_Cluster_05_Sector001_connection']/offset/position">
+    <position x="500192.2578125" y="0" z="-501598.5642089844" />
+  </replace>
+  <add sel="/macros">
+    <macro name="tppirate_Cluster_99_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone002_Cluster_99_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-90170.4387207031" y="0" z="13369.0224609375" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_99_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_99_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-90170.4387207031" y="0" z="113369.0224609375" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_99_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_99_Sector001_connection" ref="zones">
+          <offset>
+            <position x="315042.0625" y="0" z="248972.234375" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_99_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone001_Cluster_99_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_99_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_98_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_98_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_98_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_98_Sector001_connection" ref="zones">
+          <offset>
+            <position x="235000" y="0" z="187000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_98_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_98_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-235000" y="0" z="-187000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_98_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_97_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_97_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_97_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_97_Sector001_connection" ref="zones">
+          <offset>
+            <position x="290170.4387207031" y="0" z="-13369.0224609375" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_97_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_97_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-90170.4387207031" y="0" z="119375" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_97_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_96_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_96_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_96_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_96_Sector001_connection" ref="zones">
+          <offset>
+            <position x="89000" y="0" z="160000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_96_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_96_Sector001_connection" ref="zones">
+          <offset>
+            <position x="89000" y="0" z="-160000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_96_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_96_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-89000" y="0" z="-160000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_96_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_95_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_95_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_95_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_95_Sector001_connection" ref="zones">
+          <offset>
+            <position x="216000" y="0" z="85000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_95_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_95_Sector001_connection" ref="zones">
+          <offset>
+            <position x="45000" y="0" z="-175000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_95_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_95_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-145000" y="0" z="175000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_95_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_94_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_94_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_94_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_94_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-87000" y="0" z="213000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_94_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_94_Sector001_connection" ref="zones">
+          <offset>
+            <position x="45000" y="0" z="-115000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_94_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_94_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-345000" y="0" z="-515000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_94_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_93_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_93_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_93_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_93_Sector001_connection" ref="zones">
+          <offset>
+            <position x="5000" y="0" z="146000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_93_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_93_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-89000" y="0" z="-65000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_93_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_92_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_92_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_92_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_92_Sector001_connection" ref="zones">
+          <offset>
+            <position x="65000" y="0" z="225000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_92_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_92_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-165000" y="0" z="-125000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_92_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_91_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_91_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_91_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_91_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-95000" y="0" z="125000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_91_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone005_Cluster_91_Sector001_connection" ref="zones">
+          <offset>
+            <position x="75000" y="0" z="-150000" />
+          </offset>
+          <macro ref="tppirate_Zone005_Cluster_91_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_91_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-150000" y="0" z="-95000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_91_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_91_Sector001_connection" ref="zones">
+          <offset>
+            <position x="125000" y="0" z="75000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_91_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_90_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_90_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_90_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_90_Sector001_connection" ref="zones">
+          <offset>
+            <position x="75000" y="0" z="170000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_90_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_90_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-225000" y="0" z="-70000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_90_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_89_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_89_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_89_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone005_Cluster_89_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-150000" y="0" z="75000" />
+          </offset>
+          <macro ref="tppirate_Zone005_Cluster_89_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_89_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-75000" y="0" z="-15000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_89_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_89_Sector001_connection" ref="zones">
+          <offset>
+            <position x="155000" y="0" z="115000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_89_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_89_Sector001_connection" ref="zones">
+          <offset>
+            <position x="195000" y="0" z="-135000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_89_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_88_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_88_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_88_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_88_Sector001_connection" ref="zones">
+          <offset>
+            <position x="15000" y="0" z="-116000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_88_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_88_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-15000" y="0" z="116000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_88_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_87_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_87_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_87_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_87_Sector001_connection" ref="zones">
+          <offset>
+            <position x="55000" y="0" z="-198000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_87_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_87_Sector001_connection" ref="zones">
+          <offset>
+            <position x="155000" y="0" z="98000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_87_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_87_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-56000" y="0" z="214000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_87_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone005_Cluster_87_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-156000" y="0" z="-164000" />
+          </offset>
+          <macro ref="tppirate_Zone005_Cluster_87_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_86_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_86_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_86_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_86_Sector001_connection" ref="zones">
+          <offset>
+            <position x="215000" y="0" z="175000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_86_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_86_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-415000" y="0" z="-125000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_86_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_85_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_85_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_85_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_85_Sector001_connection" ref="zones">
+          <offset>
+            <position x="172000" y="0" z="-15000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_85_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_85_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-332000" y="0" z="415000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_85_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_84_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_84_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_84_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_84_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-65000" y="0" z="84000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_84_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_84_Sector001_connection" ref="zones">
+          <offset>
+            <position x="65000" y="0" z="-84000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_84_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_84_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-65000" y="0" z="-84000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_84_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_83_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_83_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_83_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_83_Sector001_connection" ref="zones">
+          <offset>
+            <position x="56000" y="0" z="75000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_83_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_83_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-56000" y="0" z="275000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_83_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_83_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-35000" y="0" z="-98000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_83_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone005_Cluster_83_Sector001_connection" ref="zones">
+          <offset>
+            <position x="265000" y="0" z="-87000" />
+          </offset>
+          <macro ref="tppirate_Zone005_Cluster_83_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_82_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_82_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_82_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_82_Sector001_connection" ref="zones">
+          <offset>
+            <position x="56000" y="0" z="154000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_82_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_82_Sector001_connection" ref="zones">
+          <offset>
+            <position x="456000" y="0" z="554000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_82_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_81_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_81_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_81_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_81_Sector001_connection" ref="zones">
+          <offset>
+            <position x="175000" y="0" z="-89000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_81_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone003_Cluster_81_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-16000" y="0" z="164000" />
+          </offset>
+          <macro ref="tppirate_Zone003_Cluster_81_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone004_Cluster_81_Sector001_connection" ref="zones">
+          <offset>
+            <position x="50000" y="200000" z="75000" />
+          </offset>
+          <macro ref="tppirate_Zone004_Cluster_81_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Cluster_80_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tppirate_Zone001_Cluster_80_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tppirate_Zone001_Cluster_80_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tppirate_Zone002_Cluster_80_Sector001_connection" ref="zones">
+          <offset>
+            <position x="68000" y="0" z="-2000" />
+          </offset>
+          <macro ref="tppirate_Zone002_Cluster_80_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="meditech_Cluster_01_Sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="meditech_Zone003_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="90170.4387207031" y="0" z="13369.0224609375" />
+          </offset>
+          <macro ref="meditech_Zone003_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="meditech_Zone002_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-190170.4387207031" y="0" z="-113369.0224609375" />
+          </offset>
+          <macro ref="meditech_Zone002_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="meditech_Zone004_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="315042.0625" y="0" z="248972.234375" />
+          </offset>
+          <macro ref="meditech_Zone004_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="meditech_Zone001_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="meditech_Zone001_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="meditech_Zone005_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="190170.4387207031" y="0" z="-70369.0224609375" />
+          </offset>
+          <macro ref="meditech_Zone005_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+        <connection name="meditech_Zone006_Cluster_01_Sector001_connection" ref="zones">
+          <offset>
+            <position x="-315042.0625" y="0" z="-248972.234375" />
+          </offset>
+          <macro ref="meditech_Zone006_Cluster_01_Sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+  </add>
+  <!-- more_map %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <add sel="/macros/macro[@name='Cluster_47_Sector001_macro']/connections">
+    <!-- 289 LL to 47 TR (Trinity Sanctum VII) -->
+    <connection name="Zone006_Cluster_47_Sector001_connection" ref="zones">
+      <offset>
+        <position x="54468.673828125" y="0" z="101060.8215332031" />
+      </offset>
+      <macro ref="Zone006_Cluster_47_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_01_Sector002_macro']/connections">
+    <!-- 210 LL to 01s02 TL (Grand Exchange 3)  -->
+    <connection name="Zone006_Cluster_01_Sector002_connection" ref="zones">
+      <offset>
+        <position x="154468.673828125" y="0" z="101060.8215332031" />
+      </offset>
+      <macro ref="Zone006_Cluster_01_Sector002_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_45_Sector001_macro']/connections">
+    <!-- 1217 Bottom to 45 Top (Silent Witness) -->
+    <connection name="Zone009_Cluster_45_Sector001_connection" ref="zones">
+      <offset>
+        <position x="0" y="0" z="101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_45_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_39_Sector001_macro']/connections">
+    <!-- 227 TR to 39 LL (Memory of Profit) -->
+    <connection name="Zone009_Cluster_39_Sector001_connection" ref="zones">
+      <offset>
+        <position x="-95000" y="0" z="-101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_39_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_12_Sector001_macro']/connections">
+    <!-- 188 Left to 12 TR (True Sight) -->
+    <connection name="Zone009_Cluster_12_Sector001_connection" ref="zones">
+      <offset>
+        <position x="100000" y="0" z="101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_12_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_15_Sector002_macro']/connections">
+    <!-- 393 LL to 15s2 TR (Ianamus Zura) -->
+    <connection name="Zone009_Cluster_15_Sector002_connection" ref="zones">
+      <offset>
+        <position x="100000" y="0" z="101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_15_Sector002_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_23_Sector001_macro']/connections">
+    <!-- 307 TL to 23 LR (Sacred Relic) -->
+    <connection name="Zone009_Cluster_23_Sector001_connection" ref="zones">
+      <offset>
+        <position x="100000" y="0" z="-101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_23_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_41_Sector001_macro']/connections">
+    <!-- 110 Right to 41 LL (Second Contact) -->
+    <connection name="Zone009_Cluster_41_Sector001_connection" ref="zones">
+      <offset>
+        <position x="-110000" y="0" z="-101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_41_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros/macro[@name='Cluster_35_Sector001_macro']/connections">
+    <!-- 221 TL to LR 35 (Lasting Vengeance) -->
+    <connection name="Zone009_Cluster_35_Sector001_connection" ref="zones">
+      <offset>
+        <position x="100000" y="0" z="-101060.8215332031" />
+      </offset>
+      <macro ref="Zone009_Cluster_35_Sector001_macro" connection="sector" />
+    </connection>
+  </add>
+  <add sel="/macros">
+    <macro name="tpthree_cluster110_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster110_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster110_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster110_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-152000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster110_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 110 Right to 41 LL (Second Contact) -->
+        <connection name="tpthree_zone003_cluster110_sector001_connection" ref="zones">
+          <offset>
+            <position x="95000" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster110_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1217_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1217_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1217_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1217_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1217_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 1217 Bottom to 45 Top (Silent Witness) -->
+        <connection name="tpthree_zone003_cluster1217_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster1217_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster307_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster307_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster307_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster307_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster307_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 307 TL to 23 LR (Sacred Relic) -->
+        <connection name="tpthree_zone003_cluster307_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster307_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster393_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster393_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster393_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster393_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster393_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 393 LL to 15s2 TR (Ianamus Zura) -->
+        <connection name="tpthree_zone003_cluster393_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster393_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster029_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster029_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster029_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster029_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster029_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster029_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster029_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster035_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster035_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster035_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster035_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster035_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster035_sector001_connection" ref="zones">
+          <offset>
+            <position x="89000" y="0" z="-95000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster035_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster035_sector001_connection" ref="zones">
+          <offset>
+            <position x="112000" y="0" z="-133000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster035_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster049_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster049_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster049_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster049_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster049_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster052_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster052_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster052_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster052_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster052_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster064_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster064_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster064_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster064_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster064_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster064_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster064_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster084_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster084_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster084_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster084_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster084_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster084_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster084_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster085_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster085_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster085_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster085_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster085_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster085_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster085_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster104_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster104_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster104_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster104_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster104_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster104_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster104_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster105_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster105_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster105_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster105_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster105_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster105_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster105_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster142_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster142_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster142_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster142_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster142_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster142_sector001_connection" ref="zones">
+          <offset>
+            <position x="7600" y="0" z="115000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster142_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster142_sector001_connection" ref="zones">
+          <offset>
+            <position x="-1500" y="0" z="93000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster142_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster143_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster143_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster143_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster143_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster143_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1158_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1158_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1158_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1158_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1158_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster176_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster176_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster176_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster176_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster176_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster176_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster176_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster177_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster177_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster177_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster177_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster177_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster177_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster177_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster178_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster178_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster178_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster178_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster178_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster178_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster178_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster183_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster183_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster183_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster183_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster183_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster185_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster185_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster185_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster185_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster185_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster188_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster188_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster188_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster188_sector001_connection" ref="zones">
+          <offset>
+            <position x="-15000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster188_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 188 Left to 12 TR (True Sight) -->
+        <connection name="tpthree_zone003_cluster188_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster188_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster195_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster195_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster195_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster195_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster195_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster195_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster195_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster196_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster196_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster196_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster196_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster196_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster196_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster196_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster196_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster196_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone005_cluster196_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone005_cluster196_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster203_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster203_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster203_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster203_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster203_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster203_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster203_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster203_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster203_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster204_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster204_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster204_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster204_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster204_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster204_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster204_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster205_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster205_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster205_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster205_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster205_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster205_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster205_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster205_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster205_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster210_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster210_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster210_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster210_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster210_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 210 LL to 01s02 TL (Grand Exchange 3)  -->
+        <connection name="tpthree_zone003_cluster210_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster210_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster215_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster215_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster215_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster215_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster215_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster215_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster215_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster217_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster217_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster217_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster217_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster217_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster217_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster217_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1220_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1220_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1220_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1220_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1220_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster1220_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster1220_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster227_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster227_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster227_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster227_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster227_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 227 TR to 39 LL (Memory of Profit) -->
+        <connection name="tpthree_zone003_cluster227_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster227_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster234_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster234_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster234_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster234_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster234_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster234_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster234_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1240_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1240_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1240_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1240_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1240_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster259_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster259_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster259_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster259_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="175000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster259_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1260_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1260_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1260_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1260_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1260_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster1260_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster1260_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster1260_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster1260_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1273_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1273_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1273_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1273_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1273_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster1273_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster1273_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster1273_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster1273_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster274_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster274_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster274_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster274_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster274_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster289_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster289_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster289_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster289_sector001_connection" ref="zones">
+          <offset>
+            <position x="25000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster289_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 289 LL to 47 TR (Trinity Sanctum VII) -->
+        <connection name="tpthree_zone003_cluster289_sector001_connection" ref="zones">
+          <offset>
+            <position x="-150000" y="0" z="-95000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster289_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster1292_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster1292_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster1292_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster1292_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster1292_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster1292_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster1292_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster293_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster293_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster293_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster293_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster293_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster293_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster293_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster295_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster295_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster295_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster295_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster295_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster296_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster296_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster296_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster296_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster296_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster296_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster296_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster296_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster296_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster314_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster314_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster314_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster314_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster314_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster331_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster331_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster331_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster331_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster331_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster331_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster331_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster371_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster371_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster371_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster371_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster371_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster384_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster384_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster384_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster384_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster384_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster390_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster390_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster390_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster390_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster390_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster390_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster390_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster390_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster390_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster050_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster050_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="-15000" y="0" z="123000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster050_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster050_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="103000" y="0" z="-110000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster050_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone005_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone005_cluster050_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone006_cluster050_sector001_connection" ref="zones">
+          <offset>
+            <position x="97000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone006_cluster050_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster051_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster051_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster051_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster051_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster051_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster069_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster069_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster069_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster069_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster069_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster070_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster070_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster070_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster070_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster070_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster145_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster145_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster145_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster145_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster145_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster165_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster165_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="-95000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster165_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="-105000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster165_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster165_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone005_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone005_cluster165_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone006_cluster165_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone006_cluster165_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster166_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster166_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster166_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster166_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster166_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster184_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster184_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster184_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster184_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster184_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster197_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster197_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster197_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster197_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster197_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster216_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster216_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster216_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster216_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster216_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone005_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone005_cluster216_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone006_cluster216_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone006_cluster216_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster235_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster235_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster235_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster235_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster235_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster236_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster236_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster236_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster236_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster236_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster343_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster343_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster343_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster343_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster343_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster363_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster363_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster363_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster363_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster363_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster364_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster364_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-135000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster364_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster364_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="-115000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster364_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone005_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="17000" y="0" z="-83000" />
+          </offset>
+          <macro ref="tpthree_zone005_cluster364_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone006_cluster364_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone006_cluster364_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster365_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster365_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster365_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster365_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster365_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster011_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster011_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster011_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster011_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster011_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster011_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster011_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster030_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster030_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster030_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster030_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster030_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster030_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster030_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster031_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster031_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster031_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster031_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster031_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster031_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster031_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster031_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster031_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster140_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster140_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster140_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster140_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster140_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster140_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster140_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster158_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster158_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster158_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster158_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster158_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster158_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster158_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster159_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster159_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster159_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster159_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster159_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster159_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster159_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster189_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster189_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster189_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster189_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster189_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster189_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster189_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster225_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster225_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster225_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster225_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster225_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster225_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster225_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster349_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster349_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster349_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster349_sector001_connection" ref="zones">
+          <offset>
+            <position x="-94000" y="0" z="-134000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster349_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster349_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster349_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster349_sector001_connection" ref="zones">
+          <offset>
+            <position x="-108000" y="0" z="-75000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster349_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster366_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster366_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster366_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster366_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster366_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster366_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster366_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster367_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster367_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster367_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster367_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster367_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster367_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster367_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster044_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster044_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster044_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster044_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster044_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster060_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster060_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster060_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster060_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster060_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster060_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster060_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster061_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster061_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster061_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster061_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster061_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster061_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster061_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster061_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster061_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster062_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster062_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster062_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster062_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster062_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster062_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster062_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster079_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster079_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster079_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster079_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster079_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster080_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster080_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster080_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster080_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster080_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster080_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster080_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster220_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster220_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster220_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster220_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster220_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster221_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster221_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster221_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster221_sector001_connection" ref="zones">
+          <offset>
+            <position x="120000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster221_sector001_macro" connection="sector" />
+        </connection>
+        <!-- 221 TL to LR 35 (Lasting Vengeance) -->
+        <connection name="tpthree_zone003_cluster221_sector001_connection" ref="zones">
+          <offset>
+            <position x="-105000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster221_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster240_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster240_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster240_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster240_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster240_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster240_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster240_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster241_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster241_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster241_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster241_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster241_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster241_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster241_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster241_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster241_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster260_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster260_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster260_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster260_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster260_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster260_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster260_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster261_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster261_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster261_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster261_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster261_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster261_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster261_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster262_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster262_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster262_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster262_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster262_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster262_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster262_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster262_sector001_connection" ref="zones">
+          <offset>
+            <position x="-200000" y="0" z="-200000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster262_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster273_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster273_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster273_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster273_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster273_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster281_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster281_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster281_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster281_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster281_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster281_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster281_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster290_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster290_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster290_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster290_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster290_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster291_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster291_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster291_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster291_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster291_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster291_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster291_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster292_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster292_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster292_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster292_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster292_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster292_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster292_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster311_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster311_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster311_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster311_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster311_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster311_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster311_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster311_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster311_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster312_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster312_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster312_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster312_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster312_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone003_cluster312_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone003_cluster312_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone004_cluster312_sector001_connection" ref="zones">
+          <offset>
+            <position x="100000" y="0" z="-100000" />
+          </offset>
+          <macro ref="tpthree_zone004_cluster312_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_cluster330_sector001_macro" class="sector">
+      <component ref="standardsector" />
+      <connections>
+        <connection name="tpthree_zone001_cluster330_sector001_connection" ref="zones">
+          <offset>
+            <position x="0" y="0" z="0" />
+          </offset>
+          <macro ref="tpthree_zone001_cluster330_sector001_macro" connection="sector" />
+        </connection>
+        <connection name="tpthree_zone002_cluster330_sector001_connection" ref="zones">
+          <offset>
+            <position x="-100000" y="0" z="100000" />
+          </offset>
+          <macro ref="tpthree_zone002_cluster330_sector001_macro" connection="sector" />
+        </connection>
+      </connections>
+    </macro>
+  </add>
+</diff>

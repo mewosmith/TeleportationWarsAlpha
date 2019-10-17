@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/macroxsd/x4_macro.xsd">
+    <macro name="tpwareq_pulse_large_beam_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_large_beam_gun_comp" />
+        <properties>
+            
+            <identification name="{734550,1231005}" basename="{734550,1231006}" shortname="{734550,1231007}" description="{734550,1231008}" mk="1" />
+            <bullet class="tpwareq_pulse_large_beam_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_beam_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_large_beam_turret_comp" />
+        <properties>
+            <identification name="{734550,12311005}" basename="{734550,12311006}" shortname="{734550,12311007}" makerrace="argon" description="{734550,12311008}" unique="0" mk="1" />
+            <bullet class="tpwareq_pulse_large_beam_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_missile_launcher_macro" class="missilelauncher">
+        <component ref="tpwareq_pulse_large_missile_launcher_comp" />
+        <properties>
+            <identification name="{734550,123005}" basename="{734550,123006}" shortname="{734550,123007}" description="{734550,123008}" unique="0" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_large_missile_macro" />
+            <reload time="1" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_missile_turret_macro" class="missileturret">
+        <component ref="tpwareq_pulse_large_missile_turret_comp" />
+        <properties>
+            <identification name="{734550,1230015}" basename="{734550,1230016}" shortname="{734550,1230017}" makerrace="argon" description="{734550,1230018}" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_large_missile_macro" />
+            
+            <rotationspeed max="30" />
+            <reload time="1"  />
+            <storage capacity="100" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_proj_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_large_proj_gun_comp" />
+        <properties>
+            <identification name="{734550,123001}" basename="{734550,123002}" shortname="{734550,123003}" description="{734550,123004}" mk="1" />
+            <bullet class="tpwareq_pulse_large_proj_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_proj_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_large_proj_turret_comp" />
+        <properties>
+            <identification name="{734550,1230011}" basename="{734550,1230012}" shortname="{734550,1230013}" makerrace="argon" description="{734550,1230014}" unique="0" mk="1" />
+            <bullet class="tpwareq_pulse_large_proj_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="2000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_beam_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_medium_beam_gun_comp" />
+        <properties>
+            <identification name="{734550,123105}" basename="{734550,123106}" shortname="{734550,123107}" description="{734550,123108}" mk="1" />
+            <bullet class="tpwareq_pulse_medium_beam_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_beam_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_medium_beam_turret_comp" />
+        <properties>
+            <identification name="{734550,1231105}" basename="{734550,1231106}" shortname="{734550,1231107}" makerrace="argon" description="{734550,1231108}" mk="1" />
+            <bullet class="tpwareq_pulse_medium_beam_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_missile_launcher_macro" class="missilelauncher">
+        <component ref="tpwareq_pulse_medium_missile_launcher_comp" />
+        <properties>
+            <identification name="{734550,12305}" basename="{734550,12306}" shortname="{734550,12307}" description="{734550,12308}" unique="0" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_medium_missile_macro" />
+            <reload time="1" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_missile_turret_macro" class="missileturret" alias="turret_arg_m_guided_02_mk1_macro">
+        <component ref="tpwareq_pulse_medium_missile_turret_comp" />
+        <properties>
+            <identification name="{734550,123015}" basename="{734550,123016}" shortname="{734550,123017}" makerrace="argon" description="{734550,123018}" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_medium_missile_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <storage capacity="10" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_proj_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_medium_proj_gun_comp" />
+        <properties>
+            <identification name="{734550,12301}" basename="{734550,12302}" shortname="{734550,12303}" description="{734550,12304}" mk="1" />
+            <bullet class="tpwareq_pulse_medium_proj_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_proj_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_medium_proj_turret_comp" />
+        <properties>
+            <identification name="{734550,123011}" basename="{734550,123012}" shortname="{734550,123012}" makerrace="argon" description="{734550,123011}" mk="1" />
+            <bullet class="tpwareq_pulse_medium_proj_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="1000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_small_beam_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_small_beam_gun_comp" />
+        <properties>
+            <identification name="{734550,12315}" basename="{734550,12316}" shortname="{734550,12317}" description="{734550,12318}" mk="1" />
+            <bullet class="tpwareq_pulse_small_beam_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="500" hittable="1" integrated="1" />
+            <effects>
+                <firing start="startshooting_gen_s_gatling_01_mk1" stop="stopshooting_gen_s_gatling_01_mk1" />
+            </effects>
+            <sounds>
+                <firing ref="wpn_beam_gen_01" />
+            </sounds>
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_small_missile_launcher_macro" class="missilelauncher">
+        <component ref="tpwareq_pulse_small_missile_launcher_comp" />
+        <properties>
+            <identification name="{734550,1235}" basename="{734550,1236}" shortname="{734550,1237}" description="{734550,1238}" unique="0" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_small_missile_macro" />
+            <reload time="1" />
+            <hull max="500" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_small_proj_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_small_proj_gun_comp" />
+        <properties>
+            <identification name="{734550,1231}" basename="{734550,1232}" shortname="{734550,1233}" description="{734550,1234}" mk="1" />
+            <bullet class="tpwareq_pulse_small_proj_bullet_macro" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="500" hittable="1" integrated="1" />
+            <effects>
+                <firing start="startshooting_gen_s_plasma_01_mk1" stop="stopshooting_gen_s_plasma_01_mk1" />
+            </effects>
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_beam_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_xlarge_beam_gun_comp" />
+        <properties>
+            <identification name="{734550,12310005}" basename="{734550,12310006}" shortname="{734550,12310007}" description="{734550,12310008}" mk="1" />
+            <bullet class="tpwareq_pulse_xlarge_beam_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_beam_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_xlarge_beam_turret_comp" />
+        <properties>
+            <identification name="{734550,123110005}" basename="{734550,123110006}" shortname="{734550,123110007}" makerrace="argon" description="{734550,123110008}" unique="0" mk="1" />
+            <bullet class="tpwareq_pulse_xlarge_beam_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_missile_launcher_macro" class="missilelauncher">
+        <component ref="tpwareq_pulse_xlarge_missile_launcher_comp" />
+        <properties>
+            <identification name="{734550,1230005}" basename="{734550,1230006}" shortname="{734550,1230007}" description="{734550,1230008}" unique="0" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_xlarge_missile_macro" />
+            <reload time="1" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_missile_turret_macro" class="missileturret">
+        <component ref="tpwareq_pulse_xlarge_missile_turret_comp" />
+        <properties>
+            <identification name="{734550,12300015}" basename="{734550,12300016}" shortname="{734550,12300017}" makerrace="argon" description="{734550,12300018}" mk="1" />
+            <ammunition tags="guided" />
+            <bullet class="tpwareq_pulse_xlarge_missile_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <storage capacity="100" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_proj_gun_macro" class="weapon">
+        <component ref="tpwareq_pulse_xlarge_proj_gun_comp" />
+        <properties>
+            <identification name="{734550,1230001}" basename="{734550,1230002}" shortname="{734550,1230003}" description="{734550,1230004}" mk="1" />
+            <bullet class="tpwareq_pulse_xlarge_proj_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+            <rotationspeed max="30" />
+            <rotationacceleration max="15" />
+            <reload time="1" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_proj_turret_macro" class="turret">
+        <component ref="tpwareq_pulse_xlarge_proj_turret_comp" />
+        <properties>
+            <identification name="{734550,12300011}" basename="{734550,12300012}" shortname="{734550,12300013}" makerrace="argon" description="{734550,12300014}" unique="0" mk="1" />
+            <bullet class="tpwareq_pulse_xlarge_proj_turret_bullet_macro" />
+            <rotationspeed max="30" />
+            <reload time="1" />
+            <hull max="5000" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+    
+</macros>

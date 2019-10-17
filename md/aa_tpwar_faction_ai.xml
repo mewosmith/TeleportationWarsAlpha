@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Tpwar_Faction_AI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+                <create_list name="$GlobalSafe" />
+                <!-- invariant - no vanilla factions in the faction list -->
+                <do_all exact="global.$TpwarFactions.count">
+                    <do_if value="global.$TpwarFactions.{1}.relationto.{faction.player} != -1">
+                        <set_value name="$Relation" min="-0.5" max="1" />
+                        <set_faction_relation faction="global.$TpwarFactions.{1}" otherfaction="faction.player" value="$Relation" />
+                        <do_all exact="global.$TpwarFactions.count" counter="$j">
+                            <do_if value="global.$TpwarFactions.{$j}.relationto.{global.$TpwarFactions.{1}} != -1">
+                                <set_value name="$Relation" min="-0.5" max="1" />
+                                <set_faction_relation faction="global.$TpwarFactions.{1}" otherfaction="global.$TpwarFactions.{$j}" value="$Relation" />
+                                <set_faction_relation faction="global.$TpwarFactions.{$j}" otherfaction="global.$TpwarFactions.{1}" value="$Relation" />
+                            </do_if>
+                        </do_all>
+                    </do_if>
+                    <append_to_list name="$GlobalSafe" exact="global.$TpwarFactions.{1}" />
+                    <remove_from_list name="global.$TpwarFactions" exact="global.$TpwarFactions.{1}" />
+                </do_all>
+                <do_all exact="$GlobalSafe.count" counter="$i">
+                    <append_to_list name="global.$TpwarFactions" exact="$GlobalSafe.{$i}" />
+                </do_all>
+                <remove_value name="$GlobalSafe" />
+                <remove_value name="$Relation" />
+            </actions>
+            <cues>
+                <cue name="FactionLoop" checkinterval="30s" checktime="30s">
+                    <actions>
+                        <do_if value="player.entity.$TpwarPlayerImportant == true">
+                            <set_value name="$EvalOne" exact="faction.player" />
+                            <set_value name="$EvalTwo" exact="global.$TpwarFactions.random" />
+                        </do_if>
+                        <do_else>
+                            <set_value name="$EvalOne" exact="global.$TpwarFactions.random" />
+                            <set_value name="$EvalTwo" exact="global.$TpwarFactions.random" />
+                            <do_while value="@$EvalOne == @$EvalTwo">
+                                <set_value name="$EvalOne" exact="global.$TpwarFactions.random" />
+                                <set_value name="$EvalTwo" exact="global.$TpwarFactions.random" />
+                            </do_while>
+                            <find_sector name="$EvalOneSector" space="player.galaxy" multiple="false" owner="$EvalOne"></find_sector>
+                            <find_sector name="$EvalTwoSector" space="player.galaxy" multiple="false" owner="$EvalTwo"></find_sector>
+                            <do_if value="$EvalOneSector? and $EvalTwoSector?">
+                                <do_if value="$EvalOne.relationto.{EvalTwo} gt 0">
+                                    <do_any>
+                                        <!-- protect mission  -->
+                                        <signal_cue_instantly cue="Protect" param="[$EvalOne,$EvalTwo]" />
+                                        <!-- escort mission  -->
+                                        <!-- friend patrol - patrol lib -->
+                                        <!-- friend station - create station lib -->
+                                        <!-- build prod -->
+                                        <!-- add relation -->
+                                        <!-- tech exchange - add faction eqmods -->
+                                    </do_any>
+                                </do_if>
+                                <do_else>
+                                    <do_any>
+                                        <!-- send mercs -->
+                                        <!-- send pirates -->
+                                        <!-- protect mission  -->
+                                        <!-- eradicate mission  -->
+                                        <!-- assasinate mission  -->
+                                        <!-- destroy mission  -->
+                                        <!-- invade patrol lib -->
+                                        <!-- build def -->
+                                        <!-- adjacent def-station create station lib -->
+                                        <!-- adjacent patrol-->
+                                        <!-- subtract relation-->
+                                    </do_any>
+                                </do_else>
+                            </do_if>
+                            <do_elseif value="not $EvalOneSector?">
+                                <find_station name="$EvalOneStation" space="player.galaxy" multiple="false" owner="$EvalOne"></find_station>
+                                <find_station name="$EvalTwoStation" space="player.galaxy" multiple="false" owner="$EvalTwo"></find_station>
+                                <do_if value="$EvalOneStation? and $EvalTwoStation?">
+                                    <do_if value="$EvalOne.relationto.{EvalTwo} gt 0">
+                                        <do_any>
+                                            <!-- protect mission  -->
+                                            <!-- escort mission -->
+                                            <!-- add relation -->
+                                            <!-- tech exchange - add faction eqmods -->
+                                        </do_any>
+                                    </do_if>
+                                    <do_else>
+                                        <do_any>
+                                            <!-- send pirates -->
+                                            <!-- protect mission  -->
+                                            <!-- assasinate mission -->
+                                            <!-- destroy mission  -->
+                                            <!-- subtract relation-->
+                                        </do_any>
+                                    </do_else>
+                                </do_if>
+                            </do_elseif>
+                            <do_elseif value="not $EvalOneStation?">
+                                <find_station name="$EvalOneStation" space="player.galaxy" multiple="false" owner="$EvalOne"></find_station>
+                                <find_station name="$EvalTwoStation" space="player.galaxy" multiple="false" owner="$EvalTwo"></find_station>
+                                <do_if value="$EvalOneStation? and $EvalTwoStation?">
+                                    <do_if value="$EvalOne.relationto.{EvalTwo} gt 0">
+                                        <do_any>
+                                            <!-- protect mission  -->
+                                            <!-- escort mission -->
+                                            <!-- add relation -->
+                                            <!-- tech exchange - add faction eqmods -->
+                                        </do_any>
+                                    </do_if>
+                                    <do_else>
+                                        <do_any>
+                                            <!-- send pirates -->
+                                            <!-- protect mission  -->
+                                            <!-- assasinate mission -->
+                                            <!-- destroy mission  -->
+                                            <!-- subtract relation-->
+                                        </do_any>
+                                    </do_else>
+                                </do_if>
+                            </do_elseif>
+                        </do_else>
+                    </actions>
+                </cue>
+                <cue name="Protect" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="10s"/>
+                    <actions>
+                        
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

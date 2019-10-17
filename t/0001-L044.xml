@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<diff>
+  <add sel="/language">
+    <page id="799081" title="tpwar" descr="factions" voice="yes">
+      <!-- PRATES -->
+      <!-- atlas -->
+      <t id="1">Atlas Pirates</t>
+      <t id="2">ATL</t>
+      <t id="3">Finding themselves in Toride long before it was called Toride, the Atlas Pirates were trapped between multiple hostile forces and unable to escape before the Jump Gate shutdown. While they had enough military force to defend themselves, they were without a base of operations. This changed when the Toride Colonists fled their homes, and in an attempt to entrench themselves against their enemies, the Atlas group took over the newly-built Terran stations.</t>
+      <!-- sovsyn -->
+      <t id="4">Sovereign Syndicate</t>
+      <t id="5">SOV</t>
+      <t id="6">The self-declared free people of Albion, the Sovereign Syndicate pride themselves on having little or no contact with any other faction unless something of value is to be acquired. Some suspect Plutarch ties with these Pirates, even when Plutarch targets are frequently hit.</t>
+      <!-- cartel -->
+      <t id="7">The Cartel</t>
+      <t id="8">CAR</t>
+      <t id="9">While there is no evidence to support or oppose the belief, many in Albion believe that the Teladi Union not only accepted but encouraged the creation of the Cartel to ensure that any and all could access the pharmaceutical wares that are made readily available in Teladi space, but are restricted elsewhere. Whether or not this is the case, while the Cartel's presence in Fields of Opportunity is openly tolerated, its operations in Albion are under constant scrutiny by all security forces.</t>
+      <!-- agi -->
+      <t id="10">AGI Task Force</t>
+      <t id="11">ATF</t>
+      <t id="12">The Artifical General Intelligence Task Force, or AGI Task Force for short or just ATF was built for only one purpose: to protect Earth. Since the USC sometimes had to take on a lot of economic tasks, it could no longer concentrate fully on the military sector. In particular, it was feared - even centuries after the war against the terraformers - that the earth could be attacked by AGI. This is how the ATF was created. It is a purely military department of the Terrans, and is extremely effective in that it is fully confined to the military field.</t>
+      <!-- TRADERS -->
+      <!-- goner -->
+      <t id="13">Goners</t>
+      <t id="14">GON</t>
+      <t id="15">Originally the Goner were a small group called "Truth about Earth Foundation". It was founded by the historian Martinus Sandas. Its purpose was to promote the idea that the Earth exists and is the origin of the Argon. When he met Nyana Gunne, the great-granddaughter of Nathan R. Gunne, they discovered that they had the same goals, joined together and called themselves and their group "The Gunners". The details of their story became obscured in the centuries that followed and became known as The Truth. Even their name became distorted and they became known as the Goners. The Goners worked in harmony with the Argon and spread the "good news" about the existence of a glorious planet called Earth to other races.</t>
+      <!-- wholefood -->
+      <t id="16">Wholesome Foods</t>
+      <t id="17">WFT</t>
+      <t id="18">Employing a great number in Albion, Wholesome Foods is seen as a corporation of the people along with Ledda Industrial. PMC has been careful to not upset the operations of Wholesome Foods to avoid food shortages but they have been known to head-hunt skilled employees for themselves on occasion. The main issue facing Wholesome Foods is the interference from No Limits with the apparent aim to drive up sales of their more exotic and often illicit products.</t>
+      <!-- ledda -->
+      <t id="19">Ledda Industrial</t>
+      <t id="20">LIND</t>
+      <t id="21">Specialising in heavy construction and bulk manufacturing, Ledda Industrial's biggest client is the Plutarch Mining Corporation. Their Shipyards and Drone Production Facilities regularly churn out new assets for PMC which some representatives of Heart of Albion declare to be considered 'troubling'.</t>
+      <!-- telunion -->
+      <t id="22">Teladi Union</t>
+      <t id="23">TUN</t>
+      <t id="24">After the Jump Gate realignment saw Fields of Opportunity cut off from the influence of the Teladi Company, the Teladi Union was formed by those Teladi trying to maintain some sort of political unity, and holds many of the same administrative customs and procedures as its predecessor. In its isolation, the Union has also remained as liberal as the Company in what may be traded legally, in an attempt to keep hold of even its less honourable customers.</t>
+      <!-- aldrin -->
+      <t id="25">Aldrin</t>
+      <t id="26">ALD</t>
+      <t id="27">Aldrin is a colony of Earth long believed lost, named after Buzz Aldrin, a pilot who lived a long time ago. With the beginning of the Terraformer War, in which the gate to Earth was also destroyed, almost all Terran colonies were attacked. Aldrin was probably also devastated. Only the appearance of old AGI ships led to their rediscovery by an ATF fleet. The technology of the Aldrians looks very outdated on the outside. However, it has been greatly improved with the help of the CPU ship protecting Aldrin. In 800 years of isolation, Aldrin has managed to recover on their own and build colonies in the huge Aldrin system. For a long time, numerous representatives of different governments were of the opinion that Aldrin had been lost or even completely destroyed for many centuries. Now the 'Lost Colony' has been rediscovered, hidden in the endless empty vastness of space. The survivors of the Terraformer attack have since developed into a progressive community, well protected by their isolation. The fact that they offer the other races to share in their ancient secrets fills everyone with new hope for the continued existence of the five races.</t>
+      <!-- cantera -->
+      <t id="28">Republic of Cantera</t>
+      <t id="29">ROC</t>
+      <t id="30">Originally 'Operation Cantera', a civilian-led Terran mining initiative, the group suffered greatly when the gate to Terran space shut down. The lack of major infrastructure lead to mass famine and their equipment falling into disrepair. While now able to support their populations needs they are still far from being described as thriving.</t>
+      <!-- toride -->
+      <t id="31">Toride Colonists</t>
+      <t id="32">TOR</t>
+      <t id="33">Fleeing from Sol and travelling over many systems when it became clear that the Terrans were losing the Terran Conflict, these colonists eventually settled in previously unexplored space that, at first glance, seemed the perfect place for a new settlement. It was only after the Jump Gate shutdown that the Colonists discovered multiple hostile forces on the very outskirts of the system, already fighting over its ownership. Though they tried to defend their new home, the Toride Colonists were eventually driven out of Toride, and now take refuge from Terracorp in Cold Star.</t>
+      <!-- nmmc -->
+      <t id="34">NMMC</t>
+      <t id="35">NMMC</t>
+      <t id="36">The Nividium Mining and Manufacturing Company, NMMC for short, is a large Teladi corporation. Due to a legal dispute, NMMC had to change its old name from PTNI in order not to be sued by the Teladi Chamber of Commerce. Nevertheless, it is still the same company. The main objective is still the mining of Nividium and the generation of the greatest possible profit.</t>
+      <!-- atreus -->
+      <t id="37">Atreus Shipbuilding Currents</t>
+      <t id="38">ASC</t>
+      <t id="39">Atreus Shipbuilding Currents is a relatively young Boron company that has settled in the Queen's Harbour sector with its huge headquarters complex. The company's main business is optimised, remote-controlled vehicles such as reconnaissance drones, cargo drones, Mk I and Mk II combat drones and modern ship computer systems. The focus is on the development of new AI systems to facilitate the guidance of spacecraft and improve their capabilities.</t>
+      <!-- jonferson -->
+      <t id="40">Jonferson Space Systems</t>
+      <t id="41">JSS</t>
+      <t id="42">Jonferson Space Systems (formerly known as 'Jonferson Space Dynamics Division', or 'JSDD') is a technological powerhouse, linked with research and manufacture of ships, station modules, propulsion and defences. With historical ties to the Terrans and highways this corporation has had a major impact on the known universe giving it much influence in Omicron Lyrae. It is not known if any of its other subsidiaries are enjoying as much favour in other distant systems.</t>
+      <!-- aquariuscorp -->
+      <t id="43">Aquarius Corporation</t>
+      <t id="44">AQU</t>
+      <t id="45">Originally a small water supply company, it has now expanded into many areas of low-end resource supply.</t>
+      <!-- ptni -->
+      <t id="46">PTNI</t>
+      <t id="47">PTNI</t>
+      <t id="48">The Profit Association of the Teladian Nividium Industry, PTNI for short, is a rich Teladi society belonging to the Nividium mining union. It is based at PTNI Headquarters, which is the sector with the highest number of individuals due to the profiteroid.</t>
+      <!-- strongarms -->
+      <t id="49">Split Strong Arms Corp.</t>
+      <t id="50">SSA</t>
+      <t id="51">This group exists only for two reasons, the construction and sale of weapons. Free of any moral considerations, the management is not interested in who pays the best price for their weapons and what they are used for.</t>
+      <!-- plutarch -->
+      <t id="52">Plutarch Mining Corporation</t>
+      <t id="53">PMC</t>
+      <t id="54">The Plutarch Mining Corporation is a rapidly growing conglomerate of companies that makes every effort to expand further. And not only with the mining of asteroids. De facto government in Albion. The largest corporation left in the power vacuum after the gates shutdown, the PMC gained influence over all other factions and corporations.</t>
+      <!-- albionenergy -->
+      <t id="55">Albion Energy Subsidiary</t>
+      <t id="56">AES</t>
+      <t id="57">When the Plutarch Mining Corporation moved to corner the energy market to secure its needs, the AES was set up to deal with energy trade to the other corporations.</t>
+      <!-- terracorp -->
+      <t id="58">Terra Corporation</t>
+      <t id="59">TCOR</t>
+      <t id="60">Terra Corporation (TerraCorp) is a universe-wide Argon trade organization associated with the Goners that primarily explores the origins of the Argon, but is also active in a variety of interstellar business areas. The company's newest fields of business are private security services and consulting. Even the Argon secret service often takes the advice of TerraCorp to solve problems. Founded by Kyle Brennan and Elena Kho, Terracorp has become one of the most influential and diverse organisations in Argon space. Though they specialised in private security and consultancy for many years before the Jump Gate shutdown, the corporation also developed a vast economic knowledge and even built its own fleet. This put Terracorp in the ideal position to help the system of Home of Light survive the Dark that followed the shutdown, and under the leadership of CEO Dal Nirin, Terracorp remains as influential and powerful as it ever was.</t>
+      <!-- franton -->
+      <t id="61">Franton Pharma</t>
+      <t id="62">FRP</t>
+      <t id="63">This company produces high-end specialist organics such as chemical compounds, medical supplies and stott spices. It also grows Spaceweed for medical research. How samples find their way out of the research lab is beyond the company's power to explain.</t>
+      <!-- chow -->
+      <t id="64">CHOW</t>
+      <t id="65">CHOW</t>
+      <t id="66">The dominant supplier of food in Omicron Lyrae, CHOW expanded its operations rapidly after the gates shutdown adding production lines for other race foodstuffs to prevent a potential famine crisis. This move greatly raised CHOW's standing among the people, Argon and alien alike.</t>
+      <!-- MERC -->
+      <!-- terrapmc -->
+      <t id="67">TerraCorpPMC</t>
+      <t id="68">TCP</t>
+      <t id="69"></t>
+      <!-- otas -->
+      <t id="70">OTAS</t>
+      <t id="71">OTAS</t>
+      <t id="72">Optimized Technology, Armaments and Shielding is a large corporation in the X-Universe specializing in defense technology. This includes research, development and production as well as the use of these weapons to increase their influence.</t>
+      <!-- buccaneers -->
+      <t id="73">Duke's Buccaneers</t>
+      <t id="74">DBN</t>
+      <t id="75">The Duke's Buccaneers superficially are a non-governmental Paranid security organization serving the priest-emperator. In reality, however, they are a criminal organization. The Duke's Buccaneers are pursued and shot down by the CoP like pirates. The corsairs in turn cooperate with pirates, because part of their fleet carries pirate IDs and pirates can also be found on board Duke's Haven.</t>
+      <!-- reivers -->
+      <t id="76">Reivers</t>
+      <t id="77">REV</t>
+      <t id="78">Not much is known about the group known to the Canterans as 'Reivers'. They appear Argon or Human but hardly engage in communications unless to intimidate with near-nonsense aggressive babble.</t>
+      <!-- terrans -->
+      <t id="79">Terrans</t>
+      <t id="80">TER</t>
+      <t id="81">The inhabitants of planet Earth are known as Terrans; they are the forefathers of the Argons. They are a technologically advanced race, but their suspicion of other races, including their lost cousins, the Argon, motivated them to be protective of their territory.</t>
+      <!-- nolimits -->
+      <t id="82">No Limits</t>
+      <t id="83">LIM</t>
+      <t id="84">As close to a criminal organisation that PMC will allow in its midst, No Limits deals in seedy activities and goods. As it deals with illicit needs of wealthy Plutarch employees some 'merchants' have become valuable Heart of Albion informants.</t>
+      <!-- uguras -->
+      <t id="85">Uguras Armanents</t>
+      <t id="86">UGA</t>
+      <t id="87">Uguras Armaments grew in influence after taking control of many of the abandoned stations in Fields of Opportunity. Making deals first with the Teladi Company and later the Teladi Union, they promised protection from the Xenon forces on the system's outskirts in return for unrestricted access to official markets. The faction's presence is now accepted openly, since most of the weapons used by the Teladi security forces were developed and provided by Uguras Armaments at minimal cost. Their operations in Albion, however, are met with great scepticism, and they are suspected of illegally running guns throughout the system.</t>
+      <!-- ZEALOTS -->
+      <!-- heretics -->
+      <t id="88">Heretic Vanguards</t>
+      <t id="89">HER</t>
+      <t id="90">Initially a splinter group of Goner scholars disenchanted with the true nature of the Terrans and Earth, they became an extremist anti-Terran clan. The Goners branded them Heretics of history, fuelling their secularism. When Omicron Lyrae found itself alone as a crucible of Argon and Terran forces, the Heretic Vanguards took it upon themselves to sabotage any step towards reconciliation.</t>
+      <!-- SCAVENGERS -->
+      <!-- yaki -->
+      <t id="91">Yaki</t>
+      <t id="92">YAK</t>
+      <t id="93">The Yaki are pirates who focus on the targeted theft of expensive goods. They are usually equipped with heavily armed ships and should not be underestimated. Through ruthless actions like extortion, murder, arms and slave trade, and raids also on the armed forces of the five peoples they became what they are today: The largest and most powerful pirate clan, which, thanks to its centralization, stands out from the unified pirates. The ruthless Yaki pirates have taken advantage of the weakened Argon fleet to carry out raids on Argon facilities and many other sectors in the X-Universe. The Yaki Pirates are becoming a real force to be reckoned with.</t>
+      <!-- usc -->
+      <t id="94">United Space Command</t>
+      <t id="95">USC</t>
+      <t id="96">The USC is Earth's space fleet. Founded in 2059, its mission is to protect Earth, its colonies and its inhabitants from danger. The mission area is Earth and its solar system. It performs all kinds of tasks from salvaging damaged ships to humanitarian aid and the pursuit of terrorists. It consists of several fleets, hundreds of ships and thousands of people. The base is located in the city of Milano on Earth.</t>
+      <!-- heartofalbion -->
+      <t id="97">Heart of Albion</t>
+      <t id="98">HOA</t>
+      <t id="99">Initially the remains of the Argon Military in Albion, the Heart of Albion group was formed to give the people a voice in the corporation-dominated environment. Its military history makes it a well-structured organisation but sanctions imposed by Plutarch limited its growth as a defence force. Their skills however have transitioned more into reconnaissance and corporate sabotage, mainly with the aim of uncovering and exposing any wrongdoings by Plutarch.</t>
+      <!-- sonraenergy -->
+      <t id="100">Sonra Energy</t>
+      <t id="101">SON</t>
+      <t id="102">One of Omicron Lyrae's greatest threats in recent times was the energy shortage after the gates shut down. Once reliant on neighbouring systems, there was an immediate rationing of Energy Cells and the formation of the Sonra Energy Research Group. Using several components remaining at the then battered shipyard, they fashioned Solar Power Plants to end the rationing phase, then focused on heavy duty energy sources such as fusion and anti-matter.</t>
+      <!-- berryl -->
+      <t id="115">Berryl</t>
+      <t id="116">BER</t>
+      <t id="117"></t>
+    </page>
+  </add>
+  <add sel="/language">
+    <page id="734550" title="tpwar" descr="tpwarships" voice="yes">
+      <!-- photon_pulse_cannon weapon -->
+      <t id="10011">photon</t>
+      <t id="10012">photon</t>
+      <t id="10013">photon</t>
+      <t id="10014">photon</t>
+      <!-- photon_pulse_cannon missile -->
+      <t id="10015">photon</t>
+      <t id="10016">photon</t>
+      <t id="10017">photon</t>
+      <t id="10018">photon</t>
+      <!-- photon_pulse_cannon launcher -->
+      <t id="10011">photon</t>
+      <t id="10012">photon</t>
+      <t id="10013">photon</t>
+      <t id="10014">photon</t>
+      pulse Small Gun
+      <t id="1231">Alpha Pulse Cannon</t>
+      <t id="1232">Pulse Cannon</t>
+      <t id="1233">Alpha Pulse</t>
+      <t id="1234">Alpha Pulse Cannon</t>
+      pulse Medium Gun
+      <t id="12301">Beta Pulse Cannon</t>
+      <t id="12302">Pulse Cannon</t>
+      <t id="12303">Beta Pulse</t>
+      <t id="12304">Beta Pulse Cannon</t>
+      pulse Large Gun
+      <t id="123001">Gamma Pulse Cannon</t>
+      <t id="123002">Pulse Cannon</t>
+      <t id="123003">Gamma Pulse</t>
+      <t id="123004">Gamma Pulse Cannon</t>
+      pulse XL Gun
+      <t id="1230001">Delta Pulse Cannon</t>
+      <t id="1230002">Pulse Cannon</t>
+      <t id="1230003">Delta Pulse</t>
+      <t id="1230004">Delta Pulse Cannon</t>
+      pulse Medium Gun Turret
+      <t id="123011">Beta Pulse Turret</t>
+      <t id="123012">Pulse Turret</t>
+      <t id="123013">Beta Pulse</t>
+      <t id="123014">Beta Pulse Turret</t>
+      pulse Large Gun Turret
+      <t id="1230011">Gamma Pulse Turret</t>
+      <t id="1230012">Pulse Turret</t>
+      <t id="1230013">Gamma Pulse</t>
+      <t id="1230014">Gamma Pulse Turret</t>
+      pulse XL Gun Turret
+      <t id="12300011">Delta Pulse Turret</t>
+      <t id="12300012">Pulse Turret</t>
+      <t id="12300013">Delta Pulse</t>
+      <t id="12300014">Delta Pulse Turret</t>
+      pulse Small Launcher
+      <t id="1235">Alpha Pulse Missile Launcher</t>
+      <t id="1236">Pulse Missile Launcher</t>
+      <t id="1237">Alpha Pulse Missile</t>
+      <t id="1238">Alpha Pulse Missile Launcher</t>
+      pulse Medium Launcher
+      <t id="12305">Beta Pulse Missile Launcher</t>
+      <t id="12306">Pulse Missile Launcher</t>
+      <t id="12307">Beta Pulse Missile</t>
+      <t id="12308">Beta Pulse Missile Launcher</t>
+      pulse Large Launcher
+      <t id="123005">Gamma Pulse Missile Launcher</t>
+      <t id="123006">Pulse Missile Launcher</t>
+      <t id="123007">Gamma Pulse Missile</t>
+      <t id="123008">Gamma Pulse Missile Launcher</t>
+      pulse XL Launcher
+      <t id="1230005">Delta Pulse Missile Launcher</t>
+      <t id="1230006">Pulse Missile Launcher</t>
+      <t id="1230007">Delta Pulse Missile</t>
+      <t id="1230008">Delta Pulse Missile Launcher</t>
+      pulse Medium Launcher Turret
+      <t id="123015">Beta Pulse Missile Turret</t>
+      <t id="123016">Pulse Missile Turret</t>
+      <t id="123017">Beta Pulse Missile</t>
+      <t id="123018">Beta Pulse Missile Turret</t>
+      pulse Large Launcher Turret
+      <t id="1230015">Gamma Pulse Missile Turret</t>
+      <t id="1230016">Pulse Missile Turret</t>
+      <t id="1230017">Gamma Pulse Missile</t>
+      <t id="1230018">Gamma Pulse Missile Turret</t>
+      pulse XL Launcher Turret
+      <t id="12300015">Delta Pulse Missile Turret</t>
+      <t id="12300016">Pulse Missile Turret</t>
+      <t id="12300017">Delta Pulse Missile</t>
+      <t id="12300018">Delta Pulse Missile Turret</t>
+      pulse Small Beam
+      <t id="12315">Alpha Hot Pulse Lance</t>
+      <t id="12316">Hot Pulse Lance</t>
+      <t id="12317">Alpha Hot Pulse</t>
+      <t id="12318">Alpha Hot Pulse Lance</t>
+      pulse Medium Beam
+      <t id="123105">Beta Hot Pulse Lance</t>
+      <t id="123106">Hot Pulse Lance</t>
+      <t id="123107">Beta Hot Pulse</t>
+      <t id="123108">Beta Hot Pulse Lance</t>
+      pulse Large Beam
+      <t id="1231005">Gamma Hot Pulse Lance</t>
+      <t id="1231006">Hot Pulse Lance</t>
+      <t id="1231007">Gamma Hot Pulse</t>
+      <t id="1231008">Gamma Hot Pulse Lance</t>
+      pulse XL Beam
+      <t id="12310005">Delta Hot Pulse Lance</t>
+      <t id="12310006">Hot Pulse Lance</t>
+      <t id="12310007">Delta Hot Pulse</t>
+      <t id="12310008">Delta Hot Pulse Lance</t>
+      pulse Medium Turret
+      <t id="1231105">Beta Hot Pulse Turret</t>
+      <t id="1231106">Hot Pulse Turret</t>
+      <t id="1231107">Beta Hot Pulse</t>
+      <t id="1231108">Beta Hot Pulse Turret</t>
+      pulse Large Turret
+      <t id="12311005">Gamma Hot Pulse Turret</t>
+      <t id="12311006">Hot Pulse Turret</t>
+      <t id="12311007">Gamma Hot Pulse</t>
+      <t id="12311008">Gamma Hot Pulse Turret</t>
+      pulse XL Turret
+      <t id="123110005">Delta Hot Pulse Turret</t>
+      <t id="123110006">Hot Pulse Turret</t>
+      <t id="123110007">Delta Hot Pulse</t>
+      <t id="123110008">Delta Hot Pulse Turret</t>
+      pulse Small Missile
+      <t id="12325">Agile Shrike</t>
+      <t id="12326">Shrike</t>
+      <t id="12327">Agile Shrike</t>
+      <t id="12328">Agile Shrike</t>
+      pulse Medium Missile
+      <t id="123205">Agile Shrike</t>
+      <t id="123206">Shrike</t>
+      <t id="123207">Agile Shrike</t>
+      <t id="123208">Agile Shrike</t>
+      pulse Large Missile
+      <t id="1232005">Agile Shrike</t>
+      <t id="1232006">Shrike</t>
+      <t id="1232007">Agile Shrike</t>
+      <t id="1232008">Agile Shrike</t>
+      pulse XL Missile
+      <t id="12320005">Agile Shrike</t>
+      <t id="12320006">Shrike</t>
+      <t id="12320007">Agile Shrike</t>
+      <t id="12320008">Agile Shrike</t>
+    </page>
+  </add>
+  <add sel="/language">
+    <page id="734546" title="tpwar" descr="tpwarships" voice="yes">
+      <!-- HYPATIA -->
+      <t id="1">Hypatia</t>
+      <t id="2">(Hypatia) {734546,4}</t>
+      <t id="3">Hypatia Heavy Destroyer</t>
+      <t id="4">Hypatia</t>
+      <!-- GREBE -->
+      <t id="5">Grebe</t>
+      <t id="6">(Grebe) {734546,8}</t>
+      <t id="7">Grebe Reserve Frigate</t>
+      <t id="8">Grebe</t>
+      <!-- KILLDEER -->
+      <t id="9">Killdeer</t>
+      <t id="10">(Killdeer) {734546,12}</t>
+      <t id="11">Killdeer Reserve Bomber</t>
+      <t id="12">Killdeer</t>
+      <!-- FOXTAIL -->
+      <t id="13">Foxtail</t>
+      <t id="14">(Foxtail) {734546,16}</t>
+      <t id="15">Foxtail Reserve Bomber</t>
+      <t id="16">Foxtail</t>
+      <!-- FINDBROKER -->
+      <t id="17">Findbroker</t>
+      <t id="18">(Findbroker) {734546,20}</t>
+      <t id="19">Findbroker Transport</t>
+      <t id="20">Findbroker</t>
+      <!-- JATU -->
+      <t id="21">Jatu</t>
+      <t id="22">(Jatu) {734546,24}</t>
+      <t id="23">Jatu Transport</t>
+      <t id="24">Jatu</t>
+      <!-- EXIA -->
+      <t id="25">Exia</t>
+      <t id="26">(Exia) {734546,28}</t>
+      <t id="27">Exia Fighter</t>
+      <t id="28">Exia</t>
+      <!-- BELLFLOWER -->
+      <t id="29">Bellflower</t>
+      <t id="30">(Bellflower) {734546,32}</t>
+      <t id="31">Bellflower Carrier</t>
+      <t id="32">Bellflower</t>
+      <!-- PUGNAX -->
+      <t id="33">Pugnax</t>
+      <t id="34">(Pugnax) {734546,36}</t>
+      <t id="35">Pugnax Drone Carrier</t>
+      <t id="36">Pugnax</t>
+      <!-- KASPER -->
+      <t id="37">Kasper</t>
+      <t id="38">(Kasper) {734546,40}</t>
+      <t id="39">Kasper Advanced Bomber</t>
+      <t id="40">Kasper</t>
+      <!-- PHILODENDRON -->
+      <t id="41">Philodendron</t>
+      <t id="42">(Philodendron) {734546,44}</t>
+      <t id="43">Philodendron Frigate</t>
+      <t id="44">Philodendron</t>
+      <!-- EPIPHANIUS -->
+      <t id="45">Epiphanius</t>
+      <t id="46">(Epiphanius) {734546,48}</t>
+      <t id="47">Epiphanius Frigate</t>
+      <t id="48">Epiphanius</t>
+      <!-- SURENDRA -->
+      <t id="49">Surendra</t>
+      <t id="50">(Surendra) {734546,52}</t>
+      <t id="51">Surendra Carrier</t>
+      <t id="52">Surendra</t>
+      <!-- ASIATICA -->
+      <t id="53">Asiatica</t>
+      <t id="54">(Asiatica) {734546,56}</t>
+      <t id="55">Asiatica Carrier</t>
+      <t id="56">Asiatica</t>
+      <!-- LX -->
+      <t id="57">LX</t>
+      <t id="58">(LX) {734546,60}</t>
+      <t id="59">LX Xenon</t>
+      <t id="60">LX</t>
+      <!-- TERRAFORMER-->
+      <t id="61">Terraformer</t>
+      <t id="62">(Terraformer) {734546,64}</t>
+      <t id="63">Terraformer Xenon</t>
+      <t id="64">Terraformer</t>
+      <!-- NEW -->
+      <!-- silverfish_ware  -->
+      <t id="65">Silverfish</t>
+      <t id="66">Silverfish</t>
+      <t id="67">Silverfish</t>
+      <t id="68">Silverfish</t>
+      <t id="69">Silverfish</t>
+      <!-- laelaps_ware  -->
+      <t id="70">Lealaps</t>
+      <t id="71">Lealaps</t>
+      <t id="72">Lealaps</t>
+      <t id="73">Lealaps</t>
+      <t id="74">Lealaps</t>
+      <!-- thoon_ware  -->
+      <t id="75">Thoon</t>
+      <t id="76">Thoon</t>
+      <t id="77">Thoon</t>
+      <t id="78">Thoon</t>
+      <t id="79">Thoon</t>
+      <!-- keres_ware  -->
+      <t id="80">Keres</t>
+      <t id="81">Keres</t>
+      <t id="82">Keres</t>
+      <t id="83">Keres</t>
+      <t id="84">Keres</t>
+      <!-- hippogriff_ware  -->
+      <t id="85">Hippogriff</t>
+      <t id="86">Hippogriff</t>
+      <t id="87">Hippogriff</t>
+      <t id="88">Hippogriff</t>
+      <t id="89">Hippogriff</t>
+      <!-- echion_ware  -->
+      <t id="90">Echion</t>
+      <t id="91">Echion</t>
+      <t id="92">Echion</t>
+      <t id="93">Echion</t>
+      <t id="94">Echion</t>
+      <!-- crocotta_ware  -->
+      <t id="95">Crocotta</t>
+      <t id="96">Crocotta</t>
+      <t id="97">Crocotta</t>
+      <t id="98">Crocotta</t>
+      <t id="99">Crocotta</t>
+      <!-- athos_ware  -->
+      <t id="100">Athos</t>
+      <t id="101">Athos</t>
+      <t id="102">Athos</t>
+      <t id="103">Athos</t>
+      <t id="104">Athos</t>
+      <!-- angler_ware  -->
+      <t id="105">Angler</t>
+      <t id="106">Angler</t>
+      <t id="107">Angler</t>
+      <t id="108">Angler</t>
+      <t id="109">Angler</t>
+      <!-- oryx_ware  -->
+      <t id="110">Oryx</t>
+      <t id="111">Oryx</t>
+      <t id="112">Oryx</t>
+      <t id="113">Oryx</t>
+      <t id="114">Oryx</t>
+      <!-- stork_ware  -->
+      <t id="115">Stork</t>
+      <t id="116">Stork</t>
+      <t id="117">Stork</t>
+      <t id="118">Stork</t>
+      <t id="119">Stork</t>
+      <!-- buckie_ware  -->
+      <t id="120">Buckie</t>
+      <t id="121">Buckie</t>
+      <t id="122">Buckie</t>
+      <t id="123">Buckie</t>
+      <t id="124">Buckie</t>
+    </page>
+  </add>
+  <add sel="/language">
+    <page id="734549" title="tpsector" descr="sectornames" voice="no">
+      <!-- Core1 -->
+      <t id="1">Matrix 001</t>
+      <t id="2">Xenon Core Sector</t>
+      <!-- Core2 -->
+      <t id="3">Matrix 002</t>
+      <t id="4">Xenon Core Sector</t>
+      <!-- Core3 -->
+      <t id="5">Matrix 003</t>
+      <t id="6">Xenon Core Sector</t>
+      <!-- Core4 -->
+      <t id="7">Matrix 004</t>
+      <t id="8">Xenon Core Sector</t>
+      <!-- Border1Core1 -->
+      <t id="9">Xenon Sector 157</t>
+      <t id="10">Xenon Border Sector</t>
+      <!-- Border2Core1 -->
+      <t id="11">Xenon Sector 154</t>
+      <t id="12">Xenon Border Sector</t>
+      <!-- Border3Core1 -->
+      <t id="13">Xenon Sector 159</t>
+      <t id="14">Xenon Border Sector</t>
+      <!-- Border1Core2 -->
+      <t id="15">Xenon Sector 284</t>
+      <t id="16">Xenon Border Sector</t>
+      <!-- Border2Core2 -->
+      <t id="17">Xenon Sector 281</t>
+      <t id="18">Xenon Border Sector</t>
+      <!-- Border3Core2 -->
+      <t id="19">Xenon Sector 289</t>
+      <t id="20">Xenon Border Sector</t>
+      <!-- Border1Core3 -->
+      <t id="21">Xenon Sector 315</t>
+      <t id="22">Xenon Border Sector</t>
+      <!-- Border2Core3 -->
+      <t id="23">Xenon Sector 316</t>
+      <t id="24">Xenon Border Sector</t>
+      <!-- Border3Core3 -->
+      <t id="25">Xenon Sector 311</t>
+      <t id="26">Xenon Border Sector</t>
+      <!-- Border1Core4 -->
+      <t id="27">Xenon Sector 496</t>
+      <t id="28">Xenon Border Sector</t>
+      <!-- Border2Core4 -->
+      <t id="29">Xenon Sector 491</t>
+      <t id="30">Xenon Border Sector</t>
+      <!-- Border3Core4 -->
+      <t id="31">Xenon Sector 494</t>
+      <t id="32">Xenon Border Sector</t>
+      <!-- Nexus1Core1 -->
+      <t id="33">Saya's Horizon</t>
+      <t id="34">Nexus Exchange</t>
+      <!-- Nexus2Core1 -->
+      <t id="35">Clarity's Moon</t>
+      <t id="36">Nexus Sector</t>
+      <!-- Nexus3Core1 -->
+      <t id="37">Eleventh Reproach</t>
+      <t id="38">Nexus Sector</t>
+      <!-- Nexus4Core1 -->
+      <t id="39">Mists of Triumph</t>
+      <t id="40">Nexus Sector</t>
+      <!-- Nexus5Core1 -->
+      <t id="41">Light of Sin</t>
+      <t id="42">Nexus Sector</t>
+      <!-- Nexus1Core2 -->
+      <t id="43">Perdition's Beacon</t>
+      <t id="44">Nexus Sector</t>
+      <!-- Nexus2Core2 -->
+      <t id="45">Pontifex's Drift</t>
+      <t id="46">Nexus Sector</t>
+      <!-- Nexus3Core2 -->
+      <t id="47">Perpetual Seclusion</t>
+      <t id="48">Nexus Sector</t>
+      <!-- Nexus1Core3 -->
+      <t id="49">Ghinn's Sea</t>
+      <t id="50">Nexus Sector</t>
+      <!-- Nexus2Core3 -->
+      <t id="51">Sudden Voyage</t>
+      <t id="52">Nexus Sector</t>
+      <!-- Nexus3Core3 -->
+      <t id="53">Cathedral of Exchange</t>
+      <t id="54">Nexus Exchange</t>
+      <!-- Nexus5Core3 -->
+      <t id="57">Duke's Hideout</t>
+      <t id="58">Nexus Sector</t>
+      <!-- Nexus1Core4 -->
+      <t id="59">Keswen's Verge</t>
+      <t id="60">Nexus Sector</t>
+      <!-- Nexus2Core4 -->
+      <t id="61">Herron's Might</t>
+      <t id="62">Nexus Sector</t>
+      <!-- Nexus3Core4 -->
+      <t id="63">Hatikvah's Chest</t>
+      <t id="64">Nexus Exchange</t>
+      <!-- Nexus4Core4 -->
+      <t id="65">Herron's Excavation</t>
+      <t id="66">Nexus Exchange</t>
+      <!-- Chain6Group1 -->
+      <t id="67">New Acrimony</t>
+      <t id="68">Unknown Sector</t>
+      <!-- ChainTOP1 -->
+      <t id="69">Grand Seclusion</t>
+      <t id="70">Unknown Sector</t>
+      <!-- Con4 -->
+      <t id="71">Frontier Descent</t>
+      <t id="72">Abandoned Space</t>
+      <!-- ChainRightEast1 -->
+      <t id="73">True Wisdom</t>
+      <t id="74">Unknown Sector</t>
+      <!-- ChainRightEast2  -->
+      <t id="75">Akeela's Paradise</t>
+      <t id="76">Paradise</t>
+      <!-- South Chain2 -->
+      <t id="77">Hewa's Wellspring</t>
+      <t id="78">Unknown Sector</t>
+      <!-- Center Con to nowhere  -->
+      <t id="79">Ore Directive</t>
+      <t id="80">The Motherlode</t>
+      <!-- Chain South West 1 -->
+      <t id="81">PTNI Expanse</t>
+      <t id="82">Lost Profits</t>
+      <!-- Nexus4Core3 -->
+      <t id="83">Adventure's Beard</t>
+      <t id="84">Nexus Passage Core</t>
+      <!-- Chain South West 2 -->
+      <t id="85">PTNI Citadel</t>
+      <t id="86">Lost Profits</t>
+      <!-- Chain4Group3 -->
+      <t id="87">CEO's Flight</t>
+      <t id="88">Abandoned Space</t>
+      <!-- CHain Left top2 -->
+      <t id="89">Elysium of Choice</t>
+      <t id="90">Abandoned Space</t>
+      <!-- SouthEastChain1 -->
+      <t id="91">Tkr's Fallback</t>
+      <t id="92">Anarchy</t>
+      <!-- NorthSouthChain1 -->
+      <t id="93">Faulty Vision</t>
+      <t id="94">Anarchy</t>
+      <!-- ToSouthChain -->
+      <t id="95">Atiya's Gain</t>
+      <t id="96">Frontier</t>
+      <!-- NorthChainWest1 -->
+      <t id="97">Nopileos' Claim</t>
+      <t id="98">Anarchy</t>
+      <!-- South Chain2 -->
+      <t id="99">Two Keep</t>
+      <t id="100">Unknown Sector</t>
+      <!-- South Chain3 -->
+      <t id="101">Two Demise</t>
+      <t id="102">Unknown Sector</t>
+      <!-- Chain South West 3 -->
+      <t id="103">PTNI Crusade</t>
+      <t id="104">Lost Profits</t>
+      <!-- ChainRightEast3 -->
+      <t id="105">Eleventh Aguilar</t>
+      <t id="106">Unknown Sector</t>
+      <!-- Chain South West 4 -->
+      <t id="107">PTNI Stand</t>
+      <t id="108">Lost Profits</t>
+      <!-- ChainTOP2 -->
+      <t id="109">Ianamus Desire</t>
+      <t id="110">Anarchy</t>
+      <!-- Chain1Group1 -->
+      <t id="111">Hatikvah's Moon</t>
+      <t id="112">Hatikvah</t>
+      <!-- Chain6Group2 -->
+      <t id="113">True Might</t>
+      <t id="114">ALI</t>
+      <!-- Con2 -->
+      <t id="115">Nopileos' Mines</t>
+      <t id="116">Deep Space Mine</t>
+      <!-- Con1 -->
+      <t id="117">Herron's Drift</t>
+      <t id="118">Graveyard</t>
+      <!-- Chain3Group1 -->
+      <t id="119">Light Respite</t>
+      <t id="120">Hatikvah</t>
+      <!-- NorthChainWest2 -->
+      <t id="121">Antigone Escape</t>
+      <t id="122">Graveyard</t>
+      <!-- Chain8Group2 -->
+      <t id="123">Circle of Defiance</t>
+      <t id="124">ALI Headquarters</t>
+      <!-- SOUTHMOSTPOINT -->
+      <t id="125">Nature's Doubt</t>
+      <t id="126">The End of The Universe</t>
+      <!-- NorthSouthChain2 -->
+      <t id="127">Company Misfortune</t>
+      <t id="128">Anarchy</t>
+      <!-- Chain7Group1 -->
+      <t id="129">Ket's Giants</t>
+      <t id="130">Hatikvah</t>
+      <!-- NorthChainWest3 -->
+      <t id="131">Elena's Defeat</t>
+      <t id="132">Void</t>
+      <!-- NorthChainWest4 -->
+      <t id="133">Elena's Billion</t>
+      <t id="134">Atrocity</t>
+      <!-- Chain2Group3 -->
+      <t id="135">Sudden Fune</t>
+      <t id="136">Abandoned Space</t>
+      <!-- South Chain4  -->
+      <t id="137">Ringo Xaar</t>
+      <t id="138">Unknown Space</t>
+      <!-- Chain2Group2 -->
+      <t id="139">Wretched Fall</t>
+      <t id="140">ALI</t>
+      <!-- Chain7Group2 -->
+      <t id="141">Cloudbase South Sanctum</t>
+      <t id="142">ALI</t>
+      <!-- Chain1Group2 -->
+      <t id="143">Frontier Hideout</t>
+      <t id="144">ALI</t>
+      <!-- ChainTOP3 -->
+      <t id="145">Faulty Joy</t>
+      <t id="146">SCA</t>
+      <!-- Chain5Group3 -->
+      <t id="147">Morning Investment</t>
+      <t id="148">Abandoned Space</t>
+      <!-- Vanilla Con  -->
+      <t id="149">New Claim</t>
+      <t id="150">Low Security</t>
+      <!-- Chain South West5 -->
+      <t id="151">Ore Abyss</t>
+      <t id="152">PTNI</t>
+      <!-- Chain5Group2 -->
+      <t id="153">New Faith</t>
+      <t id="154">ALI</t>
+      <!-- Chain2Group1 -->
+      <t id="155">Hatikvah's Prophecy</t>
+      <t id="156">HAT</t>
+      <!-- NorthSouthChain3 -->
+      <t id="157">Shareholder's Deception</t>
+      <t id="158">Anarchy</t>
+      <!-- Chain5Group1 -->
+      <t id="159">Bad Hour</t>
+      <t id="160">HAT</t>
+      <!-- Chain South West 6 -->
+      <t id="161">PTNI Directive</t>
+      <t id="162">PTNI</t>
+      <!-- Chain3Group2 -->
+      <t id="163">Silent Haven</t>
+      <t id="164">ALI</t>
+      <!-- Chain6Group3 -->
+      <t id="165">Tebathimanckatt's Sprite</t>
+      <t id="166">Abandoned Space</t>
+      <!-- NorthChainWest5 -->
+      <t id="167">Farnham's Gaze</t>
+      <t id="168">Unknown Sector</t>
+      <!-- NorthChainWest6 -->
+      <t id="169">Farnham's Keep</t>
+      <t id="170">Unknown Sector</t>
+      <!-- Con3 -->
+      <t id="171">Willing Witness</t>
+      <t id="172">Unknown Sector</t>
+      <!-- ChainTOP4 -->
+      <t id="173">Memory of Labour</t>
+      <t id="174">SCA</t>
+      <!-- ChainTOP5 -->
+      <t id="175">Mines of Debt</t>
+      <t id="176">SCA</t>
+      <!-- Chain South West 7 -->
+      <t id="177">Path to Collusion</t>
+      <t id="178">PTNI</t>
+      <!-- NorthSouthChain4 -->
+      <t id="179">Dark Promise</t>
+      <t id="180">Anarchy</t>
+      <!-- Chain3Group3 -->
+      <t id="181">Belt of Rage</t>
+      <t id="182">Abandoned Space</t>
+      <!-- Chain1Group3 -->
+      <t id="183">Desecrated Harbour</t>
+      <t id="184">Abandoned Space</t>
+      <!-- SouthEastChain2 -->
+      <t id="185">Kho's Revenge</t>
+      <t id="186">Unknown Sector</t>
+      <!-- Chain4Group1 -->
+      <t id="187">Adventure's Edge</t>
+      <t id="188">HAT</t>
+      <!-- Chain4Group2 -->
+      <t id="189">Shadows of Strength</t>
+      <t id="190">ALI</t>
+      <!-- Middle Connection to NorthSouthChain1 -->
+      <t id="191">Empty Deceit</t>
+      <t id="192">Unknown Sector</t>
+      <!-- NorthChainWest7 -->
+      <t id="193">Freedom's Conclusion</t>
+      <t id="194">Unknown Sector</t>
+    </page>
+  </add>
+  <add sel="/language">
+    <page id="734550" title="tpwares" descr="warenames" voice="no">
+      <!-- SECTORS AS INVENTORY -->
+      <t id="0">Unknown Sector Map</t>
+      <t id="1">A dubious set of coordinates</t>
+      <!-- JUMPDRIVE -->
+      <!-- tpwar_jump_beacon_t1 -->
+      <t id="2">Jump Beacon</t>
+      <t id="3">Set Guidance to jump to beacon</t>
+      <!-- tpwar_salvage_beacon_t1 -->
+      <t id="4">Salvage Beacon</t>
+      <t id="5">Place beacon near wrecked ships. If you have a salvage vessel operating nearby, you may reap rewards from the ruins of battle.</t>
+      <!-- tpwar_teleportation_beacon_t1 -->
+      <t id="6">Teleportation Beacon</t>
+      <t id="7">Xenon device. Destroy to remove a navigation point for the invading Xenon.</t>
+      <!-- software_tpwar_jumpdrive -->
+      <t id="8">Jump Drive</t>
+      <t id="9">Jump Drive Processor allows the ship to travel instantly across space</t>
+      <!-- software_tpwar_ejumpdrive -->
+      <t id="10">Emergency Jump Drive</t>
+      <t id="11">Emergency Jump Drive Software will jump the ship automatically to a nearby safe sector if too much damage is taken</t>
+      <!-- fos_device -->
+      <t id="12">Stellar Astrolabe</t>
+      <t id="13">Long-range link to the Stellar Carography Module</t>
+      <!-- trs_device -->
+      <t id="14">Trade Receiver Processor</t>
+      <t id="15">Long-range link to Trade Module</t>
+      <!-- inv_cyborgparts -->
+      <t id="16">Cyborg Parts</t>
+      <t id="17">Valuable electronic parts</t>
+      <!-- inv_locationpiratebase -->
+      <t id="18">Unknown Base Location</t>
+      <!-- inv_locationpiratehideout -->
+      <t id="19">Unknown Hideout Location</t>
+      <!-- inv_gatemap -->
+      <t id="20">Unknown Gate Location</t>
+      <!-- inv_treasuremap -->
+      <t id="21">Encrypted Treasure Map</t>
+      <!-- inv_tradenetworkkey -->
+      <t id="22">Trade Network Key</t>
+      <t id="23">Key to unlock trade network subscriptions</t>
+      <!-- inv_stellarmapdevice -->
+      <t id="24">Stellar Map Device</t>
+      <t id="25">Unlocks Stellar Map for further exploration</t>
+      <!-- inv_stellarmap -->
+      <t id="26">Encrypted Stellar Map</t>
+      <t id="27">Decrypt with a Stellar Map Device to find new locations on the map</t>
+      <!-- inv_prisoner4 -->
+      <t id="28">Escape Pod</t>
+      <t id="29">Escape Pod Containing: Teladi Company Representative</t>
+      <!-- inv_prisoner3 -->
+      <t id="30">Escape Pod Containing: Medi-tech CEO</t>
+      <!-- inv_prisoner2 -->
+      <t id="31">Escape Pod Containing: Pirate Captain</t>
+      <!-- inv_prisoner1 -->
+      <t id="32">Escape Pod Containing: Pirate Admiral</t>
+      <!-- inv_prisonerzero -->
+      <t id="33">Escape Pod Containing: Prisoner</t>
+      <!-- inv_battlelog -->
+      <t id="34">Encrypted Battle Log</t>
+      <t id="35">Encrypted data of a recent battle. Useful for salvage vessels. Requires Stellar Map Device to decrypt.</t>
+      <!-- inv_distressbeaconfreq -->
+      <t id="36">Encrypted Distress Beacon</t>
+      <t id="37">Encrypted location of an escape pod. Requires Stellar Map Device to decrypt.</t>
+      <!-- inv_forgottenresearch -->
+      <t id="38">Encrypted Coordinates</t>
+      <t id="39">The encrypted coordinates of lost research. Requires Stellar Map Device to decrypt.</t>
+      <!-- inv_slave1 -->
+      <t id="40">Slave</t>
+      <t id="41">A befitting end for a captured enemy - to be sold into slavery</t>
+      <!-- sc_prison_module -->
+      <t id="42">Prison</t>
+      <t id="43">Imprison enemies to claim a ransom or enslave enemies to sell for profit. Talk to the Guard on the station.</t>
+      <!-- stellar_cartography_module -->
+      <t id="44">Stellar Cartography Module</t>
+      <t id="45">Research facility. Once built, it will provide the player with the Stellar Map Device.</t>
+      <!-- satellite_mk10 -->
+      <t id="46">Trade Receiver Satellite</t>
+      <t id="47">Receive trade subscriptions from every station in the sector</t>
+      <!-- satellite_mk09 -->
+      <t id="48">Unstable Trade Receiver Satellite</t>
+      <t id="49">Receive trade subscriptions from every station in the sector. Decays over time.</t>
+      <t id="50">Matrix</t>
+      <t id="51">Matrix</t>
+      <t id="52">Matrix</t>
+      <t id="53">Matrix</t>
+      <t id="54">Matrix</t>
+      <t id="55">Matrix</t>
+      <t id="56">Matrix</t>
+      <t id="57">Matrix</t>
+      <t id="58">Matrix</t>
+      <t id="59">Matrix</t>
+      <t id="60">Matrix</t>
+      <t id="61">Matrix</t>
+      <t id="62">Matrix</t>
+      <t id="63">Matrix</t>
+      <t id="64">Matrix</t>
+      <t id="65">Matrix</t>
+      <t id="66">Matrix</t>
+      <t id="67">Matrix</t>
+      <t id="68">Matrix</t>
+      <t id="69">Matrix</t>
+      <t id="70">Matrix</t>
+      <t id="71">Matrix</t>
+      <t id="72">Matrix</t>
+      <t id="73">Matrix</t>
+      <t id="74">Matrix</t>
+      <t id="75">Matrix</t>
+    </page>
+  </add>
+  <add sel="/language">
+    <page id="7345565" title="tpprod" descr="tpprod" voice="no">
+      <!--  -->
+      <!-- agricultural,energy,food,gases,hightech,ice,minerals,pharmaceutical,refined,shiptech,weapontech,water -->
+      <t id="1">agricultural</t>
+      <t id="2">agricultural</t>
+      <t id="3">agricultural</t>
+      <t id="4">energy</t>
+      <t id="5">energy</t>
+      <t id="6">energy</t>
+      <t id="7">food</t>
+      <t id="8">food</t>
+      <t id="9">food</t>
+      <t id="10">gases</t>
+      <t id="11">gases</t>
+      <t id="12">gases</t>
+      <t id="13">hightech</t>
+      <t id="14">hightech</t>
+      <t id="15">hightech</t>
+      <t id="16">ice</t>
+      <t id="17">ice</t>
+      <t id="18">ice</t>
+      <t id="19">minerals</t>
+      <t id="20">minerals</t>
+      <t id="21">minerals</t>
+      <t id="22">pharmaceutical</t>
+      <t id="23">pharmaceutical</t>
+      <t id="24">pharmaceutical</t>
+      <t id="25">refined</t>
+      <t id="26">refined</t>
+      <t id="27">refined</t>
+      <t id="28">shiptech</t>
+      <t id="29">shiptech</t>
+      <t id="30">shiptech</t>
+      <t id="31">weapontech</t>
+      <t id="32">weapontech</t>
+      <t id="33">weapontech</t>
+      <t id="34">water</t>
+      <t id="35">water</t>
+      <t id="36">water</t>
+    </page>
+    <page id="12345678" title="tpprod" descr="tpprod" voice="no">
+      <t id="102">Array Gamma Plasma Emitter</t>
+      <t id="103">Array Gamma Plasma Emitter</t>
+      <t id="104">Array Gamma Plasma Emitter</t>
+      <t id="105">Array Gamma Plasma Emitter</t>
+      <t id="203">Fragile 400mm Ion Cannon</t>
+      <t id="204">Fragile 400mm Ion Cannon</t>
+      <t id="205">Fragile 400mm Ion Cannon</t>
+      <t id="206">Fragile 400mm Ion Cannon</t>
+      <t id="304">Phased Medium Ion Emitter</t>
+      <t id="305">Phased Medium Ion Emitter</t>
+      <t id="306">Phased Medium Ion Emitter</t>
+      <t id="307">Phased Medium Ion Emitter</t>
+      <t id="405">Advanced Gamma Ion Railgun</t>
+      <t id="406">Advanced Gamma Ion Railgun</t>
+      <t id="407">Advanced Gamma Ion Railgun</t>
+      <t id="408">Advanced Gamma Ion Railgun</t>
+      <t id="506">Phased 200mm Ion Generator</t>
+      <t id="507">Phased 200mm Ion Generator</t>
+      <t id="508">Phased 200mm Ion Generator</t>
+      <t id="509">Phased 200mm Ion Generator</t>
+      <t id="607">Phased Heavy Concussion Generator</t>
+      <t id="608">Phased Heavy Concussion Generator</t>
+      <t id="609">Phased Heavy Concussion Generator</t>
+      <t id="610">Phased Heavy Concussion Generator</t>
+      <t id="708">Array Small Concussion Cannon</t>
+      <t id="709">Array Small Concussion Cannon</t>
+      <t id="710">Array Small Concussion Cannon</t>
+      <t id="711">Array Small Concussion Cannon</t>
+      <t id="809">Damaged Tiny Plasma Generator</t>
+      <t id="810">Damaged Tiny Plasma Generator</t>
+      <t id="811">Damaged Tiny Plasma Generator</t>
+      <t id="812">Damaged Tiny Plasma Generator</t>
+      <t id="910">Fragile Light Concussion Railgun</t>
+      <t id="911">Fragile Light Concussion Railgun</t>
+      <t id="912">Fragile Light Concussion Railgun</t>
+      <t id="913">Fragile Light Concussion Railgun</t>
+      <t id="1011">Phased 150mm Particle Cannon</t>
+      <t id="1012">Phased 150mm Particle Cannon</t>
+      <t id="1013">Phased 150mm Particle Cannon</t>
+      <t id="1014">Phased 150mm Particle Cannon</t>
+      <t id="1112">Fragile Small Plasma Projector</t>
+      <t id="1113">Fragile Small Plasma Projector</t>
+      <t id="1114">Fragile Small Plasma Projector</t>
+      <t id="1115">Fragile Small Plasma Projector</t>
+      <t id="1213">Array Gamma Particle Launcher</t>
+      <t id="1214">Array Gamma Particle Launcher</t>
+      <t id="1215">Array Gamma Particle Launcher</t>
+      <t id="1216">Array Gamma Particle Launcher</t>
+      <t id="1314">Diminished limited Concussion Generator</t>
+      <t id="1315">Diminished limited Concussion Generator</t>
+      <t id="1316">Diminished limited Concussion Generator</t>
+      <t id="1317">Diminished limited Concussion Generator</t>
+      <t id="1415">Array Beta Artillery Launcher</t>
+      <t id="1416">Array Beta Artillery Launcher</t>
+      <t id="1417">Array Beta Artillery Launcher</t>
+      <t id="1418">Array Beta Artillery Launcher</t>
+      <t id="1516">Fragmentation 75mm Plasma Cannon</t>
+      <t id="1517">Fragmentation 75mm Plasma Cannon</t>
+      <t id="1518">Fragmentation 75mm Plasma Cannon</t>
+      <t id="1519">Fragmentation 75mm Plasma Cannon</t>
+      <t id="1617">Fragile 150mm Artillery Ray</t>
+      <t id="1618">Fragile 150mm Artillery Ray</t>
+      <t id="1619">Fragile 150mm Artillery Ray</t>
+      <t id="1620">Fragile 150mm Artillery Ray</t>
+      <t id="1718">Phased 400mm Particle Railgun</t>
+      <t id="1719">Phased 400mm Particle Railgun</t>
+      <t id="1720">Phased 400mm Particle Railgun</t>
+      <t id="1721">Phased 400mm Particle Railgun</t>
+      <t id="1819">Advanced 300mm Ion Railgun</t>
+      <t id="1820">Advanced 300mm Ion Railgun</t>
+      <t id="1821">Advanced 300mm Ion Railgun</t>
+      <t id="1822">Advanced 300mm Ion Railgun</t>
+      <t id="1920">Advanced Heavy Particle Projector</t>
+      <t id="1921">Advanced Heavy Particle Projector</t>
+      <t id="1922">Advanced Heavy Particle Projector</t>
+      <t id="1923">Advanced Heavy Particle Projector</t>
+      <t id="2021">Fragmentation 200mm Particle Cannon</t>
+      <t id="2022">Fragmentation 200mm Particle Cannon</t>
+      <t id="2023">Fragmentation 200mm Particle Cannon</t>
+      <t id="2024">Fragmentation 200mm Particle Cannon</t>
+    </page>
+  </add>
+</diff>

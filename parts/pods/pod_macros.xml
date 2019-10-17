@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/unidiffxsd/x4_macro.xsd">
+  <macro name="d_pod_macro" class="destructible" >
+    <component ref="d_pod_comp" />
+    <properties>
+      <identification name="{20104, 70001}" description="{20104, 70002}" />
+      <!-- <hull integrated="1" /> -->
+    </properties>
+    <!-- <connections>
+      <connection ref="ConnectionFor_dockingbay_arg_s_01_macro">
+        <macro ref="defence_arg_disc_01_macro" connection="position" />
+      </connection>
+      <connection ref="ConnectionFor_dockingbay_arg_s_01_macro1">
+        <macro ref="defence_arg_disc_01_macro" connection="position" />
+      </connection>
+      <connection ref="ConnectionFor_dockingbay_arg_s_01_macro2">
+        <macro ref="defence_arg_disc_01_macro" connection="position" />
+      </connection>
+      <connection ref="ConnectionFor_dockingbay_arg_s_01_macro3">
+        <macro ref="defence_arg_disc_01_macro" connection="position" />
+      </connection>
+    </connections> -->
+  </macro>
+</macros>

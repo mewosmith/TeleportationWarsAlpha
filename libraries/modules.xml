@@ -1,0 +1,3397 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <add sel="/modules">
+    <module id="tpwar_prod_gen_advancedelectronics" group="tpwar_prod_gen_advancedelectronics">
+      <category ware="advancedelectronics" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="advancedelectronics" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_antimattercells" group="tpwar_prod_gen_antimattercells">
+      <category ware="antimattercells" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="2" />
+        <production ware="antimattercells" chance="50" />
+        <production ware="energycells" chance="25" />
+        <production ware="graphene" chance="25" />
+        <production ware="superfluidcoolant" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_antimatterconverters" group="tpwar_prod_gen_antimatterconverters">
+      <category ware="antimatterconverters" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="antimatterconverters" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_advancedcomposites" group="tpwar_prod_gen_advancedcomposites">
+      <category ware="advancedcomposites" tags="[production, module]" race="[argon, paranid]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, antigone, holyorder, hatikvah, alliance]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="advancedcomposites" chance="65" />
+        <production ware="graphene" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_claytronics" group="tpwar_prod_gen_claytronics">
+      <category ware="claytronics" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="claytronics" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_dronecomponents" group="tpwar_prod_gen_dronecomponents">
+      <category ware="dronecomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="dronecomponents" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_energycells" group="tpwar_prod_gen_energycells">
+      <category ware="energycells" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance]" />
+      <compatibilities>
+        <production ware="energycells" chance="65" />
+        <production ware="antimattercells" chance="25" />
+        <production ware="graphene" chance="25" />
+        <production ware="superfluidcoolant" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_engineparts" group="tpwar_prod_gen_engineparts">
+      <category ware="engineparts" tags="[production, module]" race="[argon, paranid]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, antigone, holyorder, hatikvah, alliance]" />
+      <compatibilities>
+        <production ware="engineparts" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_fieldcoils" group="tpwar_prod_gen_fieldcoils">
+      <category ware="fieldcoils" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="fieldcoils" chance="0" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_hullparts" group="tpwar_prod_gen_hullparts">
+      <category ware="hullparts" tags="[production, module]" race="[argon, paranid]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, antigone, holyorder, hatikvah, alliance]" />
+      <compatibilities>
+        <production ware="hullparts" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_graphene" group="tpwar_prod_gen_graphene">
+      <category ware="graphene" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="2" />
+        <production ware="graphene" chance="50" />
+        <production ware="antimattercells" chance="25" />
+        <production ware="energycells" chance="25" />
+        <production ware="superfluidcoolant" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_microchips" group="tpwar_prod_gen_microchips">
+      <category ware="microchips" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="microchips" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_missilecomponents" group="tpwar_prod_gen_missilecomponents">
+      <category ware="missilecomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="missilecomponents" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_superfluidcoolant" group="tpwar_prod_gen_superfluidcoolant">
+      <category ware="superfluidcoolant" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="2" />
+        <production ware="superfluidcoolant" chance="50" />
+        <production ware="antimattercells" chance="25" />
+        <production ware="energycells" chance="25" />
+        <production ware="graphene" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_plasmaconductors" group="tpwar_prod_gen_plasmaconductors">
+      <category ware="plasmaconductors" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="plasmaconductors" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_quantumtubes" group="tpwar_prod_gen_quantumtubes">
+      <category ware="quantumtubes" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="quantumtubes" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_refinedmetals" group="tpwar_prod_gen_refinedmetals">
+      <category ware="refinedmetals" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="4" />
+        <production ware="refinedmetals" chance="50" />
+        <production ref="prod_gen_siliconwafers" chance="25" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_scanningarrays" group="tpwar_prod_gen_scanningarrays">
+      <category ware="scanningarrays" tags="[production, module]" race="[argon, paranid]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, antigone, holyorder, hatikvah, alliance]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="scanningarrays" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_shieldcomponents" group="tpwar_prod_gen_shieldcomponents">
+      <category ware="shieldcomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="shieldcomponents" chance="0" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_siliconwafers" group="tpwar_prod_gen_siliconwafers">
+      <category ware="siliconwafers" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="4" />
+        <production ware="siliconwafers" chance="50" />
+        <production ref="prod_gen_refinedmetals" chance="20" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_smartchips" group="tpwar_prod_gen_smartchips">
+      <category ware="smartchips" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="smartchips" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_spices" group="tpwar_prod_gen_spices">
+      <category ware="spices" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <production ware="spices" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_turretcomponents" group="tpwar_prod_gen_turretcomponents">
+      <category ware="turretcomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="turretcomponents" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_water" group="tpwar_prod_gen_water">
+      <category ware="water" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="2" />
+        <production ware="water" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_gen_weaponcomponents" group="tpwar_prod_gen_weaponcomponents">
+      <category ware="weaponcomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="weaponcomponents" chance="65" />
+      </compatibilities>
+    </module>
+    <!-- Argon Production Modules -->
+    <module id="tpwar_prod_arg_meat" group="tpwar_prod_arg_meat">
+      <category ware="meat" tags="[production, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+      <compatibilities>
+        <production ware="meat" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_arg_medicalsupplies" group="tpwar_prod_arg_medicalsupplies">
+      <!-- need Argon version due to different build method using Wheat -->
+      <category ware="medicalsupplies" tags="[production, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+      <compatibilities>
+        <production ware="medicalsupplies" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_arg_foodrations" group="tpwar_prod_arg_foodrations">
+      <category ware="foodrations" tags="[production, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+      <compatibilities>
+        <production ware="foodrations" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_arg_spacefuel" group="tpwar_prod_arg_spacefuel">
+      <category ware="spacefuel" tags="[production, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+      <compatibilities>
+        <production ware="spacefuel" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_arg_wheat" group="tpwar_prod_arg_wheat">
+      <category ware="wheat" tags="[production, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+      <compatibilities>
+        <production ware="wheat" chance="65" />
+      </compatibilities>
+    </module>
+    <!-- Paranid Production Modules -->
+    <module id="tpwar_prod_par_majadust" group="tpwar_prod_par_majadust">
+      <category ware="majadust" tags="[production, module]" race="paranid" faction="scaleplate" />
+      <compatibilities>
+        <production ware="majadust" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_par_majasnails" group="tpwar_prod_par_majasnails">
+      <category ware="majasnails" tags="[production, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+      <compatibilities>
+        <production ware="majasnails" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_par_medicalsupplies" group="tpwar_prod_par_medicalsupplies">
+      <!-- need Paranid version due to different build method using Soja Beans -->
+      <category ware="medicalsupplies" tags="[production, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+      <compatibilities>
+        <production ware="medicalsupplies" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_par_sojabeans" group="tpwar_prod_par_sojabeans">
+      <category ware="sojabeans" tags="[production, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+      <compatibilities>
+        <production ware="sojabeans" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_par_sojahusk" group="tpwar_prod_par_sojahusk">
+      <category ware="sojahusk" tags="[production, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+      <compatibilities>
+        <production ware="sojahusk" chance="65" />
+      </compatibilities>
+    </module>
+    <!-- Teladi Production Modules -->
+    <module id="tpwar_prod_tel_advancedcomposites" group="tpwar_prod_tel_advancedcomposites">
+      <!-- need Teladi version due to different build method using Teladianium -->
+      <category ware="advancedcomposites" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="advancedcomposites" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_engineparts" group="tpwar_prod_tel_engineparts">
+      <!-- need Teladi version due to different build method using Teladianium -->
+      <category ware="engineparts" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="engineparts" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_hullparts" group="tpwar_prod_tel_hullparts">
+      <!-- need Teladi version due to different build method using Teladianium -->
+      <category ware="hullparts" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="hullparts" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_scanningarrays" group="tpwar_prod_tel_scanningarrays">
+      <!-- need Teladi version due to different build method using Teladianium -->
+      <category ware="scanningarrays" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="scanningarrays" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_medicalsupplies" group="tpwar_prod_tel_medicalsupplies">
+      <!-- need Teladi version due to different build method using Sunrise Flowers -->
+      <category ware="medicalsupplies" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="medicalsupplies" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_nostropoil" group="tpwar_prod_tel_nostropoil">
+      <category ware="nostropoil" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="nostropoil" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_spaceweed" group="tpwar_prod_tel_spaceweed">
+      <category ware="spaceweed" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="spaceweed" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_sunriseflowers" group="tpwar_prod_tel_sunriseflowers">
+      <category ware="sunriseflowers" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="sunriseflowers" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_swampplant" group="tpwar_prod_tel_swampplant">
+      <category ware="swampplant" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="swampplant" chance="65" />
+      </compatibilities>
+    </module>
+    <module id="tpwar_prod_tel_teladianium" group="tpwar_prod_tel_teladianium">
+      <category ware="teladianium" tags="[production, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+      <compatibilities>
+        <production ware="teladianium" chance="65" />
+      </compatibilities>
+    </module>
+    <!-- Xenon Production Modules -->
+    <module id="tpwar_prod_xen_energycells" group="tpwar_prod_xen_energycells">
+      <category ware="energycells" tags="[production, module]" race="xenon" faction="xenon" />
+      <compatibilities>
+        <limits production="1" />
+        <production ware="energycells" chance="75" />
+      </compatibilities>
+    </module>
+    <!-- Argon Storage Modules -->
+    <module id="tpwar_stor_arg" group="tpwar_stor_arg">
+      <category tags="[storage, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <!-- Paranid Storage Modules -->
+    <module id="tpwar_stor_par" group="tpwar_stor_par">
+      <category tags="[storage, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Storage Modules -->
+    <module id="tpwar_stor_tel" group="tpwar_stor_tel">
+      <category tags="[storage, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Xenon Storage Modules -->
+    <module id="tpwar_stor_xen" group="tpwar_stor_xen">
+      <category tags="[storage, module]" race="xenon" faction="xenon" />
+    </module>
+    <!-- Argon Dockarea Modules -->
+    <module id="tpwar_dockarea_arg" group="tpwar_dockarea_arg">
+      <category tags="[dockarea, module, standard]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <module id="tpwar_dockarea_arg_hightech" group="tpwar_dockarea_arg_hightech">
+      <category tags="[dockarea, module, hightech]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <module id="tpwar_dockarea_arg_lowtech" group="tpwar_dockarea_arg_lowtech">
+      <category tags="[dockarea, module, lowtech]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <!-- Paranid Dockarea Modules -->
+    <module id="tpwar_dockarea_par" group="tpwar_dockarea_par">
+      <category tags="[dockarea, module, standard]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <module id="tpwar_dockarea_par_hightech" group="tpwar_dockarea_par_hightech">
+      <category tags="[dockarea, module, hightech]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <module id="tpwar_dockarea_par_lowtech" group="tpwar_dockarea_par_lowtech">
+      <category tags="[dockarea, module, lowtech]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Dockarea Modules -->
+    <module id="tpwar_dockarea_tel" group="tpwar_dockarea_tel">
+      <category tags="[dockarea, module, standard]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <module id="tpwar_dockarea_tel_hightech" group="tpwar_dockarea_tel_hightech">
+      <category tags="[dockarea, module, hightech]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <module id="tpwar_dockarea_tel_lowtech" group="tpwar_dockarea_tel_lowtech">
+      <category tags="[dockarea, module, lowtech]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Xenon Dockarea Modules -->
+    <module id="tpwar_dockarea_xen" group="tpwar_dockarea_xen">
+      <category tags="[dockarea, module, standard]" race="xenon" faction="xenon" />
+    </module>
+    <!-- Argon Pier Modules -->
+    <module id="tpwar_pier_base_arg" group="tpwar_pier_base_arg">
+      <category tags="[pier, base, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah, xenon]" comment="These modules must be shared by all factions until different races have modules of their own." />
+    </module>
+    <module id="tpwar_pier_add_arg" group="tpwar_pier_add_arg">
+      <category tags="[pier, add, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah, xenon]" comment="These modules must be shared by all factions until races have modules of their own." />
+    </module>
+    <!-- Paranid Pier Modules -->
+    <module id="tpwar_pier_base_par" group="tpwar_pier_base_par">
+      <category tags="[pier, base, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <module id="tpwar_pier_add_par" group="tpwar_pier_add_par">
+      <category tags="[pier, add, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Pier Modules -->
+    <module id="tpwar_pier_base_tel" group="tpwar_pier_base_tel">
+      <category tags="[pier, base, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <module id="tpwar_pier_add_tel" group="tpwar_pier_add_tel">
+      <category tags="[pier, add, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Argon Habitation Modules -->
+    <module id="tpwar_hab_arg" group="tpwar_hab_arg">
+      <category tags="[habitation, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" comment="These modules must be shared by all factions until different races have modules of their own." />
+    </module>
+    <!-- Paranid Habitation Modules -->
+    <module id="tpwar_hab_par" group="tpwar_hab_par">
+      <category tags="[habitation, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Habitation Modules -->
+    <module id="tpwar_hab_tel" group="tpwar_hab_tel">
+      <category tags="[habitation, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Argon Defence Modules -->
+    <module id="tpwar_def_arg" group="tpwar_def_arg">
+      <category tags="[defence, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah, xenon]" comment="These modules must be shared by all factions until different races have modules of their own." />
+    </module>
+    <!-- Paranid Defence Modules -->
+    <module id="tpwar_def_par" group="tpwar_def_par">
+      <category tags="[defence, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Defence Modules -->
+    <module id="tpwar_def_tel" group="tpwar_def_tel">
+      <category tags="[defence, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Argon Ownership Claiming Modules -->
+    <module id="tpwar_claim_arg" group="tpwar_claim_arg">
+      <category tags="[claim, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <!-- Paranid Ownership Claiming Modules -->
+    <module id="tpwar_claim_par" group="tpwar_claim_par">
+      <category tags="[claim, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Ownership Claiming Modules -->
+    <module id="tpwar_claim_tel" group="tpwar_claim_tel">
+      <category tags="[claim, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Xenon Ownership Claiming Modules -->
+    <module id="tpwar_claim_xen" group="tpwar_claim_xen">
+      <category tags="[defence, claim, module]" race="xenon" faction="xenon" />
+    </module>
+    <!-- Argon Build Modules -->
+    <module id="tpwar_build_arg" group="tpwar_build_gen">
+      <category tags="[build, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <!-- Paranid Build Modules -->
+    <module id="tpwar_build_par" group="tpwar_build_gen">
+      <category tags="[build, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Build Modules -->
+    <module id="tpwar_build_tel" group="tpwar_build_gen">
+      <category tags="[build, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Xenon Build Modules -->
+    <module id="tpwar_build_xen" group="tpwar_build_xen">
+      <category tags="[build, module]" race="xenon" faction="xenon" />
+    </module>
+    <!-- Argon Equipment Dock Modules -->
+    <module id="tpwar_equip_arg" group="tpwar_equip_gen">
+      <category tags="[equip, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah]" />
+    </module>
+    <!-- Paranid Equipment Dock Modules -->
+    <module id="tpwar_equip_par" group="tpwar_equip_gen">
+      <category tags="[equip, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Equipment Dock Modules -->
+    <module id="tpwar_equip_tel" group="tpwar_equip_gen">
+      <category tags="[equip, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Argon Connection Modules -->
+    <module id="tpwar_conn_arg" group="tpwar_conn_arg">
+      <category tags="[connection, module]" race="argon" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, argon, antigone, hatikvah, xenon]" />
+    </module>
+    <!-- Paranid Connection Modules -->
+    <module id="tpwar_conn_par" group="tpwar_conn_par">
+      <category tags="[connection, module]" race="paranid" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, paranid, holyorder, alliance]" />
+    </module>
+    <!-- Teladi Connection Modules -->
+    <module id="tpwar_conn_tel" group="tpwar_conn_tel">
+      <category tags="[connection, module]" race="teladi" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, teladi, ministry, scaleplate]" />
+    </module>
+    <!-- Online Portal Modules -->
+    <module id="tpwar_venturer_gen" group="tpwar_venturer_gen">
+      <category tags="[venturer, module]" race="[argon, paranid, teladi]" faction="[khaakpox
+,xenonmatrix
+,atlas
+,sovsyn
+,cartel
+,agi
+,goner
+,wholefood
+,ledda
+,telunion
+,aldrin
+,cantera
+,toride
+,nmmc
+,atreus
+,jonferson
+,aquariuscorp
+,ptni
+,strongarms
+,plutarch
+,albionenergy
+,terracorp
+,franton
+,chow
+,beryll
+,terrapmc
+,otas
+,buccaneers
+,reivers
+,terrans
+,nolimits
+,uguras
+,heretics
+,yaki
+,usc
+,heartofalbion
+,sonraenergy, player]" />
+    </module>
+  </add>
+</diff>

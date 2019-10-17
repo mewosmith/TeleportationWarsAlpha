@@ -1,0 +1,57 @@
+[10:39 AM] mewosmith: anyone have any cute ideas for lockboxes?
+[10:39 AM] RainS'Tol: what do you mean?
+[10:41 AM] UniTrader: you could stuff ponies insids
+[10:42 AM] mewosmith: dragon has infected you
+[10:42 AM] mewosmith: i dunno. crew is my idea
+[10:42 AM] mewosmith: or more complex events
+[10:45 AM] RainS'Tol: I got nothing.  Guess its a not very creative day for me.
+[10:45 AM] h2odragon: treasure hunt clues to find ships with highroll mods
+[10:46 AM] h2odragon: 1/10 chance of it being an I at the end of the trail
+[10:46 AM] mewosmith: thats a good one
+[10:46 AM] mewosmith: treasure hunt would be fun
+[10:46 AM] RainS'Tol: That's a good one
+[10:47 AM] RainS'Tol: "hidden stash" treasure maps
+[10:48 AM] mewosmith: i  have a system like that for sector discovery
+[10:48 AM] RainS'Tol: "tales from the deep" of ship sightings
+[10:49 AM] mewosmith: wonder how annoyed with the bad ones people would be if i did a thing like docs gmprompt
+[10:50 AM] mewosmith: then some choices based one the keywords the prompt game
+[10:50 AM] mewosmith: gave
+[10:51 AM] RainS'Tol: could be interesting.
+[10:53 AM] RainS'Tol: the biggest thing would be the ability to get back to them.  meaning not pursue them right now.   Like missions.
+[10:53 AM] RainS'Tol: we all have squirrel moments :smile:
+[10:54 AM] mewosmith: i havent messed with the mission system
+[10:54 AM] mewosmith: it seems like the worst part of md
+[10:54 AM] mewosmith: which is pretty funny
+[11:02 AM] mewosmith: has anyone screwed around with making missions. a quick glance makes it look painful.
+[11:03 AM] h2odragon: i looked about that deep and came to the same conclusion
+[11:51 AM] UniTrader: i intended to, but didnt have ideas for a plot..
+[11:56 AM] UniTrader: would especially love to make a kind of branching story where your descisions decide how it plays out (eg you are directed to destroy a ship, but if you hack it instead (which is not in the instructions) you get some bonus like additional info, or the plot goes in a diffrent direction for a bit)
+[12:08 PM] h2odragon: "choose your own adventure" books :slight_smile:
+[12:09 PM] UniTrader: yeah, like that..
+[12:09 PM] h2odragon: subplots that the player can be dropped into from several places
+[12:10 PM] UniTrader: maybe even choose between diffrent rewards, to really annoy the minmaxers :smile:
+[12:12 PM] UniTrader: but well, if you have difficulties in putting a plot into md - feel free to ask me. just need some clear directions what should happen. (also not too much at once)
+[12:15 PM] h2odragon: .. npc competition for missions
+[12:15 PM] h2odragon: "take out this xen base" but you get there and find nothing but wreckage and some salvage lizard who taunts you for being late
+[12:28 PM] mewosmith: as far as an  actual plot, i want to do one around the landmarks
+[12:42 PM] RainS'Tol: Nice, make some of the wrecks have a purpose maybe?
+[12:42 PM] RainS'Tol: the static wrecks i mean.
+[12:43 PM] h2odragon: ive read you can get into some of those in a space suit and get loot
+[12:43 PM] h2odragon: like they have rooms?
+[12:43 PM] h2odragon: never chased that down
+[12:44 PM] RainS'Tol: they do.  but I get more from killing xenon and khak.
+[12:48 PM] mewosmith: the stumbling block for me is thinking of more things to happen. "oh look, badguys!" only goes so far
+[12:49 PM] h2odragon: space brothel.
+[12:49 PM] mewosmith: let me know if you figure out how to do that
+[12:49 PM] mewosmith: ill sell tickets
+[12:52 PM] h2odragon: smuggler runs. pick up an item, deliver it somewhere else; bu on pickup some faction suddelny after yo arse. but then restore relations when you deliver it
+[12:55 PM] h2odragon: fortify the landmarks: you have some period of time to build stations containgin N or more turrets within 100km of $landmark
+[12:56 PM] mewosmith: keep em comin. ill write em down.
+[12:57 PM] RainS'Tol: missions to discover said landmarks
+[12:57 PM] h2odragon: "some bastard dumped a bunch of mines around the arg wharf; cleanup on aisle 3!"
+[12:57 PM] RainS'Tol: lol
+[12:58 PM] RainS'Tol: or press the "Easy" button.... my mod :smile:
+[12:58 PM] h2odragon: precisely
+[1:03 PM] h2odragon: gate guardianship. you assume responsibility for a gate; for N time period no enemeies of faction get through, they pay you and like you a bit more
+[1:04 PM] h2odragon: "space janitor" actually could have a lot of things to do couldnt it
+[1:05 PM] h2odragon: aside: habs should produce waste/compost to go to farms. wheres' it all go now? should the habs be swelling like this?

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Tpwar_Create_Mission_LIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <library name="MissionLIB" namespace="this">
+            <params>
+                <param name="Object" default="null" />
+                <param name="Flag" default="null" />
+            </params>
+            <cues>
+                
+                <!-- 
+                    inheritance cues
+                        implied object of mission and player
+                        talk(at, with, where, when, forwho)
+                        dock(at, with, where, when, forwho)
+                        aquire(at, where, when, forwho)
+                        sell(ai, where, when, forwho)
+                        kill(where, when, forwho)
+                        protect(where, when, forwho)
+                        difficulty(at, where, when, forwho) 
+
+                 -->
+                <cue name="OfferCue">
+                    <actions>
+                        <set_value name="$OfferName" exact="$Flag" />
+                        <create_list name="$EventCues" />
+                        <set_value name="$BaseCue" exact="this" />
+                        <do_if value="$Flag == 'Purchase'">
+                            <create_cue_actor cue="this" actor="$Object.controlentity.default" />
+                            <set_value name="$CueActor" exact="this.actor" />
+                            <set_value name="$ObjectPrice" exact="$Object.macro.ware.averageprice" />
+                            <find_object_component name="$PriceMacros" object="$Object" multiple="true"></find_object_component>
+                            <do_all exact="$PriceMacros.count" counter="$i">
+                                <set_value name="$ObjectPrice" exact="@$PriceMacros.{$i}.macro.ware.averageprice" operation="add" />
+                            </do_all>
+                            <do_if value="$CueActor.assignedcontrolled.isclass.station?">
+                                <append_to_list name="$EventCues" exact="[Dock, $CueActor.assignedcontrolled]" />
+                            </do_if>
+                            <do_elseif value="$CueActor.assignedcontrolled.isclass.[class.ship_l, class.ship_xl]?">
+                                <append_to_list name="$EventCues" exact="[Dock, $CueActor.assignedcontrolled]" />
+                            </do_elseif>
+                            <do_else>
+                                <append_to_list name="$EventCues" exact="[Dock, $CueActor.assignedcontrolled]" />
+                            </do_else>
+                            <append_to_list name="$EventCues" exact="[Complete]" />
+                            <set_value name="$OfferName" exact="global.$BuyColor + $Object.knownname + global.$EndColor + ' ' + (if (($ObjectPrice / 100) lt player.money) then global.$GoodColor else global.$BadColor) + '-'+ $ObjectPrice.formatted.default + global.$EndColor" />
+                        </do_if>
+                        <create_offer cue="OfferCue" name="$OfferName" difficulty="level.trivial" location="$Object" reward="$Object" actor="this.actor" distance="300km" associated="$Object.pilot" description="'foo'" faction="faction.argon">
+                            <briefing>
+                                <objective step="1" action="objective.flyto" object="$Object" />
+                            </briefing>
+                        </create_offer>
+                    </actions>
+                    <cues>
+                        <cue name="DockMissionCue">
+                            <conditions>
+                                <event_object_signalled object="this.parent.actor" param="'accept'" />
+                            </conditions>
+                            <actions>
+                                <create_mission cue="this" offercue="OfferCue"></create_mission>
+                                <set_objective cue="this" step="1" action="objective.flyto" object="$Object" />
+                                <remove_offer cue="this.parent" />
+                            </actions>
+                            <cues>
+                                <cue name="EventManager">
+                                    <actions>
+                                        <do_all exact="$EventCues.count" counter="$i">
+                                            <signal_cue_instantly cue="$EventCues.{$i}.{1}" param="@$EventCues.{$i}.{2}" />
+                                        </do_all>
+                                    </actions>
+                                    <cues>
+                                        <cue name="Cancel">
+                                            <conditions>
+                                                <event_mission_aborted cue="DockMissionCue" />
+                                            </conditions>
+                                            <actions>
+                                                <remove_mission cue="this.parent" />
+                                                <cancel_cue cue="$BaseCue" />
+                                            </actions>
+                                        </cue>
+                                    </cues>
+                                </cue>
+                                <cue name="Dock">
+                                    <conditions>
+                                        <event_cue_signalled />
+                                    </conditions>
+                                    <actions>
+                                        <set_value name="$Container" exact="event.param.{1}" />
+                                        <set_value name="$Return" exact="event.param.{2}" />
+                                    </actions>
+                                    <cues>
+                                        <cue name="DockEvent">
+                                            <conditions>
+                                                <event_object_docked_at container="$Container" />
+                                            </conditions>
+                                            <actions>
+                                                <signal_cue_instantly cue="$Return" />
+                                            </actions>
+                                        </cue>
+                                    </cues>
+                                </cue>
+                                <cue name="Talk">
+                                    <conditions>
+                                        <event_cue_signalled />
+                                    </conditions>
+                                    <cues>
+                                        <cue name="TalkEvent">
+                                            <conditions>
+                                                <event_conversation_started actor="$CueActor" conversation="default" />
+                                            </conditions>
+                                            <actions>
+                                                <add_player_choice text="global.$TpwarAccept.random" section="default" />
+                                                <signal_cue_instantly cue="$Return" />
+                                            </actions>
+                                        </cue>
+                                    </cues>
+                                </cue>
+                                <cue name="Complete">
+                                    <conditions>
+                                        <event_cue_signalled />
+                                    </conditions>
+                                    <cues>
+                                        <cue name="Reward">
+                                            <actions>
+                                                <!-- <transfer_money from="faction.player" to="$Object.owner" amount="$ObjectPrice" /> -->
+                                                <release_job_ship ship="$Object" />
+                                                <cancel_all_orders object="$Object" />
+                                                <set_owner object="$Object" faction="faction.player" overridenpc="true" />
+                                            </actions>
+                                        </cue>
+                                    </cues>
+                                </cue>
+                            </cues>
+                        </cue>
+                    </cues>
+                </cue>
+            </cues>
+        </library>
+    </cues>
+</mdscript>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Create_Station_LIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+             
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+
+                <create_list name="$ConPlans" />
+                <append_to_list name="$ConPlans" exact="'trade_tel_hab_claim'" />
+                <append_to_list name="$ConPlans" exact="'prod01_sm_yard_maint'" />
+                <append_to_list name="$ConPlans" exact="'claytronics_deletecons'" />
+                <append_to_list name="$ConPlans" exact="'WIfeplan'" />
+                <append_to_list name="$ConPlans" exact="'yard_s_main_l_def'" />
+                <append_to_list name="$ConPlans" exact="'dock_l_gen'" />
+                <append_to_list name="$ConPlans" exact="'allshipcraftarg'" />
+                <append_to_list name="$ConPlans" exact="'extreme_fortress'" />
+                <append_to_list name="$ConPlans" exact="'l_yard_small_prod'" />
+                <append_to_list name="$ConPlans" exact="'player_1567150128'" />
+                <append_to_list name="$ConPlans" exact="'player_1567151104'" />
+                <append_to_list name="$ConPlans" exact="'player_1567118697'" />
+                <append_to_list name="$ConPlans" exact="'player_1567119392'" />
+                <append_to_list name="$ConPlans" exact="'player_1567155748'" />
+                <append_to_list name="$ConPlans" exact="'player_1567156477'" />
+                <append_to_list name="$ConPlans" exact="'player_1567149729'" />
+                <append_to_list name="$ConPlans" exact="'player_1567149928'" />
+                <append_to_list name="$ConPlans" exact="'player_1567094500'" />
+                <append_to_list name="$ConPlans" exact="'player_1567147914'" />
+                <append_to_list name="$ConPlans" exact="'player_1567146909'" />
+                <append_to_list name="$ConPlans" exact="'player_1567146970'" />
+                <append_to_list name="$ConPlans" exact="'player_1566894553'" />
+                <append_to_list name="$ConPlans" exact="'player_1566892807'" />
+                <append_to_list name="$ConPlans" exact="'player_1566891612'" />
+                <append_to_list name="$ConPlans" exact="'player_1566891210'" />
+                <append_to_list name="$ConPlans" exact="'player_1566891961'" />
+                <do_all exact="$ConPlans.count" counter="$i">
+                    <create_station name="$StationCreated" macro="macro.station_gen_factory_base_01_macro" constructionplan="$ConPlans.{$i}" zone="player.zone" owner="faction.player" state="componentstate.operational">
+                        <safepos min="1km" max="50km" />
+                    </create_station>
+                    <set_value name="$Seq" exact="$StationCreated.constructionsequence" />
+                    <generate_loadout result="$Loadout" sequence="$Seq" level="1" faction="faction.teladi" />
+                    <do_all exact="$Loadout.count" counter="$i">
+                        <apply_loadout loadout="$Loadout.{$i}" index="$i" object="$StationCreated" />
+                    </do_all>
+                    <remove_value name="$Loadout" />
+                    <!-- <set_value name="$loadlist" exact="[
+                        macro.weapon_khp_s_mk1_macro, 
+                        macro.weapon_khp_m_mk1_macro, 
+                        macro.turret_khp_m_mk1_macro, 
+                        macro.turret_khp_l_mk1_macro
+               
+                        ]" /> -->
+                    <!-- <set_value name="$Victim" exact="$StationCreated" />
+                    <find_object_component name="$Modules" object="$Victim" multiple="true" module="true"></find_object_component>
+                    <do_all exact="$Modules.count" counter="$m">
+                        <debug_text text="$Modules.{$m}.macro" />
+                        <generate_loadout result="$loadout"   module="$Modules.{$m}.macro" level="1" />
+                        <debug_text text="$loadout.{1}" />
+                        <apply_loadout object="$Victim" loadout="$loadout.{1}" />
+                        <remove_value name="$loadout" />
+                    </do_all> -->
+                    <!-- <do_all exact="$loadout.count" counter="$i">
+                        <apply_loadout object="$Victim" loadout="$loadout.{$i}" />
+                    </do_all> -->
+                    <!-- <remove_value name="$loadout" />
+                    <find_object_component groupname="$keeping" object="$Victim" recursive="true" multiple="true">
+                        <match_any>
+                            <match class="[class.turret, class.weapon]" negate="true" />
+                            <match integrated="true" />
+                            <match integrated="false" />
+                        </match_any>
+                    </find_object_component>
+                    <do_all exact="$keeping.count" counter="$i">
+                        <append_to_list name="$loadlist" exact="$keeping.{$i}.macro" />
+                    </do_all>
+                    <generate_loadout result="$loadout" macro="$Victim.macro" macros="$loadlist" level="1" />
+                    <apply_loadout object="$Victim" loadout="$loadout.{1}" /> -->
+                </do_all>
+            </actions>
+            <cues>
+                <library name="CreateStationLIB">
+                    <params>
+                        <param name="Sector" default="global.$X4_All_Sectors.random" />
+                        <param name="Zone" default="null" />
+                        <param name="Type" default="'random'" />
+                        <param name="Random" default="true" />
+                        <param name="Faction" default="faction.argon" />
+                        <param name="SafePositon" default="[10km, 50km]" />
+                        <param name="Loadout" default="1" />
+                        <param name="ReturnSignal" default="'Create_Station_LIB'" />
+                    </params>
+                    <cues>
+                        <cue name="CreateStation">
+                            <actions>
+                                <do_if value="$Type == 'random'"></do_if>
+                                <do_elseif value="$Type == 'Shipyard'"></do_elseif>
+                                <do_elseif value="$Type == 'Wharf'"></do_elseif>
+                                <do_elseif value="$Type == 'Claim'"></do_elseif>
+                                <do_elseif value="$Type == 'Factory'"></do_elseif>
+                                <do_elseif value="$Type == 'Shipyard'"></do_elseif>
+                                <do_all exact="$ConPlans.count" counter="$i">
+                                    <create_station macro="macro.station_gen_factory_base_01_macro" constructionplan="$ConPlans.{$i}" zone="player.zone" owner="faction.player">
+                                        <safepos min="$SafePositon.{1}" max="$SafePositon.{2}" />
+                                    </create_station>
+                                </do_all>
+                            </actions>
+                            <cues>
+                                <cue name="Signal">
+                                    <actions></actions>
+                                </cue>
+                            </cues>
+                        </cue>
+                    </cues>
+                </library>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

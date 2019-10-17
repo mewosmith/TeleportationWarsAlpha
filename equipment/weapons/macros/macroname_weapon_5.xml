@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="phased_heavy_concussion_generator_macro" class="weapon">
+        <component ref="weapon_arg_l_plasma_01_mk1" />
+        <properties>
+            <identification name="{12345678,607}" basename="{12345678,608}" shortname="{12345678,609}" description="{12345678,610}" mk="1" />
+            <bullet class="phased_heavy_concussion_generator_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="222" />
+            <rotationacceleration max="105" />
+            <!-- <reload time="8" /> -->
+            <hull max="1389" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+

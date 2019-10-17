@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Gen_Profiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                 <check_value value="false" />
+            </conditions>
+            <delay exact="3s" />
+            <actions>
+                <debug_to_file text="'start'" name="'gentable.log'" directory="'genailog'" append="false" chance="global.$tpwar_debugchance" />
+                <set_value name="$TraitsCount" exact="50" />
+                <set_value name="$BaseChance" exact="1" />
+                <set_value name="global.$GenProfilesTable" exact="table[]" />
+                <do_all exact="$TraitsCount" counter="$i">
+                    <do_while value="global.$MissionWeights.{1} + global.$MissionWeights.{2} + global.$MissionWeights.{3} + global.$MissionWeights.{4} != 100">
+                        <set_value name="global.$MissionWeights.{1}" min="1" max="95" />
+                        <set_value name="global.$MissionWeights.{2}" min="1" max="95" />
+                        <set_value name="global.$MissionWeights.{3}" min="1" max="95" />
+                        <set_value name="global.$MissionWeights.{4}" min="1" max="95" />
+                    </do_while>
+                    <set_value name="global.$GenProfilesTable.{$i}" exact="[
+                    $BaseChance, 
+                    global.$ShieldMods.random, 
+                    global.$WeaponMods.random, 
+                    global.$EngineMods.random, 
+                    global.$ShipMods.random,
+                    [
+                    global.$GenTargetJobs.random, 
+                    global.$GenTargetJobs.random, 
+                    global.$GenTargetJobs.random, 
+                    global.$GenTargetJobs.random, 
+                    global.$GenTargetJobs.random
+                    ], 
+                    global.$AIActions.random,
+                    [
+                    global.$MissionWeights.{1}, 
+                    global.$MissionWeights.{2},
+                    global.$MissionWeights.{3}, 
+                    global.$MissionWeights.{4}
+                    ]
+                    ]" />
+                </do_all>
+            </actions>
+            <cues>
+                <library name="GenProfilesLIB">
+                    <params>
+                        <param name="ReturnListSize" default="24" />
+                        <param name="ReturnSignal" default="'hiveloop'" />
+                    </params>
+                    <cues>
+                        <cue name="NewModsList">
+                            <actions>
+                                <create_list name="$NewMods" />
+                                <set_value name="$WhileCount" exact="0" chance="global.$tpwar_debugchance" />
+                                <do_while value="$NewMods.count lt $ReturnListSize">
+                                    <set_value name="$WhileCount" exact="1" operation="add" chance="global.$tpwar_debugchance" />
+                                    <set_value name="$RandomNumber" min="1" max="$TraitsCount" />
+                                    <append_to_list name="$NewMods" exact="global.$GenProfilesTable.{$RandomNumber}" chance="global.$GenProfilesTable.{$RandomNumber}.{1}" />
+                                </do_while>
+                                <signal_objects object="player.entity" param="$ReturnSignal" param2="$NewMods" />
+                                <!-- debug -->
+                                <debug_to_file text="'$NewMods ' + $NewMods" name="'gentable.log'" directory="'genailog'" chance="global.$tpwar_debugchance" />
+                                <debug_to_file text="'WhileCount ' + $WhileCount" name="'gentable.log'" directory="'genailog'" chance="global.$tpwar_debugchance" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </library>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

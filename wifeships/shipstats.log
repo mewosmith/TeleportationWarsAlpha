@@ -1,0 +1,43 @@
+start
+MDM-730  ship_tel_s_miner_solid_01_a_macro 1 // used
+YIB-120  ship_arg_s_scout_01_a_macro 2 // add 2 below cockpit
+UXB-833  ship_arg_s_scout_01_b_macro 2
+MBP-935  tpwar_exia_macro 3
+DCY-297  tpwar_foxtail_macro 0  // bomber?
+QID-824  tpwar_kasper_macro 4 // done  gunship
+LUQ-126  tpwar_pugnax_macro 2 // done change to bomber?
+XJY-773  ship_arg_s_trans_container_01_a_macro 1 // personel trans // tfiles 
+PFW-997  ship_arg_s_trans_container_01_b_macro 1
+WGG-467  ship_arg_s_trans_container_02_a_macro 2
+KQZ-874  ship_arg_s_trans_container_02_b_macro 2
+UTI-681  ship_arg_s_miner_solid_01_a_macro 1
+OWJ-199  ship_par_s_miner_solid_01_a_macro 2
+COX-651  ship_tel_s_trans_container_01_a_macro 1
+UJJ-482  ship_tel_s_trans_container_01_b_macro 1
+QGI-421  ship_tel_s_scout_01_a_macro 1  // add two guns to nacels
+ZPC-057  ship_tel_s_scout_01_b_macro 1
+TUX-804  ship_tel_s_scout_02_a_macro 1
+KUH-151  ship_tel_s_scout_02_b_macro 1
+JFP-292  ship_par_s_trans_container_01_a_macro 2
+HGQ-797  ship_par_s_trans_container_01_b_macro 2
+JZO-306  ship_par_s_scout_01_a_macro 1 // wing guns
+WLK-160  ship_par_s_scout_01_b_macro 1
+GZM-893  ship_arg_s_fighter_04_a_macro 4 // gunship 
+HVZ-612  ship_arg_s_heavyfighter_02_a_macro 4 // gunship 
+AKY-087  ship_arg_s_fighter_01_a_macro 2 // bomber 
+FMF-563  ship_arg_s_fighter_01_b_macro 2
+ICQ-303  ship_arg_s_fighter_02_a_macro 1 // tp // tfiles 
+ZVK-754  ship_arg_s_fighter_03_a_macro 6 // gunship
+VPI-683  ship_tel_s_fighter_01_a_macro 2 // bomber
+TST-269  ship_tel_s_fighter_01_b_macro 2
+BPQ-070  ship_kha_s_fighter_02_a_macro 1
+USW-832  ship_xen_s_fighter_01_a_macro 2
+CBL-081  ship_xen_s_fighter_02_a_macro 2
+GEO-017  ship_par_s_fighter_01_a_macro 2 // bomer
+VYO-565  ship_par_s_fighter_02_a_macro 3 // bomer
+WFL-856  ship_par_s_fighter_01_b_macro 2
+WAK-196  ship_par_s_fighter_02_b_macro 3
+UUB-633  ship_arg_s_fighter_02_b_macro 1
+SNI-390  ship_tel_s_fighter_02_a_macro 3 // bomber
+QEZ-227  ship_tel_s_fighter_02_b_macro 3
+LWJ-295  ship_kha_s_fighter_01_a_macro 2

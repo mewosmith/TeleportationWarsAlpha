@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <!-- SHIELD -->
+   <add sel="/equipmentmods/shield">
+     <!-- SHIELD generation profiles ******************************** -->
+    <capacity ware="gen_capacity_01" quality="3" min="1.1" max="1.1" />
+    <capacity ware="gen_capacity_02" quality="3" min="1.2" max="1.2" />
+    <capacity ware="gen_capacity_03" quality="3" min="1.3" max="1.3" />
+    <capacity ware="gen_capacity_04" quality="3" min="1.4" max="1.4" />
+    <capacity ware="gen_capacity_05" quality="3" min="1.5" max="1.5" />
+    <capacity ware="gen_capacity_06" quality="3" min="1.6" max="1.6" />
+    <capacity ware="gen_capacity_07" quality="3" min="1.7" max="1.7" />
+    <capacity ware="gen_capacity_08" quality="3" min="1.8" max="1.8" />
+    <capacity ware="gen_capacity_09" quality="3" min="1.9" max="1.9" />
+    <capacity ware="gen_capacity_10" quality="3" min="2.0" max="2.0" />
+    <capacity ware="gen_capacity_11" quality="3" min="2.1" max="2.1" />
+    <capacity ware="gen_capacity_12" quality="3" min="2.2" max="2.2" />
+    <capacity ware="gen_capacity_13" quality="3" min="2.3" max="2.3" />
+    <capacity ware="gen_capacity_14" quality="3" min="2.4" max="2.4" />
+    <capacity ware="gen_capacity_15" quality="3" min="2.5" max="2.5" />
+    <capacity ware="gen_capacity_16" quality="3" min="2.6" max="2.6" />
+    <capacity ware="gen_capacity_17" quality="3" min="2.7" max="2.7" />
+    <capacity ware="gen_capacity_18" quality="3" min="2.8" max="2.8" />
+    <capacity ware="gen_capacity_19" quality="3" min="2.9" max="2.9" />
+    <capacity ware="gen_capacity_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/shield">
+     <!-- SHIELD generation profiles ******************************** -->
+    <rechargerate ware="gen_rechargerate_01" quality="3" min="1.1" max="1.1" />
+    <rechargerate ware="gen_rechargerate_02" quality="3" min="1.2" max="1.2" />
+    <rechargerate ware="gen_rechargerate_03" quality="3" min="1.3" max="1.3" />
+    <rechargerate ware="gen_rechargerate_04" quality="3" min="1.4" max="1.4" />
+    <rechargerate ware="gen_rechargerate_05" quality="3" min="1.5" max="1.5" />
+    <rechargerate ware="gen_rechargerate_06" quality="3" min="1.6" max="1.6" />
+    <rechargerate ware="gen_rechargerate_07" quality="3" min="1.7" max="1.7" />
+    <rechargerate ware="gen_rechargerate_08" quality="3" min="1.8" max="1.8" />
+    <rechargerate ware="gen_rechargerate_09" quality="3" min="1.9" max="1.9" />
+    <rechargerate ware="gen_rechargerate_10" quality="3" min="2.0" max="2.0" />
+    <rechargerate ware="gen_rechargerate_11" quality="3" min="2.1" max="2.1" />
+    <rechargerate ware="gen_rechargerate_12" quality="3" min="2.2" max="2.2" />
+    <rechargerate ware="gen_rechargerate_13" quality="3" min="2.3" max="2.3" />
+    <rechargerate ware="gen_rechargerate_14" quality="3" min="2.4" max="2.4" />
+    <rechargerate ware="gen_rechargerate_15" quality="3" min="2.5" max="2.5" />
+    <rechargerate ware="gen_rechargerate_16" quality="3" min="2.6" max="2.6" />
+    <rechargerate ware="gen_rechargerate_17" quality="3" min="2.7" max="2.7" />
+    <rechargerate ware="gen_rechargerate_18" quality="3" min="2.8" max="2.8" />
+    <rechargerate ware="gen_rechargerate_19" quality="3" min="2.9" max="2.9" />
+    <rechargerate ware="gen_rechargerate_20" quality="3" min="3.0" max="3.0" />
+  </add>
+    <!-- SHIP -->
+   <add sel="/equipmentmods/ship">
+     <!-- SHIP generation profiles ******************************** -->
+    <maxhull ware="gen_maxhull_01" quality="3" min="1.1" max="1.1" />
+    <maxhull ware="gen_maxhull_02" quality="3" min="1.2" max="1.2" />
+    <maxhull ware="gen_maxhull_03" quality="3" min="1.3" max="1.3" />
+    <maxhull ware="gen_maxhull_04" quality="3" min="1.4" max="1.4" />
+    <maxhull ware="gen_maxhull_05" quality="3" min="1.5" max="1.5" />
+    <maxhull ware="gen_maxhull_06" quality="3" min="1.6" max="1.6" />
+    <maxhull ware="gen_maxhull_07" quality="3" min="1.7" max="1.7" />
+    <maxhull ware="gen_maxhull_08" quality="3" min="1.8" max="1.8" />
+    <maxhull ware="gen_maxhull_09" quality="3" min="1.9" max="1.9" />
+    <maxhull ware="gen_maxhull_10" quality="3" min="2.0" max="2.0" />
+    <maxhull ware="gen_maxhull_11" quality="3" min="2.1" max="2.1" />
+    <maxhull ware="gen_maxhull_12" quality="3" min="2.2" max="2.2" />
+    <maxhull ware="gen_maxhull_13" quality="3" min="2.3" max="2.3" />
+    <maxhull ware="gen_maxhull_14" quality="3" min="2.4" max="2.4" />
+    <maxhull ware="gen_maxhull_15" quality="3" min="2.5" max="2.5" />
+    <maxhull ware="gen_maxhull_16" quality="3" min="2.6" max="2.6" />
+    <maxhull ware="gen_maxhull_17" quality="3" min="2.7" max="2.7" />
+    <maxhull ware="gen_maxhull_18" quality="3" min="2.8" max="2.8" />
+    <maxhull ware="gen_maxhull_19" quality="3" min="2.9" max="2.9" />
+    <maxhull ware="gen_maxhull_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/ship">
+     <!-- SHIP generation profiles ******************************** -->
+    <missilecapacity ware="gen_missilecapacity_01" quality="3" min="1" max="1" />
+    <missilecapacity ware="gen_missilecapacity_02" quality="3" min="2" max="3" />
+    <missilecapacity ware="gen_missilecapacity_03" quality="3" min="3" max="5" />
+    <missilecapacity ware="gen_missilecapacity_04" quality="3" min="4" max="7" />
+    <missilecapacity ware="gen_missilecapacity_05" quality="3" min="5" max="9" />
+    <missilecapacity ware="gen_missilecapacity_06" quality="3" min="6" max="11" />
+    <missilecapacity ware="gen_missilecapacity_07" quality="3" min="7" max="13" />
+    <missilecapacity ware="gen_missilecapacity_08" quality="3" min="8" max="15" />
+    <missilecapacity ware="gen_missilecapacity_09" quality="3" min="9" max="17" />
+    <missilecapacity ware="gen_missilecapacity_10" quality="3" min="10" max="19" />
+    <missilecapacity ware="gen_missilecapacity_11" quality="3" min="11" max="21" />
+    <missilecapacity ware="gen_missilecapacity_12" quality="3" min="12" max="23" />
+    <missilecapacity ware="gen_missilecapacity_13" quality="3" min="13" max="25" />
+    <missilecapacity ware="gen_missilecapacity_14" quality="3" min="14" max="27" />
+    <missilecapacity ware="gen_missilecapacity_15" quality="3" min="15" max="29" />
+    <missilecapacity ware="gen_missilecapacity_16" quality="3" min="16" max="31" />
+    <missilecapacity ware="gen_missilecapacity_17" quality="3" min="17" max="33" />
+    <missilecapacity ware="gen_missilecapacity_18" quality="3" min="18" max="35" />
+    <missilecapacity ware="gen_missilecapacity_19" quality="3" min="19" max="37" />
+    <missilecapacity ware="gen_missilecapacity_20" quality="3" min="20" max="39" />
+  </add>
+
+    <!-- ENGINE -->
+   <add sel="/equipmentmods/engine">
+     <!-- ENGINE generation profiles ******************************** -->
+    <rotationthrust ware="gen_rotationthrust_01" quality="3" min="1.1" max="1.1" />
+    <rotationthrust ware="gen_rotationthrust_02" quality="3" min="1.2" max="1.2" />
+    <rotationthrust ware="gen_rotationthrust_03" quality="3" min="1.3" max="1.3" />
+    <rotationthrust ware="gen_rotationthrust_04" quality="3" min="1.4" max="1.4" />
+    <rotationthrust ware="gen_rotationthrust_05" quality="3" min="1.5" max="1.5" />
+    <rotationthrust ware="gen_rotationthrust_06" quality="3" min="1.6" max="1.6" />
+    <rotationthrust ware="gen_rotationthrust_07" quality="3" min="1.7" max="1.7" />
+    <rotationthrust ware="gen_rotationthrust_08" quality="3" min="1.8" max="1.8" />
+    <rotationthrust ware="gen_rotationthrust_09" quality="3" min="1.9" max="1.9" />
+    <rotationthrust ware="gen_rotationthrust_10" quality="3" min="2.0" max="2.0" />
+    <rotationthrust ware="gen_rotationthrust_11" quality="3" min="2.1" max="2.1" />
+    <rotationthrust ware="gen_rotationthrust_12" quality="3" min="2.2" max="2.2" />
+    <rotationthrust ware="gen_rotationthrust_13" quality="3" min="2.3" max="2.3" />
+    <rotationthrust ware="gen_rotationthrust_14" quality="3" min="2.4" max="2.4" />
+    <rotationthrust ware="gen_rotationthrust_15" quality="3" min="2.5" max="2.5" />
+    <rotationthrust ware="gen_rotationthrust_16" quality="3" min="2.6" max="2.6" />
+    <rotationthrust ware="gen_rotationthrust_17" quality="3" min="2.7" max="2.7" />
+    <rotationthrust ware="gen_rotationthrust_18" quality="3" min="2.8" max="2.8" />
+    <rotationthrust ware="gen_rotationthrust_19" quality="3" min="2.9" max="2.9" />
+    <rotationthrust ware="gen_rotationthrust_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/engine">
+     <!-- ENGINE generation profiles ******************************** -->
+    <forwardthrust ware="gen_forwardthrust_01" quality="3" min="1.1" max="1.1" />
+    <forwardthrust ware="gen_forwardthrust_02" quality="3" min="1.2" max="1.2" />
+    <forwardthrust ware="gen_forwardthrust_03" quality="3" min="1.3" max="1.3" />
+    <forwardthrust ware="gen_forwardthrust_04" quality="3" min="1.4" max="1.4" />
+    <forwardthrust ware="gen_forwardthrust_05" quality="3" min="1.5" max="1.5" />
+    <forwardthrust ware="gen_forwardthrust_06" quality="3" min="1.6" max="1.6" />
+    <forwardthrust ware="gen_forwardthrust_07" quality="3" min="1.7" max="1.7" />
+    <forwardthrust ware="gen_forwardthrust_08" quality="3" min="1.8" max="1.8" />
+    <forwardthrust ware="gen_forwardthrust_09" quality="3" min="1.9" max="1.9" />
+    <forwardthrust ware="gen_forwardthrust_10" quality="3" min="2.0" max="2.0" />
+    <forwardthrust ware="gen_forwardthrust_11" quality="3" min="2.1" max="2.1" />
+    <forwardthrust ware="gen_forwardthrust_12" quality="3" min="2.2" max="2.2" />
+    <forwardthrust ware="gen_forwardthrust_13" quality="3" min="2.3" max="2.3" />
+    <forwardthrust ware="gen_forwardthrust_14" quality="3" min="2.4" max="2.4" />
+    <forwardthrust ware="gen_forwardthrust_15" quality="3" min="2.5" max="2.5" />
+    <forwardthrust ware="gen_forwardthrust_16" quality="3" min="2.6" max="2.6" />
+    <forwardthrust ware="gen_forwardthrust_17" quality="3" min="2.7" max="2.7" />
+    <forwardthrust ware="gen_forwardthrust_18" quality="3" min="2.8" max="2.8" />
+    <forwardthrust ware="gen_forwardthrust_19" quality="3" min="2.9" max="2.9" />
+    <forwardthrust ware="gen_forwardthrust_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <!-- WEAPON -->
+  <add sel="/equipmentmods/weapon">
+    <!-- WEAPON generation profiles ******************************** -->
+    <damage ware="gen_damage_01" quality="3" min="1.1" max="1.1" />
+    <damage ware="gen_damage_02" quality="3" min="1.2" max="1.2" />
+    <damage ware="gen_damage_03" quality="3" min="1.3" max="1.3" />
+    <damage ware="gen_damage_04" quality="3" min="1.4" max="1.4" />
+    <damage ware="gen_damage_05" quality="3" min="1.5" max="1.5" />
+    <damage ware="gen_damage_06" quality="3" min="1.6" max="1.6" />
+    <damage ware="gen_damage_07" quality="3" min="1.7" max="1.7" />
+    <damage ware="gen_damage_08" quality="3" min="1.8" max="1.8" />
+    <damage ware="gen_damage_09" quality="3" min="1.9" max="1.9" />
+    <damage ware="gen_damage_10" quality="3" min="2.0" max="2.0" />
+    <damage ware="gen_damage_11" quality="3" min="2.1" max="2.1" />
+    <damage ware="gen_damage_12" quality="3" min="2.2" max="2.2" />
+    <damage ware="gen_damage_13" quality="3" min="2.3" max="2.3" />
+    <damage ware="gen_damage_14" quality="3" min="2.4" max="2.4" />
+    <damage ware="gen_damage_15" quality="3" min="2.5" max="2.5" />
+    <damage ware="gen_damage_16" quality="3" min="2.6" max="2.6" />
+    <damage ware="gen_damage_17" quality="3" min="2.7" max="2.7" />
+    <damage ware="gen_damage_18" quality="3" min="2.8" max="2.8" />
+    <damage ware="gen_damage_19" quality="3" min="2.9" max="2.9" />
+    <damage ware="gen_damage_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/weapon">
+    <!-- WEAPON generation profiles ******************************** -->
+    <lifetime ware="gen_lifetime_01" quality="3" min="1.1" max="1.1" />
+    <lifetime ware="gen_lifetime_02" quality="3" min="1.2" max="1.2" />
+    <lifetime ware="gen_lifetime_03" quality="3" min="1.3" max="1.3" />
+    <lifetime ware="gen_lifetime_04" quality="3" min="1.4" max="1.4" />
+    <lifetime ware="gen_lifetime_05" quality="3" min="1.5" max="1.5" />
+    <lifetime ware="gen_lifetime_06" quality="3" min="1.6" max="1.6" />
+    <lifetime ware="gen_lifetime_07" quality="3" min="1.7" max="1.7" />
+    <lifetime ware="gen_lifetime_08" quality="3" min="1.8" max="1.8" />
+    <lifetime ware="gen_lifetime_09" quality="3" min="1.9" max="1.9" />
+    <lifetime ware="gen_lifetime_10" quality="3" min="2.0" max="2.0" />
+    <lifetime ware="gen_lifetime_11" quality="3" min="2.1" max="2.1" />
+    <lifetime ware="gen_lifetime_12" quality="3" min="2.2" max="2.2" />
+    <lifetime ware="gen_lifetime_13" quality="3" min="2.3" max="2.3" />
+    <lifetime ware="gen_lifetime_14" quality="3" min="2.4" max="2.4" />
+    <lifetime ware="gen_lifetime_15" quality="3" min="2.5" max="2.5" />
+    <lifetime ware="gen_lifetime_16" quality="3" min="2.6" max="2.6" />
+    <lifetime ware="gen_lifetime_17" quality="3" min="2.7" max="2.7" />
+    <lifetime ware="gen_lifetime_18" quality="3" min="2.8" max="2.8" />
+    <lifetime ware="gen_lifetime_19" quality="3" min="2.9" max="2.9" />
+    <lifetime ware="gen_lifetime_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/weapon">
+    <!-- WEAPON generation profiles ******************************** -->
+    <rotationspeed ware="gen_rotationspeed_01" quality="3" min="1.1" max="1.1" />
+    <rotationspeed ware="gen_rotationspeed_02" quality="3" min="1.2" max="1.2" />
+    <rotationspeed ware="gen_rotationspeed_03" quality="3" min="1.3" max="1.3" />
+    <rotationspeed ware="gen_rotationspeed_04" quality="3" min="1.4" max="1.4" />
+    <rotationspeed ware="gen_rotationspeed_05" quality="3" min="1.5" max="1.5" />
+    <rotationspeed ware="gen_rotationspeed_06" quality="3" min="1.6" max="1.6" />
+    <rotationspeed ware="gen_rotationspeed_07" quality="3" min="1.7" max="1.7" />
+    <rotationspeed ware="gen_rotationspeed_08" quality="3" min="1.8" max="1.8" />
+    <rotationspeed ware="gen_rotationspeed_09" quality="3" min="1.9" max="1.9" />
+    <rotationspeed ware="gen_rotationspeed_10" quality="3" min="2.0" max="2.0" />
+    <rotationspeed ware="gen_rotationspeed_11" quality="3" min="2.1" max="2.1" />
+    <rotationspeed ware="gen_rotationspeed_12" quality="3" min="2.2" max="2.2" />
+    <rotationspeed ware="gen_rotationspeed_13" quality="3" min="2.3" max="2.3" />
+    <rotationspeed ware="gen_rotationspeed_14" quality="3" min="2.4" max="2.4" />
+    <rotationspeed ware="gen_rotationspeed_15" quality="3" min="2.5" max="2.5" />
+    <rotationspeed ware="gen_rotationspeed_16" quality="3" min="2.6" max="2.6" />
+    <rotationspeed ware="gen_rotationspeed_17" quality="3" min="2.7" max="2.7" />
+    <rotationspeed ware="gen_rotationspeed_18" quality="3" min="2.8" max="2.8" />
+    <rotationspeed ware="gen_rotationspeed_19" quality="3" min="2.9" max="2.9" />
+    <rotationspeed ware="gen_rotationspeed_20" quality="3" min="3.0" max="3.0" />
+  </add>
+  <add sel="/equipmentmods/weapon">
+    <!-- WEAPON generation profiles ******************************** -->
+    <reload ware="gen_reload_01" quality="3" min="1.1" max="1.1" />
+    <reload ware="gen_reload_02" quality="3" min="1.2" max="1.2" />
+    <reload ware="gen_reload_03" quality="3" min="1.3" max="1.3" />
+    <reload ware="gen_reload_04" quality="3" min="1.4" max="1.4" />
+    <reload ware="gen_reload_05" quality="3" min="1.5" max="1.5" />
+    <reload ware="gen_reload_06" quality="3" min="1.6" max="1.6" />
+    <reload ware="gen_reload_07" quality="3" min="1.7" max="1.7" />
+    <reload ware="gen_reload_08" quality="3" min="1.8" max="1.8" />
+    <reload ware="gen_reload_09" quality="3" min="1.9" max="1.9" />
+    <reload ware="gen_reload_10" quality="3" min="2.0" max="2.0" />
+    <reload ware="gen_reload_11" quality="3" min="2.1" max="2.1" />
+    <reload ware="gen_reload_12" quality="3" min="2.2" max="2.2" />
+    <reload ware="gen_reload_13" quality="3" min="2.3" max="2.3" />
+    <reload ware="gen_reload_14" quality="3" min="2.4" max="2.4" />
+    <reload ware="gen_reload_15" quality="3" min="2.5" max="2.5" />
+    <reload ware="gen_reload_16" quality="3" min="2.6" max="2.6" />
+    <reload ware="gen_reload_17" quality="3" min="2.7" max="2.7" />
+    <reload ware="gen_reload_18" quality="3" min="2.8" max="2.8" />
+    <reload ware="gen_reload_19" quality="3" min="2.9" max="2.9" />
+    <reload ware="gen_reload_20" quality="3" min="3.0" max="3.0" />
+  </add>
+   <add sel="/equipmentmods/weapon">
+    <!-- WEAPON generation profiles ******************************** -->
+    <speed ware="gen_speed_01" quality="3" min="1.1" max="1.1" />
+    <speed ware="gen_speed_02" quality="3" min="1.2" max="1.2" />
+    <speed ware="gen_speed_03" quality="3" min="1.3" max="1.3" />
+    <speed ware="gen_speed_04" quality="3" min="1.4" max="1.4" />
+    <speed ware="gen_speed_05" quality="3" min="1.5" max="1.5" />
+    <speed ware="gen_speed_06" quality="3" min="1.6" max="1.6" />
+    <speed ware="gen_speed_07" quality="3" min="1.7" max="1.7" />
+    <speed ware="gen_speed_08" quality="3" min="1.8" max="1.8" />
+    <speed ware="gen_speed_09" quality="3" min="1.9" max="1.9" />
+    <speed ware="gen_speed_10" quality="3" min="2.0" max="2.0" />
+    <speed ware="gen_speed_11" quality="3" min="2.1" max="2.1" />
+    <speed ware="gen_speed_12" quality="3" min="2.2" max="2.2" />
+    <speed ware="gen_speed_13" quality="3" min="2.3" max="2.3" />
+    <speed ware="gen_speed_14" quality="3" min="2.4" max="2.4" />
+    <speed ware="gen_speed_15" quality="3" min="2.5" max="2.5" />
+    <speed ware="gen_speed_16" quality="3" min="2.6" max="2.6" />
+    <speed ware="gen_speed_17" quality="3" min="2.7" max="2.7" />
+    <speed ware="gen_speed_18" quality="3" min="2.8" max="2.8" />
+    <speed ware="gen_speed_19" quality="3" min="2.9" max="2.9" />
+    <speed ware="gen_speed_20" quality="3" min="3.0" max="3.0" />
+  </add>
+
+
+
+
+
+
+
+
+  <!-- <add sel="/equipmentmods/weapon">
+ 
+    <damage ware="tp_war_damage_mk1" quality="1" min="1.25" max="1.5" />
+    <damage ware="tp_war_damage_mk2" quality="2" min="1.5" max="2.0" />
+    <damage ware="tp_war_damage_mk3" quality="3" min="2.0" max="2.5" />
+    <damage ware="tp_war_damage_mk4" quality="4" min="2.5" max="3.0" />
+
+    <damage ware="tp_war_damage_001" quality="4" min="1.5" max="1.9" />
+    <damage ware="tp_war_damage_002" quality="4" min="2.5" max="2.9" />
+    <damage ware="tp_war_damage_003" quality="4" min="3.5" max="3.9" />
+    <damage ware="tp_war_damage_004" quality="4" min="4.5" max="4.9" />
+    <damage ware="tp_war_damage_005" quality="4" min="5.5" max="5.9" />
+    <damage ware="tp_war_damage_006" quality="4" min="6.5" max="6.9" />
+    <damage ware="tp_war_damage_007" quality="4" min="7.5" max="7.9" />
+    <damage ware="tp_war_damage_008" quality="4" min="8.5" max="8.9" />
+    <damage ware="tp_war_damage_009" quality="4" min="9.5" max="9.9" />
+    <damage ware="tp_war_damage_010" quality="4" min="10.5" max="10.9" />
+    <damage ware="tp_war_damage_011" quality="4" min="11.5" max="11.9" />
+    <damage ware="tp_war_damage_012" quality="4" min="12.5" max="12.9" />
+    <damage ware="tp_war_damage_013" quality="4" min="13.5" max="13.9" />
+    <damage ware="tp_war_damage_014" quality="4" min="14.5" max="14.9" />
+    <damage ware="tp_war_damage_015" quality="4" min="15.5" max="15.9" />
+    <damage ware="tp_war_damage_016" quality="4" min="16.5" max="16.9" />
+    <damage ware="tp_war_damage_017" quality="4" min="17.5" max="17.9" />
+    <damage ware="tp_war_damage_018" quality="4" min="18.5" max="18.9" />
+    <damage ware="tp_war_damage_019" quality="4" min="19.5" max="19.9" />
+    <damage ware="tp_war_damage_020" quality="4" min="20.5" max="20.9" />
+    <damage ware="tp_war_damage_021" quality="4" min="21.5" max="21.9" />
+    <damage ware="tp_war_damage_022" quality="4" min="22.5" max="22.9" />
+    <damage ware="tp_war_damage_023" quality="4" min="23.5" max="23.9" />
+    <damage ware="tp_war_damage_024" quality="4" min="24.5" max="24.9" />
+    <damage ware="tp_war_damage_025" quality="4" min="25.5" max="25.9" />
+    <damage ware="tp_war_damage_026" quality="4" min="26.5" max="26.9" />
+    <damage ware="tp_war_damage_027" quality="4" min="27.5" max="27.9" />
+    <damage ware="tp_war_damage_028" quality="4" min="28.5" max="28.9" />
+    <damage ware="tp_war_damage_029" quality="4" min="29.5" max="29.9" />
+    <damage ware="tp_war_damage_030" quality="4" min="30.5" max="30.9" />
+  </add> -->
+  <!-- <add sel="/equipmentmods/ship">
+    <maxhull ware="tp_war_maxhull_mk1" quality="1" min="1.25" max="1.5" />
+    <maxhull ware="tp_war_maxhull_mk2" quality="2" min="1.5" max="2.0" />
+    <maxhull ware="tp_war_maxhull_mk3" quality="3" min="2.0" max="2.5" />
+    <maxhull ware="tp_war_maxhull_mk4" quality="4" min="2.5" max="3.0" />
+    <maxhull ware="tp_war_maxhull_001" quality="4" min="1.5" max="1.9" />
+    <maxhull ware="tp_war_maxhull_002" quality="4" min="2.5" max="2.9" />
+    <maxhull ware="tp_war_maxhull_003" quality="4" min="3.5" max="3.9" />
+    <maxhull ware="tp_war_maxhull_004" quality="4" min="4.5" max="4.9" />
+    <maxhull ware="tp_war_maxhull_005" quality="4" min="5.5" max="5.9" />
+    <maxhull ware="tp_war_maxhull_006" quality="4" min="6.5" max="6.9" />
+    <maxhull ware="tp_war_maxhull_007" quality="4" min="7.5" max="7.9" />
+    <maxhull ware="tp_war_maxhull_008" quality="4" min="8.5" max="8.9" />
+    <maxhull ware="tp_war_maxhull_009" quality="4" min="9.5" max="9.9" />
+    <maxhull ware="tp_war_maxhull_010" quality="4" min="10.5" max="10.9" />
+    <maxhull ware="tp_war_maxhull_011" quality="4" min="11.5" max="11.9" />
+    <maxhull ware="tp_war_maxhull_012" quality="4" min="12.5" max="12.9" />
+    <maxhull ware="tp_war_maxhull_013" quality="4" min="13.5" max="13.9" />
+    <maxhull ware="tp_war_maxhull_014" quality="4" min="14.5" max="14.9" />
+    <maxhull ware="tp_war_maxhull_015" quality="4" min="15.5" max="15.9" />
+    <maxhull ware="tp_war_maxhull_016" quality="4" min="16.5" max="16.9" />
+    <maxhull ware="tp_war_maxhull_017" quality="4" min="17.5" max="17.9" />
+    <maxhull ware="tp_war_maxhull_018" quality="4" min="18.5" max="18.9" />
+    <maxhull ware="tp_war_maxhull_019" quality="4" min="19.5" max="19.9" />
+    <maxhull ware="tp_war_maxhull_020" quality="4" min="20.5" max="20.9" />
+    <maxhull ware="tp_war_maxhull_021" quality="4" min="21.5" max="21.9" />
+    <maxhull ware="tp_war_maxhull_022" quality="4" min="22.5" max="22.9" />
+    <maxhull ware="tp_war_maxhull_023" quality="4" min="23.5" max="23.9" />
+    <maxhull ware="tp_war_maxhull_024" quality="4" min="24.5" max="24.9" />
+    <maxhull ware="tp_war_maxhull_025" quality="4" min="25.5" max="25.9" />
+    <maxhull ware="tp_war_maxhull_026" quality="4" min="26.5" max="26.9" />
+    <maxhull ware="tp_war_maxhull_027" quality="4" min="27.5" max="27.9" />
+    <maxhull ware="tp_war_maxhull_028" quality="4" min="28.5" max="28.9" />
+    <maxhull ware="tp_war_maxhull_029" quality="4" min="29.5" max="29.9" />
+    <maxhull ware="tp_war_maxhull_030" quality="4" min="30.5" max="30.9" />
+  </add> -->
+  <!-- <add sel="/equipmentmods/shield">
+    <capacity ware="tp_war_capacity_mk1" quality="1" min="1.25" max="1.5" />
+    <capacity ware="tp_war_capacity_mk2" quality="2" min="1.5" max="2.0" />
+    <capacity ware="tp_war_capacity_mk3" quality="3" min="2.0" max="2.5" />
+    <capacity ware="tp_war_capacity_mk4" quality="4" min="2.5" max="3.0" />
+    <capacity ware="tp_war_capacity_001" quality="4" min="1.5" max="1.9" />
+    <capacity ware="tp_war_capacity_002" quality="4" min="2.5" max="2.9" />
+    <capacity ware="tp_war_capacity_003" quality="4" min="3.5" max="3.9" />
+    <capacity ware="tp_war_capacity_004" quality="4" min="4.5" max="4.9" />
+    <capacity ware="tp_war_capacity_005" quality="4" min="5.5" max="5.9" />
+    <capacity ware="tp_war_capacity_006" quality="4" min="6.5" max="6.9" />
+    <capacity ware="tp_war_capacity_007" quality="4" min="7.5" max="7.9" />
+    <capacity ware="tp_war_capacity_008" quality="4" min="8.5" max="8.9" />
+    <capacity ware="tp_war_capacity_009" quality="4" min="9.5" max="9.9" />
+    <capacity ware="tp_war_capacity_010" quality="4" min="10.5" max="10.9" />
+    <capacity ware="tp_war_capacity_011" quality="4" min="11.5" max="11.9" />
+    <capacity ware="tp_war_capacity_012" quality="4" min="12.5" max="12.9" />
+    <capacity ware="tp_war_capacity_013" quality="4" min="13.5" max="13.9" />
+    <capacity ware="tp_war_capacity_014" quality="4" min="14.5" max="14.9" />
+    <capacity ware="tp_war_capacity_015" quality="4" min="15.5" max="15.9" />
+    <capacity ware="tp_war_capacity_016" quality="4" min="16.5" max="16.9" />
+    <capacity ware="tp_war_capacity_017" quality="4" min="17.5" max="17.9" />
+    <capacity ware="tp_war_capacity_018" quality="4" min="18.5" max="18.9" />
+    <capacity ware="tp_war_capacity_019" quality="4" min="19.5" max="19.9" />
+    <capacity ware="tp_war_capacity_020" quality="4" min="20.5" max="20.9" />
+    <capacity ware="tp_war_capacity_021" quality="4" min="21.5" max="21.9" />
+    <capacity ware="tp_war_capacity_022" quality="4" min="22.5" max="22.9" />
+    <capacity ware="tp_war_capacity_023" quality="4" min="23.5" max="23.9" />
+    <capacity ware="tp_war_capacity_024" quality="4" min="24.5" max="24.9" />
+    <capacity ware="tp_war_capacity_025" quality="4" min="25.5" max="25.9" />
+    <capacity ware="tp_war_capacity_026" quality="4" min="26.5" max="26.9" />
+    <capacity ware="tp_war_capacity_027" quality="4" min="27.5" max="27.9" />
+    <capacity ware="tp_war_capacity_028" quality="4" min="28.5" max="28.9" />
+    <capacity ware="tp_war_capacity_029" quality="4" min="29.5" max="29.9" />
+    <capacity ware="tp_war_capacity_030" quality="4" min="30.5" max="30.9" />
+  </add> -->
+</diff>

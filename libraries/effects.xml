@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+    <add sel="/effects">
+        <effect name="tpwar_boostfx_engine_xl_01" alignment="object" emitterspace="zone">
+            <elements>
+                <!-- Particles -->
+                <element id="1" ref="dummyemitter_up_macro" forkeffect="boostfx_engine_l_01" duration="1.0" minscale="1.0" maxscale="1.0" forklod="none"></element>
+                <!-- Light -->
+                <element id="2" ref="boostfx_engine_l_light_01_macro" forkeffect="none" duration="2" fadein="1.0" fadeout="1.0" minscale="1.0" maxscale="1.0" forklod="largeeffect"></element>
+                <!-- Geometry -->
+                <element id="3" ref="boostfx_engine_l_fire_01_macro" forkeffect="none" duration="2" fadein="1.0" fadeout="1.0" minscale="1.0" maxscale="1.0" forklod="largeeffect"></element>
+                <!-- Sound -->
+                <!--<element id="4" ref="effect_dummy_macro" forkeffect="none" duration="0.7" forklod="none">
+        <sound ref="cpit_dmgfx_shield_up"></sound>
+      </element>-->
+            </elements>
+        </effect>
+        <effect name="tpwar_warp_small" alignment="normal" emitterspace="zone">
+            <elements>
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="1.0" fadein="6.0" fadeout="6.0" minscale="0.05" maxscale="0.1" forklod="ubereffect"></element>
+                <!-- <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="1.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element> -->
+                <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="scfx"></element>
+            </elements>
+        </effect>
+        <effect name="tpwar_warp_medium" alignment="normal" emitterspace="zone">
+            <elements>
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="1.0" fadein="6.0" fadeout="6.0" minscale="0.5" maxscale="0.6" forklod="ubereffect"></element>
+                <!-- <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="1.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element> -->
+                <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="scfx"></element>
+            </elements>
+        </effect>
+        <effect name="tpwar_warp_large" alignment="normal" emitterspace="zone">
+            <elements>
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="1.0" fadein="6.0" fadeout="6.0" minscale="1.0" maxscale="1.7" forklod="ubereffect"></element>
+                <!-- <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="1.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element> -->
+                <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="scfx"></element>
+            </elements>
+        </effect>
+        <effect name="tpwar_warp_xl" alignment="normal" emitterspace="zone">
+            <elements>
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="1.0" fadein="6.0" fadeout="6.0" minscale="2.5" maxscale="3.1" forklod="ubereffect"></element>
+                <!-- <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="1.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element> -->
+                <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="scfx"></element>
+            </elements>
+        </effect>
+        <!-- PLASMA GUN-->
+        <effect name="tpwar_test_effect_two" alignment="none" emitterspace="zone">
+            <!--states>
+      <state name="wreck" time="0.1"></state>
+    </states-->
+            <elements>
+                <!-- <element id="1" ref="hq_warp_in_fx_macro" forkeffect="none" delay="3.0" duration="10.0" fadein="5.0" fadeout="0.135" emitterspace="zone" forklod="none"></element> -->
+                <!-- Particles -->
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="18.0" fadein="6.0" fadeout="6.0" minscale="30.0" maxscale="40.0" forklod="ubereffect"></element>
+                <element id="3" ref="dummyemitter_up_macro" forkeffect="station_warpin_part1" delay="1" duration="8.0" fadein="6.0" fadeout="2.0" minscale="30.0" maxscale="40.0" forklod="ubereffect"></element>
+                <!-- Sound -->
+                <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="none">
+                    <sound ref="explosion_asteroid"></sound>
+                </element>
+                <!--Light-->
+                <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="14.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element>
+                <!-- Rumble -->
+                <!-- <element id="6" ref="effect_dummy_macro" forkeffect="none" delay="11" duration="2.0" forklod="none">
+                    <force range="30000" falloff="1.0">
+                        <rumble>
+                            <camera>
+                                <component frequency="3" attackduration="1.0" sustainduration="0" releaseduration="3.0">
+                                    <amplitude randomize="true">
+                                        <position x="0.051" y="0.051" z="0.051" />
+                                    </amplitude>
+                                </component>
+                            </camera>
+                            <controller>
+                                <low amplitude="0.5" attackduration="1.0" sustainduration="0.0" releaseduration="3.0" />
+                            </controller>
+                        </rumble>
+                    </force>
+                </element> -->
+                <!-- Animated Geometry which texture animation -->
+                <!-- <element id="7" ref="scfx_wave_01_macro" forkeffect="none" duration="5.0" fadein="0.1" fadeout="5.0" forklod="scfx"></element> -->
+                <!-- Sound -->
+                <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="scfx">
+                    <!-- <sound ref="scfx_result_wave_01"></sound> -->
+                </element>
+                <!-- Sound -->
+                <!--element id="6" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="none">
+        <sound ref="explosion_medium"></sound>
+      </element-->
+            </elements>
+        </effect>
+        <effect name="tpwar_test_effect_three" alignment="none" emitterspace="zone">
+            <!--states>
+      <state name="wreck" time="0.1"></state>
+    </states-->
+            <elements>
+                <element id="1" ref="hq_warp_in_fx_macro" forkeffect="none" delay="3.0" duration="10.0" fadein="5.0" fadeout="0.135" emitterspace="zone" forklod="none"></element>
+                <!-- Particles -->
+                <element id="2" ref="dummyemitter_macro" forkeffect="station_warpin_part2" duration="18.0" fadein="6.0" fadeout="6.0" minscale="5.0" maxscale="6.0" forklod="ubereffect"></element>
+                <element id="3" ref="dummyemitter_up_macro" forkeffect="station_warpin_part1" delay="1" duration="8.0" fadein="6.0" fadeout="2.0" minscale="5.0" maxscale="6.0" forklod="ubereffect"></element>
+                <!-- Sound -->
+                <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="none">
+                    <sound ref="explosion_asteroid"></sound>
+                </element>
+                <!--Light-->
+                <element id="5" ref="hq_warp_in_light_macro" forkeffect="none" duration="14.0" fadein="2.0" fadeout="10.0" emitterspace="zone" forklod="none"></element>
+                <!-- Rumble -->
+                <element id="6" ref="effect_dummy_macro" forkeffect="none" delay="11" duration="2.0" forklod="none">
+                    <force range="30000" falloff="1.0">
+                        <rumble>
+                            <camera>
+                                <component frequency="3" attackduration="1.0" sustainduration="0" releaseduration="3.0">
+                                    <amplitude randomize="true">
+                                        <position x="0.051" y="0.051" z="0.051" />
+                                    </amplitude>
+                                </component>
+                            </camera>
+                            <controller>
+                                <low amplitude="0.5" attackduration="1.0" sustainduration="0.0" releaseduration="3.0" />
+                            </controller>
+                        </rumble>
+                    </force>
+                </element>
+                <element id="7" ref="dummyemitter_up_macro" forkeffect="landmarks_unique_split_lostcolony_fog_01" duration="-1" emitterspace="local" forklod="smalleffect"></element>
+            </elements>
+        </effect>
+        <effect name="landmarks_unique_split_lostcolony_fog_01tpwar" alignment="object" emitterspace="zone">
+            <elements>
+                <element id="1" ref="dummyemitter_up_macro" forkeffect="landmarks_unique_split_lostcolony_fog_01" duration="-1" emitterspace="local" minscale="50.0" maxscale="60.0" forklod="smalleffect"></element>
+            </elements>
+        </effect>
+        <effect name="jump_gateeffecttpwar" alignment="object" emitterspace="zone">
+            <elements>
+                <!-- gate extra whirl effect -->
+                <element id="1" ref="gateeffect_macro" forkeffect="none" duration="1.0" fadein="0.35" fadeout="0.5" minscale="50.0" maxscale="60.0" forklod="megaeffect"></element>
+            </elements>
+        </effect>
+        <effect name="highway_gas_01tpwar" alignment="object">
+            <elements>
+                <element id="1" ref="dummyemitter_up_macro" forkeffect="highway_gas_01" duration="-1" emitterspace="local" minscale="50.0" maxscale="60.0" alignment="object" forklod="none"></element>
+                <!-- Sound I commented it out because this sound is very annyoing at testFx15 (runs all the time) in the testFx viewer "-module effecttest" -->
+                <!--<element id="2" ref="effect_dummy_macro" forkeffect="none" duration="-1" forklod="none">
+			<sound ref="beam2"></sound>
+		</element>-->
+            </elements>
+        </effect>
+    </add>
+</diff>

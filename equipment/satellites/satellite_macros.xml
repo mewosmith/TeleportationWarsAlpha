@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="tpwar_test_sat_macro" class="satellite">
+    <component ref="eq_arg_satellite_01" />
+    <properties>
+      <identification name="TestSat" description="TestSatDesc" deployable="1" icon="mapob_satellite_02" />
+      <explosioneffect strength="0" />
+      <radar range="75000" />
+      <hull max="250" />
+    </properties>
+  </macro>
+</macros>

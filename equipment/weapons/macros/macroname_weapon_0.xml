@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="array_gamma_plasma_emitter_macro" class="weapon">
+        <component ref="weapon_tel_l_destroyer_01_mk1" />
+        <properties>
+            <identification name="{12345678,102}" basename="{12345678,103}" shortname="{12345678,104}" description="{12345678,105}" mk="1" />
+            <bullet class="array_gamma_plasma_emitter_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="133" />
+            <rotationacceleration max="80" />
+            <!-- <reload time="3" /> -->
+            <hull max="1966" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+

@@ -1,0 +1,3518 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <!-- PathtoProfit to Meditech -->
+  <add sel="/macros/macro[@name='Zone002_Cluster_05_Sector001_macro']">
+    <connections>
+      <connection name="connection_ClusterGate005ToM01" ref="gates">
+        <offset>
+          <position x="1500" y="500" z="2500" />
+          <rotation yaw="0" pitch="0" roll="0" />
+        </offset>
+        <macro ref="props_gates_anc_gate_macro" connection="space" />
+      </connection>
+    </connections>
+  </add>
+  <add sel="/macros/macro[@name='Zone003_Cluster_31_Sector001_macro']">
+    <connections>
+      <connection name="connection_ClusterGate031ToTP99" ref="gates">
+        <offset>
+          <position x="0" y="0" z="0" />
+          <rotation yaw="135" pitch="0" roll="0" />
+        </offset>
+        <macro ref="props_gates_anc_gate_macro" connection="space" />
+      </connection>
+    </connections>
+  </add>
+  <add sel="/macros">
+    <macro name="tppirate_Zone002_Cluster_99_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP99ToTP96" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_99_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP99ToTP97" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="90" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_99_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP99ToTP98" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_99_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP99To031" ref="gates">
+          <offset>
+            <position x="-10735.3056640625" y="0" z="-6436.275390625" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_98_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP98ToTP99" ref="gates">
+          <offset>
+            <position x="-10735.3056640625" y="0" z="-6436.275390625" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+        <connection name="connection_ClusterGateTP98ToTP97" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_98_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP98ToTP90" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_98_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_97_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_97_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP97ToTP99" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_97_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP97ToTP92" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_96_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_96_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_96_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_96_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP96ToTP99" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_95_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_95_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP95ToTP94" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_95_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP95ToTP81" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_95_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_94_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_94_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP94ToTP83" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_94_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP94ToTP95" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_94_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP94ToTP82" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_93_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_93_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP93ToTP92" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="200" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_93_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP93ToTP83" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_92_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP92ToTP97" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_92_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP92ToTP87" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_92_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP92ToTP93" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_91_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_91_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone005_Cluster_91_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_91_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP91ToTP87" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_91_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP91ToTP89" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_90_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_90_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP90ToTP89" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_90_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP90ToTP98" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_89_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone005_Cluster_89_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_89_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP89ToTP91" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_89_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP89ToTP88" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_89_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP89ToTP90" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_88_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_88_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_88_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP88ToTP89" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_87_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_87_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP87ToTP92" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_87_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP87ToTP91" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_87_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP87ToTP86" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone005_Cluster_87_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP87ToTP85" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="90" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_86_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_86_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP86ToTP87" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="230" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_86_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP86ToTP85" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="90" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_85_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_85_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP85ToTP87" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="270" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_85_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP85ToTP86" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_84_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_84_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_84_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_84_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP84ToTP83" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_83_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_83_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP83ToTP93" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="190" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_83_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP83ToTP84" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_83_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP83ToTP80" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone005_Cluster_83_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP83ToTP94" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_82_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_82_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP82ToTP81" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_82_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP82ToTP94" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_81_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_81_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP81ToTP95" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="270" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone003_Cluster_81_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP81ToTP82" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="150" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tppirate_Zone004_Cluster_81_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone001_Cluster_80_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tppirate_Zone002_Cluster_80_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateTP80ToTP83" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="meditech_Zone002_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="connection_ClusterGateM01To005" ref="gates">
+          <offset>
+            <position x="1500" y="500" z="2500" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="meditech_Zone001_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="meditech_Zone003_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="meditech_Zone004_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="meditech_Zone005_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="meditech_Zone006_Cluster_01_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+  </add>
+  <!-- more_map%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <add sel="/macros">
+    <macro name="Zone006_Cluster_47_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 289 LL to 47 TR (Trinity Sanctum VII) -->
+        <connection name="tpthree_gate_47_to_289_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone006_Cluster_01_Sector002_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 210 LL to 01s02 TL (Grand Exchange 3)  -->
+        <connection name="tpthree_gate_01s02_to_210_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_45_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 1217 Bottom to 45 Top (Silent Witness) -->
+        <connection name="tpthree_gate_45_to_1217_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_39_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 227 TR to 39 LL (Memory of Profit) -->
+        <connection name="tpthree_gate_39_to_227_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_12_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 188 Left to 12 TR (True Sight) -->
+        <connection name="tpthree_gate_12_to_188_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_15_Sector002_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 393 LL to 15s2 TR (Ianamus Zura) -->
+        <connection name="tpthree_gate_15s2_to_393_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_23_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 307 TL to 23 LR (Sacred Relic) -->
+        <connection name="tpthree_gate_23_to_307_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_41_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 110 Right to 41 LL (Second Contact) -->
+        <connection name="tpthree_gate_41_to_110_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="Zone009_Cluster_35_Sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 221 TL to LR 35 (Lasting Vengeance) -->
+        <connection name="tpthree_gate_35_to_221_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster110_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster110_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c110s001z002_c105s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 110 Right to 41 LL (Second Contact) -->
+    <macro name="tpthree_zone003_cluster110_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_110_to_41_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1217s001z002_c215s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster1217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_1217_to_45_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="0" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster307_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster307_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c307s001z002_c205s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 307 TL to 23 LR (Sacred Relic) -->
+    <macro name="tpthree_zone003_cluster307_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_307_to_23_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster393_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster393_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c393s001z002_c311s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 393 LL to 15s2 TR (Ianamus Zura) -->
+    <macro name="tpthree_zone003_cluster393_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_393_to_15s2_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster029_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster029_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c029s001z002_c064s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster029_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c029s001z003_c049s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster035_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster035_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c035s001z002_c031s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster035_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c035s001z003_c142s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster035_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c035s001z004_c390s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster049_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster049_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c049s001z002_c029s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster052_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster052_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c052s001z002_c176s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster064_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster064_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c064s001z002_c029s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster064_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c064s001z003_c084s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster084_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster084_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c084s001z002_c064s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster084_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c084s001z003_c085s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster085_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster085_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c085s001z002_c084s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster085_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c085s001z003_c104s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster104_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster104_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c104s001z002_c085s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster104_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c104s001z003_c105s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster105_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster105_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c105s001z002_c104s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster105_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c105s001z003_c110s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster142_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster142_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c142s001z002_c035s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster142_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c142s001z003_c143s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster142_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c142s001z004_c390s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster143_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster143_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c143s001z002_c142s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1158_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1158_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1158s001z002_c178s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster176_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster176_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c176s001z002_c052s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster176_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c176s001z003_c196s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster177_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster177_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c177s001z002_c178s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster177_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c177s001z003_c196s001z005_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster178_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster178_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c178s001z002_c1158s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster178_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c178s001z003_c177s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster183_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster183_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c183s001z002_c203s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster185_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster185_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c185s001z002_c205s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster188_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster188_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c188s001z002_c1260s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 188 Left to 12 TR (True Sight) -->
+    <macro name="tpthree_zone003_cluster188_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_188_to_12_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="90" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster195_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster195_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c195s001z002_c1273s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster195_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c195s001z003_c196s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster196_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster196_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c196s001z002_c215s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster196_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c196s001z003_c195s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster196_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c196s001z004_c176s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone005_cluster196_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c196s001z005_c177s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster203_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster203_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c203s001z002_c1220s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster203_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c203s001z003_c183s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster203_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c203s001z004_c204s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster204_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster204_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c204s001z002_c203s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster204_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c204s001z003_c205s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster205_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster205_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c205s001z002_c204s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster205_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c205s001z003_c185s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster205_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c205s001z004_c307s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster210_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster210_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c210s001z002_c331s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster210_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 210 LL to 01s02 TL (Grand Exchange 3)  -->
+        <connection name="tpthree_zone003_cluster210_sector001_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster215_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster215_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c215s001z002_c1217s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster215_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c215s001z003_c196s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c217s001z002_c225s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster217_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c217s001z003_c189s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1220_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1220_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1220s001z002_c203s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster1220_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1220s001z003_c384s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster227_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster227_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c227s001z002_c080s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 227 TR to 39 LL (Memory of Profit) -->
+    <macro name="tpthree_zone003_cluster227_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_227_to_39_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster234_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster234_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c234s001z002_c289s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster234_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c234s001z003_c296s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1240_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1240_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1240s001z002_c1260s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster259_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster259_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c259s001z002_c1260s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1260s001z002_c1240s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster1260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1260s001z003_c259s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster1260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1260s001z004_c188s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1273s001z002_c195s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster1273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1273s001z003_c274s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster1273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1273s001z004_c293s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster274_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster274_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c274s001z002_c1273s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster289_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster289_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c289s001z002_c234s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster289_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <!-- 289 LL to 47 TR (Trinity Sanctum VII) -->
+        <connection name="tpthree_gate_289_to_47_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster1292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster1292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1292s001z002_c293s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster1292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c1292s001z003_c331s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster293_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster293_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c293s001z002_c1273s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster293_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c293s001z003_c1292s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster295_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster295_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c295s001z002_c296s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster296_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster296_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c296s001z002_c234s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster296_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c296s001z003_c314s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster296_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c296s001z004_c295s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster314_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster314_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c314s001z002_c296s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster331_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster331_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c331s001z002_c210s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster331_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c331s001z003_c1292s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster371_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster371_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c371s001z002_c390s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster384_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster384_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c384s001z002_c1220s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster390_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster390_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c390s001z002_c371s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster390_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c390s001z003_c035s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster390_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c390s001z004_c142s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c050s001z002_c216s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c050s001z003_c051s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c050s001z004_c069s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone005_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c050s001z005_c070s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone006_cluster050_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c050s001z006_c165s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster051_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster051_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c051s001z002_c050s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster069_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster069_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c069s001z002_c050s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster070_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster070_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c070s001z002_c050s001z005_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster145_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster145_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c145s001z002_c165s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c165s001z002_c145s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c165s001z003_c050s001z006_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c165s001z004_c166s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone005_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c165s001z005_c184s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone006_cluster165_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c165s001z006_c364s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster166_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster166_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c166s001z002_c165s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster184_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster184_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c184s001z002_c165s001z005_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster197_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster197_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c197s001z002_c216s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c216s001z002_c050s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c216s001z003_c197s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c216s001z004_c235s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone005_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c216s001z005_c236s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone006_cluster216_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c216s001z006_c364s001z005_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster235_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster235_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c235s001z002_c216s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster236_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster236_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c236s001z002_c216s001z005_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster343_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster343_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c343s001z002_c364s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster363_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster363_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c363s001z002_c364s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c364s001z002_c343s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+        <connection name="tpthree_gate_c364s001z002_c262s001z002_connection" ref="gates">
+          <offset>
+            <position x="50000" y="500" z="-100000" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c364s001z003_c363s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c364s001z004_c165s001z006_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone005_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c364s001z005_c216s001z006_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone006_cluster364_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c364s001z006_c365s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster365_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster365_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c365s001z002_c364s001z006_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster011_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster011_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c011s001z002_c031s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster011_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c011s001z003_c030s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster030_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster030_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c030s001z002_c011s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster030_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c030s001z003_c140s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster031_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster031_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c031s001z002_c035s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster031_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c031s001z003_c011s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster031_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c031s001z004_c189s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster140_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster140_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c140s001z002_c030s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster140_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c140s001z003_c159s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster158_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster158_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c158s001z002_c159s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster158_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c158s001z003_c349s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster159_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster159_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c159s001z002_c158s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster159_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c159s001z003_c140s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster189_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster189_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c189s001z002_c217s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster189_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c189s001z003_c031s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster225_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster225_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c225s001z002_c217s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster225_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c225s001z003_c367s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster349_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster349_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c349s001z002_c158s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster349_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c349s001z003_c366s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster349_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c349s001z004_c281s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster366_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster366_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c366s001z002_c349s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster366_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c366s001z003_c367s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster367_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster367_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c367s001z002_c225s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster367_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c367s001z003_c366s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster044_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster044_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c044s001z002_c062s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster060_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster060_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c060s001z002_c061s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster060_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c060s001z003_c079s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster061_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster061_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c061s001z002_c060s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster061_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c061s001z003_c080s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster061_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c061s001z004_c062s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster062_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster062_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c062s001z002_c044s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster062_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c062s001z003_c061s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster079_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster079_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c079s001z002_c060s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster080_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster080_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c080s001z002_c227s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster080_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c080s001z003_c061s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster220_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster220_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c220s001z002_c260s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster221_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster221_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c221s001z002_c241s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <!-- 221 TL to LR 35 (Lasting Vengeance) -->
+    <macro name="tpthree_zone003_cluster221_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_221_to_35_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="125" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster240_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster240_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c240s001z002_c241s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster240_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c240s001z003_c261s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster241_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster241_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c241s001z002_c221s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster241_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c241s001z003_c240s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster241_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c241s001z004_c262s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c260s001z002_c220s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster260_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c260s001z003_c261s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster261_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster261_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c261s001z002_c260s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster261_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c261s001z003_c240s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster262_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster262_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c262s001z002_c364s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster262_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c262s001z002_c241s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster262_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c262s001z003_c281s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster273_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c273s001z002_c292s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster281_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster281_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c281s001z002_c262s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster281_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c281s001z003_c349s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="225" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster290_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster290_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c290s001z002_c291s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster291_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster291_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c291s001z002_c290s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster291_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c291s001z003_c311s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c292s001z002_c273s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="45" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster292_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c292s001z003_c312s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster311_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster311_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c311s001z002_c393s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster311_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c311s001z003_c291s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster311_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c311s001z004_c312s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="180" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster312_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster312_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c312s001z002_c311s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="360" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone003_cluster312_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c312s001z003_c292s001z003_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone004_cluster312_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c312s001z004_c330s001z002_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="315" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+    <macro name="tpthree_zone001_cluster330_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections></connections>
+    </macro>
+    <macro name="tpthree_zone002_cluster330_sector001_macro" class="zone">
+      <component ref="standardzone" />
+      <connections>
+        <connection name="tpthree_gate_c330s001z002_c312s001z004_connection" ref="gates">
+          <offset>
+            <position x="0" y="500" z="0" />
+            <rotation yaw="135" pitch="0" roll="0" />
+          </offset>
+          <macro ref="props_gates_anc_gate_macro" connection="space" />
+        </connection>
+      </connections>
+    </macro>
+  </add>
+</diff>

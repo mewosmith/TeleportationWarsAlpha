@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4 extract 2.5b1/libraries/md.xsd">
+    <cues>
+        <library name="JumpLIB">
+            <params>
+                <param name="Destination" default="null" />
+                <param name="ShipList" default="null" />
+                <param name="Signal" default="null" />
+                <param name="Delay" default="150ms" />
+            </params>
+            <cues>
+                <cue name="Init" instantiate="true">
+                    <actions>
+                        <set_value name="$ShipReturn" exact="$ShipList.clone" />
+                    </actions>
+                    <cues>
+                        <cue name="Jump_Start">
+                            <actions>
+                                <signal_cue cue="Jump_Effect" />
+                            </actions>
+                        </cue>
+                        <cue name="Jump_Effect" instantiate="true">
+                            <conditions>
+                                <event_cue_signalled />
+                            </conditions>
+                            <actions>
+                                <do_if value="$ShipList.{1}?">
+                                    <debug_to_file text="'Jump_Effect ' + player.age + ' ' + $ShipList.count" name="'shipprofileslib.log'" directory="'ship profiles'" />
+                                    <set_value name="$ShipLength" exact="$ShipList.{1}.length" />
+                                    <create_position name="$PositionOld" space="$ShipList.{1}.zone" min="1km" max="10km" />
+                                    <create_position name="$EffectPosOld" x="$PositionOld.x" y="$PositionOld.y" z="$PositionOld.z + $ShipLength" />
+                                    <create_position name="$Position" space="$Destination.zone" min="1km" max="10km" />
+                                    <create_position name="$EffectPos" x="$Position.x" y="$Position.y" z="$Position.z + $ShipLength" />
+                                    <do_if value="$ShipList.{1}.isclass.ship_s">
+                                        <add_effect effect="'tpwar_warp_small'" object="$Destination.zone">
+                                            <position value="$EffectPos" />
+                                        </add_effect>
+                                        <add_effect effect="'tpwar_warp_small'" object="$ShipList.{1}.zone">
+                                            <position value="$EffectPosOld" />
+                                        </add_effect>
+                                    </do_if>
+                                    <do_if value="$ShipList.{1}.isclass.ship_m">
+                                        <add_effect effect="'tpwar_warp_medium'" object="$Destination.zone">
+                                            <position value="$EffectPos" />
+                                        </add_effect>
+                                        <add_effect effect="'tpwar_warp_medium'" object="$ShipList.{1}.zone">
+                                            <position value="$EffectPosOld" />
+                                        </add_effect>
+                                    </do_if>
+                                    <do_if value="$ShipList.{1}.isclass.ship_l">
+                                        <add_effect effect="'tpwar_warp_large'" object="$Destination.zone">
+                                            <position value="$EffectPos" />
+                                        </add_effect>
+                                        <add_effect effect="'tpwar_warp_large'" object="$ShipList.{1}.zone">
+                                            <position value="$EffectPosOld" />
+                                        </add_effect>
+                                    </do_if>
+                                    <do_if value="$ShipList.{1}.isclass.ship_xl">
+                                        <add_effect effect="'tpwar_warp_xl'" object="$Destination.zone">
+                                            <position value="$EffectPos" />
+                                        </add_effect>
+                                        <add_effect effect="'tpwar_warp_xl'" object="$ShipList.{1}.zone">
+                                            <position value="$EffectPosOld" />
+                                        </add_effect>
+                                    </do_if>
+                                    <signal_cue_instantly cue="Jump_Warp" param="$Position" />
+                                </do_if>
+                            </actions>
+                        </cue>
+                        <cue name="Jump_Warp" instantiate="true">
+                            <conditions>
+                                <event_cue_signalled />
+                            </conditions>
+                            <delay exact="$Delay" />
+                            <actions>
+                                <do_if value="$ShipList.{1}?">
+                                    <warp object="$ShipList.{1}" zone="$Destination.zone">
+                                        <position x="event.param.x" y="event.param.y" z="event.param.z" />
+                                    </warp>
+                                    <remove_from_list name="$ShipList" exact="$ShipList.{1}" />
+                                </do_if>
+                                <signal_cue cue="Jump_Cleanup" />
+                            </actions>
+                        </cue>
+                        <cue name="Jump_Cleanup" instantiate="true">
+                            <conditions>
+                                <event_cue_signalled />
+                            </conditions>
+                            <delay exact="$Delay" />
+                            <actions>
+                                <do_if value="$ShipList.count == 0">
+                                    <signal_objects object="player.entity" param="$Signal" param2="$ShipReturn" param3="$Destination" />
+                                    <cancel_cue cue="Jump_Effect" />
+                                    <cancel_cue cue="Jump_Warp" />
+                                    <cancel_cue cue="Jump_Cleanup" />
+                                    <cancel_cue cue="Init" />
+                                </do_if>
+                                <do_else>
+                                    <signal_cue cue="Jump_Effect" />
+                                </do_else>
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+            </cues>
+        </library>
+    </cues>
+</mdscript>

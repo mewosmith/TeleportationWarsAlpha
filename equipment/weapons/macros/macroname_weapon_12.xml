@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="diminished_limited_concussion_generator_macro" class="weapon">
+        <component ref="weapon_gen_s_laser_01_mk2" />
+        <properties>
+            <identification name="{12345678,1314}" basename="{12345678,1315}" shortname="{12345678,1316}" description="{12345678,1317}" mk="1" />
+            <bullet class="diminished_limited_concussion_generator_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="181" />
+            <rotationacceleration max="129" />
+            <!-- <reload time="6" /> -->
+            <hull max="729" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+

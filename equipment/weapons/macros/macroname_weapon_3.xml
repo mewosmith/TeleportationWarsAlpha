@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="advanced_gamma_ion_railgun_macro" class="weapon">
+        <component ref="weapon_gen_l_laser_01_mk1" />
+        <properties>
+            <identification name="{12345678,405}" basename="{12345678,406}" shortname="{12345678,407}" description="{12345678,408}" mk="1" />
+            <bullet class="advanced_gamma_ion_railgun_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="216" />
+            <rotationacceleration max="185" />
+            <!-- <reload time="7" /> -->
+            <hull max="1844" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+

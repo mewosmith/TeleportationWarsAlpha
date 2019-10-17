@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+    <replace sel="/parameters/holomap/universe/camera">
+        <camera zoom="300000" min="1000" max="50000000" steps="120" speed="2.0" />
+    </replace>
+    <replace sel="/parameters/holomap/universe/text">
+        <text scale="3.8" />
+    </replace>
+</diff>

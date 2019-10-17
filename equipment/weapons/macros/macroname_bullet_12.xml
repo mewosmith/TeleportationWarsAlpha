@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="diminished_limited_concussion_generator_bullet_macro" class="bullet">
+        <component ref="bullet_gen_s_shotgun_01_mk2" />
+        <properties>
+            <bullet speed="971" lifetime="4" amount="1" barrelamount="1" icon="weapon_handlaser_mk1" timediff="0.005" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="0.9322904586538632" />
+                <damage min="26" max="60" value="81" time="4" /> 
+            <effects>
+                <impact ref="impact_gen_m_gatling_01_mk1" />
+                <launch ref="muzzle_gen_m_beam_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+</macros>

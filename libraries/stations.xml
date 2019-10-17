@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/libraries.xsd">
+  <!-- <station id="x4ep1_playerheadquarters" group="x4ep1_playerheadquarters">
+    <category tags="headquarters" faction="faction.player" />
+  </station>
+  <station id="x4ep1_gamestart_trade_playerfactory" group="x4ep1_gamestart_trade_playerfactory">
+    <category tags="factory" faction="[faction.player]" />
+  </station>
+  <station id="shipyard_arg" group="shipyard_arg">
+    <category tags="shipyard" faction="[argon, antigone, hatikvah]" />
+  </station>
+  <station id="wharf_arg" group="wharf_arg">
+    <category tags="wharf" faction="[argon, antigone, hatikvah]" />
+  </station>
+  <station id="shipyard_par" group="shipyard_par">
+    <category tags="shipyard" faction="[paranid, holyorder]" />
+  </station>
+  <station id="wharf_par" group="wharf_par">
+    <category tags="wharf" faction="[paranid, holyorder, alliance]" />
+  </station>
+  <station id="shipyard_ali" group="shipyard_ali">
+    <category tags="shipyard" faction="alliance" />
+  </station>
+  <station id="shipyard_tel" group="shipyard_tel">
+    <category tags="shipyard" faction="[teladi, ministry, scaleplate]" />
+  </station>
+  <station id="wharf_tel" group="wharf_tel">
+    <category tags="wharf" faction="[teladi, ministry, scaleplate]" />
+  </station>
+  <station id="shipyard_xen" group="shipyard_xen">
+    <category tags="shipyard" faction="xenon" />
+  </station>
+  <station id="wharf_xen" group="wharf_xen">
+    <category tags="wharf" faction="xenon" />
+  </station>
+  <station id="equipmentdock_arg" group="equipmentdock_arg">
+    <category tags="equipmentdock" faction="[argon, antigone, hatikvah]" />
+  </station>
+  <station id="equipmentdock_par" group="equipmentdock_par">
+    <category tags="equipmentdock" faction="[paranid, holyorder, alliance]" />
+  </station>
+  <station id="equipmentdock_tel" group="equipmentdock_tel">
+    <category tags="equipmentdock" faction="[teladi, ministry, scaleplate]" />
+  </station> -->
+  <station id="tradestation_new" group="tradestation_arg">
+    <category tags="tradestation" faction="[atlas, sovsyn, cartel, agi, goner, wholefood, ledda, telunion, aldrin, cantera, toride, nmmc, atreus, jonferson, aquariuscorp, ptni, strongarms, plutarch, albionenergy, terracorp, franton, chow, terrapmc, otas, buccaneers, reivers, terrans, nolimits, uguras, heretics, yaki, usc, heartofalbion, sonraenergy]" />
+  </station>
+  <!-- <station id="tradestation_arg" group="tradestation_arg">
+    <category tags="tradestation" faction="[argon, antigone, hatikvah]" />
+  </station>
+  <station id="tradestation_par" group="tradestation_par">
+    <category tags="tradestation" faction="[paranid, holyorder, alliance]" />
+  </station>
+  <station id="tradestation_tel" group="tradestation_tel">
+    <category tags="tradestation" faction="[teladi, ministry, scaleplate]" />
+  </station>
+  <station id="tradestation_tel_ring" macro="landmarks_tel_tradestation_01_macro">
+    <category tags="tradestation" faction="[teladi, ministry, scaleplate]" />
+  </station>
+  <station id="defence_arg" group="defence_arg">
+    <category tags="defence" faction="[argon, antigone, hatikvah]" />
+  </station>
+  <station id="defence_par" group="defence_par">
+    <category tags="defence" faction="[paranid, holyorder, alliance]" />
+  </station>
+  <station id="defence_tel" group="defence_tel">
+    <category tags="defence" faction="[teladi, ministry, scaleplate]" />
+  </station>
+  <station id="defence_xen" group="defence_xen">
+    <category tags="defence" faction="xenon" />
+  </station>
+  <station id="pirate_piratedock" group="pirate_piratedock">
+    <category tags="piratedock" faction="scaleplate" />
+  </station>
+  <station id="pirate_piratebase" group="pirate_piratebase">
+    <category tags="piratebase" faction="scaleplate" />
+  </station>
+  <station id="pirate_freeport" group="pirate_freeport">
+    <category tags="piratebase" faction="hatikvah" />
+  </station> -->
+
+</stations>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+    <macro name="weapon_khp_m_mk1_macro" class="weapon">
+        <component ref="weapon_khp_m_mk1" />
+        <properties>
+            <identification makerrace="khaak" mk="1" />
+            <bullet class="bullet_khp_m_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="50" />
+            <rotationacceleration max="25" />
+            <reload />
+            <hull max="1000" hittable="0" />
+        </properties>
+    </macro>
+    <macro name="weapon_khp_s_mk1_macro" class="weapon">
+        <component ref="weapon_khp_s_mk1" />
+        <properties>
+            <identification makerrace="khaak" mk="1" />
+            <bullet class="bullet_khp_s_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="50" />
+            <rotationacceleration max="25" />
+            <reload />
+            <hull max="1000" hittable="0" />
+        </properties>
+    </macro>
+</macros>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\alby\Desktop\unidiffxsd/macro_missile.xsd">
+ <macro name="tpwareq_pulse_large_missile_macro" class="missile">
+        <component ref="tpwareq_pulse_large_missile_comp" />
+        <properties>
+            <identification name="{734550,1232005}" basename="{734550,1232006}" description="{734550,1232008}" />
+            <ammunition value="1" />
+            <missile amount="8" delay="0.4" barrelamount="1" lifetime="90" range="25000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="1500" />
+            <reload time="60" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="ref_missile_explosion_heavy_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.0" />
+            <physics mass="2.514">
+                <inertia pitch="1.807" yaw="1.807" roll="1.807" />
+                <drag forward="0.303" reverse="1.211" horizontal="2.173" vertical="2.173" pitch="0.857" yaw="0.857" roll="0.857" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="tpwareq_pulse_medium_missile_macro" class="missile">
+        <component ref="tpwareq_pulse_medium_missile_comp" />
+        <properties>
+            <identification name="{734550,123205}" basename="{734550,123206}" description="{734550,123208}" />
+            <ammunition value="1" />
+            <missile amount="8" delay="0.4" barrelamount="1" lifetime="90" range="25000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="900" />
+            <reload time="60" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="ref_missile_explosion_medium_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.0" />
+            <physics mass="1.514">
+                <inertia pitch="1.807" yaw="1.807" roll="1.807" />
+                <drag forward="0.303" reverse="1.211" horizontal="2.173" vertical="2.173" pitch="0.857" yaw="0.857" roll="0.857" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="tpwareq_pulse_small_missile_macro" class="missile">
+        <component ref="tpwareq_pulse_small_missile_comp" />
+        <properties>
+            <identification name="{734550,12325}" basename="{734550,12326}" description="{734550,12328}"  />
+            <ammunition value="1"  />
+            <missile amount="8" delay="0.4"  barrelamount="1" lifetime="90" range="15000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage  value="450" />
+
+            <reload time="60" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="ref_missile_explosion_light_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <longrangescan minlevel="15" />
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.0" />
+            <physics mass="0.329">
+                <inertia pitch="0.264" yaw="0.264" roll="0.264" />
+                <drag forward="0.066" reverse="0.263" horizontal="0.472" vertical="0.472" pitch="0.125" yaw="0.125" roll="0.125" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_missile_macro" class="missile">
+        <component ref="tpwareq_pulse_xlarge_missile_comp" />
+        <properties>
+            <identification name="{734550,12320005}" basename="{734550,12320006}" description="{734550,12320008}" />
+            <ammunition value="1" />
+            <missile amount="8" delay="0.4" barrelamount="1" lifetime="90" range="45000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="5000" />
+            <reload time="60" />
+            <hull max="10" />
+            <effects>
+                <explosion ref="ref_missile_explosion_heavy_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.0" />
+            <physics mass="4.514">
+                <inertia pitch="1.807" yaw="1.807" roll="1.807" />
+                <drag forward="0.303" reverse="1.211" horizontal="2.173" vertical="2.173" pitch="0.857" yaw="0.857" roll="0.857" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+</macros>

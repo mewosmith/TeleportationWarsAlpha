@@ -1,0 +1,4749 @@
+<?xml version="1.0" ?>
+<components>
+	<component name="khp_hive01_comp" class="ship_xl">
+		<source geometry="assets\environments\asteroids\env_asteroid_xenon_xxl_07_data" />
+		<layers>
+			<layer>
+				<waypoints />
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="255" g="0" b="0" range="771.5" shadowrange="771.5" lighteffect="1" trigger="1" intensity="5">
+						<lightanimations />
+						<offset>
+							<position x="-369.5589" y="-252.9708" z="101.6366" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="255" g="0" b="0" range="543.6" shadowrange="543.6" lighteffect="1" trigger="1" intensity="3">
+						<lightanimations />
+						<offset>
+							<position x="-77.80219" y="-529.4946" z="594.7622" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni003" shadow="0" r="255" g="0" b="0" range="362.8" shadowrange="362.8" lighteffect="1" trigger="1" intensity="3">
+						<lightanimations />
+						<offset>
+							<position x="-801.2454" y="340.1633" z="-870.2705" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni004" shadow="0" r="255" g="0" b="0" range="675.6" shadowrange="675.6" lighteffect="1" trigger="1" intensity="4">
+						<lightanimations />
+						<offset>
+							<position x="143.907" y="-124.6479" z="-315.8145" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni005" shadow="0" r="255" g="0" b="0" range="486.6" shadowrange="486.6" lighteffect="1" trigger="1" intensity="4">
+						<lightanimations />
+						<offset>
+							<position x="833.0269" y="252.4097" z="-124.835" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni006" shadow="0" r="255" g="0" b="0" range="486.6" shadowrange="486.6" lighteffect="1" trigger="1" intensity="4">
+						<lightanimations />
+						<offset>
+							<position x="744.7921" y="-91.13574" z="-418.2901" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni007" shadow="0" r="255" g="0" b="0" range="677.6" shadowrange="677.6" lighteffect="1" trigger="1" intensity="3">
+						<lightanimations />
+						<offset>
+							<position x="583.7798" y="18.83765" z="784.0311" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni008" shadow="0" r="255" g="0" b="0" range="543.6" shadowrange="543.6" lighteffect="1" trigger="1" intensity="3">
+						<lightanimations />
+						<offset>
+							<position x="-23.82584" y="-1315.427" z="428.9458" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni009" shadow="0" r="255" g="0" b="0" range="543.6" shadowrange="543.6" lighteffect="1" trigger="1" intensity="3">
+						<lightanimations />
+						<offset>
+							<position x="-759.4567" y="-1495.73" z="658.9073" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+					<omni name="XU Omni010" shadow="0" r="255" g="0" b="0" range="401.2" shadowrange="401.2" lighteffect="1" trigger="1" intensity="5">
+						<lightanimations />
+						<offset>
+							<position x="-494.4646" y="-1639.716" z="14.81651" />
+							<quaternion qx="-7.497471E-03" qy="-1.091649E-05" qz="-1.455981E-03" qw="-0.9999708" />
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0" />
+			<connection name="position" tags="position" value="1" optional="1" />
+			<connection name="space" tags="ship ship_xl">
+				<offset>
+					<rotation pitch="90"></rotation>
+				</offset>
+			</connection>
+			<connection name="Connection001" tags="part nocollision  ">
+				<offset>
+					<position x="-219.2287" y="-721.2981" z="-44.06641" />
+				</offset>
+				<parts>
+					<part name="fx_lightcones">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.decoflares" />
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="5119.161" y="2861.38" z="2325.916" />
+							<center x="1.831055E-04" y="494.147" z="0" />
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection002" tags="part  ">
+				<offset>
+					<position x="-1.322983E-04" y="-2.313176E-11" z="-11.07858" />
+				</offset>
+				<parts>
+					<part name="part_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="asteroids.ast_xenon_niv_01" />
+									<material id="2" ref="asteroids.ast_xen_crystal" />
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="asteroids.ast_xenon_niv_01" />
+									<material id="2" ref="asteroids.ast_xen_crystal" />
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="asteroids.ast_xenon_niv_01" />
+									<material id="2" ref="asteroids.ast_xen_crystal" />
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="asteroids.ast_xenon_niv_01" />
+									<material id="2" ref="asteroids.ast_xen_crystal" />
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1201.239" y="4907.687" z="967.7504" />
+							<center x="1.022796E-05" y="2.313176E-11" z="-3.051758E-05" />
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="dpod01" tags="destructible">
+				<offset>
+					<position x="0" y="1500" z="-1500" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod02" tags="destructible">
+				<offset>
+					<position x="0" y="-1500" z="1500" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod03" tags="destructible">
+				<offset>
+					<position x="0" y="1500" z="1500" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod04" tags="destructible">
+				<offset>
+					<position x="0" y="-1500" z="-1500" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<!-- dpod01 -->
+			<connection name="1con_shieldgen_001" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.9456" y="1570.335" z="-1500" />
+				</offset>
+			</connection>
+			<connection name="2con_shieldgen_002" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.6192" y="1570.335" z="-1500" />
+				</offset>
+			</connection>
+			<connection name="3con_shieldgen_004" tags="medium shield hittable ">
+				<offset>
+					<position x="17.2924" y="1429.735" z="-1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="4con_shieldgen_003" tags="medium shield hittable ">
+				<offset>
+					<position x="-17.1053" y="1429.735" z="-1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="5con_shieldgen_large_001" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="1560.819" z="-1500.002" />
+				</offset>
+			</connection>
+			<connection name="6con_shieldgen_large_002" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="1560.819" z="-1500.002" />
+				</offset>
+			</connection>
+			<connection name="7con_turret_laser_l_001" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1558.87" z="-1537.621" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="8con_turret_laser_l_002" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1558.87" z="-1462.379" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="9con_turret_laser_l_003" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1558.87" z="-1537.621" />
+					<quaternion qx="-6.162841E-02" qy="-0.704416" qz="6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="10con_turret_laser_l_004" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1558.87" z="-1462.214" />
+					<quaternion qx="-6.162848E-02" qy="-0.7044151" qz="6.162833E-02" qw="-0.7044169" />
+				</offset>
+			</connection>
+			<connection name="11con_turret_laser_l_005" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1558.87" z="-1366.892" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="12con_turret_laser_l_006" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1558.87" z="-1366.892" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="13con_turret_laser_l_007" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1558.87" z="-1630.391" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="14con_turret_laser_l_008" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1558.87" z="-1630.391" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="15con_turret_001" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="-1533.252" />
+				</offset>
+			</connection>
+			<connection name="16con_turret_002" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="-1555.206" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="17con_turret_003" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="-1466.359" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="18con_turret_004" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="-1444.593" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="19con_turret_005" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="-1466.359" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="20con_turret_006" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="-1444.593" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="21con_turret_007" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="-1533.23" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="22con_turret_008" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="-1554.996" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="23con_shieldgen_large_003" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="1439.383" z="-1500.002" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="24con_shieldgen_large_004" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="1439.383" z="-1500.002" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="25con_turret_laser_l_009" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1440.974" z="-1368.168" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="26con_turret_laser_l_010" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1440.974" z="-1368.168" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="27con_turret_laser_l_011" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1440.974" z="-1631.667" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="28con_turret_laser_l_012" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1440.974" z="-1631.667" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="29con_turret_laser_l_013" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1440.974" z="-1536.345" />
+					<quaternion qx="-0.7044151" qy="-6.162846E-02" qz="-0.7044169" qw="6.162836E-02" />
+				</offset>
+			</connection>
+			<connection name="30con_turret_laser_l_014" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1440.974" z="-1460.938" />
+					<quaternion qx="-0.704416" qy="-6.162838E-02" qz="-0.704416" qw="6.162844E-02" />
+				</offset>
+			</connection>
+			<connection name="31con_turret_laser_l_015" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1440.974" z="-1536.345" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<connection name="32con_turret_laser_l_016" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1440.974" z="-1460.938" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<!-- dpod02 -->
+			<connection name="33con_shieldgen_001" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.9456" y="-1429.665" z="1500" />
+				</offset>
+			</connection>
+			<connection name="34con_shieldgen_002" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.6192" y="-1429.665" z="1500" />
+				</offset>
+			</connection>
+			<connection name="35con_shieldgen_004" tags="medium shield hittable ">
+				<offset>
+					<position x="17.2924" y="-1570.265" z="1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="36con_shieldgen_003" tags="medium shield hittable ">
+				<offset>
+					<position x="-17.1053" y="-1570.265" z="1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="37con_shieldgen_large_001" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="-1439.181" z="1499.998" />
+				</offset>
+			</connection>
+			<connection name="38con_shieldgen_large_002" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="-1439.181" z="1499.998" />
+				</offset>
+			</connection>
+			<connection name="39con_turret_laser_l_001" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1441.13" z="1462.379" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="40con_turret_laser_l_002" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1441.13" z="1537.621" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="41con_turret_laser_l_003" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1441.13" z="1462.379" />
+					<quaternion qx="-6.162841E-02" qy="-0.704416" qz="6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="42con_turret_laser_l_004" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1441.13" z="1537.786" />
+					<quaternion qx="-6.162848E-02" qy="-0.7044151" qz="6.162833E-02" qw="-0.7044169" />
+				</offset>
+			</connection>
+			<connection name="43con_turret_laser_l_005" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1441.13" z="1633.108" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="44con_turret_laser_l_006" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1441.13" z="1633.108" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="45con_turret_laser_l_007" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1441.13" z="1369.609" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="46con_turret_laser_l_008" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1441.13" z="1369.609" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="47con_turret_001" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="1466.748" />
+				</offset>
+			</connection>
+			<connection name="48con_turret_002" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="1444.794" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="49con_turret_003" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="1533.641" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="50con_turret_004" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="1555.407" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="51con_turret_005" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="1533.641" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="52con_turret_006" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="1555.407" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="53con_turret_007" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="1466.77" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="54con_turret_008" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="1445.004" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="55con_shieldgen_large_003" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="-1560.617" z="1499.998" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="56con_shieldgen_large_004" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="-1560.617" z="1499.998" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="57con_turret_laser_l_009" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1559.026" z="1631.832" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="58con_turret_laser_l_010" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1559.026" z="1631.832" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="59con_turret_laser_l_011" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1559.026" z="1368.333" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="60con_turret_laser_l_012" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1559.026" z="1368.333" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="61con_turret_laser_l_013" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1559.026" z="1463.655" />
+					<quaternion qx="-0.7044151" qy="-6.162846E-02" qz="-0.7044169" qw="6.162836E-02" />
+				</offset>
+			</connection>
+			<connection name="62con_turret_laser_l_014" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1559.026" z="1539.062" />
+					<quaternion qx="-0.704416" qy="-6.162838E-02" qz="-0.704416" qw="6.162844E-02" />
+				</offset>
+			</connection>
+			<connection name="63con_turret_laser_l_015" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1559.026" z="1463.655" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<connection name="64con_turret_laser_l_016" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1559.026" z="1539.062" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<!-- dpod03 -->
+			<connection name="65con_shieldgen_001" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.9456" y="1570.335" z="1500" />
+				</offset>
+			</connection>
+			<connection name="66con_shieldgen_002" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.6192" y="1570.335" z="1500" />
+				</offset>
+			</connection>
+			<connection name="67con_shieldgen_004" tags="medium shield hittable ">
+				<offset>
+					<position x="17.2924" y="1429.735" z="1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="68con_shieldgen_003" tags="medium shield hittable ">
+				<offset>
+					<position x="-17.1053" y="1429.735" z="1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="69con_shieldgen_large_001" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="1560.819" z="1499.998" />
+				</offset>
+			</connection>
+			<connection name="70con_shieldgen_large_002" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="1560.819" z="1499.998" />
+				</offset>
+			</connection>
+			<connection name="71con_turret_laser_l_001" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1558.87" z="1462.379" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="72con_turret_laser_l_002" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1558.87" z="1537.621" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="73con_turret_laser_l_003" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1558.87" z="1462.379" />
+					<quaternion qx="-6.162841E-02" qy="-0.704416" qz="6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="74con_turret_laser_l_004" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1558.87" z="1537.786" />
+					<quaternion qx="-6.162848E-02" qy="-0.7044151" qz="6.162833E-02" qw="-0.7044169" />
+				</offset>
+			</connection>
+			<connection name="75con_turret_laser_l_005" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1558.87" z="1633.108" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="76con_turret_laser_l_006" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1558.87" z="1633.108" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="77con_turret_laser_l_007" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1558.87" z="1369.609" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="78con_turret_laser_l_008" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1558.87" z="1369.609" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="79con_turret_001" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="1466.748" />
+				</offset>
+			</connection>
+			<connection name="80con_turret_002" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="1444.794" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="81con_turret_003" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="1533.641" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="82con_turret_004" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1576.951" z="1555.407" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="83con_turret_005" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="1533.641" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="84con_turret_006" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="1555.407" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="85con_turret_007" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="1466.77" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="86con_turret_008" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="1423.119" z="1445.004" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="87con_shieldgen_large_003" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="1439.383" z="1499.998" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="88con_shieldgen_large_004" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="1439.383" z="1499.998" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="89con_turret_laser_l_009" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1440.974" z="1631.832" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="90con_turret_laser_l_010" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1440.974" z="1631.832" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="91con_turret_laser_l_011" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="1440.974" z="1368.333" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="92con_turret_laser_l_012" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="1440.974" z="1368.333" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="93con_turret_laser_l_013" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1440.974" z="1463.655" />
+					<quaternion qx="-0.7044151" qy="-6.162846E-02" qz="-0.7044169" qw="6.162836E-02" />
+				</offset>
+			</connection>
+			<connection name="94con_turret_laser_l_014" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="1440.974" z="1539.062" />
+					<quaternion qx="-0.704416" qy="-6.162838E-02" qz="-0.704416" qw="6.162844E-02" />
+				</offset>
+			</connection>
+			<connection name="95con_turret_laser_l_015" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1440.974" z="1463.655" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<connection name="96con_turret_laser_l_016" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="1440.974" z="1539.062" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<!-- dpod04 -->
+			<connection name="97con_shieldgen_001" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.9456" y="-1429.665" z="-1500" />
+				</offset>
+			</connection>
+			<connection name="98con_shieldgen_002" tags="medium shield hittable ">
+				<offset>
+					<position x="-16.6192" y="-1429.665" z="-1500" />
+				</offset>
+			</connection>
+			<connection name="99con_shieldgen_004" tags="medium shield hittable ">
+				<offset>
+					<position x="17.2924" y="-1570.265" z="-1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="100con_shieldgen_003" tags="medium shield hittable ">
+				<offset>
+					<position x="-17.1053" y="-1570.265" z="-1500" />
+					<quaternion qx="-1.042161E-14" qy="2.384186E-07" qz="-1" qw="4.371139E-08" />
+				</offset>
+			</connection>
+			<connection name="101con_shieldgen_large_001" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="-1439.181" z="-1500.002" />
+				</offset>
+			</connection>
+			<connection name="102con_shieldgen_large_002" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="-1439.181" z="-1500.002" />
+				</offset>
+			</connection>
+			<connection name="103con_turret_laser_l_001" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1441.13" z="-1537.621" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="104con_turret_laser_l_002" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1441.13" z="-1462.379" />
+					<quaternion qx="6.162845E-02" qy="-0.704416" qz="-6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="105con_turret_laser_l_003" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1441.13" z="-1537.621" />
+					<quaternion qx="-6.162841E-02" qy="-0.704416" qz="6.162841E-02" qw="-0.704416" />
+				</offset>
+			</connection>
+			<connection name="106con_turret_laser_l_004" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1441.13" z="-1462.214" />
+					<quaternion qx="-6.162848E-02" qy="-0.7044151" qz="6.162833E-02" qw="-0.7044169" />
+				</offset>
+			</connection>
+			<connection name="107con_turret_laser_l_005" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1441.13" z="-1366.892" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="108con_turret_laser_l_006" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1441.13" z="-1366.892" />
+					<quaternion qx="-8.715573E-02" qy="8.70901E-08" qz="-7.619396E-09" qw="-0.9961947" />
+				</offset>
+			</connection>
+			<connection name="109con_turret_laser_l_007" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1441.13" z="-1630.391" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="110con_turret_laser_l_008" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1441.13" z="-1630.391" />
+					<quaternion qx="-1.419948E-08" qy="-0.9961947" qz="0.0871558" qw="-1.623007E-07" />
+				</offset>
+			</connection>
+			<connection name="111con_turret_001" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="-1533.252" />
+				</offset>
+			</connection>
+			<connection name="112con_turret_002" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="-1555.206" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="113con_turret_003" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="-1466.359" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="114con_turret_004" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1423.049" z="-1444.593" />
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="115con_turret_005" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="-1466.359" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="116con_turret_006" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="-1444.593" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="117con_turret_007" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="-1533.23" />
+					<quaternion qx="-1" qy="4.371139E-08" qz="-4.371139E-08" qw="1.910685E-15" />
+				</offset>
+			</connection>
+			<connection name="118con_turret_008" tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="0" y="-1576.881" z="-1554.996" />
+					<quaternion qx="-1" qy="7.54979E-08" qz="-4.371139E-08" qw="3.300118E-15" />
+				</offset>
+			</connection>
+			<connection name="119con_shieldgen_large_003" tags="large shield ">
+				<offset>
+					<position x="66.1926" y="-1560.617" z="-1500.002" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="120con_shieldgen_large_004" tags="large shield ">
+				<offset>
+					<position x="-66.4306" y="-1560.617" z="-1500.002" />
+					<quaternion qx="-1" qy="-0" qz="-0" qw="-7.54979E-08" />
+				</offset>
+			</connection>
+			<connection name="121con_turret_laser_l_009" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1559.026" z="-1368.168" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="122con_turret_laser_l_010" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1559.026" z="-1368.168" />
+					<quaternion qx="1.623007E-07" qy="-0.087156" qz="-0.9961946" qw="-1.419952E-08" />
+				</offset>
+			</connection>
+			<connection name="123con_turret_laser_l_011" tags="turret large standard missile ">
+				<offset>
+					<position x="36.9373" y="-1559.026" z="-1631.667" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="124con_turret_laser_l_012" tags="turret large standard missile ">
+				<offset>
+					<position x="-38.469" y="-1559.026" z="-1631.667" />
+					<quaternion qx="-0.9961947" qy="-7.619398E-09" qz="-8.70901E-08" qw="8.715576E-02" />
+				</offset>
+			</connection>
+			<connection name="125con_turret_laser_l_013" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1559.026" z="-1536.345" />
+					<quaternion qx="-0.7044151" qy="-6.162846E-02" qz="-0.7044169" qw="6.162836E-02" />
+				</offset>
+			</connection>
+			<connection name="126con_turret_laser_l_014" tags="turret large standard missile ">
+				<offset>
+					<position x="133.082" y="-1559.026" z="-1460.938" />
+					<quaternion qx="-0.704416" qy="-6.162838E-02" qz="-0.704416" qw="6.162844E-02" />
+				</offset>
+			</connection>
+			<connection name="127con_turret_laser_l_015" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1559.026" z="-1536.345" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<connection name="128con_turret_laser_l_016" tags="turret large standard missile ">
+				<offset>
+					<position x="-132.265" y="-1559.026" z="-1460.938" />
+					<quaternion qx="-0.704416" qy="6.162851E-02" qz="-0.704416" qw="-6.162845E-02" />
+				</offset>
+			</connection>
+			<!-- end dpod -->
+			<!-- PLAYER -->
+			<connection name="con_playercontrol" tags="playercontrol">
+				<offset>
+					<position x="-2.243557" y="125.7665" z="66.88295" />
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="-2.243557" y="125.6716" z="71.97505" />
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="1.788139E-06" y="98.93119" z="17.33154" />
+				</offset>
+			</connection>
+			<connection name="con_dock_xs" tags="dock_xs ">
+				<offset>
+					<position x="4.130688E-08" y="90.56065" z="-110.042" />
+					<quaternion qx="0.7066967" qy="-0" qz="-0" qw="-0.7075166" />
+				</offset>
+			</connection>
+			<!-- <connection name="con_shieldgen_006" tags="medium shield hittable ">
+				<offset>
+					<position x="0" y="81.58002" z="-256.0025" />
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_007" tags="medium shield hittable ">
+				<offset>
+					<position x="0" y="-29.95338" z="11.13994" />
+					<quaternion qx="2.581016E-09" qy="-0.2164396" qz="-0.976296" qw="1.164221E-08" />
+				</offset>
+			</connection> -->
+			<!-- docks -->
+			<!-- <connection name="con_dockarea_arg_s_ship_03" tags="dockarea ">
+				<offset>
+					<position x="20.04967" y="59.54839" z="79.80882" />
+				</offset>
+			</connection> -->
+			<connection name="con_shieldgen_008" tags="medium shield hittable ">
+				<offset>
+					<position x="0" y="91.94521" z="-96.59733" />
+				</offset>
+			</connection>
+			<connection name="con_shipstorage_xs_01" tags="dockingbay ">
+				<offset>
+					<position x="-0.470993" y="124.8929" z="-15.31257" />
+				</offset>
+			</connection>
+			<!-- 
+				11 or 12 from the bottom
+				15 from the bottom
+
+				dock upsidedown [-300.000000m, -1606.000000m, 0.000000m
+
+				dock at [-300.000000m, -1591.000000m, 300.000000m] move to
+			 -->
+			<!-- engines -->
+			<connection name="con_engine_01" tags="engine large "></connection>
+			<connection name="con_engine_02" tags="engine large "></connection>
+			<connection name="con_engine_03" tags="engine large "></connection>
+			<!-- INVIS DOCKS 
+				dockinspace1
+dockinspace2
+dockinspace3
+dockinspace4
+dockinspace5
+dockinspace6
+dockinspace7
+dockinspace8
+dockinspace9
+dockinspace10
+			
+			-->
+			<connection name="dockinspace1" tags="dockingbay">
+				<offset>
+					<position x="1500" y="2000" z="0" />
+					<rotation pitch="0" roll="0" yaw="0" />
+				</offset>
+			</connection>
+			<connection name="dockinspace2" tags="dockingbay">
+				<offset>
+					<position x="1500" y="-2000" z="0" />
+					<rotation pitch="0" roll="0" yaw="0" />
+				</offset>
+			</connection>
+			<connection name="dockinspace3" tags="dockingbay">
+				<offset>
+					<position x="1500" y="1500" z="0" />
+					<rotation pitch="0" roll="0" yaw="0" />
+				</offset>
+			</connection>
+			<connection name="dockinspace4" tags="dockingbay">
+				<offset>
+					<position x="1500" y="-1500" z="0" />
+					<rotation pitch="0" roll="0" yaw="0" />
+				</offset>
+			</connection>
+			<connection name="dockinspace5" tags="dockingbay">
+				<offset>
+					<position x="1500" y="0" z="0" />
+					<rotation pitch="0" roll="0" yaw="0" />
+				</offset>
+			</connection>
+			<!--  -->
+			<connection name="dockinspace6" tags="dockingbay">
+				<offset>
+					<position x="-1500" y="2000" z="0" />
+					<rotation pitch="0" roll="0" yaw="180" />
+				</offset>
+			</connection>
+			<connection name="dockinspace7" tags="dockingbay">
+				<offset>
+					<position x="-1500" y="-2000" z="0" />
+					<rotation pitch="0" roll="0" yaw="180" />
+				</offset>
+			</connection>
+			<connection name="dockinspace8" tags="dockingbay">
+				<offset>
+					<position x="-1500" y="1500" z="0" />
+					<rotation pitch="0" roll="0" yaw="180" />
+				</offset>
+			</connection>
+			<connection name="dockinspace9" tags="dockingbay">
+				<offset>
+					<position x="-1500" y="-1500" z="0" />
+					<rotation pitch="0" roll="0" yaw="180" />
+				</offset>
+			</connection>
+			<connection name="dockinspace10" tags="dockingbay">
+				<offset>
+					<position x="-1500" y="0" z="0" />
+					<rotation pitch="0" roll="0" yaw="180" />
+				</offset>
+			</connection>
+			<!-- DPOD -->
+			<!-- <connection name="dpod02" tags="destructible">
+				<offset>
+					<position x="-1600" y="20" z="0" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod03" tags="destructible">
+				<offset>
+					<position x="1600" y="800" z="1600" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod04" tags="destructible">
+				<offset>
+					<position x="1600" y="800" z="-1600" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="dpod05" tags="destructible">
+				<offset>
+					<position x="-1600" y="800" z="1600" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection> -->
+			<!-- <connection name="dpod06" tags="destructible" >
+				<offset>
+					<position x="1600" y="20" z="0" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection> -->
+			<!-- PODS -->
+			<!-- <connection name="pod_01a" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="20" z="0" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01b" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="-20" z="0" />
+					<rotation pitch="180" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01c" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="-10" z="0" />
+					<rotation pitch="90" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01d" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="-10" z="0" />
+					<rotation pitch="240" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01e" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="-10" z="-10" />
+					<rotation pitch="90" yaw="240" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01f" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="1600" y="10" z="10" />
+					<rotation pitch="240" yaw="90" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01_shielda" tags="medium shield hittable ">
+				<offset>
+					<position x="1500" y="3" z="0" />
+					<rotation pitch="0" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection>
+			<connection name="pod_01_shielda" tags="medium shield hittable ">
+				<offset>
+					<position x="1500" y="0" z="0" />
+					<rotation pitch="180" yaw="0" roll="0"></rotation>
+				</offset>
+			</connection> -->
+			<!-- GRID -->
+			<!-- TODO -->
+			<!-- <connection name="gridname_1" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_2" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-16" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_3" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-31" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_4" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-46" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_5" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-61" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_6" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-76" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_7" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-91" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_8" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-106" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_9" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-121" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_10" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-136" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_11" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-151" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_12" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-166" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_13" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-181" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_14" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-196" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_15" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-211" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_16" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-226" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_17" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-241" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_18" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-256" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_19" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-271" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_20" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-286" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_21" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-301" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_22" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-316" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_23" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-331" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_24" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-346" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_25" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-361" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_26" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-376" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_27" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-391" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_28" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-406" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_29" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-421" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_30" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-436" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_31" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-451" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_32" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-466" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_33" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-481" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_34" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-496" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_35" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-511" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_36" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-526" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_37" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-541" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_38" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-556" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_39" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-571" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_40" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-586" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_41" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-601" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_42" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-616" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_43" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-631" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_44" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-646" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_45" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-661" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_46" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-676" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_47" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-691" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_48" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-706" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_49" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-721" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_50" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-736" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_51" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-751" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_52" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-766" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_53" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-781" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_54" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-796" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_55" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-811" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_56" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-826" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_57" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-841" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_58" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-856" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_59" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-871" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_60" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-886" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_61" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-901" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_62" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-916" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_63" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-931" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_64" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-946" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_65" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-961" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_66" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-976" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_67" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-991" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_68" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1006" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_69" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1021" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_70" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1036" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_71" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1051" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_72" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1066" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_73" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1081" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_74" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1096" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_75" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1111" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_76" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1126" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_77" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1141" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_78" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1156" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_79" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1171" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_80" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1186" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_81" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1201" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_82" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1216" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_83" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1231" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_84" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1246" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_85" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1261" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_86" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1276" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_87" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1291" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_88" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1306" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_89" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1321" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_90" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1336" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_91" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1351" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_92" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1366" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_93" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1381" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_94" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1396" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_95" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1411" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_96" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1426" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_97" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1441" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_98" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="-800" y="-1456" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_99" tags="turret medium standard missile hittable   ">
+				<offset>
+					<position x="900" y="-1471" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_100" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1486" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_101" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1501" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_102" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1516" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_103" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1531" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_104" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1546" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_105" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1561" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_106" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1576" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_107" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1591" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_108" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1606" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_109" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1621" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_110" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1636" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_111" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1651" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_112" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1666" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_113" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1681" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_114" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1696" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_115" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1711" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_116" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1726" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_117" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1741" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_118" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1756" z="0" />
+				</offset>
+			</connection> -->
+			<!-- TODO BOTTOM -->
+			<!-- <connection name="gridname_119" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_120" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="16" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_121" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="31" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_122" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="46" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_123" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="61" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_124" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="76" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_125" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="91" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_126" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="106" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_127" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="121" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_128" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="136" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_129" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="151" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_130" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="166" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_131" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="181" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_132" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="196" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_133" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="211" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_134" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="226" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_135" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="241" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_136" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="256" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_137" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="271" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_138" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="286" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_139" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="301" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_140" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="316" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_141" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="331" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_142" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="346" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_143" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="361" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_144" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="376" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_145" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="391" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_146" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="406" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_147" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="421" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_148" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="436" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_149" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="451" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_150" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="466" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_151" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="481" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_152" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="496" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_153" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="511" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_154" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="526" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_155" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="541" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_156" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="556" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_157" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="571" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_158" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="586" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_159" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="601" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_160" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="616" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_161" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="631" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_162" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="646" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_163" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="661" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_164" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="676" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_165" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="691" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_166" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="706" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_167" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="721" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_168" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="736" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_169" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="751" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_170" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="766" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_171" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="781" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_172" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="796" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_173" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="811" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_174" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="826" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_175" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="841" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_176" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="856" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_177" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="871" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_178" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="886" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_179" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="901" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_180" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="916" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_181" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="931" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_182" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="946" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_183" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="961" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_184" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="976" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_185" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="991" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_186" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1006" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_187" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1021" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_188" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1036" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_189" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1051" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_190" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1066" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_191" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1081" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_192" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1096" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_193" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1111" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_194" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1126" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_195" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1141" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_196" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1156" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_197" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1171" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_198" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1186" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_199" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1201" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_200" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1216" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_201" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1231" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_202" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1246" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_203" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1261" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_204" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1276" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_205" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1291" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_206" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1306" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_207" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1321" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_208" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1336" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_209" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1351" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_210" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1366" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_211" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1381" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_212" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1396" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_213" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1411" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_214" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1426" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_215" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1441" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_216" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1456" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_217" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1471" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_218" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1486" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_219" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1501" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_220" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1516" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_221" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1531" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_222" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1546" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_223" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1561" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_224" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1576" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_225" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1591" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_226" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1606" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_227" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1621" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_228" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1636" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_229" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1651" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_230" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1666" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_231" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1681" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_232" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1696" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_233" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1711" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_234" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1726" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_235" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1741" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_236" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1756" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_237" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1771" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_238" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1786" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_239" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1801" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_240" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1816" z="0" />
+				</offset>
+			</connection> -->
+			<!-- TODO -->
+			<!-- <connection name="gridname_241" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_242" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-16" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_243" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-31" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_244" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-46" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_245" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-61" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_246" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-76" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_247" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-91" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_248" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-106" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_249" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-121" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_250" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-136" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_251" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-151" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_252" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-166" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_253" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-181" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_254" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-196" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_255" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-211" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_256" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-226" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_257" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-241" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_258" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-256" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_259" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-271" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_260" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-286" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_261" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-301" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_262" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-316" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_263" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-331" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_264" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-346" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_265" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-361" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_266" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-376" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_267" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-391" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_268" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-406" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_269" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-421" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_270" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-436" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_271" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-451" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_272" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-466" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_273" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-481" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_274" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-496" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_275" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-511" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_276" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-526" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_277" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-541" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_278" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-556" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_279" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-571" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_280" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-586" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_281" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-601" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_282" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-616" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_283" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-631" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_284" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-646" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_285" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-661" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_286" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-676" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_287" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-691" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_288" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-706" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_289" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-721" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_290" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-736" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_291" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-751" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_292" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-766" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_293" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-781" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_294" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-796" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_295" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-811" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_296" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-826" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_297" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-841" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_298" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-856" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_299" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-871" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_300" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-886" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_301" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-901" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_302" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-916" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_303" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-931" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_304" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-946" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_305" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-961" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_306" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-976" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_307" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-991" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_308" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1006" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_309" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1021" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_310" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1036" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_311" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1051" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_312" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1066" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_313" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1081" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_314" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1096" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_315" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1111" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_316" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1126" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_317" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1141" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_318" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1156" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_319" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1171" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_320" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1186" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_321" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1201" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_322" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1216" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_323" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1231" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_324" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1246" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_325" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1261" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_326" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1276" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_327" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1291" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_328" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1306" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_329" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1321" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_330" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1336" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_331" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1351" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_332" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1366" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_333" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1381" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_334" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1396" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_335" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1411" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_336" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1426" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_337" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1441" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_338" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1456" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_339" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1471" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_340" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1486" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_341" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1501" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_342" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1516" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_343" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1531" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_344" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1546" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_345" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1561" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_346" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1576" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_347" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1591" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_348" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1606" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_349" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1621" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_350" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1636" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_351" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1651" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_352" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1666" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_353" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1681" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_354" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1696" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_355" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1711" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_356" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1726" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_357" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="-1741" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_358" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="-1756" z="0" />
+				</offset>
+			</connection> -->
+			<!-- TODO BOTTOM -->
+			<!-- <connection name="gridname_359" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_360" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="16" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_361" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="31" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_362" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="46" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_363" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="61" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_364" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="76" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_365" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="91" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_366" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="106" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_367" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="121" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_368" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="136" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_369" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="151" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_370" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="166" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_371" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="181" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_372" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="196" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_373" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="211" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_374" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="226" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_375" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="241" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_376" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="256" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_377" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="271" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_378" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="286" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_379" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="301" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_380" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="316" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_381" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="331" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_382" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="346" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_383" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="361" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_384" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="376" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_385" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="391" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_386" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="406" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_387" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="421" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_388" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="436" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_389" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="451" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_390" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="466" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_391" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="481" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_392" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="496" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_393" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="511" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_394" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="526" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_395" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="541" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_396" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="556" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_397" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="571" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_398" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="586" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_399" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="601" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_400" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="616" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_401" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="631" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_402" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="646" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_403" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="661" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_404" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="676" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_405" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="691" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_406" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="706" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_407" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="721" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_408" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="736" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_409" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="751" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_410" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="766" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_411" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="781" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_412" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="796" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_413" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="811" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_414" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="826" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_415" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="841" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_416" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="856" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_417" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="871" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_418" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="886" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_419" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="901" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_420" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="916" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_421" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="931" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_422" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="946" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_423" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="961" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_424" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="976" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_425" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="991" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_426" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1006" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_427" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1021" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_428" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1036" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_429" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1051" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_430" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1066" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_431" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1081" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_432" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1096" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_433" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1111" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_434" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1126" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_435" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1141" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_436" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1156" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_437" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1171" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_438" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1186" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_439" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1201" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_440" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1216" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_441" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1231" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_442" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1246" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_443" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1261" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_444" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1276" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_445" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1291" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_446" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1306" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_447" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1321" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_448" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1336" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_449" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1351" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_450" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1366" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_451" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1381" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_452" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1396" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_453" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1411" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_454" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1426" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_455" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1441" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_456" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1456" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_457" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1471" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_458" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1486" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_459" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1501" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_460" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1516" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_461" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1531" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_462" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1546" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_463" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1561" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_464" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1576" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_465" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1591" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_466" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1606" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_467" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1621" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_468" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1636" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_469" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1651" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_470" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1666" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_471" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1681" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_472" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1696" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_473" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1711" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_474" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1726" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_475" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1741" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_476" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1756" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_477" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1771" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_478" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1786" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_479" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="600" y="1801" z="0" />
+				</offset>
+			</connection>
+			<connection name="gridname_480" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-600" y="1816" z="0" />
+				</offset>
+			</connection> -->
+			<!-- TODO -->
+			<!-- <connection name="gridname_481" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_482" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-16" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_483" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-31" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_484" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-46" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_485" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-61" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_486" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-76" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_487" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-91" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_488" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-106" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_489" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-121" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_490" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-136" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_491" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-151" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_492" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-166" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_493" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-181" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_494" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-196" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_495" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-211" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_496" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-226" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_497" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-241" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_498" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-256" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_499" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-271" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_500" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-286" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_501" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-301" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_502" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-316" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_503" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-331" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_504" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-346" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_505" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-361" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_506" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-376" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_507" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-391" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_508" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-406" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_509" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-421" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_510" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-436" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_511" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-451" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_512" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-466" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_513" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-481" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_514" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-496" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_515" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-511" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_516" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-526" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_517" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-541" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_518" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-556" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_519" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-571" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_520" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-586" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_521" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-601" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_522" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-616" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_523" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-631" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_524" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-646" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_525" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-661" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_526" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-676" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_527" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-691" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_528" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-706" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_529" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-721" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_530" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-736" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_531" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-751" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_532" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-766" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_533" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-781" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_534" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-796" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_535" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-811" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_536" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-826" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_537" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-841" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_538" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-856" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_539" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-871" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_540" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-886" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_541" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-901" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_542" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-916" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_543" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-931" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_544" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-946" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_545" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-961" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_546" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-976" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_547" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-991" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_548" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1006" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_549" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1021" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_550" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1036" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_551" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1051" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_552" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1066" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_553" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1081" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_554" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1096" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_555" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1111" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_556" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1126" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_557" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1141" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_558" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1156" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_559" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1171" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_560" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1186" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_561" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1201" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_562" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1216" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_563" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1231" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_564" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1246" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_565" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1261" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_566" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1276" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_567" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1291" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_568" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1306" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_569" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1321" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_570" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1336" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_571" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1351" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_572" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1366" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_573" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1381" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_574" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1396" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_575" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1411" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_576" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1426" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_577" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1441" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_578" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1456" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_579" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1471" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_580" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1486" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_581" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1501" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_582" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1516" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_583" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1531" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_584" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1546" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_585" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1561" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_586" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1576" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_587" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1591" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_588" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1606" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_589" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1621" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_590" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1636" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_591" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1651" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_592" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1666" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_593" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1681" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_594" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1696" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_595" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1711" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_596" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1726" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_597" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="-1741" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_598" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="-1756" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_599" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_600" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="16" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_601" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="31" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_602" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="46" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_603" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="61" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_604" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="76" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_605" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="91" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_606" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="106" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_607" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="121" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_608" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="136" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_609" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="151" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_610" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="166" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_611" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="181" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_612" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="196" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_613" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="211" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_614" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="226" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_615" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="241" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_616" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="256" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_617" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="271" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_618" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="286" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_619" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="301" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_620" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="316" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_621" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="331" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_622" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="346" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_623" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="361" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_624" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="376" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_625" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="391" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_626" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="406" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_627" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="421" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_628" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="436" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_629" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="451" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_630" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="466" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_631" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="481" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_632" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="496" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_633" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="511" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_634" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="526" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_635" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="541" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_636" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="556" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_637" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="571" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_638" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="586" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_639" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="601" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_640" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="616" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_641" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="631" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_642" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="646" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_643" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="661" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_644" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="676" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_645" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="691" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_646" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="706" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_647" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="721" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_648" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="736" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_649" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="751" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_650" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="766" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_651" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="781" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_652" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="796" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_653" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="811" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_654" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="826" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_655" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="841" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_656" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="856" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_657" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="871" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_658" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="886" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_659" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="901" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_660" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="916" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_661" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="931" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_662" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="946" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_663" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="961" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_664" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="976" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_665" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="991" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_666" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1006" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_667" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1021" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_668" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1036" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_669" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1051" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_670" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1066" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_671" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1081" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_672" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1096" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_673" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1111" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_674" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1126" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_675" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1141" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_676" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1156" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_677" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1171" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_678" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1186" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_679" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1201" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_680" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1216" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_681" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1231" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_682" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1246" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_683" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1261" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_684" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1276" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_685" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1291" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_686" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1306" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_687" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1321" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_688" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1336" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_689" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1351" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_690" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1366" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_691" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1381" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_692" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1396" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_693" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1411" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_694" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1426" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_695" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1441" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_696" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1456" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_697" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1471" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_698" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1486" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_699" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1501" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_700" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1516" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_701" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1531" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_702" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1546" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_703" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1561" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_704" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1576" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_705" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1591" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_706" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1606" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_707" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1621" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_708" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1636" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_709" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1651" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_710" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1666" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_711" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1681" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_712" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1696" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_713" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1711" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_714" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1726" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_715" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1741" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_716" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1756" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_717" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1771" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_718" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1786" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_719" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="900" y="1801" z="300" />
+				</offset>
+			</connection>
+			<connection name="gridname_720" tags="turret medium standard missile hittable  ">
+				<offset>
+					<position x="-800" y="1816" z="300" />
+				</offset>
+			</connection> -->
+		</connections>
+	</component>
+</components>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Create_Timers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+                <!-- 
+                    notes
+                    create_module
+                    constructionplans.xml -> stationgroups.xml -> stations.xml - >  get_construction_plan
+                    
+
+
+                 -->
+            
+                <create_group groupname="global.$TpwarDerelictStations" />
+                <create_group groupname="global.$TpwarLockBox" />
+                <create_group groupname="global.$TpwarOwnerlessFodder_S" />
+                <create_group groupname="global.$TpwarOwnerlessFodder_M" />
+                <create_group groupname="global.$TpwarOwnerlessFodder_L" />
+                <create_group groupname="global.$TpwarOwnerlessFodder_XL" />
+                <debug_to_file text="'start'" name="'Create_Timers.log'" directory="'timers'" append="false" />
+            </actions>
+            <cues>
+                <cue name="Debug" instantiate="true" checkinterval="30s" checktime="120s">
+                    <actions>
+                        <debug_to_file text="' s: ' + global.$TpwarOwnerlessFodder_S.count + ' m: ' + global.$TpwarOwnerlessFodder_M.count + ' l: ' + global.$TpwarOwnerlessFodder_L.count + ' xl: ' + global.$TpwarOwnerlessFodder_XL.count + ' lock: ' + global.$TpwarLockBox.count" name="'Create_Timers.log'" directory="'timers'" />
+                    </actions>
+                </cue>
+                <!-- <cue name="LockBoxCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarDerelictStations.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                       
+                        <set_value name="$MacroSelected" exact="global.$TpwarLockBoxes.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                 
+                        <create_station constructionplan="" macro="$MacroSelected" owner="faction.ownerless" sector="$SectorSelected">
+                            <safepos min="200km" max="700km" />
+                        </create_station>
+                    </actions>
+                </cue> -->
+                <cue name="LockBoxCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarLockBox.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$MacroSelected" exact="global.$TpwarLockBoxes.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                        <create_lockbox groupname="global.$TpwarLockBox" macro="$MacroSelected" owner="faction.ownerless" sector="$SectorSelected">
+                            <safepos min="200km" max="700km" />
+                        </create_lockbox>
+                    </actions>
+                </cue>
+                <cue name="SmallFodderCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarOwnerlessFodder_S.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$MacroSelected" exact="global.$VFactionSizeS.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                        <create_ship groupname="global.$TpwarOwnerlessFodder_S" macro="$MacroSelected" sector="$SectorSelected">
+                            <owner exact="faction.ownerless"></owner>
+                            <loadout>
+                                <level min="0" max="1" />
+                                <variation exact="0.0" />
+                            </loadout>
+                            <safepos min="200km" max="700km" />
+                        </create_ship>
+                    </actions>
+                </cue>
+                <cue name="MediumFodderCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarOwnerlessFodder_M.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$MacroSelected" exact="global.$VFactionSizeM.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                        <create_ship groupname="global.$TpwarOwnerlessFodder_M" macro="$MacroSelected" sector="$SectorSelected">
+                            <owner exact="faction.ownerless"></owner>
+                            <loadout>
+                                <level min="0" max="1" />
+                                <variation exact="0.0" />
+                            </loadout>
+                            <safepos min="200km" max="700km" />
+                        </create_ship>
+                    </actions>
+                </cue>
+                <cue name="LargeFodderCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarOwnerlessFodder_L.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$MacroSelected" exact="global.$VFactionSizeL.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                        <create_ship groupname="global.$TpwarOwnerlessFodder_L" macro="$MacroSelected" sector="$SectorSelected">
+                            <owner exact="faction.ownerless"></owner>
+                            <loadout>
+                                <level min="0" max="1" />
+                                <variation exact="0.0" />
+                            </loadout>
+                            <safepos min="200km" max="700km" />
+                        </create_ship>
+                    </actions>
+                </cue>
+                <cue name="ExtraLargeFodderCheck" instantiate="true" checkinterval="60s" checktime="120s">
+                    <conditions>
+                        <check_all>
+                            <check_value value="global.$TpwarOwnerlessFodder_XL.count lt 50" />
+                            <check_value value="global.$TpwarPlayerInCombat == false" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$MacroSelected" exact="global.$VFactionSizeXL.random" />
+                        <set_value name="$SectorSelected" exact="global.$X4_All_Sectors.random" />
+                        <create_ship groupname="global.$TpwarOwnerlessFodder_XL" macro="$MacroSelected" sector="$SectorSelected">
+                            <owner exact="faction.ownerless"></owner>
+                            <loadout>
+                                <level min="0" max="1" />
+                                <variation exact="0.0" />
+                            </loadout>
+                            <safepos min="200km" max="700km" />
+                        </create_ship>
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

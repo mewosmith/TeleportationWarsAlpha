@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/macroxsd/x4_component.xsd" >
+    <component name="tpwareq_pulse_xlarge_proj_gun_comp" class="weapon">
+        <source geometry="assets\props\WeaponSystems\heavy\weapon_arg_l_plasma_01_mk1_data"/>
+        <layers>
+            <layer>
+                <waypoints/>
+                <lights/>
+            </layer>
+        </layers>
+        <connections>
+            <connection name="container" tags="contents" value="0"/>
+            <connection name="position" tags="position" value="1"/>
+            <connection name="WeaponCon_01" tags="component weapon xlarge standard  ">
+                <offset/>
+            </connection>
+            <connection name="Con_laser01" tags="laser ">
+                <offset/>
+            </connection>
+        </connections>
+    </component>
+</components>

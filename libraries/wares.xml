@@ -1,0 +1,3412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <add sel="/wares">
+    <!-- test rust -->
+    <ware id="array_gamma_plasma_emitter_macro" name="{12345678,102}" description="{12345678,105}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="506257848" average="913840468" max="1116152607" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="sunriseflowers" amount="137" />
+          <ware ware="hullparts" amount="118" />
+          <ware ware="sunriseflowers" amount="75" />
+        </primary>
+      </production>
+      <component ref="array_gamma_plasma_emitter_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terrapmc" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragile_400mm_ion_cannon_macro" name="{12345678,203}" description="{12345678,206}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="15121" average="17914" max="27245" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="193" />
+          <ware ware="scanningarrays" amount="159" />
+          <ware ware="graphene" amount="147" />
+        </primary>
+      </production>
+      <component ref="fragile_400mm_ion_cannon_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="wholefood" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="phased_medium_ion_emitter_macro" name="{12345678,304}" description="{12345678,307}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="90045" average="93105" max="148565" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimattercells" amount="96" />
+          <ware ware="engineparts" amount="110" />
+          <ware ware="energycells" amount="168" />
+        </primary>
+      </production>
+      <component ref="phased_medium_ion_emitter_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="albionenergy" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="advanced_gamma_ion_railgun_macro" name="{12345678,405}" description="{12345678,408}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="166259577" average="269963225" max="295538589" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="208" />
+          <ware ware="hullparts" amount="130" />
+          <ware ware="swampplant" amount="213" />
+        </primary>
+      </production>
+      <component ref="advanced_gamma_ion_railgun_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="albionenergy" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="phased_200mm_ion_generator_macro" name="{12345678,506}" description="{12345678,509}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="86680" average="160418" max="209225" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="siliconwafers" amount="123" />
+          <ware ware="antimattercells" amount="85" />
+          <ware ware="nostropoil" amount="49" />
+        </primary>
+      </production>
+      <component ref="phased_200mm_ion_generator_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terracorp" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="phased_heavy_concussion_generator_macro" name="{12345678,607}" description="{12345678,610}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="111823" average="175548" max="254040" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="dronecomponents" amount="110" />
+          <ware ware="scanningarrays" amount="123" />
+          <ware ware="superfluidcoolant" amount="218" />
+        </primary>
+      </production>
+      <component ref="phased_heavy_concussion_generator_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terrans" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="array_small_concussion_cannon_macro" name="{12345678,708}" description="{12345678,711}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="48909" average="98719" max="173850" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="spaceweed" amount="59" />
+          <ware ware="spices" amount="28" />
+          <ware ware="weaponcomponents" amount="144" />
+        </primary>
+      </production>
+      <component ref="array_small_concussion_cannon_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terrapmc" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="damaged_tiny_plasma_generator_macro" name="{12345678,809}" description="{12345678,812}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="37332" average="59432" max="114130" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="quantumtubes" amount="33" />
+          <ware ware="majadust" amount="41" />
+          <ware ware="fieldcoils" amount="138" />
+        </primary>
+      </production>
+      <component ref="damaged_tiny_plasma_generator_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="beryll" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragile_light_concussion_railgun_macro" name="{12345678,910}" description="{12345678,913}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="32059" average="76559" max="82532" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="dronecomponents" amount="50" />
+          <ware ware="engineparts" amount="161" />
+          <ware ware="majadust" amount="127" />
+        </primary>
+      </production>
+      <component ref="fragile_light_concussion_railgun_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="nmmc" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="phased_150mm_particle_cannon_macro" name="{12345678,1011}" description="{12345678,1014}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="95431" average="187376" max="229587" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="meat" amount="194" />
+          <ware ware="superfluidcoolant" amount="201" />
+          <ware ware="sojabeans" amount="181" />
+        </primary>
+      </production>
+      <component ref="phased_150mm_particle_cannon_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="jonferson" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragile_small_plasma_projector_macro" name="{12345678,1112}" description="{12345678,1115}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="31670" average="36219" max="65344" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="graphene" amount="158" />
+          <ware ware="hullparts" amount="232" />
+          <ware ware="medicalsupplies" amount="32" />
+        </primary>
+      </production>
+      <component ref="fragile_small_plasma_projector_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="goner" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="array_gamma_particle_launcher_macro" name="{12345678,1213}" description="{12345678,1216}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="159437786" average="361308183" max="575874034" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="meat" amount="23" />
+          <ware ware="sojahusk" amount="175" />
+          <ware ware="advancedelectronics" amount="152" />
+        </primary>
+      </production>
+      <component ref="array_gamma_particle_launcher_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="khaakpox" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="diminished_limited_concussion_generator_macro" name="{12345678,1314}" description="{12345678,1317}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="16338" average="26419" max="45863" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="missilecomponents" amount="33" />
+          <ware ware="engineparts" amount="226" />
+          <ware ware="scanningarrays" amount="90" />
+        </primary>
+      </production>
+      <component ref="diminished_limited_concussion_generator_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="chow" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="array_beta_artillery_launcher_macro" name="{12345678,1415}" description="{12345678,1418}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="101253" average="149225" max="208561" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="fieldcoils" amount="192" />
+          <ware ware="spacefuel" amount="73" />
+          <ware ware="medicalsupplies" amount="225" />
+        </primary>
+      </production>
+      <component ref="array_beta_artillery_launcher_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terrans" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragmentation_75mm_plasma_cannon_macro" name="{12345678,1516}" description="{12345678,1519}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="108679" average="133457" max="211289" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="sojahusk" amount="134" />
+          <ware ware="sojahusk" amount="169" />
+          <ware ware="refinedmetals" amount="99" />
+        </primary>
+      </production>
+      <component ref="fragmentation_75mm_plasma_cannon_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="terrapmc" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragile_150mm_artillery_ray_macro" name="{12345678,1617}" description="{12345678,1620}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="41805" average="54654" max="68793" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="dronecomponents" amount="29" />
+          <ware ware="meat" amount="219" />
+          <ware ware="fieldcoils" amount="214" />
+        </primary>
+      </production>
+      <component ref="fragile_150mm_artillery_ray_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="jonferson" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="phased_400mm_particle_railgun_macro" name="{12345678,1718}" description="{12345678,1721}" group="weapons" transport="equipment" volume="1" tags="equipment  weapon">
+      <price min="359969214" average="463043073" max="753008107" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="turretcomponents" amount="230" />
+          <ware ware="majasnails" amount="37" />
+          <ware ware="sojabeans" amount="34" />
+        </primary>
+      </production>
+      <component ref="phased_400mm_particle_railgun_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="nmmc" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="advanced_300mm_ion_railgun_macro" name="{12345678,1819}" description="{12345678,1822}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="202641229" average="341072539" max="448354163" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="wheat" amount="35" />
+          <ware ware="turretcomponents" amount="226" />
+          <ware ware="antimattercells" amount="189" />
+        </primary>
+      </production>
+      <component ref="advanced_300mm_ion_railgun_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="cantera" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="advanced_heavy_particle_projector_macro" name="{12345678,1920}" description="{12345678,1923}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="146000132" average="365327124" max="402509597" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="plasmaconductors" amount="151" />
+          <ware ware="advancedelectronics" amount="166" />
+          <ware ware="spaceweed" amount="76" />
+        </primary>
+      </production>
+      <component ref="advanced_heavy_particle_projector_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="otas" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <ware id="fragmentation_200mm_particle_cannon_macro" name="{12345678,2021}" description="{12345678,2024}" group="turrets" transport="equipment" volume="1" tags="equipment  turret">
+      <price min="134533" average="193077" max="261865" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimattercells" amount="42" />
+          <ware ware="microchips" amount="36" />
+          <ware ware="quantumtubes" amount="84" />
+        </primary>
+      </production>
+      <component ref="fragmentation_200mm_particle_cannon_macro" amount="1" />
+      <use threshold="1.0" />
+      <owner faction="sonraenergy" />
+      <!-- test -->
+      <owner faction="argon" />
+    </ware>
+    <!-- test rust -->
+    <!-- TEST -->
+    <ware id="tpwar_test_sat_ware" name="TestSat" description="TestSatDesc" transport="equipment" volume="1" tags="equipment satellite">
+      <price min="700000" average="900000" max="1200000" />
+      <production time="120" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="10" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="scanningarrays" amount="10" />
+        </primary>
+      </production>
+      <component ref="tpwar_test_sat_macro" amount="1" />
+      <use threshold="0" />
+    </ware>
+    <!--  STUPID STUPID ENGINE STUFF -->
+    <ware id="tpwar_engine_arg_l_allround_01_mk1" name="{20107,3004}" description="{20107,3002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="321518" average="357242" max="392966" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="147" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="engineparts" amount="67" />
+      </primary>
+    </production>
+    <component ref="engine_arg_l_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+  
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+    <owner faction="hatikvah" />
+  </ware>
+  <ware id="tpwar_engine_arg_l_travel_01_mk1" name="{20107,3044}" description="{20107,3042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="337593" average="375104" max="412614" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="148" />
+        <ware ware="energycells" amount="37" />
+        <ware ware="engineparts" amount="76" />
+      </primary>
+    </production>
+    <component ref="engine_arg_l_travel_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_allround_01_mk1" name="{20107,2004}" description="{20107,2002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="11767" average="13074" max="14382" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="3" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="5" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+    <owner faction="hatikvah" />
+  </ware>
+  <ware id="tpwar_engine_arg_m_allround_01_mk2" name="{20107,2044}" description="{20107,2042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="58166" average="64629" max="71092" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="18" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="engineparts" amount="22" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_allround_01_mk3" name="{20107,2084}" description="{20107,2082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="287722" average="319691" max="351660" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="90" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="110" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_combat_01_mk1" name="{20107,2204}" description="{20107,2202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="14357" average="15952" max="17547" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="3" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="7" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+ 
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+    <owner faction="hatikvah" />
+  </ware>
+  <ware id="tpwar_engine_arg_m_combat_01_mk2" name="{20107,2244}" description="{20107,2242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="69711" average="77457" max="85202" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="22" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="engineparts" amount="26" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_combat_01_mk3" name="{20107,2284}" description="{20107,2282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="345444" average="383827" max="422209" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="110" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="130" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_travel_01_mk1" name="{20107,2404}" description="{20107,2102}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="13062" average="14513" max="15964" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="3" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="6" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_travel_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+    <owner faction="hatikvah" />
+  </ware>
+  <ware id="tpwar_engine_arg_m_travel_01_mk2" name="{20107,2444}" description="{20107,2442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="65234" average="72482" max="79730" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="20" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="engineparts" amount="25" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_travel_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_m_travel_01_mk3" name="{20107,2484}" description="{20107,2482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="331013" average="367793" max="404572" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="105" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="125" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_travel_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_allround_01_mk1" name="{20107,1004}" description="{20107,1002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="5526" average="6140" max="6754" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="engineparts" amount="4" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/> 
+  </ware>
+  <ware id="tpwar_engine_arg_s_allround_01_mk2" name="{20107,1044}" description="{20107,1042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="26370" average="29300" max="32230" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="8" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="engineparts" amount="10" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_allround_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_allround_01_mk3" name="{20107,1084}" description="{20107,1082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="123301" average="137001" max="150701" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="40" />
+        <ware ware="energycells" amount="40" />
+        <ware ware="engineparts" amount="45" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_allround_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_combat_01_mk1" name="{20107,1204}" description="{20107,1202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="8116" average="9017" max="9919" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="engineparts" amount="6" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_combat_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/> 
+  </ware>
+  <ware id="tpwar_engine_arg_s_combat_01_mk2" name="{20107,1244}" description="{20107,1242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="40504" average="45005" max="49505" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="12" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="engineparts" amount="16" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_combat_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_combat_01_mk3" name="{20107,1284}" description="{20107,1282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="181023" average="201137" max="221250" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="60" />
+        <ware ware="energycells" amount="40" />
+        <ware ware="engineparts" amount="65" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_combat_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+   
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_travel_01_mk1" name="{20107,1404}" description="{20107,1402}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="6821" average="7579" max="8336" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="engineparts" amount="5" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_travel_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/> 
+  </ware>
+  <ware id="tpwar_engine_arg_s_travel_01_mk2" name="{20107,1444}" description="{20107,1442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="34732" average="38591" max="42450" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="10" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="engineparts" amount="14" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_travel_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+ 
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_s_travel_01_mk3" name="{20107,1484}" description="{20107,1482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="166592" average="185103" max="203613" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="55" />
+        <ware ware="energycells" amount="40" />
+        <ware ware="engineparts" amount="60" />
+      </primary>
+    </production>
+    <component ref="engine_arg_s_travel_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_xl_allround_01_mk1" name="{20107,4004}" description="{20107,4002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="424061" average="471179" max="518297" />
+    <production time="30" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="193" />
+        <ware ware="energycells" amount="50" />
+        <ware ware="engineparts" amount="89" />
+      </primary>
+    </production>
+    <component ref="engine_arg_xl_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+  <ware id="tpwar_engine_arg_xl_travel_01_mk1" name="{20107,4044}" description="{20107,4042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+    <price min="445263" average="494737" max="544210" />
+    <production time="30" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="195" />
+        <ware ware="energycells" amount="50" />
+        <ware ware="engineparts" amount="101" />
+      </primary>
+    </production>
+    <component ref="engine_arg_xl_travel_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+
+
+<owner faction= "agi"/>
+<owner faction= "goner"/>
+<owner faction= "wholefood"/>
+<owner faction= "ledda"/>
+<owner faction= "aldrin"/>
+<owner faction= "cantera"/>
+<owner faction= "toride"/>
+<owner faction= "jonferson"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "fred"/>
+<owner faction= "terrapmc"/>
+<owner faction= "otas"/>
+<owner faction= "terrans"/>
+<owner faction= "yaki"/>
+<owner faction= "usc"/>
+<owner faction= "heartofalbion"/>
+<owner faction= "sonraenergy"/>
+<owner faction= "teladi"/>
+<owner faction= "ministry"/>
+<owner faction= "telunion"/>
+<owner faction= "nmmc"/>
+<owner faction= "atreus"/>
+<owner faction= "ptni"/>
+<owner faction= "franton"/>
+<owner faction= "chow"/>
+<owner faction= "uguras"/>
+<owner faction= "paranid"/>
+<owner faction= "holyorder"/>
+<owner faction= "buccaneers"/>
+<owner faction= "heretics"/>
+<owner faction= "xenon"/>
+<owner faction= "xenonmatrix"/>
+<owner faction= "khaak"/>
+<owner faction= "khaakpox"/>
+<owner faction= "scaleplate"/>
+<owner faction= "hatikvah"/>
+<owner faction= "atlas"/>
+<owner faction= "sovsyn"/>
+<owner faction= "cartel"/>
+<owner faction= "strongarms"/>
+<owner faction= "plutarch"/>
+<owner faction= "terracorp"/>
+<owner faction= "beryll"/>
+<owner faction= "terrapmc"/>
+<owner faction= "reivers"/>
+<owner faction= "nolimits"/>
+<owner faction= "uguras"/>
+<owner faction= "yaki"/>
+  </ware>
+    <!-- can this not be please? -->
+    <ware id="khp_engine_arg_xl_allround_01_mk1" name="{20107,4004}" description="{20107,4002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="424061" average="471179" max="518297" />
+      <production time="30" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="193" />
+          <ware ware="energycells" amount="50" />
+          <ware ware="engineparts" amount="89" />
+        </primary>
+      </production>
+      <component ref="engine_arg_xl_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="khaak" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="khp_engine_arg_l_allround_01_mk1" name="{20107,3004}" description="{20107,3002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="321518" average="357242" max="392966" />
+      <production time="20" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="147" />
+          <ware ware="energycells" amount="25" />
+          <ware ware="engineparts" amount="67" />
+        </primary>
+      </production>
+      <component ref="engine_arg_l_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="khaak" />
+      <owner faction="teladi" />
+    </ware>
+    <!-- KHP -->
+    <ware id="khp_hive01_ware" name="{20101,11002}" description="{20101,11012}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="4895057" average="5758890" max="6622724" />
+      <production time="182" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1008" />
+          <ware ware="hullparts" amount="4433" />
+        </primary>
+      </production>
+      <component ref="khp_hive01_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="khaak" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="turret_khp_l_mk1" name="KHP L Turret" description="KHP L Turret" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="135464999" average="150515999" max="165567999" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="18" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="turretcomponents" amount="30" />
+        </primary>
+      </production>
+      <component ref="turret_khp_l_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="khaak" />
+      <owner faction="teladi" />
+      <!-- <owner faction="khaakpox" /> -->
+      <!-- <owner faction="argon" /> -->
+    </ware>
+    <ware id="turret_khp_m_mk1" name="KHP M Turret" description="KHP M Turret" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="45380005" average="50400028" max="55400071" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="6" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="turretcomponents" amount="10" />
+        </primary>
+      </production>
+      <component ref="turret_khp_m_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="khaak" />
+      <owner faction="teladi" />
+      <!-- <owner faction="khaakpox" /> -->
+      <!-- <owner faction="argon" /> -->
+    </ware>
+    <ware id="weapon_khp_s_mk1" name="KHP S Weap" description="KHP S Weap" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="40003" average="44448" max="48893" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="5" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="weaponcomponents" amount="10" />
+        </primary>
+      </production>
+      <component ref="weapon_khp_s_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="1" />
+      <owner faction="khaakpox" />
+      <!-- <owner faction="argon" /> -->
+    </ware>
+    <ware id="weapon_khp_m_mk1" name="KHP M Weap" description="KHP M Weap" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="40003" average="44448" max="48893" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="5" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="weaponcomponents" amount="10" />
+        </primary>
+      </production>
+      <component ref="weapon_khp_m_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="1" />
+      <owner faction="khaakpox" />
+      <!-- <owner faction="argon" /> -->
+    </ware>
+    <!-- SHIPS -->
+    <ware id="tpwar_silverfish_ware" name="{734546,65}" description="{734546,67}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+      <price min="182376" average="214560" max="246744" />
+      <production time="13" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="75" />
+          <ware ware="hullparts" amount="164" />
+        </primary>
+      </production>
+      <component ref="tpwar_silverfish_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="paranid" />
+    </ware>
+    <ware id="tpwar_laelaps_ware" name="{734546,70}" description="{734546,72}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+      <price min="162333" average="190980" max="219627" />
+      <production time="12" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="66" />
+          <ware ware="hullparts" amount="146" />
+        </primary>
+      </production>
+      <component ref="tpwar_laelaps_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="tpwar_thoon_ware" name="{734546,75}" description="{734546,77}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+      <price min="161237" average="189690" max="218144" />
+      <production time="12" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="66" />
+          <ware ware="hullparts" amount="145" />
+        </primary>
+      </production>
+      <component ref="tpwar_thoon_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="paranid" />
+    </ware>
+    <ware id="tpwar_keres_ware" name="{734546,80}" description="{734546,82}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+      <price min="169014" average="198840" max="228666" />
+      <production time="13" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="69" />
+          <ware ware="hullparts" amount="152" />
+        </primary>
+      </production>
+      <component ref="tpwar_keres_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="hatikvah" />
+      <owner faction="scaleplate" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="tpwar_hippogriff_ware" name="{734546,85}" description="{734546,87}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="116765" average="137370" max="157976" />
+      <production time="9" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="48" />
+          <ware ware="hullparts" amount="105" />
+        </primary>
+      </production>
+      <component ref="tpwar_hippogriff_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="antigone" />
+    </ware>
+    <ware id="tpwar_echion_ware" name="{734546,90}" description="{734546,92}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="135677" average="159620" max="183563" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="56" />
+          <ware ware="hullparts" amount="122" />
+        </primary>
+      </production>
+      <component ref="tpwar_echion_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwar_crocotta_ware" name="{734546,95}" description="{734546,97}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="174565" average="205370" max="236176" />
+      <production time="13" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="71" />
+          <ware ware="hullparts" amount="157" />
+        </primary>
+      </production>
+      <component ref="tpwar_crocotta_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwar_athos_ware" name="{734546,100}" description="{734546,102}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="103403" average="121650" max="139898" />
+      <production time="8" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="42" />
+          <ware ware="hullparts" amount="93" />
+        </primary>
+      </production>
+      <component ref="tpwar_athos_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwar_angler_ware" name="{734546,105}" description="{734546,107}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+      <price min="82297" average="96820" max="111343" />
+      <production time="6" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="34" />
+          <ware ware="hullparts" amount="74" />
+        </primary>
+      </production>
+      <component ref="tpwar_angler_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="alliance" />
+      <owner faction="paranid" />
+    </ware>
+    <ware id="tpwar_oryx_ware" name="{734546,110}" description="{734546,112}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+      <price min="94529" average="111210" max="127892" />
+      <production time="7" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="39" />
+          <ware ware="hullparts" amount="85" />
+        </primary>
+      </production>
+      <component ref="tpwar_oryx_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="alliance" />
+      <owner faction="hatikvah" />
+      <owner faction="scaleplate" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="tpwar_stork_ware" name="{734546,115}" description="{734546,117}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="78940" average="92870" max="106801" />
+      <production time="6" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="32" />
+          <ware ware="hullparts" amount="71" />
+        </primary>
+      </production>
+      <component ref="tpwar_stork_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="alliance" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwar_buckie_ware" name="{734546,120}" description="{734546,122}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="160140" average="188400" max="216660" />
+      <production time="12" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="66" />
+          <ware ware="hullparts" amount="144" />
+        </primary>
+      </production>
+      <component ref="tpwar_buckie_macro" amount="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="alliance" />
+      <owner faction="argon" />
+      <owner faction="scaleplate" />
+    </ware>
+    <!-- EQUIPMENT -->
+    <!-- PROD -->
+    <!-- prod_arg_agricultural_macro
+prod_arg_energy_macro
+prod_arg_food_macro
+prod_arg_gases_macro
+prod_arg_hightech_macro
+prod_arg_minerals_macro
+prod_arg_refined_macro
+prod_arg_shiptech_macro
+prod_arg_weapontech_macro -->
+    <ware id="module_gen_prod_prod_arg_agricultural_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_agricultural_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_energy_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_energy_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_food_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_food_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_gases_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_gases_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_hightech_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_hightech_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_minerals_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_minerals_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_refined_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_refined_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_shiptech_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_shiptech_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+    <ware id="module_gen_prod_prod_arg_weapontech_macro_01" name="{20104,10001}" description="{20104,10002}" transport="container" volume="1" tags="module">
+      <price min="3524906" average="4146948" max="4768990" />
+      <production time="1337" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="claytronics" amount="648" />
+          <ware ware="energycells" amount="1296" />
+          <ware ware="hullparts" amount="2373" />
+        </primary>
+      </production>
+      <research time="10">
+        <research>
+          <ware ware="research_module_production" />
+        </research>
+      </research>
+      <component ref="prod_arg_weapontech_macro" amount="1" />
+      <restriction licence="station_gen_basic" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware>
+  </add>
+  <add sel="/wares">
+    <!-- <ware id="tpwareq_ware_photon_pulse_cannon_weapon" name="{734550,10011}" description="{734550,10014}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="213" average="250" max="288" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedcomposites" amount="5" />
+          <ware ware="advancedelectronics" amount="1" />
+          <ware ware="antimattercells" amount="1" />
+        </primary>
+      </production> -->
+    <!-- <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production> -->
+    <!-- <component ref="tpwareq_weapon_photon_pulse_cannon_macro" amount="1" /> -->
+    <!-- <container ref="sm_gen_pickup_equipment_01_macro" /> remove from temp -->
+    <!-- <restriction licence="militaryequipment" />
+      <use threshold="0" />
+      <owner faction="alliance" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+      <owner faction="holyorder" />
+      <owner faction="ministry" />
+      <owner faction="paranid" />
+      <owner faction="teladi" />
+    </ware> -->
+    <ware id="tpwareq_pulse_small_beam_gun_ware" name="{734550,12315}" description="{734550,12318}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="123467" average="173412" max="223434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="5" />
+          <ware ware="advancedelectronics" amount="5" />
+          <ware ware="advancedcomposites" amount="5" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_small_beam_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_beam_gun_ware" name="{734550,123105}" description="{734550,123108}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="223467" average="273412" max="293434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="25" />
+          <ware ware="advancedelectronics" amount="25" />
+          <ware ware="advancedcomposites" amount="25" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_beam_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_beam_gun_ware" name="{734550,1231005}" description="{734550,1231008}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="323467" average="373412" max="423434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="60" />
+          <ware ware="advancedelectronics" amount="60" />
+          <ware ware="advancedcomposites" amount="60" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_beam_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_beam_gun_ware" name="{734550,12310005}" description="{734550,12310008}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="1234671" average="1734121" max="2234341" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="120" />
+          <ware ware="advancedelectronics" amount="120" />
+          <ware ware="advancedcomposites" amount="120" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_beam_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_beam_turret_ware" name="{734550,1231105}" description="{734550,1231108}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="263467" average="273412" max="293434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="engineparts" amount="50" />
+          <ware ware="advancedelectronics" amount="50" />
+          <ware ware="microchips" amount="50" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_beam_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_beam_turret_ware" name="{734550,12311005}" description="{734550,12311008}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="623467" average="773412" max="823434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="engineparts" amount="80" />
+          <ware ware="advancedelectronics" amount="80" />
+          <ware ware="microchips" amount="80" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_beam_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_beam_turret_ware" name="{734550,123110005}" description="{734550,123110008}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="1734672" average="1934122" max="2234342" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="engineparts" amount="190" />
+          <ware ware="advancedelectronics" amount="190" />
+          <ware ware="microchips" amount="190" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_beam_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_small_proj_gun_ware" name="{734550,1231}" description="{734550,1235}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="123467" average="173412" max="223434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="refinedmetals" amount="5" />
+          <ware ware="advancedcomposites" amount="5" />
+          <ware ware="advancedcomposites" amount="5" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_small_proj_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_proj_gun_ware" name="{734550,12301}" description="{734550,12304}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="223467" average="243412" max="263434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="refinedmetals" amount="15" />
+          <ware ware="advancedcomposites" amount="15" />
+          <ware ware="advancedcomposites" amount="15" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_proj_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_proj_gun_ware" name="{734550,123001}" description="{734550,123004}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="723467" average="893412" max="923434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="refinedmetals" amount="80" />
+          <ware ware="refinedmetals" amount="80" />
+          <ware ware="refinedmetals" amount="80" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_proj_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_proj_gun_ware" name="{734550,1230001}" description="{734550,1230004}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="1934672" average="2134122" max="2234342" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="refinedmetals" amount="260" />
+          <ware ware="advancedcomposites" amount="260" />
+          <ware ware="advancedcomposites" amount="260" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_proj_gun_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_proj_turret_ware" name="{734550,123011}" description="{734550,123014}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="423467" average="573412" max="623434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="50" />
+          <ware ware="engineparts" amount="50" />
+          <ware ware="hullparts" amount="50" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_proj_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_proj_turret_ware" name="{734550,1230011}" description="{734550,1230014}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="923467" average="993412" max="1223434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="120" />
+          <ware ware="engineparts" amount="120" />
+          <ware ware="hullparts" amount="120" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_proj_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_proj_turret_ware" name="{734550,12300011}" description="{734550,12300014}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="2234672" average="2734122" max="2934342" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="300" />
+          <ware ware="antimatterconverters" amount="300" />
+          <ware ware="antimatterconverters" amount="300" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_proj_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_small_missile_launcher_ware" name="{734550,1235}" description="{734550,1238}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="103467" average="173412" max="223434" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="microchips" amount="2" />
+          <ware ware="energycells" amount="2" />
+          <ware ware="fieldcoils" amount="2" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_small_missile_launcher_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_small_missile_ware" name="{734550,12325}" description="{734550,12328}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+      <price min="1034" average="1732" max="2234" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="2" />
+          <ware ware="antimattercells" amount="2" />
+          <ware ware="missilecomponents" amount="2" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_small_missile_macro" amount="1" />
+      <container ref="sm_gen_pickup_equipment_01_macro" />
+      <use threshold="0.65" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_missile_launcher_ware" name="{734550,12305}" description="{734550,12308}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="183467" average="273412" max="293434" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="microchips" amount="5" />
+          <ware ware="energycells" amount="5" />
+          <ware ware="fieldcoils" amount="5" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_missile_launcher_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_missile_ware" name="{734550,123205}" description="{734550,123208}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+      <price min="1734" average="1932" max="2234" />
+      <production time="2" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="5" />
+          <ware ware="antimattercells" amount="5" />
+          <ware ware="missilecomponents" amount="5" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_missile_macro" amount="1" />
+      <container ref="sm_gen_pickup_equipment_01_macro" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_missile_launcher_ware" name="{734550,123005}" description="{734550,123008}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="523467" average="673412" max="723434" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="microchips" amount="7" />
+          <ware ware="energycells" amount="7" />
+          <ware ware="fieldcoils" amount="7" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_missile_launcher_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_missile_ware" name="{734550,1232005}" description="{734550,1232008}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+      <price min="4234" average="5732" max="6234" />
+      <production time="2" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="7" />
+          <ware ware="antimattercells" amount="7" />
+          <ware ware="missilecomponents" amount="7" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_missile_macro" amount="1" />
+      <container ref="sm_gen_pickup_equipment_01_macro" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_missile_launcher_ware" name="{734550,1230005}" description="{734550,1230008}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="923467" average="993412" max="1123434" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="microchips" amount="10" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="fieldcoils" amount="10" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_missile_launcher_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_missile_ware" name="{734550,12320005}" description="{734550,6052}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+      <price min="12342" average="17322" max="22342" />
+      <production time="2" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="10" />
+          <ware ware="antimattercells" amount="10" />
+          <ware ware="missilecomponents" amount="10" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_missile_macro" amount="1" />
+      <container ref="sm_gen_pickup_equipment_01_macro" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_medium_missile_turret_ware" name="{734550,123015}" description="{734550,123018}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="523467" average="673412" max="723434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="scanningarrays" amount="" />
+          <ware ware="engineparts" amount="" />
+          <ware ware="scanningarrays" amount="" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_medium_missile_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_large_missile_turret_ware" name="{734550,1230015}" description="{734550,1230018}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="923467" average="983412" max="993434" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="scanningarrays" amount="" />
+          <ware ware="engineparts" amount="" />
+          <ware ware="scanningarrays" amount="" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_large_missile_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <ware id="tpwareq_pulse_xlarge_missile_turret_ware" name="{734550,12300015}" description="{734550,12300018}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="1234672" average="1734122" max="2234342" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="scanningarrays" amount="" />
+          <ware ware="engineparts" amount="" />
+          <ware ware="scanningarrays" amount="" />
+        </primary>
+      </production>
+      <production time="10" amount="1" method="xenon" name="{20206,601}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="tpwareq_pulse_xlarge_missile_turret_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.65" />
+      <owner faction="argon" />
+    </ware>
+    <!-- <ware id="mod_weapon_damage_01_mk3" name="{20110,100030011}" description="{20110,100002}" shortname="{20110,100030012}" transport="inventory" volume="1" tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_highenergycatalyst" amount="3" />
+          <ware ware="modpart_tuningsoftware" amount="1" />
+          <ware ware="modpart_weaponchamber_t3" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk3" />
+        </research>
+      </production>
+    </ware> -->
+    <!-- WEAPONS -->
+    <ware id="gen_damage_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_damage_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_lifetime_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_lifetime_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_rotationspeed_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationspeed_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_reload_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_reload_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_speed_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_speed_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!-- SHIELD -->
+    <ware id="gen_capacity_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_capacity_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_rechargerate_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rechargerate_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!-- SHIP -->
+    <ware id="gen_maxhull_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_maxhull_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_missilecapacity_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_missilecapacity_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!-- ENGINE -->
+    <ware id="gen_rotationthrust_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_rotationthrust_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <!--  -->
+    <ware id="gen_forwardthrust_01" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_02" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_03" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_04" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_05" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_06" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_07" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_08" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_09" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_10" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_11" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_12" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_13" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_14" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_15" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_16" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_17" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_18" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_19" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+    <ware id="gen_forwardthrust_20" name="genprofileware" description="genprofileware" shortname="genprofileware" transport="inventory" volume="1" tags="equipmentmod">
+      <price min="1" average="1" max="1" />
+    </ware>
+  </add>
+  <!-- <replace sel="//wares/ware[@id='engineparts']">
+    </replace> -->
+</diff>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\alby\Desktop\unidiffxsd/macro_bullet.xsd">
+    <macro name="tpwareq_pulse_large_beam_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_large_beam_bullet_comp" />
+        <properties>
+            <bullet speed="24000" lifetime="1" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="10" />
+            <damage value="5000" hull="5500" shield="5000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_small" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_beam_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_large_beam_bullet_comp" />
+        <properties>
+            <bullet speed="20000" lifetime="1" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="10" />
+            <damage value="4000" hull="2500" shield="4000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_small" />
+                <launch ref="muzzle_gen_s_gatling_01_mk1" />
+            </effects>
+            <weapon system="turret_shortrange" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_proj_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_large_proj_bullet_comp" />
+        <properties>
+            <bullet speed="3200" lifetime="10" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.08" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="4" />
+            <damage value="3000" hull="1000" shield="3000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_small" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_large_proj_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_large_proj_bullet_comp" />
+        <properties>
+            <bullet speed="3200" lifetime="10" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.08" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="4" />
+            <damage value="3000" hull="1000" shield="3000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_small" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_beam_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_medium_beam_bullet_comp" />
+        <properties>
+            <bullet speed="14000" lifetime="1" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="12" />
+            <damage value="1500" hull="2500" shield="1500" repair="0" />
+            <effects>
+                <impact ref="impact_gen_m_plasma_01_mk1" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_beam_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_medium_beam_bullet_comp" />
+        <properties>
+            <bullet speed="12000" lifetime="1" range="12000" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="14" />
+            <damage value="1500" hull="1500" shield="1500" repair="0" />
+            <effects>
+                <impact ref="impact_gen_m_plasma_01_mk1" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="turret_shortrange" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_proj_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_medium_proj_bullet_comp" />
+        <properties>
+            <bullet speed="3200" lifetime="8" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.005" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="7" />
+            <damage value="2000" hull="500" shield="1500" repair="0" />
+            <effects>
+                <impact ref="impact_gen_m_plasma_01_mk1" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_medium_proj_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_medium_proj_bullet_comp" />
+        <properties>
+            <bullet speed="3200" lifetime="7" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.004" angle="0.04" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="8" />
+            <damage value="1500" hull="500" shield="1000" repair="0" />
+            <effects>
+                <impact ref="impact_gen_m_plasma_01_mk1" />
+                <launch ref="muzzle_gen_s_plasma_01_mk1" />
+            </effects>
+            <weapon system="turret_longrange" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_small_beam_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_small_beam_bullet_comp" />
+        <properties>
+            <bullet speed="9000" lifetime="1" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <heat initial="1000" value="110" />
+            <reload time="4" />
+            <damage value="250" hull="500" shield="250" repair="0" />
+            <effects>
+                <impact ref="impact_gen_s_plasma_01_mk1" />
+                <launch ref="muzzle_gen_s_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_small_proj_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_small_proj_bullet_comp" />
+        <properties>
+            <bullet speed="2800" lifetime="6" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.005" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="0.8" />
+            <damage min="1" max="120" value="120" time="6" />
+            <!-- <damage min="0" max="500000"  value="500" time="6" /> 850 -->
+            <!-- <damage min="1" max="500"  value="500" time="6" hull="100" shield="100"/> 888 -->
+            <!-- <damage min="100" max="500" value="500" noshield="500" time="6" /> average dmg at close range 1,333.333333333333‬ -->
+            <!-- <damage min="0" max="1" hull="200" time="6" /> -->
+            <effects>
+                <impact ref="tpwar_warp_small" />
+                <launch ref="muzzle_gen_s_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_beam_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_xlarge_beam_bullet_comp" />
+        <properties>
+            <bullet speed="35000" lifetime="1" range="23000" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="120" />
+            <damage value="35000" hull="18000" shield="18000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_medium" />
+                <launch ref="muzzle_gen_s_gatling_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_beam_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_xlarge_beam_bullet_comp" />
+        <properties>
+            <bullet speed="35000" lifetime="1" range="28000" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+            <reload time="140" />
+            <damage value="35000" hull="14000" shield="14000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_medium" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="turret_shortrange" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_proj_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_xlarge_proj_bullet_comp" />
+        <properties>
+            <bullet speed="2500" lifetime="18" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.08" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="14" />
+            <damage value="18000" hull="2500" shield="18000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_medium" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+    <macro name="tpwareq_pulse_xlarge_proj_turret_bullet_macro" class="bullet">
+        <component ref="tpwareq_pulse_xlarge_proj_bullet_comp" />
+        <properties>
+            <bullet speed="2400" lifetime="15" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.003" angle="0.03" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="18" />
+            <damage value="18000" hull="2500" shield="18000" repair="0" />
+            <effects>
+                <impact ref="tpwar_warp_medium" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="turret_longrange" />
+        </properties>
+    </macro>
+</macros>

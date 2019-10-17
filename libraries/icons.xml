@@ -1,0 +1,91 @@
+<diff>
+    <add sel="/icons">
+        
+              <icon name="faction_sovereign_syndicate" texture="extensions\tpwar_release\faction_icons\faction_sovereign_syndicate.gz" height="256" width="256"></icon>
+        <!-- <icon name="x4_extract_2_ghostxenon" texture="extensions\tpwar_release\faction_icons\x4_extract_2_ghostxenon.gz" height="256" width="256"></icon> -->
+        <icon name="faction_ae" texture="extensions\tpwar_release\faction_icons\faction_ae.gz" height="256" width="256"></icon>  
+        
+<!--         
+        
+ae
+aquarius
+argon
+atlaspirates
+beryll
+canteran
+chow
+dispossed
+enemy
+fijiargnu
+fp
+friend
+heartofalbion
+heretic_vanguards
+jsdd
+khaak
+ledda
+neutral
+no_limits
+ownerless
+player
+pmc
+red
+reivers
+ryak
+sonra_energy
+sovereign_syndicate
+standard
+taride
+teladi_union
+terracorp
+the_cartel
+uguras
+uguras_armaments
+uguras_armaments
+wf
+xenonmatrix  -->
+        
+        
+        
+        <icon name="faction_ae" texture="extensions\tpwar_release\faction_icons\faction_ae.gz" height="256" width="256"></icon>
+        <icon name="faction_aquarius" texture="extensions\tpwar_release\faction_icons\faction_aquarius.gz" height="256" width="256"></icon>
+        <icon name="faction_argon" texture="extensions\tpwar_release\faction_icons\faction_argon.gz" height="256" width="256"></icon>
+        <icon name="faction_atlaspirates" texture="extensions\tpwar_release\faction_icons\faction_atlaspirates.gz" height="256" width="256"></icon>
+        <icon name="faction_beryll" texture="extensions\tpwar_release\faction_icons\faction_beryll.gz" height="256" width="256"></icon>
+        <icon name="faction_canteran" texture="extensions\tpwar_release\faction_icons\faction_canteran.gz" height="256" width="256"></icon>
+        <icon name="faction_chow" texture="extensions\tpwar_release\faction_icons\faction_chow.gz" height="256" width="256"></icon>
+        <icon name="faction_dispossed" texture="extensions\tpwar_release\faction_icons\faction_dispossed.gz" height="256" width="256"></icon>
+        <icon name="faction_enemy" texture="extensions\tpwar_release\faction_icons\faction_enemy.gz" height="256" width="256"></icon>
+        <icon name="faction_fijiargnu" texture="extensions\tpwar_release\faction_icons\faction_fijiargnu.gz" height="256" width="256"></icon>
+        <icon name="faction_fp" texture="extensions\tpwar_release\faction_icons\faction_fp.gz" height="256" width="256"></icon>
+        <icon name="faction_friend" texture="extensions\tpwar_release\faction_icons\faction_friend.gz" height="256" width="256"></icon>
+        <icon name="faction_heartofalbion" texture="extensions\tpwar_release\faction_icons\faction_heartofalbion.gz" height="256" width="256"></icon>
+        <icon name="faction_heretic_vanguards" texture="extensions\tpwar_release\faction_icons\faction_heretic_vanguards.gz" height="256" width="256"></icon>
+        <icon name="faction_jsdd" texture="extensions\tpwar_release\faction_icons\faction_jsdd.gz" height="256" width="256"></icon>
+        <icon name="faction_khaak" texture="extensions\tpwar_release\faction_icons\faction_khaak.gz" height="256" width="256"></icon>
+        <icon name="faction_ledda" texture="extensions\tpwar_release\faction_icons\faction_ledda.gz" height="256" width="256"></icon>
+        <icon name="faction_neutral" texture="extensions\tpwar_release\faction_icons\faction_neutral.gz" height="256" width="256"></icon>
+        <icon name="faction_no_limits" texture="extensions\tpwar_release\faction_icons\faction_no_limits.gz" height="256" width="256"></icon>
+        <icon name="faction_ownerless" texture="extensions\tpwar_release\faction_icons\faction_ownerless.gz" height="256" width="256"></icon>
+        <icon name="faction_player" texture="extensions\tpwar_release\faction_icons\faction_player.gz" height="256" width="256"></icon>
+        <icon name="faction_pmc" texture="extensions\tpwar_release\faction_icons\faction_pmc.gz" height="256" width="256"></icon>
+        <icon name="faction_red" texture="extensions\tpwar_release\faction_icons\faction_red.gz" height="256" width="256"></icon>
+        <icon name="faction_reivers" texture="extensions\tpwar_release\faction_icons\faction_reivers.gz" height="256" width="256"></icon>
+        <icon name="faction_ryak" texture="extensions\tpwar_release\faction_icons\faction_ryak.gz" height="256" width="256"></icon>
+        <icon name="faction_sonra_energy" texture="extensions\tpwar_release\faction_icons\faction_sonra_energy.gz" height="256" width="256"></icon>
+        <icon name="faction_sovereign_syndicate" texture="extensions\tpwar_release\faction_icons\faction_sovereign_syndicate.gz" height="256" width="256"></icon>
+        <icon name="faction_standard" texture="extensions\tpwar_release\faction_icons\faction_standard.gz" height="256" width="256"></icon>
+        <icon name="faction_taride" texture="extensions\tpwar_release\faction_icons\faction_taride.gz" height="256" width="256"></icon>
+        <icon name="faction_teladi_union" texture="extensions\tpwar_release\faction_icons\faction_teladi_union.gz" height="256" width="256"></icon>
+        <icon name="faction_terracorp" texture="extensions\tpwar_release\faction_icons\faction_terracorp.gz" height="256" width="256"></icon>
+        <icon name="faction_the_cartel" texture="extensions\tpwar_release\faction_icons\faction_the_cartel.gz" height="256" width="256"></icon>
+        <icon name="faction_uguras" texture="extensions\tpwar_release\faction_icons\faction_uguras.gz" height="256" width="256"></icon>
+        <icon name="faction_uguras_armaments" texture="extensions\tpwar_release\faction_icons\faction_uguras_armaments.gz" height="256" width="256"></icon>
+        <icon name="faction_uguras_armaments" texture="extensions\tpwar_release\faction_icons\faction_uguras_armaments.gz" height="256" width="256"></icon>
+        <icon name="faction_wf" texture="extensions\tpwar_release\faction_icons\faction_wf.gz" height="256" width="256"></icon>
+        <icon name="faction_xenonmatrix" texture="extensions\tpwar_release\faction_icons\faction_xenonmatrix.gz" height="256" width="256"></icon>
+  
+        <icon name="faction_*" texture="extensions\tpwar_release\faction_icons\faction_*.gz" tags="playerlogo" height="256" width="256"></icon>
+
+    </add>
+</diff>

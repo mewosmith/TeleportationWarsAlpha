@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+    <add sel="/groups">
+
+    <group name="tpwar_prod_gen_advancedelectronics">
+    <select macro="prod_gen_advancedelectronics_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_antimattercells">
+    <select macro="prod_gen_antimattercells_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_antimatterconverters">
+    <select macro="prod_gen_antimatterconverters_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_advancedcomposites">
+    <select macro="prod_gen_advancedcomposites_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_claytronics">
+    <select macro="prod_gen_claytronics_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_countermeasures">
+    <select macro="prod_gen_countermeasures_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_dronecomponents">
+    <select macro="prod_gen_dronecomponents_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_energycells">
+    <select macro="prod_gen_energycells_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_engineparts">
+    <select macro="prod_gen_engineparts_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_fieldcoils">
+    <select macro="prod_gen_fieldcoils_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_hullparts">
+    <select macro="prod_gen_hullparts_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_graphene">
+    <select macro="prod_gen_graphene_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_microchips">
+    <select macro="prod_gen_microchips_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_missilecomponents">
+    <select macro="prod_gen_missilecomponents_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_superfluidcoolant">
+    <select macro="prod_gen_superfluidcoolant_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_plasmaconductors">
+    <select macro="prod_gen_plasmaconductors_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_quantumtubes">
+    <select macro="prod_gen_quantumtubes_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_refinedmetals">
+    <select macro="prod_gen_refinedmetals_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_scanningarrays">
+    <select macro="prod_gen_scanningarrays_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_shieldcomponents">
+    <select macro="prod_gen_shieldcomponents_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_siliconwafers">
+    <select macro="prod_gen_siliconwafers_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_smartchips">
+    <select macro="prod_gen_smartchips_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_spices">
+    <select macro="prod_gen_spices_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_turretcomponents">
+    <select macro="prod_gen_turretcomponents_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_water">
+    <select macro="prod_gen_water_macro" />
+  </group>
+
+  <group name="tpwar_prod_gen_weaponcomponents">
+    <select macro="prod_gen_weaponcomponents_macro" />
+  </group>
+
+  <!-- Argon Production Module Groups -->
+  <group name="tpwar_prod_arg_foodrations">
+    <select macro="prod_arg_foodrations_macro" />
+  </group>
+
+  <group name="tpwar_prod_arg_meat">
+    <select macro="prod_arg_meat_macro" />
+  </group>
+
+  <group name="tpwar_prod_arg_medicalsupplies">
+    <select macro="prod_arg_medicalsupplies_macro" />
+  </group>
+
+  <group name="tpwar_prod_arg_spacefuel">
+    <select macro="prod_arg_spacefuel_macro" />
+  </group>
+
+  <group name="tpwar_prod_arg_wheat">
+    <select macro="prod_arg_wheat_macro" />
+  </group>
+
+  <!-- Paranid Production Module Groups -->
+  <group name="tpwar_prod_par_majadust">
+    <select macro="prod_par_majadust_macro" />
+  </group>
+
+  <group name="tpwar_prod_par_majasnails">
+    <select macro="prod_par_majasnails_macro" />
+  </group>
+
+  <group name="tpwar_prod_par_medicalsupplies">
+    <select macro="prod_par_medicalsupplies_macro" />
+  </group>
+
+  <group name="tpwar_prod_par_sojabeans">
+    <select macro="prod_par_sojabeans_macro" />
+  </group>
+
+  <group name="tpwar_prod_par_sojahusk">
+    <select macro="prod_par_sojahusk_macro" />
+  </group>
+
+  <!-- Teladi Production Module Groups -->
+  <group name="tpwar_prod_tel_advancedcomposites">
+    <select macro="prod_tel_advancedcomposites_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_engineparts">
+    <select macro="prod_tel_engineparts_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_hullparts">
+    <select macro="prod_tel_hullparts_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_medicalsupplies">
+    <select macro="prod_tel_medicalsupplies_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_nostropoil">
+    <select macro="prod_tel_nostropoil_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_scanningarrays">
+    <select macro="prod_tel_scanningarrays_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_spaceweed">
+    <select macro="prod_tel_spaceweed_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_sunriseflowers">
+    <select macro="prod_tel_sunriseflowers_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_swampplant">
+    <select macro="prod_tel_swampplant_macro" />
+  </group>
+
+  <group name="tpwar_prod_tel_teladianium">
+    <select macro="prod_tel_teladianium_macro" />
+  </group>
+
+  <!-- Xenon Production Module Groups -->
+  <group name="tpwar_prod_xen_energycells">
+    <select macro="xenon_small_station_01_solarpanel_01_macro" />
+  </group>
+
+  <!-- Argon Storage Module Groups -->
+  <group name="tpwar_stor_arg">
+    <select macro="storage_arg_l_container_01_macro" />
+    <select macro="storage_arg_l_liquid_01_macro" />
+    <select macro="storage_arg_l_solid_01_macro" />
+    <select macro="storage_arg_m_container_01_macro" />
+    <select macro="storage_arg_m_liquid_01_macro" />
+    <select macro="storage_arg_m_solid_01_macro" />
+    <select macro="storage_arg_s_container_01_macro" />
+    <select macro="storage_arg_s_liquid_01_macro" />
+    <select macro="storage_arg_s_solid_01_macro" />
+    <select macro="storage_arg_l_tradestation_01_macro" />
+  </group>
+
+  <!-- Paranid Storage Module Groups -->
+  <group name="tpwar_stor_par">
+    <select macro="storage_par_l_container_01_macro" />
+    <select macro="storage_par_l_liquid_01_macro" />
+    <select macro="storage_par_l_solid_01_macro" />
+    <select macro="storage_par_m_container_01_macro" />
+    <select macro="storage_par_m_liquid_01_macro" />
+    <select macro="storage_par_m_solid_01_macro" />
+    <select macro="storage_par_s_container_01_macro" />
+    <select macro="storage_par_s_liquid_01_macro" />
+    <select macro="storage_par_s_solid_01_macro" />
+  </group>
+
+  <!--Teladi Storage Module Groups -->
+  <group name="tpwar_stor_tel">
+    <select macro="storage_tel_l_container_01_macro" />
+    <select macro="storage_tel_l_liquid_01_macro" />
+    <select macro="storage_tel_l_solid_01_macro" />
+    <select macro="storage_tel_m_container_01_macro" />
+    <select macro="storage_tel_m_liquid_01_macro" />
+    <select macro="storage_tel_m_solid_01_macro" />
+    <select macro="storage_tel_s_container_01_macro" />
+    <select macro="storage_tel_s_liquid_01_macro" />
+    <select macro="storage_tel_s_solid_01_macro" />
+  </group>
+
+  <!--Xenon Storage Module Groups -->
+  <group name="tpwar_stor_xen">
+    <select macro="xenon_small_station_01_storage_01_macro" />
+  </group>
+
+  <!-- Argon S/M Dockarea Module Groups -->
+  <group name="tpwar_dockarea_arg">
+    <select macro="dockarea_arg_m_station_01_macro" />
+    <select macro="dockarea_arg_m_station_02_macro" />
+    <select macro="dockarea_arg_m_02_tradestation_01_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_arg_hightech">
+    <select macro="dockarea_arg_m_station_01_hightech_macro" />
+    <select macro="dockarea_arg_m_station_02_hightech_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_arg_lowtech">
+    <select macro="dockarea_arg_m_station_01_lowtech_macro" />
+    <select macro="dockarea_arg_m_station_02_lowtech_macro" />
+  </group>
+
+  <!-- Paranid S/M Dockarea Module Groups -->
+  <group name="tpwar_dockarea_par">
+    <select macro="dockarea_arg_m_station_01_macro" />
+    <select macro="dockarea_arg_m_station_02_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_par_hightech">
+    <select macro="dockarea_arg_m_station_01_hightech_macro" />
+    <select macro="dockarea_arg_m_station_02_hightech_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_par_lowtech">
+    <select macro="dockarea_arg_m_station_01_lowtech_macro" />
+    <select macro="dockarea_arg_m_station_02_lowtech_macro" />
+  </group>
+
+  <!-- Teladi S/M Dockarea Module Groups -->
+  <group name="tpwar_dockarea_tel">
+    <select macro="dockarea_arg_m_station_01_macro" />
+    <select macro="dockarea_arg_m_station_02_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_tel_hightech">
+    <select macro="dockarea_arg_m_station_01_hightech_macro" />
+    <select macro="dockarea_arg_m_station_02_hightech_macro" />
+  </group>
+
+  <group name="tpwar_dockarea_tel_lowtech">
+    <select macro="dockarea_arg_m_station_01_lowtech_macro" />
+    <select macro="dockarea_arg_m_station_02_lowtech_macro" />
+  </group>
+
+  <!-- Xenon S/M Dockarea Module Groups -->
+  <group name="tpwar_dockarea_xen">
+    <select macro="dockarea_xen_m_station_01_macro" />
+  </group>
+
+  <!-- Argon Pier Module Groups -->
+  <group name="tpwar_pier_base_arg">
+    <select macro="pier_arg_harbor_01_macro" />
+    <select macro="pier_arg_harbor_03_macro" />
+    <select macro="pier_arg_single_01_tradestation_01_macro" />
+  </group>
+
+  <group name="tpwar_pier_add_arg">
+    <select macro="pier_arg_harbor_02_macro" />
+  </group>
+
+  <!-- Paranid Pier Module Groups -->
+  <group name="tpwar_pier_base_par">
+    <select macro="pier_par_harbor_01_macro" />
+    <select macro="pier_par_harbor_03_macro" />
+  </group>
+
+  <group name="tpwar_pier_add_par">
+    <select macro="pier_par_harbor_02_macro" />
+  </group>
+
+  <!-- Teladi Pier Module Groups -->
+  <group name="tpwar_pier_base_tel">
+    <select macro="pier_tel_harbor_01_macro" />
+    <select macro="pier_tel_harbor_03_macro" />
+  </group>
+
+  <group name="tpwar_pier_add_tel">
+    <select macro="pier_tel_harbor_02_macro" />
+  </group>
+
+  <!-- Argon Habitation Module Groups -->
+  <group name="tpwar_hab_arg">
+    <select macro="hab_arg_l_01_macro" />
+    <select macro="hab_arg_m_01_macro" />
+    <select macro="hab_arg_s_01_macro" />
+  </group>
+
+  <!-- Paranid Habitation Module Groups -->
+  <group name="tpwar_hab_par">
+    <select macro="hab_par_l_01_macro" />
+    <select macro="hab_par_m_01_macro" />
+    <select macro="hab_par_s_01_macro" />
+  </group>
+
+  <!-- Teladi Habitation Module Groups -->
+  <group name="tpwar_hab_tel">
+    <select macro="hab_tel_l_01_macro" />
+    <select macro="hab_tel_m_01_macro" />
+    <select macro="hab_tel_s_01_macro" />
+  </group>
+
+  <!-- Argon Defence Module Groups-->
+  <group name="tpwar_def_arg">
+    <select macro="defence_arg_tube_01_macro" />
+    <select macro="defence_arg_disc_01_macro" />
+  </group>
+
+  <!-- Paranid Defence Module Groups-->
+  <group name="tpwar_def_par">
+    <select macro="defence_par_tube_01_macro" />
+    <select macro="defence_par_disc_01_macro" />
+  </group>
+
+  <!-- Teladi Defence Module Groups-->
+  <group name="tpwar_def_tel">
+    <select macro="defence_tel_tube_01_macro" />
+    <select macro="defence_tel_disc_01_macro" />
+  </group>
+
+  <!-- Argon Ownership Claiming Module Groups -->
+  <group name="tpwar_claim_arg">
+    <select macro="defence_arg_claim_01_macro" />
+  </group>
+
+  <!-- Paranid Ownership Claiming Module Groups -->
+  <group name="tpwar_claim_par">
+    <select macro="defence_par_claim_01_macro" />
+  </group>
+
+  <!-- Teladi Ownership Claiming Module Groups -->
+  <group name="tpwar_claim_tel">
+    <select macro="defence_tel_claim_01_macro" />
+  </group>
+
+  <!-- Xenon Ownership Claiming Module Groups -->
+  <group name="tpwar_claim_xen">
+    <select macro="xenon_small_station_01_base_macro" />
+  </group>
+
+  <!-- Generic Build Module Groups-->
+  <group name="tpwar_build_gen">
+    <select macro="buildmodule_gen_ships_m_dockarea_01_macro" />
+    <select macro="buildmodule_gen_ships_l_macro" />
+    <select macro="buildmodule_gen_ships_xl_macro" />
+  </group>
+
+  <!-- Xenon Build Module Groups-->
+  <group name="tpwar_build_xen">
+    <select macro="buildmodule_xen_ships_s_macro" />
+    <select macro="buildmodule_xen_ships_m_macro" />
+    <select macro="buildmodule_xen_ships_xl_macro" />
+  </group>
+
+  <!-- Generic Equipment Dock Module Groups -->
+  <group name="tpwar_equip_gen">
+    <select macro="buildmodule_gen_equip_m_dockarea_01_macro" />
+    <select macro="buildmodule_gen_equip_l_macro" />
+    <select macro="buildmodule_gen_equip_xl_macro" />
+  </group>
+
+  <!-- Argon Connection Module Groups-->
+  <group name="tpwar_conn_arg">
+    <select macro="struct_arg_base_01_macro" />
+    <select macro="struct_arg_base_02_macro" />
+    <select macro="struct_arg_base_03_macro" />
+    <select macro="struct_arg_cross_01_macro" />
+    <select macro="struct_arg_vertical_01_macro" />
+    <select macro="struct_arg_vertical_02_macro" />
+  </group>
+
+  <!-- Paranid Connection Module Groups -->
+  <group name="tpwar_conn_par">
+    <select macro="struct_par_cross_01_macro" />
+    <select macro="struct_par_cross_02_macro" />
+    <select macro="struct_par_cross_03_macro" />
+    <select macro="struct_par_base_01_macro" />
+    <select macro="struct_par_base_02_macro" />
+    <select macro="struct_par_base_03_macro" />
+    <select macro="struct_par_vertical_01_macro" />
+    <select macro="struct_par_vertical_02_macro" />
+  </group>
+
+  <!-- Teladi Connection Module Groups-->
+  <group name="tpwar_conn_tel">
+    <select macro="struct_tel_base_01_macro" />
+    <select macro="struct_tel_base_02_macro" />
+    <select macro="struct_tel_base_03_macro" />
+    <select macro="struct_tel_cross_01_macro" />
+    <select macro="struct_tel_vertical_01_macro" />
+    <select macro="struct_tel_vertical_02_macro" />
+  </group>
+
+  <!-- Venturer Module Groups -->
+  <group name="tpwar_venturer_gen">
+    <select macro="dockarea_gen_m_venturer_01_macro" />
+    <select macro="dockarea_gen_xl_venturer_01_macro" />
+    <select macro="ventureplatform_gen_cross_01_macro" />
+    <select macro="struct_gen_venturerbase_01_macro" />
+    <select macro="struct_gen_venturerbase_02_macro" />
+    <select macro="struct_gen_venturerbase_03_macro" />
+    <select macro="struct_gen_venturercross_01_macro" />
+    <select macro="struct_gen_venturervertical_01_macro" />
+    <select macro="struct_gen_venturervertical_02_macro" />
+  </group>
+    </add>
+</diff>

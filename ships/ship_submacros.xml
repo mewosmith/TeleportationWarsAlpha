@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+    <!-- TODO TEST SHIPS -->
+    <macro name="tpwar_jatu_hull_macro_one" class="destructible">
+        <component ref="tpwar_jatu_hull_comp_one" />
+        <properties>
+            <identification name="{20104,30701}" shortname="{20104,30703}" makerrace="teladi" size="small" description="{20104,30702}" />
+            <hull integrated="1" />
+            <!-- <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+        </sets>
+      </build> -->
+            <!-- <explosiondamage value="100000" /> -->
+            <!-- <hull max="148471" /> -->
+            <!-- <secrecy level="3" /> -->
+            <!-- <workforce race="teladi" capacity="250" /> -->
+        </properties>
+    </macro>
+    <macro name="tpwar_jatu_hull_macro_two" class="destructible">
+        <component ref="tpwar_jatu_hull_comp_two" />
+        <properties>
+            <identification name="{20104,30701}" shortname="{20104,30703}" makerrace="teladi" size="small" description="{20104,30702}" />
+            <hull integrated="1" />
+            <!-- <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+        </sets>
+      </build> -->
+            <!-- <explosiondamage value="100000" /> -->
+            <!-- <hull max="148471" /> -->
+            <!-- <secrecy level="3" /> -->
+            <!-- <workforce race="teladi" capacity="250" /> -->
+        </properties>
+    </macro>
+    <macro name="tpwar_lx_eng_macro" class="destructible">
+        <component ref="tpwar_lx_eng_comp" />
+        <properties>
+            <identification name="{20104,30701}" shortname="{20104,30703}" makerrace="teladi" size="small" description="{20104,30702}" />
+            <hull integrated="1" />
+            <!-- <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+        </sets>
+      </build> -->
+            <!-- <explosiondamage value="100000" /> -->
+            <!-- <hull max="148471" /> -->
+            <!-- <secrecy level="3" /> -->
+            <!-- <workforce race="teladi" capacity="250" /> -->
+        </properties>
+    </macro>
+    <macro name="tpwar_findbroker_hull_macro" class="destructible">
+        <component ref="tpwar_findbroker_hull_comp" />
+        <properties>
+            <identification name="{20104,30701}" shortname="{20104,30703}" makerrace="teladi" size="small" description="{20104,30702}" />
+            <hull integrated="1" />
+            <!-- <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+        </sets>
+      </build> -->
+            <!-- <explosiondamage value="100000" /> -->
+            <!-- <hull max="148471" /> -->
+            <!-- <secrecy level="3" /> -->
+            <!-- <workforce race="teladi" capacity="250" /> -->
+        </properties>
+    </macro>
+</macros>

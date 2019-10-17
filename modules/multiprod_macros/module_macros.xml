@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\alby\Desktop\unidiffxsd/X4_macro.xsd">
+    <!-- 
+
+<production wares="spaceweed water microchips">
+<queue>
+<item ware="spaceweed" />
+<item ware="water" />
+<item ware="microchips" />
+</queue>
+</production>
+
+ -->
+    <!-- 
+
+
+     <wares>
+      <ware ware="foodrations" />
+      <ware ware="meat" />
+      <ware ware="wheat" />
+    </wares>
+    <wares>
+      <ware ware="majasnails" />
+      <ware ware="sojabeans" />
+      <ware ware="sojahusk" />
+  <wares>
+      <ware ware="nostropoil" />
+      <ware ware="spaceweed" />
+      <ware ware="sunriseflowers" />
+      <ware ware="swampplant" />
+    </wares>
+  
+  -->
+    <macro name="prod_arg_agricultural_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,1}" shortname="{7345565,2}" makerrace="argon" description="{7345565,3}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="foodrations meat wheat majasnails sojabeans sojahusk nostropoil spaceweed sunriseflowers swampplant">
+                <queue>
+                    <item ware="foodrations" />
+                    <item ware="meat" />
+                    <item ware="wheat" />
+                    <item ware="majasnails" />
+                    <item ware="sojabeans" />
+                    <item ware="sojahusk" />
+                    <item ware="nostropoil" />
+                    <item ware="spaceweed" />
+                    <item ware="sunriseflowers" />
+                    <item ware="swampplant" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+
+  <basket id="energy" name="Energy Wares" description="Basket for energy wares. High throughput.">
+    <wares>
+      <ware ware="antimattercells" />
+      <ware ware="energycells" />
+      <ware ware="graphene" />
+      <ware ware="superfluidcoolant" />
+    </wares> -->
+    <macro name="prod_arg_energy_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,4}" shortname="{7345565,5}" makerrace="argon" description="{7345565,6}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="antimattercells energycells graphene superfluidcoolant">
+                <queue>
+                    <item ware="antimattercells" />
+                    <item ware="energycells" />
+                    <item ware="graphene" />
+                    <item ware="superfluidcoolant" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+    
+     <basket id="food" name="Food Wares" description="Basket for all tradable food-level wares">
+    <wares>
+      <ware ware="foodrations" />
+      <ware ware="medicalsupplies" />
+      <ware ware="sojahusk" />
+      <ware ware="nostropoil" />
+      <ware ware="water" />
+    </wares>
+  </basket> -->
+    <macro name="prod_arg_food_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,7}" shortname="{7345565,8}" makerrace="argon" description="{7345565,9}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="foodrations medicalsupplies sojahusk nostropoil water">
+                <queue>
+                    <item ware="foodrations" />
+                    <item ware="medicalsupplies" />
+                    <item ware="sojahusk" />
+                    <item ware="nostropoil" />
+                    <item ware="water" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+    
+      <basket id="refined_gas" name="Refined Gas Wares" description="Basket for all refined gas wares. High throughput.">
+    <wares>
+      <ware ware="antimattercells" />
+      <ware ware="graphene" />
+      <ware ware="superfluidcoolant" />
+    </wares>
+  </basket>
+    
+     -->
+    <macro name="prod_arg_gases_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,10}" shortname="{7345565,11}" makerrace="argon" description="{7345565,12}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="antimattercells graphene superfluidcoolant">
+                <queue>
+                    <item ware="antimattercells" />
+                    <item ware="graphene" />
+                    <item ware="superfluidcoolant" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+      <basket id="tech" name="Tech Wares" description="Basket for all tradable tech-level wares">
+    <wares>
+      <ware ware="advancedcomposites" />
+      <ware ware="engineparts" />
+      <ware ware="hullparts" />
+      <ware ware="microchips" />
+      <ware ware="plasmaconductors" />
+      <ware ware="quantumtubes" />
+      <ware ware="scanningarrays" />
+    </wares>
+    
+     -->
+    <macro name="prod_arg_hightech_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,13}" shortname="{7345565,14}" makerrace="argon" description="{7345565,15}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="advancedcomposites engineparts hullparts">
+                <queue>
+                    <item ware="advancedcomposites" />
+                    <item ware="engineparts" />
+                    <item ware="hullparts" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+    
+      <basket id="refined_mineral" name="Refined Mineral Wares" description="Basket for all refined mineral wares. High throughput.">
+    <wares>
+      <ware ware="refinedmetals" />
+      <ware ware="siliconwafers" />
+      <ware ware="teladianium" />
+    </wares>
+    
+    
+     -->
+    <macro name="prod_arg_minerals_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,19}" shortname="{7345565,20}" makerrace="argon" description="{7345565,21}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="refinedmetals siliconwafers teladianium">
+                <queue>
+                    <item ware="refinedmetals" />
+                    <item ware="siliconwafers" />
+                    <item ware="teladianium" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+    
+        <wares>
+      <ware ware="antimattercells" />
+      <ware ware="energycells" />
+      <ware ware="graphene" />
+      <ware ware="superfluidcoolant" />
+      <ware ware="refinedmetals" />
+      <ware ware="siliconwafers" />
+      <ware ware="teladianium" />
+    </wares>
+    
+     -->
+    <macro name="prod_arg_refined_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,25}" shortname="{7345565,26}" makerrace="argon" description="{7345565,27}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="antimattercells energycells graphene superfluidcoolant refinedmetals siliconwafers teladianium">
+                <queue>
+                    <item ware="antimattercells" />
+                    <item ware="energycells" />
+                    <item ware="graphene" />
+                    <item ware="superfluidcoolant" />
+                    <item ware="refinedmetals" />
+                    <item ware="siliconwafers" />
+                    <item ware="teladianium" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+
+      <ware ware="advancedelectronics" />
+      <ware ware="antimatterconverters" />
+      <ware ware="claytronics" />
+      <ware ware="dronecomponents" />
+      <ware ware="fieldcoils" />
+      <ware ware="missilecomponents" />
+      <ware ware="shieldcomponents" />
+      <ware ware="smartchips" />
+      <ware ware="turretcomponents" />
+      <ware ware="weaponcomponents" />
+
+ -->
+    <macro name="prod_arg_shiptech_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,28}" shortname="{7345565,29}" makerrace="argon" description="{7345565,30}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="advancedelectronics antimatterconverters claytronics dronecomponents fieldcoils missilecomponents shieldcomponents smartchips turretcomponents weaponcomponents">
+                <queue>
+                    <item ware="advancedelectronics" />
+                    <item ware="antimatterconverters" />
+                    <item ware="claytronics" />
+                    <item ware="dronecomponents" />
+                    <item ware="fieldcoils" />
+                    <item ware="missilecomponents" />
+                    <item ware="shieldcomponents" />
+                    <item ware="smartchips" />
+                    <item ware="turretcomponents" />
+                    <item ware="weaponcomponents" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+    <!-- 
+    
+      <ware ware="advancedelectronics" />
+      <ware ware="antimatterconverters" />
+      <ware ware="dronecomponents" />
+      <ware ware="energycells" />
+      <ware ware="engineparts" />
+      <ware ware="fieldcoils" />
+      <ware ware="microchips" />
+      <ware ware="missilecomponents" />
+      <ware ware="scanningarrays" />
+      <ware ware="shieldcomponents" />
+      <ware ware="smartchips" />
+      <ware ware="turretcomponents" />
+      <ware ware="weaponcomponents" />
+    
+     -->
+    <macro name="prod_arg_weapontech_macro" class="production">
+        <component ref="prod_arg_foodrations" />
+        <properties>
+            <identification name="{7345565,31}" shortname="{7345565,32}" makerrace="argon" description="{7345565,33}" />
+            <build>
+                <sets>
+                    <set ref="factory" />
+                    <set ref="headquarters_player" />
+                </sets>
+            </build>
+            <explosiondamage value="10000" />
+            <hull max="133000" />
+            <secrecy level="2" />
+            <production wares="advancedelectronics antimatterconverters dronecomponents energycells engineparts fieldcoils microchips missilecomponents scanningarrays shieldcomponents smartchips turretcomponents weaponcomponents">
+                <queue>
+                    <item ware="advancedelectronics" />
+                    <item ware="antimatterconverters" />
+                    <item ware="dronecomponents" />
+                    <item ware="energycells" />
+                    <item ware="engineparts" />
+                    <item ware="fieldcoils" />
+                    <item ware="microchips" />
+                    <item ware="missilecomponents" />
+                    <item ware="scanningarrays" />
+                    <item ware="shieldcomponents" />
+                    <item ware="smartchips" />
+                    <item ware="turretcomponents" />
+                    <item ware="weaponcomponents" />
+                </queue>
+            </production>
+            <workforce max="90" />
+        </properties>
+    </macro>
+</macros>

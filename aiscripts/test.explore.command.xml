@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aiscript name="test.explore.command" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/aiscripts.xsd">
+  <order id="TPExplore" name="TPEXPLORE" description="TPEXPLORE" category="navigation">
+    <params>
+      <param name="targetspace" required="true" type="object" default="null" text="{1041, 10006}" comment="Area to explore. Space to scout">
+        <input_param name="class" value="[class.sector, class.gate, class.highwayentrygate]" />
+      </param>
+      <!-- <param name="radius" type="length" default="350km" text="{1041, 10093}" comment="Radius">
+        <input_param name="min" value="0m" />
+        <input_param name="max" value="350km" />
+        <input_param name="step" value="1km" />
+      </param> -->
+      <!-- <param name="timeout" type="time" default="0s" infinitevalue="0s" text="{1041, 10034}" comment="Duration">
+        <input_param name="min" value="0s" />
+        <input_param name="max" value="24h" />
+        <input_param name="step" value="10min" />
+      </param> -->
+      <!-- <param name="blindtourist" type="internal" default="this.ship.isplayerowned" text="{1041, 10039}" comment="Explore blind with no cheating. Non-player-owned ships cannot explore without cheating. The concept of undiscovered hexes is player-specific." />
+      <param name="debugchance" type="bool" default="0" advanced="true" text="{1041, 10086}" comment="Print debug output">
+        <input_param name="truevalue" value="100" />
+      </param> -->
+    </params>
+    <!-- <skill min="60" /> -->
+    <requires>
+      <match shiptype="shiptype.lasertower" negate="true" />
+    </requires>
+    <!-- <location object="$destination.{1}" position="$destination.{2}" radius="$radius" condition="@$destination.{1}.isclass.sector" /> -->
+  </order>
+  <interrupts>
+    <handler ref="SectorChangeHandler" />
+    <handler ref="TargetInvalidHandler" />
+    <handler ref="AttackHandler" />
+    <handler ref="MissileLockHandler" />
+    <handler ref="ScannedHandler" />
+    <handler ref="InspectedHandler" />
+    <handler ref="FoundAbandonedHandler" />
+    <handler ref="FoundLockboxHandler" />
+    <handler ref="ResupplyHandler" />
+    <handler ref="JobRemoveRequestHandler" />
+  </interrupts>
+  <init>
+    <debug_to_file text="'start'" name="'tpexplore.log'" directory="'orders'" append="false" />
+  </init>
+  <attention min="unknown">
+    <actions>
+      <label name="begin" />
+      <do_if value="not $Objects?">
+        <find_object groupname="$Objects" space="$targetspace" multiple="true">
+          <match class="class.ship" negate="true"></match>
+        </find_object>
+      </do_if>
+      <label name="start" />
+      <set_order_syncpoint_reached order="this.ship.order" />
+      <set_value name="$DistanceLists" exact="table[]" />
+      <do_all exact="$Objects.count" counter="$i">
+        <set_value name="$DistanceLists.{(this.ship.distanceto.{$Objects.{$i}})i}" exact="$Objects.{$i}" />
+      </do_all>
+      <set_value name="$ShortestIndex" exact="$DistanceLists.keys.list.min" />
+      <debug_to_file text="$DistanceLists.keys.count" name="'tpexplore.log'" directory="'orders'" />
+      <debug_to_file text="$ShortestIndex" name="'tpexplore.log'" directory="'orders'" />
+      <set_avoid_collisions object="this.ship" bigobjects="false" smallobjects="false" />
+      <move_to object="this.ship" destination="$DistanceLists.{$ShortestIndex}" finishonapproach="true" travel="true" uselocalhighways="false">
+        <interrupt>
+          <conditions>
+            <check_any>
+              <event_object_target_invalid object="this.ship" />
+              <event_object_changed_sector object="$DistanceLists.{$ShortestIndex}" />
+              <event_object_entered_gate object="$DistanceLists.{$ShortestIndex}" />
+              <event_object_entered_live_view object="$DistanceLists.{$ShortestIndex}" />
+              <event_object_collided object="this.ship" otherobject="$DistanceLists.{$ShortestIndex}" />
+              <event_object_destroyed object="$DistanceLists.{$ShortestIndex}" />
+              <check_all>
+                <event_gravidar_has_scanned object="this.ship" />
+                <check_value value="this.ship.distanceto.{$DistanceLists.{$ShortestIndex}} lt 30km" />
+              </check_all>
+            </check_any>
+          </conditions>
+        </interrupt>
+      </move_to>
+      <reset_avoid_collisions object="this.ship" />
+      <remove_from_group group="$Objects" object="$Objects.{$Objects.indexof.{$DistanceLists.{$ShortestIndex}}}" />
+      <remove_value name="$DistanceLists" />
+      <wait exact="1s" />
+      <do_if value="$Objects.count == 0">
+        <cancel_order order="this.ship.order" />
+      </do_if>
+      <resume label="start" />
+    </actions>
+  </attention>
+</aiscript>

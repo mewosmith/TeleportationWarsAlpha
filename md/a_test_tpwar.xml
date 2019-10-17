@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <!-- <check_value value="false" /> -->
+            </conditions>
+            <cues>
+                <cue name="Controls">
+                    <delay exact="10s" />
+                    <actions>
+                        <!-- <signal_cue cue="Create_Ship_Wrapper" /> -->
+                        <signal_cue cue="Tool_Sector_Tour" />
+                    </actions>
+                </cue>
+                <cue name="Jobtest" checktime="15s">
+                    <actions>
+                        <debug_to_file text="'start'" name="'job.log'" directory="'jobstest'" append="false" />
+                        <debug_to_file text="'start'" name="'god.log'" directory="'godtest'" append="false" />
+                        <set_value name="$Factions" exact="[
+faction.khaakpox,
+faction.xenonmatrix,
+faction.atlas,
+faction.sovsyn,
+faction.cartel,
+faction.agi,
+faction.goner,
+faction.wholefood,
+faction.ledda,
+faction.telunion,
+faction.aldrin,
+faction.cantera,
+faction.toride,
+faction.nmmc,
+faction.atreus,
+faction.jonferson,
+faction.aquariuscorp,
+faction.ptni,
+faction.strongarms,
+faction.plutarch,
+faction.albionenergy,
+faction.terracorp,
+faction.franton,
+faction.chow,
+faction.beryll,
+faction.terrapmc,
+faction.otas,
+faction.buccaneers,
+faction.reivers,
+faction.terrans,
+faction.nolimits,
+faction.uguras,
+faction.heretics,
+faction.yaki,
+faction.usc,
+faction.heartofalbion,
+faction.sonraenergy
+                        ]"/>
+                        <find_station groupname="$Stations" space="player.galaxy" multiple="true" owner="$Factions"></find_station>
+                        <do_all exact="$Stations.count" counter="$i">
+                            <debug_to_file text="$Stations.{$i}.knownname +' | ' + $Stations.{$i}.sector.knownname " name="'god.log'" directory="'godtest'" />
+
+                        </do_all>
+                        <set_value name="$Jobships" exact="[
+'carrier_atlas',
+'carrier_sovsyn',
+'carrier_cartel',
+'carrier_agi',
+'destroyer_atlas',
+'destroyer_sovsyn',
+'destroyer_cartel',
+'destroyer_agi',
+'frigate_patrol_atlas',
+'frigate_patrol_sovsyn',
+'frigate_patrol_cartel',
+'frigate_patrol_agi',
+'free_miner_l_atlas',
+'free_miner_l_sovsyn',
+'free_miner_l_cartel',
+'free_miner_l_agi',
+'carrier_goner',
+'carrier_ledda',
+'carrier_atreus',
+'carrier_jonferson',
+'carrier_aquariuscorp',
+'carrier_strongarms',
+'carrier_plutarch',
+'carrier_albionenergy',
+'carrier_terracorp',
+'carrier_beryll',
+'frigate_patrol_goner',
+'frigate_patrol_ledda',
+'frigate_patrol_atreus',
+'frigate_patrol_jonferson',
+'frigate_patrol_aquariuscorp',
+'frigate_patrol_strongarms',
+'frigate_patrol_plutarch',
+'frigate_patrol_albionenergy',
+'frigate_patrol_terracorp',
+'frigate_patrol_beryll',
+'free_miner_l_goner',
+'free_miner_l_ledda',
+'free_miner_l_atreus',
+'free_miner_l_jonferson',
+'free_miner_l_aquariuscorp',
+'free_miner_l_strongarms',
+'free_miner_l_plutarch',
+'free_miner_l_albionenergy',
+'free_miner_l_terracorp',
+'free_miner_l_beryll'
+]" />
+                        <find_ship groupname="$PrintJobs" space="player.galaxy" multiple="true" job="$Jobships" />
+                        <do_all exact="$PrintJobs.count" counter="$i">
+                            <debug_to_file text="$PrintJobs.{$i}.knownname +' | ' + $PrintJobs.{$i}.sector.knownname +' | ' + $PrintJobs.{$i}.subordinates +' | ' + $PrintJobs.{$i}.owner" name="'job.log'" directory="'jobstest'" />
+                        </do_all>
+                    </actions>
+                </cue>
+                <cue name="Create_Ship_Wrapper">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <!--  -->
+                    </actions>
+                    <cues>
+                        <cue name="CreateShipCaller" instantiate="true">
+                            <actions>
+                                <create_group groupname="$TestGroup" />
+                                <create_group groupname="$DOESTHISWORK" />
+                                <set_value name="$Small" exact="10" />
+                                <set_value name="$Medium" exact="10" />
+                                <set_value name="$Large" exact="10" />
+                                <set_value name="$XLarge" exact="10" />
+                            </actions>
+                            <cues>
+                                <cue name="CreateParamInput" ref="CreateShipLIB">
+                                    <param name="Group" value="$TestGroup" />
+                                    <param name="Small" value="$Small" />
+                                    <param name="Medium" value="$Medium" />
+                                    <param name="Large" value="$Large" />
+                                    <param name="XLarge" value="$XLarge" />
+                                </cue>
+                            </cues>
+                        </cue>
+                        <library name="CreateShipLIB">
+                            <params>
+                                <param name="Small" default="0" />
+                                <param name="Medium" default="0" />
+                                <param name="Large" default="0" />
+                                <param name="XLarge" default="0" />
+                                <param name="Sizes" default="[]" />
+                                <param name="Faction" default="faction.argon" />
+                                <param name="Owner" default="faction.player" />
+                                <param name="TagList" default="[tag.military]" />
+                                <param name="Group" default="$DOESTHISWORK" />
+                                <param name="Sector" default="player.sector" />
+                                <param name="Level" default="1" />
+                                <param name="SafeObject" default="player.ship" />
+                                <param name="MinMax" default="[1km, 3km]" />
+                            </params>
+                            <actions>
+                                <do_all exact="$Small" counter="$i">
+                                    <append_to_list name="$Sizes" exact="class.ship_s" />
+                                </do_all>
+                                <do_all exact="$Medium" counter="$i">
+                                    <append_to_list name="$Sizes" exact="class.ship_m" />
+                                </do_all>
+                                <do_all exact="$Large" counter="$i">
+                                    <append_to_list name="$Sizes" exact="class.ship_l" />
+                                </do_all>
+                                <do_all exact="$XLarge" counter="$i">
+                                    <append_to_list name="$Sizes" exact="class.ship_xl" />
+                                </do_all>
+                                <do_all exact="$Sizes.count" counter="$i">
+                                    <create_ship groupname="$Group" sector="$Sector">
+                                        <select faction="global.$Tpwar_test_groups.random" size="$Sizes.{$i}" />
+                                        <pilot>
+                                            <select faction="$Faction" tags="[tag.pilot]" />
+                                        </pilot>
+                                        <loadout>
+                                            <level exact="$Level" />
+                                            <variation exact="0.0" />
+                                        </loadout>
+                                        <owner exact="$Owner" overridenpc="true" />
+                                        <safepos object="$SafeObject" min="$MinMax.{1}" max="$MinMax.{2}" />
+                                    </create_ship>
+                                </do_all>
+                            </actions>
+                        </library>
+                    </cues>
+                </cue>
+                <cue name="Test_Vanilla_Interface" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <signal_cue_instantly cue="md.FactionLogic.Generate_Global_Report" />
+                    </actions>
+                </cue>
+                <cue name="Test_Missions" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <!-- 
+
+                    location makes no sense
+
+                    -->
+                        <!-- controls -->
+                        <!-- debug -->
+                        <debug_to_file text="'start'" name="'test_missions.log'" directory="'missions'" append="false" />
+                    </actions>
+                    <cues>
+                        <cue name="StartMission">
+                            <actions>
+                                <find_station groupname="$Stations" space="player.sector" multiple="true" />
+                                <do_all exact="5" counter="$i">
+                                    <set_known object="$Stations.{$i}" known="true" />
+                                    <set_known object="$Stations.{$i}.zone" known="true" />
+                                    <set_known object="$Stations.{$i}.sector" known="true" />
+                                    <set_known object="$Stations.{$i}.cluster" known="true" />
+                                    <signal_cue_instantly cue="DockObjectiveTest" param="$Stations.{$i}" />
+                                    <!-- debug -->
+                                    <debug_to_file text="'StartMission ' + $Stations.{$i}.knownname" name="'test_missions.log'" directory="'missions'" />
+                                </do_all>
+                            </actions>
+                        </cue>
+                        <cue name="DockObjectiveTest" instantiate="true" namespace="this">
+                            <conditions>
+                                <event_cue_signalled />
+                            </conditions>
+                            <actions>
+                                <set_value name="$BaseCue" exact="this" />
+                                <create_cue_actor cue="this" actor="event.param.controlentity.{controlpost.manager}"></create_cue_actor>
+                                <set_value name="$Location" exact="event.param" />
+                                <create_offer cue="DockObjectiveTest" name="'Dock at station'" space="event.param.sector" difficulty="level.trivial" duration="2h" reward="5Cr" actor="event.param.controlentity.{controlpost.manager}" associated="event.param" description="'foo'" faction="faction.argon" type="missiontype.talkto">
+                                    <briefing>
+                                        <objective step="1" action="objective.flyto" object="event.param" />
+                                        <objective step="2" action="objective.talkto" object="event.param.controlentity.{controlpost.manager}" />
+                                    </briefing>
+                                </create_offer>
+                                <!-- debug -->
+                                <debug_to_file text="'DockObjectiveTest ' + $BaseCue" name="'test_missions.log'" directory="'missions'" />
+                            </actions>
+                            <cues>
+                                <cue name="DockObjectiveMission">
+                                    <conditions>
+                                        <event_object_signalled object="this.parent.actor" param="'accept'" />
+                                    </conditions>
+                                    <actions>
+                                        <create_mission cue="DockObjectiveMission" offercue="DockObjectiveTest"></create_mission>
+                                        <set_objective cue="DockObjectiveMission" step="1" action="objective.flyto" object="this.parent.actor.assignedcontrolled" />
+                                        <remove_offer cue="DockObjectiveTest" />
+                                        <!-- debug -->
+                                        <debug_to_file text="'DockObjectiveMission ' + this.parent.actor + '$BaseCue' + $BaseCue" name="'test_missions.log'" directory="'missions'" />
+                                    </actions>
+                                    <cues>
+                                        <cue name="Listener">
+                                            <conditions>
+                                                <event_object_docked_at container="$BaseCue.actor.assignedcontrolled" />
+                                                <check_value value="event.param == player.ship" />
+                                            </conditions>
+                                            <actions>
+                                                <set_objective cue="DockObjectiveMission" step="2" action="objective.talkto" object="$BaseCue.actor" />
+                                                <!-- debug -->
+                                                <debug_to_file text="'Listener ' + $BaseCue.actor" name="'test_missions.log'" directory="'missions'" />
+                                            </actions>
+                                        </cue>
+                                        <cue name="TalkListener">
+                                            <conditions>
+                                                <check_any>
+                                                    <event_conversation_started conversation="default" actor="$BaseCue.actor" />
+                                                    <event_conversation_returned_to_section actor="$BaseCue.actor" section="default" />
+                                                </check_any>
+                                            </conditions>
+                                            <actions>
+                                                <add_player_choice text="'Finish this Fucking Mission'" section="FinishMe" />
+                                                <!-- debug -->
+                                                <debug_to_file text="'TalkListener ' + $BaseCue.actor" name="'test_missions.log'" directory="'missions'" />
+                                            </actions>
+                                        </cue>
+                                        <cue name="FinishMe">
+                                            <conditions>
+                                                <event_conversation_next_section section="FinishMe" actor="$BaseCue.actor" />
+                                            </conditions>
+                                            <actions>
+                                                <remove_mission cue="DockObjectiveMission" type="completed" />
+                                                <show_notification text="'WE CAN MAKE MISSIONS NOW!'" />
+                                                <!-- debug -->
+                                                <debug_to_file text="'FinishMe ' + $BaseCue.actor" name="'test_missions.log'" directory="'missions'" />
+                                            </actions>
+                                        </cue>
+                                    </cues>
+                                </cue>
+                            </cues>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="Tool_Paint_Tour" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'start'" name="'paints.log'" directory="'paints'" append="false" />
+                        <create_list name="$PaintList" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0001" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0006" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0048" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0049" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0050" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0011" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0042" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0043" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0044" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0003" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0027" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0028" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0029" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0002" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0024" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0025" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0026" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0007" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0013" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0021" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0022" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0023" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0010" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0039" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0040" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0041" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0012" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0045" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0046" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0047" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0008" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0009" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0036" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0037" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0038" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0005" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0014" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0020" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0033" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0034" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0035" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0004" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0030" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0031" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0032" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0015" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0016" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0017" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0019" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0056" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0079" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0018" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0051" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0052" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0053" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0054" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0055" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0057" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0058" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0059" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0060" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0061" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0062" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0063" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0064" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0065" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0066" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0067" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0068" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0069" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0070" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0071" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0072" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0073" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0074" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0075" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0076" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0077" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0078" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0080" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0081" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0082" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0083" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0084" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0085" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0086" />
+                        <append_to_list name="$PaintList" exact="ware.paintmod_0087" />
+                    </actions>
+                    <cues>
+                        <cue name="NewPaint" instantiate="true">
+                            <conditions>
+                                <event_player_activated_weapongroup />
+                            </conditions>
+                            <actions>
+                                <set_value name="$PlusOne" exact="1" operation="add" />
+                                <do_if value="($PaintList.count + 1) == $PlusOne">
+                                    <set_value name="$PlusOne" exact="1" />
+                                </do_if>
+                                <add_inventory ware="$PaintList.{$PlusOne}" />
+                                <show_help custom="$PaintList.{$PlusOne}.name" />
+                                <create_ship groupname="$ResultShips" name="$FirstStep" zone="player.zone">
+                                    <select faction="faction.argon" size="class.ship_l" />
+                                    <owner exact="faction.player" overridenpc="true"></owner>
+                                    <pilot macro="character_boron_generic_01_macro">
+                                        <skills>
+                                            <skill type="boarding" exact="15" />
+                                            <skill type="engineering" exact="15" />
+                                            <skill type="management" exact="15" />
+                                            <skill type="morale" exact="15" />
+                                        </skills>
+                                    </pilot>
+                                    <paint ware="ware.paintmod_0083" />
+                                    <loadout>
+                                        <level exact="1" />
+                                        <variation exact="0.0" />
+                                    </loadout>
+                                    <safepos object="player.ship" y="700m * $PlusOne" />
+                                </create_ship>
+                                <debug_to_file text="$PaintList.{$PlusOne} + ' | ' + $FirstStep.idcode" name="'paints.log'" directory="'paints'" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="Tool_PlayerAttacks" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'start'" name="'attack.log'" directory="'playertools'" append="false" />
+                        <debug_to_file text="'start'" name="'luawhispers.log'" directory="'playertools'" append="false" />
+                    </actions>
+                    <cues>
+                        <cue name="PlayerAttackReport" instantiate="true">
+                            <conditions>
+                                <event_player_attacked_object />
+                            </conditions>
+                            <actions>
+                                <debug_to_file text="'event.param3.position:  ' + event.param3.position" name="'attack.log'" directory="'playertools'" />
+                                <debug_to_file text="'event.param3.rotation:  ' + event.param3.rotation" name="'attack.log'" directory="'playertools'" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="Tool_Offset_Gen" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'Start'" name="'test_dpod.log'" directory="'test_perm'" append="false" />
+                        <!-- The connection to the art you are putting on the ship: -->
+                        <set_value name="$X_OfThingOnShip" exact="100" />
+                        <set_value name="$Y_OfThingOnShip" exact="100" />
+                        <set_value name="$Z_OfThingOnShip" exact="100" />
+                        <!-- The positions on the art -->
+                        <set_value name="$X_Offset" exact="[]" />
+                        <set_value name="$Y_Offset" exact="[]" />
+                        <set_value name="$Z_Offset" exact="[]" />
+                        <do_all exact="$XOffset.count" counter="$i">
+                            <debug_to_file text="'&lt;position x=&quot;'+ ($X_OfThingOnShip + $X_Offset.{$i}) + '&quot;' + ' y=&quot;' + ($Y_OfThingOnShip + $Y_Offset.{$i}) + '&quot;' + ' z=&quot;'  + ($Z_OfThingOnShip + $Z_Offset.{$i})+ '&quot; /&gt;'" name="'position.log'" directory="'test_perm'" />
+                        </do_all>
+                    </actions>
+                </cue>
+                <cue name="Tool_Sector_Tour" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'start'" name="'findtregions.log'" directory="'stupidtest'" append="false" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" multiple="true">
+                            <match_any>
+                                <match macro="macro.tpthree_cluster216_sector001_macro" />
+                                <match macro="macro.Cluster_01_Sector001_macro" />
+                                <match macro="macro.Cluster_01_Sector002_macro" />
+                                <match macro="macro.Cluster_01_Sector003_macro" />
+                                <match macro="macro.Cluster_02_Sector001_macro" />
+                                <match macro="macro.Cluster_03_Sector001_macro" />
+                                <match macro="macro.Cluster_04_Sector001_macro" />
+                                <match macro="macro.Cluster_04_Sector002_macro" />
+                                <match macro="macro.Cluster_05_Sector001_macro" />
+                                <match macro="macro.Cluster_06_Sector001_macro" />
+                                <match macro="macro.Cluster_06_Sector002_macro" />
+                                <match macro="macro.Cluster_07_Sector001_macro" />
+                                <match macro="macro.Cluster_08_Sector001_macro" />
+                                <match macro="macro.Cluster_09_Sector001_macro" />
+                                <match macro="macro.Cluster_10_Sector001_macro" />
+                                <match macro="macro.Cluster_11_Sector001_macro" />
+                                <match macro="macro.Cluster_12_Sector001_macro" />
+                                <match macro="macro.Cluster_13_Sector001_macro" />
+                                <match macro="macro.Cluster_14_Sector001_macro" />
+                                <match macro="macro.Cluster_15_Sector001_macro" />
+                                <match macro="macro.Cluster_15_Sector002_macro" />
+                                <match macro="macro.Cluster_16_Sector001_macro" />
+                                <match macro="macro.Cluster_17_Sector001_macro" />
+                                <match macro="macro.Cluster_18_Sector001_macro" />
+                                <match macro="macro.Cluster_19_Sector001_macro" />
+                                <match macro="macro.Cluster_19_Sector002_macro" />
+                                <match macro="macro.Cluster_20_Sector001_macro" />
+                                <match macro="macro.Cluster_21_Sector001_macro" />
+                                <match macro="macro.Cluster_21_Sector002_macro" />
+                                <match macro="macro.Cluster_22_Sector001_macro" />
+                                <match macro="macro.Cluster_23_Sector001_macro" />
+                                <match macro="macro.Cluster_24_Sector001_macro" />
+                                <match macro="macro.Cluster_25_Sector001_macro" />
+                                <match macro="macro.Cluster_25_Sector002_macro" />
+                                <match macro="macro.Cluster_26_Sector001_macro" />
+                                <match macro="macro.Cluster_26_Sector002_macro" />
+                                <match macro="macro.Cluster_27_Sector001_macro" />
+                                <match macro="macro.Cluster_28_Sector001_macro" />
+                                <match macro="macro.Cluster_29_Sector001_macro" />
+                                <match macro="macro.Cluster_29_Sector002_macro" />
+                                <match macro="macro.Cluster_30_Sector001_macro" />
+                                <match macro="macro.Cluster_31_Sector001_macro" />
+                                <match macro="macro.Cluster_32_Sector001_macro" />
+                                <match macro="macro.Cluster_32_Sector002_macro" />
+                                <match macro="macro.Cluster_33_Sector001_macro" />
+                                <match macro="macro.Cluster_34_Sector001_macro" />
+                                <match macro="macro.Cluster_35_Sector001_macro" />
+                                <match macro="macro.Cluster_36_Sector001_macro" />
+                                <match macro="macro.Cluster_37_Sector001_macro" />
+                                <match macro="macro.Cluster_38_Sector001_macro" />
+                                <match macro="macro.Cluster_39_Sector001_macro" />
+                                <match macro="macro.Cluster_40_Sector001_macro" />
+                                <match macro="macro.Cluster_41_Sector001_macro" />
+                                <match macro="macro.Cluster_42_Sector001_macro" />
+                                <match macro="macro.Cluster_42_Sector002_macro" />
+                                <match macro="macro.Cluster_43_Sector001_macro" />
+                                <match macro="macro.Cluster_44_Sector001_macro" />
+                                <match macro="macro.Cluster_45_Sector001_macro" />
+                                <match macro="macro.Cluster_46_Sector001_macro" />
+                                <match macro="macro.Cluster_47_Sector001_macro" />
+                                <match macro="macro.tpthree_cluster364_sector001_macro" />
+                                <match macro="macro.tpthree_cluster165_sector001_macro" />
+                                <match macro="macro.tpthree_cluster050_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1158_sector001_macro" />
+                                <match macro="macro.tpthree_cluster178_sector001_macro" />
+                                <match macro="macro.tpthree_cluster177_sector001_macro" />
+                                <match macro="macro.tpthree_cluster176_sector001_macro" />
+                                <match macro="macro.tpthree_cluster195_sector001_macro" />
+                                <match macro="macro.tpthree_cluster196_sector001_macro" />
+                                <match macro="macro.tpthree_cluster215_sector001_macro" />
+                                <match macro="macro.tpthree_cluster110_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1217_sector001_macro" />
+                                <match macro="macro.tpthree_cluster307_sector001_macro" />
+                                <match macro="macro.tpthree_cluster393_sector001_macro" />
+                                <match macro="macro.tpthree_cluster029_sector001_macro" />
+                                <match macro="macro.tpthree_cluster035_sector001_macro" />
+                                <match macro="macro.tpthree_cluster049_sector001_macro" />
+                                <match macro="macro.tpthree_cluster052_sector001_macro" />
+                                <match macro="macro.tpthree_cluster064_sector001_macro" />
+                                <match macro="macro.tpthree_cluster084_sector001_macro" />
+                                <match macro="macro.tpthree_cluster085_sector001_macro" />
+                                <match macro="macro.tpthree_cluster104_sector001_macro" />
+                                <match macro="macro.tpthree_cluster105_sector001_macro" />
+                                <match macro="macro.tpthree_cluster142_sector001_macro" />
+                                <match macro="macro.tpthree_cluster143_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1158_sector001_macro" />
+                                <match macro="macro.tpthree_cluster176_sector001_macro" />
+                                <match macro="macro.tpthree_cluster177_sector001_macro" />
+                                <match macro="macro.tpthree_cluster178_sector001_macro" />
+                                <match macro="macro.tpthree_cluster183_sector001_macro" />
+                                <match macro="macro.tpthree_cluster185_sector001_macro" />
+                                <match macro="macro.tpthree_cluster188_sector001_macro" />
+                                <match macro="macro.tpthree_cluster195_sector001_macro" />
+                                <match macro="macro.tpthree_cluster196_sector001_macro" />
+                                <match macro="macro.tpthree_cluster203_sector001_macro" />
+                                <match macro="macro.tpthree_cluster204_sector001_macro" />
+                                <match macro="macro.tpthree_cluster205_sector001_macro" />
+                                <match macro="macro.tpthree_cluster210_sector001_macro" />
+                                <match macro="macro.tpthree_cluster215_sector001_macro" />
+                                <match macro="macro.tpthree_cluster217_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1220_sector001_macro" />
+                                <match macro="macro.tpthree_cluster227_sector001_macro" />
+                                <match macro="macro.tpthree_cluster234_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1240_sector001_macro" />
+                                <match macro="macro.tpthree_cluster259_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1260_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1273_sector001_macro" />
+                                <match macro="macro.tpthree_cluster274_sector001_macro" />
+                                <match macro="macro.tpthree_cluster289_sector001_macro" />
+                                <match macro="macro.tpthree_cluster1292_sector001_macro" />
+                                <match macro="macro.tpthree_cluster293_sector001_macro" />
+                                <match macro="macro.tpthree_cluster295_sector001_macro" />
+                                <match macro="macro.tpthree_cluster296_sector001_macro" />
+                                <match macro="macro.tpthree_cluster314_sector001_macro" />
+                                <match macro="macro.tpthree_cluster331_sector001_macro" />
+                                <match macro="macro.tpthree_cluster371_sector001_macro" />
+                                <match macro="macro.tpthree_cluster384_sector001_macro" />
+                                <match macro="macro.tpthree_cluster390_sector001_macro" />
+                                <match macro="macro.tpthree_cluster050_sector001_macro" />
+                                <match macro="macro.tpthree_cluster051_sector001_macro" />
+                                <match macro="macro.tpthree_cluster069_sector001_macro" />
+                                <match macro="macro.tpthree_cluster070_sector001_macro" />
+                                <match macro="macro.tpthree_cluster145_sector001_macro" />
+                                <match macro="macro.tpthree_cluster165_sector001_macro" />
+                                <match macro="macro.tpthree_cluster166_sector001_macro" />
+                                <match macro="macro.tpthree_cluster184_sector001_macro" />
+                                <match macro="macro.tpthree_cluster197_sector001_macro" />
+                                <match macro="macro.tpthree_cluster216_sector001_macro" />
+                                <match macro="macro.tpthree_cluster235_sector001_macro" />
+                                <match macro="macro.tpthree_cluster236_sector001_macro" />
+                                <match macro="macro.tpthree_cluster343_sector001_macro" />
+                                <match macro="macro.tpthree_cluster363_sector001_macro" />
+                                <match macro="macro.tpthree_cluster364_sector001_macro" />
+                                <match macro="macro.tpthree_cluster365_sector001_macro" />
+                                <match macro="macro.tpthree_cluster011_sector001_macro" />
+                                <match macro="macro.tpthree_cluster030_sector001_macro" />
+                                <match macro="macro.tpthree_cluster031_sector001_macro" />
+                                <match macro="macro.tpthree_cluster140_sector001_macro" />
+                                <match macro="macro.tpthree_cluster158_sector001_macro" />
+                                <match macro="macro.tpthree_cluster159_sector001_macro" />
+                                <match macro="macro.tpthree_cluster189_sector001_macro" />
+                                <match macro="macro.tpthree_cluster225_sector001_macro" />
+                                <match macro="macro.tpthree_cluster349_sector001_macro" />
+                                <match macro="macro.tpthree_cluster366_sector001_macro" />
+                                <match macro="macro.tpthree_cluster367_sector001_macro" />
+                                <match macro="macro.tpthree_cluster044_sector001_macro" />
+                                <match macro="macro.tpthree_cluster060_sector001_macro" />
+                                <match macro="macro.tpthree_cluster061_sector001_macro" />
+                                <match macro="macro.tpthree_cluster062_sector001_macro" />
+                                <match macro="macro.tpthree_cluster079_sector001_macro" />
+                                <match macro="macro.tpthree_cluster080_sector001_macro" />
+                                <match macro="macro.tpthree_cluster220_sector001_macro" />
+                                <match macro="macro.tpthree_cluster221_sector001_macro" />
+                                <match macro="macro.tpthree_cluster240_sector001_macro" />
+                                <match macro="macro.tpthree_cluster241_sector001_macro" />
+                                <match macro="macro.tpthree_cluster260_sector001_macro" />
+                                <match macro="macro.tpthree_cluster261_sector001_macro" />
+                                <match macro="macro.tpthree_cluster262_sector001_macro" />
+                                <match macro="macro.tpthree_cluster273_sector001_macro" />
+                                <match macro="macro.tpthree_cluster281_sector001_macro" />
+                                <match macro="macro.tpthree_cluster290_sector001_macro" />
+                                <match macro="macro.tpthree_cluster291_sector001_macro" />
+                                <match macro="macro.tpthree_cluster292_sector001_macro" />
+                                <match macro="macro.tpthree_cluster311_sector001_macro" />
+                                <match macro="macro.tpthree_cluster312_sector001_macro" />
+                                <match macro="macro.tpthree_cluster330_sector001_macro" />
+                                <!-- pirate -->
+                                <match macro="macro.tppirate_Cluster_99_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_98_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_97_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_96_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_95_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_94_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_93_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_92_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_91_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_90_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_89_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_88_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_87_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_86_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_85_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_84_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_83_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_82_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_81_Sector001_macro" />
+                                <match macro="macro.tppirate_Cluster_80_Sector001_macro" />
+                                <match macro="macro.meditech_Cluster_01_Sector001_macro" />
+                            </match_any>
+                        </find_sector>
+                        <do_all exact="$SectorList.count" counter="$i">
+                            <!-- <debug_text text="$SectorList.{$i}.macro" />
+                          <do_if value="$SectorList.{$i}.macro == macro.tppirate_Cluster_98_Sector001_macro">
+                            <warp object="player.ship" sector="$SectorList.{$i}">
+                               <safepos object="$Station" x="10km"/> 
+                            </warp>
+                          </do_if> -->
+                            <create_object name="$Spawned" macro="macro.tpwar_test_sat_macro" sector="$SectorList.{$i}" owner="faction.player"></create_object>
+                            <set_known object="$Spawned" known="true" />
+                            <set_known object="$Spawned.zone" known="true" />
+                            <set_known object="$Spawned.sector" known="true" />
+                            <set_known object="$Spawned.cluster" known="true" />
+                            <!-- <find_object groupname="$AllObjects" space="$SectorList.{$i}" multiple="true" recursive="true"></find_object> -->
+                            <!-- <do_all exact="$AllObjects.count" counter="$j">
+                                <debug_to_file text="$AllObjects.{$j}.macro + $AllObjects.{$j}.name + 'region ' + $AllObjects.{$j}.region" name="'findtregions.log'" directory="'stupidtest'" />
+                            </do_all> -->
+                        </do_all>
+                    </actions>
+                    <cues>
+                        <cue name="NewSector" instantiate="true">
+                            <conditions>
+                                <!-- <event_long_range_scan_sent object="player.entity" /> -->
+                                <event_player_activated_weapongroup />
+                            </conditions>
+                            <actions>
+                                <!-- <create_list name="$SectorList" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster1158_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster178_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster177_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster176_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster195_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster196_sector001_macro" />
+                        <append_to_list name="$SectorList" exact="macro.tpthree_cluster215_sector001_macro" /> -->
+                                <set_value name="$PlusOne" exact="1" operation="add" />
+                                <do_if value="($SectorList.count + 1) == $PlusOne">
+                                    <set_value name="$PlusOne" exact="1" />
+                                </do_if>
+                                <!-- <find_station name="$Station" multiple="false" space="$SectorList.{$PlusOne}"></find_station> -->
+                                <warp object="player.ship" sector="$SectorList.{$PlusOne}">
+                                    <!-- <safepos object="$Station" x="10km"/> -->
+                                </warp>
+                                <debug_to_file text="'This Sector ' + $SectorList.{$PlusOne}.macro" name="'wifesectors.log'" />
+                                <show_notification text="'This Sector ' + $SectorList.{$PlusOne}.macro" timeout="10s" />
+                                <set_value name="$Text" exact="'Name: %s Macro: %s'.[$SectorList.{$PlusOne}.knownname, $SectorList.{$PlusOne}.macro]" />
+                                <write_to_logbook category="general" title="'sector'" text="$Text" entity="'chef boyardee'" interaction="showonmap" object="player.ship" />
+                                <!-- <remove_from_group group="$Sectors" object="$SectorList.{$PlusOne}" /> -->
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="Test_Very_Large_Data" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <set_value name="$VeryLargeTable" exact="table[]" />
+                        <get_ware_definition faction="[faction.argon,faction.teladi,faction.paranid,faction.xenon,faction.khaak]" result="$Wares" />
+                        <debug_text text="$Wares" />
+                        <!-- <find_object groupname="$AllOFTHEM" space="player.galaxy" multiple="true"></find_object> -->
+                        <do_all exact="$Wares.count" counter="$i">
+                            <!-- <set_value name="$Key" exact="$VeryLargeTable.keys.list.max + 1" /> -->
+                            <set_value name="$VeryLargeTable.{$Wares.{$i}}" exact="table[]" />
+                            <!-- test -->
+                            <do_if value="$Wares.{$i} == ware.gen_reload_01">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                            </do_if>
+                            <!-- test -->
+                            <do_if value="$Wares.{$i}.isammo == true">
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isammo" exact="$Wares.{$i}" />
+                            </do_if>
+                            <do_elseif value="$Wares.{$i}.iscrafting == true">
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$iscrafting" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.isvolatile == true">
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isvolatile" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.israre == true">
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$israre" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.isweaponmod == true">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isweaponmod" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.isenginemod == true">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isenginemod" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.isshieldmod == true">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isshieldmod" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.isshipmod == true">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$isshipmod" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.equipmentmodquality == true">
+                                <debug_text text="'FOUND ONE' + $Wares.{$i}" />
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$equipmentmodquality" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_elseif value="$Wares.{$i}.ispaintmod == true">
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$ispaintmod" exact="$Wares.{$i}" />
+                            </do_elseif>
+                            <do_else>
+                                <set_value name="$VeryLargeTable.{$Wares.{$i}}.$misc" exact="$Wares.{$i}" />
+                            </do_else>
+                            <debug_text text="$Wares.{$i}" />
+                            <!-- <set_value name="$VeryLargeTable.{$i}.$Name" exact="$Wares.{$i}.name" />
+                    <set_value name="$VeryLargeTable.{$i}.$KnownName" exact="$Wares.{$i}.knownname" />
+                    <set_value name="$VeryLargeTable.{$i}.$Position" exact="$Wares.{$i}.position" />
+                    <set_value name="$VeryLargeTable.{$i}.$Rotation" exact="$Wares.{$i}.rotation" />
+                    <set_value name="$VeryLargeTable.{$i}.$Macro" exact="$Wares.{$i}.macro" />
+                    <set_value name="$VeryLargeTable.{$i}.$Ware" exact="$Wares.{$i}.macro.ware" /> -->
+                        </do_all>
+                        <debug_text text="$VeryLargeTable" />
+                        <debug_text text="$VeryLargeTable.{$Wares.{1}}.$misc" />
+                    </actions>
+                </cue>
+                <cue name="Tool_Faction_Stats" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'start'" name="'test_faction_numbers.log'" directory="'generators'" append="false" />
+                        <do_all exact="33">
+                            <set_value name="$Constructionbias" min="0.1" max="10.0" />
+                            <debug_to_file text="'Constructionbias: ' + $Constructionbias" name="'test_faction_numbers.log'" directory="'generators'" />
+                        </do_all>
+                        <do_all exact="33">
+                            <set_value name="$RED" min="1" max="255" />
+                            <debug_to_file text="'RED: ' + $RED" name="'test_faction_numbers.log'" directory="'generators'" />
+                        </do_all>
+                        <do_all exact="33">
+                            <set_value name="$GREEN" min="1" max="255" />
+                            <debug_to_file text="'GREEN: ' + $GREEN" name="'test_faction_numbers.log'" directory="'generators'" />
+                        </do_all>
+                        <do_all exact="33">
+                            <set_value name="$BLUE" min="1" max="255" />
+                            <debug_to_file text="'BLUE: ' + $BLUE" name="'test_faction_numbers.log'" directory="'generators'" />
+                        </do_all>
+                        <do_all exact="44">
+                            <debug_to_file text="'next faction'" name="'test_faction_numbers.log'" directory="'generators'" />
+                            <do_all exact="44">
+                                <set_value name="$Relation" min="-0.5" max="1" />
+                                <debug_to_file text="'Relation: ' + $Relation" name="'test_faction_numbers.log'" directory="'generators'" />
+                            </do_all>
+                        </do_all>
+                    </actions>
+                </cue>
+                <cue name="Test_Create_Station" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <!-- <debug_to_file text="'start'" name="'create_station.log'" directory="'create_station'" append="false" /> -->
+                        <!-- <create_station macro="macro.station_gen_factory_base_01_macro" constructionplan="'test_whathaveidone'" owner="faction.player" sector="player.sector" state="componentstate.operational">
+                    <safepos object="player.container" radius="3km" />
+                </create_station> -->
+                        <!-- <create_group groupname="$CreatedStation" />
+                <create_factory name="$Station" owner="faction.argon" sector="player.sector" groupname="$CreatedStation" race="faction.argon.primaryrace" modules="$Modules">
+                    <compatibilities>
+                        <limits defence="2" />
+                    </compatibilities>
+                    <select ware="ware.antimattercells" tags="[tag.pasta]" race="faction.argon.primaryrace" />
+                    <safepos max="40km" allowyaxis="false" includeplotbox="true" />
+                </create_factory>
+                <debug_to_file text="$Station" name="'create_station.log'" directory="'create_station'" />
+                <debug_to_file text="$Modules" name="'create_station.log'" directory="'create_station'" />
+                <warp object="player.ship" zone="$Station.zone">
+                    <safepos object="$Station" max="3km" />
+                </warp>
+                <set_owner object="$Station" faction="faction.player" overridenpc="true" /> -->
+                        <!--               
+                <set_value name="$StationNames" exact="[station1,station2,station3,station4,station5,station6,station7,station8]" />
+                <set_value name="$Faction" exact="faction.argon" /> -->
+                        <!-- <get_module_definition macro="$HabitationModuleList" race="$Race" tags="[tag.habitation, tag.module]" set="$ModuleSet" multiple="true" /> -->
+                    </actions>
+                    <!-- <cues>
+                <cue name="Warptostation" checkinterval="60s" checktime="60s" instantiate="true">
+                    <actions>
+                        <set_value name="$RandomStation" exact="$CreatedStation.random" />
+                        <warp object="player.ship" zone="$RandomStation.zone">
+                            <safepos object="$RandomStation" max="3km" />
+                        </warp>
+                        <set_owner object="$RandomStation" faction="faction.player" overridenpc="true" />
+                        <debug_to_file text="$CreatedStation" name="'create_station.log'" directory="'create_station'" />
+                        <debug_to_file text="$CreatedStationModules" name="'create_station.log'" directory="'create_station'" />
+                    </actions>
+                </cue>
+                <cue name="BuildStation" instantiate="true">
+                    <actions>
+                        <do_all exact="$StationMacros.count" counter="$i">
+                            <set_value name="$LocationPicked" exact="false" />
+                            <do_while value="$LocationPicked == false">
+                                <set_value name="$RandomSector" exact="global.$X4_All_Sectors.random" />
+                                <do_if value="$RandomSector.owner == $Faction">
+                                    <create_station groupname="$MultiWareModules" name="$ThisStation" rawname="$StationNames" state="componentstate.operational" macro="macro.station_gen_factory_base_01_macro" sector="$RandomSector" owner="$Faction">
+                                        <safepos includeplotbox="true" min="10km" max="100km" />
+                                    </create_station>
+                                    <set_value name="$LocationPicked" exact="true" />
+                                </do_if>
+                            </do_while>
+                        </do_all>
+                        <do_all exact="$MultiWareModules.count" counter="$i">
+                            <create_construction_sequence station="$MultiWareModules.{$i}" connectors="$Conns" macros="$MacrosForFactory"></create_construction_sequence>
+                        </do_all>
+                    </actions>
+                </cue>
+                <cue name="PlanStation" instantiate="true">
+                    <conditions>
+                        <event_object_construction_sequence_created group="$MultiWareModules" />
+                    </conditions>
+                    <actions>
+                        
+                <find_gate groupname="$Set_Known" space="player.galaxy" multiple="true"/>
+                <do_all exact="$Set_Known.count" counter="$i">
+                    <set_known object="$Set_Known.{$i}" known="true"/> 
+                    <set_known object="$Set_Known.{$i}.zone" known="true"/>
+                    <set_known object="$Set_Known.{$i}.sector" known="true"/>
+                    <set_known object="$Set_Known.{$i}.cluster" known="true"/> 
+                </do_all>
+
+
+                        <add_to_group groupname="$CreatedStation" object="event.object" />
+                        <set_value name="$Station" exact="event.object" />
+                        <set_value name="$ConstructionSequence" exact="event.param" />
+                        <create_list name="$PossibleWares" />
+                        <set_value name="$PossibleWares" exact="md.$EquipmentTable.{$Faction}" />
+                        <generate_loadout result="$Loadouts" sequence="$ConstructionSequence" faction="$Station.owner" wares="$PossibleWares" level="1" variation="0" />
+                        <do_all exact="$Loadouts.count" counter="$LoadoutIndex">
+                            <set_value name="$WareList" exact="$Loadouts.{$LoadoutIndex}.wares.list" />
+                            <apply_loadout loadout="$Loadouts.{$LoadoutIndex}" sequence="$ConstructionSequence" index="$LoadoutIndex" />
+                        </do_all>
+                        <apply_construction_sequence station="$Station" sequence="$ConstructionSequence" />
+                        <set_value name="$BBoxSize" exact="$Station.size / 2" />
+                        <set_build_plot object="$Station" x="$BBoxSize" y="$BBoxSize" z="$BBoxSize" allowreduction="true" />
+                        <signal_objects object="player.galaxy" param="'init station'" param2="$Station" param3="true" />
+                    </actions>
+                </cue>
+            </cues> -->
+                </cue>
+                <cue name="Test_Drone_Claim_Wreck" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <!-- <do_all exact="$MarkedWrecksTable.keys.count">
+                    <create_ship groupname="$SalvageReward" name="$RewardShip" zone="$CueHive.zone" macro="$MarkedWrecksTable.{event.param2}.$macro"></create_ship>
+                  
+                </do_all> -->
+                        <create_ship name="$carrier" macro="ship_arg_xl_carrier_01_b_macro" zone="player.zone">
+                            <pilot>
+                                <select faction="faction.argon" tags="[tag.commander]" />
+                            </pilot>
+                            <loadout>
+                                <level exact="-1" />
+                            </loadout>
+                            <owner exact="faction.player" />
+                            <units>
+                                <unit category="unitcategory.repair" exact="5" />
+                                <unit category="unitcategory.transport" exact="5" />
+                            </units>
+                            <ammo>
+                                <macro ref="macro.missile_guided_light_mk1_macro">
+                                    <fillpercent max="36" />
+                                </macro>
+                                <macro ref="macro.missile_heatseeker_light_mk1_macro">
+                                    <fillpercent max="40" />
+                                </macro>
+                                <macro ref="macro.missile_smart_light_mk1_macro">
+                                    <fillpercent max="20" />
+                                </macro>
+                                <macro ref="macro.missile_swarm_light_mk1_macro">
+                                    <fillpercent max="4" />
+                                </macro>
+                                <macro ref="macro.eq_arg_satellite_02_macro">
+                                    <fillamount exact="10" />
+                                </macro>
+                                <macro ref="macro.weapon_gen_mine_02_macro">
+                                    <fillamount exact="12" />
+                                </macro>
+                            </ammo>
+                            <safepos object="player.occupiedship" min="1250m" />
+                        </create_ship>
+                        <apply_loadout loadout="$loadout.{1}" object="$carrier" />
+                        <create_group groupname="$Ships" />
+                        <do_all exact="1">
+                            <create_ship groupname="$TestShip" zone="player.ship.zone">
+                                <select faction="faction.xenon" size="class.ship_s" tags="[tag.military]" />
+                                <owner exact="faction.xenon" overridenpc="true" />
+                                <pilot macro="character_boron_generic_01_macro">
+                                    <skills>
+                                        <skill type="boarding" exact="15" />
+                                        <skill type="engineering" exact="15" />
+                                        <skill type="management" exact="15" />
+                                        <skill type="morale" exact="15" />
+                                    </skills>
+                                </pilot>
+                                <loadout>
+                                    <level exact="0" />
+                                    <variation exact="0.0" />
+                                </loadout>
+                                <safepos object="player.occupiedship" min="1250m" />
+                            </create_ship>
+                        </do_all>
+                        <!-- <do_all exact="10" counter="$j">
+                    <create_ship groupname="$DroneShip" zone="player.ship.zone">
+                        <select faction="faction.argon" size="class.ship_m" tags="[tag.military]" />
+                        <owner exact="faction.player" overridenpc="true" />
+                        <pilot macro="character_boron_generic_01_macro">
+                            <skills>
+                                <skill type="boarding" exact="15" />
+                                <skill type="engineering" exact="15" />
+                                <skill type="management" exact="15" />
+                                <skill type="morale" exact="15" />
+                            </skills>
+                        </pilot>
+                        <loadout>
+                            <level exact="1" />
+                            <variation exact="0.0" />
+                        </loadout>
+                    </create_ship>
+                     <add_units object="$DroneShip.{$j}" category="unitcategory.defence" mk="1" exact="1" />
+                </do_all> -->
+                        <!-- <add_units object="" /> -->
+                        <set_object_hull object="$TestShip.{1}" exact="10" />
+                        <set_object_shield object="$TestShip.{1}" exact="10" />
+                        <!-- <add_to_group groupname="$P_Wreck" object="event.param" />
+                    <launch_drone name="$WreckDrone" object="event.object" macro="macro.ship_gen_xs_repairdrone_01_a_macro" category="unitcategory.repair" />
+                    <cancel_all_orders object="$WreckDrone" />
+                    <create_order object="$WreckDrone" id="'FlyToWreck'">
+                        <param name="wreck" value="$P_Wreck" />
+                    </create_order> -->
+                    </actions>
+                    <cues>
+                        <cue name="ShipKilled" instantiate="true">
+                            <conditions>
+                                <event_object_destroyed group="$TestShip" />
+                            </conditions>
+                            <delay exact="3s" />
+                            <actions>
+                                <set_value name="$RestoreME" exact="event.object" />
+                                <debug_text text="$RestoreME" />
+                                <restore_object object="$RestoreME" hull="1" />
+                                <add_units object="$RestoreME" category="unitcategory.repair" mk="1" exact="5" />
+                                <launch_drone name="$WreckDrone" object="$RestoreME" category="unitcategory.repair" exact="5" />
+                                <set_owner object="$RestoreME" faction="faction.player" overridenpc="true" />
+                                <find_object_component name="$All" object="$RestoreME" multiple="true" recursive="true" checkoperational="false"></find_object_component>
+                                <launch_repair_drones result="$WTFISTHIS" object="$carrier" target="$RestoreME" components="$All" />
+                                <do_all exact="$All.count" counter="$i">
+                                    <debug_text text="$All.{$i}.macro" />
+                                </do_all>
+                                <debug_text text="$All" />
+                                <debug_text text="$WTFISTHIS" />
+                                <find_active_repair_mass_traffic object="$RestoreME" result="$WTFISTHISTWO" />
+                                <get_units_in_mass_traffic masstraffic="$WTFISTHISTWO" category="unitcategory.repair" amounts="$unitamounts" />
+                                <debug_text text="$WTFISTHISTWO" />
+                                <debug_text text="$unitamounts" />
+                                <!-- <find_ship multiple="true" groupname="$MarkedWrecks" state="componentstate.wreck" unit="false" checkoperational="false" space="$RestoreME" class="[class.ship_xl, class.ship_l, class.ship_m, class.ship_s]" />
+                        <do_all exact="$MarkedWrecks.count" counter="$m">
+                            <find_object_component object="$MarkedWrecks.{$m}" multiple="true" recursive="true" groupname="$WreckEquipmentList" />
+                            <set_value name="$WreckMacro" exact="$MarkedWrecks.{$m}.macro" />
+                            <do_if value="$MarkedWrecks.{$m}.macro.isclass.[class.ship_xl]">
+                                <set_value name="$WreckSize" exact="'class.ship_xl'" />
+                            </do_if>
+                            <do_if value="$MarkedWrecks.{$m}.macro.isclass.[class.ship_l]">
+                                <set_value name="$WreckSize" exact="'class.ship_l'" />
+                            </do_if>
+                            <do_if value="$MarkedWrecks.{$m}.macro.isclass.[class.ship_m]">
+                                <set_value name="$WreckSize" exact="'class.ship_m'" />
+                            </do_if>
+                            <do_if value="$MarkedWrecks.{$m}.macro.isclass.[class.ship_s]">
+                                <set_value name="$WreckSize" exact="'class.ship_s'" />
+                            </do_if>
+                            <set_value name="$MinMaxCost" min="2" max="5" />
+                            <set_value name="$NewEntry" exact="$MarkedWrecksTable.keys.list.max + 1" />
+                            <set_value name="$MarkedWrecksTable.{$NewEntry}" exact="table[
+                                $macro = $MarkedWrecks.{$m}.macro,
+                                $size = $WreckSize,
+                                $flag = 0,
+                                $displayname = $MarkedWrecks.{$m}.macro.name,
+                                $name = $MarkedWrecks.{$m}.knownname,
+                                $sector = $MarkedWrecks.{$m}.sector,
+                                $zone = $MarkedWrecks.{$m}.zone,
+                                $position = $MarkedWrecks.{$m}.position,
+                                $faction = $MarkedWrecks.{$m}.owner,
+                                $equipment = $WreckEquipmentList,
+                                $resourcecost = $MinMaxCost,
+                                $wreckbeacon = event.param2,
+                                $salvage = 0,
+                                $cost = $CostOfShip,
+                                $used = true,
+                                $warecost = [],
+                                $Wreckage = player.age
+                                ]" />
+                        </do_all> -->
+                                <!-- <restore_object hull="100" recursive="true" object="$RestoreME" /> -->
+                                <!-- <set_owner object="$RestoreME" faction="faction.player" /> -->
+                                <!-- <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.attack" exact="1" />
+                            <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.build" exact="1" /> -->
+                                <!-- <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.defence" exact="1" /> -->
+                                <!-- <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.gascollector" exact="1" />
+                            <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.guard" exact="1" />
+                            <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.orecollector" exact="1" />
+                            <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.police" exact="1" /> -->
+                                <!-- <launch_drone name="$WreckDrone" object="$carrier" category="unitcategory.repair" exact="5" /> -->
+                                <!-- <launch_drone name="$WreckDrone" object="$DroneShip.{$i}" category="unitcategory.transport" exact="1" /> -->
+                                <!-- <debug_text text="'$WreckDrone.order.name'" />
+                        <debug_text text="$WreckDrone.order.name" />
+                        <create_order object="$WreckDrone" id="'MoveToObject'">
+                            <param name="destination" value="$RestoreME" />
+                        </create_order> -->
+                            </actions>
+                            <cues>
+                                <cue name="DelayMe">
+                                    <delay exact="10s" />
+                                    <actions>
+                                        <launch_repair_drones result="$WTFISTHIS" object="$carrier" target="$RestoreME" components="$All" />
+                                    </actions>
+                                </cue>
+                            </cues>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="Test_Create_Faction_Life" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'start'" name="'test_faction_life.log'" directory="'factions'" append="false" />
+                    </actions>
+                    <cues>
+                        <cue name="CreateLife">
+                            <delay exact="10s" />
+                            <actions>
+                                <add_encyclopedia_entry type="factions" item="faction.khaakpox.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.xenon.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.alliance.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.antigone.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.argon.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.civilian.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.criminal.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.hatikvah.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.holyorder.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.ministry.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.paranid.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.player.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.scaleplate.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.smuggler.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.teladi.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.visitor.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.goner.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.wholefood.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.ledda.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.telunion.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.aldrin.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.cantera.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.toride.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.nmmc.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.atreus.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.jonferson.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.aquariuscorp.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.ptni.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.strongarms.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.plutarch.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.albionenergy.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.terracorp.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.franton.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.chow.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.terrapmc.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.otas.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.buccaneers.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.reivers.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.terrans.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.nolimits.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.uguras.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.heretics.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.yaki.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.usc.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.heartofalbion.id" />
+                                <add_encyclopedia_entry type="factions" item="faction.sonraenergy.id" />
+                                <set_faction_known faction="faction.khaakpox" known="true" />
+                                <set_faction_known faction="faction.xenon" known="true" />
+                                <set_faction_known faction="faction.alliance" known="true" />
+                                <set_faction_known faction="faction.antigone" known="true" />
+                                <set_faction_known faction="faction.argon" known="true" />
+                                <set_faction_known faction="faction.civilian" known="true" />
+                                <set_faction_known faction="faction.criminal" known="true" />
+                                <set_faction_known faction="faction.hatikvah" known="true" />
+                                <set_faction_known faction="faction.holyorder" known="true" />
+                                <set_faction_known faction="faction.ministry" known="true" />
+                                <set_faction_known faction="faction.paranid" known="true" />
+                                <set_faction_known faction="faction.player" known="true" />
+                                <set_faction_known faction="faction.scaleplate" known="true" />
+                                <set_faction_known faction="faction.smuggler" known="true" />
+                                <set_faction_known faction="faction.teladi" known="true" />
+                                <set_faction_known faction="faction.visitor" known="true" />
+                                <set_faction_known faction="faction.goner" known="true" />
+                                <set_faction_known faction="faction.wholefood" known="true" />
+                                <set_faction_known faction="faction.ledda" known="true" />
+                                <set_faction_known faction="faction.telunion" known="true" />
+                                <set_faction_known faction="faction.aldrin" known="true" />
+                                <set_faction_known faction="faction.cantera" known="true" />
+                                <set_faction_known faction="faction.toride" known="true" />
+                                <set_faction_known faction="faction.nmmc" known="true" />
+                                <set_faction_known faction="faction.atreus" known="true" />
+                                <set_faction_known faction="faction.jonferson" known="true" />
+                                <set_faction_known faction="faction.aquariuscorp" known="true" />
+                                <set_faction_known faction="faction.ptni" known="true" />
+                                <set_faction_known faction="faction.strongarms" known="true" />
+                                <set_faction_known faction="faction.plutarch" known="true" />
+                                <set_faction_known faction="faction.albionenergy" known="true" />
+                                <set_faction_known faction="faction.terracorp" known="true" />
+                                <set_faction_known faction="faction.franton" known="true" />
+                                <set_faction_known faction="faction.chow" known="true" />
+                                <set_faction_known faction="faction.terrapmc" known="true" />
+                                <set_faction_known faction="faction.otas" known="true" />
+                                <set_faction_known faction="faction.buccaneers" known="true" />
+                                <set_faction_known faction="faction.reivers" known="true" />
+                                <set_faction_known faction="faction.terrans" known="true" />
+                                <set_faction_known faction="faction.nolimits" known="true" />
+                                <set_faction_known faction="faction.uguras" known="true" />
+                                <set_faction_known faction="faction.heretics" known="true" />
+                                <set_faction_known faction="faction.yaki" known="true" />
+                                <set_faction_known faction="faction.usc" known="true" />
+                                <set_faction_known faction="faction.heartofalbion" known="true" />
+                                <set_faction_known faction="faction.sonraenergy" known="true" />
+                                <find_sector groupname="$Sector" multiple="true" owner="faction.ownerless"></find_sector>
+                                <debug_to_file text="'global.$Factionsglobal.count ' + global.$Factionsglobal.count" name="'test_faction_life.log'" directory="'factions'" />
+                                <do_all exact="global.$Factionsglobal.count" counter="$i">
+                                    <set_faction_known faction="global.$Factionsglobal.{$i}" known="true" />
+                                    <do_if value="$Sector.count == 0">
+                                        <break />
+                                    </do_if>
+                                    <set_value name="$SectorSelect" exact="$Sector.random" />
+                                    <create_station name="$StationCreated" macro="macro.station_arg_tradestation_base_01_macro" constructionplan="'arg_tradestation'" sector="$SectorSelect" owner="global.$Factionsglobal.{$i}" state="componentstate.operational">
+                                        <safepos min="1km" max="50km" />
+                                    </create_station>
+                                    <remove_from_group group="$Sector" object="$SectorSelect" />
+                                    <set_known object="$StationCreated.cluster" known="true" />
+                                    <set_known object="$StationCreated.sector" known="true" />
+                                    <set_known object="$StationCreated.zone" known="true" />
+                                    <set_known object="$StationCreated" known="true" />
+                                    <debug_to_file text="'$StationCreated ' + $StationCreated.owner" name="'test_faction_life.log'" directory="'factions'" />
+                                </do_all>
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

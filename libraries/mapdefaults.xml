@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Map Defaults
+  This file contains various properties for clusters, sectors, zones etc. to separate balancing data from universe design.
+  Continued from and parsed exactly like defaults.xml -->
+<!-- <defaults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd"> -->
+<diff>
+  <!-- 
+
+
+   -->
+  <add sel="/defaults">
+    <dataset macro="tppirate_cluster_99_macro">
+      <properties>
+        <identification name="Unknown Sector M Alpha" description="{20003,310002}" />
+        <sounds>
+          <music ref="music_cluster_31" />
+        </sounds>
+        <area sunlight="0.99" economy="0.99" security="0.99" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_99_sector001_macro">
+      <properties>
+        <identification name="Unknown Sector M Alpha" description="{20004,310012}" />
+        <sounds>
+          <music ref="music_cluster_31" />
+        </sounds>
+        <area sunlight="0.99" economy="0.99" security="0.99" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_98_macro">
+      <properties>
+        <identification name="Greed's Embrace" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_98_sector001_macro">
+      <properties>
+        <identification name="Greed's Embrace" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_97_macro">
+      <properties>
+        <identification name="Unknown Sector Gamma" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="0.99" economy="0.99" security="0.99" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_97_sector001_macro">
+      <properties>
+        <identification name="Unknown Sector Gamma" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_96_macro">
+      <properties>
+        <identification name="Unknown Sector Beta" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="0.99" economy="0.99" security="0.99" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_96_sector001_macro">
+      <properties>
+        <identification name="Unknown Sector Beta" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_95_macro">
+      <properties>
+        <identification name="Outcome of Persistence" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_95_sector001_macro">
+      <properties>
+        <identification name="Outcome of Persistence" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_94_macro">
+      <properties>
+        <identification name="Ocracoke's Bridge" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_94_sector001_macro">
+      <properties>
+        <identification name="Ocracoke's Bridge" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_93_macro">
+      <properties>
+        <identification name="Bala Gi's Defiance" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_93_sector001_macro">
+      <properties>
+        <identification name="Bala Gi's Defiance" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_92_macro">
+      <properties>
+        <identification name="Olmancketslat's Temptation" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_92_sector001_macro">
+      <properties>
+        <identification name="Olmancketslat's Temptation" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_91_macro">
+      <properties>
+        <identification name="Talent's Leisure" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_91_sector001_macro">
+      <properties>
+        <identification name="Talent's Leisure" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_90_macro">
+      <properties>
+        <identification name="Veil of Destruction" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_90_sector001_macro">
+      <properties>
+        <identification name="Veil of Destruction" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_89_macro">
+      <properties>
+        <identification name="Danna's Anguish" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_89_sector001_macro">
+      <properties>
+        <identification name="Danna's Anguish" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_88_macro">
+      <properties>
+        <identification name="Prime Speculation" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_88_sector001_macro">
+      <properties>
+        <identification name="Prime Speculation" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_87_macro">
+      <properties>
+        <identification name="Farnham's Pride" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_87_sector001_macro">
+      <properties>
+        <identification name="Farnham's Pride" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_86_macro">
+      <properties>
+        <identification name="Roots of Opportunity" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_86_sector001_macro">
+      <properties>
+        <identification name="Roots of Opportunity" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_85_macro">
+      <properties>
+        <identification name="Cheron's Fate" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_85_sector001_macro">
+      <properties>
+        <identification name="Cheron's Fate" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_84_macro">
+      <properties>
+        <identification name="Verdict of Illusion" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_84_sector001_macro">
+      <properties>
+        <identification name="Verdict of Illusion" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_83_macro">
+      <properties>
+        <identification name="Critical Exchange" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_83_sector001_macro">
+      <properties>
+        <identification name="Critical Exchange" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_82_macro">
+      <properties>
+        <identification name="Lost Profits" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_82_sector001_macro">
+      <properties>
+        <identification name="Lost Profits" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_81_macro">
+      <properties>
+        <identification name="Hurricaine of Dominion" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.5" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_81_sector001_macro">
+      <properties>
+        <identification name="Hurricaine of Dominion" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_80_macro">
+      <properties>
+        <identification name="Unknown Sector Epsilon" description="{20003,20002}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.99" security="0.99" />
+      </properties>
+    </dataset>
+    <dataset macro="tppirate_cluster_80_sector001_macro">
+      <properties>
+        <identification name="Unknown Sector Epsilon" description="{20004,20012}" />
+      </properties>
+    </dataset>
+    <dataset macro="meditech_cluster_01_macro">
+      <properties>
+        <identification name="Medi-tech Headquarters" description="{20003,310002}" />
+        <sounds>
+          <music ref="music_cluster_01" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="meditech_cluster_01_sector001_macro">
+      <properties>
+        <identification name="Medi-tech Headquarters" description="{20004,310012}" />
+        <sounds>
+          <music ref="music_cluster_01" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.0" />
+      </properties>
+    </dataset>
+  </add>
+  <!-- more_map%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <add sel="/defaults">
+    <!-- Con4 -->
+    <dataset macro="tpthree_cluster110_macro">
+      <properties>
+        <identification name="{734549,71}" description="{734549,72}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster110_sector001_macro">
+      <properties>
+        <identification name="{734549,71}" description="{734549,72}" />
+      </properties>
+    </dataset>
+    <!-- Con1 -->
+    <dataset macro="tpthree_cluster1217_macro">
+      <properties>
+        <identification name="{734549,117}" description="{734549,118}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1217_sector001_macro">
+      <properties>
+        <identification name="{734549,117}" description="{734549,118}" />
+      </properties>
+    </dataset>
+    <!-- Con3 -->
+    <dataset macro="tpthree_cluster307_macro">
+      <properties>
+        <identification name="{734549,171}" description="{734549,172}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster307_sector001_macro">
+      <properties>
+        <identification name="{734549,171}" description="{734549,172}" />
+      </properties>
+    </dataset>
+    <!-- Con2 -->
+    <dataset macro="tpthree_cluster393_macro">
+      <properties>
+        <identification name="{734549,115}" description="{734549,116}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster393_sector001_macro">
+      <properties>
+        <identification name="{734549,115}" description="{734549,116}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 2 -->
+    <dataset macro="tpthree_cluster029_macro">
+      <properties>
+        <identification name="{734549,85}" description="{734549,86}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster029_sector001_macro">
+      <properties>
+        <identification name="{734549,85}" description="{734549,86}" />
+      </properties>
+    </dataset>
+    <!-- Nexus4Core4 -->
+    <dataset macro="tpthree_cluster035_macro">
+      <properties>
+        <identification name="{734549,65}" description="{734549,66}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster035_sector001_macro">
+      <properties>
+        <identification name="{734549,65}" description="{734549,66}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 6 -->
+    <dataset macro="tpthree_cluster049_macro">
+      <properties>
+        <identification name="{734549,161}" description="{734549,162}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster049_sector001_macro">
+      <properties>
+        <identification name="{734549,161}" description="{734549,162}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest1 -->
+    <dataset macro="tpthree_cluster052_macro">
+      <properties>
+        <identification name="{734549,97}" description="{734549,09}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.01" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster052_sector001_macro">
+      <properties>
+        <identification name="{734549,97}" description="{734549,09}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 7 -->
+    <dataset macro="tpthree_cluster064_macro">
+      <properties>
+        <identification name="{734549,177}" description="{734549,178}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster064_sector001_macro">
+      <properties>
+        <identification name="{734549,177}" description="{734549,178}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 4 -->
+    <dataset macro="tpthree_cluster084_macro">
+      <properties>
+        <identification name="{734549,107}" description="{734549,108}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster084_sector001_macro">
+      <properties>
+        <identification name="{734549,107}" description="{734549,108}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 3 -->
+    <dataset macro="tpthree_cluster085_macro">
+      <properties>
+        <identification name="{734549,103}" description="{734549,104}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster085_sector001_macro">
+      <properties>
+        <identification name="{734549,103}" description="{734549,104}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West 1 -->
+    <dataset macro="tpthree_cluster104_macro">
+      <properties>
+        <identification name="{734549,81}" description="{734549,82}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster104_sector001_macro">
+      <properties>
+        <identification name="{734549,81}" description="{734549,82}" />
+      </properties>
+    </dataset>
+    <!-- Chain South West5 -->
+    <dataset macro="tpthree_cluster105_macro">
+      <properties>
+        <identification name="{734549,151}" description="{734549,152}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster105_sector001_macro">
+      <properties>
+        <identification name="{734549,151}" description="{734549,152}" />
+      </properties>
+    </dataset>
+    <!-- Nexus5Core3 -->
+    <dataset macro="tpthree_cluster142_macro">
+      <properties>
+        <identification name="{734549,57}" description="{734549,58}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster142_sector001_macro">
+      <properties>
+        <identification name="{734549,57}" description="{734549,58}" />
+      </properties>
+    </dataset>
+    <!-- Nexus4Core3 -->
+    <dataset macro="tpthree_cluster143_macro">
+      <properties>
+        <identification name="{734549,83}" description="{734549,84}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.37" security="0.0" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster143_sector001_macro">
+      <properties>
+        <identification name="{734549,83}" description="{734549,84}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest7 -->
+    <dataset macro="tpthree_cluster1158_macro">
+      <properties>
+        <identification name="{734549,193}" description="{734549,194}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1158_sector001_macro">
+      <properties>
+        <identification name="{734549,193}" description="{734549,194}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest2 -->
+    <dataset macro="tpthree_cluster176_macro">
+      <properties>
+        <identification name="{734549,121}" description="{734549,122}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster176_sector001_macro">
+      <properties>
+        <identification name="{734549,121}" description="{734549,122}" />
+      </properties>
+    </dataset>
+    <!-- CHain Left top2 -->
+    <dataset macro="tpthree_cluster177_macro">
+      <properties>
+        <identification name="{734549,89}" description="{734549,90}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster177_sector001_macro">
+      <properties>
+        <identification name="{734549,89}" description="{734549,90}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest4 -->
+    <dataset macro="tpthree_cluster178_macro">
+      <properties>
+        <identification name="{734549,133}" description="{734549,134}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster178_sector001_macro">
+      <properties>
+        <identification name="{734549,133}" description="{734549,134}" />
+      </properties>
+    </dataset>
+    <!-- South Chain2 -->
+    <dataset macro="tpthree_cluster183_macro">
+      <properties>
+        <identification name="{734549,77}" description="{734549,78}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster183_sector001_macro">
+      <properties>
+        <identification name="{734549,77}" description="{734549,78}" />
+      </properties>
+    </dataset>
+    <!-- South Chain2 -->
+    <dataset macro="tpthree_cluster185_macro">
+      <properties>
+        <identification name="{734549,99}" description="{734549,100}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster185_sector001_macro">
+      <properties>
+        <identification name="{734549,99}" description="{734549,100}" />
+      </properties>
+    </dataset>
+    <!-- ToSouthChain -->
+    <dataset macro="tpthree_cluster188_macro">
+      <properties>
+        <identification name="{734549,95}" description="{734549,96}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster188_sector001_macro">
+      <properties>
+        <identification name="{734549,95}" description="{734549,96}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest5 -->
+    <dataset macro="tpthree_cluster195_macro">
+      <properties>
+        <identification name="{734549,167}" description="{734549,168}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster195_sector001_macro">
+      <properties>
+        <identification name="{734549,167}" description="{734549,168}" />
+      </properties>
+    </dataset>
+    <!--NorthChainWest3  -->
+    <dataset macro="tpthree_cluster196_macro">
+      <properties>
+        <identification name="{734549,131}" description="{734549,132}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster196_sector001_macro">
+      <properties>
+        <identification name="{734549,131}" description="{734549,132}" />
+      </properties>
+    </dataset>
+    <!-- ChainRightEast1 -->
+    <dataset macro="tpthree_cluster203_macro">
+      <properties>
+        <identification name="{734549,73}" description="{734549,74}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster203_sector001_macro">
+      <properties>
+        <identification name="{734549,73}" description="{734549,74}" />
+      </properties>
+    </dataset>
+    <!-- South Chain4  -->
+    <dataset macro="tpthree_cluster204_macro">
+      <properties>
+        <identification name="{734549,137}" description="{734549,138}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster204_sector001_macro">
+      <properties>
+        <identification name="{734549,137}" description="{734549,138}" />
+      </properties>
+    </dataset>
+    <!-- South Chain3 -->
+    <dataset macro="tpthree_cluster205_macro">
+      <properties>
+        <identification name="{734549,101}" description="{734549,102}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster205_sector001_macro">
+      <properties>
+        <identification name="{734549,101}" description="{734549,102}" />
+      </properties>
+    </dataset>
+    <!-- Middle Connection to NorthSouthChain1 -->
+    <dataset macro="tpthree_cluster210_macro">
+      <properties>
+        <identification name="{734549,191}" description="{734549,192}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster210_sector001_macro">
+      <properties>
+        <identification name="{734549,191}" description="{734549,192}" />
+      </properties>
+    </dataset>
+    <!-- NorthChainWest6 -->
+    <dataset macro="tpthree_cluster215_macro">
+      <properties>
+        <identification name="{734549,169}" description="{734549,170}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster215_sector001_macro">
+      <properties>
+        <identification name="{734549,169}" description="{734549,170}" />
+      </properties>
+    </dataset>
+    <!-- Nexus2Core1 -->
+    <dataset macro="tpthree_cluster217_macro">
+      <properties>
+        <identification name="{734549,35}" description="{734549,36}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster217_sector001_macro">
+      <properties>
+        <identification name="{734549,35}" description="{734549,36}" />
+      </properties>
+    </dataset>
+    <!-- ChainRightEast3 -->
+    <dataset macro="tpthree_cluster1220_macro">
+      <properties>
+        <identification name="{734549,105}" description="{734549,106}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1220_sector001_macro">
+      <properties>
+        <identification name="{734549,105}" description="{734549,106}" />
+      </properties>
+    </dataset>
+    <!-- Vanilla Con -->
+    <dataset macro="tpthree_cluster227_macro">
+      <properties>
+        <identification name="{734549,149}" description="{734549,150}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster227_sector001_macro">
+      <properties>
+        <identification name="{734549,149}" description="{734549,150}" />
+      </properties>
+    </dataset>
+    <!-- ChainTOP4 -->
+    <dataset macro="tpthree_cluster234_macro">
+      <properties>
+        <identification name="{734549,173}" description="{734549,174}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.42" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster234_sector001_macro">
+      <properties>
+        <identification name="{734549,173}" description="{734549,174}" />
+      </properties>
+    </dataset>
+    <!-- SouthEastChain2 -->
+    <dataset macro="tpthree_cluster1240_macro">
+      <properties>
+        <identification name="{734549,185}" description="{734549,186}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1240_sector001_macro">
+      <properties>
+        <identification name="{734549,185}" description="{734549,186}" />
+      </properties>
+    </dataset>
+    <!-- SOUTHMOSTPOINT -->
+    <dataset macro="tpthree_cluster259_macro">
+      <properties>
+        <identification name="{734549,125}" description="{734549,126}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster259_sector001_macro">
+      <properties>
+        <identification name="{734549,125}" description="{734549,126}" />
+      </properties>
+    </dataset>
+    <!-- SouthEastChain1 -->
+    <dataset macro="tpthree_cluster1260_macro">
+      <properties>
+        <identification name="{734549,91}" description="{734549,92}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.01" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1260_sector001_macro">
+      <properties>
+        <identification name="{734549,91}" description="{734549,92}" />
+      </properties>
+    </dataset>
+    <!-- NorthSouthChain2 -->
+    <dataset macro="tpthree_cluster1273_macro">
+      <properties>
+        <identification name="{734549,127}" description="{734549,128}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.01" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1273_sector001_macro">
+      <properties>
+        <identification name="{734549,127}" description="{734549,128}" />
+      </properties>
+    </dataset>
+    <!-- ChainTOP2 -->
+    <dataset macro="tpthree_cluster274_macro">
+      <properties>
+        <identification name="{734549,109}" description="{734549,110}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.01" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster274_sector001_macro">
+      <properties>
+        <identification name="{734549,109}" description="{734549,110}" />
+      </properties>
+    </dataset>
+    <!-- Center Con to nowhere  -->
+    <dataset macro="tpthree_cluster289_macro">
+      <properties>
+        <identification name="{734549,79}" description="{734549,80}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster289_sector001_macro">
+      <properties>
+        <identification name="{734549,79}" description="{734549,80}" />
+      </properties>
+    </dataset>
+    <!-- NorthSouthChain3 -->
+    <dataset macro="tpthree_cluster1292_macro">
+      <properties>
+        <identification name="{734549,157}" description="{734549,158}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster1292_sector001_macro">
+      <properties>
+        <identification name="{734549,157}" description="{734549,158}" />
+      </properties>
+    </dataset>
+    <!-- NorthSouthChain4 -->
+    <dataset macro="tpthree_cluster293_macro">
+      <properties>
+        <identification name="{734549,179}" description="{734549,180}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster293_sector001_macro">
+      <properties>
+        <identification name="{734549,179}" description="{734549,180}" />
+      </properties>
+    </dataset>
+    <!-- ChainTOP3 -->
+    <dataset macro="tpthree_cluster295_macro">
+      <properties>
+        <identification name="{734549,145}" description="{734549,146}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.45" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster295_sector001_macro">
+      <properties>
+        <identification name="{734549,145}" description="{734549,146}" />
+      </properties>
+    </dataset>
+    <!-- ChainTOP5 -->
+    <dataset macro="tpthree_cluster296_macro">
+      <properties>
+        <identification name="{734549,175}" description="{734549,176}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.41" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster296_sector001_macro">
+      <properties>
+        <identification name="{734549,175}" description="{734549,176}" />
+      </properties>
+    </dataset>
+    <!-- ChainTOP1 -->
+    <dataset macro="tpthree_cluster314_macro">
+      <properties>
+        <identification name="{734549,69}" description="{734549,70}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.4" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster314_sector001_macro">
+      <properties>
+        <identification name="{734549,69}" description="{734549,70}" />
+      </properties>
+    </dataset>
+    <!-- NorthSouthChain1 -->
+    <dataset macro="tpthree_cluster331_macro">
+      <properties>
+        <identification name="{734549,93}" description="{734549,94}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.01" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster331_sector001_macro">
+      <properties>
+        <identification name="{734549,93}" description="{734549,94}" />
+      </properties>
+    </dataset>
+    <!-- Nexus5Core1 -->
+    <dataset macro="tpthree_cluster371_macro">
+      <properties>
+        <identification name="{734549,41}" description="{734549,42}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster371_sector001_macro">
+      <properties>
+        <identification name="{734549,41}" description="{734549,42}" />
+      </properties>
+    </dataset>
+    <!-- ChainRightEast2  -->
+    <dataset macro="tpthree_cluster384_macro">
+      <properties>
+        <identification name="{734549,75}" description="{734549,76}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster384_sector001_macro">
+      <properties>
+        <identification name="{734549,75}" description="{734549,76}" />
+      </properties>
+    </dataset>
+    <!-- Nexus4Core1 -->
+    <dataset macro="tpthree_cluster390_macro">
+      <properties>
+        <identification name="{734549,39}" description="{734549,40}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster390_sector001_macro">
+      <properties>
+        <identification name="{734549,39}" description="{734549,40}" />
+      </properties>
+    </dataset>
+    <!-- Core4 -->
+    <dataset macro="tpthree_cluster050_macro">
+      <properties>
+        <identification name="{734549,7}" description="{734549,8}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.99" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster050_sector001_macro">
+      <properties>
+        <identification name="{734549,7}" description="{734549,8}" />
+      </properties>
+    </dataset>
+    <!-- Border1Core4 -->
+    <dataset macro="tpthree_cluster051_macro">
+      <properties>
+        <identification name="{734549,27}" description="{734549,28}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster051_sector001_macro">
+      <properties>
+        <identification name="{734549,27}" description="{734549,28}" />
+      </properties>
+    </dataset>
+    <!-- Border3Core4 -->
+    <dataset macro="tpthree_cluster069_macro">
+      <properties>
+        <identification name="{734549,31}" description="{734549,32}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster069_sector001_macro">
+      <properties>
+        <identification name="{734549,31}" description="{734549,32}" />
+      </properties>
+    </dataset>
+    <!-- Border2Core4 -->
+    <dataset macro="tpthree_cluster070_macro">
+      <properties>
+        <identification name="{734549,29}" description="{734549,30}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster070_sector001_macro">
+      <properties>
+        <identification name="{734549,29}" description="{734549,30}" />
+      </properties>
+    </dataset>
+    <!-- Border1Core3 -->
+    <dataset macro="tpthree_cluster145_macro">
+      <properties>
+        <identification name="{734549,21}" description="{734549,22}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster145_sector001_macro">
+      <properties>
+        <identification name="{734549,21}" description="{734549,22}" />
+      </properties>
+    </dataset>
+    <!-- Core3 -->
+    <dataset macro="tpthree_cluster165_macro">
+      <properties>
+        <identification name="{734549,5}" description="{734549,6}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.99" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster165_sector001_macro">
+      <properties>
+        <identification name="{734549,5}" description="{734549,6}" />
+      </properties>
+    </dataset>
+    <!-- Border2Core3 -->
+    <dataset macro="tpthree_cluster166_macro">
+      <properties>
+        <identification name="{734549,23}" description="{734549,24}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster166_sector001_macro">
+      <properties>
+        <identification name="{734549,23}" description="{734549,24}" />
+      </properties>
+    </dataset>
+    <!-- Border3Core3 -->
+    <dataset macro="tpthree_cluster184_macro">
+      <properties>
+        <identification name="{734549,25}" description="{734549,26}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster184_sector001_macro">
+      <properties>
+        <identification name="{734549,25}" description="{734549,26}" />
+      </properties>
+    </dataset>
+    <!-- Border3Core1 -->
+    <dataset macro="tpthree_cluster197_macro">
+      <properties>
+        <identification name="{734549,13}" description="{734549,14}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster197_sector001_macro">
+      <properties>
+        <identification name="{734549,13}" description="{734549,14}" />
+      </properties>
+    </dataset>
+    <!-- Core1 -->
+    <dataset macro="tpthree_cluster216_macro">
+      <properties>
+        <identification name="{734549,1}" description="{734549,2}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.99" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster216_sector001_macro">
+      <properties>
+        <identification name="{734549,1}" description="{734549,2}" />
+      </properties>
+    </dataset>
+    <!-- Border2Core1 -->
+    <dataset macro="tpthree_cluster235_macro">
+      <properties>
+        <identification name="{734549,11}" description="{734549,12}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster235_sector001_macro">
+      <properties>
+        <identification name="{734549,11}" description="{734549,12}" />
+      </properties>
+    </dataset>
+    <!-- Border1Core1 -->
+    <dataset macro="tpthree_cluster236_macro">
+      <properties>
+        <identification name="{734549,9}" description="{734549,10}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster236_sector001_macro">
+      <properties>
+        <identification name="{734549,9}" description="{734549,10}" />
+      </properties>
+    </dataset>
+    <!-- Border2Core2 -->
+    <dataset macro="tpthree_cluster343_macro">
+      <properties>
+        <identification name="{734549,17}" description="{734549,18}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster343_sector001_macro">
+      <properties>
+        <identification name="{734549,17}" description="{734549,18}" />
+      </properties>
+    </dataset>
+    <!-- Border3Core2 -->
+    <dataset macro="tpthree_cluster363_macro">
+      <properties>
+        <identification name="{734549,19}" description="{734549,20}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster363_sector001_macro">
+      <properties>
+        <identification name="{734549,19}" description="{734549,20}" />
+      </properties>
+    </dataset>
+    <!-- Core2  -->
+    <dataset macro="tpthree_cluster364_macro">
+      <properties>
+        <identification name="{734549,3}" description="{734549,4}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.99" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster364_sector001_macro">
+      <properties>
+        <identification name="{734549,3}" description="{734549,4}" />
+      </properties>
+    </dataset>
+    <!-- Border1Core2 -->
+    <dataset macro="tpthree_cluster365_macro">
+      <properties>
+        <identification name="{734549,15}" description="{734549,16}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="1" security="1" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster365_sector001_macro">
+      <properties>
+        <identification name="{734549,15}" description="{734549,16}" />
+      </properties>
+    </dataset>
+    <!-- Nexus2Core4 -->
+    <dataset macro="tpthree_cluster011_macro">
+      <properties>
+        <identification name="{734549,61}" description="{734549,62}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster011_sector001_macro">
+      <properties>
+        <identification name="{734549,61}" description="{734549,62}" />
+      </properties>
+    </dataset>
+    <!-- Nexus3Core4 -->
+    <dataset macro="tpthree_cluster030_macro">
+      <properties>
+        <identification name="{734549,63}" description="{734549,64}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster030_sector001_macro">
+      <properties>
+        <identification name="{734549,63}" description="{734549,64}" />
+      </properties>
+    </dataset>
+    <!-- Nexus1Core4 -->
+    <dataset macro="tpthree_cluster031_macro">
+      <properties>
+        <identification name="{734549,59}" description="{734549,60}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster031_sector001_macro">
+      <properties>
+        <identification name="{734549,59}" description="{734549,60}" />
+      </properties>
+    </dataset>
+    <!-- Nexus1Core3 -->
+    <dataset macro="tpthree_cluster140_macro">
+      <properties>
+        <identification name="{734549,49}" description="{734549,50}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster140_sector001_macro">
+      <properties>
+        <identification name="{734549,49}" description="{734549,50}" />
+      </properties>
+    </dataset>
+    <!-- Nexus3Core3 -->
+    <dataset macro="tpthree_cluster158_macro">
+      <properties>
+        <identification name="{734549,53}" description="{734549,54}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster158_sector001_macro">
+      <properties>
+        <identification name="{734549,53}" description="{734549,54}" />
+      </properties>
+    </dataset>
+    <!-- Nexus2Core3 -->
+    <dataset macro="tpthree_cluster159_macro">
+      <properties>
+        <identification name="{734549,51}" description="{734549,52}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster159_sector001_macro">
+      <properties>
+        <identification name="{734549,51}" description="{734549,52}" />
+      </properties>
+    </dataset>
+    <!-- Nexus3Core1 -->
+    <dataset macro="tpthree_cluster189_macro">
+      <properties>
+        <identification name="{734549,37}" description="{734549,38}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster189_sector001_macro">
+      <properties>
+        <identification name="{734549,37}" description="{734549,38}" />
+      </properties>
+    </dataset>
+    <!-- Nexus1Core1 -->
+    <dataset macro="tpthree_cluster225_macro">
+      <properties>
+        <identification name="{734549,33}" description="{734549,34}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster225_sector001_macro">
+      <properties>
+        <identification name="{734549,33}" description="{734549,34}" />
+      </properties>
+    </dataset>
+    <!-- Nexus3Core2 -->
+    <dataset macro="tpthree_cluster349_macro">
+      <properties>
+        <identification name="{734549,47}" description="{734549,48}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster349_sector001_macro">
+      <properties>
+        <identification name="{734549,47}" description="{734549,48}" />
+      </properties>
+    </dataset>
+    <!-- Nexus2Core2 -->
+    <dataset macro="tpthree_cluster366_macro">
+      <properties>
+        <identification name="{734549,45}" description="{734549,46}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster366_sector001_macro">
+      <properties>
+        <identification name="{734549,45}" description="{734549,46}" />
+      </properties>
+    </dataset>
+    <!-- Nexus1Core2 -->
+    <dataset macro="tpthree_cluster367_macro">
+      <properties>
+        <identification name="{734549,43}" description="{734549,44}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.75" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster367_sector001_macro">
+      <properties>
+        <identification name="{734549,43}" description="{734549,44}" />
+      </properties>
+    </dataset>
+    <!-- Chain4Group3 -->
+    <dataset macro="tpthree_cluster044_macro">
+      <properties>
+        <identification name="{734549,87}" description="{734549,88}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.63" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster044_sector001_macro">
+      <properties>
+        <identification name="{734549,87}" description="{734549,8}" />
+      </properties>
+    </dataset>
+    <!-- Chain5Group3 -->
+    <dataset macro="tpthree_cluster060_macro">
+      <properties>
+        <identification name="{734549,147}" description="{734549,148}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.65" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster060_sector001_macro">
+      <properties>
+        <identification name="{734549,147}" description="{734549,148}" />
+      </properties>
+    </dataset>
+    <!-- Chain1Group3 -->
+    <dataset macro="tpthree_cluster061_macro">
+      <properties>
+        <identification name="{734549,183}" description="{734549,184}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.62" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster061_sector001_macro">
+      <properties>
+        <identification name="{734549,183}" description="{734549,184}" />
+      </properties>
+    </dataset>
+    <!-- Chain3Group3 -->
+    <dataset macro="tpthree_cluster062_macro">
+      <properties>
+        <identification name="{734549,181}" description="{734549,182}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.64" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster062_sector001_macro">
+      <properties>
+        <identification name="{734549,181}" description="{734549,182}" />
+      </properties>
+    </dataset>
+    <!-- Chain6Group3 -->
+    <dataset macro="tpthree_cluster079_macro">
+      <properties>
+        <identification name="{734549,165}" description="{734549,166}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.67" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster079_sector001_macro">
+      <properties>
+        <identification name="{734549,165}" description="{734549,166}" />
+      </properties>
+    </dataset>
+    <!-- Chain2Group3 -->
+    <dataset macro="tpthree_cluster080_macro">
+      <properties>
+        <identification name="{734549,135}" description="{734549,136}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.62" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster080_sector001_macro">
+      <properties>
+        <identification name="{734549,135}" description="{734549,136}" />
+      </properties>
+    </dataset>
+    <!-- Chain8Group2 -->
+    <dataset macro="tpthree_cluster220_macro">
+      <properties>
+        <identification name="{734549,123}" description="{734549,124}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.51" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster220_sector001_macro">
+      <properties>
+        <identification name="{734549,123}" description="{734549,124}" />
+      </properties>
+    </dataset>
+    <!-- Chain5Group2 -->
+    <dataset macro="tpthree_cluster221_macro">
+      <properties>
+        <identification name="{734549,153}" description="{734549,154}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.56" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster221_sector001_macro">
+      <properties>
+        <identification name="{734549,153}" description="{734549,154}" />
+      </properties>
+    </dataset>
+    <!-- Chain4Group2 -->
+    <dataset macro="tpthree_cluster240_macro">
+      <properties>
+        <identification name="{734549,189}" description="{734549,190}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.55" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster240_sector001_macro">
+      <properties>
+        <identification name="{734549,189}" description="{734549,190}" />
+      </properties>
+    </dataset>
+    <!-- Chain3Group2 -->
+    <dataset macro="tpthree_cluster241_macro">
+      <properties>
+        <identification name="{734549,163}" description="{734549,164}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.54" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster241_sector001_macro">
+      <properties>
+        <identification name="{734549,163}" description="{734549,164}" />
+      </properties>
+    </dataset>
+    <!-- Chain7Group2 -->
+    <dataset macro="tpthree_cluster260_macro">
+      <properties>
+        <identification name="{734549,141}" description="{734549,142}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.58" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster260_sector001_macro">
+      <properties>
+        <identification name="{734549,141}" description="{734549,142}" />
+      </properties>
+    </dataset>
+    <!-- Chain6Group2 -->
+    <dataset macro="tpthree_cluster261_macro">
+      <properties>
+        <identification name="{734549,113}" description="{734549,114}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.55" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster261_sector001_macro">
+      <properties>
+        <identification name="{734549,113}" description="{734549,114}" />
+      </properties>
+    </dataset>
+    <!-- Chain2Group2 -->
+    <dataset macro="tpthree_cluster262_macro">
+      <properties>
+        <identification name="{734549,139}" description="{734549,140}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.53" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster262_sector001_macro">
+      <properties>
+        <identification name="{734549,139}" description="{734549,140}" />
+      </properties>
+    </dataset>
+    <!-- Chain1Group1 -->
+    <dataset macro="tpthree_cluster273_macro">
+      <properties>
+        <identification name="{734549,111}" description="{734549,112}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.31" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster273_sector001_macro">
+      <properties>
+        <identification name="{734549,111}" description="{734549,112}" />
+      </properties>
+    </dataset>
+    <!-- Chain1Group2 -->
+    <dataset macro="tpthree_cluster281_macro">
+      <properties>
+        <identification name="{734549,143}" description="{734549,144}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.52" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster281_sector001_macro">
+      <properties>
+        <identification name="{734549,143}" description="{734549,144}" />
+      </properties>
+    </dataset>
+    <!-- Chain6Group1 -->
+    <dataset macro="tpthree_cluster290_macro">
+      <properties>
+        <identification name="{734549,67}" description="{734549,68}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.36" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster290_sector001_macro">
+      <properties>
+        <identification name="{734549,67}" description="{734549,68}" />
+      </properties>
+    </dataset>
+    <!-- Chain5Group1 -->
+    <dataset macro="tpthree_cluster291_macro">
+      <properties>
+        <identification name="{734549,159}" description="{734549,160}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.35" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster291_sector001_macro">
+      <properties>
+        <identification name="{734549,159}" description="{734549,160}" />
+      </properties>
+    </dataset>
+    <!-- Chain2Group1 -->
+    <dataset macro="tpthree_cluster292_macro">
+      <properties>
+        <identification name="{734549,155}" description="{734549,156}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.32" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster292_sector001_macro">
+      <properties>
+        <identification name="{734549,155}" description="{734549,156}" />
+      </properties>
+    </dataset>
+    <!-- Chain4Group1 -->
+    <dataset macro="tpthree_cluster311_macro">
+      <properties>
+        <identification name="{734549,187}" description="{734549,188}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.34" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster311_sector001_macro">
+      <properties>
+        <identification name="{734549,187}" description="{734549,188}" />
+      </properties>
+    </dataset>
+    <!-- Chain3Group1 -->
+    <dataset macro="tpthree_cluster312_macro">
+      <properties>
+        <identification name="{734549,119}" description="{734549,120}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.33" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster312_sector001_macro">
+      <properties>
+        <identification name="{734549,119}" description="{734549,120}" />
+      </properties>
+    </dataset>
+    <!-- Chain7Group1 -->
+    <dataset macro="tpthree_cluster330_macro">
+      <properties>
+        <identification name="{734549,129}" description="{734549,130}" />
+        <sounds>
+          <music ref="music_cluster_02" />
+        </sounds>
+        <area sunlight="1" economy="0.75" security="0.37" />
+      </properties>
+    </dataset>
+    <dataset macro="tpthree_cluster330_sector001_macro">
+      <properties>
+        <identification name="{734549,129}" description="{734549,130}" />
+      </properties>
+    </dataset>
+  </add>
+</diff>

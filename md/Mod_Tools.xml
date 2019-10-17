@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Mod_Tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4 extract 2.5b1/libraries/md.xsd">
+    <cues>
+        <!-- 
+        
+        
+        
+         -->
+        <cue name="Mod_Tools_Init" instantiate="true">
+            <conditions>
+                <!-- <event_long_range_scan_sent object="player.entity" /> -->
+                <!-- <event_player_activated_weapongroup weapongroup="3"/> -->
+                <!-- <event_game_loaded /> -->
+
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+          
+
+           
+                <!-- INVENTORY -->
+                <add_inventory ware="ware.modpart_enginefuelinjector_t1" entity="player.entity" exact="5" />
+                <!-- CARGO -->
+                <!-- <add_cargo object="player.ship" ware="ware.antimattercells" exact="10"/> -->
+                <!-- RELATION | Yes, I know the xsd doesnt like it. The xsd is fucking wrong-->
+                <add_faction_relation faction="faction.player" otherfaction="faction.argon" value="30" />
+                <!-- LICENSE -->
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="ceremonyally" />
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="capitalship" />
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="capitalequipment" />
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="militaryequipment" />
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="militaryship" />
+                <add_licence faction="faction.player" licencefaction="faction.argon" type="capitalship" />
+                <!-- RESEARCH -->
+                <set_value name="player.entity.$x4ep1_hq_research_unlocked" />
+                <add_research ware="ware.research_module_build" />
+                <add_research ware="ware.research_module_defence" />
+                <add_research ware="ware.research_module_dock" />
+                <add_research ware="ware.research_module_habitation" />
+                <add_research ware="ware.research_module_production" />
+                <add_research ware="ware.research_module_storage" />
+                <add_research ware="ware.research_module_venture" />
+                <add_research ware="ware.research_mod_engine_mk1" />
+                <add_research ware="ware.research_mod_engine_mk2" />
+                <add_research ware="ware.research_mod_engine_mk3" />
+                <add_research ware="ware.research_mod_shield_mk1" />
+                <add_research ware="ware.research_mod_shield_mk2" />
+                <add_research ware="ware.research_mod_shield_mk3" />
+                <add_research ware="ware.research_mod_ship_mk1" />
+                <add_research ware="ware.research_mod_ship_mk2" />
+                <add_research ware="ware.research_mod_ship_mk3" />
+                <add_research ware="ware.research_mod_weapon_mk1" />
+                <add_research ware="ware.research_mod_weapon_mk2" />
+                <add_research ware="ware.research_mod_weapon_mk3" />
+                <add_research ware="ware.research_radioreceiver" />
+                <add_research ware="ware.research_sensorbooster" />
+                <add_research ware="ware.research_teleportation" />
+                <add_research ware="ware.research_teleportation_range_01" />
+                <add_research ware="ware.research_teleportation_range_02" />
+                <add_research ware="ware.research_teleportation_range_03" />
+                <!-- BLUEPRINT -->
+                <create_list name="$AllPrintList" />
+                <append_to_list name="$AllPrintList" exact="ware.advancedcomposites" />
+                <append_to_list name="$AllPrintList" exact="ware.advancedelectronics" />
+                <append_to_list name="$AllPrintList" exact="ware.antimattercells" />
+                <append_to_list name="$AllPrintList" exact="ware.antimatterconverters" />
+                <append_to_list name="$AllPrintList" exact="ware.bomb_player_limpet_emp_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.bomb_player_limpet_mine_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.claytronics" />
+                <append_to_list name="$AllPrintList" exact="ware.clothingmod_0001" />
+                <append_to_list name="$AllPrintList" exact="ware.clothingmod_0002" />
+                <append_to_list name="$AllPrintList" exact="ware.countermeasure_flares_01" />
+                <append_to_list name="$AllPrintList" exact="ware.crew" />
+                <append_to_list name="$AllPrintList" exact="ware.dronecomponents" />
+                <append_to_list name="$AllPrintList" exact="ware.energycells" />
+                <append_to_list name="$AllPrintList" exact="ware.engineparts" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_l_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_l_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_m_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_s_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_xl_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_arg_xl_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_gen_spacesuit_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_gen_spacesuit_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_l_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_l_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_m_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_s_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_xl_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_par_xl_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_l_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_l_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_m_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_travel_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_s_travel_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_xl_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_tel_xl_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_xen_l_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_xen_m_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_xen_m_travel_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_xen_s_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.engine_xen_xl_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.fieldcoils" />
+                <append_to_list name="$AllPrintList" exact="ware.foodrations" />
+                <append_to_list name="$AllPrintList" exact="ware.graphene" />
+                <append_to_list name="$AllPrintList" exact="ware.helium" />
+                <append_to_list name="$AllPrintList" exact="ware.hullparts" />
+                <append_to_list name="$AllPrintList" exact="ware.hydrogen" />
+                <append_to_list name="$AllPrintList" exact="ware.ice" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_advancedtargetingmodule" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_agidevice_01" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_agidevice_02" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_agidevice_03" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_algaescrubber" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_argnusteak" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_bandages" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_carbonfilter" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystalbit" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystal_01" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystal_02" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystal_03" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystal_04" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_crystal_05" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_damagedsingularityengine" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_decryptionmodule" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_digitalseminar_boarding" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_digitalseminar_engineering" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_digitalseminar_management" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_digitalseminar_morale" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_digitalseminar_piloting" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_electronics" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_familyheirloom" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_finemeal" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_firstaidkit" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_fluxcapacitor" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_hallucinogenics" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_harddrug_01" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_herbicide" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_hydraulicpump" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_interfaceunit" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_kyondevice_01" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_kyondevice_02" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_kyondevice_03" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_magneticmaterial" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_majaglit" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_microgimble" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_micromotor" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_mixedfruit" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_modulartrigger" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_needle" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_preciousring" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_pricelessart" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_programmablefieldarray" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_rapidsandfilter" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_rarespices" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_remotedetonator" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_salvagedelectronics" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_securecontainer" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_securitybypasssystem" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_securitydecryptionsystem" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_securityslicer" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_sedative" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_sensitivedatapacket" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_spaceflycaviar" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_spaceflyeggs" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_timewarp" />
+                <append_to_list name="$AllPrintList" exact="ware.inv_unstablecrystal" />
+                <append_to_list name="$AllPrintList" exact="ware.majadust" />
+                <append_to_list name="$AllPrintList" exact="ware.majasnails" />
+                <!-- <append_to_list name="$AllPrintList" exact="ware.marine_argon_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.marine_argon_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.marine_argon_mk3" /> -->
+                <append_to_list name="$AllPrintList" exact="ware.meat" />
+                <append_to_list name="$AllPrintList" exact="ware.medicalsupplies" />
+                <append_to_list name="$AllPrintList" exact="ware.methane" />
+                <append_to_list name="$AllPrintList" exact="ware.microchips" />
+                <append_to_list name="$AllPrintList" exact="ware.missilecomponents" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_cluster_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_cluster_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_dumbfire_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_dumbfire_heavy_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_dumbfire_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_dumbfire_light_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_emp_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_guided_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_guided_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_heatseeker_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_heatseeker_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_smart_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_smart_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_swarm_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_swarm_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_torpedo_heavy_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.missile_torpedo_light_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_enginefuelinjector_t1" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_enginefuelinjector_t2" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_enginefuelinjector_t3" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_extendedfuelcontainer" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_highenergycatalyst" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_nividiumcrystallite" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_nividiumoxide" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shieldgeneratorcoil_t1" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shieldgeneratorcoil_t2" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shieldgeneratorcoil_t3" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shipnanoweave_t1" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shipnanoweave_t2" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_shipnanoweave_t3" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_tuningsoftware" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_weaponchamber_t1" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_weaponchamber_t2" />
+                <append_to_list name="$AllPrintList" exact="ware.modpart_weaponchamber_t3" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_base_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_base_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_base_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_cross_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_vertical_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_conn_vertical_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_def_claim_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_def_disc_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_def_tube_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_01_hightech" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_01_lowtech" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_02_hightech" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_m_02_lowtech" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_dock_tradestation_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_hab_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_hab_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_hab_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_pier_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_pier_l_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_pier_l_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_pier_tradestation_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_prod_foodrations_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_prod_meat_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_prod_medicalsupplies_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_prod_spacefuel_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_prod_wheat_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_container_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_container_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_container_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_liquid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_liquid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_liquid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_solid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_solid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_solid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_arg_stor_tradestation_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_build_dockarea_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_build_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_build_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_build_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_build_xl_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturerbase_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturerbase_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturerbase_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturercross_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturervertical_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_conn_venturervertical_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_dock_m_venturer_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_dock_xl_venturer_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_equip_dockarea_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_equip_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_equip_xl_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_advancedcomposites_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_advancedelectronics_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_antimattercells_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_antimatterconverters_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_claytronics_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_dronecomponents_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_energycells_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_engineparts_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_fieldcoils_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_graphene_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_hullparts_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_microchips_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_missilecomponents_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_plasmaconductors_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_quantumtubes_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_refinedmetals_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_scanningarrays_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_shieldcomponents_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_siliconwafers_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_smartchips_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_spices_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_superfluidcoolant_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_turretcomponents_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_water_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_prod_weaponcomponents_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_gen_ventureplatform_cross_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_base_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_base_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_base_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_cross_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_cross_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_cross_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_vertical_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_conn_vertical_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_def_claim_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_def_disc_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_def_tube_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_hab_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_hab_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_hab_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_pier_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_pier_l_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_pier_l_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_prod_majadust_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_prod_majasnails_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_prod_medicalsupplies_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_prod_sojabeans_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_prod_sojahusk_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_container_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_container_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_container_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_landmark_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_liquid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_liquid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_liquid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_solid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_solid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_par_stor_solid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_player_prod_hq_01_macro" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_base_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_base_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_base_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_cross_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_vertical_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_conn_vertical_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_def_claim_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_def_disc_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_def_tube_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_hab_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_hab_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_hab_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_pier_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_pier_l_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_pier_l_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_advancedcomposites_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_engineparts_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_hullparts_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_medicalsupplies_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_nostropoil_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_scanningarrays_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_spaceweed_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_sunriseflowers_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_swampplant_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_prod_teladianium_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_container_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_container_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_container_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_liquid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_liquid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_liquid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_solid_l_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_solid_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_stor_solid_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_bridge_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_centercylinder_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_centerfill_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_column_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_column_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_inside_ring_03" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_radar_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_conn_ring_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_centerend_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_center_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_extension_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_ringcenter_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_ringclamp_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_def_ringclamp_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_dock_m_dockarea_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_hab_inside_ring_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_hab_inside_ring_02" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_pier_tradelocation_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_stor_storage_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_tel_tradestation_stor_storage_ring_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_build_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_build_s_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_build_xl_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_def_base_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_dock_m_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_prod_energycells_01" />
+                <append_to_list name="$AllPrintList" exact="ware.module_xen_stor_01" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostduration_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostthrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostthrust_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostthrust_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostthrust_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_boostthrust_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_forwardthrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_forwardthrust_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_forwardthrust_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_forwardthrust_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_forwardthrust_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_rotationthrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_rotationthrust_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_rotationthrust_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_strafethrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_strafethrust_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelattacktime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelchargetime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelreleasetime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelstartthrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelthrust_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelthrust_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelthrust_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelthrust_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_engine_travelthrust_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_capacity_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_capacity_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_capacity_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_capacity_02_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_rechargedelay_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_rechargerate_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_rechargerate_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_shield_rechargerate_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_countermeasurecapacity_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_deployablecapacity_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_drag_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_drag_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_mass_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_mass_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_mass_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_maxhull_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_missilecapacity_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_radarrange_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_ship_unitcapacity_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_beamlength_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_chargetime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_03_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_03_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_04_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_cooling_05_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_02_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_03_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_03_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_04_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_damage_05_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_lifetime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_mining_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_reload_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_rotationspeed_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_speed_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_speed_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_sticktime_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_sticktime_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_sticktime_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.mod_weapon_sticktime_03_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.nividium" />
+                <append_to_list name="$AllPrintList" exact="ware.nividiumgems" />
+                <append_to_list name="$AllPrintList" exact="ware.nostropoil" />
+                <append_to_list name="$AllPrintList" exact="ware.ore" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0001" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0002" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0003" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0004" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0005" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0006" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0007" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0008" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0009" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0010" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0011" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0012" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0013" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0014" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0015" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0016" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0017" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0018" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0019" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0020" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0021" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0022" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0023" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0024" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0025" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0026" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0027" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0028" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0029" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0030" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0031" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0032" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0033" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0034" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0035" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0036" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0037" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0038" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0039" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0040" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0041" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0042" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0043" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0044" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0045" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0046" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0047" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0048" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0049" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0050" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0051" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0052" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0053" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0054" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0055" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0056" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0057" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0058" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0059" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0060" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0061" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0062" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0063" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0064" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0065" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0066" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0067" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0068" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0069" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0070" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0071" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0072" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0073" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0074" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0075" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0076" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0077" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0078" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0079" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0080" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0081" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0082" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0083" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0084" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0085" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0086" />
+                <append_to_list name="$AllPrintList" exact="ware.paintmod_0087" />
+                <append_to_list name="$AllPrintList" exact="ware.plasmaconductors" />
+                <append_to_list name="$AllPrintList" exact="ware.quantumtubes" />
+                <append_to_list name="$AllPrintList" exact="ware.refinedmetals" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_build" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_defence" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_dock" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_habitation" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_production" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_storage" />
+                <append_to_list name="$AllPrintList" exact="ware.research_module_venture" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_engine_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_engine_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_engine_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_shield_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_shield_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_shield_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_ship_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_ship_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_ship_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_weapon_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_weapon_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.research_mod_weapon_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.research_radioreceiver" />
+                <append_to_list name="$AllPrintList" exact="ware.research_sensorbooster" />
+                <append_to_list name="$AllPrintList" exact="ware.research_teleportation" />
+                <append_to_list name="$AllPrintList" exact="ware.research_teleportation_range_01" />
+                <append_to_list name="$AllPrintList" exact="ware.research_teleportation_range_02" />
+                <append_to_list name="$AllPrintList" exact="ware.research_teleportation_range_03" />
+                <append_to_list name="$AllPrintList" exact="ware.research_tradeinterface" />
+                <append_to_list name="$AllPrintList" exact="ware.resourceprobe_01" />
+                <append_to_list name="$AllPrintList" exact="ware.satellite_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.satellite_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.scanningarrays" />
+                <append_to_list name="$AllPrintList" exact="ware.shieldcomponents" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_l_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_l_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_m_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_m_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_m_standard_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_m_standard_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_s_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_s_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_s_standard_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_arg_xl_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_l_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_l_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_m_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_m_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_m_standard_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_m_standard_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_s_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_s_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_s_standard_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_par_xl_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_l_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_l_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_m_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_m_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_m_standard_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_m_standard_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_s_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_s_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_s_standard_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_tel_xl_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_l_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_l_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_m_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_m_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_m_standard_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_m_standard_02_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_s_standard_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.shield_xen_s_standard_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_destroyer_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_destroyer_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_03_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_03_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_04_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_04_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_05_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_l_trans_container_05_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_bomber_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_bomber_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_bomber_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_frigate_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_frigate_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_m_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_03_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_fighter_04_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_heavyfighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_heavyfighter_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_heavyfighter_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_scout_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_scout_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_s_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_builder_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_builder_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_carrier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_carrier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_resupplier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xl_resupplier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_arg_xs_police_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_fighter_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_fightingdrone_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_lasertower_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_miningdrone_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_s_miningdrone_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_xs_buildingdrone_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_xs_cargodrone_empty_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_xs_lasertower_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_gen_xs_repairdrone_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_destroyer_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_destroyer_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_l_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_corvette_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_corvette_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_frigate_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_frigate_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_m_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_fighter_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_fighter_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_fighter_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_scout_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_scout_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_s_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_builder_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_builder_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_carrier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_carrier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_resupplier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xl_resupplier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_par_xs_police_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_destroyer_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_destroyer_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_l_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_bomber_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_bomber_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_frigate_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_frigate_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_miner_liquid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_miner_liquid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_miner_solid_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_trans_container_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_m_trans_container_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_fighter_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_fighter_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_fighter_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_miner_solid_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_scout_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_scout_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_scout_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_scout_02_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_trans_container_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_s_trans_container_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_builder_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_builder_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_carrier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_carrier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_resupplier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xl_resupplier_01_b" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xs_police_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xs_police_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_tel_xs_police_03_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_m_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_m_miner_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_s_fighter_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_s_fighter_02_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_xl_carrier_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.ship_xen_xl_destroyer_01_a" />
+                <append_to_list name="$AllPrintList" exact="ware.silicon" />
+                <append_to_list name="$AllPrintList" exact="ware.siliconwafers" />
+                <append_to_list name="$AllPrintList" exact="ware.smartchips" />
+                <append_to_list name="$AllPrintList" exact="ware.sm_gen_lockbox_common_01" />
+                <append_to_list name="$AllPrintList" exact="ware.software_dockmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_dockmk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_economymk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_flightassistmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_hackerspacesuitmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_oxygenspacesuitmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerlongrangemk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerlongrangemk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerminingmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerminingmk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerobjectmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerobjectmk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_scannerobjectmk3" />
+                <append_to_list name="$AllPrintList" exact="ware.software_targetmk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_targetmk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_trademk1" />
+                <append_to_list name="$AllPrintList" exact="ware.software_trademk2" />
+                <append_to_list name="$AllPrintList" exact="ware.software_trademk3" />
+                <append_to_list name="$AllPrintList" exact="ware.sojabeans" />
+                <append_to_list name="$AllPrintList" exact="ware.sojahusk" />
+                <append_to_list name="$AllPrintList" exact="ware.spacefuel" />
+                <append_to_list name="$AllPrintList" exact="ware.spaceweed" />
+                <append_to_list name="$AllPrintList" exact="ware.spices" />
+                <append_to_list name="$AllPrintList" exact="ware.sunriseflowers" />
+                <append_to_list name="$AllPrintList" exact="ware.superfluidcoolant" />
+                <append_to_list name="$AllPrintList" exact="ware.swampplant" />
+                <append_to_list name="$AllPrintList" exact="ware.teladianium" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_l_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_l_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_l_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_m_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_combat_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_combat_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_s_combat_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_xl_allround_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_xl_allround_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.thruster_gen_xl_allround_01_mk3" />
+                <append_to_list name="$AllPrintList" exact="ware.turretcomponents" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_l_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_beam_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_dumbfire_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_gatling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_gatling_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_guided_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_laser_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_mining_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_plasma_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_shotgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_arg_m_shotgun_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_l_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_beam_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_dumbfire_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_gatling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_gatling_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_guided_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_laser_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_mining_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_plasma_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_shotgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_par_m_shotgun_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_l_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_beam_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_dumbfire_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_gatling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_gatling_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_guided_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_laser_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_mining_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_plasma_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_shotgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_tel_m_shotgun_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_xen_l_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_xen_m_beam_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_xen_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.turret_xen_m_laser_02_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.water" />
+                <append_to_list name="$AllPrintList" exact="ware.waypointmarker_01" />
+                <append_to_list name="$AllPrintList" exact="ware.weaponcomponents" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_arg_l_destroyer_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_arg_m_ion_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_arg_m_ion_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_arg_s_ion_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_arg_s_ion_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_mine_01" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_mine_02" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_mine_03" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_beam_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_dumbfire_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_gatling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_gatling_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_guided_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_laser_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_mining_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_plasma_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_shotgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_shotgun_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_torpedo_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_m_torpedo_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_spacesuit_demolition_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_spacesuit_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_spacesuit_repairlaser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_beam_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_beam_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_dumbfire_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_dumbfire_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_gatling_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_gatling_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_guided_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_guided_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_laser_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_mining_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_plasma_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_plasma_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_shotgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_shotgun_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_torpedo_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_gen_s_torpedo_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_par_l_destroyer_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_par_m_railgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_par_m_railgun_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_par_s_railgun_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_par_s_railgun_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_tel_l_destroyer_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_tel_m_charge_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_tel_m_charge_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_tel_s_charge_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_tel_s_charge_01_mk2" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_xen_m_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_xen_m_mining_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.weapon_xen_s_laser_01_mk1" />
+                <append_to_list name="$AllPrintList" exact="ware.wheat" />
+                <append_to_list name="$AllPrintList" exact="ware.workunit_busy" />
+                <append_to_list name="$AllPrintList" exact="ware.workunit_idle" />
+                <append_to_list name="$AllPrintList" exact="ware.x4ep1_jttware" />
+                <do_all exact="$AllPrintList.count" counter="$i">
+                    <!-- <add_encyclopedia_entry item="$AllPrintList.{$i}.id" type="equipmentmods" /> -->
+                    <add_blueprints wares="$AllPrintList.{$i}" />
+                </do_all>
+                <create_list name="$List" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostduration_01_mk1" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostthrust_01_mk1" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostthrust_01_mk2" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostthrust_01_mk3" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostthrust_02_mk1" />
+                <append_to_list name="$List" exact="ware.mod_engine_boostthrust_02_mk2" />
+                <append_to_list name="$List" exact="ware.mod_engine_forwardthrust_01_mk1" />
+                <append_to_list name="$List" exact="ware.mod_engine_forwardthrust_01_mk2" />
+                <append_to_list name="$List" exact="ware.mod_engine_forwardthrust_01_mk3" />
+                <do_all exact="$List.count" counter="$i">
+                    <add_encyclopedia_entry item="$List.{$i}.id" type="equipmentmods" />
+                    <add_blueprints wares="$List.{$i}" />
+                </do_all>
+                <!-- FIND -->
+                <!-- <find_sector groupname="$SectorList" space="player.galaxy" multiple="true" /> -->
+                <!-- KNOW SECTORS -->
+                <!-- <do_all exact="$SectorList.count" counter="$s"> -->
+                <!-- GUIDANCE BEACONS -->
+                <!-- <create_object name="$BeaconSpawned" macro="macro.env_deco_nav_beacon_t1_macro" owner="faction.ownerless" sector="$SectorList.{$s}">
+                        <safepos min="35km" max="100km" />
+                    </create_object>
+                    <set_owner object="$BeaconSpawned" faction="faction.player" overridenpc="true" />
+                    <remove_value name="$BeaconSpawned" />
+                    <set_known object="$SectorList.{$s}" known="true" />
+                    <set_known object="$SectorList.{$s}.zone" known="true" />
+                    <set_known object="$SectorList.{$s}.sector" known="true" />
+                    <set_known object="$SectorList.{$s}.cluster" known="true" /> -->
+                <!-- </do_all> -->
+                <!-- COMBATTEST -->
+                <!-- <warp object="player.ship" sector="$SectorList.random">
+                    <position min="500km" max="600km" />
+                </warp> -->
+                <create_group groupname="$PlayerShips" />
+                <set_value name="$PlayerTarget" exact="0" />
+            </actions>
+            <cues>
+                <cue name="PlayerTargetChange" instantiate="true">
+                    <conditions>
+                        <event_player_changed_target />
+                    </conditions>
+                    <actions>
+                        <set_value name="$PlayerTarget" exact="event.param" />
+                        <debug_to_file text="'PlayerTarget ' + $PlayerTarget.knownname" name="'PlayerTarget.log'" />
+                    </actions>
+                </cue>
+                <cue name="PlayerTargetControl" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <event_cue_signalled />
+                            <!-- <event_long_range_scan_sent object="player.entity" /> -->
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_owner object="$PlayerTarget" faction="faction.player" overridenpc="true" />
+                    </actions>
+                </cue>
+                <cue name="Group_Sector_Tour" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <event_cue_signalled />
+                            <!-- <event_player_activated_weapongroup weapongroup="3" /> -->
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <set_value name="$PlusOne" exact="1" operation="add" />
+                        <do_if value="($SectorList.count + 1) == $PlusOne">
+                            <set_value name="$PlusOne" exact="1" />
+                        </do_if>
+                        <warp object="player.ship" sector="$SectorList.{$PlusOne}">
+                            <safepos exact="10km" />
+                        </warp>
+                    </actions>
+                </cue>
+                <cue name="Effects_Loop" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <event_cue_signalled />
+                            <!-- <event_player_activated_weapongroup weapongroup="3" /> -->
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <create_list name="$Effects" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_tel_s_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_tel_s_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_tel_s_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_arg_s_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_arg_s_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_arg_s_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_arg_s_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_s_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_s_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_s_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_spacesuit_repair_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_s_repair_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_spacesuit_repair_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_spacesuit_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_spacesuit_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_spacesuit_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_par_s_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_par_s_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_par_s_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_par_s_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_xen_s_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_xen_s_laser_01_mk1'" />
+                        <!-- m -->
+                        <append_to_list name="$Effects" exact="'wpn_flare_launcher'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_m_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_m_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_m_gatling_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_m_shotgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_m_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_m_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_m_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_m_plasma_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_tel_m_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_tel_m_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_tel_m_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_tel_m_charge_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_arg_m_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_arg_m_ion_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_l_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_m_beam_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_m_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_gen_m_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_gen_m_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_m_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_par_m_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'startshooting_par_m_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'stopshooting_par_m_railgun_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_xen_m_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_xen_m_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_xen_m_mining_01_mk1'" />
+                        <!-- l -->
+                        <append_to_list name="$Effects" exact="'muzzle_gen_l_mining_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_gen_l_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_gen_l_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'muzzle_xen_l_laser_01_mk1'" />
+                        <append_to_list name="$Effects" exact="'impact_xen_l_laser_01_mk1'" />
+                        <!-- missile -->
+                        <append_to_list name="$Effects" exact="'missile_dumbfire_muzzle'" />
+                        <append_to_list name="$Effects" exact="'missile_guided_muzzle'" />
+                        <append_to_list name="$Effects" exact="'missile_torpedo_muzzle'" />
+                        <append_to_list name="$Effects" exact="'missile_explosion_light_01'" />
+                        <append_to_list name="$Effects" exact="'missile_explosion_medium_01'" />
+                        <append_to_list name="$Effects" exact="'missile_explosion_heavy_01'" />
+                        <append_to_list name="$Effects" exact="'missile_explosion_emp'" />
+                        <!-- bomb -->
+                        <append_to_list name="$Effects" exact="'bomb_explosion_emp_01'" />
+                        <!-- PLAY EFFECTS -->
+                        <set_value name="$PlusOne" exact="1" operation="add" />
+                        <do_if value="($Effects.count + 1) == $PlusOne">
+                            <set_value name="$PlusOne" exact="1" />
+                        </do_if>
+                        <add_effect object="player.ship" effect="$Effects.{$PlusOne}">
+                            <position object="player.ship" />
+                        </add_effect>
+                        <debug_to_file text="'Effects ' + $Effects.{$PlusOne}" name="'effectstestlist.log'" />
+                        <show_notification text="'This Sector ' + $Effects.{$PlusOne}" timeout="10s" />
+                        <set_value name="$Text" exact="'Name: %s Macro: %s'.[$Effects.{$PlusOne}.knownname, $Effects.{$PlusOne}.macro]" />
+                        <write_to_logbook category="general" title="$Title" text="$Text" entity="'chef boyardee'" interaction="showonmap" object="player.ship" />
+                    </actions>
+                </cue>
+                <!-- COMBATTEST -->
+                <cue name="Fleetcombat_Spawn" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <event_cue_signalled />
+                            <!-- <event_long_range_scan_sent object="player.entity" /> -->
+                        </check_all>
+                    </conditions>
+                    <delay exact="3s" />
+                    <actions>
+                        <do_all exact="1">
+                            <create_ship name="$PLeader" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.carrier]" />
+                                <owner exact="faction.player" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <position x="30000m" y="-2500m" z="-20000m" />
+                            </create_ship>
+                            <set_object_commander object="$PLeader" commander="$PLeader" />
+                            <create_order id="'Patrol'" object="$PLeader" default="true">
+                                <param name="space" value="$PLeader.sector" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="5">
+                            <create_ship name="$PDestroyer" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.destroyer]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PDestroyer" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PDestroyer" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="10">
+                            <create_ship name="$PMedium" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.medium]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PMedium" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PMedium" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="40">
+                            <create_ship name="$PFighter" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.fighter]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PFighter" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PFighter" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <remove_value name="$PFighter" />
+                        <remove_value name="$PLeader" />
+                        <remove_value name="$PDestroyer" />
+                        <remove_value name="$PMedium" />
+                        <do_all exact="1">
+                            <create_ship name="$PLeader" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.carrier]" />
+                                <owner exact="faction.player" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <position x="30000m" y="-2500m" z="-20000m" />
+                            </create_ship>
+                            <set_object_commander object="$PLeader" commander="$PLeader" />
+                            <create_order id="'Patrol'" object="$PLeader" default="true">
+                                <param name="space" value="$PLeader.sector" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="5">
+                            <create_ship name="$PDestroyer" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.destroyer]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PDestroyer" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PDestroyer" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="10">
+                            <create_ship name="$PMedium" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.medium]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PMedium" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PMedium" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="40">
+                            <create_ship name="$PFighter" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.fighter]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PFighter" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PFighter" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <remove_value name="$PFighter" />
+                        <remove_value name="$PLeader" />
+                        <remove_value name="$PDestroyer" />
+                        <remove_value name="$PMedium" />
+                        <do_all exact="1">
+                            <create_ship name="$PLeader" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.carrier]" />
+                                <owner exact="faction.xenon" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <position x="-30000m" y="-2500m" z="-20000m" />
+                            </create_ship>
+                            <set_object_commander object="$PLeader" commander="$PLeader" />
+                            <create_order id="'Patrol'" object="$PLeader" default="true">
+                                <param name="space" value="$PLeader.sector" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="5">
+                            <create_ship name="$PDestroyer" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.destroyer]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PDestroyer" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PDestroyer" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="10">
+                            <create_ship name="$PMedium" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.medium]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PMedium" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PMedium" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="40">
+                            <create_ship name="$PFighter" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.fighter]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PFighter" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PFighter" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <remove_value name="$PFighter" />
+                        <remove_value name="$PLeader" />
+                        <remove_value name="$PDestroyer" />
+                        <remove_value name="$PMedium" />
+                        <do_all exact="1">
+                            <create_ship name="$PLeader" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.carrier]" />
+                                <owner exact="faction.xenon" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <position x="-30000m" y="-2500m" z="-20000m" />
+                            </create_ship>
+                            <set_object_commander object="$PLeader" commander="$PLeader" />
+                            <create_order id="'Patrol'" object="$PLeader" default="true">
+                                <param name="space" value="$PLeader.sector" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="5">
+                            <create_ship name="$PDestroyer" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.destroyer]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PDestroyer" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PDestroyer" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="10">
+                            <create_ship name="$PMedium" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.military, tag.medium]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PMedium" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PMedium" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <do_all exact="40">
+                            <create_ship name="$PFighter" zone="player.zone" groupname="$PlayerShips">
+                                <select faction="faction.argon" tags="[tag.fighter]" />
+                                <owner exact="$PLeader.owner" overridenpc="true" />
+                                <loadout>
+                                    <level exact="1.0" />
+                                </loadout>
+                                <safepos object="$PLeader" min="300" max="5km" />
+                            </create_ship>
+                            <set_object_commander object="$PFighter" commander="$PLeader" />
+                            <create_order id="'Escort'" object="$PFighter" default="true">
+                                <param name="target" value="$PLeader" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                            </create_order>
+                        </do_all>
+                        <remove_value name="$PFighter" />
+                        <remove_value name="$PLeader" />
+                        <remove_value name="$PDestroyer" />
+                        <remove_value name="$PMedium" />
+                        <debug_text text="'SHIPS ' + $PlayerShips.count" />
+                    </actions>
+                </cue>
+                <cue name="TestMacros" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <event_cue_signalled />
+                            <!-- <event_long_range_scan_sent object="player.entity" /> -->
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <create_list name="$TestMacros" />
+                        <!-- <append_to_list name="$TestMacros" exact="macro.wormhole_v1_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.wormhole_v3_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.wormhole_v2_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.sm_gen_exploration_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.sm_gen_pickup_liquid_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.sm_gen_pickup_solid_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.sm_gen_pickup_equipment_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.storage_arg_s_fighter_03_a_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.sm_gen_lockbox_big_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.shield_arg_xl_standard_01_mk1_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.shipstorage_gen_s_frigate_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.buildmodule_xen_ships_s_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.buildmodule_gen_ships_s_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.struct_arg_base_02_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.struct_arg_vertical_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.struct_tel_base_02_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.struct_tel_vertical_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.defence_tel_tube_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.defence_arg_tube_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.hab_arg_s_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.hab_par_s_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.hab_tel_s_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.storage_tel_s_container_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.storage_arg_s_container_01_macro" />
+                        <append_to_list name="$TestMacros" exact="macro.landmarks_tel_tradestation_01_bridge_01_macro" /> -->
+                        <do_all exact="$TestMacros.count" counter="$macro">
+                            <create_object groupname="$TestShips" name="$TestShip" macro="$TestMacros.{$macro}" zone="player.zone">
+                                <position object="player.ship" min="2km" max="8km" />
+                            </create_object>
+                            <debug_to_file text="'macro ' + $TestMacros.{$macro}" name="'macro.log'" />
+                            <debug_to_file text="'ware ' + $TestMacros.{$macro}.ware.name" name="'macro.log'" />
+                            <debug_to_file text="'name ' + $TestMacros.{$macro}.knownname" name="'macro.log'" />
+                        </do_all>
+                    </actions>
+                </cue>
+                <cue name="SpawnStation" instantiate="true">
+                    <conditions>
+                        <check_all>
+                            <!-- <event_cue_signalled /> -->
+                            <event_long_range_scan_sent object="player.entity" />
+                        </check_all>
+                    </conditions>
+                    <actions>
+                        <!-- <find_zone groupname="$zones" multiple="true" space="$SectorList.random"></find_zone> -->
+                        <create_station groupname="$CoolNewTest" name="$ThisStation" state="componentstate.operational" macro="macro.station_gen_factory_base_01_macro" zone="player.zone" owner="faction.player">
+                            <safepos min="20km" max="30km" object="player.ship" />
+                        </create_station>
+                        <remove_value name="$zones" />
+                        <extend_build_plot object="$ThisStation" negx="10km" negz="10km" negy="10km" posy="10km" posx="10km" posz="10km" />
+                        <!-- <get_suitable_storage_modules macros="$Stor" production="$Prod" result="$Storage" />
+                        <do_all exact="$Storage.count" counter="$thisstor">
+                            <append_to_list name="$Prod" exact="$Storage.{$thisstor}" />
+                        </do_all> -->
+                        <create_list name="$Macros" />
+                        <create_list name="$Con" />
+                        <append_to_list name="$Macros" exact="macro.pier_tel_harbor_02_macro" />
+                        <append_to_list name="$Macros" exact="macro.prod_tel_sunriseflowers_macro" />
+                        <append_to_list name="$Macros" exact="macro.storage_tel_s_container_01_macro" />
+                        <append_to_list name="$Macros" exact="macro.dockarea_arg_m_station_01_lowtech_macro" />
+                        <append_to_list name="$Con" exact="macro.struct_arg_base_02_macro" />
+                        <create_construction_sequence station="$ThisStation" connectors="$Con" macros="$Macros">
+                            <immediate result="$Sequen" />
+                        </create_construction_sequence>
+                        <apply_construction_sequence station="$ThisStation" sequence="$Sequen" />
+                        <create_cue_actor cue="this" name="$Manager">
+                            <select race="race.teladi" tags="controlpost.manager.tag" />
+                            <owner exact="faction.argon" />
+                            <skills>
+                                <skill type="management" exact="1" />
+                            </skills>
+                        </create_cue_actor>
+                        <create_cue_actor cue="this" name="$Def">
+                            <select race="race.drone" tags="tag.defence" />
+                            <owner exact="faction.argon" />
+                            <skills>
+                                <skill type="management" exact="1" />
+                            </skills>
+                        </create_cue_actor>
+                        <create_cue_actor cue="this" name="$Eng">
+                            <select race="race.drone" tags="tag.engineer" />
+                            <owner exact="faction.argon" />
+                            <skills>
+                                <skill type="management" exact="1" />
+                            </skills>
+                        </create_cue_actor>
+                        <debug_text text="$Manager.knownname" />
+                        <assign_control_entity object="$ThisStation" actor="$Manager" post="controlpost.manager" transfer="true" />
+                        <assign_control_entity object="$ThisStation" actor="$Def" post="controlpost.defence" transfer="true" />
+                        <assign_control_entity object="$ThisStation" actor="$Eng" post="controlpost.engineer" transfer="true" />
+                        <set_object_docking_enabled object="$ThisStation" enabled="true" />
+                        <add_workforce object="$ThisStation" race="race.argon" exact="500" />
+                        <remove_value name="$Prod" />
+                        <remove_value name="$Con" />
+                        <remove_value name="$Stor" />
+                        <remove_value name="$Manager" />
+                        <remove_value name="$Def" />
+                        <remove_value name="$Eng" />
+                        <debug_text text="$ThisStation.knownname" />
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

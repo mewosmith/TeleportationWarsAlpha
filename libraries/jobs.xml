@@ -1,0 +1,1901 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<diff>
+
+    <add sel="/jobs">
+    <!-- scav -->
+    <job id="frigate_patrol_yaki"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="yaki" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_yaki" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="yaki" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_yaki" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="yaki" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_yaki" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="yaki" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_usc"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="usc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_usc" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="usc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_usc" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="usc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_usc" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="usc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_heartofalbion"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="heartofalbion" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_heartofalbion" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="heartofalbion" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_heartofalbion" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="heartofalbion" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_heartofalbion" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="heartofalbion" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_sonraenergy"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="sonraenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_sonraenergy" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="sonraenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_sonraenergy" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="sonraenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_sonraenergy" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="sonraenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+  <!-- trader -->
+<job id="frigate_patrol_goner"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="goner" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_goner" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="goner" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_goner" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="goner" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_goner" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="goner" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_ledda"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="ledda" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_ledda" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="ledda" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_ledda" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="ledda" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_ledda" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="ledda" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_atreus"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="atreus" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_atreus" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="atreus" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_atreus" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="atreus" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_atreus" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="atreus" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_jonferson"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="jonferson" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_jonferson" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="jonferson" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_jonferson" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="jonferson" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_jonferson" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="jonferson" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_aquariuscorp"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="aquariuscorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_aquariuscorp" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="aquariuscorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_aquariuscorp" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="aquariuscorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_aquariuscorp" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="aquariuscorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_strongarms"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="strongarms" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_strongarms" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="strongarms" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_strongarms" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="strongarms" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_strongarms" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="strongarms" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_plutarch"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="plutarch" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_plutarch" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="plutarch" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_plutarch" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="plutarch" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_plutarch" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="plutarch" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_albionenergy"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="albionenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_albionenergy" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="albionenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_albionenergy" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="albionenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_albionenergy" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="albionenergy" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_terracorp"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="terracorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_terracorp" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="terracorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_terracorp" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="terracorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_terracorp" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="terracorp" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_beryll"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="beryll" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_beryll" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="14" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="beryll" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_beryll" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="4"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="beryll" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+ <job id="free_miner_l_beryll" >
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
+    <quota galaxy="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <basket basket="minerals"/>
+    <encounters id="mining_group_large"/>
+    <ship>
+      <select faction="argon" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="beryll" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_miningfleet_ml_solid_large"/>
+      <subordinate job="argon_fighter_escort_s_miningfleet"/>
+    </subordinates>
+  </job>
+  <job id="frigate_patrol_terrapmc"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="terrapmc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_terrapmc" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="terrapmc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_terrapmc" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="terrapmc" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_otas"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="otas" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_otas" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="otas" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_otas" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="otas" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_buccaneers"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="buccaneers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_buccaneers" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="buccaneers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_buccaneers" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="buccaneers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_reivers"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="reivers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_reivers" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="reivers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_reivers" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="reivers" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_terrans"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="terrans" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_terrans" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="terrans" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_terrans" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="terrans" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_nolimits"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="nolimits" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_nolimits" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="nolimits" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_nolimits" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="nolimits" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+<job id="frigate_patrol_uguras"  >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, frigate]" size="ship_m"/>
+    <quota galaxy="3" sector="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.4" max="1.0"/>
+      </loadout>
+      <owner exact="uguras" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+<job id="destroyer_uguras" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="uguras" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+ <job id="carrier_uguras" >
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
+    <quota galaxy="1"/>
+    <!--<quota galaxy="14" cluster="1"/>-->
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+        <!--<level min="0.7" max="1.0"/>-->
+      </loadout>
+      <owner exact="uguras" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_destroyer_escort_l"/>
+      <subordinate job="argon_fighter_escort_s_carrier"/>
+      <subordinate job="argon_resupplier_escort_xl"/>
+    </subordinates>
+  </job>
+    
+</add>
+
+</diff>

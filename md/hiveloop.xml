@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Hive_Loop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+                
+                
+                                <!-- 
+                    TODOS 
+                        -add the interrupt part of cb
+                        -eq/loadout add to claim
+                        -claimwait expression
+                        -hive ships
+
+
+
+                 -->
+                <!-- 
+                    Hives are nomadic fleets.
+                    Khaak hives directly takeover low health l and xl ships.  
+                    Xenon hives convert stations into new xenon ships and stations of all sizes superxl
+                    Pirate hives convert wrecks to new pirate ships of all sizes except superxl
+
+                    A VERY large pool of equipmentmods are used to generate profiles.
+                    These profiles are weighted bases on the success of the fleets using them. 
+                    Each circuit of the loop results in some evaluation and weighing of the profiles.
+
+                 -->
+                <!-- 
+                    
+                    Each hive pilot owns blackboard variables $Profile and $Haven
+                       <set_value name="event.param.$Mission" exact="['Attack', $Target]" />
+                    $Profile 
+                    
+                    [
+                    1  1-100,  $Pilot.$Profile.{1}
+                    2  global.$ShieldMods.random, $Pilot.$Profile.{2}
+                    3  global.$WeaponMods.random, $Pilot.$Profile.{3}
+                    4  global.$EngineMods.random, $Pilot.$Profile.{4}
+                    5  global.$ShipMods.random,   $Pilot.$Profile.{5}
+                    6  [global.$GenTargetJobs.random, global.$GenTargetJobs.random, global.$GenTargetJobs.random], 
+                    7  global.$AIFlags.random, :: 'conquest', 'patrol', 'protect', 'assaultjob' todo $Pilot.$Profile.{7}
+                    8  global.$MissionWeights.{1},global.$MissionWeights.{2},global.$MissionWeights.{3}, global.$MissionWeights.{4} $Pilot.$Profile.{8}.{1}
+                    ]
+
+
+                    Flow:
+
+                    Controls
+                    Loop
+                    Create
+                    Equip
+                    Loop
+                    Warp
+                    Order
+                    Loop 
+                    Evaluate
+
+
+
+  
+                  -->
+                <!-- 
+                    used globals:
+                    
+                    global.$X4_SectorAdjacencyTable
+
+                    global.$X4_All_Sectors
+                    global.$X4_All_Stations
+
+                    global.$X4_Player_Ships
+                    global.$X4_Player_Station
+                 -->
+                <!-- 
+                    Debug
+                 -->
+                <set_value name="$DebugChance" exact="100" />
+                <set_value name="$CbChance" exact="100" />
+                <debug_to_file text="player.age + ' start '" name="'gen_loop.log'" directory="'gen_loop'" append="false" chance="$DebugChance" />
+                <!-- 
+                    Controls:
+                 -->
+                <!-- <set_value name="player.entity.$pasta" exact="[player.age, 'pasta', ware.engineparts]" />
+                <debug_text text="player.entity.$pasta" /> -->
+                <set_value name="$Delay" exact="10s" />
+                <set_value name="$ConsumeWait" exact="10s" />
+                <set_value name="$K_HivesIdealCount" exact="8" />
+                <set_value name="$X_HivesIdealCount" exact="8" />
+                <set_value name="$P_HivesIdealCount" exact="8" />
+                <set_value name="$HiveSubsIdealCount" exact="10" />
+                <set_value name="$SafeHavensIdealCount" exact="30" />
+                <set_value name="$HiveSafeMacro" exact="macro.tpwar_test_sat_macro" />
+                <set_value name="$K_HivesFaction" exact="faction.khaak" />
+                <set_value name="$X_HivesFaction" exact="faction.xenon" />
+                <set_value name="$P_HivesFaction" exact="faction.argon" />
+                <set_value name="$StrongestGen" exact="null" />
+                <!-- 
+                    Script Namespace:
+                -->
+                <set_value name="$FactionList" exact="[$K_HivesFaction, $X_HivesFaction, $P_HivesFaction]" />
+                <create_group groupname="$K_Hives" />
+                <create_group groupname="$K_Subs" />
+                <create_group groupname="$X_Hives" />
+                <create_group groupname="$P_Hives" />
+                <create_group groupname="$P_Wreck" />
+                <create_group groupname="$AllHives" />
+                <create_group groupname="$AllHiveSubs" />
+                <set_value name="$HivesList" exact="[$K_Hives, $X_Hives, $P_Hives]" />
+                <create_group groupname="$SafeHavens" />
+                <!-- 
+                     Find Safe Sectors
+                  -->
+                <include_actions ref="SafeHavensLIB" />
+            </actions>
+            <cues>
+                <!-- <cue name="DebugState" instantiate="true" checkinterval="30s" checktime="30s">
+                    <actions>
+                        <set_value name="$CueList" exact="[Init, DebugState, SafeSpotDelay, MaintainHivesLIB, CreateHivesLIB, CreateSubsLIB, ListenerJumpLIB, HiveWarpLib, HiveUnderAttackChild, DestroyFailedHive]" />
+                        <do_all exact="$CueList.count" counter="$i">
+                            <debug_to_file text="player.age + ' CueList: '+ $CueList.{$i}.name + '  -  ' + $CueList.{$i}.state" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        </do_all>
+                        <debug_to_file text="player.age + ' $K_Hives ' + $K_Hives.count + $K_Hives.{1}.sector.knownname" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <debug_to_file text="player.age + ' $X_Hives ' + $X_Hives.count + $X_Hives.{1}.sector.knownname" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <debug_to_file text="player.age + ' $P_Hives ' + $P_Hives.count + $P_Hives.{1}.sector.knownname" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <debug_to_file text="player.age + ' $SafeHavens ' + $SafeHavens.count + $SafeHavens.{1}.sector.knownname" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <do_all exact="$HivesList.count" counter="$i">
+                            <do_all exact="$HivesList.{$i}.count" counter="$j">
+                                <debug_to_file text="player.age + ' hive state: ' + $HivesList.{$i}.{$j}.subordinates.count + $HivesList.{$i}.{$j}.sector.knownname + $HivesList.{$i}.{$j}.owner" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                               
+                            </do_all>
+                        </do_all>
+                    </actions>
+                </cue> -->
+                <!-- 
+
+                    loop
+
+                 -->
+                <cue name="FleetLoopStart">
+                    <actions>
+                        <signal_cue cue="FleetLoop" />
+                    </actions>
+                </cue>
+                <cue name="FleetLoop" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="300s" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="$K_Hives.count lt $K_HivesIdealCount or $X_Hives.count lt $X_HivesIdealCount or $K_Hives.count lt $K_HivesIdealCount">
+                            <signal_cue cue="MaintainHivesLIB" />
+                        </do_if>
+                        <do_if value="$SafeHavens.count lt $SafeHavensIdealCount">
+                            <signal_cue cue="SafeSpotDelay" />
+                        </do_if>
+                        <do_if value="not $HiveWarpQue?">
+                            <create_list name="$HiveWarpQue" />
+                        </do_if>
+                        <do_if value="$HivesList.{1}.{1}.subordinates? and $HiveWarpQue.count == 0">
+                            <do_all exact="$HivesList.count" counter="$i">
+                                <do_all exact="$HivesList.{$i}.count" counter="$j">
+                                    <append_to_list name="$HiveWarpQue" exact="$HivesList.{$i}.{$j}" />
+                                </do_all>
+                            </do_all>
+                        </do_if>
+                        <do_if value="$HiveWarpQue.count gt 0">
+                            <do_if value="not $HiveWarpQue.{1}.pilot.$Haven?">
+                                <set_value name="$RandomHaven" exact="$SafeHavens.random" />
+                                <set_value name="$HiveWarpQue.{1}.pilot.$Haven" exact="$RandomHaven" />
+                                <!-- remove -->
+                                <remove_from_group group="$SafeHavens" object="$RandomHaven" />
+                            </do_if>
+                            <do_any>
+                                <!-- 1 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{1}">
+                                    <find_station name="$StationToEat" multiple="false" space="player.galaxy" functional="true">
+                                        <match owner="$HiveWarpQue.{1}.owner" negate="true" />
+                                    </find_station>
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['StationToEat', $StationToEat]" />
+                                    <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}, $StationToEat]" />
+                                </do_all>
+                                <!-- 2 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{2}">
+                                    <find_station name="$StationWreck" multiple="false" space="player.galaxy" state="componentstate.wreck">
+                                        <match owner="$HiveWarpQue.{1}.owner" negate="true" />
+                                    </find_station>
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['StationWreck', $StationWreck]" />
+                                    <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}, $StationWreck]" />
+                                </do_all>
+                                <!-- 3 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{3}">
+                                    <find_ship name="$ShipToClaim" multiple="false" space="player.galaxy" owner="faction.ownerless">
+                                        <match>
+                                            <match class="class.ship" />
+                                        </match>
+                                    </find_ship>
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['ShipToClaim', $ShipToClaim]" />
+                                    <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}, $ShipToClaim]" />
+                                </do_all>
+                                <!-- 4 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{4}">
+                                    <find_ship name="$ShipWreck" multiple="false" space="player.galaxy">
+                                        <match>
+                                            <match owner="$HiveWarpQue.{1}.owner" negate="true" />
+                                            <match class="class.ship" />
+                                        </match>
+                                    </find_ship>
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['ShipWreck', $ShipWreck]" />
+                                    <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}, $ShipWreck]" />
+                                </do_all>
+                                <!-- 5 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{5}">
+                                    <find_ship groupname="$TargetCandidates" space="player.galaxy" job="$HiveWarpQue.{1}.pilot.$Profile.{6}" multiple="true">
+                                        <match owner="$HiveWarpQue.{1}.owner" negate="true"></match>
+                                    </find_ship>
+                                    <set_value name="$Target" exact="$TargetCandidates.random" />
+                                    <do_if value="$Target?">
+                                        <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['Attack', $Target]" />
+                                        <signal_cue_instantly cue="HiveWarpLib" param="[event.param, $Target]" />
+                                    </do_if>
+                                    <!-- munky camera -->
+                                    <signal_cue_instantly cue="WarpPlayer" param="$HiveWarpQue.{1}" />
+                                </do_all>
+                                <!-- 6 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{6}">
+                                    <!-- targetsector/changehaven idk... -->
+                                    <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}, player.ship]" />
+                                </do_all>
+                                <!-- 7 -->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{7}">
+                                    <!-- StayAtHome -->
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['Protect', $HiveWarpQue.{1}.position]" />
+                                    <set_value name="$OrderObject" exact="$HiveWarpQue.{1}" />
+                                    <set_value name="$OrderCommander" exact="$HiveWarpQue.{1}" />
+                                    <include_actions ref="OrdersLIB" />
+                                </do_all>
+                                <!-- 78-->
+                                <do_all weight="$HiveWarpQue.{1}.pilot.$Profile.{8}.{8}">
+                                    <!-- StayAtHome -->
+                                    <set_value name="$HiveWarpQue.{1}.pilot.$Mission" exact="['Patrol', $HiveWarpQue.{1}.sector]" />
+                                    <set_value name="$OrderObject" exact="$HiveWarpQue.{1}" />
+                                    <set_value name="$OrderCommander" exact="$HiveWarpQue.{1}" />
+                                    <include_actions ref="OrdersLIB" />
+                                    <!-- <signal_cue_instantly cue="HiveWarpLib" param="[$HiveWarpQue.{1}]" /> -->
+                                </do_all>
+                            </do_any>
+                            <debug_text text="' did it work? ' + $StationToEat + $StationWreck + $ShipToClaim + $ShipWreck" />
+                        </do_if>
+                        <do_if value="not $GenTimer?">
+                            <set_value name="$GenTimer" exact="player.age + 600s" />
+                        </do_if>
+                        <do_if value="$GenTimer lt player.age">
+                            <signal_cue_instantly cue="GenEvaluateFleets" param="$HiveWarpQue.{1}" />
+                            <set_value name="$GenTimer" exact="player.age + 600s" />
+                        </do_if>
+                        <signal_cue cue="FleetLoopReturn" />
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' FleetLoop ' + @$HiveWarpQue.{1}" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_from_list name="$HiveWarpQue" exact="$HiveWarpQue.{1}" />
+                    </actions>
+                </cue>
+                <!-- mubky camera -->
+                <cue name="WarpPlayer" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="60s" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <warp object="player.ship" zone="event.param.zone">
+                            <safepos object="event.param" min="20km" />
+                        </warp>
+                    </actions>
+                </cue>
+                <!-- mubky camera -->
+                <cue name="FleetLoopReturn" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="4s" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <signal_cue cue="FleetLoop" />
+                    </actions>
+                </cue>
+                <cue name="GenEvaluateFleets" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="event.param.subordinates?">
+                            <set_value name="$SubsList" exact="event.param.subordinates?" />
+                            <do_all exact="$SubsList.count" counter="$i">
+                                <do_if value="not $SubStrength">
+                                    <set_value name="$SubStrength" exact="$SubsList.{$i}.shield + $SubsList.{$i}.hull + $SubsList.{$i}.dps.all" />
+                                </do_if>
+                                <do_else>
+                                    <set_value name="$SubStrength" exact="$SubsList.{$i}.shield + $SubsList.{$i}.hull + $SubsList.{$i}.dps.all" operation="add" />
+                                </do_else>
+                            </do_all>
+                        </do_if>
+                        <do_if value="not $Strength?">
+                            <set_value name="$Strength" exact="event.param.shield + event.param.hull + event.param.dps.all" />
+                        </do_if>
+                        <do_if value="$GreatestStrength lt $Strength + @$SubStrength">
+                            <set_value name="$StrongestGen" exact="event.param" />
+                        </do_if>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' StrongestGen ' + $StrongestGen" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$Strength" />
+                        <remove_value name="$SubStrength" />
+                    </actions>
+                </cue>
+                <cue name="SafeSpotDelay" instantiate="true">
+                    <conditions>
+                        <check_any>
+                            <event_object_destroyed group="$SafeHavens" />
+                            <event_cue_signalled />
+                        </check_any>
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <include_actions ref="SafeHavensLIB" />
+                    </actions>
+                </cue>
+                <cue name="MaintainHivesLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <create_list name="$MaintainHivesOutput" />
+                        <append_to_list name="$MaintainHivesOutput" exact="$K_HivesIdealCount - $K_Hives.count" />
+                        <append_to_list name="$MaintainHivesOutput" exact="$X_HivesIdealCount - $X_Hives.count" />
+                        <append_to_list name="$MaintainHivesOutput" exact="$P_HivesIdealCount - $P_Hives.count" />
+                        <do_all exact="$FactionList.count" counter="$i">
+                            <signal_cue_instantly cue="CreateHivesLIB" param="[$FactionList.{$i}, $MaintainHivesOutput.{$i}]" />
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' MaintainHivesLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$MaintainHivesOutput" />
+                    </actions>
+                </cue>
+                <cue name="CreateHivesLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_all exact="event.param.{2}">
+                            <set_value name="$SelectFaction" exact="if event.param.{1} == faction.khaak then faction.teladi else event.param.{1}" />
+                            <create_ship groupname="$AllHives" name="$CreatedHive" zone="$SafeHavens.random.zone">
+                                <select faction="$SelectFaction" size="class.ship_xl" tags="[tag.military]" />
+                                <!-- <owner exact="event.param.{1}" overridenpc="true" /> -->
+                                <owner exact="event.param.{1}" overridenpc="true" />
+                                <pilot macro="character_boron_generic_01_macro">
+                                    <skills>
+                                        <skill type="boarding" exact="15" />
+                                        <skill type="engineering" exact="15" />
+                                        <skill type="management" exact="15" />
+                                        <skill type="morale" exact="15" />
+                                    </skills>
+                                </pilot>
+                                <loadout>
+                                    <!-- <level min="0" max="1" /> -->
+                                    <level exact="1" />
+                                    <!-- <variation exact="0.0" /> -->
+                                </loadout>
+                            </create_ship>
+                            <!-- test -->
+                            <!-- <set_owner object="$CreatedHive" faction="faction.player" overridenpc="true" /> -->
+                            <!-- test -->
+                            <do_if value="event.param.{1} == $K_HivesFaction">
+                                <add_to_group groupname="$K_Hives" object="$CreatedHive" />
+                            </do_if>
+                            <do_if value="event.param.{1} == $X_HivesFaction">
+                                <add_to_group groupname="$X_Hives" object="$CreatedHive" />
+                            </do_if>
+                            <do_if value="event.param.{1} == $P_HivesFaction">
+                                <add_to_group groupname="$P_Hives" object="$CreatedHive" />
+                            </do_if>
+                            <set_value name="$OrderObject" exact="$CreatedHive" />
+                            <set_value name="$OrderCommander" exact="$CreatedHive" />
+                            <set_value name="$CreatedHive.pilot.$Mission" exact="['Patrol', $CreatedHive.sector]" />
+                            <include_actions ref="OrdersLIB" />
+                            <signal_cue_instantly cue="CreateSubsLIB" param="[$HiveSubsIdealCount, $CreatedHive, $SelectFaction] " />
+                            <signal_cue_instantly cue="ApplyProfileLIBDelay" param="$CreatedHive" />
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' CreateHivesLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$CreatedHive" />
+                    </actions>
+                </cue>
+                <cue name="CreateSubsLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="$Delay" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_all exact="event.param.{1}">
+                            <set_value name="$SelectFaction" exact="if event.param.{3} == faction.xenon then faction.teladi else event.param.{3}" />
+                            <create_ship groupname="$AllHiveSubs" name="$CreatedSub" zone="event.param.{2}.zone">
+                                <select faction="$SelectFaction" size="class.ship_l" tags="[tag.military]" />
+                                <owner exact="event.param.{3}" overridenpc="true" />
+                                <pilot macro="character_boron_generic_01_macro">
+                                    <skills>
+                                        <skill type="boarding" exact="15" />
+                                        <skill type="engineering" exact="15" />
+                                        <skill type="management" exact="15" />
+                                        <skill type="morale" exact="15" />
+                                    </skills>
+                                </pilot>
+                                <loadout>
+                                    <!-- <level min="0" max="1" /> -->
+                                    <level exact="1" />
+                                    <!-- <variation exact="0.0" /> -->
+                                </loadout>
+                            </create_ship>
+                            <!-- test -->
+                            <!-- <set_owner object="$CreatedSub" faction="faction.player" overridenpc="true" /> -->
+                            <!-- test -->
+                            <set_value name="$OrderObject" exact="$CreatedSub" />
+                            <set_value name="$OrderCommander" exact="event.param.{2}" />
+                            <include_actions ref="OrdersLIB" />
+                            <do_if value="event.param.{2}.owner == $K_HivesFaction">
+                                <add_to_group groupname="$K_Subs" object="$CreatedSub" />
+                            </do_if>
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' CreateSubsLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$CreatedSub" />
+                    </actions>
+                </cue>
+                <cue name="ApplyProfileLIBDelay" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="30s" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <signal_cue_instantly cue="ApplyProfileLIB" param="event.param" />
+                    </actions>
+                </cue>
+                <cue name="ApplyProfileLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <!-- <delay min="1s" max="30s" /> -->
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <!-- 
+                            [$BaseChance, global.$ShieldMods.random, global.$WeaponMods.random, global.$EngineMods.random, global.$ShipMods.random]
+                         -->
+                        <set_value name="$Hive" exact="event.param.pilot" />
+                        <set_value name="$Hive.$Profile" exact="if $StrongestGen == null then global.$GenProfilesTable.{global.$GenProfilesTable.keys.random} else $StrongestGen.$Profile" />
+                        <find_object_component groupname="$Weapons" object="$Hive.ship" recursive="true" multiple="true">
+                            <match_any>
+                                <match class="[class.turret, class.weapon]" />
+                                <!-- <match integrated="true" />
+                                <match integrated="false" /> -->
+                            </match_any>
+                        </find_object_component>
+                        <do_all exact="$Weapons.count" counter="$i">
+                            <debug_to_file text="player.age + ' Weapons ' + $Weapons.{$i}.macro" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                            <add_equipment_mods object="$Hive.ship">
+                                <weapon ware="$Hive.$Profile.{3}" macro="$Weapons.{$i}.macro" />
+                            </add_equipment_mods>
+                        </do_all>
+                        <set_value name="$AddMods" exact="[$Hive.$Profile.{2}, $Hive.$Profile.{4}, $Hive.$Profile.{5}]" />
+                        <debug_to_file text="player.age + ' AddMods ' + $AddMods" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <add_equipment_mods object="$Hive.ship">
+                            <mods list="$AddMods" />
+                        </add_equipment_mods>
+                        <do_if value="$Hive.ship.subordinates?">
+                            <signal_cue_instantly cue="ApplyProfileSubsDelay" param="$Hive" />
+                        </do_if>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' ApplyProfileLIB' + $Hive.$Profile.{1} +  $Hive.$Profile.{2} +  $Hive.$Profile.{3} +  $Hive.$Profile.{4} + $Hive.$Profile.{5}" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$Weapons" />
+                    </actions>
+                </cue>
+                <cue name="ApplyProfileSubsDelay" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <!-- <delay exact="60s" /> -->
+                    <delay min="20s" max="50s" />
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <signal_cue_instantly cue="ApplyProfileSubsLIB" param="event.param" />
+                    </actions>
+                </cue>
+                <cue name="ApplyProfileSubsLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <!-- <delay min="1s" max="30s" /> -->
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <!-- 
+                            [$BaseChance, global.$ShieldMods.random, global.$WeaponMods.random, global.$EngineMods.random, global.$ShipMods.random]
+                         -->
+                        <remove_value name="$SubsList" />
+                        <set_value name="$Hive" exact="event.param" />
+                        <set_value name="$SubsList" exact="$Hive.ship.subordinates" />
+                        <do_all exact="$SubsList.count" counter="$i">
+                            <find_object_component groupname="$Weapons" object="$SubsList.{$i}" recursive="true" multiple="true">
+                                <match_any>
+                                    <match class="[class.turret, class.weapon]" />
+                                    <!-- <match integrated="true" />
+                                    <match integrated="false" /> -->
+                                </match_any>
+                            </find_object_component>
+                            <do_all exact="$Weapons.count" counter="$j">
+                                <add_equipment_mods object="$SubsList.{$i}">
+                                    <weapon ware="$Hive.$Profile.{3}" macro="$Weapons.{$j}.macro" />
+                                </add_equipment_mods>
+                            </do_all>
+                            <set_value name="$AddMods" exact="[$Hive.$Profile.{2}, $Hive.$Profile.{4}, $Hive.$Profile.{5}]" />
+                            <add_equipment_mods object="$SubsList.{$i}">
+                                <mods list="$AddMods" />
+                            </add_equipment_mods>
+                            <remove_value name="$Weapons" />
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' ApplyProfileSubsLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <!-- <remove_value name="$SubsList" /> -->
+                    </actions>
+                </cue>
+                <cue name="ListenerJumpLIB" instantiate="true">
+                    <conditions>
+                        <event_object_signalled object="player.entity" param="'KhaakPoxSafe'" />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="event.param.pilot.$Mission?">
+                            <set_value name="$OrderFlag" exact="event.param.pilot.$Mission.{1}" />
+                            <set_value name="$OrderTarget" exact="event.param.pilot.$Mission.{2}" />
+                        </do_if>
+                        <do_else>
+                            <set_value name="$OrderFlag" exact="'Patrol'" />
+                        </do_else>
+                        <set_value name="$ShipList" exact="event.param2" />
+                        <do_all exact="$ShipList.count" counter="$i">
+                            <cancel_all_orders object="$ShipList.{$i}" />
+                            <do_if value="$ShipList.{$i}.isclass.ship_xl">
+                                <set_value name="$OrderObject" exact="$ShipList.{$i}" />
+                                <set_value name="$OrderCommander" exact="$ShipList.{$i}" />
+                                <include_actions ref="OrdersLIB" />
+                            </do_if>
+                            <do_else>
+                                <set_value name="$OrderObject" exact="$ShipList.{$i}" />
+                                <set_value name="$OrderCommander" exact="$ShipList.{$i}.commander" />
+                                <include_actions ref="OrdersLIB" />
+                            </do_else>
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' ListenerJumpLIB '  + $ShipList.count" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <clear_list list="$ShipList" />
+                    </actions>
+                </cue>
+                <cue name="GenProfilesListener" instantiate="true">
+                    <conditions>
+                        <event_object_signalled object="player.entity" param="'hiveloop'" />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <!-- TODO FLEET TABLE $NewMods -->
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' GenProfilesListener'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                </cue>
+                <cue name="GenProfilesSignaller" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' GenProfilesSignaller'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                    <cues>
+                        <cue name="GenProfilesSignal" ref="md.Gen_Profiles.GenProfilesLIB"></cue>
+                    </cues>
+                </cue>
+                <cue name="HiveWarpLib" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="not event.param.{2}?">
+                            <set_value name="$Destination" exact="event.param.{1}.pilot.$Haven" />
+                        </do_if>
+                        <do_else>
+                            <set_value name="$Destination" exact="event.param.{2}" />
+                        </do_else>
+                        <do_if value="not $ShipList?">
+                            <create_list name="$ShipList" />
+                        </do_if>
+                        <do_if value="$ShipList?">
+                            <clear_list list="$ShipList" />
+                        </do_if>
+                        <!-- <set_value name="$Destination" exact="$HomeBases.random" /> -->
+                        <!-- test -->
+                        <!-- <set_value name="$Destination" exact="$SafeHavens.random" /> -->
+                        <!-- test -->
+                        <do_if value="event.param.{1}.subordinates.count gt 0">
+                            <set_value name="$Subs" exact="event.param.{1}.subordinates" />
+                            <do_all exact="$Subs.count" counter="$i">
+                                <append_to_list name="$ShipList" exact="$Subs.{$i}" />
+                            </do_all>
+                        </do_if>
+                        <append_to_list name="$ShipList" exact="event.param.{1}" />
+                        <do_all exact="$ShipList.count" counter="$i">
+                            <!-- <remove_object_commander object="$ShipList.{$i}" /> -->
+                            <cancel_all_orders object="$ShipList.{$i}" />
+                            <create_order id="'Wait'" object="$ShipList.{$i}" default="true" immediate="true">
+                                <!-- <param name="timeout" value="600s" /> -->
+                            </create_order>
+                        </do_all>
+                        <set_value name="$Signal" exact="'KhaakPoxSafe'" />
+                        <!-- return LIB -->
+                        <!-- <signal_cue_instantly cue="event.param.{1}.{2}" /> -->
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' HiveWarpLib' + event.param.{1}.knownname" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                    <cues>
+                        <cue name="Jump_Sender" ref="md.JumpLIB.JumpLIB">
+                            <param name="Destination" value="$Destination" />
+                            <param name="ShipList" value="$ShipList" />
+                            <param name="Signal" value="$Signal" />
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="XenonStationConsumeLIB" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <!-- <find_gravidar_contact groupname="$Result" object="event.param" multiple="true" class="[class.ship_m, class.ship_l, class.ship_xl]"></find_gravidar_contact>
+                        <do_if value="$Result == 0">
+                            <find_station space="event.param.zone" multiple="true">
+                                <match owner="$X_HivesFaction" negate="true"></match>
+                            </find_station>
+                        </do_if> -->
+                        <!-- 
+                            orders 
+                        -->
+                        <!-- <set_value name="$OrderObject" exact="event.param" />
+                        <set_value name="$OrderCommander" exact="event.object.commander" />
+                        <include_actions ref="OrdersLIB" /> -->
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' XenonStationConsumeLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$Result" />
+                    </actions>
+                </cue>
+                <cue name="PirateWreckLIB" instantiate="true">
+                    <conditions>
+                        <event_object_killed_object group="$P_Hives" />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <find_gravidar_contact groupname="$Result" object="event.param" multiple="true" class="[class.ship_s, class.ship_m, class.ship_l, class.ship_xl]"></find_gravidar_contact>
+                        <do_if value="$Result == 0"></do_if>
+                        <!-- <add_to_group groupname="$P_Wreck" object="event.param" />
+                        <launch_drone name="$WreckDrone" object="event.object" macro="macro.ship_gen_xs_repairdrone_01_a_macro" category="unitcategory.repair" />
+                        <cancel_all_orders object="$WreckDrone" />
+                        <create_order object="$WreckDrone"  id="'FlyToWreck'" >
+                            <param name="wreck" value="$P_Wreck"/>
+                        </create_order> -->
+                        <!-- 
+                            orders 
+                        -->
+                        <!-- <set_value name="$OrderObject" exact="event.param" />
+                        <set_value name="$OrderCommander" exact="event.object.commander" />
+                        <include_actions ref="OrdersLIB" /> -->
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' XenonStationConsumeLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$Result" />
+                    </actions>
+                </cue>
+                <cue name="ConsumeStation" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="$ConsumeWait" />
+                    <actions>
+                        <!-- 
+                            new plan
+
+                            1 restore
+                            2 owner
+                            3 loadout
+                            4 put it on the create ship list
+
+                            5 create ship from list and send to patrol sector + adjacent ones  
+                            -->
+                        <!-- <create_module macro="" object="" >
+
+                        </create_module> -->
+                        <set_value name="$Station" exact="event.param.pilot.$Mission.{2}" />
+                        <restore_object object="$Station" recursive="true" hull="100" />
+                        <set_owner object="$Station" faction="event.param.owner" overridenpc="true" />
+
+                        <signal_cue_instantly cue="ApplyLoadoutToStation" />
+                        
+                    </actions>
+                </cue>
+                <cue name="ConsumeShip" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="$ConsumeWait" />
+                    <actions>
+                        <set_value name="$Ship" exact="event.param.pilot.$Mission.{2}" />
+                        <restore_object object="$Ship" recursive="true" hull="100" />
+                        <set_owner object="$Ship" faction="event.param.owner" overridenpc="true" />
+                        <do_if value="event.param.owner == $K_HivesFaction">
+                            <signal_cue_instantly cue="LoadoutApply" param="$Ship" />
+                        </do_if>
+                        <set_value name="$OrderObject" exact="$Ship" />
+                        <set_value name="$OrderCommander" exact="event.param" />
+                        <include_actions ref="OrdersLIB" />
+                    </actions>
+                </cue>
+                <!-- EVENTS -->
+                <cue name="ClaimAttacked">
+                    <conditions>
+                        <check_any>
+                            <event_object_attacked_object group="$AllHiveSubs" />
+                        </check_any>
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="event.param.hullpercentage lt 50">
+                            <release_job_ship ship="event.param" />
+                            <remove_object_commander object="event.param" />
+                            <set_owner object="event.param" faction="event.object.owner" overridenpc="true" />
+                            <add_to_group groupname="$AllHiveSubs" object="event.param" />
+                            <set_value name="$OrderObject" exact="event.param" />
+                            <set_value name="$OrderCommander" exact="event.object.commander" />
+                            <include_actions ref="OrdersLIB" />
+                            <do_if value="event.object.owner == faction.khaak">
+                                <signal_cue_instantly cue="LoadoutApply" param="event.param" />
+                            </do_if>
+                        </do_if>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' ClaimAttacked'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                    <cues>
+                        <cue name="Reset_ClaimAttacked">
+                            <delay exact="10s" />
+                            <actions>
+                                <reset_cue cue="ClaimAttacked" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="LoadoutApply" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <set_value name="$loadlist" exact="[
+                        macro.weapon_khp_s_mk1_macro, 
+                        macro.weapon_khp_m_mk1_macro, 
+                        macro.turret_khp_m_mk1_macro, 
+                        macro.turret_khp_l_mk1_macro,
+                        macro.thruster_gen_s_allround_01_mk3_macro,
+                        macro.thruster_gen_m_allround_01_mk3_macro,
+                        macro.thruster_gen_l_allround_01_mk3_macro,
+                        macro.thruster_gen_xl_allround_01_mk3_macro
+                        ]" />
+                        <set_value name="$Victim" exact="event.param" />
+                        <find_object_component  groupname="$keeping" object="$Victim" recursive="true" multiple="true">
+                            <match_any>
+                           
+                                <match class="[class.turret, class.weapon]" negate="true" />
+                                <match integrated="true" />
+                                <match integrated="false" />
+                            </match_any>
+                        </find_object_component>
+                        <do_all exact="$keeping.count" counter="$i">
+                            <append_to_list name="$loadlist" exact="$keeping.{$i}.macro" />
+                        </do_all>
+                        <generate_loadout result="$loadout"  macro="$Victim.macro" macros="$loadlist" level="1"  />
+                        <apply_loadout object="$Victim" loadout="$loadout.{1}" />
+                        <signal_cue_instantly cue="ApplyProfileLIB" param="$Victim.commander" />
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' LoadoutApply' + $Victim.knownname + $loadout.{1}" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$keeping" />
+                        <remove_value name="$loadout" />
+                        <remove_value name="$Victim" />
+                    </actions>
+                </cue>
+                <cue name="HiveUnderAttackChild">
+                    <conditions>
+                        <check_any>
+                            <event_object_attacked group="$X_Hives" />
+                            <event_object_attacked group="$P_Hives" />
+                            <event_object_attacked group="$K_Hives" />
+                        </check_any>
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_if value="event.object.hullpercentage lt 20 ">
+                            <signal_cue_instantly cue="HiveWarpLib" param="[event.object]" />
+                        </do_if>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' HiveUnderAttackChild'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                    <cues>
+                        <cue name="Reset_HiveUnderAttack">
+                            <delay exact="60s" />
+                            <actions>
+                                <reset_cue cue="HiveUnderAttackChild" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue>
+                <cue name="DestroyFailedHive" instantiate="true">
+                    <conditions>
+                        <check_any>
+                            <event_object_destroyed group="$K_Hives" />
+                            <event_object_destroyed group="$X_Hives" />
+                            <event_object_destroyed group="$P_Hives" />
+                        </check_any>
+                    </conditions>
+                    <actions>
+                        <include_actions ref="CircuitBreaker" chance="$CbChance" />
+                        <do_all exact="event.object.subordinates.count" counter="$i">
+                            <destroy_object object="event.object.subordinates.{$i}" explosion="true" />
+                        </do_all>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' ChooseNewLeader'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                    </actions>
+                </cue>
+                <library name="SafeHavensLIB">
+                    <actions>
+                        <set_value name="$WhileCount" exact="0" />
+                        <do_while value="$SafeHavens.count lt $SafeHavensIdealCount">
+                            <set_value name="$RandomSector" exact="global.$X4_All_Sectors.random" />
+                            <do_if value="$RandomSector.owner == faction.ownerless">
+                                <create_object groupname="$SafeHavens" macro="$HiveSafeMacro" sector="$RandomSector" owner="faction.ownerless">
+                                    <safepos min="400km" max="700km" />
+                                </create_object>
+                            </do_if>
+                            <set_value name="$WhileCount" exact="1" operation="add" />
+                            <do_if value="$WhileCount gt 1000">
+                                <do_all exact="$SafeHavensIdealCount - $SafeHavens.count">
+                                    <create_object groupname="$SafeHavens" macro="$HiveSafeMacro" sector="$RandomSector" owner="faction.ownerless">
+                                        <safepos min="400km" max="700km" />
+                                    </create_object>
+                                </do_all>
+                            </do_if>
+                        </do_while>
+                        <!-- debug -->
+                        <debug_to_file text="player.age + ' SafeSpotLIB'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        <!-- remove -->
+                        <remove_value name="$WhileCount" />
+                    </actions>
+                </library>
+                <library name="OrdersLIB">
+                    <actions>
+                        <!-- 
+                     
+                        <set_value name="$OrderObject" exact=""/>
+                        <set_value name="$OrderCommander" exact=""/>
+                        <include_actions ref="OrdersLIB" />
+                         -->
+                        <!--
+                             pilot.$Mission.{1}
+                            pilot.$Mission.{2}
+                           -->
+                        <set_object_commander object="$OrderObject" commander="$OrderCommander" assignment="assignment.defence" />
+                        <do_if value="$OrderObject == $OrderCommander">
+                            <set_value name="$OrderFlag" exact="$OrderObject.pilot.$Mission.{1}" />
+                            <set_value name="$OrderTarget" exact="$OrderObject.pilot.$Mission.{2}" />
+                            <do_if value="$OrderFlag == 'Patrol'">
+                                <cancel_all_orders object="$OrderObject" />
+                                <create_order id="'Patrol'" object="$OrderCommander" default="true" immediate="true">
+                                    <param name="space" value="$OrderCommander.sector" />
+                                </create_order>
+                            </do_if>
+                            <do_if value="$OrderFlag == 'Attack'">
+                                <create_order object="$OrderCommander" id="'Attack'" immediate="true">
+                                    <param name="primarytarget" value="$OrderTarget" />
+                                    <param name="pursuetargets" value="true" />
+                                </create_order>
+                            </do_if>
+                            <do_if value="$OrderFlag == 'ShipToClaim'  or $OrderFlag == 'ShipWreck'">
+                                <create_order object="$OrderCommander" id="'ProtectPosition'" immediate="true">
+                                    <param name="destination" value="$OrderTarget" />
+                                    <param name="pursuetargets" value="false" />
+                                </create_order>
+                                <signal_cue_instantly cue="ConsumeShip" param="$OrderCommander" />
+                            </do_if>
+                            <do_if value="$OrderFlag == 'StationToEat' or $OrderFlag == 'StationWreck'">
+                                <create_order object="$OrderCommander" id="'ProtectPosition'" immediate="true">
+                                    <param name="destination" value="$OrderTarget" />
+                                    <param name="pursuetargets" value="false" />
+                                </create_order>
+                                <signal_cue_instantly cue="ConsumeStation" param="$OrderCommander" />
+                            </do_if>
+                        </do_if>
+                        <do_else>
+                            <create_order id="'Escort'" object="$OrderObject" default="true" immediate="true">
+                                <param name="target" value="$OrderCommander" />
+                                <param name="formation" value="formationshape.pointguard" />
+                                <param name="formationparam" value="200m" />
+                                <param name="overrideformationskill" value="true" />
+                            </create_order>
+                        </do_else>
+                        <!-- remove -->
+                        <remove_value name="$OrderObject" />
+                        <remove_value name="$OrderCommander" />
+                        <!-- <remove_value name="$OrderFlag" /> -->
+                        <!-- 
+
+
+                                 <create_order object="$LeadShip" id="'Attack'" immediate="true">
+                        <param name="primarytarget" value="player.ship"/>
+                        <param name="pursuetargets" value="true"/>
+                     
+                        <param name="debugchance" value="$DebugChance"/>
+                      </create_order>
+                         -->
+                    </actions>
+                </library>
+                <library name="CircuitBreaker">
+                    <actions>
+                     
+                        <do_if value="event.param == null and event.param2 == null and event.param3 == null and event.object == null">
+                            <show_notification text="'CircuitBreaker: CHECK THE LOG!'" priority="9" chance="$DebugChance" />
+                            <debug_text text="'ERROR!!! ' + this.name + 'bad params'" />
+                            <debug_to_file text="player.age + 'ERROR!!! ' + this.name + 'bad params'" name="'gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                            <debug_to_file text="player.age + 'ERROR!!! ' + this.name + 'bad params'" name="'error_gen_loop.log'" directory="'gen_loop'" chance="$DebugChance" />
+                        </do_if>
+                        <!-- test -->
+                        <!-- <do_else>
+                             <debug_text text="'cb works? ' + this.name + event.param + event.param2 + event.param3 + event.object" />
+                        </do_else> -->
+                    </actions>
+                </library>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

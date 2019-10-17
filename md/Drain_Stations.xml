@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <add sel="Encounter THIS SHOULD APPEAR IN THE LOG"/>
+    <remove sel="/mdscript/cues"/>
+</diff>
+
+

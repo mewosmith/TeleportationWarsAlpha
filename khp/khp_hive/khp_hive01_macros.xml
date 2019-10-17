@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/unidiffxsd/x4_macro.xsd">
+  <macro name="khp_hive01_macro" class="ship_xl">
+    <component ref="khp_hive01_comp" />
+    <properties>
+      <!-- faction_petkhaak -->
+      <!-- ship_l_fight_01 -->
+      <identification name="{20101,11002}" basename="{20101,11001}" description="{20101,11012}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_l_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="10000" />
+      <storage missile="160" unit="10" />
+      <hull max="9003000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="44" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_l_01" />
+      </sounds>
+      <physics mass="200.016">
+        <inertia pitch="96.271" yaw="96.271" roll="77.016" />
+        <drag forward="99.004" reverse="396.016" horizontal="73.005" vertical="73.005" pitch="106.203" yaw="106.203" roll="106.203" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="destroyer" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_xl_carrier_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_02">
+        <macro ref="dockarea_arg_xl_carrier_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_03">
+        <macro ref="dockarea_arg_xl_carrier_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_xl_carrier_01">
+        <macro ref="dockarea_arg_xl_carrier_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_destroyer_01_a_macro" connection="ShipConnection" />
+      </connection>
+      <connection ref="con_shipstorage01">
+        <macro ref="shipstorage_gen_m_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage02">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage03">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <!-- invis docks -->
+      <connection ref="dockinspace1">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace2">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace3">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace4">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace5">
+        <macro ref="dockingbay_gen_xl_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace6">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace7">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace8">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace9">
+        <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+      </connection>
+      <connection ref="dockinspace10">
+        <macro ref="dockingbay_gen_xl_inv_macro" connection="position"></macro>
+      </connection>
+      <!-- con_shieldgen_001
+con_shieldgen_002
+con_shieldgen_004
+con_shieldgen_003
+con_shieldgen_large_001
+con_shieldgen_large_002
+con_turret_laser_l_001
+con_turret_laser_l_002
+con_turret_laser_l_003
+con_turret_laser_l_004
+con_turret_laser_l_005
+con_turret_laser_l_006
+con_turret_laser_l_007
+con_turret_laser_l_008
+con_turret_001
+con_turret_002
+con_turret_003
+con_turret_004
+con_turret_005
+con_turret_006
+con_turret_007
+con_turret_008
+con_shieldgen_large_003
+con_shieldgen_large_004
+con_turret_laser_l_009
+con_turret_laser_l_010
+con_turret_laser_l_011
+con_turret_laser_l_012
+con_turret_laser_l_013
+con_turret_laser_l_014
+con_turret_laser_l_015
+con_turret_laser_l_016 -->
+      <!-- turret_khp_l_mk1_macro
+turret_khp_m_mk1_macro -->
+      <connection ref="dpod01">
+        <macro>
+          <!-- <macro ref="d_pod_macro" connection="space" > -->
+          <component ref="d_pod_comp" connection="space" />
+        </macro>
+      </connection>
+      <connection ref="dpod02">
+        <macro>
+          <!-- <macro ref="d_pod_macro" connection="space" > -->
+          <component ref="d_pod_comp" connection="space" />
+        </macro>
+      </connection>
+      <connection ref="dpod03">
+        <macro>
+          <!-- <macro ref="d_pod_macro" connection="space" > -->
+          <component ref="d_pod_comp" connection="space" />
+        </macro>
+      </connection>
+      <connection ref="dpod04">
+        <macro>
+          <!-- <macro ref="d_pod_macro" connection="space" > -->
+          <component ref="d_pod_comp" connection="space" />
+        </macro>
+      </connection>
+    </connections>
+  </macro>
+</macros>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <!-- ADD THE CROPTOPS BACK -->
+  <add sel="/characters/character[@name='argon.allraces']">
+    <select macro="character_argon_female_civilian_08_macro" />
+    <select macro="character_argon_female_civilian_11_macro" />
+    <select macro="character_argon_female_civilian_14_macro" />
+    <select macro="character_argon_female_civilian_17_macro" />
+  </add>
+  <add sel="/characters/character[@name='argon.service.female']">
+    <select macro="character_argon_female_civilian_08_macro" />
+    <select macro="character_argon_female_civilian_11_macro" />
+    <select macro="character_argon_female_civilian_14_macro" />
+    <select macro="character_argon_female_civilian_17_macro" />
+  </add>
+  <add sel="/characters/character[@name='argon.civilian.female']">
+    <select macro="character_argon_female_civilian_08_macro" />
+    <select macro="character_argon_female_civilian_11_macro" />
+    <select macro="character_argon_female_civilian_14_macro" />
+    <select macro="character_argon_female_civilian_17_macro" />
+  </add>
+  <!-- DONE ADDING CROPTOPS BACK :) -->
+</diff>

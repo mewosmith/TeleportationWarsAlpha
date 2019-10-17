@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/unidiffxsd/x4_macro.xsd">
+    <!-- TODO TEST SHIPS -->
+    <macro name="tpwar_test_ship_macro" class="ship_s">
+        <component ref="ship_gen_s_fighter_01" />
+        <properties>
+            <identification name="{20101,120302}" basename="{20101,120301}" description="{20101,120312}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="2000" />
+            <hull max="3900000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="2" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="1">
+                <inertia pitch="1" yaw="1" roll="1" />
+                <drag forward="1" reverse="1" horizontal="1" vertical="1" pitch="1" yaw="1" roll="1" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="fighter" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_gen_s_fighter_01_a_macro" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L SALVAGER -->
+    <macro name="tpwar_l_salavger_macro" class="ship_l">
+        <component ref="tpwar_l_salavger_comp" />
+        <properties>
+            <identification name="{20101,11002}" basename="{20101,11001}" description="{20101,11012}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="10000" />
+            <storage missile="160" unit="10" />
+            <hull max="93000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="44" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_l_01" />
+            </sounds>
+            <physics mass="196.016">
+                <inertia pitch="96.271" yaw="96.271" roll="77.016" />
+                <drag forward="99.004" reverse="396.016" horizontal="73.005" vertical="73.005" pitch="106.203" yaw="106.203" roll="106.203" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_03">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_arg_l_destroyer_01_a_macro" connection="ShipConnection" />
+            </connection>
+            <!-- dockingbay_gen_l_inv_macro 
+            dockingbay_gen_l_inv
+            buildmodule_gen_ships_m_dockarea_01_macro
+            buildmodule_arg_equip_l
+            hab_arg_l_01_macro
+            dockarea_xen_m_station_01_macro
+            xenon_small_station_01_storage_01_macro
+            buildmodule_xen_ships_xl_macro
+            
+            -->
+            <connection ref="con_shipstorage_m_01">
+                <macro ref="tpwar_terraformer_shipstorage_m" connection="object" />
+            </connection>
+            <connection ref="dockinspace">
+                <macro ref="dockingbay_gen_l_inv_macro" connection="position"></macro>
+            </connection>
+            <connection ref="salvage_l">
+                <macro ref="defence_par_disc_01_macro" connection="position">
+                    <!-- <component ref="tpdockhole_m_dockarea_01" connection="Connection01"/> -->
+                </macro>
+            </connection>
+            <!-- <connection ref="CONNECTION_NAME_ON_SHIP_COMPONENT">
+            <macro>
+              <component ref="COMP_FOR_POD" connection="space" />
+              <connections>
+                <connection ref="CONNECTION_NAME_ON_POD_COMPONENT">
+                  <macro ref="MACRO_FOR_WEAPON_YOU_WANT_ATTACHED" connection="position" />
+                </connection>
+            </connection> -->
+        </connections>
+    </macro>
+    <!-- TODO TEST SHIPS END -->
+    <!-- TODO SHIPS XL ############################################ -->
+    <!-- TODO XL TERRAFORMER -->
+    <macro name="tpwar_terraformer_macro" class="ship_xl">
+        <component ref="tpwar_terraformer_comp" />
+        <properties>
+            <identification name="{734546,62}" description="{734546,63}" icon="ship_xl_fight_01" />
+            <software>
+                <software ware="software_dockmk2" default="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" default="1" />
+                <software ware="software_scannerobjectmk2" default="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <hull max="735000" />
+            <secrecy level="3" />
+            <purpose primary="fight" />
+            <people capacity="0" />
+            <physics mass="1874.085">
+                <inertia pitch="1397.262" yaw="1397.262" roll="1117.81" />
+                <drag forward="454.817" reverse="1819.268" horizontal="187.409" vertical="187.409" pitch="1074.817" yaw="1074.817" roll="1074.817" />
+            </physics>
+            <thruster tags="extralarge" />
+            <loadouts>
+                <loadout id="default">
+                    <macros>
+                        <engine macro="engine_tfm_xl_allround_01_mk1_macro" path="../con_engine_01" />
+                    </macros>
+                    <ammunition>
+                        <ammunition macro="countermeasure_flares_01_macro" min="0" max="200" optional="1" />
+                    </ammunition>
+                    <virtualmacros>
+                        <thruster macro="thruster_gen_xl_allround_01_mk1_macro" />
+                    </virtualmacros>
+                </loadout>
+            </loadouts>
+            <capture allow="0" />
+            <ship type="carrier" />
+        </properties>
+        <connections>
+            <connection ref="con_dockarea_tel_xl_carrier_01_a">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_b">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_c">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_e">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_f">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_g">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_g">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_i">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_shipstorage_m_01">
+                <macro ref="tpwar_terraformer_shipstorage_m" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_terraformer_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_a">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_j">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_k">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_l">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_m">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_n">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_o">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_p">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_q">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_r">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_b">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_c">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_d">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_e">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_f">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_g">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_h">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="launchtube_arg_s_01_i">
+                <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO XL SURRENDRA -->
+    <macro name="tpwar_surendra_macro" class="ship_xl">
+        <component ref="tpwar_surendra_comp" />
+        <properties>
+            <identification name="{734546,50}" basename="{734546,49}" description="{734546,51}" variation="" shortvariation="" icon="ship_xl_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" default="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="4000" unit="60" />
+            <hull max="277000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="195" />
+            <physics mass="708.398">
+                <inertia pitch="693.545" yaw="693.545" roll="554.836" />
+                <drag forward="277.309" reverse="1109.238" horizontal="252.882" vertical="252.882" pitch="821.68" yaw="821.68" roll="821.68" />
+            </physics>
+            <thruster tags="extralarge" />
+            <ship type="carrier" />
+        </properties>
+        <connections>
+            <connection ref="con_buildmodule">
+                <macro ref="buildmodule_gen_carrier_macro" connection="object" />
+            </connection>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_tel_xl_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_a">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_b">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_c">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_e">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_a">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_b">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_c">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_d">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_e">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_f">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_shipstorage01">
+                <macro ref="tpwar_surendra_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage02">
+                <macro ref="tpwar_surendra_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_surendra_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO XL BELLFLOWER -->
+    <macro name="tpwar_bellflower_macro" class="ship_xl">
+        <component ref="tpwar_bellflower_comp" />
+        <properties>
+            <identification name="{734546,30}" basename="{734546,29}" description="{734546,31}" variation="" shortvariation="" icon="ship_xl_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" default="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="4000" unit="60" />
+            <hull max="277000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="195" />
+            <physics mass="708.398">
+                <inertia pitch="693.545" yaw="693.545" roll="554.836" />
+                <drag forward="277.309" reverse="1109.238" horizontal="252.882" vertical="252.882" pitch="821.68" yaw="821.68" roll="821.68" />
+            </physics>
+            <thruster tags="extralarge" />
+            <ship type="carrier" />
+        </properties>
+        <connections>
+            <connection ref="con_buildmodule">
+                <macro ref="buildmodule_gen_carrier_macro" connection="object" />
+            </connection>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_tel_xl_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_a">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_b">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_tel_xl_carrier_01_c">
+                <macro ref="dockarea_tel_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_a">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_b">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_c">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_d">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_e">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_f">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_shipstorage01">
+                <macro ref="tpwar_bellflower_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage02">
+                <macro ref="tpwar_bellflower_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_bellflower_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO SHIPS L ############################################ -->
+    <!-- TODO L PHILODENTRON -->
+    <macro name="tpwar_philodendron_macro" class="ship_l">
+        <component ref="tpwar_philodendron_comp" />
+        <properties>
+            <identification name="{734546,42}" basename="{734546,41}" description="{734546,43}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <explosiondamage value="8000" />
+            <storage missile="30" unit="10" />
+            <hull max="37000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="71" />
+            <physics mass="287.875">
+                <inertia pitch="92.135" yaw="92.135" roll="73.708" />
+                <drag forward="91.477" reverse="365.906" horizontal="140.475" vertical="140.475" pitch="124.575" yaw="124.575" roll="124.575" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_par_l_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_01">
+                <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_philodendron_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_philodendron_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L HYPATIA -->
+    <macro name="tpwar_hypatia_macro" class="ship_l">
+        <component ref="tpwar_hypatia_comp" />
+        <properties>
+            <identification name="{734546,1}" description="{734546,3}" basename="{734546,1}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="10000" />
+            <storage missile="1400" unit="10" />
+            <hull max="140000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="54" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_l_01" />
+            </sounds>
+            <physics mass="196.016">
+                <inertia pitch="96.271" yaw="96.271" roll="77.016" />
+                <drag forward="99.004" reverse="396.016" horizontal="73.005" vertical="73.005" pitch="106.203" yaw="106.203" roll="106.203" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_03">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_hypatia_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_hypatia_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L GREBE -->
+    <macro name="tpwar_grebe_macro" class="ship_l">
+        <component ref="tpwar_grebe_comp" />
+        <properties>
+            <identification name="{734546,5}" basename="{734546,5}" description="{734546,7}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <explosiondamage value="8000" />
+            <storage missile="30" unit="10" />
+            <hull max="78000" />
+            <secrecy level="1" />
+            <purpose primary="fight" />
+            <people capacity="207" />
+            <physics mass="598.799">
+                <inertia pitch="287.313" yaw="287.313" roll="229.85" />
+                <drag forward="159.76" reverse="639.04" horizontal="140.687" vertical="140.687" pitch="186.76" yaw="186.76" roll="186.76" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_004">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_01">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <!-- <connection ref="tpdock01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="tpdock02">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="tpdock03">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection> -->
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_grebe_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_grebe_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L FINDBROKER -->
+    <macro name="tpwar_findbroker_macro" class="ship_l">
+        <component ref="tpwar_findbroker_comp" />
+        <properties>
+            <identification name="{734546,17}" basename="{734546,17}" description="{734546,19}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="2000" />
+            <storage missile="800" unit="8" />
+            <hull max="60000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="83" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_m_03" />
+            </sounds>
+            <physics mass="196.016">
+                <inertia pitch="96.271" yaw="96.271" roll="77.016" />
+                <drag forward="99.004" reverse="396.016" horizontal="73.005" vertical="73.005" pitch="106.203" yaw="106.203" roll="106.203" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+            <sound_occlusion inside="0.4" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_004">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_01">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_findbroker_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_m_01">
+                <macro ref="tpwar_findbroker_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_findbroker_storage" connection="ShipConnection" />
+            </connection>
+            <!-- <connection ref="connectiontocompmacro">
+                <macro ref="tpwar_findbroker_hull_macro" connection="connection_component01" />
+            </connection> -->
+            <connection ref="con_shipstorage_m_01">
+                <macro ref="tpwar_findbroker_shipstorage_m" connection="object" />
+            </connection>
+            <connection ref="con_dockarea_arg_xl_carrier_01">
+                <macro ref="dockarea_arg_xl_carrier_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="connectiontocompmacro">
+                <macro>
+                    <component ref="tpwar_findbroker_hull_comp" connection="space" />
+                </macro>
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L EPIPHANIUS -->
+    <macro name="tpwar_epiphanius_macro" class="ship_l">
+        <component ref="tpwar_epiphanius_comp" />
+        <properties>
+            <identification name="{734546,46}" basename="{734546,45}" description="{734546,47}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="8000" />
+            <storage missile="30" unit="10" />
+            <hull max="112000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="40" />
+            <physics mass="180.944">
+                <inertia pitch="110.571" yaw="110.571" roll="88.456" />
+                <drag forward="49.999" reverse="285.708" horizontal="137.021" vertical="137.021" pitch="132.14" yaw="132.14" roll="132.14" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_par_l_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_par_l_miner_solid_01">
+                <macro ref="dockarea_par_l_miner_solid_01_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_a">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_launchtube_arg_s_01_b">
+                <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_epiphanius_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_epiphanius_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO L ASIATICA  -->
+    <macro name="tpwar_asiatica_macro" class="ship_l">
+        <component ref="tpwar_asiatica_comp" />
+        <!-- <macro name="tpwar_epiphanius_macro" class="ship_l">
+            <component ref="tpwar_epiphanius_comp" /> -->
+        <properties>
+            <identification name="{734546,54}" basename="{734546,53}" description="{734546,55}" variation="" shortvariation="" icon="ship_l_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="8000" />
+            <storage missile="30" unit="10" />
+            <hull max="112000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="40" />
+            <physics mass="180.944">
+                <inertia pitch="110.571" yaw="110.571" roll="88.456" />
+                <drag forward="49.999" reverse="285.708" horizontal="137.021" vertical="137.021" pitch="132.14" yaw="132.14" roll="132.14" />
+            </physics>
+            <thruster tags="large" />
+            <ship type="destroyer" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="bridge_tel_xl_01_macro" connection="con_cockpit" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_003">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dockarea_arg_s_ship_004">
+                <macro ref="dockarea_arg_s_ship_03_macro" connection="Connection01" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_s_01">
+                <macro ref="tpwar_asiatica_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_asiatica_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO SHIPS M ############################################ -->
+    <!-- TODO LX  -->
+    <macro name="tpwar_lx_macro" class="ship_m">
+        <component ref="tpwar_lx_comp" />
+        <properties>
+            <identification name="{734546,57}" description="{734546,57}" basename="{734546,57}" variation="" shortvariation="" icon="ship_m_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <explosiondamage value="10000" />
+            <storage missile="1400" unit="10" />
+            <hull max="140000" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="54" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_l_01" />
+            </sounds>
+            <physics mass="42.966">
+                <inertia pitch="6.177" yaw="6.177" roll="4.942" />
+                <drag forward="7.283" reverse="29.131" horizontal="26.605" vertical="26.605" pitch="13.242" yaw="13.242" roll="13.242" />
+            </physics>
+            <thruster tags="medium" />
+            <ship type="corvette" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="connectiontocompmacro">
+                <macro ref="tpwar_lx_eng_macro" connection="connection_component01" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO M KILLDEER -->
+    <macro name="tpwar_killdeer_macro" class="ship_m">
+        <component ref="tpwar_killdeer_comp" />
+        <properties>
+            <identification name="{734546,9}" basename="{734546,11}" description="{734546,9}" variation="" shortvariation="" icon="ship_m_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <storage missile="60" />
+            <hull max="2200" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="5" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="17.157">
+                <inertia pitch="4.163" yaw="4.163" roll="3.33" />
+                <drag forward="5.526" reverse="24.157" horizontal="6.115" vertical="6.115" pitch="6.299" yaw="6.299" roll="6.299" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="bomber" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_killdeer_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO M JATU -->
+    <macro name="tpwar_jatu_macro" class="ship_m">
+        <component ref="tpwar_jatu_comp" />
+        <properties>
+            <identification name="{734546,22}" basename="{734546,21}" description="{734546,23}" variation="" shortvariation="" icon="ship_m_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <explosiondamage value="1000" />
+            <storage missile="20" />
+            <hull max="5000" />
+            <secrecy level="1" />
+            <purpose primary="fight" />
+            <people capacity="17" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_m_02" />
+            </sounds>
+            <physics mass="42.966">
+                <inertia pitch="6.177" yaw="6.177" roll="4.942" />
+                <drag forward="7.283" reverse="29.131" horizontal="26.605" vertical="26.605" pitch="13.242" yaw="13.242" roll="13.242" />
+            </physics>
+            <thruster tags="medium" />
+            <ship type="frigate" />
+            <sound_occlusion inside="0.4" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="tpwar_jatu_shipstorage" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_jatu_storage" connection="ShipConnection" />
+            </connection>
+            <connection ref="connectiontocompmacroone">
+                <macro ref="tpwar_jatu_hull_macro_one" connection="connection_component01" />
+            </connection>
+            <connection ref="connectiontocompmacrotwo">
+                <macro ref="tpwar_jatu_hull_macro_two" connection="connection_component01" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO SHIPS S ############################################ -->
+     <!-- TODO S SILVERFISH -->
+    <macro name="tpwar_silverfish_macro" class="ship_s">
+        <component ref="tpwar_silverfish_comp" />
+        <properties>
+          <identification name="{734546,65}" basename="{734546,66}" description="{734546,67}" variation="{734546,68}" shortvariation="{734546,69}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="4200" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <physics mass="8.723">
+            <inertia pitch="1.994" yaw="1.994" roll="1.595" />
+            <drag forward="4.328" reverse="15.439" horizontal="2.977" vertical="2.977" pitch="3.297" yaw="3.297" roll="3.297" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="fighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_par_s_fighter_02_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S LAELAPS -->
+    <macro name="tpwar_laelaps_macro" class="ship_s">
+        <component ref="tpwar_laelaps_comp" />
+        <properties>
+          <identification name="{734546,70}" basename="{734546,71}" description="{734546,72}" variation="{734546,73}" shortvariation="{734546,74}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="4100" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <physics mass="8.698">
+            <inertia pitch="2.204" yaw="2.204" roll="2.425" />
+            <drag forward="5.312" reverse="22.601" horizontal="3.78" vertical="3.78" pitch="3.656" yaw="3.656" roll="3.656" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="fighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_tel_s_fighter_02_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S THOON -->
+    <macro name="tpwar_thoon_macro" class="ship_s">
+        <component ref="tpwar_thoon_comp" />
+        <properties>
+          <identification name="{734546,75}" basename="{734546,76}" description="{734546,77}" variation="{734546,78}" shortvariation="{734546,79}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="3700" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_03" />
+          </sounds>
+          <physics mass="7.756">
+            <inertia pitch="1.627" yaw="1.627" roll="1.301" />
+            <drag forward="3.993" reverse="13.006" horizontal="3.429" vertical="3.429" pitch="3.025" yaw="3.025" roll="3.025" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="fighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_par_s_fighter_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S KERES -->
+    <macro name="tpwar_keres_macro" class="ship_s">
+        <component ref="tpwar_keres_comp" />
+        <properties>
+          <identification name="{734546,80}" basename="{734546,81}" description="{734546,82}" variation="{734546,83}" shortvariation="{734546,84}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="3900" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_01" />
+          </sounds>
+          <physics mass="8.091">
+            <inertia pitch="1.75" yaw="1.75" roll="1.925" />
+            <drag forward="4.111" reverse="13.866" horizontal="3.295" vertical="3.295" pitch="3.119" yaw="3.119" roll="3.119" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="fighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_tel_s_fighter_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S HIPPOGRIFF -->
+    <macro name="tpwar_hippogriff_macro" class="ship_s">
+        <component ref="tpwar_hippogriff_comp" />
+        <properties>
+          <identification name="{734546,85}" basename="{734546,86}" description="{734546,87}" variation="{734546,88}" shortvariation="{734546,89}"  icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk1" default="1" />
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="1900" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_02" />
+          </sounds>
+          <physics mass="7.94">
+            <inertia pitch="1.882" yaw="1.882" roll="2.07" />
+            <drag forward="5.763" reverse="25.881" horizontal="4.015" vertical="4.015" pitch="3.419" yaw="3.419" roll="3.419" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="heavyfighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_arg_s_fighter_03_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    
+    <!-- TODO S ECHION -->
+    <macro name="tpwar_echion_macro" class="ship_s">
+        <component ref="tpwar_echion_comp" />
+        <properties>
+          <identification name="{734546,90}" basename="{734546,91}" description="{734546,92}" variation="{734546,93}" shortvariation="{734546,94}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <rotationspeed max="1000" />
+          <rotationacceleration max="1000" />
+          <storage missile="20" />
+          <hull max="3100" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_01" />
+          </sounds>
+          <physics mass="6.579">
+            <inertia pitch="1.229" yaw="1.229" roll="1.352" />
+            <drag forward="3.831" reverse="11.829" horizontal="3.715" vertical="3.715" pitch="2.694" yaw="2.694" roll="2.694" />
+          </physics>
+          <thruster tags="small" />
+          <enginearticulation y="1" z="1" />
+          <ship type="fighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_arg_s_fighter_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S CROCOTTA -->
+    <macro name="tpwar_crocotta_macro" class="ship_s">
+        <component ref="tpwar_crocotta_comp" />
+        <properties>
+          <identification name="{734546,95}" basename="{734546,96}" description="{734546,97}" variation="{734546,98}" shortvariation="{734546,99}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="4000" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="3" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_03" />
+          </sounds>
+          <physics mass="8.406">
+            <inertia pitch="2.077" yaw="2.077" roll="1.662" />
+            <drag forward="4.97" reverse="20.108" horizontal="3.883" vertical="3.883" pitch="3.564" yaw="3.564" roll="3.564" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="heavyfighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_arg_s_heavyfighter_02_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S ATHOS -->
+    <macro name="tpwar_athos_macro" class="ship_s">
+        <component ref="tpwar_athos_comp" />
+        <properties>
+          <identification name="{734546,100}" basename="{734546,101}" description="{734546,102}" variation="{734546,103}" shortvariation="{734546,104}"  icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk1" default="1" />
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="1700" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="2" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_03" />
+          </sounds>
+          <physics mass="6.976">
+            <inertia pitch="1.156" yaw="1.156" roll="1.272" />
+            <drag forward="4.675" reverse="17.964" horizontal="4.158" vertical="4.158" pitch="3.586" yaw="3.586" roll="3.586" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="heavyfighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_arg_s_fighter_04_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S ANGLER -->
+    <macro name="tpwar_angler_macro" class="ship_s">
+        <component ref="tpwar_angler_comp" />
+        <properties>
+          <identification name="{734546,105}" basename="{734546,106}" description="{734546,107}" variation="{734546,108}" shortvariation="{734546,109}" icon="ship_s_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk2" default="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="20" />
+          <hull max="1300" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="2" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_02" />
+          </sounds>
+          <physics mass="5.765">
+            <inertia pitch="0.855" yaw="0.855" roll="0.684" />
+            <drag forward="3.255" reverse="7.64" horizontal="4.09" vertical="4.09" pitch="3.208" yaw="3.208" roll="3.208" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="scout" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_par_s_scout_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    <!-- TODO S ORYX -->
+    <macro name="tpwar_oryx_macro" class="ship_s">
+        <component ref="tpwar_oryx_comp" />
+        <properties>
+            <identification name="{734546,110}" basename="{734546,111}" description="{734546,112}" variation="{734546,113}" shortvariation="{734546,114}" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" default="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="20" />
+            <hull max="2500" />
+            <secrecy level="1" />
+            <purpose primary="fight" />
+            <people capacity="3" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="6.609">
+                <inertia pitch="1.061" yaw="1.061" roll="0.848" />
+                <drag forward="3.397" reverse="8.672" horizontal="4.166" vertical="4.166" pitch="3.472" yaw="3.472" roll="3.472" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="scout" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_tel_s_scout_01_a_macro" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S STORK -->
+    <macro name="tpwar_stork_macro" class="ship_s">
+        <component ref="tpwar_stork_comp" />
+        <properties>
+            <identification name="{734546,115}" basename="{734546,116}" description="{734546,117}" variation="{734546,118}" shortvariation="{734546,119}" icon="ship_s_trade_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" default="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="15" />
+            <hull max="3800" />
+            <secrecy level="2" />
+            <purpose primary="trade" />
+            <people capacity="12" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="6.772">
+                <inertia pitch="0.451" yaw="0.451" roll="0.361" />
+                <drag forward="2.193" reverse="8.772" horizontal="3.381" vertical="3.381" pitch="2.585" yaw="2.585" roll="2.585" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="courier" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_arg_s_fighter_02_a_macro" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S BUCKIE -->
+    <macro name="tpwar_buckie_macro" class="ship_s">
+        <component ref="tpwar_buckie_comp" />
+        <properties>
+            <identification name="{734546,120}" basename="{734546,121}" description="{734546,122}" variation="{734546,123}" shortvariation="{734546,124}" icon="ship_s_trade_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <storage missile="10" />
+            <hull max="4000" />
+            <secrecy level="2" />
+            <purpose primary="trade" />
+            <people capacity="18" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="22.157">
+                <inertia pitch="4.163" yaw="4.163" roll="3.33" />
+                <drag forward="5.526" reverse="24.157" horizontal="6.115" vertical="6.115" pitch="6.299" yaw="6.299" roll="6.299" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="courier" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_arg_s_trans_container_01_a_macro" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S PUGNAX -->
+    <macro name="tpwar_pugnax_macro" class="ship_s">
+        <component ref="tpwar_pugnax_comp" />
+        <properties>
+            <identification name="{734546, 34}" basename="{734546, 33}" description="{734546, 35}" variation="" shortvariation="" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <storage missile="10" unit="40" />
+            <hull max="2400" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="7" />
+            <physics mass="18.466">
+                <inertia pitch="4.771" yaw="4.771" roll="3.817" />
+                <drag forward="5.538" reverse="24.241" horizontal="5.323" vertical="5.323" pitch="6.708" yaw="6.708" roll="6.708" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="fighter" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_pugnax_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S KASPER -->
+    <macro name="tpwar_kasper_macro" class="ship_s">
+        <component ref="tpwar_kasper_comp" />
+        <properties>
+            <identification name="{734546,38}" basename="{734546,37}" description="{734546,39}" variation="" shortvariation="" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <storage missile="4" />
+            <hull max="2100" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="3" />
+            <sounds>
+                <shipdetail ref="shipdetail_ship_02" />
+            </sounds>
+            <physics mass="16.227">
+                <inertia pitch="4.173" yaw="4.173" roll="3.338" />
+                <drag forward="5.158" reverse="21.477" horizontal="12.665" vertical="12.665" pitch="6.008" yaw="6.008" roll="6.008" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="bomber" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_kasper_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S FOXTAIL -->
+    <macro name="tpwar_foxtail_macro" class="ship_s">
+        <component ref="tpwar_foxtail_comp" />
+        <properties>
+            <identification name="{734546, 13}" basename="{734546, 13}" description="{734546, 15}" variation="" shortvariation="" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk1" default="1" />
+                <software ware="software_scannerlongrangemk2" compatible="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" default="1" />
+            </software>
+            <storage missile="40" />
+            <hull max="2100" />
+            <secrecy level="2" />
+            <purpose primary="fight" />
+            <people capacity="5" />
+            <physics mass="16.795">
+                <inertia pitch="4.002" yaw="4.002" roll="3.202" />
+                <drag forward="5.236" reverse="22.045" horizontal="6.302" vertical="6.302" pitch="6.186" yaw="6.186" roll="6.186" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="bomber" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="storage_par_s_trans_container_01_a_macro" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+    <!-- TODO S EXIA -->
+    <macro name="tpwar_exia_macro" class="ship_s">
+        <component ref="tpwar_exia_comp" />
+        <properties>
+            <identification name="{734546,26}" basename="{734546,25}" description="{734546,27}" variation="" shortvariation="" icon="ship_s_fight_01" />
+            <software>
+                <software ware="software_dockmk2" compatible="1" />
+                <software ware="software_flightassistmk1" default="1" />
+                <software ware="software_scannerlongrangemk2" default="1" />
+                <software ware="software_scannerobjectmk1" default="1" />
+                <software ware="software_scannerobjectmk2" compatible="1" />
+                <software ware="software_targetmk1" compatible="1" />
+                <software ware="software_trademk1" compatible="1" />
+            </software>
+            <storage missile="20" />
+            <hull max="3300" />
+            <secrecy level="1" />
+            <purpose primary="fight" />
+            <people capacity="3" />
+            <physics mass="6.899">
+                <inertia pitch="2.059" yaw="2.059" roll="1.647" />
+                <drag forward="6.543" reverse="31.548" horizontal="3.187" vertical="3.187" pitch="4.5" yaw="4.5" roll="4.5" />
+            </physics>
+            <thruster tags="small" />
+            <ship type="fighter" />
+            <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+            <connection ref="con_cockpit">
+                <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+            </connection>
+            <connection ref="con_dock_xs">
+                <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+            </connection>
+            <connection ref="con_shipstorage_xs_01">
+                <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+            </connection>
+            <connection ref="con_storage01">
+                <macro ref="tpwar_exia_storage" connection="ShipConnection" />
+            </connection>
+        </connections>
+    </macro>
+</macros>

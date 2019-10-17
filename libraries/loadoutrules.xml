@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<diff>
+  <add sel="/rules/deployable/macros">
+      <macro category="satellite" mk="09" macro="tpwar_test_sat_macro" />
+      <!-- <macro category="satellite" mk="10" macro="eq_arg_satellite_10_macro" /> -->
+			<!-- jumpdrive -->
+			<!-- <macro category="navbeacon" mk="1" macro="tpwar_jump_beacon_t1_macro" />    -->
+			<!-- <macro category="navbeacon" mk="1" macro="tpwar_salvage_beacon_t1_macro" />     -->
+			<!-- <macro category="navbeacon" mk="1" macro="tpwar_teleportation_beacon_t1_macro" />    -->
+  </add>
+  <!-- <add sel="/rules/deployable/rules">
+	  <ruleset type="default">
+			<rule category="satellite"      mk="09"  weight="3"  purposes="fight"  classes="ship_s"/>
+			<rule category="satellite"      mk="09"  weight="3"  purposes="build"/>
+			<rule category="satellite"      mk="10"  weight="3"  purposes="fight"  classes="ship_s"/>
+			<rule category="satellite"      mk="10"  weight="3"  purposes="build"/>  
+      <rule category="satellite"      mk="09"  weight="3"  purposes="fight" />
+			<rule category="satellite"      mk="09"  weight="3"  purposes="build"/>
+			<rule category="satellite"      mk="10"  weight="3"  purposes="fight" />
+			<rule category="satellite"      mk="10"  weight="3"  purposes="build"/>    
+	  </ruleset>
+  </add> -->
+</diff>

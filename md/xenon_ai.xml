@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Xenon_AI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                 <check_value value="false" />
+            </conditions>
+            <actions>
+                <debug_to_file text="'start'" name="'ai_state.log'" directory="'xenon'" append="false" />
+                <!-- AI VALUES -->
+                <!-- <set_value name="$XenonCount" exact="0" /> -->
+                <set_value name="$PlayerSuccess" exact="0" />
+                <set_value name="$XenonSuccess" exact="0" />
+                <set_value name="$PHQ" exact="false" />
+                <!-- AI STATE -->
+                <set_value name="$XenonInvasion" exact="false" />
+                <set_value name="$XenonPlayerAttack" exact="false" />
+                <set_value name="$XenonPatrol" exact="false" />
+                <set_value name="$XenonHop" exact="false" />
+                <!-- GLOBAL NAMESPACE -->
+                <create_group groupname="global.$TpwarXenonInvasionGroup" />
+            </actions>
+            <cues>
+                <cue name="Debug" instantiate="true" checkinterval="30s" checktime="10s">
+                    <actions>
+                        <!-- <find_ship name="$XenonCount" space="player.galaxy" multiple="true" owner="faction.xenon"></find_ship> -->
+                        <!-- <set_value name="$XenonCount" exact="0" />
+                        <do_all exact="global.$X4_All_Ships.count" counter="$i">
+                            <do_if value="global.$X4_All_Ships.{$i}.owner == faction.xenon">
+                                <set_value name="$XenonCount" exact="1" operation="add" />
+                            </do_if>
+                        </do_all> -->
+                        <debug_to_file text="'XenonCount: %s PlayerSuccess: %s XenonSuccess: %s PHQ: %s XenonInvasion: %s XenonPlayerAttack: %s XenonPatrol: %s XenonHop: %s
+                                    '.[global.$XenonShipCount, $PlayerSuccess, $XenonSuccess, $PHQ, $XenonInvasion, $XenonPlayerAttack, $XenonPatrol, $XenonHop]" name="'ai_state.log'" directory="'xenon'" chance="global.$tpwar_debugchance" />
+                    </actions>
+                </cue>
+                <cue name="XenonAI" instantiate="true" checkinterval="600s" checktime="600s">
+                    <actions>
+                        
+                        <!-- <set_value name="$XenonActionSelecter" exact="" /> -->
+                        <do_if value="$XenonInvasion == true">
+                            <signal_cue cue="XenonInvasion" />
+                        </do_if>
+                        <do_elseif value="$XenonPlayerAttack == true">
+                            <signal_cue cue="XenonPlayerAttack" />
+                        </do_elseif>
+                        <do_elseif value="$XenonPatrol == true">
+                            <signal_cue cue="XenonPatrol" />
+                        </do_elseif>
+                        <do_else>
+                            <set_value name="$XenonHop" exact="true" />
+                            <signal_cue cue="XenonHop" />
+                        </do_else>
+                        <!-- remove -->
+                    </actions>
+                </cue>
+                <!-- XENON EVENTS -->
+                <cue name="XenonKilledShip" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="global.$X4_All_Ships" />
+                    </conditions>
+                    <actions>
+                        <do_if value="event.object.owner == faction.xenon and event.param.owner == faction.player">
+                            <set_value name="$PlayerSuccess" exact="1" operation="add" />
+                            <set_value name="$XenonSuccess" exact="1" operation="subtract" />
+                        </do_if>
+                        <do_if value="event.object.owner == faction.player and event.param.owner == faction.xenon">
+                            <set_value name="$PlayerSuccess" exact="1" operation="subtract" />
+                            <set_value name="$XenonSuccess" exact="1" operation="add" />
+                        </do_if>
+                        <do_if value="event.param.owner == faction.xenon">
+                            <set_value name="$XenonSuccess" exact="1" operation="add" />
+                        </do_if>
+                    </actions>
+                </cue>
+                <cue name="XenonKilledStation" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="global.$X4_All_Stations" />
+                    </conditions>
+                    <actions>
+                        <do_if value="event.object.owner == faction.xenon and event.param.owner == faction.player">
+                            <set_value name="$PlayerSuccess" exact="20" operation="add" />
+                            <set_value name="$XenonSuccess" exact="20" operation="subtract" />
+                        </do_if>
+                        <do_if value="event.object.owner == faction.player and event.param.owner == faction.xenon">
+                            <set_value name="$PlayerSuccess" exact="20" operation="subtract" />
+                            <set_value name="$XenonSuccess" exact="20" operation="add" />
+                        </do_if>
+                        <do_if value="event.param.owner == faction.xenon">
+                            <set_value name="$XenonSuccess" exact="20" operation="add" />
+                        </do_if>
+                    </actions>
+                </cue>
+                <!-- OWNERSHIP -->
+                <cue name="OwnerPHQ" instantiate="true">
+                    <conditions>
+                        <event_object_changed_owner object="global.$TpwarPHQ" />
+                    </conditions>
+                    <actions>
+                        <do_if value="event.param == faction.player">
+                            <set_value name="$PHQ" exact="true" />
+                        </do_if>
+                        <do_else>
+                            <set_value name="$PHQ" exact="false" />
+                        </do_else>
+                    </actions>
+                </cue>
+                <cue name="OwnerSpace" instantiate="true">
+                    <conditions>
+                        <event_object_changed_owner group="global.$X4_All_Sectors" />
+                    </conditions>
+                    <actions>
+                        <do_if value="event.param == faction.player">
+                            <set_value name="$PlayerSuccess" exact="100" operation="add" />
+                        </do_if>
+                        <do_if value="event.param == faction.xenon">
+                            <set_value name="$XenonSuccess" exact="100" operation="add" />
+                        </do_if>
+                        <do_if value="event.param2 == faction.player">
+                            <set_value name="$PlayerSuccess" exact="100" operation="subtract" />
+                        </do_if>
+                        <do_if value="event.param2 == faction.xenon">
+                            <set_value name="$XenonSuccess" exact="100" operation="subtract" />
+                        </do_if>
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

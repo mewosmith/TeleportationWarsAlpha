@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!--
+<component name="bullet_khp_m" class="bullet">
+
+
+<connection name="con_laser01" tags="laser">
+<offset/>
+</connection>
+-->
+<components>
+	<component name="bullet_khp_m" class="bullet">
+		<source geometry="assets\fx\weaponFx\bullet_gen_m_beam_01_mk2_data" />
+		<layers>
+			<layer>
+				<waypoints />
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="200" g="18" b="255" range="25" shadowrange="5" lighteffect="1" trigger="1" intensity="2" specularintensity="1">
+						<lightanimations />
+						<offset>
+							<position x="1.296949E-02" y="0" z="0" />
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" />
+			<connection name="position" tags="position" value="1" />
+			<connection name="space" tags="bullet">
+				<offset />
+			</connection>
+			<connection name="Connection01" tags="part animation textureanimation ">
+				<offset>
+					<position x="6.421277E-05" y="2.640486E-04" z="0" />
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="10" />
+				</animations>
+				<parts>
+					<part name="anim_beam_core">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master" />
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="9.440611E-02" y="0.2790229" z="0.5" />
+							<center x="-1.111766E-08" y="0" z="0.5" />
+						</size>
+						<size_raw>
+							<max x="9.440608E-02" y="0.2790229" z="0.5" />
+							<center x="-1.111766E-08" y="1.490116E-08" z="0.5" />
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0" />
+									<key frame="30" value="-1" />
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+				<waypoints />
+			</connection>
+			<connection name="Connection02" tags="part animation textureanimation iklink " parent="anim_beam_core">
+				<animations>
+					<animation name="loop" start="1" end="10" />
+				</animations>
+				<parts>
+					<part name="anim_beam_glow">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master" />
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.828262" y="1.846155" z="0.4999999" />
+							<center x="5.261973E-08" y="3.361492E-08" z="0.5" />
+						</size>
+						<size_raw>
+							<max x="1.828262" y="1.846155" z="0" />
+							<center x="5.261973E-08" y="3.361492E-08" z="0.5" />
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0" />
+									<key frame="10" value="1" />
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="connection_laser01" tags="laser">
+				<offset>
+					<position x="0" y="0" z="6.603815E-03" />
+				</offset>
+			</connection>
+			<connection name="con_laser01" tags="laser">
+				<offset />
+			</connection>
+		</connections>
+	</component>
+</components>

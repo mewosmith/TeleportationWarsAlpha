@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="advanced_heavy_particle_projector_bullet_macro" class="bullet">
+        <component ref="bullet_xen_s_laser_01_mk1" />
+        <properties>
+            <bullet speed="1340" lifetime="9" amount="1" barrelamount="1" icon="weapon_gatling_mk2" timediff="0.005" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="18.180381839773005" />
+                <damage min="3709" max="35162" value="48727" time="9" /> 
+            <effects>
+                <impact ref="impact_xen_m_laser_01_mk1" />
+                <launch ref="muzzle_gen_m_plasma_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+</macros>

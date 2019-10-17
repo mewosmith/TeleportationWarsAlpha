@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="fragile_150mm_artillery_ray_bullet_macro" class="bullet">
+        <component ref="bullet_gen_s_gatling_01_mk2" />
+        <properties>
+            <bullet speed="1587" lifetime="8" amount="1" barrelamount="1" icon="weapon_shotgun_mk2" timediff="0.005" angle="0.05" maxhits="1" ricochet="0" scale="0" attach="0" />
+            <reload time="1.8295435005132115" />
+                <damage min="27" max="59" value="76" time="8" /> 
+            <effects>
+                <impact ref="impact_gen_s_laser_01_mk1" />
+                <launch ref="muzzle_gen_m_shotgun_01_mk1" />
+            </effects>
+            <weapon system="weapon_standard" />
+        </properties>
+    </macro>
+</macros>

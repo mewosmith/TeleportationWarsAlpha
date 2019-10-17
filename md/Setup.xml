@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+    <add sel="/mdscript/cues/cue[@name='Start']/actions/set_value[@name='md.$EquipmentTable']" pos="after">
+        <!-- <get_ware_definition result="md.$EquipmentTable.{faction.pirate}" faction="faction.pirate" />   
+        <get_ware_definition result="md.$EquipmentTable.{faction.meditech}" faction="faction.meditech" />  -->
+        <get_ware_definition result="md.$EquipmentTable.{faction.xenonmatrix}" faction="faction.xenonmatrix" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.atlas}" faction="faction.atlas" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.sovsyn}" faction="faction.sovsyn" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.cartel}" faction="faction.cartel" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.agi}" faction="faction.agi" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.goner}" faction="faction.goner" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.wholefood}" faction="faction.wholefood" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.ledda}" faction="faction.ledda" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.telunion}" faction="faction.telunion" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.aldrin}" faction="faction.aldrin" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.cantera}" faction="faction.cantera" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.toride}" faction="faction.toride" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.nmmc}" faction="faction.nmmc" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.atreus}" faction="faction.atreus" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.jonferson}" faction="faction.jonferson" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.aquariuscorp}" faction="faction.aquariuscorp" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.ptni}" faction="faction.ptni" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.strongarms}" faction="faction.strongarms" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.plutarch}" faction="faction.plutarch" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.albionenergy}" faction="faction.albionenergy" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.terracorp}" faction="faction.terracorp" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.franton}" faction="faction.franton" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.chow}" faction="faction.chow" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.beryll}" faction="faction.beryll" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.terrapmc}" faction="faction.terrapmc" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.otas}" faction="faction.otas" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.buccaneers}" faction="faction.buccaneers" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.reivers}" faction="faction.reivers" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.terrans}" faction="faction.terrans" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.nolimits}" faction="faction.nolimits" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.uguras}" faction="faction.uguras" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.heretics}" faction="faction.heretics" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.yaki}" faction="faction.yaki" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.usc}" faction="faction.usc" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.heartofalbion}" faction="faction.heartofalbion" />
+        <get_ware_definition result="md.$EquipmentTable.{faction.sonraenergy}" faction="faction.sonraenergy" />
+    </add>
+</diff>

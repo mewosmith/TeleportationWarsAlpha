@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/macroxsd/x4_component.xsd">
+    <component name="tpwareq_pulse_medium_beam_bullet_comp" class="bullet">
+        <source geometry="assets\fx\weaponFx\impact_gen_s_laser_01_mk1_data" />
+        <layers>
+            <layer>
+                <waypoints />
+                <lights />
+            </layer>
+        </layers>
+        <connections>
+            <connection name="container" tags="contents" value="0" />
+            <connection name="position" tags="position" value="1" />
+            <connection name="space" tags="bullet">
+                <offset />
+            </connection>
+            <connection name="Connection01" tags="part animation  ">
+                <animations>
+                    <animation name="playonce" start="1" end="4" />
+                </animations>
+                <parts>
+                    <part name="part_fx_muzzle">
+                        <lods>
+                            <lod index="0">
+                                <materials>
+                                    <material id="1" ref="effects.bullets_fx_master" />
+                                </materials>
+                            </lod>
+                        </lods>
+                        <size>
+                            <max x="3.914989" y="3.914991" z="3.143768" />
+                            <center x="7.629395E-06" y="-4.768372E-07" z="2.758605" />
+                        </size>
+                        <size_raw>
+                            <max x="3.914982" y="3.914991" z="0.3851624" />
+                            <center x="7.629395E-06" y="-5.960464E-07" z="2.758605" />
+                        </size_raw>
+                    </part>
+                </parts>
+            </connection>
+            <connection name="connection_laser01" tags="laser">
+                <offset>
+                    <position x="0" y="0" z="6.603815E-03" />
+                </offset>
+            </connection>
+        </connections>
+    </component>
+</components>

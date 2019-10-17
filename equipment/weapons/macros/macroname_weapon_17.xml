@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="advanced_300mm_ion_railgun_macro" class="turret">
+        <component ref="weapon_gen_s_plasma_01_mk1" />
+        <properties>
+            <identification name="{12345678,1819}" basename="{12345678,1820}" shortname="{12345678,1821}" description="{12345678,1822}" mk="1" />
+            <bullet class="advanced_300mm_ion_railgun_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="75" />
+            <rotationacceleration max="183" />
+            <!-- <reload time="6" /> -->
+            <hull max="1706" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+

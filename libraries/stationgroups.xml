@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<groups>
+  <!-- <group name="x4ep1_playerheadquarters">
+    <select constructionplan="x4ep1_playerheadquarters" />
+  </group>
+
+  <group name="x4ep1_gamestart_trade_playerfactory">
+    <select constructionplan="x4ep1_gamestart_trade_playerfactory" />
+  </group>
+  
+  <group name="shipyard_arg">
+    <select constructionplan="arg_shipyard" />
+  </group>
+
+  <group name="wharf_arg">
+    <select constructionplan="arg_wharf" />
+  </group>
+
+  <group name="shipyard_ali">
+    <select constructionplan="ali_shipyard" />
+  </group>
+  
+  <group name="shipyard_par">
+    <select constructionplan="par_shipyard" />
+  </group>
+  
+  <group name="wharf_par">
+    <select constructionplan="par_wharf" />
+  </group>
+
+  <group name="shipyard_tel">
+    <select constructionplan="tel_shipyard" />
+  </group>
+  
+  <group name="wharf_tel">
+    <select constructionplan="tel_wharf" />
+  </group>
+
+  <group name="shipyard_xen">
+    <select constructionplan="xen_shipyard" />
+  </group>
+
+  <group name="wharf_xen">
+    <select constructionplan="xen_wharf" />
+  </group>
+
+  <group name="equipmentdock_arg">
+    <select constructionplan="arg_equipmentdock" />
+  </group>
+
+  <group name="equipmentdock_par">
+    <select constructionplan="par_equipmentdock" />
+  </group>
+
+  <group name="equipmentdock_tel">
+    <select constructionplan="tel_equipmentdock" />
+  </group>
+
+  <group name="tradestation_arg">
+    <select constructionplan="arg_tradestation" />
+  </group>
+
+  <group name="tradestation_par">
+    <select constructionplan="par_tradestation" />
+  </group>
+  
+  <group name="tradestation_tel">
+    <select constructionplan="tel_tradestation" />
+  </group>
+
+  <group name="defence_arg">
+    <select constructionplan="arg_defence" />
+  </group>
+
+  <group name="defence_par">
+    <select constructionplan="par_defence" />
+  </group>
+
+  <group name="defence_tel">
+    <select constructionplan="tel_defence" />
+  </group>
+
+  <group name="defence_xen">
+    <select constructionplan="xen_defence" />
+  </group>
+
+  <group name="pirate_piratedock">
+    <select constructionplan="gen_piratedock" />
+  </group>
+
+  <group name="pirate_piratebase">
+    <select constructionplan="gen_piratebase" />
+  </group>
+
+  <group name="pirate_freeport">
+    <select constructionplan="gen_freeport" />
+  </group> -->
+</groups>

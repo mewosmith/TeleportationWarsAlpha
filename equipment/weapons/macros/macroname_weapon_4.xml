@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros>
+<macro name="phased_200mm_ion_generator_macro" class="weapon">
+        <component ref="turret_tel_m_beam_02_mk1" />
+        <properties>
+            <identification name="{12345678,506}" basename="{12345678,507}" shortname="{12345678,508}" description="{12345678,509}" mk="1" />
+            <bullet class="phased_200mm_ion_generator_bullet_macro" />
+            <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+            <rotationspeed max="183" />
+            <rotationacceleration max="68" />
+            <!-- <reload time="5" /> -->
+            <hull max="802" hittable="1" integrated="1" />
+        </properties>
+    </macro>
+</macros>
+
