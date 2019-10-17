@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- ?xml-stylesheet href="index.xsl" type="text/xsl" ? -->
 <index>
+  <entry name="tpwar_test_ship_comp" value="extensions\tpwar_release\ships\ship_components" />
   <entry name="tpdockhole_m_dockarea_01" value="extensions\tpwar_release\parts\salvage_components" />
   <entry name="tpwar_l_salavger_comp" value="extensions\tpwar_release\ships\ship_components" />
   <!-- <entry name="" value="extensions\tpwar_release\ships\ship_components" /> -->
