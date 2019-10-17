@@ -46,7 +46,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -82,7 +82,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -118,7 +118,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -142,7 +142,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -154,7 +154,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -178,7 +178,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -190,7 +190,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -226,7 +226,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -262,7 +262,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -274,7 +274,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2256,7 +2256,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2280,7 +2280,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2424,7 +2424,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2484,7 +2484,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2496,7 +2496,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2508,7 +2508,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2652,7 +2652,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2664,7 +2664,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2700,7 +2700,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2784,7 +2784,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2808,7 +2808,7 @@
       </quotas>
       <location class="galaxy" macro="xu_ep2_universe_macro" faction="ownerless" />
       <station>
-        <select faction="argon" tags="[piratebase]" />
+       <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
