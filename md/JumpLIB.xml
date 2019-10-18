@@ -56,7 +56,7 @@
 
                 <debug_text text="'JUMPSHITHERE' + $Destination.knownname" />
                 <set_value name="$ShipList" exact="event.param.{2}" />
-                <do_if value="this.ship.subordinates.count gt 0">
+                <do_if value="$ShipList.{1}.subordinates.count gt 0">
                     <debug_text text="'JUMPSHITHERE We have subordinates! ' + this.ship.subordinates.count" />
                     <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
                     <do_all exact="$SubsList.count" counter="$i">
