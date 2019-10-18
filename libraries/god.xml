@@ -4,11 +4,71 @@
 <diff>
   <add sel="/god/stations">
     <!-- SCAV -->
-    <station id="station_1_yaki" race="argon" owner="yaki">
+    <station id="station_1_terrapmc" race="argon" owner="terrapmc">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrapmc]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_2_otas" race="argon" owner="otas">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, otas]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_3_buccaneers" race="argon" owner="buccaneers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, buccaneers]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_4_reivers" race="argon" owner="reivers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, reivers]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_5_terrans" race="argon" owner="terrans">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrans]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_6_nolimits" race="argon" owner="nolimits">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, nolimits]" />
       <station>
         <select faction="argon" tags="[shipyard]" />
         <loadout>
@@ -16,14 +76,217 @@
         </loadout>
       </station>
     </station>
-
+    <station id="station_7_uguras" race="argon" owner="uguras">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, uguras]" />
+      <station>
+        <select faction="argon" tags="[shipyard]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_8_terrapmc" race="argon" owner="terrapmc">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrapmc]" />
+      <station>
+        <select faction="argon" tags="[shipyard]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_9_otas" race="argon" owner="otas">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, otas]" />
+      <station>
+        <select faction="argon" tags="[tradestation]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_10_buccaneers" race="argon" owner="buccaneers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, buccaneers]" />
+      <station>
+        <select faction="argon" tags="[equipmentdock]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_11_reivers" race="argon" owner="reivers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, reivers]" />
+      <station>
+        <select faction="argon" tags="[wharf]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_12_terrans" race="argon" owner="terrans">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrans]" />
+      <station>
+        <select faction="argon" tags="[tradestation]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_13_nolimits" race="argon" owner="nolimits">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, nolimits]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_14_uguras" race="argon" owner="uguras">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, uguras]" />
+      <station>
+        <select faction="argon" tags="[defence]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_15_terrapmc" race="argon" owner="terrapmc">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrapmc]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_16_otas" race="argon" owner="otas">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, otas]" />
+      <station>
+        <select faction="argon" tags="[shipyard]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_17_buccaneers" race="argon" owner="buccaneers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, buccaneers]" />
+      <station>
+        <select faction="argon" tags="[defence]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_18_reivers" race="argon" owner="reivers">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, reivers]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_19_terrans" race="argon" owner="terrans">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terrans]" />
+      <station>
+        <select faction="argon" tags="[tradestation]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_20_nolimits" race="argon" owner="nolimits">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, nolimits]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_21_uguras" race="argon" owner="uguras">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, uguras]" />
+      <station>
+        <select faction="argon" tags="[tradestation]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_1_yaki" race="argon" owner="yaki">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_2_usc" race="argon" owner="usc">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
     <station id="station_3_heartofalbion" race="argon" owner="heartofalbion">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-        <select faction="argon" tags="[tradestation]" />
+        <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -33,9 +296,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -45,9 +308,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
-        <select faction="argon" tags="[shipyard]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -57,9 +320,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -69,9 +332,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -81,7 +344,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -93,9 +356,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[defence]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -105,9 +368,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[defence]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -117,9 +380,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -129,9 +392,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -141,9 +404,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -153,9 +416,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -165,9 +428,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -177,9 +440,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -189,9 +452,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -201,9 +464,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
-        <select faction="argon" tags="[tradestation]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -213,9 +476,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -225,9 +488,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
-        <select faction="argon" tags="[shipyard]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -237,9 +500,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
-        <select faction="argon" tags="[shipyard]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -249,9 +512,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -261,21 +524,19 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-
-    <!-- PIR -->
-    <station id="station_1_atlas" race="argon" owner="atlas">
+    <station id="station_24_sonraenergy" race="argon" owner="sonraenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -283,11 +544,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_2_sovsyn" race="argon" owner="sovsyn">
+    <station id="station_25_yaki" race="argon" owner="yaki">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -295,11 +556,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_3_cartel" race="argon" owner="cartel">
+    <station id="station_26_usc" race="argon" owner="usc">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -307,11 +568,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_4_agi" race="argon" owner="agi">
+    <station id="station_27_heartofalbion" race="argon" owner="heartofalbion">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -319,11 +580,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_5_atlas" race="argon" owner="atlas">
+    <station id="station_28_sonraenergy" race="argon" owner="sonraenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -331,11 +592,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_6_sovsyn" race="argon" owner="sovsyn">
+    <station id="station_29_yaki" race="argon" owner="yaki">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -343,11 +604,23 @@
         </loadout>
       </station>
     </station>
-    <station id="station_7_cartel" race="argon" owner="cartel">
+    <station id="station_30_usc" race="argon" owner="usc">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
+      <station>
+        <select faction="argon" tags="[defence]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_31_heartofalbion" race="argon" owner="heartofalbion">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -355,11 +628,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_8_agi" race="argon" owner="agi">
+    <station id="station_32_sonraenergy" race="argon" owner="sonraenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -367,11 +640,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_9_atlas" race="argon" owner="atlas">
+    <station id="station_33_yaki" race="argon" owner="yaki">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -379,35 +652,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_10_sovsyn" race="argon" owner="sovsyn">
+    <station id="station_34_usc" race="argon" owner="usc">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_11_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_12_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -415,72 +664,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_13_atlas" race="argon" owner="atlas">
+    <station id="station_35_heartofalbion" race="argon" owner="heartofalbion">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_15_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_16_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_17_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_18_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_19_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -488,11 +676,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_20_agi" race="argon" owner="agi">
+    <station id="station_36_sonraenergy" race="argon" owner="sonraenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -500,12 +688,11 @@
         </loadout>
       </station>
     </station>
-
-    <station id="station_22_sovsyn" race="argon" owner="sovsyn">
+    <station id="station_37_yaki" race="argon" owner="yaki">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, yaki]" />
       <station>
         <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
@@ -513,156 +700,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_23_cartel" race="argon" owner="cartel">
+    <station id="station_38_usc" race="argon" owner="usc">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_24_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_25_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_26_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_27_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_28_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_30_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_31_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_32_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_33_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_34_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_35_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_36_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, usc]" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -670,304 +712,11 @@
         </loadout>
       </station>
     </station>
-    <station id="station_37_atlas" race="argon" owner="atlas">
+    <station id="station_39_heartofalbion" race="argon" owner="heartofalbion">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_38_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_39_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_40_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_42_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_43_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_44_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_45_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_46_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_47_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_48_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_49_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_50_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_51_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_53_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_54_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_55_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_56_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_57_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_58_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_59_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_60_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_61_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-
-    <station id="station_64_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_66_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, heartofalbion]" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -975,1043 +724,25 @@
         </loadout>
       </station>
     </station>
-    <station id="station_67_cartel" race="argon" owner="cartel">
+    <station id="station_40_sonraenergy" race="argon" owner="sonraenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, sonraenergy]" />
       <station>
-        <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[defence]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-    <station id="station_68_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_69_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_71_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_72_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_73_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_74_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_75_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_76_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_77_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_78_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_79_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_81_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_82_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_83_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_84_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_85_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_86_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_88_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_89_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_91_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_92_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_93_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_94_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_95_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_96_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_97_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_98_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_99_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_100_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_102_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_103_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_104_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_105_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_106_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_108_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_109_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_110_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_111_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_112_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_113_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_114_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_115_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_116_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_117_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_118_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_119_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_120_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_121_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_122_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_123_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_124_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_125_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_126_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_127_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_128_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_129_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-
-    <station id="station_132_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_133_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_134_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_135_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_137_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_138_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_139_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_140_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_141_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_142_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_143_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_144_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_145_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_146_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_147_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_148_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_149_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_150_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_151_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_152_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_153_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_154_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_155_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_156_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_157_atlas" race="argon" owner="atlas">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_158_sovsyn" race="argon" owner="sovsyn">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_159_cartel" race="argon" owner="cartel">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_160_agi" race="argon" owner="agi">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" solitary="true" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
- 
     <station id="station_1_goner" race="argon" owner="goner">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, goner]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2021,7 +752,7 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, ledda]" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -2033,9 +764,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, atreus]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2045,9 +776,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, jonferson]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2057,9 +788,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, aquariuscorp]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2069,22 +800,33 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, strongarms]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-
+    <station id="station_7_plutarch" race="argon" owner="plutarch">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, plutarch]" />
+      <station>
+        <select faction="argon" tags="[defence]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
     <station id="station_8_albionenergy" race="argon" owner="albionenergy">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, albionenergy]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2094,9 +836,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terracorp]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2106,9 +848,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, beryll]" />
       <station>
-        <select faction="argon" tags="[shipyard]" />
+        <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2118,9 +860,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, goner]" />
       <station>
-        <select faction="argon" tags="[tradestation]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2130,9 +872,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, ledda]" />
       <station>
-        <select faction="argon" tags="[equipmentdock]" />
+        <select faction="argon" tags="[defence]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2142,20 +884,31 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, atreus]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-
+    <station id="station_14_jonferson" race="argon" owner="jonferson">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, jonferson]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
     <station id="station_15_aquariuscorp" race="argon" owner="aquariuscorp">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, aquariuscorp]" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
@@ -2167,9 +920,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, strongarms]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2179,9 +932,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, plutarch]" />
       <station>
-        <select faction="argon" tags="[shipyard]" />
+        <select faction="argon" tags="[equipmentdock]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2191,20 +944,55 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, albionenergy]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-
+    <station id="station_19_terracorp" race="argon" owner="terracorp">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terracorp]" />
+      <station>
+        <select faction="argon" tags="[defence]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
     <station id="station_20_beryll" race="argon" owner="beryll">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, beryll]" />
+      <station>
+        <select faction="argon" tags="[wharf]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_21_goner" race="argon" owner="goner">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, goner]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
+    <station id="station_22_ledda" race="argon" owner="ledda">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, ledda]" />
       <station>
         <select faction="argon" tags="[tradestation]" />
         <loadout>
@@ -2212,15 +1000,13 @@
         </loadout>
       </station>
     </station>
-
-
     <station id="station_23_atreus" race="argon" owner="atreus">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, atreus]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2230,9 +1016,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, jonferson]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="hatikvah" tags="[piratebase]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2242,20 +1028,31 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, aquariuscorp]" />
       <station>
-       <select faction="hatikvah" tags="[piratebase]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
     </station>
-
+    <station id="station_26_strongarms" race="argon" owner="strongarms">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, strongarms]" />
+      <station>
+        <select faction="hatikvah" tags="[piratebase]" />
+        <loadout>
+          <level exact="0.75" />
+        </loadout>
+      </station>
+    </station>
     <station id="station_27_plutarch" race="argon" owner="plutarch">
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, plutarch]" />
       <station>
         <select faction="argon" tags="[equipmentdock]" />
         <loadout>
@@ -2267,9 +1064,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, albionenergy]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[shipyard]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2279,9 +1076,9 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, terracorp]" />
       <station>
-        <select faction="argon" tags="[wharf]" />
+        <select faction="argon" tags="[tradestation]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
@@ -2291,560 +1088,13 @@
       <quotas>
         <quota galaxy="1" />
       </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_31_goner" race="argon" owner="goner">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[ownerless, beryll]" />
       <station>
         <select faction="argon" tags="[wharf]" />
         <loadout>
           <level exact="0.75" />
         </loadout>
       </station>
-    </station>
-    <station id="station_32_ledda" race="argon" owner="ledda">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_33_atreus" race="argon" owner="atreus">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_34_jonferson" race="argon" owner="jonferson">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_35_aquariuscorp" race="argon" owner="aquariuscorp">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_37_plutarch" race="argon" owner="plutarch">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-       <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_38_albionenergy" race="argon" owner="albionenergy">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-       <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_40_beryll" race="argon" owner="beryll">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[equipmentdock]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_41_goner" race="argon" owner="goner">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-       <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_42_ledda" race="argon" owner="ledda">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[tradestation]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_43_atreus" race="argon" owner="atreus">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_44_jonferson" race="argon" owner="jonferson">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_45_aquariuscorp" race="argon" owner="aquariuscorp">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-
-    <station id="station_47_plutarch" race="argon" owner="plutarch">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[wharf]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_48_albionenergy" race="argon" owner="albionenergy">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-       <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_49_terracorp" race="argon" owner="terracorp">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-        <select faction="argon" tags="[shipyard]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-    </station>
-    <station id="station_50_beryll" race="argon" owner="beryll">
-      <quotas>
-        <quota galaxy="1" />
-      </quotas>
-      <location class="sector" faction="ownerless" />
-      <station>
-       <select faction="hatikvah" tags="[piratebase]" />
-        <loadout>
-          <level exact="0.75" />
-        </loadout>
-      </station>
-
-
-      <station id="station_2_usc" race="argon" owner="usc">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="usc" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_24_sonraenergy" race="argon" owner="sonraenergy">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="sonraenergy" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_14_sovsyn" race="argon" owner="sovsyn">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="sovsyn" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_21_atlas" race="argon" owner="atlas">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="atlas" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_29_atlas" race="argon" owner="atlas">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="atlas" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_41_atlas" race="argon" owner="atlas">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="atlas" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_52_agi" race="argon" owner="agi">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="agi" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_62_sovsyn" race="argon" owner="sovsyn">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="sovsyn" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_63_cartel" race="argon" owner="cartel">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="cartel" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_65_atlas" race="argon" owner="atlas">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="atlas" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_70_sovsyn" race="argon" owner="sovsyn">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="sovsyn" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_80_agi" race="argon" owner="agi">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="agi" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_87_cartel" race="argon" owner="cartel">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="cartel" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_90_sovsyn" race="argon" owner="sovsyn">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="sovsyn" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_101_atlas" race="argon" owner="atlas">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="atlas" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_107_cartel" race="argon" owner="cartel">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="cartel" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_130_sovsyn" race="argon" owner="sovsyn">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="sovsyn" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_131_cartel" race="argon" owner="cartel">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="cartel" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_136_agi" race="argon" owner="agi">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" solitary="true" faction="agi" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_7_plutarch" race="argon" owner="plutarch">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="plutarch" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_14_jonferson" race="argon" owner="jonferson">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="jonferson" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_19_terracorp" race="argon" owner="terracorp">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="terracorp" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_21_goner" race="argon" owner="goner">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="goner" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_22_ledda" race="argon" owner="ledda">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="ledda" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_26_strongarms" race="argon" owner="strongarms">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="strongarms" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_36_strongarms" race="argon" owner="strongarms">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="strongarms" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_39_terracorp" race="argon" owner="terracorp">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="terracorp" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-        <station id="station_46_strongarms" race="argon" owner="strongarms">
-          <quotas>
-            <quota galaxy="1" />
-          </quotas>
-          <location class="sector" faction="strongarms" />
-          <station>
-            <select faction="argon" tags="[defence]" />
-            <loadout>
-              <level exact="0.75" />
-            </loadout>
-          </station>
-        </station>
-
-
     </station>
     <!-- </stations> -->
     <!-- khaakpox

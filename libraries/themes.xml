@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    
+    
+    
+    
+    
+    
+    
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="khaakpox" paintmod="paintmod_0001" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="xenonmatrix" paintmod="paintmod_0006" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="atlas" paintmod="paintmod_0048" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="sovsyn" paintmod="paintmod_0049" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="cartel" paintmod="paintmod_0050" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="agi" paintmod="paintmod_0011" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="goner" paintmod="paintmod_0042" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="wholefood" paintmod="paintmod_0043" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="ledda" paintmod="paintmod_0044" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="telunion" paintmod="paintmod_0003" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="aldrin" paintmod="paintmod_0027" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="cantera" paintmod="paintmod_0028" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="toride" paintmod="paintmod_0029" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="nmmc" paintmod="paintmod_0002" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="atreus" paintmod="paintmod_0024" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="jonferson" paintmod="paintmod_0025" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="aquariuscorp" paintmod="paintmod_0026" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="ptni" paintmod="paintmod_0007" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="strongarms" paintmod="paintmod_0013" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="plutarch" paintmod="paintmod_0021" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="albionenergy" paintmod="paintmod_0022" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="terracorp" paintmod="paintmod_0023" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="franton" paintmod="paintmod_0010" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="chow" paintmod="paintmod_0039" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="beryll" paintmod="paintmod_0040" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="terrapmc" paintmod="paintmod_0041" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="otas" paintmod="paintmod_0012" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="buccaneers" paintmod="paintmod_0045" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="reivers" paintmod="paintmod_0046" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="terrans" paintmod="paintmod_0047" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="nolimits" paintmod="paintmod_0008" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="uguras" paintmod="paintmod_0009" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="heretics" paintmod="paintmod_0036" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="yaki" paintmod="paintmod_0037" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="usc" paintmod="paintmod_0038" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="heartofalbion" paintmod="paintmod_0005" />
+    </add>
+    <add sel="//theme[@id='painttheme_race_default']">
+        <group faction="sonraenergy" paintmod="paintmod_0014" />
+    </add>
+
+</diff>
+    <!-- default group for all factions -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
+paintmod_0048
+paintmod_0049
+paintmod_0050
+paintmod_0011
+paintmod_0042
+paintmod_0043
+paintmod_0044
+paintmod_0003
+paintmod_0027
+paintmod_0028
+paintmod_0029
+paintmod_0002
+paintmod_0024
+paintmod_0025
+paintmod_0026
+paintmod_0007
+paintmod_0013
+paintmod_0021
+paintmod_0022
+paintmod_0023
+paintmod_0010
+paintmod_0039
+paintmod_0040
+paintmod_0041
+paintmod_0012
+paintmod_0045
+paintmod_0046
+paintmod_0047
+paintmod_0008
+paintmod_0009
+paintmod_0036
+paintmod_0037
+paintmod_0038
+paintmod_0005
+paintmod_0014
+paintmod_0020
+paintmod_0033
+paintmod_0034
+paintmod_0035
+paintmod_0004
+paintmod_0030
+paintmod_0031
+paintmod_0032
+paintmod_0015
+paintmod_0016
+paintmod_0017
+paintmod_0019
+paintmod_0056
+paintmod_0079
+paintmod_0018
+paintmod_0051
+paintmod_0052
+paintmod_0053
+paintmod_0054
+paintmod_0055
+paintmod_0057
+paintmod_0058
+paintmod_0059
+paintmod_0060
+paintmod_0061
+paintmod_0062
+paintmod_0063
+paintmod_0064
+paintmod_0065
+paintmod_0066
+paintmod_0067
+paintmod_0068
+paintmod_0069
+paintmod_0070
+paintmod_0071
+paintmod_0072
+paintmod_0073
+paintmod_0074
+paintmod_0075
+paintmod_0076
+paintmod_0077
+paintmod_0078
+paintmod_0080
+paintmod_0081
+paintmod_0082
+paintmod_0083
+paintmod_0084
+paintmod_0085
+paintmod_0086
+paintmod_0087
+    
+     -->

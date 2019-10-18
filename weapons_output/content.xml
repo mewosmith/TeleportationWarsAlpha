@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="weapon stuff" name="weapon stuff" description="weapon stuff" author="albysmith" version="2" date="2018-01-09" save="0" enabled="1">
+ <text language="7" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="33" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="34" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="39" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="44" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="49" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="55" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="81" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="82" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="86" name="weapon stuff" description="weapon stuff" author="albysmith" />
+ <text language="88" name="weapon stuff" description="weapon stuff" author="albysmith" />
+</content>

@@ -318,1436 +318,1370 @@
     </ware>
     <!--  STUPID STUPID ENGINE STUFF -->
     <ware id="tpwar_engine_arg_l_allround_01_mk1" name="{20107,3004}" description="{20107,3002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="321518" average="357242" max="392966" />
-    <production time="20" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="147" />
-        <ware ware="energycells" amount="25" />
-        <ware ware="engineparts" amount="67" />
-      </primary>
-    </production>
-    <component ref="engine_arg_l_allround_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-  
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-    <owner faction="hatikvah" />
-  </ware>
-  <ware id="tpwar_engine_arg_l_travel_01_mk1" name="{20107,3044}" description="{20107,3042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="337593" average="375104" max="412614" />
-    <production time="20" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="148" />
-        <ware ware="energycells" amount="37" />
-        <ware ware="engineparts" amount="76" />
-      </primary>
-    </production>
-    <component ref="engine_arg_l_travel_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_allround_01_mk1" name="{20107,2004}" description="{20107,2002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="11767" average="13074" max="14382" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="3" />
-        <ware ware="energycells" amount="15" />
-        <ware ware="engineparts" amount="5" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_allround_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-    <owner faction="hatikvah" />
-  </ware>
-  <ware id="tpwar_engine_arg_m_allround_01_mk2" name="{20107,2044}" description="{20107,2042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="58166" average="64629" max="71092" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="18" />
-        <ware ware="energycells" amount="30" />
-        <ware ware="engineparts" amount="22" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_allround_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_allround_01_mk3" name="{20107,2084}" description="{20107,2082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="287722" average="319691" max="351660" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="90" />
-        <ware ware="energycells" amount="60" />
-        <ware ware="engineparts" amount="110" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_allround_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_combat_01_mk1" name="{20107,2204}" description="{20107,2202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="14357" average="15952" max="17547" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="3" />
-        <ware ware="energycells" amount="15" />
-        <ware ware="engineparts" amount="7" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_combat_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
- 
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-    <owner faction="hatikvah" />
-  </ware>
-  <ware id="tpwar_engine_arg_m_combat_01_mk2" name="{20107,2244}" description="{20107,2242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="69711" average="77457" max="85202" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="22" />
-        <ware ware="energycells" amount="30" />
-        <ware ware="engineparts" amount="26" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_combat_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_combat_01_mk3" name="{20107,2284}" description="{20107,2282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="345444" average="383827" max="422209" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="110" />
-        <ware ware="energycells" amount="60" />
-        <ware ware="engineparts" amount="130" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_combat_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_travel_01_mk1" name="{20107,2404}" description="{20107,2102}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="13062" average="14513" max="15964" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="3" />
-        <ware ware="energycells" amount="15" />
-        <ware ware="engineparts" amount="6" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_travel_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-    <owner faction="hatikvah" />
-  </ware>
-  <ware id="tpwar_engine_arg_m_travel_01_mk2" name="{20107,2444}" description="{20107,2442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="65234" average="72482" max="79730" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="20" />
-        <ware ware="energycells" amount="30" />
-        <ware ware="engineparts" amount="25" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_travel_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_m_travel_01_mk3" name="{20107,2484}" description="{20107,2482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="331013" average="367793" max="404572" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="105" />
-        <ware ware="energycells" amount="60" />
-        <ware ware="engineparts" amount="125" />
-      </primary>
-    </production>
-    <component ref="engine_arg_m_travel_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_allround_01_mk1" name="{20107,1004}" description="{20107,1002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="5526" average="6140" max="6754" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="engineparts" amount="4" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_allround_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/> 
-  </ware>
-  <ware id="tpwar_engine_arg_s_allround_01_mk2" name="{20107,1044}" description="{20107,1042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="26370" average="29300" max="32230" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="8" />
-        <ware ware="energycells" amount="20" />
-        <ware ware="engineparts" amount="10" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_allround_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_allround_01_mk3" name="{20107,1084}" description="{20107,1082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="123301" average="137001" max="150701" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="40" />
-        <ware ware="energycells" amount="40" />
-        <ware ware="engineparts" amount="45" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_allround_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_combat_01_mk1" name="{20107,1204}" description="{20107,1202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="8116" average="9017" max="9919" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="engineparts" amount="6" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_combat_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/> 
-  </ware>
-  <ware id="tpwar_engine_arg_s_combat_01_mk2" name="{20107,1244}" description="{20107,1242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="40504" average="45005" max="49505" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="12" />
-        <ware ware="energycells" amount="20" />
-        <ware ware="engineparts" amount="16" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_combat_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_combat_01_mk3" name="{20107,1284}" description="{20107,1282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="181023" average="201137" max="221250" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="60" />
-        <ware ware="energycells" amount="40" />
-        <ware ware="engineparts" amount="65" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_combat_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-   
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_travel_01_mk1" name="{20107,1404}" description="{20107,1402}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="6821" average="7579" max="8336" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="engineparts" amount="5" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_travel_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/> 
-  </ware>
-  <ware id="tpwar_engine_arg_s_travel_01_mk2" name="{20107,1444}" description="{20107,1442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="34732" average="38591" max="42450" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="10" />
-        <ware ware="energycells" amount="20" />
-        <ware ware="engineparts" amount="14" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_travel_01_mk2_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
- 
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_s_travel_01_mk3" name="{20107,1484}" description="{20107,1482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="166592" average="185103" max="203613" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="55" />
-        <ware ware="energycells" amount="40" />
-        <ware ware="engineparts" amount="60" />
-      </primary>
-    </production>
-    <component ref="engine_arg_s_travel_01_mk3_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_xl_allround_01_mk1" name="{20107,4004}" description="{20107,4002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="424061" average="471179" max="518297" />
-    <production time="30" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="193" />
-        <ware ware="energycells" amount="50" />
-        <ware ware="engineparts" amount="89" />
-      </primary>
-    </production>
-    <component ref="engine_arg_xl_allround_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
-  <ware id="tpwar_engine_arg_xl_travel_01_mk1" name="{20107,4044}" description="{20107,4042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
-    <price min="445263" average="494737" max="544210" />
-    <production time="30" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="195" />
-        <ware ware="energycells" amount="50" />
-        <ware ware="engineparts" amount="101" />
-      </primary>
-    </production>
-    <component ref="engine_arg_xl_travel_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-
-
-<owner faction= "agi"/>
-<owner faction= "goner"/>
-<owner faction= "wholefood"/>
-<owner faction= "ledda"/>
-<owner faction= "aldrin"/>
-<owner faction= "cantera"/>
-<owner faction= "toride"/>
-<owner faction= "jonferson"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-
-<owner faction= "terrapmc"/>
-<owner faction= "otas"/>
-<owner faction= "terrans"/>
-<owner faction= "yaki"/>
-<owner faction= "usc"/>
-<owner faction= "heartofalbion"/>
-<owner faction= "sonraenergy"/>
-<owner faction= "teladi"/>
-<owner faction= "ministry"/>
-<owner faction= "telunion"/>
-<owner faction= "nmmc"/>
-<owner faction= "atreus"/>
-<owner faction= "ptni"/>
-<owner faction= "franton"/>
-<owner faction= "chow"/>
-<owner faction= "uguras"/>
-<owner faction= "paranid"/>
-<owner faction= "holyorder"/>
-<owner faction= "buccaneers"/>
-<owner faction= "heretics"/>
-<owner faction= "xenon"/>
-<owner faction= "xenonmatrix"/>
-<owner faction= "khaak"/>
-<owner faction= "khaakpox"/>
-<owner faction= "scaleplate"/>
-<owner faction= "hatikvah"/>
-<owner faction= "atlas"/>
-<owner faction= "sovsyn"/>
-<owner faction= "cartel"/>
-<owner faction= "strongarms"/>
-<owner faction= "plutarch"/>
-<owner faction= "terracorp"/>
-<owner faction= "beryll"/>
-<owner faction= "terrapmc"/>
-<owner faction= "reivers"/>
-<owner faction= "nolimits"/>
-<owner faction= "uguras"/>
-<owner faction= "yaki"/>
-  </ware>
+      <price min="321518" average="357242" max="392966" />
+      <production time="20" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="147" />
+          <ware ware="energycells" amount="25" />
+          <ware ware="engineparts" amount="67" />
+        </primary>
+      </production>
+      <component ref="engine_arg_l_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+      <owner faction="hatikvah" />
+    </ware>
+    <ware id="tpwar_engine_arg_l_travel_01_mk1" name="{20107,3044}" description="{20107,3042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="337593" average="375104" max="412614" />
+      <production time="20" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="148" />
+          <ware ware="energycells" amount="37" />
+          <ware ware="engineparts" amount="76" />
+        </primary>
+      </production>
+      <component ref="engine_arg_l_travel_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_allround_01_mk1" name="{20107,2004}" description="{20107,2002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="11767" average="13074" max="14382" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="3" />
+          <ware ware="energycells" amount="15" />
+          <ware ware="engineparts" amount="5" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+      <owner faction="hatikvah" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_allround_01_mk2" name="{20107,2044}" description="{20107,2042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="58166" average="64629" max="71092" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="18" />
+          <ware ware="energycells" amount="30" />
+          <ware ware="engineparts" amount="22" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_allround_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_allround_01_mk3" name="{20107,2084}" description="{20107,2082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="287722" average="319691" max="351660" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="90" />
+          <ware ware="energycells" amount="60" />
+          <ware ware="engineparts" amount="110" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_allround_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_combat_01_mk1" name="{20107,2204}" description="{20107,2202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="14357" average="15952" max="17547" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="3" />
+          <ware ware="energycells" amount="15" />
+          <ware ware="engineparts" amount="7" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_combat_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+      <owner faction="hatikvah" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_combat_01_mk2" name="{20107,2244}" description="{20107,2242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="69711" average="77457" max="85202" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="22" />
+          <ware ware="energycells" amount="30" />
+          <ware ware="engineparts" amount="26" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_combat_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_combat_01_mk3" name="{20107,2284}" description="{20107,2282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="345444" average="383827" max="422209" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="110" />
+          <ware ware="energycells" amount="60" />
+          <ware ware="engineparts" amount="130" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_combat_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_travel_01_mk1" name="{20107,2404}" description="{20107,2102}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="13062" average="14513" max="15964" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="3" />
+          <ware ware="energycells" amount="15" />
+          <ware ware="engineparts" amount="6" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_travel_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+      <owner faction="hatikvah" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_travel_01_mk2" name="{20107,2444}" description="{20107,2442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="65234" average="72482" max="79730" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="20" />
+          <ware ware="energycells" amount="30" />
+          <ware ware="engineparts" amount="25" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_travel_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_m_travel_01_mk3" name="{20107,2484}" description="{20107,2482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="331013" average="367793" max="404572" />
+      <production time="15" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="105" />
+          <ware ware="energycells" amount="60" />
+          <ware ware="engineparts" amount="125" />
+        </primary>
+      </production>
+      <component ref="engine_arg_m_travel_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_allround_01_mk1" name="{20107,1004}" description="{20107,1002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="5526" average="6140" max="6754" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="10" />
+          <ware ware="engineparts" amount="4" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_allround_01_mk2" name="{20107,1044}" description="{20107,1042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="26370" average="29300" max="32230" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="8" />
+          <ware ware="energycells" amount="20" />
+          <ware ware="engineparts" amount="10" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_allround_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_allround_01_mk3" name="{20107,1084}" description="{20107,1082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="123301" average="137001" max="150701" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="40" />
+          <ware ware="energycells" amount="40" />
+          <ware ware="engineparts" amount="45" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_allround_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_combat_01_mk1" name="{20107,1204}" description="{20107,1202}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="8116" average="9017" max="9919" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="10" />
+          <ware ware="engineparts" amount="6" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_combat_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_combat_01_mk2" name="{20107,1244}" description="{20107,1242}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="40504" average="45005" max="49505" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="12" />
+          <ware ware="energycells" amount="20" />
+          <ware ware="engineparts" amount="16" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_combat_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_combat_01_mk3" name="{20107,1284}" description="{20107,1282}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="181023" average="201137" max="221250" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="60" />
+          <ware ware="energycells" amount="40" />
+          <ware ware="engineparts" amount="65" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_combat_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_travel_01_mk1" name="{20107,1404}" description="{20107,1402}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="6821" average="7579" max="8336" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="10" />
+          <ware ware="engineparts" amount="5" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_travel_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_travel_01_mk2" name="{20107,1444}" description="{20107,1442}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="34732" average="38591" max="42450" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="10" />
+          <ware ware="energycells" amount="20" />
+          <ware ware="engineparts" amount="14" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_travel_01_mk2_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.4" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_s_travel_01_mk3" name="{20107,1484}" description="{20107,1482}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="166592" average="185103" max="203613" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="55" />
+          <ware ware="energycells" amount="40" />
+          <ware ware="engineparts" amount="60" />
+        </primary>
+      </production>
+      <component ref="engine_arg_s_travel_01_mk3_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0.7" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_xl_allround_01_mk1" name="{20107,4004}" description="{20107,4002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="424061" average="471179" max="518297" />
+      <production time="30" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="193" />
+          <ware ware="energycells" amount="50" />
+          <ware ware="engineparts" amount="89" />
+        </primary>
+      </production>
+      <component ref="engine_arg_xl_allround_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
+    <ware id="tpwar_engine_arg_xl_travel_01_mk1" name="{20107,4044}" description="{20107,4042}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+      <price min="445263" average="494737" max="544210" />
+      <production time="30" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="antimatterconverters" amount="195" />
+          <ware ware="energycells" amount="50" />
+          <ware ware="engineparts" amount="101" />
+        </primary>
+      </production>
+      <component ref="engine_arg_xl_travel_01_mk1_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" />
+      <owner faction="agi" />
+      <owner faction="goner" />
+      <owner faction="wholefood" />
+      <owner faction="ledda" />
+      <owner faction="aldrin" />
+      <owner faction="cantera" />
+      <owner faction="toride" />
+      <owner faction="jonferson" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="otas" />
+      <owner faction="terrans" />
+      <owner faction="yaki" />
+      <owner faction="usc" />
+      <owner faction="heartofalbion" />
+      <owner faction="sonraenergy" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+      <owner faction="telunion" />
+      <owner faction="nmmc" />
+      <owner faction="atreus" />
+      <owner faction="ptni" />
+      <owner faction="franton" />
+      <owner faction="chow" />
+      <owner faction="uguras" />
+      <owner faction="paranid" />
+      <owner faction="holyorder" />
+      <owner faction="buccaneers" />
+      <owner faction="heretics" />
+      <owner faction="xenon" />
+      <owner faction="xenonmatrix" />
+      <owner faction="khaak" />
+      <owner faction="khaakpox" />
+      <owner faction="scaleplate" />
+      <owner faction="hatikvah" />
+      <owner faction="atlas" />
+      <owner faction="sovsyn" />
+      <owner faction="cartel" />
+      <owner faction="strongarms" />
+      <owner faction="plutarch" />
+      <owner faction="terracorp" />
+      <owner faction="beryll" />
+      <owner faction="terrapmc" />
+      <owner faction="reivers" />
+      <owner faction="nolimits" />
+      <owner faction="uguras" />
+      <owner faction="yaki" />
+    </ware>
     <!-- can this not be please? -->
     <ware id="khp_engine_arg_xl_allround_01_mk1" name="{20107,4004}" description="{20107,4002}" group="engines" transport="equipment" volume="1" tags="engine equipment">
       <price min="424061" average="471179" max="518297" />

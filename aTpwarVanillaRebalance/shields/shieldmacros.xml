@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Users/alby/Desktop/macroxsd/x4_macro.xsd">
+    <macro name="shield_arg_l_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,3004}" basename="{20106,3001}" shortname="{20106,3005}" makerrace="argon" description="{20106,3002}" mk="1" />
+            <recharge max="388440" rate="173" delay="0.57" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_l_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,3044}" basename="{20106,3041}" shortname="{20106,3045}" makerrace="argon" description="{20106,3042}" mk="2" />
+            <recharge max="462820" rate="268" delay="0.57" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_m_standard_01_mk1_macro" class="shieldgenerator" alias="shield_arg_m_standard_02_mk1_macro">
+        <component ref="shield_arg_m_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,2004}" basename="{20106,2001}" shortname="{20106,2005}" makerrace="argon" description="{20106,2002}" mk="1" />
+            <recharge max="5147" rate="26" delay="0.5" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_m_standard_01_mk2_macro" class="shieldgenerator" alias="shield_arg_m_standard_02_mk2_macro">
+        <component ref="shield_arg_m_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,2044}" basename="{20106,2041}" shortname="{20106,2045}" makerrace="argon" description="{20106,2042}" mk="2" />
+            <recharge max="6133" rate="41" delay="0.5" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_m_standard_02_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk1" />
+        <properties>
+            <identification name="{20106,2004}" basename="{20106,2001}" shortname="{20106,2005}" makerrace="argon" description="{20106,2002}" mk="1" />
+            <recharge max="5147" rate="26" delay="0.5" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_m_standard_02_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk2" />
+        <properties>
+            <identification name="{20106,2044}" basename="{20106,2041}" shortname="{20106,2045}" makerrace="argon" description="{20106,2042}" mk="2" />
+            <recharge max="6133" rate="41" delay="0.5" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_s_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,1004}" basename="{20106,1001}" shortname="{20106,1005}" makerrace="argon" description="{20106,1002}" mk="1" />
+            <recharge max="827" rate="82" delay="12.1" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_s_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,1044}" basename="{20106,1041}" shortname="{20106,1045}" makerrace="argon" description="{20106,1042}" mk="2" />
+            <recharge max="988" rate="128" delay="12.1" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_s_standard_01_mk3_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk3" />
+        <properties>
+            <identification name="{20106,1084}" basename="{20106,1081}" shortname="{20106,1085}" makerrace="argon" description="{20106,1082}" mk="3" />
+            <recharge max="1411" rate="219" delay="12.1" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_arg_xl_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_xl_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,4004}" basename="{20106,4001}" shortname="{20106,4005}" makerrace="argon" description="{20106,4002}" mk="1" />
+            <recharge max="1294810" rate="492" delay="0.67" />
+            <hull max="6000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_kha_m_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="generic_shieldgenerator" />
+        <properties>
+            <identification makerrace="khaak" mk="1" />
+            <recharge max="4632" rate="25" delay="0.57" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_kha_s_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="generic_shieldgenerator" />
+        <properties>
+            <identification makerrace="khaak" mk="1" />
+            <recharge max="745" rate="79" delay="13.9" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_l_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,3014}" basename="{20106,3011}" shortname="{20106,3015}" makerrace="paranid" description="{20106,3012}" mk="1" />
+            <recharge max="349600" rate="184" delay="0.48" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_par_l_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,3054}" basename="{20106,3051}" shortname="{20106,3055}" makerrace="paranid" description="{20106,3052}" mk="2" />
+            <recharge max="416540" rate="284" delay="0.48" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_par_m_standard_01_mk1_macro" class="shieldgenerator" alias="shield_par_m_standard_02_mk1_macro">
+        <component ref="shield_arg_m_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,2014}" basename="{20106,2011}" shortname="{20106,2015}" makerrace="paranid" description="{20106,2012}" mk="1" />
+            <recharge max="4632" rate="28" delay="0.42" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_m_standard_01_mk2_macro" class="shieldgenerator" alias="shield_par_m_standard_02_mk2_macro">
+        <component ref="shield_arg_m_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,2054}" basename="{20106,2051}" shortname="{20106,2055}" makerrace="paranid" description="{20106,2052}" mk="2" />
+            <recharge max="5520" rate="43" delay="0.42" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_m_standard_02_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk1" />
+        <properties>
+            <identification name="{20106,2014}" basename="{20106,2011}" shortname="{20106,2015}" makerrace="paranid" description="{20106,2012}" mk="1" />
+            <recharge max="4632" rate="28" delay="0.42" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_par_m_standard_02_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk2" />
+        <properties>
+            <identification name="{20106,2054}" basename="{20106,2051}" shortname="{20106,2055}" makerrace="paranid" description="{20106,2052}" mk="2" />
+            <recharge max="5520" rate="43" delay="0.42" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_par_s_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,1014}" basename="{20106,1011}" shortname="{20106,1015}" makerrace="paranid" description="{20106,1012}" mk="1" />
+            <recharge max="745" rate="87" delay="10.2" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_s_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,1054}" basename="{20106,1051}" shortname="{20106,1055}" makerrace="paranid" description="{20106,1052}" mk="2" />
+            <recharge max="889" rate="135" delay="10.2" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_s_standard_01_mk3_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk3" />
+        <properties>
+            <identification name="{20106,1094}" basename="{20106,1091}" shortname="{20106,1095}" makerrace="paranid" description="{20106,1092}" mk="3" />
+            <recharge max="1270" rate="232" delay="10.2" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_par_xl_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_xl_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,4014}" basename="{20106,4011}" shortname="{20106,4015}" makerrace="paranid" description="{20106,4012}" mk="1" />
+            <recharge max="1165320" rate="521" delay="0.57" />
+            <hull max="6000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_l_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,3024}" basename="{20106,3021}" shortname="{20106,3025}" makerrace="teladi" description="{20106,3022}" mk="1" />
+            <recharge max="427290" rate="166" delay="0.85" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_l_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_l_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,3064}" basename="{20106,3061}" shortname="{20106,3065}" makerrace="teladi" description="{20106,3062}" mk="2" />
+            <recharge max="509110" rate="257" delay="0.85" />
+            <hull max="2000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_m_standard_01_mk1_macro" class="shieldgenerator" alias="shield_tel_m_standard_02_mk1_macro">
+        <component ref="shield_arg_m_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,2024}" basename="{20106,2021}" shortname="{20106,2025}" makerrace="teladi" description="{20106,2022}" mk="1" />
+            <recharge max="5662" rate="25" delay="0.57" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_m_standard_01_mk2_macro" class="shieldgenerator" alias="shield_tel_m_standard_02_mk2_macro">
+        <component ref="shield_arg_m_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,2064}" basename="{20106,2061}" shortname="{20106,2065}" makerrace="teladi" description="{20106,2062}" mk="2" />
+            <recharge max="6746" rate="39" delay="0.57" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_m_standard_02_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk1" />
+        <properties>
+            <identification name="{20106,2024}" basename="{20106,2021}" shortname="{20106,2025}" makerrace="teladi" description="{20106,2022}" mk="1" />
+            <recharge max="5662" rate="25" delay="0.57" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_m_standard_02_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_m_standard_02_mk2" />
+        <properties>
+            <identification name="{20106,2064}" basename="{20106,2061}" shortname="{20106,2065}" makerrace="teladi" description="{20106,2062}" mk="2" />
+            <recharge max="6746" rate="39" delay="0.57" />
+            <hull max="500" threshold="0.2" integrated="0" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_s_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,1024}" basename="{20106,1021}" shortname="{20106,1025}" makerrace="teladi" description="{20106,1022}" mk="1" />
+            <recharge max="910" rate="79" delay="13.9" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_s_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,1064}" basename="{20106,1061}" shortname="{20106,1065}" makerrace="teladi" description="{20106,1062}" mk="2" />
+            <recharge max="1087" rate="122" delay="13.9" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_s_standard_01_mk3_macro" class="shieldgenerator">
+        <component ref="shield_arg_s_standard_01_mk3" />
+        <properties>
+            <identification name="{20106,1104}" basename="{20106,1101}" shortname="{20106,1105}" makerrace="teladi" description="{20106,1102}" mk="3" />
+            <recharge max="1552" rate="210" delay="13.9" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_tel_xl_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_arg_xl_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,4024}" basename="{20106,4021}" shortname="{20106,4025}" makerrace="teladi" description="{20106,4022}" mk="1" />
+            <recharge max="1424290" rate="470" delay="1" />
+            <hull max="6000" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_l_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_xen_l_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,3034}" basename="{20106,3031}" shortname="{20106,3035}" makerrace="xenon" description="{20106,3032}" mk="1" />
+            <recharge max="369020" rate="194" delay="0.63" />
+            <hull max="2000" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_l_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_xen_l_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,3074}" basename="{20106,3071}" shortname="{20106,3075}" makerrace="xenon" description="{20106,3072}" mk="2" />
+            <recharge max="439680" rate="300" delay="0.63" />
+            <hull max="2000" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_m_standard_01_mk1_macro" class="shieldgenerator" alias="shield_xen_m_standard_02_mk1_macro">
+        <component ref="shield_xen_m_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,2034}" basename="{20106,2031}" shortname="{20106,2035}" makerrace="xenon" description="{20106,2032}" mk="1" />
+            <recharge max="4890" rate="29" delay="0.55" />
+            <hull max="500" integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_m_standard_01_mk2_macro" class="shieldgenerator" alias="shield_xen_m_standard_02_mk2_macro">
+        <component ref="shield_xen_m_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,2074}" basename="{20106,2071}" shortname="{20106,2075}" makerrace="xenon" description="{20106,2072}" mk="2" />
+            <recharge max="5826" rate="45" delay="0.55" />
+            <hull max="500" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_m_standard_02_mk1_macro" class="shieldgenerator">
+        <component ref="shield_xen_m_standard_02_mk1" />
+        <properties>
+            <identification name="{20106,2034}" basename="{20106,2031}" shortname="{20106,2035}" makerrace="xenon" description="{20106,2032}" mk="1" />
+            <recharge max="4890" rate="29" delay="0.55" />
+            <hull max="500" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_m_standard_02_mk2_macro" class="shieldgenerator">
+        <component ref="shield_xen_m_standard_02_mk2" />
+        <properties>
+            <identification name="{20106,2074}" basename="{20106,2071}" shortname="{20106,2075}" makerrace="xenon" description="{20106,2072}" mk="2" />
+            <recharge max="5826" rate="45" delay="0.55" />
+            <hull max="500" threshold="0.2" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_s_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_xen_s_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,1034}" basename="{20106,1031}" shortname="{20106,1035}" makerrace="xenon" description="{20106,1032}" mk="1" />
+            <recharge max="786" rate="92" delay="13.3" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_s_standard_01_mk2_macro" class="shieldgenerator">
+        <component ref="shield_xen_s_standard_01_mk2" />
+        <properties>
+            <identification name="{20106,1074}" basename="{20106,1071}" shortname="{20106,1075}" makerrace="xenon" description="{20106,1072}" mk="2" />
+            <recharge max="938" rate="143" delay="13.3" />
+            <hull integrated="1" />
+        </properties>
+    </macro>
+    <macro name="shield_xen_xl_standard_01_mk1_macro" class="shieldgenerator">
+        <component ref="shield_xen_xl_standard_01_mk1" />
+        <properties>
+            <identification name="{20106,4034}" basename="{20106,4031}" shortname="{20106,4035}" makerrace="xenon" description="{20106,4032}" mk="1" />
+            <recharge max="1230070" rate="550" delay="0.74" />
+            <hull max="6000" />
+        </properties>
+    </macro>
+</macros>

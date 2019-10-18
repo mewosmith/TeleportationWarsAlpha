@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Test_Sectors" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+                <check_value value="false" />
+            </conditions>
+            <actions>
+                <add_inventory ware="ware.inv_timewarp" />
+                <find_sector groupname="$AllSectors" multiple="true" space="player.galaxy"></find_sector>
+                <create_group groupname="$XenonShips" />
+                <set_value name="$DeadXenon" exact="0" />
+                <set_value name="$PlayerAge" exact="0" />
+                <!-- <debug_to_file text="'[VECS]'" name="'test_xenon.log'" directory="'test_xenon'" append="false" /> -->
+                <create_list name="$LISTPlayerAge" />
+                <create_list name="$LISTXenonShips" />
+                <create_list name="$LISTOtherShips" />
+                <create_list name="$LISTOtherStations" />
+                <create_list name="$LISTXenonStations" />
+                <create_list name="$LISTDeadXenon" />
+            </actions>
+            <cues>
+                <cue name="Loop" instantiate="true" checkinterval="600s" checktime="120s">
+                    <actions>
+                  
+                        <set_value name="$PlayerAge" exact="600" operation="add" />
+                        <find_ship groupname="$OtherShips" multiple="true" space="player.galaxy">
+                            <match owner="faction.xenon" negate="true"></match>
+                        </find_ship>
+                        <find_station groupname="$OtherStations" multiple="true" space="player.galaxy">
+                            <match owner="faction.xenon" negate="true"></match>
+                        </find_station>
+                        <find_ship groupname="$XenonShips" multiple="true" owner="faction.xenon" space="player.galaxy"></find_ship>
+                        <find_station groupname="$XenonStations" multiple="true" owner="faction.xenon" space="player.galaxy"></find_station>
+                       
+                        <debug_to_file text="'[VECS]'" name="'test_xenon.txt'" directory="'test_xenon'" append="false" />
+                        <append_to_list name="$LISTPlayerAge" exact="$PlayerAge" />
+                        <append_to_list name="$LISTXenonShips" exact="$XenonShips.count" />
+                        <append_to_list name="$LISTOtherShips" exact="$OtherShips.count" />
+                        <append_to_list name="$LISTOtherStations" exact="$OtherStations.count" />
+                        <append_to_list name="$LISTXenonStations" exact="$XenonStations.count" />
+                        <append_to_list name="$LISTDeadXenon" exact="$DeadXenon" />
+                        <!-- <debug_to_file  text="'livexenon =  %1  otherships = %2 XenonStations = %3 xenonstations = %4 otherstations = %5 deadxenon = %6'.[$LISTPlayerAge,$LISTXenonShips,$LISTOtherShips,$LISTOtherStations,$LISTXenonStations,$LISTDeadXenon]" name="'test_xenon.txt'" directory="'test_xenon'" /> -->
+                        <debug_to_file text="'livexenon = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTXenonShips.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTXenonShips.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'otherships = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTOtherShips.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTOtherShips.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'xenonstations = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTXenonStations.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTXenonStations.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'otherstations = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTOtherStations.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTOtherStations.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'deadxenon = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTDeadXenon.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTDeadXenon.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'playerage = [ '" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <do_all exact="$LISTPlayerAge.count" counter="$i">
+                            <debug_to_file text="'%1,'.[$LISTPlayerAge.{$i}]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        </do_all>
+                        <debug_to_file text="']'" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <!-- <debug_to_file text="'otherships = %1'.[$LISTOtherShips]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'xenonstations = %1'.[$LISTXenonStations]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'otherstations = %1'.[$LISTOtherStations]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'deadxenon = %1'.[$LISTDeadXenon]" name="'test_xenon.txt'" directory="'test_xenon'" />
+                        <debug_to_file text="'playerage = %1'.[$LISTPlayerAge]" name="'test_xenon.txt'" directory="'test_xenon'" /> -->
+                    </actions>
+                </cue>
+                <cue name="SectorChange" instantiate="true">
+                    <conditions>
+                        <event_object_changed_owner group="$AllSectors" />
+                    </conditions>
+                    <actions>
+                        <debug_to_file text="'Sector: %1 newowner: %2 playerage: %3'.[event.object.knownname, event.param, player.age]" name="'test_xenon.log'" directory="'test_xenon'" />
+                    </actions>
+                </cue>
+                <cue name="XenonDead" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="$XenonShips" />
+                    </conditions>
+                    <actions>
+                        <set_value name="$DeadXenon" exact="1" operation="add" />
+                    </actions>
+                </cue>
+                <!-- <cue name="AddCargo" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <set_value name="$mats" exact="event.param" />
+                        <debug_text text="'freebuilder_fairy %1 offers'.[$mats.count]" />
+                        <set_value name="$cargotext" exact="'\n'" />
+                        <set_value name="$cargoadd" exact="0" />
+                        <do_all exact="$mats.count" counter="$i">
+                            <set_value name="$coffer" exact="$mats.{$i}" />
+                            <set_value name="$cware" exact="$coffer.ware" />
+                            <set_value name="$camt" exact="[$coffer.desiredamount,$coffer.amount].max" />
+                            <set_value name="$cowner" exact="$coffer.owner" />
+                            <set_value name="$chas" exact="$coffer.owner.cargo.{$cware}.count" />
+                            <do_if value="$camt - $chas lt 1">
+                           
+                                <continue />
+                            </do_if>
+                            <debug_text text="'fb: %1 add %2 %3'.[$cowner.idcode, $cware, $camt]" />
+                            <add_cargo object="$cowner" ware="$cware" exact="$camt" />
+                            <set_value name="$cargotext" exact="$cargotext + ' %1 %2 '.[$camt, $cware] " />
+                            <set_value name="$cargoadd" exact="$cargoadd + 1" />
+                        </do_all>
+                        <do_if value="$cargoadd gt 0">
+                            <debug_to_file text=" 'Gave %s (%s) '.[$cowner.knownname, $cowner.idcode] +$cargotext " name="'test_xenon.log'" directory="'test_xenon'" />
+                        </do_if>
+                    </actions>
+                </cue> -->
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

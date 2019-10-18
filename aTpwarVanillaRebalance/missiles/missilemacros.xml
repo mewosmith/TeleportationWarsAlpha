@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\alby\Desktop\unidiffxsd/macro_missile.xsd">
+    <macro name="missile_cluster_heavy_mk1_macro" class="missile">
+        <component ref="missile_cluster_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6114}" basename="{20105,6111}" description="{20105,6112}" />
+            <ammunition value="1" />
+            <missile amount="1" delay="0.2" barrelamount="1" lifetime="129.6" range="70000" distribute="1" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+            <explosiondamage value="12141"  />
+            <reload time="5"  />
+            <hull max="2"  />
+
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <detach macro="missile_swarm_heavy_mk1_macro" />
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="38.258">
+                <inertia pitch="76.915" yaw="76.915" roll="76.915" />
+                <drag forward="1.607" reverse="6.427" horizontal="38.258" vertical="38.258" pitch="19.229" yaw="19.229" roll="19.229" />
+            </physics>
+        </properties>
+        <connections>
+
+            <connection ref="con_engine01">
+
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_cluster_light_mk1_macro" class="missile">
+        <component ref="missile_cluster_light_mk1" />
+        <properties>
+            <identification name="{20105,6104}" basename="{20105,6101}" description="{20105,6102}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="30" range="35500" distribute="1" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+            <explosiondamage value="2361" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <detach macro="missile_swarm_light_mk1_macro" />
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="8.317">
+                <inertia pitch="4.258" yaw="4.258" roll="4.258" />
+                <drag forward="0.349" reverse="1.397" horizontal="14.056" vertical="14.056" pitch="4.258" yaw="4.258" roll="4.258" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_dumbfire_heavy_mk1_macro" class="missile">
+        <component ref="missile_dumbfire_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6024}" basename="{20105,6021}" description="{20105,6022}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="25.92" range="90000" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+            <explosiondamage value="3960" />
+            <reload time="5" />
+            <hull max="2" />
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="1.241">
+                <inertia pitch="1.519" yaw="1.519" roll="1.519" />
+                <drag forward="0.248" reverse="0.993" horizontal="1.782" vertical="1.782" pitch="0.721" yaw="0.721" roll="0.721" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_dumbfire_heavy_mk2_macro" class="missile">
+        <component ref="missile_dumbfire_heavy_mk2" />
+        <properties>
+            <identification name="{20105,6034}" basename="{20105,6031}" description="{20105,6032}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="25.92" range="100000" guided="0" icon="missile_dumbfire_mk2" tags="dumbfire" />
+            <explosiondamage value="4320" />
+            <reload time="5" />
+            <hull max="3" />
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="1.117">
+                <inertia pitch="1.388" yaw="1.388" roll="1.388" />
+                <drag forward="0.223" reverse="0.894" horizontal="1.604" vertical="1.604" pitch="0.659" yaw="0.659" roll="0.659" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_dumbfire_light_mk1_macro" class="missile">
+        <component ref="missile_dumbfire_light_mk1" />
+        <properties>
+            <identification name="{20105,6004}" basename="{20105,6001}" description="{20105,6002}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="6" range="70000" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+            <explosiondamage value="1100" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="0.27">
+                <inertia pitch="0.495" yaw="0.495" roll="0.495" />
+                <drag forward="0.054" reverse="0.216" horizontal="0.387" vertical="0.387" pitch="0.235" yaw="0.235" roll="0.235" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_dumbfire_light_mk2_macro" class="missile">
+        <component ref="missile_dumbfire_light_mk2" />
+        <properties>
+            <identification name="{20105,6014}" basename="{20105,6011}" description="{20105,6012}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="6" range="80000" guided="0" icon="missile_dumbfire_mk2" tags="dumbfire" />
+            <explosiondamage value="1200" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_dumbfire_muzzle" />
+            </effects>
+            <weapon system="missile_dumbfire" />
+            <countermeasure resilience="1" />
+            <physics mass="0.243">
+                <inertia pitch="0.467" yaw="0.467" roll="0.467" />
+                <drag forward="0.049" reverse="0.194" horizontal="0.349" vertical="0.349" pitch="0.221" yaw="0.221" roll="0.221" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_emp_mk1_macro" class="missile">
+        <component ref="missile_emp_mk1" />
+        <properties>
+            <identification name="{20105,6164}" basename="{20105,6161}" description="{20105,6162}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="10" range="20000" influencelist="emp_missile" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="0" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_emp" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <longrangescan minlevel="15" />
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.74" />
+            <physics mass="0.309">
+                <inertia pitch="0.254" yaw="0.254" roll="0.254" />
+                <drag forward="0.001" reverse="0.247" horizontal="0.522" vertical="0.522" pitch="0.254" yaw="0.254" roll="0.254" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_guided_heavy_mk1_macro" class="missile">
+        <component ref="missile_guided_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6054}" basename="{20105,6051}" description="{20105,6052}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="43.2" range="60000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="3520" />
+            <reload time="5" />
+            <hull max="3" />
+            <effects>
+                <explosion ref="missile_explosion_heavy_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.74" />
+            <physics mass="1.514">
+                <inertia pitch="1.807" yaw="1.807" roll="1.807" />
+                <drag forward="0.303" reverse="1.211" horizontal="2.173" vertical="2.173" pitch="0.857" yaw="0.857" roll="0.857" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_guided_light_mk1_macro" class="missile">
+        <component ref="missile_guided_light_mk1" />
+        <properties>
+            <identification name="{20105,6044}" basename="{20105,6041}" description="{20105,6042}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="10" range="45000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="685" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <longrangescan minlevel="15" />
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.74" />
+            <physics mass="0.329">
+                <inertia pitch="0.264" yaw="0.264" roll="0.264" />
+                <drag forward="0.066" reverse="0.263" horizontal="0.472" vertical="0.472" pitch="0.125" yaw="0.125" roll="0.125" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_heatseeker_heavy_mk1_macro" class="missile">
+        <component ref="missile_heatseeker_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6094}" basename="{20105,6091}" description="{20105,6092}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="43.2" range="65000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="3592" />
+            <reload time="5" />
+            <hull max="2" />
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.62" />
+            <physics mass="1.328">
+                <inertia pitch="1.611" yaw="1.611" roll="1.611" />
+                <drag forward="0.266" reverse="1.063" horizontal="1.906" vertical="1.906" pitch="0.764" yaw="0.764" roll="0.764" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_heatseeker_light_mk1_macro" class="missile">
+        <component ref="missile_heatseeker_light_mk1" />
+        <properties>
+            <identification name="{20105,6084}" basename="{20105,6081}" description="{20105,6082}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="10" range="50000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="698" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.62" />
+            <physics mass="0.289">
+                <inertia pitch="0.258" yaw="0.258" roll="0.258" />
+                <drag forward="0.058" reverse="0.231" horizontal="0.414" vertical="0.414" pitch="0.122" yaw="0.122" roll="0.122" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_smart_heavy_mk1_macro" class="missile">
+        <component ref="missile_smart_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6134}" basename="{20105,6131}" description="{20105,6132}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="43.2" range="75500" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="3378" />
+            <reload time="5" />
+            <hull max="3" />
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.98" />
+            <physics mass="1.7">
+                <inertia pitch="2.003" yaw="2.003" roll="2.003" />
+                <drag forward="0.34" reverse="1.36" horizontal="2.44" vertical="2.44" pitch="0.95" yaw="0.95" roll="0.95" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_smart_light_mk1_macro" class="missile">
+        <component ref="missile_smart_light_mk1" />
+        <properties>
+            <identification name="{20105,6124}" basename="{20105,6121}" description="{20105,6122}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="10" range="44000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="657" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.98" />
+            <physics mass="0.37">
+                <inertia pitch="0.271" yaw="0.271" roll="0.271" />
+                <drag forward="0.074" reverse="0.296" horizontal="0.53" vertical="0.53" pitch="0.128" yaw="0.128" roll="0.128" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_swarm_heavy_mk1_macro" class="missile">
+        <component ref="missile_swarm_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6074}" basename="{20105,6071}" description="{20105,6072}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="43.2" range="35000" swarm="1" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="690" />
+            <reload time="5" />
+            <hull max="3" />
+            <effects>
+                <explosion ref="missile_explosion_medium_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.86" />
+            <physics mass="1.607">
+                <inertia pitch="0.904" yaw="0.904" roll="0.904" />
+                <drag forward="0.321" reverse="1.286" horizontal="2.716" vertical="2.716" pitch="0.904" yaw="0.904" roll="0.904" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_swarm_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_swarm_light_mk1_macro" class="missile">
+        <component ref="missile_swarm_light_mk1" />
+        <properties>
+            <identification name="{20105,6064}" basename="{20105,6061}" description="{20105,6062}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="10" range="30000" swarm="1" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+            <explosiondamage value="134" />
+            <reload time="5" />
+            <hull max="1" />
+            <effects>
+                <explosion ref="missile_explosion_light_01" />
+                <launch ref="missile_guided_muzzle" />
+            </effects>
+            <weapon system="missile_guided" />
+            <countermeasure resilience="0.86" />
+            <physics mass="0.349">
+                <inertia pitch="0.275" yaw="0.275" roll="0.275" />
+                <drag forward="0.07" reverse="0.28" horizontal="0.591" vertical="0.591" pitch="0.275" yaw="0.275" roll="0.275" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_swarm_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_torpedo_heavy_mk1_macro" class="missile">
+        <component ref="missile_torpedo_heavy_mk1" />
+        <properties>
+            <identification name="{20105,6154}" basename="{20105,6151}" description="{20105,6152}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="180" range="90000" guided="1" icon="missile_torpedo_mk1" retarget="1" tags="torpedo" />
+            <explosiondamage value="17246" />
+            <reload time="5" />
+            <hull max="38" />
+            <effects>
+                <explosion ref="missile_explosion_heavy_01" />
+                <launch ref="missile_torpedo_muzzle" />
+            </effects>
+            <weapon system="torpedo" />
+            <countermeasure resilience="0.86" />
+            <physics mass="20.337">
+                <inertia pitch="21.646" yaw="21.646" roll="21.646" />
+                <drag forward="0.854" reverse="3.417" horizontal="29.188" vertical="29.188" pitch="10.269" yaw="10.269" roll="10.269" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+    <macro name="missile_torpedo_light_mk1_macro" class="missile">
+        <component ref="missile_torpedo_light_mk1" />
+        <properties>
+            <identification name="{20105,6144}" basename="{20105,6141}" description="{20105,6142}" />
+            <ammunition value="1" />
+            <missile amount="1" barrelamount="1" lifetime="50" range="70000" guided="1" icon="missile_torpedo_mk1" retarget="1" tags="torpedo" />
+            <explosiondamage value="4791" />
+            <reload time="5" />
+            <hull max="8" />
+            <effects>
+                <explosion ref="missile_explosion_heavy_01" />
+                <launch ref="missile_torpedo_muzzle" />
+            </effects>
+            <weapon system="torpedo" />
+            <countermeasure resilience="0.86" />
+            <physics mass="4.421">
+                <inertia pitch="2.311" yaw="2.311" roll="2.311" />
+                <drag forward="0.575" reverse="2.299" horizontal="7.472" vertical="7.472" pitch="2.311" yaw="2.311" roll="2.311" />
+            </physics>
+        </properties>
+        <connections>
+            <connection ref="con_engine01">
+                <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+            </connection>
+        </connections>
+    </macro>
+</macros>
