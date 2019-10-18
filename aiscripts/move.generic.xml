@@ -2,109 +2,23 @@
 <!-- <aiscript name="move.generic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/aiscripts.xsd" version="3"> -->
 <diff>
   <add sel="/aiscript/attention/actions/set_value[1]" pos="after">
-    <!-- TODO actually make a list of orders to filter-->
-    <do_if value="this.ship.isclass.[class.ship_l,class.ship_xl] and @this.$JumpTime lt player.age">
-      <!-- $Jump is very stupid, yes? Yes. -->
+    <do_if value="this.ship.isclass.[class.ship_l,class.ship_xl] and @this.$JumpTime lt player.age and @this.ship.commander == null">
       <set_value name="$Jump" exact="false" />
-      <do_if value="$destination.isclass.sector">
-        <do_if value="$destination != this.sector">
-          <set_value name="$Jump" exact="true" />
-          <!-- <set_value name="$DestCluster" exact="$destination.cluster" /> -->
-        </do_if>
+      <do_if value="$destination != this.sector and $destination != this.cluster and @$destination.sector != this.sector">
+        <set_value name="$Jump" exact="true" />
       </do_if>
-      <do_else>
-        <do_if value="$destination.sector != this.sector">
-          <set_value name="$Jump" exact="true" />
-          <!-- <set_value name="$DestCluster" exact="$destination.cluster" /> -->
-        </do_if>
-      </do_else>
       <do_if value="$Jump == true">
-        <!-- <debug_text text="'NEW ENTRY this.sector.knownname ' + this.sector.knownname" chance="global.$tpwar_debugchance" />
-        <debug_text text="'$destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
-        <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-        <debug_text text="if this.sector == $destination then 'testfailed $destination.class=' else 'testpassed $destination.class=' + $destination.class" chance="global.$tpwar_debugchance" /> -->
-        <!-- <check_object result="$JumpSoft" object="this.ship">
-          <match_loadout wares="[ware.software_tpwar_jumpdrive]" />
-        </check_object> -->
-        <!-- <do_if value="$JumpSoft == true"> -->
         <set_value name="$Distance" exact="if $destination.isclass.cluster == true then this.ship.cluster.distanceto.{$destination} else this.ship.cluster.distanceto.{$destination.cluster}" />
-        <!-- <debug_text text="'$Distance ' + $Distance" chance="global.$tpwar_debugchance" /> -->
-        <!-- TODO CONSULT CALCULATOR  -->
         <set_value name="$JumpCost" exact="($Distance / global.$tpwar_fuelcost)f" />
-        <!-- <debug_text text="'$JumpCost ' + $JumpCost" chance="global.$tpwar_debugchance" /> -->
         <do_if value="this.ship.subordinates?">
           <set_value name="$JumpCost" exact="($JumpCost * this.ship.subordinates.count)i" />
-          <!-- <debug_text text="'$JumpCostSubs ' + $JumpCost" chance="global.$tpwar_debugchance" /> -->
-          <!-- <debug_text text="'this.ship.subordinates.count ' + this.ship.subordinates.count" chance="global.$tpwar_debugchance" /> -->
         </do_if>
-        <!-- <do_if value="this.ship.cargo.{ware.fieldcoils}.count gt $JumpCost"> -->
-        <!-- TODO JUMPLIB -->
-        <do_if value="$destination.isclass.cluster == true">
-            <find_sector name="$sector" space="$destination" multiple="false" />
-        </do_if>
-        <do_if value="this.ship.subordinates?">
-          <set_value name="$Subs" exact="this.ship.subordinates" />
-          <do_all exact="$Subs.count" counter="$i">
-            <do_if value="$Subs.{$i}.isclass.[class.ship_s, class.ship_m]">
-              <do_if value="$destination.isclass.cluster == true">
-                <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$sector, [$Subs.{$i}]]"/>
-                <!-- <warp object="$Subs.{$i}" sector="$sector">
-                  <safepos min="3km" />
-                </warp> -->
-                <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
-                <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-                <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
-                <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
-              </do_if>
-              <do_else>
-                <set_value name="$Send_To" exact="if @$destination.sector then $destination.sector else $destination" />
-                <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$Send_To, [$Subs.{$i}]]"/>
-                <!-- <warp object="$Subs.{$i}" sector="if @$destination.sector then $destination.sector else $destination">
-                  <safepos min="3km" />
-                </warp> -->
-                <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
-                <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-                <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
-                <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
-              </do_else>
-            </do_if>
-          </do_all>
-        </do_if>
-        <remove_cargo object="this.ship" ware="ware.fieldcoils" exact="$JumpCost" />
-        <do_if value="not this.$JumpTime?">
+        <!-- <remove_cargo object="this.ship" ware="ware.fieldcoils" exact="$JumpCost" /> -->
+        <do_if value="not this.$JumpTime? or this.$Jumptime lt player.age">
           <set_value name="this.$JumpTime" exact="player.age + 600s" />
         </do_if>
-        <!-- <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" /> -->
-        <do_if value="$destination.isclass.cluster == true">
-          <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$sector, [this.ship]]"/>
-          <!-- <warp object="this.ship" sector="$sector">
-            <safepos min="3km" />
-          </warp> -->
-          <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
-          <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-          <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
-          <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
-        </do_if>
-        <do_else>
-                   <set_value name="$Send_To" exact="if @$destination.sector then $destination.sector else $destination" />
-          <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$Send_To, [this.ship]]"/>
-          <!-- <warp object="this.ship" sector="if @$destination.sector then $destination.sector else $destination">
-            <safepos min="3km" />
-          </warp> -->
-          <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
-          <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
-          <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
-          <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
-
-        </do_else>
-        <!-- </do_if> -->
+        <signal_objects object="player.entity" param2="'move_generic_jump'" param="[$destination, [this.ship]]" />
       </do_if>
     </do_if>
-    <!-- <do_else> -->
-    <!-- TODO message -->
-    <!-- <debug_text text="'Not Enough Fuel'" />
-      </do_else> -->
-    <!-- </do_if> -->
-    <!-- </do_if> -->
   </add>
 </diff>

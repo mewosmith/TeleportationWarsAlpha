@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd">
     <cues>
-        <cue name="JumpInstance" namespace="this" instantiate="true">
+        <!-- <cue name="JumpInstance" namespace="this" instantiate="true">
             <conditions>
-                <event_object_signalled object="player.entity"  param2="'move_generic_jump'" />
+                <event_object_signalled object="player.entity" param2="'move_generic_jump'" />
             </conditions>
             <actions>
                 <set_value name="$Destination" exact="event.param.{1}" />
-                <do_if value="$Destination.isclass.sector == true"> 
+                <do_if value="$Destination.isclass.sector == true or $Destination.isclass.cluster == true">
                     <find_gate name="$Destination" space="$Destination" multiple="false"></find_gate>
                 </do_if>
+                <do_else>
+                    <find_gate name="$Destination" space="$Destination.sector" multiple="false"></find_gate>
+                </do_else>
+
                 <debug_text text="'JUMPSHITHERE' + $Destination.knownname" />
                 <set_value name="$ShipList" exact="event.param.{2}" />
-                 <debug_text text="'JUMPSHITHERE' + $ShipList.{1}.knownname" />
+                <debug_text text="'JUMPSHITHERE' + $ShipList.{1}.knownname" />
+            </actions>
+            <cues>
+                <cue name="">
+                    <actions>
+                        <signal_cue_instantly cue="" />
+                    </actions>
+                </cue>
+                <cue name="Sub_Loop">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+
+                </cue>
+                <cue name="Sub_Recurse">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+
+                </cue>
+            </cues>
+        </cue> -->
+
+        <cue name="JumpInstance" namespace="this" instantiate="true">
+            <conditions>
+                <event_object_signalled object="player.entity" param2="'move_generic_jump'" />
+            </conditions>
+            <actions>
+                <set_value name="$ODestination" exact="event.param.{1}" />
+                <debug_text text="'JUMPSHITHERE Original Destination is ' + $ODestination.knownname + ' class: ' + $ODestination.class" />
+
+                <do_if value="$ODestination.isclass.sector == true or $ODestination.isclass.cluster == true">
+                    <find_gate name="$Destination" space="$ODestination" multiple="false"></find_gate>
+                </do_if>
+                <do_else>
+                    <find_gate name="$Destination" space="$ODestination.sector" multiple="false"></find_gate>
+                </do_else>
+
+                <debug_text text="'JUMPSHITHERE' + $Destination.knownname" />
+                <set_value name="$ShipList" exact="event.param.{2}" />
+                <do_if value="this.ship.subordinates.count gt 0">
+                    <debug_text text="'JUMPSHITHERE We have subordinates! ' + this.ship.subordinates.count" />
+                    <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
+                    <do_all exact="$SubsList.count" counter="$i">
+                        <append_to_list name="$ShipList" exact="$SubsList.{$i}" />
+                        <debug_text text="'JUMPSHITHERE Subs' + $SubsList.{$i}.knownname" />
+                    </do_all>
+                </do_if>
+                <debug_text text="'JUMPSHITHERE' + $ShipList.{1}.knownname" />
             </actions>
             <cues>
                 <cue name="Jump_Sender" ref="md.JumpLIB.JumpLIB">
@@ -21,6 +73,7 @@
                 </cue>
             </cues>
         </cue>
+
         <library name="JumpLIB">
             <params>
                 <param name="Destination" default="null" />
