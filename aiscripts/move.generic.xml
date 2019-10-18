@@ -47,18 +47,21 @@
           <do_all exact="$Subs.count" counter="$i">
             <do_if value="$Subs.{$i}.isclass.[class.ship_s, class.ship_m]">
               <do_if value="$destination.isclass.cluster == true">
-                <warp object="$Subs.{$i}" sector="$sector">
+                <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$sector, [$Subs.{$i}]]"/>
+                <!-- <warp object="$Subs.{$i}" sector="$sector">
                   <safepos min="3km" />
-                </warp>
+                </warp> -->
                 <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
                 <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
                 <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
                 <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
               </do_if>
               <do_else>
-                <warp object="$Subs.{$i}" sector="if @$destination.sector then $destination.sector else $destination">
+                <set_value name="$Send_To" exact="if @$destination.sector then $destination.sector else $destination" />
+                <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$Send_To, [$Subs.{$i}]]"/>
+                <!-- <warp object="$Subs.{$i}" sector="if @$destination.sector then $destination.sector else $destination">
                   <safepos min="3km" />
-                </warp>
+                </warp> -->
                 <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
                 <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
                 <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />
@@ -73,18 +76,21 @@
         </do_if>
         <!-- <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" /> -->
         <do_if value="$destination.isclass.cluster == true">
-          <warp object="this.ship" sector="$sector">
+          <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$sector, [this.ship]]"/>
+          <!-- <warp object="this.ship" sector="$sector">
             <safepos min="3km" />
-          </warp>
+          </warp> -->
           <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
           <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
           <debug_text text="'Destination was Cluster: $sector.knownname ' + $sector.knownname" chance="global.$tpwar_debugchance" />
           <debug_text text="'this.ship.sector.knownname ' + this.ship.sector.knownname" chance="global.$tpwar_debugchance" /> -->
         </do_if>
         <do_else>
-          <warp object="this.ship" sector="if @$destination.sector then $destination.sector else $destination">
+                   <set_value name="$Send_To" exact="if @$destination.sector then $destination.sector else $destination" />
+          <signal_objects object="player.entity" param2="'move_generic_jump'"  param="[$Send_To, [this.ship]]"/>
+          <!-- <warp object="this.ship" sector="if @$destination.sector then $destination.sector else $destination">
             <safepos min="3km" />
-          </warp>
+          </warp> -->
           <!-- <debug_text text="'this.ship.class ' + this.ship.class" chance="global.$tpwar_debugchance" />
           <debug_text text="'$destination.knownname ' + $destination.knownname" chance="global.$tpwar_debugchance" />
           <debug_text text="if $destination.isclass.sector == true then 'Destination was Sector: $destination.knownname ' + $destination.knownname else 'Destination was Object or Zone: $destination.sector.knownname ' + $destination.sector.knownname" chance="global.$tpwar_debugchance" />

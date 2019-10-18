@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4 extract 2.5b1/libraries/md.xsd">
     <cues>
+        <cue name="JumpInstance" namespace="this" instantiate="true">
+            <conditions>
+                <event_object_signalled object="player.entity"  param2="'move_generic_jump'" />
+            </conditions>
+            <actions>
+                <set_value name="$Destination" exact="event.param.{1}" />
+        
+                <debug_text text="'JUMPSHITHERE' + $Destination.knownname" />
+                <set_value name="$ShipList" exact="event.param.{2}" />
+                 <debug_text text="'JUMPSHITHERE' + $ShipList.{1}.knownname" />
+            </actions>
+            <cues>
+                <cue name="Jump_Sender" ref="md.JumpLIB.JumpLIB">
+                    <param name="Destination" value="$Destination" />
+                    <param name="ShipList" value="$ShipList" />
+                </cue>
+            </cues>
+        </cue>
         <library name="JumpLIB">
             <params>
                 <param name="Destination" default="null" />
