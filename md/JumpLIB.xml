@@ -56,8 +56,9 @@
 
                 <debug_text text="'JUMPSHITHERE' + $Destination.knownname" />
                 <set_value name="$ShipList" exact="event.param.{2}" />
+                <!-- TODO add recursive subordinate search -->
                 <do_if value="$ShipList.{1}.subordinates.count gt 0">
-                    <debug_text text="'JUMPSHITHERE We have subordinates! ' + this.ship.subordinates.count" />
+                    <debug_text text="'JUMPSHITHERE We have subordinates! ' + $ShipList.{1}.subordinates.count" />
                     <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
                     <do_all exact="$SubsList.count" counter="$i">
                         <append_to_list name="$ShipList" exact="$SubsList.{$i}" />
