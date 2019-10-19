@@ -62,7 +62,7 @@
                     <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
                     <do_all exact="$SubsList.count" counter="$i">
                         <append_to_list name="$ShipList" exact="$SubsList.{$i}" />
-                        <debug_text text="'JUMPSHITHERE Subs' + $SubsList.{$i}.knownname" />
+                        <debug_text text="'JUMPSHITHERE Subs ' + $SubsList.{$i}.knownname" />
                     </do_all>
                 </do_if>
                 <debug_text text="'JUMPSHITHERE' + $ShipList.{1}.knownname" />
