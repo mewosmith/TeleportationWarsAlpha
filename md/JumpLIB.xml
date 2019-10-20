@@ -8,6 +8,7 @@
             <actions>
                 <set_value name="$ShipList" exact="event.param.{2}" />
                 <set_value name="$ODestination" exact="event.param.{1}" />
+                
                 <do_if value="$ODestination.isclass.sector == true or $ODestination.isclass.cluster == true">
                     <find_gate name="$Destination" space="$ODestination" multiple="false"></find_gate>
                 </do_if>

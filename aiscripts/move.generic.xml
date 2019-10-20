@@ -14,7 +14,7 @@
           <set_value name="$JumpCost" exact="($JumpCost * this.ship.subordinates.count)i" />
         </do_if>
         <!-- <remove_cargo object="this.ship" ware="ware.fieldcoils" exact="$JumpCost" /> -->
-        <do_if value="not this.$JumpTime? or this.$Jumptime lt player.age">
+        <do_if value="not this.$JumpTime? or this.$Jumptime? lt player.age">
           <set_value name="this.$JumpTime" exact="player.age + 600s" />
         </do_if>
         <signal_objects object="player.entity" param2="'move_generic_jump'" param="[$destination, [this.ship]]" />
