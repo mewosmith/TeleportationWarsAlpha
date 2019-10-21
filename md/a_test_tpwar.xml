@@ -6,7 +6,7 @@
         <cue name="Init" instantiate="true">
             <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
-                <!-- <check_value value="false" /> -->
+                <check_value value="false" />
             </conditions>
             <actions>
                 <debug_to_file text="'start'" name="'job.log'" directory="'jobstest'" append="false" />

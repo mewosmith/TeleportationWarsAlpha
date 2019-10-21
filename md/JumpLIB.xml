@@ -8,17 +8,19 @@
             <actions>
                 <set_value name="$ShipList" exact="event.param.{2}" />
                 <set_value name="$ODestination" exact="event.param.{1}" />
-                
+                <!-- <debug_text text="'Destination set to ' + $ODestination.class + ' named: ' + $ODestination.knownname" /> -->
                 <do_if value="$ODestination.isclass.sector == true or $ODestination.isclass.cluster == true">
+                    <debug_text text="'Destination set to sector or cluster: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
                     <find_gate name="$Destination" space="$ODestination" multiple="false"></find_gate>
                 </do_if>
                 <do_else>
+                    <debug_text text="'Destination set to other object: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
                     <find_gate name="$Destination" space="$ODestination.sector" multiple="false"></find_gate>
                 </do_else>
                 <debug_text text="'Checking Subordinates for Jump to ' + $Destination.class + ' named: ' + $Destination.knownname" />
             </actions>
             <cues>
-                <cue name="StartJump" >
+                <cue name="StartJump">
                     <actions>
                         <do_if value="$ShipList.{1}.subordinates.count gt 0">
                             <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
@@ -48,7 +50,7 @@
                         </do_if>
                     </actions>
                 </cue>
-                <cue name="SubRecurse"  instantiate="true" >
+                <cue name="SubRecurse" instantiate="true">
                     <conditions>
                         <event_cue_signalled />
                     </conditions>
@@ -62,10 +64,10 @@
                 <cue name="Delay">
                     <delay exact="3s" />
                     <actions>
-                        <signal_cue_instantly cue="JumpInstance" param="[$ShipList, $Destination]"/>
+                        <signal_cue_instantly cue="JumpInstance" param="[$ShipList, $Destination]" />
                     </actions>
                 </cue>
-                <cue name="JumpInstance" namespace="this" >
+                <cue name="JumpInstance" namespace="this">
                     <conditions>
                         <event_cue_signalled />
                     </conditions>
