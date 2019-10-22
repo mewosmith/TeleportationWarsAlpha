@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+<mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd">
     <cues>
         <cue name="CoerceJump" instantiate="true" namespace="this">
             <conditions>
@@ -8,64 +8,75 @@
             <actions>
                 <set_value name="$ShipList" exact="event.param.{2}" />
                 <set_value name="$ODestination" exact="event.param.{1}" />
+                <!-- <debug_text text="'Destination set to ' + $ODestination.class + ' named: ' + $ODestination.knownname" /> -->
                 <do_if value="$ODestination.isclass.sector == true or $ODestination.isclass.cluster == true">
+                    <debug_text text="'Destination set to sector or cluster: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
                     <find_gate name="$Destination" space="$ODestination" multiple="false"></find_gate>
                 </do_if>
                 <do_else>
+                    <debug_text text="'Destination set to other object: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
                     <find_gate name="$Destination" space="$ODestination.sector" multiple="false"></find_gate>
                 </do_else>
+                <debug_text text="'Checking Subordinates for Jump to ' + $Destination.class + ' named: ' + $Destination.knownname" />
             </actions>
             <cues>
-                <cue name="StartJump" >
+                <cue name="StartJump">
                     <actions>
                         <do_if value="$ShipList.{1}.subordinates.count gt 0">
                             <set_value name="$SubsList" exact="$ShipList.{1}.subordinates" />
                             <do_all exact="$SubsList.count" counter="$i">
                                 <append_to_list name="$ShipList" exact="$SubsList.{$i}" />
                                 <do_if value="$SubsList.{$i}.subordinates?">
-                                    <signal_cue_instantly cue="SubRecurseReturn" param="$ShipList.{$i}" />
+                                    <signal_cue_instantly cue="SubRecurseReturn" param="$SubsList.{$i}" />
                                 </do_if>
                             </do_all>
                         </do_if>
                     </actions>
                 </cue>
-                <cue name="SubRecurseReturn" >
+                <cue name="SubRecurseReturn" instantiate="true" namespace="this">
                     <conditions>
                         <event_cue_signalled />
                     </conditions>
                     <actions>
                         <do_if value="event.param.subordinates.count gt 0">
-                            <set_value name="$SubsList" exact="event.param.subordinates" />
-                            <do_all exact="$SubsList.count" counter="$i">
-                                <append_to_list name="$ShipList" exact="$SubsList.{$i}" />
-                                <do_if value="$SubsList.{$i}.subordinates?">
-                                    <signal_cue_instantly cue="SubRecurse" param="$SubsList.{$i}" />
-                                    <reset_cue cue="this" />
+                            <set_value name="$Children" exact="event.param.subordinates" />
+                            <create_list name="$ChildShipList" />
+                            <do_all exact="$Children.count" counter="$i">
+                                <append_to_list name="$ChildShipList" exact="$Children.{$i}" />
+                                <do_if value="$Children.{$i}.subordinates?">
+                                    <signal_cue_instantly cue="SubRecurse" param="[$Children.{$i}, $ChildShipList]" />
                                 </do_if>
                             </do_all>
                         </do_if>
                     </actions>
                 </cue>
-                <cue name="SubRecurse" >
+                <cue name="SubRecurse" instantiate="true">
                     <conditions>
                         <event_cue_signalled />
                     </conditions>
                     <actions>
-                        <signal_cue_instantly cue="SubRecurseReturn" param="event.param" />
-                        <reset_cue cue="this" />
+                        <do_all exact="event.param.{2}.count" counter="$i">
+                            <append_to_list name="$ShipList" exact="event.param.{2}.{$i}" />
+                        </do_all>
+                        <signal_cue_instantly cue="SubRecurseReturn" param="event.param.{1}" />
                     </actions>
                 </cue>
                 <cue name="Delay">
                     <delay exact="3s" />
                     <actions>
-                        <signal_cue_instantly cue="JumpInstance"/>
+                        <signal_cue_instantly cue="JumpInstance" param="[$ShipList, $Destination]" />
                     </actions>
                 </cue>
-                <cue name="JumpInstance" >
+                <cue name="JumpInstance" namespace="this">
                     <conditions>
                         <event_cue_signalled />
                     </conditions>
-                    <actions></actions>
+                    <actions>
+                        <set_value name="$ShipList" exact="event.param.{1}" />
+                        <set_value name="$Destination" exact="event.param.{2}" />
+                        <cancel_cue cue="SubRecurse" />
+                        <cancel_cue cue="SubRecurseReturn" />
+                    </actions>
                     <cues>
                         <cue name="Jump_Sender" ref="md.JumpLIB.JumpLIB">
                             <param name="Destination" value="$Destination" />
@@ -90,6 +101,7 @@
                     <cues>
                         <cue name="Jump_Start">
                             <actions>
+                                <debug_text text="'Jump Initiated to ' + $Destination.class + ' named: ' + $Destination.knownname" />
                                 <signal_cue cue="Jump_Effect" />
                             </actions>
                         </cue>

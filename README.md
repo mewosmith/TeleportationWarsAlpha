@@ -1,5 +1,9 @@
 # Teleportation Wars Three: Alpha
 
+
+[WIKI!](https://github.com/mewosmith/TeleportationWarsAlpha/wiki)
+
+
 A very early alpha version of Teleportation Wars 3, a megamod for X4: Foundations
 
 ## Gameplay Changes

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
-    <cues> 
+<!-- <mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd"> -->
+<mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd">
+
+    <cues>
         <cue name="Init" instantiate="true">
             <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
                 <check_value value="false" />
             </conditions>
+            <actions>
+                <debug_to_file text="'start'" name="'job.log'" directory="'jobstest'" append="false" />
+                <debug_to_file text="'start'" name="'god.log'" directory="'godtest'" append="false" />
+                <debug_to_file text="'start'" name="'VanillaSectorStations.log'" directory="'godtest'" append="false" />
+            </actions>
             <!-- DO NOT LEAVE ON FOR RELEASES -->
             <cues>
                 <cue name="Controls">
@@ -15,6 +22,68 @@
                         <signal_cue cue="Create_Ship_Wrapper" />
                         <!-- <signal_cue cue="ThunderDome" /> -->
                         <signal_cue cue="Tool_Sector_Tour" />
+                        <signal_cue cue="VanillaSectorStations" />
+                    </actions>
+                </cue>
+                <cue name="VanillaSectorStations" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <set_value name="$Factions" exact="[
+                            faction.khaakpox,
+                            faction.xenonmatrix,
+                            faction.atlas,
+                            faction.sovsyn,
+                            faction.cartel,
+                            faction.agi,
+                            faction.goner,
+                            faction.wholefood,
+                            faction.ledda,
+                            faction.telunion,
+                            faction.aldrin,
+                            faction.cantera,
+                            faction.toride,
+                            faction.nmmc,
+                            faction.atreus,
+                            faction.jonferson,
+                            faction.aquariuscorp,
+                            faction.ptni,
+                            faction.strongarms,
+                            faction.plutarch,
+                            faction.albionenergy,
+                            faction.terracorp,
+                            faction.franton,
+                            faction.chow,
+                            faction.beryll,
+                            faction.terrapmc,
+                            faction.otas,
+                            faction.buccaneers,
+                            faction.reivers,
+                            faction.terrans,
+                            faction.nolimits,
+                            faction.uguras,
+                            faction.heretics,
+                            faction.yaki,
+                            faction.usc,
+                            faction.heartofalbion,
+                            faction.sonraenergy
+                                                    ]" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.argon" multiple="true" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.teladi" multiple="true" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.antigone" multiple="true" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.paranid" multiple="true" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.holyorder" multiple="true" />
+                        <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.ministry" multiple="true" />
+                        <debug_to_file text="$SectorList.count + ' ' + $SectorList" name="'VanillaSectorStations.log'" directory="'godtest'" />
+
+                        <do_all exact="$SectorList.count" counter="$j">
+
+                            <find_station name="$Stations" space="$SectorList.{$j}" owner="$Factions" multiple="true" canclaimownership="true" />
+                            <do_all exact="$Stations.count" counter="$i">
+                                <debug_to_file text="$Stations.{$i}.knownname + ' | ' + $Stations.{$i}.sector.knownname " name="'VanillaSectorStations.log'" directory="'godtest'" />
+                            </do_all>
+                        </do_all>
                     </actions>
                 </cue>
                 <cue name="THunderDome">
@@ -89,8 +158,7 @@ class.ship_xl]" />
                 </cue>
                 <cue name="Jobtest" checktime="15s">
                     <actions>
-                        <debug_to_file text="'start'" name="'job.log'" directory="'jobstest'" append="false" />
-                        <debug_to_file text="'start'" name="'god.log'" directory="'godtest'" append="false" />
+
                         <set_value name="$Factions" exact="[
 faction.khaakpox,
 faction.xenonmatrix,
