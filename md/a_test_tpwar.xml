@@ -4,14 +4,14 @@
         <cue name="Init" instantiate="true">
             <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
-                <!-- <check_value value="false" /> -->
+                <check_value value="false" />
             </conditions>
             <!-- DO NOT LEAVE ON FOR RELEASES -->
             <cues>
                 <cue name="Controls">
                     <delay exact="10s" />
                     <actions>
-            
+
                         <signal_cue cue="Create_Ship_Wrapper" />
                         <!-- <signal_cue cue="ThunderDome" /> -->
                         <signal_cue cue="Tool_Sector_Tour" />
