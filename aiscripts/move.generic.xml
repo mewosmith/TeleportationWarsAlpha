@@ -9,7 +9,7 @@
       </do_if>
       <do_if value="$Jump == true">
         <set_value name="$Distance" exact="if $destination.isclass.cluster == true then this.ship.cluster.distanceto.{$destination} else this.ship.cluster.distanceto.{$destination.cluster}" />
-        <set_value name="$JumpCost" exact="($Distance / global.$tpwar_fuelcost)f" />
+        <set_value name="$JumpCost" exact="($Distance / global.$TpwarFuelCost)f" />
         <do_if value="this.ship.subordinates?">
           <set_value name="$JumpCost" exact="($JumpCost * this.ship.subordinates.count)i" />
         </do_if>

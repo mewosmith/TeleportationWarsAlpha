@@ -1,29 +1,196 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!-- <mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd"> -->
-<mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd">
-
+<!-- <?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <!-- <mdscript name="Test_Tpwar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd"> -->
     <cues>
         <cue name="Init" instantiate="true">
             <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
+                <cue_is_complete cue="md.Lists.Init" />
                 <check_value value="false" />
-            </conditions>
+            </conditions> -->
+            <!-- <delay exact="10s"/> -->
             <actions>
+
                 <debug_to_file text="'start'" name="'job.log'" directory="'jobstest'" append="false" />
                 <debug_to_file text="'start'" name="'god.log'" directory="'godtest'" append="false" />
                 <debug_to_file text="'start'" name="'VanillaSectorStations.log'" directory="'godtest'" append="false" />
+                <debug_to_file text="'start'" name="'galaxydebug.log'" directory="'galaxy'" append="false" />
+    
             </actions>
             <!-- DO NOT LEAVE ON FOR RELEASES -->
             <cues>
                 <cue name="Controls">
-                    <delay exact="10s" />
+                    <!-- <delay exact="5s" /> -->
                     <actions>
-
-                        <signal_cue cue="Create_Ship_Wrapper" />
+                        <!-- <signal_cue cue="Create_Ship_Wrapper" /> -->
                         <!-- <signal_cue cue="ThunderDome" /> -->
-                        <signal_cue cue="Tool_Sector_Tour" />
-                        <signal_cue cue="VanillaSectorStations" />
+                        <!-- <signal_cue cue="Tool_Sector_Tour" /> -->
+                        <!-- <signal_cue cue="VanillaSectorStations" /> -->
+                        <signal_cue cue="Globals_Debug_Init" />
                     </actions>
+                </cue>
+                <cue name="Globals_Debug_Init">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <set_value name="global.$XenonShipCount" exact="0" />
+                    </actions>
+                    <cues>
+                        <!-- test stuff -->
+                        <!-- <cue name="Init" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled cue="md.Setup.GameStart" />
+                    </conditions>
+                    <actions>
+                        <create_group groupname="$DockedPlayerShips" />
+                    </actions>
+                    <cues>
+                        <cue name="ExampleSliceDock" instantiate="true">
+                            <conditions>
+                                <event_object_docked group="global.$X4_Player_Ships" />
+                            </conditions>
+                            <actions>
+                                <do_if value="event.object.owner == faction.player">
+                                    <add_to_group groupname="$DockedPlayerShips" />
+                                </do_if>
+                            </actions>
+                        </cue>
+                        <cue name="ExampleSliceUndock" instantiate="true">
+                            <conditions>
+                                <event_object_undocked group="$DockedPlayerShips" />
+                            </conditions>
+                            <actions>
+                                <do_if value="event.object.owner == faction.player">
+                                    <remove_from_group group="$DockedPlayerShips" object="event.object" />
+                                </do_if>
+                            </actions>
+                        </cue>
+                    </cues>
+                </cue> -->
+                        <!-- <cue name="DebugGlobals" instantiate="true" checkinterval="100s" checktime="30s">
+                    <actions>
+                        <debug_to_file text="'START'" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" append="false" />
+                        <debug_to_file text="'X4_All_Clusters' + global.$X4_All_Clusters" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Sectors' + global.$X4_All_Sectors" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Zones' + global.$X4_All_Zones" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Gates' + global.$X4_All_Gates" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Player_Ships' + global.$X4_Player_Ships" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Player_Stations' + global.$X4_Player_Stations" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Ships' + global.$X4_All_Ships" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Constructors' + global.$X4_All_Constructors" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Resupply' + global.$X4_All_Resupply" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_All_Stations' + global.$X4_All_Stations" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_shipyards' + global.$X4_Stations_shipyards" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_wharfs' + global.$X4_Stations_wharfs" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_equipmentdocks' + global.$X4_Stations_equipmentdocks" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_headquarters' + global.$X4_Stations_headquarters" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_trading' + global.$X4_Stations_trading" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_pirate' + global.$X4_Stations_pirate" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <debug_to_file text="'X4_Stations_defence' + global.$X4_Stations_defence" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                        <do_all exact="$Globals.count" counter="$i">
+                            <do_all exact="$Globals.{$i}.count" counter="$j">
+                                <debug_to_file text="$Globals.{$i}.{$j} + $Globals.{$i}.{$j}.name + $Globals.{$i}.{$j}.knownname" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                            </do_all>
+                        </do_all>
+                        <debug_to_file text="'END'" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+
+                    </actions>
+                </cue> -->
+                     
+                        <!-- <cue name="Global_Debug" instantiate="true" checkinterval="600s">
+                            <actions> -->
+                        <!--test  -->
+                        <!-- <do_all exact="global.$X4_All_Stations.count" counter="$i">
+                            <do_if value="global.$X4_All_Stations.{$i}.owner == faction.xenon">
+                                <set_owner object="global.$X4_All_Stations.{$i}" faction="faction.player" overridenpc="true" />
+                            </do_if>
+                            <find_object_component module="true" groupname="$Allofthem" object="global.$X4_All_Stations.{$i}" multiple="true" recursive="true"></find_object_component>
+                        </do_all>
+                        <find_object groupname="$ThingImLookingFor" space="player.galaxy" multiple="true">
+                            <match macro="macro.prod_arg_refined_macro"></match>
+                        </find_object>
+                        <debug_to_file text="$ThingImLookingFor" name="'looking.log'" append="false" directory="'stupidtest'" />
+                        <debug_to_file text="'start'" name="'stupidtest.log'" append="false" directory="'stupidtest'" />
+                        <do_all exact="$Allofthem.count" counter="$i">
+                            <debug_to_file text="$Allofthem.{$i}.macro + $Allofthem.{$i}.knownname + $Allofthem.{$i}" name="'stupidtest.log'" directory="'stupidtest'" />
+                        </do_all> -->
+                        <!-- global.$FactionGoals -->
+                        <!-- <debug_to_file text="'FactionGoals' + global.$FactionGoals" name="'FactionGoals.log'" directory="stupidtest" /> -->
+                        <!-- subgroups -->
+                        <!-- ships and stations by faction -->
+                        <!-- <debug_to_file text="'start'" name="'ship_xenon.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_argon.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_antigone.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_teladi.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_ministry.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_paranid.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_holyorder.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_scaleplate.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'ship_hatikvah.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_xenon.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_argon.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_antigone.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_teladi.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_ministry.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_paranid.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_holyorder.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_scaleplate.log'" append="false" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'start'" name="'station_hatikvah.log'" append="false" directory="'GlobalsDebugOutput'" /> -->
+                        <!--  -->
+                        <!-- <debug_to_file text="global.$X4_SectorAdjacencyTable" name="'SectorAdjacencyTableGlobal.log'" directory="'SectorAdjacencyTable'" append="false" />
+                                <debug_to_file text="'Update_X4_All_Stations Works Properly '" name="'worksproperly.log'" directory="'workingornot'" append="false" />
+                                <debug_to_file text="'START'" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" append="false" />
+                                <debug_to_file text="'X4_All_Clusters' + global.$X4_All_Clusters" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Sectors' + global.$X4_All_Sectors" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Zones' + global.$X4_All_Zones" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Gates' + global.$X4_All_Gates" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Player_Ships' + global.$X4_Player_Ships" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Player_Stations' + global.$X4_Player_Stations" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Ships' + global.$X4_All_Ships" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Constructors' + global.$X4_All_Constructors" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Resupply' + global.$X4_All_Resupply" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_All_Stations' + global.$X4_All_Stations" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_shipyards' + global.$X4_Stations_shipyards" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_wharfs' + global.$X4_Stations_wharfs" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_equipmentdocks' + global.$X4_Stations_equipmentdocks" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_headquarters' + global.$X4_Stations_headquarters" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_trading' + global.$X4_Stations_trading" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_pirate' + global.$X4_Stations_pirate" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'X4_Stations_defence' + global.$X4_Stations_defence" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="$Globals.{$i}.{$j} + $Globals.{$i}.{$j}.name + $Globals.{$i}.{$j}.knownname" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'END'" name="'GlobalsDebugOutput.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="$ThingImLookingFor" name="'looking.log'" append="false" directory="'stupidtest'" />
+                                <debug_to_file text="'start'" name="'stupidtest.log'" append="false" directory="'stupidtest'" />
+                                <debug_to_file text="$Allofthem.{$i}.macro + $Allofthem.{$i}.knownname + $Allofthem.{$i}" name="'stupidtest.log'" directory="'stupidtest'" /> -->
+                        <!-- <debug_to_file text="'FactionGoals' + global.$FactionGoals" name="'FactionGoals.log'" directory="stupidtest" /> -->
+                        <!-- <debug_to_file text="'Update_X4_All_Stations Works Properly ' + event.param.knownname + event.param3.buildobject" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'Update_X4_All_Ships_Job Works Properly ' + event.param.knownname + event.param" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'Update_X4_All_Ships_Build tried ' + event.param3.buildobject.knownname + event.param3.buildobject" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'Update_X4_All_Ships_Build Works Properly ' + event.param3.buildobject" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'Update_X4_All_Stations_Build tried ' + event.param3.buildobject.knownname + event.param3.buildobject" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'Update_X4_All_Stations_Build Works Properly ' + event.param3.buildobject.knownname" name="'worksproperly.log'" directory="'workingornot'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_xenon.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_argon.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_antigone.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_teladi.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_ministry.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_paranid.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_holyorder.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_scaleplate.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'ship_hatikvah.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_xenon.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_argon.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_antigone.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_teladi.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_ministry.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_paranid.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_holyorder.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_scaleplate.log'" directory="'GlobalsDebugOutput'" />
+                                <debug_to_file text="'- %s - %s - %s'.[event.object.knownname, event.object, event.object.sector.knownname]" name="'station_hatikvah.log'" directory="'GlobalsDebugOutput'" /> -->
+                        <!-- </actions>
+                        </cue> -->
+                    </cues>
                 </cue>
                 <cue name="VanillaSectorStations" instantiate="true">
                     <conditions>
@@ -76,9 +243,7 @@
                         <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.holyorder" multiple="true" />
                         <find_sector groupname="$SectorList" space="player.galaxy" contestedby="faction.ministry" multiple="true" />
                         <debug_to_file text="$SectorList.count + ' ' + $SectorList" name="'VanillaSectorStations.log'" directory="'godtest'" />
-
                         <do_all exact="$SectorList.count" counter="$j">
-
                             <find_station name="$Stations" space="$SectorList.{$j}" owner="$Factions" multiple="true" canclaimownership="true" />
                             <do_all exact="$Stations.count" counter="$i">
                                 <debug_to_file text="$Stations.{$i}.knownname + ' | ' + $Stations.{$i}.sector.knownname " name="'VanillaSectorStations.log'" directory="'godtest'" />
@@ -158,7 +323,6 @@ class.ship_xl]" />
                 </cue>
                 <cue name="Jobtest" checktime="15s">
                     <actions>
-
                         <set_value name="$Factions" exact="[
 faction.khaakpox,
 faction.xenonmatrix,

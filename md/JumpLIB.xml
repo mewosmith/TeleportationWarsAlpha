@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd">
+<mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <!-- <mdscript name="JumpLIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:/Mod Stuff/X4 Extracted/2.5beta/libraries/md.xsd"> -->
     <cues>
         <cue name="CoerceJump" instantiate="true" namespace="this">
             <conditions>
@@ -10,14 +11,14 @@
                 <set_value name="$ODestination" exact="event.param.{1}" />
                 <!-- <debug_text text="'Destination set to ' + $ODestination.class + ' named: ' + $ODestination.knownname" /> -->
                 <do_if value="$ODestination.isclass.sector == true or $ODestination.isclass.cluster == true">
-                    <debug_text text="'Destination set to sector or cluster: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
+                    <!-- <debug_text text="'Destination set to sector or cluster: ' + $ODestination.class + ' named: ' + $ODestination.knownname" /> -->
                     <find_gate name="$Destination" space="$ODestination" multiple="false"></find_gate>
                 </do_if>
                 <do_else>
-                    <debug_text text="'Destination set to other object: ' + $ODestination.class + ' named: ' + $ODestination.knownname" />
+                    <!-- <debug_text text="'Destination set to other object: ' + $ODestination.class + ' named: ' + $ODestination.knownname" /> -->
                     <find_gate name="$Destination" space="$ODestination.sector" multiple="false"></find_gate>
                 </do_else>
-                <debug_text text="'Checking Subordinates for Jump to ' + $Destination.class + ' named: ' + $Destination.knownname" />
+                <!-- <debug_text text="'Checking Subordinates for Jump to ' + $Destination.class + ' named: ' + $Destination.knownname" /> -->
             </actions>
             <cues>
                 <cue name="StartJump">
@@ -64,7 +65,9 @@
                 <cue name="Delay">
                     <delay exact="3s" />
                     <actions>
-                        <signal_cue_instantly cue="JumpInstance" param="[$ShipList, $Destination]" />
+                        <do_if value="$Destination.zone?">
+                            <signal_cue_instantly cue="JumpInstance" param="[$ShipList, $Destination]" />
+                        </do_if>
                     </actions>
                 </cue>
                 <cue name="JumpInstance" namespace="this">
@@ -101,7 +104,7 @@
                     <cues>
                         <cue name="Jump_Start">
                             <actions>
-                                <debug_text text="'Jump Initiated to ' + $Destination.class + ' named: ' + $Destination.knownname" />
+                                <!-- <debug_text text="'Jump Initiated to ' + $Destination.class + ' named: ' + $Destination.knownname" /> -->
                                 <signal_cue cue="Jump_Effect" />
                             </actions>
                         </cue>

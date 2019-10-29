@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Galaxy_Debug" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+      <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <debug_to_file text="'Galaxy_Debug'" name="'Loadorder.log'" directory="'Debug'" chance="global.$TpwarDebugChance" />
+                <debug_text text="'Galaxy_Debug Init'" />
+                <set_value name="global.$GalaxyObjectTable" exact="table[]" />
+                <do_all exact="global.$Factionsglobal.count" counter="$i">
+                    <do_if value="not global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$Objects?">
+                        <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}" exact="table[]" />
+                        <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$Objects" exact="['none']" />
+                        <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$Button" exact="false" />
+                    </do_if>
+                    <find_ship name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$StartingShips" space="player.galaxy" owner="global.$Factionsglobal.{$i}" multiple="true"></find_ship>
+                    <find_station name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$StartingStations" space="player.galaxy" owner="global.$Factionsglobal.{$i}" multiple="true"></find_station>
+                    <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$ShipsLost" exact="0" />
+                    <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$StationsLost" exact="0" />
+                    <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$ShipsCreated" exact="0" />
+                    <set_value name="global.$GalaxyObjectTable.{global.$Factionsglobal.{$i}}.$StationsCreated" exact="0" />
+                </do_all>
+            </actions>
+            <cues>
+                <cue name="CountDestroyedShips" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="global.$X4_All_Ships" />
+                    </conditions>
+                    <actions>
+                        <set_value name="global.$GalaxyObjectTable.{event.object.owner}.$ShipsLost" exact="1" operation="add" />
+                    </actions>
+                </cue>
+                <!-- <cue name="GalaxyObjectTable" instantiate="true" checkinterval="30s">
+                    <actions>
+                        <debug_to_file text="'GalaxyObjectTable' + global.$GalaxyObjectTable" name="'galaxydebug.log'" directory="'galaxy'" />
+                        <set_value name="$Keys" exact="global.$GalaxyObjectTable.keys.list" />
+                        <do_all exact="$Keys.count" counter="$i">
+                            <debug_to_file text="'faction: %s, lost Ships: %s, lost Stations: %s, created Ships: %s, created Stations: %s'.[$Keys.{$i}, global.$GalaxyObjectTable.{$Keys.{$i}}.$ShipsLost, global.$GalaxyObjectTable.{$Keys.{$i}}.$StationsLost, global.$GalaxyObjectTable.{$Keys.{$i}}.$ShipsCreated, global.$GalaxyObjectTable.{$Keys.{$i}}.$StationsCreated]" name="'galaxydebug.log'" directory="'galaxy'" />
+                        </do_all>
+                    </actions>
+                </cue> -->
+    
+                <cue name="CountDestroyedStation" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="global.$X4_All_Stations" />
+                    </conditions>
+                    <actions>
+                        <set_value name="global.$GalaxyObjectTable.{event.object.owner}.$StationsLost" exact="1" operation="add" />
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

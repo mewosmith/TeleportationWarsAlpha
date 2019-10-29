@@ -2,11 +2,59 @@
 <mdscript name="Lists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4_extract_2.5/libraries/md.xsd">
     <cues>
         <cue name="Init" instantiate="true">
-            <conditions>
-                <event_cue_signalled cue="md.Setup.GameStart" />
-                <check_value value="false" />
+          <conditions>
+                <event_cue_signalled />
             </conditions>
+
             <actions>
+                <debug_to_file text="'Lists'" name="'Loadorder.log'" directory="'Debug'" chance="global.$TpwarDebugChance" />
+
+                <create_list name="global.$KnownTypes" />
+                <append_to_list name="global.$KnownTypes" exact="shiptypes_xl" />
+                <append_to_list name="global.$KnownTypes" exact="shiptypes_l" />
+                <append_to_list name="global.$KnownTypes" exact="shiptypes_m" />
+                <append_to_list name="global.$KnownTypes" exact="shiptypes_s" />
+                <append_to_list name="global.$KnownTypes" exact="shiptypes_xs" />
+                <append_to_list name="global.$KnownTypes" exact="stationtypes" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_production" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_build" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_storage" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_habitation" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_defence" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_communication" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_dock" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_pier" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_other" />
+                <append_to_list name="global.$KnownTypes" exact="moduletypes_venture" />
+                <append_to_list name="global.$KnownTypes" exact="weapons_lasers" />
+                <append_to_list name="global.$KnownTypes" exact="weapons_missilelaunchers" />
+                <append_to_list name="global.$KnownTypes" exact="weapons_turrets" />
+                <append_to_list name="global.$KnownTypes" exact="weapons_missileturrets" />
+                <append_to_list name="global.$KnownTypes" exact="shieldgentypes" />
+                <append_to_list name="global.$KnownTypes" exact="enginetypes" />
+                <append_to_list name="global.$KnownTypes" exact="thrustertypes" />
+                <append_to_list name="global.$KnownTypes" exact="marines" />
+                <append_to_list name="global.$KnownTypes" exact="unique_npcs" />
+                <append_to_list name="global.$KnownTypes" exact="wares" />
+                <append_to_list name="global.$KnownTypes" exact="productionmethods" />
+                <append_to_list name="global.$KnownTypes" exact="researchmethods" />
+                <append_to_list name="global.$KnownTypes" exact="researchables" />
+                <append_to_list name="global.$KnownTypes" exact="inventory_wares" />
+                <append_to_list name="global.$KnownTypes" exact="races" />
+                <append_to_list name="global.$KnownTypes" exact="factions" />
+                <append_to_list name="global.$KnownTypes" exact="licences" />
+                <append_to_list name="global.$KnownTypes" exact="entitytypes" />
+                <append_to_list name="global.$KnownTypes" exact="equipmentmods" />
+                <append_to_list name="global.$KnownTypes" exact="paintmods" />
+                <append_to_list name="global.$KnownTypes" exact="clothingmods" />
+                <append_to_list name="global.$KnownTypes" exact="software" />
+                <append_to_list name="global.$KnownTypes" exact="bombs" />
+                <append_to_list name="global.$KnownTypes" exact="lasertowers" />
+                <append_to_list name="global.$KnownTypes" exact="mines" />
+                <append_to_list name="global.$KnownTypes" exact="navbeacons" />
+                <append_to_list name="global.$KnownTypes" exact="resourceprobes" />
+                <append_to_list name="global.$KnownTypes" exact="satellites" />
+                <append_to_list name="global.$KnownTypes" exact="timeline" />
                 <create_list name="global.$Tpwar_test_groups" />
                 <append_to_list name="global.$Tpwar_test_groups" exact="faction.goner" />
                 <append_to_list name="global.$Tpwar_test_groups" exact="faction.wholefood" />
@@ -36,7 +84,7 @@
                     <debug_text text="'lookup ' + lookup.$Parts.{$i}" />
                 </do_all> -->
                 <!--  -->
-                <set_value name="$WareCount" exact="lookup.ware.list" />
+                <!-- <set_value name="$WareCount" exact="lookup.ware.list" />
                 <create_list name="$Blueprints" />
                 <create_list name="$Ships" />
                 <do_all exact="$WareCount.count" counter="$i">
@@ -50,24 +98,118 @@
                             <append_to_list name="$Ships" exact="$WareCount.{$i}" />
                         </do_if>
                     </do_all>
-                </do_all>
+                </do_all> -->
                 <!-- factions -->
-                <create_list name="global.$TpwarFactions" />
-                <create_list name="global.$VFactions" />
-                <set_value name="global.$Factionsglobal" exact="lookup.faction.list" />
-                <do_all exact="global.$Factionsglobal.count" counter="$i">
-                    <do_all exact="global.$Factionsglobal.{$i}.tags.count" counter="$j">
-                        <do_if value="global.$Factionsglobal.{$i}.tags.{$j} == tag.tpwar">
-                            <append_to_list name="global.$TpwarFactions" exact="global.$Factionsglobal.{$i}" />
-                        </do_if>
-                        <do_else>
-                            <append_to_list name="global.$VFactions" exact="global.$Factionsglobal.{$i}" />
-                        </do_else>
-                    </do_all>
+                <set_value name="$Visitors" exact="[
+faction.visitor001,
+faction.visitor002,
+faction.visitor003,
+faction.visitor004,
+faction.visitor005,
+faction.visitor006,
+faction.visitor007,
+faction.visitor008,
+faction.visitor009,
+faction.visitor010,
+faction.visitor011,
+faction.visitor012,
+faction.visitor013,
+faction.visitor014,
+faction.visitor015,
+faction.visitor016,
+faction.visitor017,
+faction.visitor018,
+faction.visitor019,
+faction.visitor020,
+faction.visitor021,
+faction.visitor022,
+faction.visitor023,
+faction.visitor024,
+faction.visitor025,
+faction.visitor026,
+faction.visitor027,
+faction.visitor028,
+faction.visitor029,
+faction.visitor030,
+faction.visitor031,
+faction.visitor032,
+faction.visitor033,
+faction.visitor034,
+faction.visitor035,
+faction.visitor036,
+faction.visitor037,
+faction.visitor038,
+faction.visitor039,
+faction.visitor040,
+faction.visitor041,
+faction.visitor042,
+faction.visitor043,
+faction.visitor044,
+faction.visitor045,
+faction.visitor046,
+faction.visitor047,
+faction.visitor048,
+faction.visitor049,
+faction.visitor050,
+faction.visitor051,
+faction.visitor052,
+faction.visitor053,
+faction.visitor054,
+faction.visitor055,
+faction.visitor056,
+faction.visitor057,
+faction.visitor058,
+faction.visitor059,
+faction.visitor060,
+faction.visitor061,
+faction.visitor062,
+faction.visitor063,
+faction.visitor064,
+faction.visitor065,
+faction.visitor066,
+faction.visitor067,
+faction.visitor068,
+faction.visitor069,
+faction.visitor070,
+faction.visitor071,
+faction.visitor072,
+faction.visitor073,
+faction.visitor074,
+faction.visitor075,
+faction.visitor076,
+faction.visitor077,
+faction.visitor078,
+faction.visitor079,
+faction.visitor080,
+faction.visitor081,
+faction.visitor082,
+faction.visitor083,
+faction.visitor084,
+faction.visitor085,
+faction.visitor086,
+faction.visitor087,
+faction.visitor088,
+faction.visitor089,
+faction.visitor090,
+faction.visitor091,
+faction.visitor092,
+faction.visitor093,
+faction.visitor094,
+faction.visitor095,
+faction.visitor096,
+faction.visitor097,
+faction.visitor098,
+faction.visitor099,
+faction.visitor100
+]" />
+                <set_value name="global.$Factionsglobal" exact="[]" />
+                <set_value name="$FactionFilter" exact="lookup.faction.list" />
+                <do_all exact="$FactionFilter.count" counter="$i">
+                    <do_if value="$Visitors.indexof.{$FactionFilter.{$i}} == 0">
+                        <!-- <debug_text text="'wtf' + $FactionFilter.{$i}" /> -->
+                        <append_to_list name="global.$Factionsglobal" exact="$FactionFilter.{$i}" />
+                    </do_if>
                 </do_all>
-                <debug_text text="'global.$Factionsglobal' + global.$Factionsglobal" />
-                <debug_text text="'global.$TpwarFactions' + global.$TpwarFactions" />
-                <debug_text text="'global.$VFactions' + global.$VFactions" />
                 <!-- txt configs -->
                 <!-- '\033B' + 'Argon' + '\033X' -->
                 <set_value name="global.$BuyColor" exact="'\033Y'" />
@@ -210,70 +352,7 @@ xen_wharf
                 <append_to_list name="global.$TpwarLockBoxes" exact="macro.sm_gen_lockbox_big_02_macro" />
                 <append_to_list name="global.$TpwarLockBoxes" exact="macro.sm_gen_lockbox_special_01_macro" />
                 <!-- Factions By Relation -->
-                <create_list name="global.$Factionsglobal" />
-                <get_factions_by_relation object="player.entity" relation="dock" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="enemy" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="friend" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="kill" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="killmilitary" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="member" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="nemesis" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="neutral" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <get_factions_by_relation object="player.entity" relation="self" result="$Factions" />
-                <do_all exact="$Factions.count" counter="$i">
-                    <do_if value="global.$Factionsglobal.indexof.{$Factions.{$i}} == 0">
-                        <append_to_list name="global.$Factionsglobal" exact="$Factions.{$i}" />
-                    </do_if>
-                </do_all>
-                <!-- test -->
-                <do_all exact="global.$Factionsglobal.count" counter="$i">
-                    <debug_to_file text="'what am i? ' + typeof global.$Factionsglobal.{$i} + '  ' + global.$Factionsglobal.{$i}" name="'lists.log'" directory="'tplists'" />
-                    <!-- test -->
-                    <!-- <create_object groupname="$VisitorFactionBeacons" macro="macro.tpwar_test_sat_macro" sector="player.sector" owner="global.$Factionsglobal.{$i}">
-                        <safepos object="player.ship" min="200m" max="900m" />
-                    </create_object> -->
-                </do_all>
-                <get_ship_definition macro="global.$All_FactionSizeS" multiple="true" size="class.ship_s" faction="global.$Factionsglobal" />
+                <!-- <get_ship_definition macro="global.$All_FactionSizeS" multiple="true" size="class.ship_s" faction="global.$Factionsglobal" /> -->
                 <!-- test -->
                 <create_list name="global.$VFactions" />
                 <append_to_list name="global.$VFactions" exact="faction.argon" />

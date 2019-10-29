@@ -12,7 +12,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -34,7 +34,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -57,8 +57,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -86,7 +86,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="yaki" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -111,7 +111,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -133,7 +133,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -156,8 +156,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -185,7 +185,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="usc" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -210,7 +210,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -232,7 +232,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -255,8 +255,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -284,7 +284,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="heartofalbion" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -309,7 +309,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -331,7 +331,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -354,8 +354,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -383,7 +383,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="sonraenergy" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -409,7 +409,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -431,7 +431,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -454,8 +454,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -483,7 +483,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="goner" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -508,7 +508,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -530,7 +530,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -553,8 +553,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -582,7 +582,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="ledda" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -607,7 +607,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -629,7 +629,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -652,8 +652,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -681,7 +681,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="atreus" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -706,7 +706,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -728,7 +728,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -751,8 +751,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -780,7 +780,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="jonferson" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -805,7 +805,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -827,7 +827,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -850,8 +850,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -879,7 +879,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="aquariuscorp" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -904,7 +904,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -926,7 +926,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -949,8 +949,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -978,7 +978,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="strongarms" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -1003,7 +1003,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1025,7 +1025,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1048,8 +1048,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1077,7 +1077,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="plutarch" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -1102,7 +1102,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1124,7 +1124,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1147,8 +1147,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1176,7 +1176,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="albionenergy" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -1201,7 +1201,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1223,7 +1223,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1246,8 +1246,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1275,7 +1275,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terracorp" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -1300,7 +1300,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1322,7 +1322,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1345,8 +1345,8 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
-    <quota galaxy="2"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <quota galaxy="1"/>
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1374,7 +1374,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[freighter, miner, deepspace]" size="ship_l"/>
-    <quota galaxy="3"/>
+    <quota galaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="beryll" relation="neutral" comparison="ge" regionbasket="minerals"/>
     <environment buildatshipyard="true"/>
     <basket basket="minerals"/>
@@ -1399,7 +1399,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1421,7 +1421,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1445,7 +1445,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrapmc" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1471,7 +1471,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1493,7 +1493,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1517,7 +1517,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="otas" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1543,7 +1543,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1565,7 +1565,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1589,7 +1589,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="buccaneers" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1615,7 +1615,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1637,7 +1637,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1661,7 +1661,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="reivers" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1687,7 +1687,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1709,7 +1709,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1733,7 +1733,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="terrans" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1759,7 +1759,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1781,7 +1781,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1805,7 +1805,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="nolimits" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1831,7 +1831,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, frigate]" size="ship_m"/>
-    <quota galaxy="3" sector="3"/>
+    <quota galaxy="1" sector="3"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1853,7 +1853,7 @@
       </order>
     </orders>
     <category faction="argon" tags="[military, destroyer]" size="ship_l"/>
-    <quota galaxy="4" sector="1"/>
+    <quota galaxy="1" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="ge"/>
     <environment buildatshipyard="true"/>
     <ship>
@@ -1877,7 +1877,7 @@
     </orders>
     <category faction="argon" tags="[military, carrier]" size="ship_xl"/>
     <quota galaxy="1"/>
-    <!--<quota galaxy="4" cluster="1"/>-->
+    <!--<quota galaxy="1" cluster="1"/>-->
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="uguras" relation="neutral" comparison="exact"/>
     <environment buildatshipyard="true"/>
     <ship>
