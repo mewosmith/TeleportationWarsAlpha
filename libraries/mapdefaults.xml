@@ -11,7 +11,7 @@
   <add sel="/defaults">
     <dataset macro="tppirate_cluster_99_macro">
       <properties>
-        <identification name="Unknown Sector M Alpha" description="{20003,310002}" />
+        <identification name="{734549,195}" description="{734549,196}" />
         <sounds>
           <music ref="music_cluster_31" />
         </sounds>
@@ -20,7 +20,7 @@
     </dataset>
     <dataset macro="tppirate_cluster_99_sector001_macro">
       <properties>
-        <identification name="Unknown Sector M Alpha" description="{20004,310012}" />
+        <identification name="{734549,195}" description="{734549,196}" />
         <sounds>
           <music ref="music_cluster_31" />
         </sounds>
@@ -29,7 +29,7 @@
     </dataset>
     <dataset macro="tppirate_cluster_98_macro">
       <properties>
-        <identification name="Greed's Embrace" description="{20003,20002}" />
+        <identification name="{734549,197}" description="{734549,198}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -38,12 +38,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_98_sector001_macro">
       <properties>
-        <identification name="Greed's Embrace" description="{20004,20012}" />
+        <identification name="{734549,197}" description="{734549,198}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_97_macro">
       <properties>
-        <identification name="Unknown Sector Gamma" description="{20003,20002}" />
+        <identification name="{734549,199}" description="{734549,200}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -52,12 +52,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_97_sector001_macro">
       <properties>
-        <identification name="Unknown Sector Gamma" description="{20004,20012}" />
+        <identification name="{734549,199}" description="{734549,200}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_96_macro">
       <properties>
-        <identification name="Unknown Sector Beta" description="{20003,20002}" />
+        <identification name="{734549,201}" description="{734549,202}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -66,12 +66,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_96_sector001_macro">
       <properties>
-        <identification name="Unknown Sector Beta" description="{20004,20012}" />
+        <identification name="{734549,201}" description="{734549,202}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_95_macro">
       <properties>
-        <identification name="Outcome of Persistence" description="{20003,20002}" />
+        <identification name="{734549,203}" description="{734549,204}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -80,12 +80,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_95_sector001_macro">
       <properties>
-        <identification name="Outcome of Persistence" description="{20004,20012}" />
+        <identification name="{734549,203}" description="{734549,204}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_94_macro">
       <properties>
-        <identification name="Ocracoke's Bridge" description="{20003,20002}" />
+        <identification name="{734549,205}" description="{734549,206}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -94,12 +94,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_94_sector001_macro">
       <properties>
-        <identification name="Ocracoke's Bridge" description="{20004,20012}" />
+        <identification name="{734549,205}" description="{734549,206}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_93_macro">
       <properties>
-        <identification name="Bala Gi's Defiance" description="{20003,20002}" />
+        <identification name="{734549,207}" description="{734549,208}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -108,12 +108,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_93_sector001_macro">
       <properties>
-        <identification name="Bala Gi's Defiance" description="{20004,20012}" />
+        <identification name="{734549,207}" description="{734549,208}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_92_macro">
       <properties>
-        <identification name="Olmancketslat's Temptation" description="{20003,20002}" />
+        <identification name="{734549,209}" description="{734549,210}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -122,12 +122,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_92_sector001_macro">
       <properties>
-        <identification name="Olmancketslat's Temptation" description="{20004,20012}" />
+        <identification name="{734549,209}" description="{734549,210}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_91_macro">
       <properties>
-        <identification name="Talent's Leisure" description="{20003,20002}" />
+        <identification name="{734549,211}" description="{734549,212}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -136,12 +136,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_91_sector001_macro">
       <properties>
-        <identification name="Talent's Leisure" description="{20004,20012}" />
+        <identification name="{734549,211}" description="{734549,212}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_90_macro">
       <properties>
-        <identification name="Veil of Destruction" description="{20003,20002}" />
+        <identification name="{734549,213}" description="{734549,214}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -150,12 +150,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_90_sector001_macro">
       <properties>
-        <identification name="Veil of Destruction" description="{20004,20012}" />
+        <identification name="{734549,213}" description="{734549,214}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_89_macro">
       <properties>
-        <identification name="Danna's Anguish" description="{20003,20002}" />
+        <identification name="{734549,215}" description="{734549,216}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -164,12 +164,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_89_sector001_macro">
       <properties>
-        <identification name="Danna's Anguish" description="{20004,20012}" />
+        <identification name="{734549,215}" description="{734549,216}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_88_macro">
       <properties>
-        <identification name="Prime Speculation" description="{20003,20002}" />
+        <identification name="{734549,217}" description="{734549,218}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -178,12 +178,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_88_sector001_macro">
       <properties>
-        <identification name="Prime Speculation" description="{20004,20012}" />
+        <identification name="{734549,217}" description="{734549,218}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_87_macro">
       <properties>
-        <identification name="Farnham's Pride" description="{20003,20002}" />
+        <identification name="{734549,219}" description="{734549,220}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -192,12 +192,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_87_sector001_macro">
       <properties>
-        <identification name="Farnham's Pride" description="{20004,20012}" />
+        <identification name="{734549,219}" description="{734549,220}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_86_macro">
       <properties>
-        <identification name="Roots of Opportunity" description="{20003,20002}" />
+        <identification name="{734549,221}" description="{734549,222}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -206,12 +206,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_86_sector001_macro">
       <properties>
-        <identification name="Roots of Opportunity" description="{20004,20012}" />
+        <identification name="{734549,221}" description="{734549,222}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_85_macro">
       <properties>
-        <identification name="Cheron's Fate" description="{20003,20002}" />
+        <identification name="{734549,223}" description="{734549,224}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -220,12 +220,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_85_sector001_macro">
       <properties>
-        <identification name="Cheron's Fate" description="{20004,20012}" />
+        <identification name="{734549,223}" description="{734549,224}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_84_macro">
       <properties>
-        <identification name="Verdict of Illusion" description="{20003,20002}" />
+        <identification name="{734549,225}" description="{734549,226}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -234,12 +234,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_84_sector001_macro">
       <properties>
-        <identification name="Verdict of Illusion" description="{20004,20012}" />
+        <identification name="{734549,225}" description="{734549,226}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_83_macro">
       <properties>
-        <identification name="Critical Exchange" description="{20003,20002}" />
+        <identification name="{734549,227}" description="{734549,228}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -248,12 +248,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_83_sector001_macro">
       <properties>
-        <identification name="Critical Exchange" description="{20004,20012}" />
+        <identification name="{734549,227}" description="{734549,228}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_82_macro">
       <properties>
-        <identification name="Lost Profits" description="{20003,20002}" />
+        <identification name="{734549,229}" description="{734549,230}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -262,12 +262,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_82_sector001_macro">
       <properties>
-        <identification name="Lost Profits" description="{20004,20012}" />
+        <identification name="{734549,229}" description="{734549,230}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_81_macro">
       <properties>
-        <identification name="Hurricaine of Dominion" description="{20003,20002}" />
+        <identification name="{734549,231}" description="{734549,232}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -276,12 +276,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_81_sector001_macro">
       <properties>
-        <identification name="Hurricaine of Dominion" description="{20004,20012}" />
+        <identification name="{734549,231}" description="{734549,232}" />
       </properties>
     </dataset>
     <dataset macro="tppirate_cluster_80_macro">
       <properties>
-        <identification name="Unknown Sector Epsilon" description="{20003,20002}" />
+        <identification name="{734549,233}" description="{734549,234}" />
         <sounds>
           <music ref="music_cluster_02" />
         </sounds>
@@ -290,12 +290,12 @@
     </dataset>
     <dataset macro="tppirate_cluster_80_sector001_macro">
       <properties>
-        <identification name="Unknown Sector Epsilon" description="{20004,20012}" />
+        <identification name="{734549,233}" description="{734549,234}" />
       </properties>
     </dataset>
     <dataset macro="meditech_cluster_01_macro">
       <properties>
-        <identification name="Medi-tech Headquarters" description="{20003,310002}" />
+        <identification name="Medi-tech Headquarters" description="{734549,236}" />
         <sounds>
           <music ref="music_cluster_01" />
         </sounds>
@@ -304,7 +304,7 @@
     </dataset>
     <dataset macro="meditech_cluster_01_sector001_macro">
       <properties>
-        <identification name="Medi-tech Headquarters" description="{20004,310012}" />
+        <identification name="Medi-tech Headquarters" description="{734549,236}" />
         <sounds>
           <music ref="music_cluster_01" />
         </sounds>

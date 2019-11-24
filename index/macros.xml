@@ -4,51 +4,7 @@
 
   </replace> -->
   <add sel="/index">
-    <!-- rust test -->
-    <entry name="array_gamma_plasma_emitter_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_0" />
-    <entry name="array_gamma_plasma_emitter_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_0" />
-    <entry name="fragile_400mm_ion_cannon_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_1" />
-    <entry name="fragile_400mm_ion_cannon_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_1" />
-    <entry name="phased_medium_ion_emitter_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_2" />
-    <entry name="phased_medium_ion_emitter_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_2" />
-    <entry name="advanced_gamma_ion_railgun_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_3" />
-    <entry name="advanced_gamma_ion_railgun_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_3" />
-    <entry name="phased_200mm_ion_generator_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_4" />
-    <entry name="phased_200mm_ion_generator_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_4" />
-    <entry name="phased_heavy_concussion_generator_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_5" />
-    <entry name="phased_heavy_concussion_generator_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_5" />
-    <entry name="array_small_concussion_cannon_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_6" />
-    <entry name="array_small_concussion_cannon_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_6" />
-    <entry name="damaged_tiny_plasma_generator_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_7" />
-    <entry name="damaged_tiny_plasma_generator_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_7" />
-    <entry name="fragile_light_concussion_railgun_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_8" />
-    <entry name="fragile_light_concussion_railgun_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_8" />
-    <entry name="phased_150mm_particle_cannon_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_9" />
-    <entry name="phased_150mm_particle_cannon_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_9" />
-    <entry name="fragile_small_plasma_projector_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_10" />
-    <entry name="fragile_small_plasma_projector_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_10" />
-    <entry name="array_gamma_particle_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_11" />
-    <entry name="array_gamma_particle_launcher_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_11" />
-    <entry name="diminished_limited_concussion_generator_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_12" />
-    <entry name="diminished_limited_concussion_generator_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_12" />
-    <entry name="array_beta_artillery_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_13" />
-    <entry name="array_beta_artillery_launcher_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_13" />
-    <entry name="fragmentation_75mm_plasma_cannon_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_14" />
-    <entry name="fragmentation_75mm_plasma_cannon_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_14" />
-    <entry name="fragile_150mm_artillery_ray_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_15" />
-    <entry name="fragile_150mm_artillery_ray_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_15" />
-    <entry name="phased_400mm_particle_railgun_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_16" />
-    <entry name="phased_400mm_particle_railgun_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_16" />
-    <entry name="advanced_300mm_ion_railgun_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_17" />
-    <entry name="advanced_300mm_ion_railgun_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_17" />
-    <entry name="advanced_heavy_particle_projector_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_18" />
-    <entry name="advanced_heavy_particle_projector_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_18" />
-    <entry name="fragmentation_200mm_particle_cannon_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_weapon_19" />
-    <entry name="fragmentation_200mm_particle_cannon_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\macroname_bullet_19" />
-    <!-- rust test -->
-    <entry name="" value="extensions\tpwar_release\ships\ship_macros" />
-    <entry name="" value="extensions\tpwar_release\ships\ship_storage_macros" />
-    <entry name="" value="extensions\tpwar_release\ships\ship_shipstorage_macros" />
+   
     <!-- storage -->
     <entry name="tpwar_asiatica_storage" value="extensions\tpwar_release\ships\ship_storage_macros" />
     <entry name="tpwar_bellflower_storage" value="extensions\tpwar_release\ships\ship_storage_macros" />
@@ -118,46 +74,7 @@
     <!-- TEST -->
     <entry name="tpwar_test_ship_macro" value="extensions\tpwar_release\ships\ship_macros" />
     <entry name="tpwar_test_sat_macro" value="extensions\tpwar_release\equipment\satellites\satellite_macros" />
-    <!-- WEAPONS -->
-    <entry name="tpwareq_pulse_small_beam_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_small_beam_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_medium_beam_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_medium_beam_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_large_beam_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_beam_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_xlarge_beam_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_beam_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_medium_beam_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_medium_beam_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_large_beam_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_beam_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_xlarge_beam_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_beam_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_small_proj_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_small_proj_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_medium_proj_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_medium_proj_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_large_proj_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_proj_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_xlarge_proj_gun_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_proj_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_medium_proj_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_medium_proj_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_large_proj_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_proj_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_xlarge_proj_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_proj_turret_bullet_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_bullet_macros" />
-    <entry name="tpwareq_pulse_small_missile_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_small_missile_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_missile_macros" />
-    <entry name="tpwareq_pulse_medium_missile_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_medium_missile_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_missile_macros" />
-    <entry name="tpwareq_pulse_large_missile_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_missile_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_missile_macros" />
-    <entry name="tpwareq_pulse_xlarge_missile_launcher_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_missile_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_missile_macros" />
-    <entry name="tpwareq_pulse_medium_missile_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_large_missile_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
-    <entry name="tpwareq_pulse_xlarge_missile_turret_macro" value="extensions\tpwar_release\equipment\weapons\macros\tpwar_weapon_macros" />
+  
     <!-- PARTS -->
     <entry name="d_pod_macro" value="extensions\tpwar_release\parts\pods\pod_macros" />
     <!-- KHP X:\SteamLibrary\steamapps\common\X4 Foundations\extensions\tpwar_release\khp\khp_hive\khp_hive01_macros.xml-->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+ <replace sel="//configuration">
+  <configuration material="particles.stardust" amount="0" size="0.1" distance="150" maxvel="2000">
+    <scale linear="0.03" angular="0.0" />
+  </configuration>
+  <!--default configuration - please don't remove-->
+
+  <!-- <configuration material="particles.stardust" amount="20" size="0.1" distance="150" maxvel="2000">
+    <scale linear="0.03" angular="0.0" />
+  </configuration> -->
+ </replace>
+</diff>

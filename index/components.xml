@@ -48,43 +48,7 @@
    <entry name="" value="extensions\tpwar_release\ships\ship_components" /> -->
   <!-- PARTS -->
   <entry name="d_pod_comp" value="extensions\tpwar_release\parts\pods\pod_components" />
-  <!-- WEAPONS -->
-  <entry name="tpwareq_weapon_photon_pulse_cannon_comp" value="Extensions\tpwar_release\equipment\weapons\equipment_components" />
-  <entry name="tpwareq_bullet_photon_pulse_cannon_comp" value="Extensions\tpwar_release\equipment\weapons\unipiedpipercomp" />
-  <!-- <entry name="tpwareq_*" value="Extensions\tpwar_release\equipment\weapons\equipment_components" /> -->
-  <entry name="tpwareq_pulse_small_beam_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_beam_gun_comp" />
-  <entry name="tpwareq_pulse_small_beam_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_beam_bullet_comp" />
-  <entry name="tpwareq_pulse_medium_beam_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_beam_gun_comp" />
-  <entry name="tpwareq_pulse_medium_beam_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_beam_bullet_comp" />
-  <entry name="tpwareq_pulse_large_beam_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_beam_gun_comp" />
-  <entry name="tpwareq_pulse_large_beam_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_beam_bullet_comp" />
-  <entry name="tpwareq_pulse_xlarge_beam_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_beam_gun_comp" />
-  <entry name="tpwareq_pulse_xlarge_beam_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_beam_bullet_comp" />
-  <entry name="tpwareq_pulse_medium_beam_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_beam_turret_comp" />
-  <entry name="tpwareq_pulse_large_beam_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_beam_turret_comp" />
-  <entry name="tpwareq_pulse_xlarge_beam_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_beam_turret_comp" />
-  <entry name="tpwareq_pulse_small_proj_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_proj_gun_comp" />
-  <entry name="tpwareq_pulse_small_proj_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_proj_bullet_comp" />
-  <entry name="tpwareq_pulse_medium_proj_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_proj_gun_comp" />
-  <entry name="tpwareq_pulse_medium_proj_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_proj_bullet_comp" />
-  <entry name="tpwareq_pulse_large_proj_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_proj_gun_comp" />
-  <entry name="tpwareq_pulse_large_proj_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_proj_bullet_comp" />
-  <entry name="tpwareq_pulse_xlarge_proj_gun_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_proj_gun_comp" />
-  <entry name="tpwareq_pulse_xlarge_proj_bullet_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_proj_bullet_comp" />
-  <entry name="tpwareq_pulse_medium_proj_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_proj_turret_comp" />
-  <entry name="tpwareq_pulse_large_proj_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_proj_turret_comp" />
-  <entry name="tpwareq_pulse_xlarge_proj_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_proj_turret_comp" />
-  <entry name="tpwareq_pulse_small_missile_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_missile_comp" />
-  <entry name="tpwareq_pulse_medium_missile_launcher_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_missile_launcher_comp" />
-  <entry name="tpwareq_pulse_medium_missile_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_missile_comp" />
-  <entry name="tpwareq_pulse_large_missile_launcher_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_missile_launcher_comp" />
-  <entry name="tpwareq_pulse_large_missile_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_missile_comp" />
-  <entry name="tpwareq_pulse_xlarge_missile_launcher_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_missile_launcher_comp" />
-  <entry name="tpwareq_pulse_xlarge_missile_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_missile_comp" />
-  <entry name="tpwareq_pulse_medium_missile_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_medium_missile_turret_comp" />
-  <entry name="tpwareq_pulse_large_missile_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_large_missile_turret_comp" />
-  <entry name="tpwareq_pulse_xlarge_missile_turret_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_xlarge_missile_turret_comp" />
-  <entry name="tpwareq_pulse_small_missile_launcher_comp" value="Extensions\tpwar_release\equipment\weapons\components\tpwareq_pulse_small_missile_launcher_comp" />
+
   <!-- HIVES -->
   <entry name="khp_hive01_comp" value="extensions\tpwar_release\khp\khp_hive\khp_hive01_comps" />
   <!-- <entry name="prod_khp_honey" value="extensions\khp\khp_components\prod_khp_honey" />
@@ -96,9 +60,7 @@
   <entry name="bullet_khp_l" value="extensions\tpwar_release\khp\khp_components\bullet_khp_l" />
   <entry name="bullet_khp_m" value="extensions\tpwar_release\khp\khp_components\bullet_khp_m" />
   <entry name="bullet_khp_s" value="extensions\tpwar_release\khp\khp_components\bullet_khp_s" />
-  <!-- <entry name="khp_probe" value="extensions\khp\khp_components\khp_probe" /> -->
-  <!--
-  <entry name="" value="extensions\khp\khp_components\" />
 
-  -->
+
+
 </index>

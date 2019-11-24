@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Master" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b2/libraries/md.xsd">
+    <cues>
+        <cue name="Init">
+            <conditions>
+                <event_game_started />
+            </conditions>
+            <actions>
+                <!-- debug -->
+                <set_value name="global.$TpwarDebugChance" exact="100" />
+                <set_value name="global.$TpwarFuelCost" exact="100" />
+                <set_value name="global.$TpwarGalaxyDebug" exact="100" />
+                <!-- namespace -->
+                <create_group groupname="md.$Hives" />
+                <create_group groupname="md.$HiveSpawners" />
+                <create_group groupname="md.$Supers" />
+                <!-- registry -->
+                <signal_cue_instantly cue="md.TPWAR_Lists.Init" />
+                <signal_cue_instantly cue="md.TPWAR_Listeners.Init" />
+                <set_value name="$ScriptRegistry" exact="[
+                    Waiting_Menu,
+                    md.TPWAR_Hive_Loop.Init,
+                    md.TPWAR_MdSupers.Init,
+                        
+                ]" />
+                <debug_to_file text="this.extension" name="'master.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" append="false" />
+                <debug_to_file text="'tablelog'" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" append="false" />
+            </actions>
+            <cues>
+                <cue name="Master_Interval" instantiate="true" checkinterval="120s" checktime="40s">
+                    <actions>
+                        <do_for_each in="$ScriptRegistry">
+                            <signal_cue cue="loop.element" />
+                        </do_for_each>
+                        <do_for_each in="md.$HiveSpawners">
+                            <signal_cue_instantly cue="loop.element" param="loop.element" />
+                        </do_for_each>
+                    </actions>
+                </cue>
+                <cue name="Waiting_Menu" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <cues>
+                        <cue name="Draw_Waiting_Menu_LIB" ref="md.TPWAR_Menu_LIB.Menu_LIB">
+                            <param name="Title" value="'Teleportation Wars'" />
+                            <param name="MenuType" value="'waiting'" />
+                            <param name="Col" value="1" />
+                            <param name="Height" value="200" />
+                            <param name="Width" value="300" />
+                        </cue>
+                    </cues>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

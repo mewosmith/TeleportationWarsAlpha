@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_MdSupers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b1/libraries/md.xsd">
+    <cues>
+        <cue name="Init">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <cues>
+                <cue name="MdSupers_Logic">
+                    <actions>
+                        <do_if value="not player.enitity.$Wave?">
+                            <set_value name="player.entity.$Wave" exact="0" />
+                        </do_if>
+                        <do_else>
+                            <do_all chance="100">
+                                <set_value name="player.entity.$Wave" exact="1" operation="add" />
+                                <signal_cue cue="Create_Super" />
+                            </do_all>
+                        </do_else>
+                    </actions>
+                </cue>
+                <cue name="Create_Super">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <do_if value="player.entity.$Wave lt 30">
+                            <do_any>
+                                <find_station name="$Target" space="player.galaxy" multiple="true" wharf="true" />
+                                <find_station name="$Target" space="player.galaxy" multiple="true" shipyard="true" />
+                                <find_station name="$Target" space="player.galaxy" multiple="true" piratebase="true" />
+                                <find_station name="$Target" space="player.galaxy" multiple="true" tradestation="true" />
+                                <find_station name="$Target" space="player.galaxy" multiple="true" equipmentdock="true" />
+                            </do_any>
+                            <set_value name="$Target" exact="$Target.random" />
+                            <set_value name="$Table" exact="global.$TPWAR_Globals.$G_Supers" />
+                            <get_character_definition macro="$CharMacro" faction="faction.xenon" tags="tag.pilot" />
+                            <create_ship groupname="md.$Supers" name="$Table.{player.enitity.$Wave}.$Boss" macro="$Table.{player.enitity.$Wave}.$Macro" zone="$Target.zone">
+                                <select faction="$Table.{player.enitity.$Wave}.$Faction" />
+                                <pilot macro="$CharMacro" />
+                                <loadout>
+                                    <level exact="1" />
+                                    <variation exact="0.0" />
+                                </loadout>
+                                <equipmentmods>
+                                    <mods list="$Table.{player.enitity.$Wave}.$EqMods" />
+                                </equipmentmods>
+                                <owner exact="faction.player" overridenpc="true" />
+                                <safepos min="1km" max="4km" />
+                            </create_ship>
+                            <remove_value name="$Target" />
+                            <remove_value name="$CharMacro" />
+                        </do_if>
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

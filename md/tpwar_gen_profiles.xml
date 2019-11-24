@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Gen_Profiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b1/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <!-- EQUIPMENTMODS -->
+                <create_list name="$ShieldMods" />
+                <create_list name="$WeaponMods" />
+                <create_list name="$EngineMods" />
+                <create_list name="$ShipMods" />
+                <!--  -->
+
+
+
+                <set_value name="$GenProfilesTable" exact="table[
+                            {1} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {2} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {3} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {4} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {5} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {6} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],
+                            {7} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ], 
+                            {8} = table [
+                                $Shield = $ShieldMods.random,
+                                $Ship = $ShipMods.random,
+                                $Engine = $EngineMods.random,
+                                $Weapon = $WeaponMods.random,
+                                ],                                              
+                                ]" />
+            </actions>
+            <cues>
+                <library name="GenProfilesLIB">
+                    <params>
+                        <param name="ReturnListSize" default="24" />
+                        <param name="ReturnSignal" default="'hiveloop'" />
+                    </params>
+                    <cues>
+                        <cue name="NewModsList">
+                            <actions>
+                                <create_list name="$NewMods" />
+                                <set_value name="$WhileCount" exact="0" chance="$tpwar_debugchance" />
+                                <do_while value="$NewMods.count lt $ReturnListSize">
+                                    <set_value name="$WhileCount" exact="1" operation="add" chance="$tpwar_debugchance" />
+                                    <set_value name="$RandomNumber" min="1" max="$TraitsCount" />
+                                    <append_to_list name="$NewMods" exact="$GenProfilesTable.{$RandomNumber}" chance="$GenProfilesTable.{$RandomNumber}.{1}" />
+                                </do_while>
+                                <signal_objects object="player.entity" param="$ReturnSignal" param2="$NewMods" />
+                            </actions>
+                        </cue>
+                    </cues>
+                </library>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

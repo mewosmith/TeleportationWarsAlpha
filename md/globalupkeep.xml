@@ -9,7 +9,7 @@
                 </check_any>
                 <!-- <cue_is_complete cue="md.Test_Tpwar.Init" /> -->
                 
-                <!-- <check_value value="false" /> -->
+                <check_value value="false" />
             </conditions>
             <actions>
                 

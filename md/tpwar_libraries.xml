@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Libraries" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b1/libraries/md.xsd">
+    <cues>
+        <library name="Refit_To_Khaak">
+            <actions>
+                <set_value name="$loadlist" exact="[
+                        macro.weapon_khp_s_mk1_macro, 
+                        macro.weapon_khp_m_mk1_macro, 
+                        macro.turret_khp_m_mk1_macro, 
+                        macro.turret_khp_l_mk1_macro,
+                        macro.thruster_gen_s_allround_01_mk3_macro,
+                        macro.thruster_gen_m_allround_01_mk3_macro,
+                        macro.thruster_gen_l_allround_01_mk3_macro,
+                        macro.thruster_gen_xl_allround_01_mk3_macro
+                        ]" />
+                <find_object_component name="$keeping" object="$Escort" recursive="true" multiple="true">
+                    <match_any>
+                        <match class="[class.turret, class.weapon]" negate="true" />
+                        <match integrated="true" />
+                        <match integrated="false" />
+                    </match_any>
+                </find_object_component>
+                <do_all exact="$keeping.count" counter="$i">
+                    <append_to_list name="$loadlist" exact="$keeping.{$i}.macro" />
+                </do_all>
+                <generate_loadout result="$loadout" macro="$Escort.macro" macros="$loadlist" level="1" />
+                <apply_loadout object="$Escort" loadout="$loadout.{1}" />
+            </actions>
+        </library>
+        <library name="Instant_Warp">
+            <actions>
+                <!-- <set_value name="$Ship" exact=""/>
+                <set_value name="$Destination" exact=""/>
+                <include_actions ref="md.TPWAR_Libraries.Instant_Warp" /> -->
+                <create_position name="$PositionOld" space="$Ship.zone" min="1km" max="10km" />
+                <create_position name="$EffectPosOld" x="$PositionOld.x" y="$PositionOld.y" z="$PositionOld.z + $ShipLength.length" />
+                <create_position name="$Position" space="$Destination.zone" min="1km" max="10km" />
+                <create_position name="$EffectPos" x="$Position.x" y="$Position.y" z="$Position.z + $ShipLength.length" />
+                <do_if value="$Ship.isclass.ship_s">
+                    <add_effect effect="'tpwar_warp_small'" object="$Destination.zone">
+                        <position value="$EffectPos" />
+                    </add_effect>
+                    <add_effect effect="'tpwar_warp_small'" object="$Ship.zone">
+                        <position value="$EffectPosOld" />
+                    </add_effect>
+                </do_if>
+                <do_if value="$Ship.isclass.ship_m">
+                    <add_effect effect="'tpwar_warp_medium'" object="$Destination.zone">
+                        <position value="$EffectPos" />
+                    </add_effect>
+                    <add_effect effect="'tpwar_warp_medium'" object="$Ship.zone">
+                        <position value="$EffectPosOld" />
+                    </add_effect>
+                </do_if>
+                <do_if value="$Ship.isclass.ship_l">
+                    <add_effect effect="'tpwar_warp_large'" object="$Destination.zone">
+                        <position value="$EffectPos" />
+                    </add_effect>
+                    <add_effect effect="'tpwar_warp_large'" object="$Ship.zone">
+                        <position value="$EffectPosOld" />
+                    </add_effect>
+                </do_if>
+                <do_if value="$Ship.isclass.ship_xl">
+                    <add_effect effect="'tpwar_warp_xl'" object="$Destination.zone">
+                        <position value="$EffectPos" />
+                    </add_effect>
+                    <add_effect effect="'tpwar_warp_xl'" object="$Ship.zone">
+                        <position value="$EffectPosOld" />
+                    </add_effect>
+                </do_if>
+                <warp object="Object" sector="$Target.sector">
+                    <safepos object="$Target" min="3km" max="6km" />
+                </warp>
+                <remove_value name="$PositionOld" />
+                <remove_value name="$EffectPosOld" />
+                <remove_value name="$Position" />
+                <remove_value name="$EffectPos" />
+            </actions>
+        </library>
+        <library name="Add_Escort">
+            <actions>
+                <!-- 
+                    <set_value name="$Escort" exact="event.param.{1}" />
+                    <set_value name="$Commander" exact="event.param.{2}" />
+                    <include_actions ref="md.TPWAR_Libraries.Add_Escort" />
+                 -->
+                <cancel_all_orders object="$Escort" />
+                <set_object_commander object="$Escort" commander="$Commander" />
+                <create_order id="'Escort'" object="$Escort" default="true">
+                    <param name="target" value="$Commander" />
+                </create_order>
+            </actions>
+        </library>
+        <library name="Create_Station_LIB">
+            <params>
+                <param name="Sector" default="null" />
+                <param name="Position" default="[100km, 200km]" />
+                <param name="Faction" default="faction.argon" />
+                <param name="Owner" default="faction.argon" />
+                <param name="Macro" default="macro.station_gen_piratebase_base_01_macro" />
+                <param name="Group" default="md.$Hard_Mode_Pirates_Bases_Group" />
+                <!-- <param name="Owner" default="faction.argon" /> -->
+            </params>
+            <actions>
+                <create_station groupname="$Group" name="$ThisStation" state="componentstate.operational" macro="$Macro" sector="$Sector" owner="$Owner">
+                    <safepos min="$Position.{1}" max="$Position.{2}" />
+                </create_station>
+                <extend_build_plot object="$ThisStation" negx="10km" negz="10km" negy="10km" posy="10km" posx="10km" posz="10km" />
+                <!-- <create_list name="$Macros" />
+                <create_list name="$Con" />
+                <append_to_list name="$Macros" exact="macro.pier_tel_harbor_02_macro" />
+                <append_to_list name="$Macros" exact="macro.prod_tel_sunriseflowers_macro" />
+                <append_to_list name="$Macros" exact="macro.storage_tel_s_container_01_macro" />
+                <append_to_list name="$Macros" exact="macro.dockarea_arg_m_station_01_lowtech_macro" />
+                <append_to_list name="$Con" exact="macro.struct_arg_base_02_macro" />
+                <create_construction_sequence station="$ThisStation" connectors="$Con" macros="$Macros">
+                    <immediate result="$Sequen" />
+                </create_construction_sequence>
+                <apply_construction_sequence station="$ThisStation" sequence="$Sequen" />
+                <create_cue_actor cue="this" name="$Manager">
+                    <select race="race.teladi" tags="controlpost.manager.tag" />
+                    <owner exact="faction.argon" />
+                    <skills>
+                        <skill type="management" exact="1" />
+                    </skills>
+                </create_cue_actor>
+                <create_cue_actor cue="this" name="$Def">
+                    <select race="race.drone" tags="tag.defence" />
+                    <owner exact="faction.argon" />
+                    <skills>
+                        <skill type="management" exact="1" />
+                    </skills>
+                </create_cue_actor>
+                <create_cue_actor cue="this" name="$Eng">
+                    <select race="race.drone" tags="tag.engineer" />
+                    <owner exact="faction.argon" />
+                    <skills>
+                        <skill type="management" exact="1" />
+                    </skills>
+                </create_cue_actor>
+                <debug_text text="$Manager.knownname" />
+                <assign_control_entity object="$ThisStation" actor="$Manager" post="controlpost.manager" transfer="true" />
+                <assign_control_entity object="$ThisStation" actor="$Def" post="controlpost.defence" transfer="true" />
+                <assign_control_entity object="$ThisStation" actor="$Eng" post="controlpost.engineer" transfer="true" />
+                <set_object_docking_enabled object="$ThisStation" enabled="true" />
+                <add_workforce object="$ThisStation" race="race.argon" exact="500" />
+                <remove_value name="$Prod" />
+                <remove_value name="$Con" />
+                <remove_value name="$Stor" />
+                <remove_value name="$Manager" />
+                <remove_value name="$Def" />
+                <remove_value name="$Eng" /> -->
+            </actions>
+        </library>
+        <library name="Create_Enemies_LIB">
+            <params>
+                <param name="Difficulty" default="md.$Difficulty" />
+                <param name="Target" default="player.ship" />
+                <param name="NumberOfShips" default="1" />
+                <param name="Faction" default="faction.argon" />
+                <param name="Size" default="[class.ship_s]" />
+                <param name="Tags" default="[tag.military]" />
+                <param name="Owner" default="faction.argon" />
+                <param name="Skill_Boarding" default="1" />
+                <param name="Skill_Engineering" default="1" />
+                <param name="Skill_Management" default="1" />
+                <param name="Skill_Morale" default="1" />
+                <param name="Skill_Piloting" default="1" />
+                <param name="Zone" default="null" />
+                <param name="ReturnGroup" default="md.$Hard_Mode_Pirates_Group" />
+            </params>
+            <actions>
+                <get_character_definition macro="$Pilots" multiple="true" tags="[tag.pilot]" faction="$Faction" />
+                <do_all exact="$NumberOfShips">
+                    <create_ship groupname="$Ships" name="$This" zone="$Zone">
+                        <select faction="$Faction" size="$Size.random" tags="$Tags" />
+                        <pilot macro="$Pilots.random">
+                            <skills>
+                                <skill type="boarding" exact="$Skill_Boarding" />
+                                <skill type="engineering" exact="$Skill_Engineering" />
+                                <skill type="management" exact="$Skill_Management" />
+                                <skill type="morale" exact="$Skill_Morale" />
+                                <skill type="piloting" exact="$Skill_Piloting" />
+                            </skills>
+                        </pilot>
+                        <owner overridenpc="true" exact="$Owner"></owner>
+                    </create_ship>
+                    <add_to_group groupname="$ReturnGroup" object="$This" />
+                </do_all>
+                <sort_group group="$Ships" sortbyvalue="loop.element.length" sortdescending="true" />
+                <do_for_each in="$Ships">
+                    <do_if value="not $Commander?">
+                        <set_value name="$Commander" exact="loop.element" />
+                        <set_object_commander object="$Commander" commander="$Commander" />
+                    </do_if>
+                    <do_else>
+                        <set_object_commander object="loop.element" commander="$Commander" />
+                    </do_else>
+                </do_for_each>
+                <set_object_name object="$Commander" name="md.Hard_Mode_Lists.Pirate_Name_List.$PirateNameList.random" />
+                <create_order object="$Commander" id="'Patrol'" default="true" immediate="true">
+                    <param name="space" value="$Target.sector" />
+                    <param name="pursuetargets" value="true" />
+                </create_order>
+                <!-- <create_order object="$Commander" id="'Attack'" immediate="true">
+                    <param name="squad_attack" value="true" />
+                    <param name="primarytarget" value="$Target" />
+                    <param name="pursuetargets" value="true" />
+                </create_order> -->
+                <clear_group group="$Ships" />
+            </actions>
+        </library>
+        <library name="RescaleRange">
+            <actions>
+                <!-- 
+                    <set_value name="$RescaleRangeTable" exact="table[
+                                {1} = table [
+                                    md.$Difficulty = md.$Difficulty,
+                                    $OldMax = md.$DifficultyMax,
+                                    $OldMin = 1,
+                                    $NewMax = 15,
+                                    $NewMin = 1,
+                                ]]" /> 
+                    <include_actions ref="RescaleRange" />
+                                -->
+                <set_value name="$OldRange" exact="$RescaleRangeTable.{1}.$OldMax - $RescaleRangeTable.{1}.$OldMin" />
+                <set_value name="$NewRange" exact="$RescaleRangeTable.{1}.$NewMax - $RescaleRangeTable.{1}.$NewMin" />
+                <set_value name="$Return" exact="((($RescaleRangeTable.{1}.$Difficulty - $RescaleRangeTable.{1}.$OldMin) * $NewRange)
+                                                        / $OldRange) + $RescaleRangeTable.{1}.$NewMin" />
+                <debug_text text="'rescale_range'+ $Return" chance="md.$DebugChance" />
+            </actions>
+        </library>
+        <library name="Apply_Equipment_Mods">
+            <params>
+                <param name="EQGroup" default="md.$Hard_Mode_Pirates_Group" />
+                <param name="DamageMods" default="[
+ware.mod_weapon_damage_01_mk1,
+ware.mod_weapon_damage_02_mk1,
+ware.mod_weapon_damage_03_mk1,
+ware.mod_weapon_damage_01_mk2,
+ware.mod_weapon_damage_02_mk2,
+ware.mod_weapon_damage_03_mk2,
+ware.mod_weapon_damage_04_mk2,
+ware.mod_weapon_damage_05_mk2,
+ware.mod_weapon_damage_01_mk3,
+ware.mod_weapon_damage_02_mk3]" />
+                <param name="ReloadMods" default="[
+ware.mod_weapon_reload_01_mk1
+]" />
+                <param name="SpeedMods" default="[
+ware.mod_weapon_speed_01_mk1,
+ware.mod_weapon_speed_01_mk3                
+                ]" />
+                <param name="SurfaceDamageMods" default="[
+ware.mod_weapon_surfaceelement_01_mk1,
+ware.mod_weapon_surfaceelement_01_mk2,
+ware.mod_weapon_surfaceelement_01_mk3
+]" />
+                <param name="ShipMassMods" default="[
+ware.mod_ship_mass_01_mk1,
+ware.mod_ship_mass_01_mk2,
+ware.mod_ship_mass_01_mk3               
+                ]" />
+                <param name="MaxHullMods" default="[
+ware.mod_ship_maxhull_01_mk1
+]" />
+                <param name="MissileMods" default="[
+ware.mod_ship_missilecapacity_01_mk1
+                ]" />
+            </params>
+            <actions>
+                <do_for_each in="$EQGroup" name="$Ship">
+                    <!-- egosoft broke this. idk why.  -->
+                    <!-- <find_object_component groupname="$Weapons" object="$Ship" multiple="true">
+                                <match_any>
+                                    <match class="[class.turret, class.weapon]" />
+                                </match_any>
+                            </find_object_component> -->
+                    <!-- <do_all exact="$Weapons.count" counter="$i">
+                                <add_equipment_mods object="$Ship">
+                                    <weapon ware="$DamageMods.random" macro="$Weapons.{$i}.macro" />
+                                </add_equipment_mods>
+                            </do_all> -->
+                    <set_value name="$AddMods" exact="[$ShipMassMods.random, $MaxHullMods.random, $MissileMods.random,]" />
+                    <add_equipment_mods object="$Ship">
+                        <mods list="$AddMods" />
+                    </add_equipment_mods>
+                </do_for_each>
+            </actions>
+        </library>
+    </cues>
+</mdscript>

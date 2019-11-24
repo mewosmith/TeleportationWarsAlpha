@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Listeners" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b2/libraries/md.xsd">
+    <cues>
+        <cue name="Init">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$Delay" exact="0" />
+            </actions>
+            <cues>
+                <cue name="MdSuperWeapons01" instantiate="true">
+                    <conditions>
+                        <event_object_destroyed group="md.$Supers" />
+                    </conditions>
+                    <actions>
+                        <set_value name="$Delay" exact="0" />
+                        <create_list name="$Destroy" />
+                        <find_ship name="$Destroy" space="event.object.zone" multiple="true" append="true" />
+                        <find_station name="$Destroy" space="event.object.zone" multiple="true" append="true" />
+                        <!-- <find_object name="$Destroy" space="event.object.zone" multiple="true" append="true" /> -->
+                        <sort_list list="$Destroy" sortbyvalue="loop.element.distanceto.{event.object}" sortdescending="false" />
+                        <do_for_each in="$Destroy">
+                            <set_value name="$Delay" exact="100ms" operation="add" />
+                            <signal_cue_instantly cue="Wave_Destroy" param="loop.element" />
+                        </do_for_each>
+                        <remove_value name="$Destroy" />
+                    </actions>
+                </cue>
+                <cue name="Wave_Destroy" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="$Delay" />
+                    <actions>
+                        <add_effect effect="'tpwar_warp_xl'" object="event.param.zone">
+                            <position value="event.param.position" />
+                        </add_effect>
+                        <destroy_object object="event.param" chance="80" />
+                    </actions>
+                </cue>
+                <cue name="MdSuperWeapons02" instantiate="true" checkinterval="300s">
+                    <actions>
+                        <do_if value="md.$Supers.count gt 0 and player.entity.$Wave gt 9">
+                            <set_value name="$Delay" exact="0" />
+                            <set_value name="$FiringSuper" exact="md.$Supers.random" />
+                            <find_ship name="$Targets" space="$FiringSuper.zone" sortbydistanceto="$FiringSuper">
+                                <match owner="faction.xenon" negate="true" />
+                            </find_ship>
+                            <do_for_each in="$Targets">
+                                <is_in_quadrant object="$FiringSuper" target="loop.element" result="$IsFront" />
+                                <do_if value="$IsFront == true">
+                                    <set_value name="$Delay" exact="100ms" operation="add" />
+                                    <signal_cue_instantly cue="Wave_Damage" param="loop.element" />
+                                </do_if>
+                            </do_for_each>
+                        </do_if>
+                    </actions>
+                </cue>
+                <cue name="Wave_Damage" instantiate="true">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <delay exact="$Delay" />
+                    <actions>
+                        <add_effect effect="'tpwar_warp_xl'" object="event.param.zone">
+                            <position value="event.param.position" />
+                        </add_effect>
+                        <do_if value="event.param.shieldpercentage gt 1 ">
+                            <set_object_shield object="event.param" exact="0" />
+                            <set_object_hull object="event.param" exact="75" />
+                        </do_if>
+                        <do_else>
+                            <do_if value="event.param.hullpercentage gt 50">
+                                <set_object_hull object="event.param" exact="50" />
+                            </do_if>
+                            <do_else>
+                                <destroy_object object="event.param" />
+                            </do_else>
+                        </do_else>
+                        <destroy_object object="event.param" chance="5" />
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+    </cues>
+</mdscript>

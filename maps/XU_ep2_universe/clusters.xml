@@ -91,6 +91,15 @@ macro name="tpthree_cluster196_macro" class="cluster">
            <position x="-20000000" y="0" z="0"/>
        
  -->
+
+ <!-- 
+
+   
+  -->
+
+
+
+
 <diff>
   <add sel="/macros">
     <macro name="tppirate_Cluster_99_macro" class="cluster">
@@ -131,7 +140,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_06" />
+            <component connection="space" ref="planet_sun_a" />
           </macro>
         </connection>
       </connections>
@@ -213,7 +222,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_33" />
+            <component connection="space" ref="planet_sun_A" />
           </macro>
         </connection>
       </connections>
@@ -269,7 +278,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_23" />
+            <component connection="space" ref="cluster_a" />
           </macro>
         </connection>
       </connections>
@@ -280,7 +289,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tppirate_Cluster_96_Sector001_connection" ref="sectors">
           <macro ref="tppirate_Cluster_96_Sector001_macro" connection="cluster" />
           <offset>
-            <position x="-123007792" y="36716164" z="158596768" />
+            <position x="11386143.000000m" y="13583940.000000m" z="-211859040.000000m" />
             <rotation pitch="165" yaw="147" roll="150" />
           </offset>
         </connection>
@@ -338,7 +347,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_18" />
+            <component connection="space" ref="Cluster_37" />
           </macro>
         </connection>
       </connections>
@@ -349,7 +358,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tppirate_Cluster_95_Sector001_connection" ref="sectors">
           <macro ref="tppirate_Cluster_95_Sector001_macro" connection="cluster" />
           <offset>
-            <position x="93543680" y="3542040" z="-172530382" />
+            <position x="54020332.000000m" y="201782240.000000m" z="26740806.000000m" />
             <rotation pitch="121" yaw="172" roll="4" />
           </offset>
         </connection>
@@ -407,7 +416,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_35" />
+            <component connection="space" ref="cluster_c" />
           </macro>
         </connection>
       </connections>
@@ -489,7 +498,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_20" />
+            <component connection="space" ref="Cluster_40" />
           </macro>
         </connection>
       </connections>
@@ -558,7 +567,8 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_39" />
+            
+            <component connection="space" ref="cluster_e" />
           </macro>
         </connection>
       </connections>
@@ -569,7 +579,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tppirate_Cluster_92_Sector001_connection" ref="sectors">
           <macro ref="tppirate_Cluster_92_Sector001_macro" connection="cluster" />
           <offset>
-            <position x="-188813525" y="-85923512" z="-49389440" />
+            <position x="106388272.000000m" y="75980144.000000m" z="197026864.000000m" />
             <rotation pitch="38" yaw="53" roll="52" />
           </offset>
         </connection>
@@ -640,7 +650,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_19" />
+            <component connection="space" ref="cluster_f" />
           </macro>
         </connection>
       </connections>
@@ -709,7 +719,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_24" />
+            <component connection="space" ref="cluster_x_test" />
           </macro>
         </connection>
       </connections>
@@ -752,7 +762,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_07" />
+            <component connection="space" ref="cluster_x" />
           </macro>
         </connection>
       </connections>
@@ -763,7 +773,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tppirate_Cluster_89_Sector001_connection" ref="sectors">
           <macro ref="tppirate_Cluster_89_Sector001_macro" connection="cluster" />
           <offset>
-            <position x="-177411310" y="9955360" z="-175266266" />
+            <position x="-162028352.000000m" y="-150440320.000000m" z="-85145384.000000m" />
             <rotation pitch="296" yaw="206" roll="331" />
           </offset>
         </connection>
@@ -808,7 +818,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_28" />
+            <component connection="space" ref="cluster_g" />
           </macro>
         </connection>
       </connections>
@@ -877,7 +887,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_17" />
+            <component connection="space" ref="cluster_h" />
           </macro>
         </connection>
       </connections>
@@ -933,7 +943,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_28" />
+            <component connection="space" ref="Cluster_14" />
           </macro>
         </connection>
       </connections>
@@ -1002,7 +1012,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_19" />
+            <component connection="space" ref="cluster_i" />
           </macro>
         </connection>
       </connections>
@@ -1045,7 +1055,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_08" />
+            <component connection="space" ref="Cluster_12" />
           </macro>
         </connection>
       </connections>
@@ -1114,7 +1124,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_19" />
+            <component connection="space" ref="cluster_c_v2" />
           </macro>
         </connection>
       </connections>
@@ -1196,7 +1206,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_35" />
+            <component connection="space" ref="cluster_c_v3" />
           </macro>
         </connection>
       </connections>
@@ -1252,7 +1262,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_24" />
+            <component connection="space" ref="Cluster_21" />
           </macro>
         </connection>
       </connections>
@@ -1321,7 +1331,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_39" />
+            <component connection="space" ref="Cluster_18" />
           </macro>
         </connection>
       </connections>
@@ -1377,7 +1387,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_36" />
+            <component connection="space" ref="cluster_h2" />
           </macro>
         </connection>
       </connections>
@@ -1433,7 +1443,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_15" />
+            <component connection="space" ref="cluster_h4" />
           </macro>
         </connection>
       </connections>
@@ -1447,7 +1457,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster1158_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster1158_sector001_macro" connection="cluster" />
           <offset>
-            <position x="176075872" y="83305904" z="199971968" />
+            <position x="-214758896.000000m" y="-168023632.000000m" z="-68862744.000000m" />
             <rotation pitch="117" yaw="329" roll="55" />
           </offset>
         </connection>
@@ -1492,7 +1502,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_07" />
+            <component connection="space" ref="Cluster_22" />
           </macro>
         </connection>
       </connections>
@@ -1574,7 +1584,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_07" />
+            <component connection="space" ref="cluster_c_v5" />
           </macro>
         </connection>
       </connections>
@@ -1630,7 +1640,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_13" />
+            <component connection="space" ref="cluster_i2" />
           </macro>
         </connection>
       </connections>
@@ -1699,7 +1709,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_13" />
+            <component connection="space" ref="cluster_c_v6" />
           </macro>
         </connection>
       </connections>
@@ -1781,7 +1791,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_01" />
+            <component connection="space" ref="Cluster_21" />
           </macro>
         </connection>
       </connections>
@@ -1893,7 +1903,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_27" />
+            <component connection="space" ref="cluster_t" />
           </macro>
         </connection>
       </connections>
@@ -1937,7 +1947,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_10" />
+            <component connection="space" ref="cluster_t_v2" />
           </macro>
         </connection>
       </connections>
@@ -2019,7 +2029,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_08" />
+            <component connection="space" ref="Cluster_06" />
           </macro>
         </connection>
       </connections>
@@ -2088,7 +2098,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_25" />
+            <component connection="space" ref="cluster_m" />
           </macro>
         </connection>
       </connections>
@@ -2157,7 +2167,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_04" />
+            <component connection="space" ref="Cluster_18" />
           </macro>
         </connection>
       </connections>
@@ -2213,7 +2223,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_31" />
+            <component connection="space" ref="Cluster_43" />
           </macro>
         </connection>
       </connections>
@@ -2269,7 +2279,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         </connection>
         <connection ref="content">
           <macro>
-            <component connection="space" ref="Cluster_26" />
+            <component connection="space" ref="Cluster_42" />
           </macro>
         </connection>
       </connections>
@@ -2487,7 +2497,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster084_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster084_sector001_macro" connection="cluster" />
           <offset>
-            <position x="135183328" y="-97921638" z="-128229416" />
+            <position x="-202969440.000000m" y="8844771.000000m" z="199410672.000000m" />
             <rotation pitch="107" yaw="312" roll="185" />
           </offset>
         </connection>
@@ -2780,7 +2790,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster143_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster143_sector001_macro" connection="cluster" />
           <offset>
-            <position x="158249184" y="35341696" z="14576048" />
+            <position x="176040.437500m" y="-18144882.000000m" z="78848800.000000m" />
             <rotation pitch="273" yaw="261" roll="205" />
           </offset>
         </connection>
@@ -2935,7 +2945,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster188_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster188_sector001_macro" connection="cluster" />
           <offset>
-            <position x="-153234096" y="-99751150" z="43411584" />
+            <position x="-30690536.000000m" y="8985958.000000m" z="94748848.000000m" />
             <rotation pitch="145" yaw="305" roll="196" />
           </offset>
         </connection>
@@ -2978,7 +2988,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster203_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster203_sector001_macro" connection="cluster" />
           <offset>
-            <position x="15989632" y="-28202808" z="-87193056" />
+            <position x="81641160.000000m" y="22685386.000000m" z="129367304.000000m" />
             <rotation pitch="203" yaw="77" roll="139" />
           </offset>
         </connection>
@@ -3103,7 +3113,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster205_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster205_sector001_macro" connection="cluster" />
           <offset>
-            <position x="-50899648" y="65047456" z="26119968" />
+            <position x="-97805632.000000m" y="-74042232.000000m" z="-37671792.000000m" />
             <rotation pitch="41" yaw="245" roll="356" />
           </offset>
         </connection>
@@ -3681,7 +3691,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster1260_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster1260_sector001_macro" connection="cluster" />
           <offset>
-            <position x="158896064" y="26536176" z="-70680608" />
+            <position x="131278048.000000m" y="-209782560.000000m" z="96693520.000000m" />
             <rotation pitch="134" yaw="204" roll="282" />
           </offset>
         </connection>
@@ -3875,7 +3885,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster289_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster289_sector001_macro" connection="cluster" />
           <offset>
-            <position x="-17377328" y="-42546308" z="-7709056" />
+            <position x="-137828896.000000m" y="87110096.000000m" z="129097456.000000m" />
             <rotation pitch="48" yaw="55" roll="229" />
           </offset>
         </connection>
@@ -4250,7 +4260,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster331_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster331_sector001_macro" connection="cluster" />
           <offset>
-            <position x="-126023152" y="26756144" z="-163211544" />
+            <position x="138866608.000000m" y="18968520.000000m" z="24889472.000000m" />
             <rotation pitch="205" yaw="335" roll="15" />
           </offset>
         </connection>
@@ -5030,7 +5040,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster216_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster216_sector001_macro" connection="cluster" />
           <offset>
-            <position x="6942080" y="91488160" z="73872032" />
+            <position x="-54340468.000000m" y="102138544.000000m" z="31856366.000000m" />
             <rotation pitch="183" yaw="58" roll="52" />
           </offset>
         </connection>
@@ -6181,7 +6191,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster044_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster044_sector001_macro" connection="cluster" />
           <offset>
-            <position x="-87194320" y="27887176" z="-191928753" />
+            <position x="406726272.000000m" y="106650648.000000m" z="-255467152.000000m" />
             <rotation pitch="121" yaw="14" roll="102" />
           </offset>
         </connection>
@@ -7216,7 +7226,7 @@ macro name="tpthree_cluster196_macro" class="cluster">
         <connection name="tpthree_cluster290_sector001_connection" ref="sectors">
           <macro ref="tpthree_cluster290_sector001_macro" connection="cluster" />
           <offset>
-            <position x="105782656" y="36423136" z="87082016" />
+            <position x="117431456" y="-67440608" z="-106439296" />
             <rotation pitch="125" yaw="269" roll="80" />
           </offset>
         </connection>

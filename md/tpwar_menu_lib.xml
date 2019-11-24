@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Menu_LIB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b1/libraries/md.xsd">
+    <cues>
+        <library name="Menu_LIB">
+            <params>
+                <param name="Title" default="'Menu'" />
+                <param name="List" default="'none'" />
+                <param name="Text" default="'Default'" />
+                <param name="ObjectTable" default="'none'" />
+                <param name="MenuType" default="'none'" />
+                <param name="ReturnCue" default="Main_Menu" />
+                <param name="ButtonText" default="'button'" />
+                <param name="Object" default="'none'" />
+                <param name="Col" default="2" />
+                <param name="Height" default="800" />
+                <param name="Width" default="1000" />
+            </params>
+            <actions>
+                <include_actions ref="StartMenu" />
+                <do_if value="$MenuType == 'waiting'">
+                    <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+                    <set_value name="$Text" exact="'Waiting So Long. Im Waiting So Long.'" />
+                    <include_actions ref="Label" />
+                </do_if>
+            </actions>
+        </library>
+        <library name="StartMenu">
+            <actions>
+                <signal_cue_instantly cue="md.Simple_Menu_API.Create_Menu" param="table[
+                                        $columns = $Col, 
+                                        $title = $Title,
+                                        $height = $Height,
+                                        $width = $Width,
+                                        ]" />
+                <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text" param="table[
+                                        $col=1, 
+                                        $text = 'Return To Main Menu',
+                                        ]" />
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Button" param="table[
+                                        $col=2, 
+                                        $text=table[$text='Select', $color='Helper.color.brightyellow'], 
+                                        $onClick= md.Debug_For_All.Main_Menu,
+                                        ]" />
+            </actions>
+        </library>
+        <library name="Button">
+            <actions>
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Button" param="table[
+                                        $col=2,
+                                        $text=table[$text=$ButtonText, $color='Helper.color.brightyellow'], 
+                                        $onClick= $ReturnCue,
+                                        $echo = $Object,
+                                        ]" />
+            </actions>
+        </library>
+        <library name="Label">
+            <actions>
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text" param="table[
+                                        $col=1,                                        
+                                        $text = $Text,
+                                         $color=table[ $r = 200, $g = 200, $b = 200, $a = 100 ],
+                                        ]" />
+            </actions>
+        </library>
+        <library name="TitleLabel">
+            <actions>
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text" param="table[
+                                        $col=1,                                         
+                                        $text = $Text,
+                                        $titleColor = 'Helper.color.brightyellow',
+                                         $color=table[ $r = 200, $g = 200, $b = 200, $a = 100 ],
+                                        ]" />
+            </actions>
+        </library>
+        <library name="Dropdown">
+            <actions>
+                <!-- takes a list of tables
+                [
+                          table[$text='white'], 
+                          table[$text='red'], 
+                          table[$text='green'], 
+                          table[$text='blue'],
+                          ]
+                
+                 -->
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Dropdown" param="table[
+                        $col = $Col, 
+                        $options = $ObjectTable,
+                        $startOption = 1,
+                        $height = 12,
+                        $onDropDownConfirmed = md.Debug_For_All.DropDownReturn
+                        ]" />
+            </actions>
+        </library>
+    </cues>
+</mdscript>

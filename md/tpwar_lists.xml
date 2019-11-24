@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Lists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b1/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_player_activated_weapon />
+                <!-- <event_cue_signalled /> -->
+                <!-- <check_value value="false" /> -->
+            </conditions>
+            <actions>
+                <!-- MDSUPERS -->
+                 <set_value name="$MdSupers" exact="table[
+                            {1}   = table[$Faction = faction.xenon, $Name = 'XEXON 001 TRINITY',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_001, ware.tp_war_maxhull_001, ware.tp_war_capacity_001], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {2}   = table[$Faction = faction.xenon, $Name = 'XEXON 002 CROSSROADS',   $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_002, ware.tp_war_maxhull_002, ware.tp_war_capacity_002], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {3}   = table[$Faction = faction.xenon, $Name = 'XEXON 003 SANDSTONE',    $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_003, ware.tp_war_maxhull_003, ware.tp_war_capacity_003], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {4}   = table[$Faction = faction.xenon, $Name = 'XEXON 004 RANGER',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_004, ware.tp_war_maxhull_004, ware.tp_war_capacity_004], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {5}   = table[$Faction = faction.xenon, $Name = 'XEXON 005 GREENHOUSE',   $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_005, ware.tp_war_maxhull_005, ware.tp_war_capacity_005], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {6}   = table[$Faction = faction.xenon, $Name = 'XEXON 006 BUSTER',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_006, ware.tp_war_maxhull_006, ware.tp_war_capacity_006], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {7}   = table[$Faction = faction.xenon, $Name = 'XEXON 007 JANGLE',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_007, ware.tp_war_maxhull_007, ware.tp_war_capacity_007], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {8}   = table[$Faction = faction.xenon, $Name = 'XEXON 008 TUMBLER',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_008, ware.tp_war_maxhull_008, ware.tp_war_capacity_008], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001] ],
+                            {9}   = table[$Faction = faction.xenon, $Name = 'XEXON 009 SNAPPER',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_009, ware.tp_war_maxhull_009, ware.tp_war_capacity_009], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {10}  = table[$Faction = faction.xenon, $Name = 'XEXON 010 IVY ANIMA',    $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_010, ware.tp_war_maxhull_010, ware.tp_war_capacity_010], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {11}  = table[$Faction = faction.xenon, $Name = 'XEXON 011 UPSHOT',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_011, ware.tp_war_maxhull_011, ware.tp_war_capacity_011], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {12}  = table[$Faction = faction.xenon, $Name = 'XEXON 012 KNOTHOLE',     $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_012, ware.tp_war_maxhull_012, ware.tp_war_capacity_012], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {13}  = table[$Faction = faction.xenon, $Name = 'XEXON 013 CASTLE',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_013, ware.tp_war_maxhull_013, ware.tp_war_capacity_013], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {14}  = table[$Faction = faction.xenon, $Name = 'XEXON 014 TEAPOT',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_014, ware.tp_war_maxhull_014, ware.tp_war_capacity_014], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {15}  = table[$Faction = faction.xenon, $Name = 'XEXON 015 WIGWAM',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_015, ware.tp_war_maxhull_015, ware.tp_war_capacity_015], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {16}  = table[$Faction = faction.xenon, $Name = 'XEXON 016 REDWING',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_016, ware.tp_war_maxhull_016, ware.tp_war_capacity_016], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002] ],
+                            {17}  = table[$Faction = faction.xenon, $Name = 'XEXON 017 PLUMBOB',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_017, ware.tp_war_maxhull_017, ware.tp_war_capacity_017], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {18}  = table[$Faction = faction.xenon, $Name = 'XEXON 018 HARDTACK',     $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_018, ware.tp_war_maxhull_018, ware.tp_war_capacity_018], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {19}  = table[$Faction = faction.xenon, $Name = 'XEXON 019 ARGUS',        $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_019, ware.tp_war_maxhull_019, ware.tp_war_capacity_019], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {20}  = table[$Faction = faction.xenon, $Name = 'XEXON 020 NOUGAT',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_020, ware.tp_war_maxhull_020, ware.tp_war_capacity_020], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {21}  = table[$Faction = faction.xenon, $Name = 'XEXON 021 SUNBEAM',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_021, ware.tp_war_maxhull_021, ware.tp_war_capacity_021], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {22}  = table[$Faction = faction.xenon, $Name = 'XEXON 022 DOMINIC',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_022, ware.tp_war_maxhull_022, ware.tp_war_capacity_022], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {23}  = table[$Faction = faction.xenon, $Name = 'XEXON 023 FISHBOWL',     $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_023, ware.tp_war_maxhull_023, ware.tp_war_capacity_023], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {24}  = table[$Faction = faction.xenon, $Name = 'XEXON 024 STORAX',       $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_024, ware.tp_war_maxhull_024, ware.tp_war_capacity_024], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003] ],
+                            {25}  = table[$Faction = faction.xenon, $Name = 'XEXON 025 COASTER',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_025, ware.tp_war_maxhull_025, ware.tp_war_capacity_025], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ],
+                            {26}  = table[$Faction = faction.xenon, $Name = 'XEXON 026 NIBLICK',      $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_026, ware.tp_war_maxhull_026, ware.tp_war_capacity_026], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ],
+                            {27}  = table[$Faction = faction.xenon, $Name = 'XEXON 027 WHETSTONE',    $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_027, ware.tp_war_maxhull_027, ware.tp_war_capacity_027], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ],
+                            {28}  = table[$Faction = faction.xenon, $Name = 'XEXON 028 FLINTLOCK',    $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_028, ware.tp_war_maxhull_028, ware.tp_war_capacity_028], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ],
+                            {29}  = table[$Faction = faction.xenon, $Name = 'XEXON 029 LACTCHKEY',    $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_029, ware.tp_war_maxhull_029, ware.tp_war_capacity_029], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ],
+                            {30}  = table[$Faction = faction.xenon, $Name = 'XEXON 030 CROSSTIE',     $Macro = macro.ship_xen_xl_carrier_01_a_macro, $EqMods = [ware.tp_war_damage_030, ware.tp_war_maxhull_030, ware.tp_war_capacity_030], $Subordinates = [tag.fighter, 1, tag.frigate, 1, tag.corvette, 1, tag.destroyer, 1 ], $ActiveMinions = 0, $MdWeapon = [MdSuperWeapon_001, MdSuperWeapon_002, MdSuperWeapon_003, MdSuperWeapon_004] ]
+                                ]" />
+
+                <!-- EQUIPMENTMODS -->
+                <create_list name="$ShieldMods" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_01" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_02" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_03" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_04" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_05" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_06" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_07" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_08" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_09" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_10" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_11" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_12" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_13" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_14" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_15" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_16" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_17" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_18" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_19" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_capacity_20" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_01" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_02" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_03" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_04" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_05" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_06" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_07" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_08" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_09" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_10" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_11" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_12" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_13" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_14" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_15" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_16" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_17" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_18" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_19" />
+                <append_to_list name="$ShieldMods" exact="ware.gen_rechargerate_20" />
+                <!--  -->
+                <create_list name="$ShipMods" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_01" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_02" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_03" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_04" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_05" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_06" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_07" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_08" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_09" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_10" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_11" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_12" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_13" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_14" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_15" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_16" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_17" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_18" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_19" />
+                <append_to_list name="$ShipMods" exact="ware.gen_maxhull_20" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_01" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_02" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_03" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_04" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_05" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_06" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_07" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_08" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_09" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_10" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_11" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_12" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_13" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_14" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_15" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_16" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_17" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_18" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_19" />
+                <append_to_list name="$ShipMods" exact="ware.gen_missilecapacity_20" />
+                <!--  -->
+                <create_list name="$EngineMods" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_01" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_02" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_03" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_04" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_05" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_06" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_07" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_08" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_09" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_10" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_11" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_12" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_13" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_14" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_15" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_16" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_17" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_18" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_19" />
+                <append_to_list name="$EngineMods" exact="ware.gen_rotationthrust_20" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_01" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_02" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_03" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_04" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_05" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_06" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_07" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_08" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_09" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_10" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_11" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_12" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_13" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_14" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_15" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_16" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_17" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_18" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_19" />
+                <append_to_list name="$EngineMods" exact="ware.gen_forwardthrust_20" />
+                <!--  -->
+                <create_list name="$WeaponMods" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_01" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_02" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_03" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_04" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_05" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_06" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_07" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_08" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_09" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_10" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_11" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_12" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_13" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_14" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_15" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_16" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_17" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_18" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_19" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_damage_20" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_01" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_02" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_03" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_04" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_05" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_06" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_07" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_08" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_09" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_10" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_11" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_12" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_13" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_14" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_15" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_16" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_17" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_18" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_19" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_lifetime_20" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_01" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_02" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_03" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_04" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_05" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_06" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_07" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_08" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_09" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_10" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_11" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_12" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_13" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_14" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_15" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_16" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_17" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_18" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_19" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_rotationspeed_20" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_01" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_02" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_03" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_04" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_05" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_06" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_07" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_08" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_09" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_10" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_11" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_12" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_13" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_14" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_15" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_16" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_17" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_18" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_19" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_reload_20" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_01" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_02" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_03" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_04" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_05" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_06" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_07" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_08" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_09" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_10" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_11" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_12" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_13" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_14" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_15" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_16" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_17" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_18" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_19" />
+                <append_to_list name="$WeaponMods" exact="ware.gen_speed_20" />
+                <!-- Factions -->
+                <set_value name="$Visitors" exact="[
+                faction.visitor001,faction.visitor002,faction.visitor003,faction.visitor004,faction.visitor005,
+                faction.visitor006,faction.visitor007,faction.visitor008,faction.visitor009,faction.visitor010,faction.visitor011,faction.visitor012,
+                faction.visitor013,faction.visitor014,faction.visitor015,faction.visitor016,faction.visitor017,faction.visitor018,faction.visitor019,
+                faction.visitor020,faction.visitor021,faction.visitor022,faction.visitor023,faction.visitor024,faction.visitor025,faction.visitor026,
+                faction.visitor027,faction.visitor028,faction.visitor029,faction.visitor030,faction.visitor031,faction.visitor032,faction.visitor033,
+                faction.visitor034,faction.visitor035,faction.visitor036,faction.visitor037,faction.visitor038,faction.visitor039,faction.visitor040,
+                faction.visitor041,faction.visitor042,faction.visitor043,faction.visitor044,faction.visitor045,faction.visitor046,faction.visitor047,
+                faction.visitor048,faction.visitor049,faction.visitor050,faction.visitor051,faction.visitor052,faction.visitor053,faction.visitor054,
+                faction.visitor055,faction.visitor056,faction.visitor057,faction.visitor058,faction.visitor059,faction.visitor060,faction.visitor061,
+                faction.visitor062,faction.visitor063,faction.visitor064,faction.visitor065,faction.visitor066,faction.visitor067,faction.visitor068,
+                faction.visitor069,faction.visitor070,faction.visitor071,faction.visitor072,faction.visitor073,faction.visitor074,faction.visitor075,
+                faction.visitor076,faction.visitor077,faction.visitor078,faction.visitor079,faction.visitor080,faction.visitor081,faction.visitor082,
+                faction.visitor083,faction.visitor084,faction.visitor085,faction.visitor086,faction.visitor087,faction.visitor088,faction.visitor089,
+                faction.visitor090,faction.visitor091,faction.visitor092,faction.visitor093,faction.visitor094,faction.visitor095,faction.visitor096,
+                faction.visitor097,faction.visitor098,faction.visitor099,faction.visitor100
+                ]" />
+                <set_value name="$Factions" exact="[]" />
+                <set_value name="$FactionFilter" exact="lookup.faction.list" />
+                <do_all exact="$FactionFilter.count" counter="$i">
+                    <do_if value="$Visitors.indexof.{$FactionFilter.{$i}} == 0">
+                        <append_to_list name="$Factions" exact="$FactionFilter.{$i}" />
+                    </do_if>
+                </do_all>
+                <!-- Lockboxes -->
+                <set_value name="$Boxes" exact="[
+                macro.sm_gen_lockbox_common_01_macro,macro.sm_gen_lockbox_unusual_01_macro,macro.sm_gen_lockbox_rare_01_macro,macro.sm_gen_lockbox_explosive_01_macro,
+                macro.sm_gen_lockbox_fragile_01_macro,macro.sm_gen_lockbox_big_01_macro,macro.sm_gen_lockbox_big_02_macro,macro.sm_gen_lockbox_special_01_macro,
+                ]" />
+                <!-- Names -->
+                <set_value name="$Teladi_Names" exact="[      
+                'Wehuras Luhobas Horayusos I','Runlias Molinos Lomudas X','Wotassolos Loeosinis Wewimas V','Gueonis Hulagadis Lossoassos VI','Laudras Rueses Gasulbus VII',
+                'Tisslalos Lalunhissas Yusgobis IX','Terhiulbus Hussussudis Yaalasos IV','Dehodis Koeitos Woruharis II','Rutosessas Moyunados Lalaas X','Runteos Monassois Troeodras VIII',
+                'Habagos Joulossos Kossotiklis IX','Hetobas Derudibis Yoneras III','Guanundis Gasiyubas Dekasussas II','Yogudas Harugolbus Derimas IV','Huhahamas Lalonos Yusois VII',
+                'Zumutuklis Yadinimas Koeokagis VI','Granibis Gosetais Loalos X','Tisssuyasos Hogilis Urisis V','Gozuyassas telos Tisstubas X','Guhieonis Hagisos Tranrunidis III',
+                'Tersaudas Lonimuis Tergias VIII','Zukaeosos Loeodas Lilunharis VIII','Zukalis Morutoris Tutanas VII','Gahotis Ugusos Trangonessas I','Litidras Liulis Yusseses IX',
+                'Yonesalos Danaladis Hosedis IV','Uyubas Yusmuenis Ruyais II','Ganirios Hubayulos Denussas IV','Tzeeodras Mossodimas Honinilos VIII','Kossodos Jossuses Gataris X',
+                'Yununas Yaeoris Homudas III','Huhiuses Ruzunos Demais V','Hugases Hutuhais Gakahunas IX','Tisshossas Tuutindis Wetaos VIII','Zumasisos Joyados Runeoliris III',
+                'Guneris Huridras Yunessos VIII','Yuruis Runsenos Zulorilbus III','Troluntis Libasulis Lurisis II','Hohossas Hosesoklis Lohidos II','Hawiras Yusgieondis Josubus IX',
+                'Yarunissas Modilundras Lolihudis VIII','Urinis Hossuuis Hotahunis VII','Husulbus Tissatis Tisshomas IX','Yonibus Lihadis Wenassas V','Trogidas Tunemas Hosuos X',
+                'Daguneses Demugogis Gayagis VII','Wogodas Transios Tranholios II','Konitis inessos yategos IX','Hiyuklis Henubis Gagossos III','Dasaras Latubas Gurusos I',
+                'Woabus Goyaolis Haeowidas X','Gosusosis Trantesuis Tranhusudis V','Tersoklis Hulilis Desusis IX','Huyados Ganinasos Trohutos IX','Graoyudis Yussessos Hesaradis IV',
+                'Josuses Kohimas Lumagios VI','Gussuyasis Tranhilis Tzegunos II','Gramuyussos Holunriklis Yussigusos VIII','Yalawiklis Hodizutis Hessoris IX','Teryutomas Gagunis Molabus VIII',
+                'Wetibas Tranyuas Gurataras VIII','Yusuenis Gahibus Yuhibassas IX','Koloris Hassohidis Tisshunis VII','Wesobases Jolidis Fonihibas V','Gosasatis Dagolbus Yolilisos VI',
+                'Runtawidras Loyusetos Rugamuklis IV','Tutilbus Deyadis Unuyuis VII','Yohunulis Runtossos Tisshitaras V','Wenetusos Yolossuos Lahalidras IV','Wonahasos Lihaanas Josadis I',
+                'Runlamas Terlamas Yuguklis II','Laguris Helotis Hagudindis II','Lirusudis Lonugubus Horugis II','Luyusis Yuolunbus gosos X','Hezutos Lassorios Yatueris VI',
+                'Ganilois Tissssogulis Rueodas VII','Tersiiras Yuyusenos Rusiris IX','Moyaos Hoseas Honegos VII','Weiis Tzemudindis Troeeras III',
+                       ]" />
+                <set_value name="global.$TPWAR_Globals" exact="table[
+                    $G_Factions = $Factions,
+                    $G_ShieldMods = $ShieldMods,
+                    $G_ShipMods = $ShipMods,
+                    $G_EngineMods = $EngineMods,
+                    $G_WeaponMods = $WeaponMods,
+                    $G_Boxes = $Boxes,
+                    $G_Supers = $MdSupers,
+                ]" />
+                <signal_cue_instantly cue="md.TPWAR_Master.TableRecurse" param="global.$TPWAR_Globals" />
+            </actions>
+        </cue>
+    </cues>
+</mdscript>

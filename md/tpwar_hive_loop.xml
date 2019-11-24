@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Hive_Loop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b2/libraries/md.xsd">
+    <cues>
+        <cue name="Init" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <cues>
+                <cue name="Hive_Logic">
+                    <actions>
+                        <do_if value="md.$Hives.count lt 8">
+                            <signal_cue cue="Create_Hive" />
+                        </do_if>
+                        <signal_cue_instantly cue="Claim_Mission" param="md.$Hives.random" />
+                    </actions>
+                </cue>
+                <cue name="Create_Hive">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <find_sector name="$Sectors" space="player.galaxy" owner="faction.ownerless" multiple="true" />
+                        <set_value name="$R_Sector" exact="$Sectors.random" />
+                        <get_ship_definition macro="$Macro" faction="faction.xenon" size="ship_xl" />
+                        <get_character_definition macro="$CharMacro" faction="faction.xenon" tags="tag.pilot" />
+                        <create_ship groupname="md.$NewHive" name="$Commander" sector="$R_Sector" macro="$Macro">
+                            <loadout>
+                                <level exact="1" />
+                                <variation exact="0.0" />
+                            </loadout>
+                            <pilot macro="$CharMacro" />
+                        </create_ship>
+                        <set_object_commander object="$Commander" commander="$Commander" />
+                        <create_order object="$Commander" id="'Patrol'" default="true" immediate="true">
+                            <param name="space" value="$R_Sector" />
+                            <param name="pursuetargets" value="true" />
+                        </create_order>
+                        <do_all exact="10">
+                            <get_ship_definition macro="$Macro" faction="faction.xenon" size="[ship_l,ship_m,ship_s]" tags="tag.military" />
+                            <create_ship name="$Escort" sector="$R_Sector" macro="$Macro">
+                                <loadout>
+                                    <level exact="1" />
+                                    <variation exact="0.0" />
+                                </loadout>
+                                <pilot macro="$CharMacro" />
+                                <safepos object="$Commander" min="1km" max="3km" />
+                            </create_ship>
+                            <!-- add to fleet -->
+                            <!-- $Escort, $Commander -->
+                            <include_actions ref="md.TPWAR_Libraries.Add_Escort" />
+                        </do_all>
+                        <remove_value name="$Sectors" />
+                        <remove_value name="$R_Sector" />
+                        <remove_value name="$Macro" />
+                        <remove_value name="$CharMacro" />
+                        <remove_value name="$Subs" />
+                        <remove_value name="$Commander" />
+                    </actions>
+                </cue>
+                <cue name="Claim_Mission">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <!-- find object to convert -->
+                        <do_any>
+                            <find_ship name="$Object" space="player.galaxy" multiple="true" sortbygatedistanceto="event.param" sortdescending="false">
+                                <match owner="faction.player" negate="true" />
+                            </find_ship>
+                            <find_station name="$Object" space="player.galaxy" multiple="true" sortbygatedistanceto="event.param" sortdescending="false">
+                                <match owner="faction.player" negate="true" />
+                            </find_station>
+                        </do_any>
+                        <set_value name="$R_Object" exact="$Object.random" />
+                        <do_if value="$R_Object.class == class.station">
+                            <!-- register for consume -->
+                            <add_to_group groupname="md.$HiveSpawners" object="$Object" />
+                        </do_if>
+                        <do_else>
+                            <!-- warp to -->
+                            <set_value name="$Ship" exact="event.param" />
+                            <set_value name="$Destination" exact="$R_Object" />
+                            <include_actions ref="md.TPWAR_Libraries.Instant_Warp" />
+                            <!-- protect positon -->
+                            <cancel_all_orders object="event.param" />
+                            <create_order id="'ProtectPosition'" object="event.param" immediate="true">
+                                <param name="destination" value="[$R_Object.sector, $R_Object.position]" />
+                            </create_order>
+                            <set_owner object="$R_Object" faction="event.param.owner" />
+                            <!-- add to fleet -->
+                            <!-- $Escort, $Commander -->
+                            <set_value name="$Escort" exact="$R_Object" />
+                            <set_value name="$Commander" exact="event.param" />
+                            <include_actions ref="md.TPWAR_Libraries.Add_Escort" />
+                        </do_else>
+                        <remove_value name="$Object" />
+                        <remove_value name="$R_Object" />
+                        <remove_value name="$Object" />
+                        <remove_value name="$Target" />
+                        <remove_value name="$Escort" />
+                        <remove_value name="$Commander" />
+                    </actions>
+                </cue>
+                <cue name="Refit_TakeOvers">
+                    <conditions>
+                        <event_cue_signalled />
+                    </conditions>
+                    <actions>
+                        <set_value name="$loadlist" exact="[
+                        macro.weapon_khp_s_mk1_macro, 
+                        macro.weapon_khp_m_mk1_macro, 
+                        macro.turret_khp_m_mk1_macro, 
+                        macro.turret_khp_l_mk1_macro,
+                        macro.thruster_gen_s_allround_01_mk3_macro,
+                        macro.thruster_gen_m_allround_01_mk3_macro,
+                        macro.thruster_gen_l_allround_01_mk3_macro,
+                        macro.thruster_gen_xl_allround_01_mk3_macro
+                        ]" />
+                        <set_value name="$Victim" exact="event.param" />
+                        <find_object_component groupname="$keeping" object="$Victim" recursive="true" multiple="true">
+                            <match_any>
+                                <match class="[class.turret, class.weapon]" negate="true" />
+                                <match integrated="true" />
+                                <match integrated="false" />
+                            </match_any>
+                        </find_object_component>
+                        <do_all exact="$keeping.count" counter="$i">
+                            <append_to_list name="$loadlist" exact="$keeping.{$i}.macro" />
+                        </do_all>
+                        <generate_loadout result="$loadout" macro="$Victim.macro" macros="$loadlist" level="1" />
+                        <apply_loadout object="$Victim" loadout="$loadout.{1}" />
+                    </actions>
+                </cue>
+            </cues>
+        </cue>
+        <cue name="Consume_Station" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <!-- convert a module to a ship with khaak weapons -->
+                <find_object_component name="$Modules" object="event.param" multiple="true" module="true" recursive="true"></find_object_component>
+                <set_value name="$R_Module" exact="$Modules.random" />
+                <get_character_definition macro="$CharMacro" faction="faction.xenon" tags="tag.pilot" />
+                <get_ship_definition macro="$Macro" faction="$R_Module.owner" size="[ship_l,ship_m,ship_s]" tags="tag.military" />
+                <create_ship name="$Escort" sector="$R_Sector" macro="$Macro">
+                    <loadout>
+                        <level exact="1" />
+                        <variation exact="0.0" />
+                    </loadout>
+                    <pilot macro="$CharMacro" />
+                    <safepos object="$Commander" min="1km" max="3km" />
+                </create_ship>
+                <!-- change loadout to khaakpox -->
+                <include_actions ref="md.TPWAR_Libraries.Refit_To_Khaak" />
+                <destroy_object object="$R_Module" />
+                <!-- add to fleet -->
+                <!-- $Escort, $Commander -->
+                <include_actions ref="md.TPWAR_Libraries.Add_Escort" />
+                <sort_group group="md.$Hives" sortbydistanceto="$Escort" sortdescending="false" />
+                <set_value name="$Commander" exact="md.$Hives.{1}" />
+                <!-- $Escort, $Commander -->
+                <include_actions ref="md.TPWAR_Libraries.Add_Escort" />
+            </actions>
+        </cue>
+    </cues>
+</mdscript>

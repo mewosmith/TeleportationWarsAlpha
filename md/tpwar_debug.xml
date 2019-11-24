@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="TPWAR_Debug" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\x4_extract_3.0b2/libraries/md.xsd">
+    <cues>
+        <cue name="TableRecurse" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$Table" exact="event.param" />
+                <do_for_each in="$Table">
+                    <debug_to_file text="'tablelog: key - ' + loop.key" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                    <debug_to_file text="'tablelog: value - ' + loop.value" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                    <do_if value="typeof loop.value == datatype.table">
+                        <signal_cue_instantly cue="PassThrough" param="loop.value" />
+                    </do_if>
+                    <do_if value="typeof loop.value == datatype.list">
+                        <do_all exact="loop.value.count" counter="$i">
+                            <debug_to_file text="'list - ' + loop.value.{$i}" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                        </do_all>
+                    </do_if>
+                    <do_if value="typeof loop.value == datatype.group">
+                        <do_all exact="loop.value.count" counter="$i">
+                            <debug_to_file text="'group - ' + loop.value.{$i}" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                        </do_all>
+                    </do_if>
+                </do_for_each>
+            </actions>
+        </cue>
+        <cue name="PassThrough" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$Table" exact="event.param" />
+                <signal_cue_instantly cue="TableRecurse" param="$Table" />
+            </actions>
+        </cue>
+        <library name="Debug">
+            <actions>
+                <debug_to_file text="'
+Cue %s |
+Time %s |
+event.name %s |
+event.object %s | event.object.knownname %s | event.object.owner.knownname %s |
+event.param %s |event.param.name %s | event.param.knownname %s | event.param.owner.knownname %s | event.param.sector.knownname %s |
+event.param2 %s |event.param2.name %s | event.param2.knownname %s | event.param2.owner.knownname %s | event.param2.sector.knownname %s |
+event.param3 %s |event.param3.name %s | event.param3.knownname %s | event.param3.owner.knownname %s | event.param3.sector.knownname %s |
+'.
+[
+this.name,
+player.age.formatted.default,
+@event.name,
+@event.object, @event.object.knownname, @event.object.owner.knownname,
+@event.param,@event.param.name, @event.param.knownname, @event.param.owner.knownname, @event.param.sector.knownname,
+@event.param2,@event.param2.name, @event.param2.knownname, @event.param2.owner.knownname, @event.param2.sector.knownname,
+@event.param3,@event.param3.name, @event.param3.knownname, @event.param3.owner.knownname, @event.param3.sector.knownname,
+]" name="'master.log'" directory="'master'" chance="md.$DebugChance" />
+            </actions>
+        </library>
+    </cues>
+</mdscript>
